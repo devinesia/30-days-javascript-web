@@ -1,4 +1,5 @@
 site_name: 30 Days Javascript
+repo_url: https://github.com/devinesia/30-days-javascript-web
 markdown_extensions:
   - admonition
   - pymdownx.details
