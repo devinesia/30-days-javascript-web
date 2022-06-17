@@ -1,0 +1,14 @@
+site_name: 30 Days Javascript
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - def_list
+  - pymdownx.tasklist:
+      custom_checkbox: true
+theme:
+  favicon: images/javascript.png
+  logo: images/javascript.png
+  name: material
+  palette:
+    primary: amber
