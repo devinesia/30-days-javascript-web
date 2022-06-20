@@ -216,16 +216,16 @@ for(const key in person) {
 
  We say if, if else, if else if else, switch and ternary operators in previous challenges.
 
- ```js
+```js
  // syntax
 if (condition) {
   // this part of code run for truthy condition
 } else {
   // this part of code run for false condition
 }
- ```
+```
 
- ```js
+```js
  // if else
 let num = 3
 if (num > 0) {
@@ -234,9 +234,9 @@ if (num > 0) {
   console.log(`${num} is a negative number`)
 }
 //  3 is a positive number
- ```
+```
 
- ```js
+```js
  // if else if else if else
 
 let a = 0
@@ -249,9 +249,9 @@ if (a > 0) {
 } else {
   console.log(`${a} is not a number`)
 }
- ```
+```
 
- ```js
+```js
  // Switch More Examples
 let dayUserInput = prompt('What day is today ?')
 let day = dayUserInput.toLowerCase()
@@ -281,16 +281,16 @@ switch (day) {
   default:
     console.log('It is not a week day.')
 }
- ```
+```
 
- ```js
+```js
  // ternary
 
  let isRaining = true
 isRaining
   ? console.log('You need a rain coat.')
   : console.log('No need for a rain coat.')
- ```
+```
 
 #### Classes
 

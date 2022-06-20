@@ -191,7 +191,7 @@ Sometimes we do not know how many arguments the user going to pass. Therefore, w
 
  A function declaration provides a function scoped arguments array like object. Any thing we passed as argument in the function can be accessed from arguments object inside the functions. Let us see an example
 
- ```js
+```js
 // Let us access the arguments object
 ​
 function sumAllNums() {
@@ -223,7 +223,7 @@ console.log(sumAllNums(15, 20, 30, 25, 10, 33, 40))  // 173
 
  Arrow function does not have the function scoped arguments object. To implement a function which takes unlimited number of arguments in an arrow function we use spread operator followed by any parameter name.  Any thing we passed as argument in the function can be accessed as array in the arrow function. Let us see an example
 
- ```js
+```js
 // Let us access the arguments object
 ​
 const sumAllNums = (...args) => {
