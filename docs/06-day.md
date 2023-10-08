@@ -183,6 +183,33 @@ for(const country of countries){
 
 console.log(newArr)  // ["FINLAND", "SWEDEN", "NORWAY", "DENMARK", "ICELAND"]
 ```
+### for in loop
+
+we use for...in loop in JavaScript is used for iterating over the enumerable properties of an object. It is often used to loop through the keys or properties of an object.
+
+```js
+for (const key in object) {
+    // Code to be executed for each property (key)
+}
+```
+
+```js
+
+const person = {
+    firstName: "John",
+    lastName: "Doe",
+    age: 30,
+};
+
+for (const key in person) {
+    console.log(key + ": " + person[key]);
+}
+//firstName: John
+//lastName: Doe
+//age: 30
+
+```
+
 
 ### break
 
