@@ -12,7 +12,7 @@ You can support the author to produce more educational materials
 [![paypal](images/paypal_lg.png)](https://www.paypal.me/asabeneh)
 
 
-## About devinesia
-Devinesia providing services in making software, bot and website at affordable prices with quality and clean code.
+## About Brave Teknologi
+Brave Technology is your trusted IT solutions provider with over four years of experience. We specialize in software and website development, offering professional IT consulting. With a track record of serving over ten clients across various industries, we tailor solutions to your specific needs.
 
-Email : [devinesiacom@gmail.com](mailto:devinesiacom@gmail.com)
+https://www.braveteknologi.com
