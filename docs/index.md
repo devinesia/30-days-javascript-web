@@ -15,4 +15,4 @@ You can support the author to produce more educational materials
 ## About Brave Teknologi
 Brave Technology is your trusted IT solutions provider with over four years of experience. We specialize in software and website development, offering professional IT consulting. With a track record of serving over ten clients across various industries, we tailor solutions to your specific needs.
 
-https://www.braveteknologi.com
+[www.braveteknologi.com](https://www.braveteknologi.com)
