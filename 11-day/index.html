@@ -1,0 +1,1837 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../10-day/">
+      
+      
+        <link rel="next" href="../12-day/">
+      
+      
+      <link rel="icon" href="../images/javascript.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.2">
+    
+    
+      
+        <title>📘 Day 11 - 30 Days Javascript</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.50c56a3b.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="amber" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#day-11" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="30 Days Javascript" class="md-header__button md-logo" aria-label="30 Days Javascript" data-md-component="logo">
+      
+  <img src="../images/javascript.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            30 Days Javascript
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              📘 Day 11
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/devinesia/30-days-javascript-web" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="30 Days Javascript" class="md-nav__button md-logo" aria-label="30 Days Javascript" data-md-component="logo">
+      
+  <img src="../images/javascript.png" alt="logo">
+
+    </a>
+    30 Days Javascript
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/devinesia/30-days-javascript-web" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Getting started
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01-day/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    📔 Day 1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02-day/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    📔 Day 2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03-day/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    📔 Day 3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04-day/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    📔 Day 4
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../05-day/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    📔 Day 5
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../06-day/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    📔 Day 6
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../07-day/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    📔 Day 7
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../08-day/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    📔 Day 8
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../09-day/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    📔 Day 9
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../10-day/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    📔 Day 10
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    📘 Day 11
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    📘 Day 11
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#destructuring-and-spread" class="md-nav__link">
+    <span class="md-ellipsis">
+      Destructuring and Spread
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Destructuring and Spread">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#destructing-arrays" class="md-nav__link">
+    <span class="md-ellipsis">
+      Destructing Arrays
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#destructuring-during-iteration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Destructuring during iteration
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#destructuring-object" class="md-nav__link">
+    <span class="md-ellipsis">
+      Destructuring Object
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#renaming-during-structuring" class="md-nav__link">
+    <span class="md-ellipsis">
+      Renaming during structuring
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#object-parameter-without-destructuring" class="md-nav__link">
+    <span class="md-ellipsis">
+      Object parameter without destructuring
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#object-parameter-with-destructuring" class="md-nav__link">
+    <span class="md-ellipsis">
+      Object parameter with destructuring
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#destructuring-object-during-iteration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Destructuring object during iteration
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#spread-or-rest-operator" class="md-nav__link">
+    <span class="md-ellipsis">
+      Spread or Rest Operator
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#spread-operator-to-get-the-rest-of-array-elements" class="md-nav__link">
+    <span class="md-ellipsis">
+      Spread operator to get the rest of array elements
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#spread-operator-to-copy-array" class="md-nav__link">
+    <span class="md-ellipsis">
+      Spread operator to copy array
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#spread-operator-to-copy-object" class="md-nav__link">
+    <span class="md-ellipsis">
+      Spread operator to copy object
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Spread operator to copy object">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#spread-operator-with-arrow-function" class="md-nav__link">
+    <span class="md-ellipsis">
+      Spread operator with arrow function
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercises" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exercises
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Exercises">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#exercises-level-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exercises: Level 1
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exercises-level-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exercises: Level 2
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exercises-level-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exercises: Level 3
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../12-day/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    📘 Day 12
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../13-day/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    📘 Day 13
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../14-day/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    📘 Day 14
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../15-day/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    📘 Day 15
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../16-day/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    📘 Day 16
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../17-day/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    📘 Day 17
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../18-day/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    📘 Day 18
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../19-day/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    📘 Day 19
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20-day/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    📘 Day 20
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../21-day/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    📙 Day 21
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../22-day/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    📙 Day 22
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../23-day/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    📙 Day 23
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../24-day/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    📙 Day 24
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../25-day/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    📙 Day 25
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../26-day/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    📙 Day 26
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../27-day/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    📙 Day 27
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../28-day/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    📙 Day 28
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../29-day/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    📙 Day 29
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../30-day/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    📙 Day 30
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#destructuring-and-spread" class="md-nav__link">
+    <span class="md-ellipsis">
+      Destructuring and Spread
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Destructuring and Spread">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#destructing-arrays" class="md-nav__link">
+    <span class="md-ellipsis">
+      Destructing Arrays
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#destructuring-during-iteration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Destructuring during iteration
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#destructuring-object" class="md-nav__link">
+    <span class="md-ellipsis">
+      Destructuring Object
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#renaming-during-structuring" class="md-nav__link">
+    <span class="md-ellipsis">
+      Renaming during structuring
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#object-parameter-without-destructuring" class="md-nav__link">
+    <span class="md-ellipsis">
+      Object parameter without destructuring
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#object-parameter-with-destructuring" class="md-nav__link">
+    <span class="md-ellipsis">
+      Object parameter with destructuring
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#destructuring-object-during-iteration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Destructuring object during iteration
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#spread-or-rest-operator" class="md-nav__link">
+    <span class="md-ellipsis">
+      Spread or Rest Operator
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#spread-operator-to-get-the-rest-of-array-elements" class="md-nav__link">
+    <span class="md-ellipsis">
+      Spread operator to get the rest of array elements
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#spread-operator-to-copy-array" class="md-nav__link">
+    <span class="md-ellipsis">
+      Spread operator to copy array
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#spread-operator-to-copy-object" class="md-nav__link">
+    <span class="md-ellipsis">
+      Spread operator to copy object
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Spread operator to copy object">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#spread-operator-with-arrow-function" class="md-nav__link">
+    <span class="md-ellipsis">
+      Spread operator with arrow function
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercises" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exercises
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Exercises">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#exercises-level-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exercises: Level 1
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exercises-level-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exercises: Level 2
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exercises-level-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exercises: Level 3
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<h1 id="day-11">📘 Day 11</h1>
+<h2 id="destructuring-and-spread">Destructuring and Spread</h2>
+<p>Destructuring is a way to unpack arrays, and objects and assigning to a distinct variable.</p>
+<h3 id="destructing-arrays">Destructing Arrays</h3>
+<div class="highlight"><pre><span></span><code><span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">numbers</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="mf">1</span><span class="p">,</span><span class="w"> </span><span class="mf">2</span><span class="p">,</span><span class="w"> </span><span class="mf">3</span><span class="p">]</span>
+<span class="w">  </span><span class="kd">let</span><span class="w"> </span><span class="p">[</span><span class="nx">numOne</span><span class="p">,</span><span class="w"> </span><span class="nx">numTwo</span><span class="p">,</span><span class="w"> </span><span class="nx">numThree</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">numbers</span>
+
+<span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">numOne</span><span class="p">,</span><span class="w"> </span><span class="nx">numTwo</span><span class="p">,</span><span class="w"> </span><span class="nx">numThree</span><span class="p">)</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="w">  </span><span class="m">1</span><span class="w"> </span><span class="m">2</span><span class="w"> </span><span class="m">3</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">names</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s1">&#39;Asabeneh&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Brook&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;David&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;John&#39;</span><span class="p">]</span>
+<span class="w">  </span><span class="kd">let</span><span class="w"> </span><span class="p">[</span><span class="nx">firstPerson</span><span class="p">,</span><span class="w"> </span><span class="nx">secondPerson</span><span class="p">,</span><span class="w"> </span><span class="nx">thirdPerson</span><span class="p">,</span><span class="w"> </span><span class="nx">fourthPerson</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">names</span>
+
+<span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">firstPerson</span><span class="p">,</span><span class="w"> </span><span class="nx">secondPerson</span><span class="p">,</span><span class="nx">thirdPerson</span><span class="p">,</span><span class="w"> </span><span class="nx">fourthPerson</span><span class="p">)</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>Asabeneh<span class="w"> </span>Brook<span class="w"> </span>David<span class="w"> </span>John
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">scientificConstants</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="mf">2.72</span><span class="p">,</span><span class="w"> </span><span class="mf">3.14</span><span class="p">,</span><span class="w"> </span><span class="mf">9.81</span><span class="p">,</span><span class="w"> </span><span class="mf">37</span><span class="p">,</span><span class="w"> </span><span class="mf">100</span><span class="p">]</span>
+<span class="w">  </span><span class="kd">let</span><span class="w"> </span><span class="p">[</span><span class="nx">e</span><span class="p">,</span><span class="w"> </span><span class="nx">pi</span><span class="p">,</span><span class="w"> </span><span class="nx">gravity</span><span class="p">,</span><span class="w"> </span><span class="nx">bodyTemp</span><span class="p">,</span><span class="w"> </span><span class="nx">boilingTemp</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">scientificConstants</span>
+
+<span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">e</span><span class="p">,</span><span class="nx">pi</span><span class="p">,</span><span class="nx">gravity</span><span class="p">,</span><span class="w"> </span><span class="nx">bodyTemp</span><span class="p">,</span><span class="w"> </span><span class="nx">boilingTemp</span><span class="p">)</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="m">2</span>.72<span class="w"> </span><span class="m">3</span>.14<span class="w"> </span><span class="m">9</span>.81<span class="w"> </span><span class="m">37</span><span class="w"> </span><span class="m">100</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">fullStack</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span>
+<span class="w">  </span><span class="p">[</span><span class="s1">&#39;HTML&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;CSS&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;JS&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;React&#39;</span><span class="p">],</span>
+<span class="w">  </span><span class="p">[</span><span class="s1">&#39;Node&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Express&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;MongoDB&#39;</span><span class="p">]</span>
+<span class="p">]</span>
+<span class="kd">const</span><span class="w"> </span><span class="p">[</span><span class="nx">frontEnd</span><span class="p">,</span><span class="w"> </span><span class="nx">backEnd</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">fullStack</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">frontEnd</span><span class="p">)</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">backEnd</span><span class="p">)</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="o">[</span><span class="s2">&quot;HTML&quot;</span>,<span class="w"> </span><span class="s2">&quot;CSS&quot;</span>,<span class="w"> </span><span class="s2">&quot;JS&quot;</span>,<span class="w"> </span><span class="s2">&quot;React&quot;</span><span class="o">]</span>
+<span class="o">[</span><span class="s2">&quot;Node&quot;</span>,<span class="w"> </span><span class="s2">&quot;Express&quot;</span>,<span class="w"> </span><span class="s2">&quot;MongoDB&quot;</span><span class="o">]</span>
+</code></pre></div>
+<p>If we like to skip on of the values in the array we use additional comma. The comma helps to omit the value at that specific index</p>
+<div class="highlight"><pre><span></span><code><span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">numbers</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="mf">1</span><span class="p">,</span><span class="w"> </span><span class="mf">2</span><span class="p">,</span><span class="w"> </span><span class="mf">3</span><span class="p">]</span>
+<span class="w">  </span><span class="kd">let</span><span class="w"> </span><span class="p">[</span><span class="nx">numOne</span><span class="p">,</span><span class="w"> </span><span class="p">,</span><span class="w"> </span><span class="nx">numThree</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">numbers</span><span class="w"> </span><span class="c1">//2 is omitted</span>
+
+<span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">numOne</span><span class="p">,</span><span class="w"> </span><span class="nx">numThree</span><span class="p">)</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="m">1</span><span class="w"> </span><span class="m">3</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">names</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s1">&#39;Asabeneh&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Brook&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;David&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;John&#39;</span><span class="p">]</span>
+<span class="w">  </span><span class="kd">let</span><span class="w"> </span><span class="p">[,</span><span class="w"> </span><span class="nx">secondPerson</span><span class="p">,</span><span class="w"> </span><span class="p">,</span><span class="w"> </span><span class="nx">fourthPerson</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">names</span><span class="w"> </span><span class="c1">// first and third person is omitted</span>
+
+<span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">secondPerson</span><span class="p">,</span><span class="w"> </span><span class="nx">fourthPerson</span><span class="p">)</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>Brook<span class="w"> </span>John
+</code></pre></div>
+<p>We can use default value in case the value of array for that index is undefined:</p>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">names</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="kc">undefined</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Brook&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;David&#39;</span><span class="p">]</span>
+<span class="kd">let</span><span class="w"> </span><span class="p">[</span>
+<span class="w">  </span><span class="nx">firstPerson</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;Asabeneh&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="nx">secondPerson</span><span class="p">,</span>
+<span class="w">  </span><span class="nx">thirdPerson</span><span class="p">,</span>
+<span class="w">  </span><span class="nx">fourthPerson</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;John&#39;</span>
+<span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">names</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">firstPerson</span><span class="p">,</span><span class="w"> </span><span class="nx">secondPerson</span><span class="p">,</span><span class="w"> </span><span class="nx">thirdPerson</span><span class="p">,</span><span class="w"> </span><span class="nx">fourthPerson</span><span class="p">)</span><span class="w">  </span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>Asabeneh<span class="w"> </span>Brook<span class="w"> </span>David<span class="w"> </span>John
+</code></pre></div>
+<p>We can not assign variable to all the elements in the array. We can destructure few of the first and we can get the remaining as array using spread operator(...).</p>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">nums</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="mf">1</span><span class="p">,</span><span class="w"> </span><span class="mf">2</span><span class="p">,</span><span class="w"> </span><span class="mf">3</span><span class="p">,</span><span class="w"> </span><span class="mf">4</span><span class="p">,</span><span class="w"> </span><span class="mf">5</span><span class="p">,</span><span class="w"> </span><span class="mf">6</span><span class="p">,</span><span class="w"> </span><span class="mf">7</span><span class="p">,</span><span class="w"> </span><span class="mf">8</span><span class="p">,</span><span class="w"> </span><span class="mf">9</span><span class="p">,</span><span class="w"> </span><span class="mf">10</span><span class="p">]</span>
+<span class="kd">let</span><span class="w"> </span><span class="p">[</span><span class="nx">num1</span><span class="p">,</span><span class="w"> </span><span class="nx">num2</span><span class="p">,</span><span class="w"> </span><span class="nx">num3</span><span class="p">,</span><span class="w"> </span><span class="p">...</span><span class="nx">rest</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">nums</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">num1</span><span class="p">,</span><span class="w"> </span><span class="nx">num2</span><span class="p">,</span><span class="w"> </span><span class="nx">num3</span><span class="p">)</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">rest</span><span class="p">)</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="m">1</span><span class="w"> </span><span class="m">2</span><span class="w"> </span><span class="m">3</span>
+<span class="o">[</span><span class="m">4</span>,<span class="w"> </span><span class="m">5</span>,<span class="w"> </span><span class="m">6</span>,<span class="w"> </span><span class="m">7</span>,<span class="w"> </span><span class="m">8</span>,<span class="w"> </span><span class="m">9</span>,<span class="w"> </span><span class="m">10</span><span class="o">]</span>
+</code></pre></div>
+<h3 id="destructuring-during-iteration">Destructuring during iteration</h3>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">countries</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[[</span><span class="s1">&#39;Finland&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Helsinki&#39;</span><span class="p">],</span><span class="w"> </span><span class="p">[</span><span class="s1">&#39;Sweden&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Stockholm&#39;</span><span class="p">],</span><span class="w"> </span><span class="p">[</span><span class="s1">&#39;Norway&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Oslo&#39;</span><span class="p">]]</span>
+
+<span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kd">const</span><span class="w"> </span><span class="p">[</span><span class="nx">country</span><span class="p">,</span><span class="w"> </span><span class="nx">city</span><span class="p">]</span><span class="w"> </span><span class="k">of</span><span class="w"> </span><span class="nx">countries</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">country</span><span class="p">,</span><span class="w"> </span><span class="nx">city</span><span class="p">)</span>
+<span class="p">}</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>Finland<span class="w"> </span>Helsinki
+Sweden<span class="w"> </span>Stockholm
+Norway<span class="w"> </span>Oslo
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">fullStack</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span>
+<span class="w">  </span><span class="p">[</span><span class="s1">&#39;HTML&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;CSS&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;JS&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;React&#39;</span><span class="p">],</span>
+<span class="w">  </span><span class="p">[</span><span class="s1">&#39;Node&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Express&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;MongoDB&#39;</span><span class="p">]</span>
+<span class="p">]</span>
+
+<span class="k">for</span><span class="p">(</span><span class="kd">const</span><span class="w"> </span><span class="p">[</span><span class="nx">first</span><span class="p">,</span><span class="w"> </span><span class="nx">second</span><span class="p">,</span><span class="w"> </span><span class="nx">third</span><span class="p">]</span><span class="w"> </span><span class="k">of</span><span class="w"> </span><span class="nx">fullStack</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">first</span><span class="p">,</span><span class="w"> </span><span class="nx">second</span><span class="p">,</span><span class="w"> </span><span class="nx">third</span><span class="p">)</span>
+<span class="p">}</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>HTML<span class="w"> </span>CSS<span class="w"> </span>JS
+Node<span class="w"> </span>Express<span class="w"> </span>MongoDB
+</code></pre></div>
+<h3 id="destructuring-object">Destructuring Object</h3>
+<p>When we destructure the name of the variable we use to destructure should be exactly the same as the key or property of the object. See the example below.</p>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">rectangle</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="nx">width</span><span class="o">:</span><span class="w"> </span><span class="mf">20</span><span class="p">,</span>
+<span class="w">  </span><span class="nx">height</span><span class="o">:</span><span class="w"> </span><span class="mf">10</span><span class="p">,</span>
+<span class="w">  </span><span class="nx">area</span><span class="o">:</span><span class="w"> </span><span class="mf">200</span>
+<span class="p">}</span>
+<span class="kd">let</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">width</span><span class="p">,</span><span class="w"> </span><span class="nx">height</span><span class="p">,</span><span class="w"> </span><span class="nx">area</span><span class="p">,</span><span class="w"> </span><span class="nx">perimeter</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">rectangle</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">width</span><span class="p">,</span><span class="w"> </span><span class="nx">height</span><span class="p">,</span><span class="w"> </span><span class="nx">area</span><span class="p">,</span><span class="w"> </span><span class="nx">perimeter</span><span class="p">)</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="m">20</span><span class="w"> </span><span class="m">10</span><span class="w"> </span><span class="m">200</span><span class="w"> </span>undefined
+</code></pre></div>
+<h3 id="renaming-during-structuring">Renaming during structuring</h3>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">rectangle</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="nx">width</span><span class="o">:</span><span class="w"> </span><span class="mf">20</span><span class="p">,</span>
+<span class="w">  </span><span class="nx">height</span><span class="o">:</span><span class="w"> </span><span class="mf">10</span><span class="p">,</span>
+<span class="w">  </span><span class="nx">area</span><span class="o">:</span><span class="w"> </span><span class="mf">200</span>
+<span class="p">}</span>
+<span class="kd">let</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">width</span><span class="o">:</span><span class="w"> </span><span class="nx">w</span><span class="p">,</span><span class="w"> </span><span class="nx">height</span><span class="o">:</span><span class="w"> </span><span class="nx">h</span><span class="p">,</span><span class="w"> </span><span class="nx">area</span><span class="o">:</span><span class="w"> </span><span class="nx">a</span><span class="p">,</span><span class="w"> </span><span class="nx">perimeter</span><span class="o">:</span><span class="w"> </span><span class="nx">p</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">rectangle</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">w</span><span class="p">,</span><span class="w"> </span><span class="nx">h</span><span class="p">,</span><span class="w"> </span><span class="nx">a</span><span class="p">,</span><span class="w"> </span><span class="nx">p</span><span class="p">)</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="m">20</span><span class="w"> </span><span class="m">10</span><span class="w"> </span><span class="m">200</span><span class="w"> </span>undefined
+</code></pre></div>
+<p>If the key is not found in the object the variable will be assigned to undefined. Sometimes the key might not be in the object, in that case we can give a default value during declaration. See the example.</p>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">rectangle</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="nx">width</span><span class="o">:</span><span class="w"> </span><span class="mf">20</span><span class="p">,</span>
+<span class="w">  </span><span class="nx">height</span><span class="o">:</span><span class="w"> </span><span class="mf">10</span><span class="p">,</span>
+<span class="w">  </span><span class="nx">area</span><span class="o">:</span><span class="w"> </span><span class="mf">200</span>
+<span class="p">}</span>
+<span class="kd">let</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">width</span><span class="p">,</span><span class="w"> </span><span class="nx">height</span><span class="p">,</span><span class="w"> </span><span class="nx">area</span><span class="p">,</span><span class="w"> </span><span class="nx">perimeter</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">60</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">rectangle</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">width</span><span class="p">,</span><span class="w"> </span><span class="nx">height</span><span class="p">,</span><span class="w"> </span><span class="nx">area</span><span class="p">,</span><span class="w"> </span><span class="nx">perimeter</span><span class="p">)</span><span class="w"> </span><span class="c1">//20 10 200 60</span>
+<span class="c1">//Let us modify the object:width to 30 and perimeter to 80</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">rectangle</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="nx">width</span><span class="o">:</span><span class="w"> </span><span class="mf">30</span><span class="p">,</span>
+<span class="w">  </span><span class="nx">height</span><span class="o">:</span><span class="w"> </span><span class="mf">10</span><span class="p">,</span>
+<span class="w">  </span><span class="nx">area</span><span class="o">:</span><span class="w"> </span><span class="mf">200</span><span class="p">,</span>
+<span class="w">  </span><span class="nx">perimeter</span><span class="o">:</span><span class="w"> </span><span class="mf">80</span>
+<span class="p">}</span>
+<span class="kd">let</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">width</span><span class="p">,</span><span class="w"> </span><span class="nx">height</span><span class="p">,</span><span class="w"> </span><span class="nx">area</span><span class="p">,</span><span class="w"> </span><span class="nx">perimeter</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">60</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">rectangle</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">width</span><span class="p">,</span><span class="w"> </span><span class="nx">height</span><span class="p">,</span><span class="w"> </span><span class="nx">area</span><span class="p">,</span><span class="w"> </span><span class="nx">perimeter</span><span class="p">)</span><span class="w"> </span><span class="c1">//30 10 200 80</span>
+</code></pre></div>
+<p>Destructuring keys as a function parameters. Let us create a function which takes a rectangle object and it returns a perimeter of a rectangle.</p>
+<h3 id="object-parameter-without-destructuring">Object parameter without destructuring</h3>
+<div class="highlight"><pre><span></span><code><span class="c1">// Without destructuring</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">rect</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="nx">width</span><span class="o">:</span><span class="w"> </span><span class="mf">20</span><span class="p">,</span>
+<span class="w">  </span><span class="nx">height</span><span class="o">:</span><span class="w"> </span><span class="mf">10</span>
+<span class="p">}</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">calculatePerimeter</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">rectangle</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="mf">2</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="p">(</span><span class="nx">rectangle</span><span class="p">.</span><span class="nx">width</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">rectangle</span><span class="p">.</span><span class="nx">height</span><span class="p">)</span>
+<span class="p">}</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">calculatePerimeter</span><span class="p">(</span><span class="nx">rect</span><span class="p">))</span><span class="w"> </span><span class="c1">// 60</span>
+<span class="c1">//with destructuring</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="c1">//Another Example</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">person</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="nx">firstName</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;Asabeneh&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="nx">lastName</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;Yetayeh&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="nx">age</span><span class="o">:</span><span class="w"> </span><span class="mf">250</span><span class="p">,</span>
+<span class="w">  </span><span class="nx">country</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;Finland&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="nx">job</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;Instructor and Developer&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="nx">skills</span><span class="o">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">    </span><span class="s1">&#39;HTML&#39;</span><span class="p">,</span>
+<span class="w">    </span><span class="s1">&#39;CSS&#39;</span><span class="p">,</span>
+<span class="w">    </span><span class="s1">&#39;JavaScript&#39;</span><span class="p">,</span>
+<span class="w">    </span><span class="s1">&#39;React&#39;</span><span class="p">,</span>
+<span class="w">    </span><span class="s1">&#39;Redux&#39;</span><span class="p">,</span>
+<span class="w">    </span><span class="s1">&#39;Node&#39;</span><span class="p">,</span>
+<span class="w">    </span><span class="s1">&#39;MongoDB&#39;</span><span class="p">,</span>
+<span class="w">    </span><span class="s1">&#39;Python&#39;</span><span class="p">,</span>
+<span class="w">    </span><span class="s1">&#39;D3.js&#39;</span>
+<span class="w">  </span><span class="p">],</span>
+<span class="w">  </span><span class="nx">languages</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="s1">&#39;Amharic&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;English&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Suomi(Finnish)&#39;</span><span class="p">]</span>
+<span class="p">}</span>
+<span class="c1">// Let us create a function which give information about the person object without destructuring</span>
+
+<span class="kd">const</span><span class="w"> </span><span class="nx">getPersonInfo</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">obj</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">skills</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">obj</span><span class="p">.</span><span class="nx">skills</span>
+<span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">formattedSkills</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">skills</span><span class="p">.</span><span class="nx">slice</span><span class="p">(</span><span class="mf">0</span><span class="p">,</span><span class="w"> </span><span class="o">-</span><span class="mf">1</span><span class="p">).</span><span class="nx">join</span><span class="p">(</span><span class="s1">&#39;, &#39;</span><span class="p">)</span>
+<span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">languages</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">obj</span><span class="p">.</span><span class="nx">languages</span>
+<span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">formattedLanguages</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">languages</span><span class="p">.</span><span class="nx">slice</span><span class="p">(</span><span class="mf">0</span><span class="p">,</span><span class="w"> </span><span class="o">-</span><span class="mf">1</span><span class="p">).</span><span class="nx">join</span><span class="p">(</span><span class="s1">&#39;, &#39;</span><span class="p">)</span>
+
+<span class="w">  </span><span class="nx">personInfo</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="sb">`</span><span class="si">${</span><span class="nx">obj</span><span class="p">.</span><span class="nx">firstName</span><span class="si">}</span><span class="sb"> </span><span class="si">${</span><span class="nx">obj</span><span class="p">.</span><span class="nx">lastName</span><span class="si">}</span><span class="sb"> lives in </span><span class="si">${</span><span class="nx">obj</span><span class="p">.</span><span class="nx">country</span><span class="si">}</span><span class="sb">. He is  </span><span class="si">${</span>
+<span class="w">    </span><span class="nx">obj</span><span class="p">.</span><span class="nx">age</span>
+<span class="w">  </span><span class="si">}</span><span class="sb"> years old. He is an </span><span class="si">${</span><span class="nx">obj</span><span class="p">.</span><span class="nx">job</span><span class="si">}</span><span class="sb">. He teaches </span><span class="si">${</span><span class="nx">formattedSkills</span><span class="si">}</span><span class="sb"> and </span><span class="si">${</span>
+<span class="w">    </span><span class="nx">skills</span><span class="p">[</span><span class="nx">skills</span><span class="p">.</span><span class="nx">length</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mf">1</span><span class="p">]</span>
+<span class="w">  </span><span class="si">}</span><span class="sb">. He speaks </span><span class="si">${</span><span class="nx">formattedLanguages</span><span class="si">}</span><span class="sb"> and a little bit of </span><span class="si">${</span><span class="nx">languages</span><span class="p">[</span><span class="mf">2</span><span class="p">]</span><span class="si">}</span><span class="sb">.`</span>
+
+<span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="nx">personInfo</span>
+<span class="p">}</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">getPersonInfo</span><span class="p">(</span><span class="nx">person</span><span class="p">))</span>
+</code></pre></div>
+<h3 id="object-parameter-with-destructuring">Object parameter with destructuring</h3>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">calculatePerimeter</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">({</span><span class="w"> </span><span class="nx">width</span><span class="p">,</span><span class="w"> </span><span class="nx">height</span><span class="w"> </span><span class="p">})</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="mf">2</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="p">(</span><span class="nx">width</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">height</span><span class="p">)</span>
+<span class="p">}</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">calculatePerimeter</span><span class="p">(</span><span class="nx">rect</span><span class="p">))</span><span class="w"> </span><span class="c1">// 60</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="c1">// Let us create a function which give information about the person object with destructuring</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">getPersonInfo</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">({</span>
+<span class="w">  </span><span class="nx">firstName</span><span class="p">,</span>
+<span class="w">  </span><span class="nx">lastName</span><span class="p">,</span>
+<span class="w">  </span><span class="nx">age</span><span class="p">,</span>
+<span class="w">  </span><span class="nx">country</span><span class="p">,</span>
+<span class="w">  </span><span class="nx">job</span><span class="p">,</span>
+<span class="w">  </span><span class="nx">skills</span><span class="p">,</span>
+<span class="w">  </span><span class="nx">languages</span>
+<span class="p">})</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">formattedSkills</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">skills</span><span class="p">.</span><span class="nx">slice</span><span class="p">(</span><span class="mf">0</span><span class="p">,</span><span class="w"> </span><span class="o">-</span><span class="mf">1</span><span class="p">).</span><span class="nx">join</span><span class="p">(</span><span class="s1">&#39;, &#39;</span><span class="p">)</span>
+<span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">formattedLanguages</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">languages</span><span class="p">.</span><span class="nx">slice</span><span class="p">(</span><span class="mf">0</span><span class="p">,</span><span class="w"> </span><span class="o">-</span><span class="mf">1</span><span class="p">).</span><span class="nx">join</span><span class="p">(</span><span class="s1">&#39;, &#39;</span><span class="p">)</span>
+
+<span class="w">  </span><span class="nx">personInfo</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="sb">`</span><span class="si">${</span><span class="nx">firstName</span><span class="si">}</span><span class="sb"> </span><span class="si">${</span><span class="nx">lastName</span><span class="si">}</span><span class="sb"> lives in </span><span class="si">${</span><span class="nx">country</span><span class="si">}</span><span class="sb">. He is </span><span class="si">${</span><span class="nx">age</span><span class="si">}</span><span class="sb"> years old. He is an </span><span class="si">${</span><span class="nx">job</span><span class="si">}</span><span class="sb">. He teaches </span><span class="si">${</span><span class="nx">formattedSkills</span><span class="si">}</span><span class="sb"> and </span><span class="si">${</span>
+<span class="w">    </span><span class="nx">skills</span><span class="p">[</span><span class="nx">skills</span><span class="p">.</span><span class="nx">length</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mf">1</span><span class="p">]</span>
+<span class="w">  </span><span class="si">}</span><span class="sb">. He speaks </span><span class="si">${</span><span class="nx">formattedLanguages</span><span class="si">}</span><span class="sb"> and a little bit of </span><span class="si">${</span><span class="nx">languages</span><span class="p">[</span><span class="mf">2</span><span class="p">]</span><span class="si">}</span><span class="sb">.`</span>
+
+<span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="nx">personInfo</span>
+<span class="p">}</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">getPersonInfo</span><span class="p">(</span><span class="nx">person</span><span class="p">))</span>
+<span class="cm">/*</span>
+<span class="cm">Asabeneh Yetayeh lives in Finland. He is  250 years old. He is an Instructor and Developer. He teaches HTML, CSS, JavaScript, React, Redux, Node, MongoDB, Python and D3.js. He speaks Amharic, English and a little bit of Suomi(Finnish)</span>
+<span class="cm">*/</span>
+</code></pre></div>
+<h3 id="destructuring-object-during-iteration">Destructuring object during iteration</h3>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">todoList</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span>
+<span class="p">{</span>
+<span class="w">  </span><span class="nx">task</span><span class="o">:</span><span class="s1">&#39;Prepare JS Test&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="nx">time</span><span class="o">:</span><span class="s1">&#39;4/1/2020 8:30&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="nx">completed</span><span class="o">:</span><span class="kc">true</span>
+<span class="p">},</span>
+<span class="p">{</span>
+<span class="w">  </span><span class="nx">task</span><span class="o">:</span><span class="s1">&#39;Give JS Test&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="nx">time</span><span class="o">:</span><span class="s1">&#39;4/1/2020 10:00&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="nx">completed</span><span class="o">:</span><span class="kc">false</span>
+<span class="p">},</span>
+<span class="p">{</span>
+<span class="w">  </span><span class="nx">task</span><span class="o">:</span><span class="s1">&#39;Assess Test Result&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="nx">time</span><span class="o">:</span><span class="s1">&#39;4/1/2020 1:00&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="nx">completed</span><span class="o">:</span><span class="kc">false</span>
+<span class="p">}</span>
+<span class="p">]</span>
+
+<span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kd">const</span><span class="w"> </span><span class="p">{</span><span class="nx">task</span><span class="p">,</span><span class="w"> </span><span class="nx">time</span><span class="p">,</span><span class="w"> </span><span class="nx">completed</span><span class="p">}</span><span class="w"> </span><span class="k">of</span><span class="w"> </span><span class="nx">todoList</span><span class="p">){</span>
+<span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">task</span><span class="p">,</span><span class="w"> </span><span class="nx">time</span><span class="p">,</span><span class="w"> </span><span class="nx">completed</span><span class="p">)</span>
+<span class="p">}</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>Prepare<span class="w"> </span>JS<span class="w"> </span>Test<span class="w"> </span><span class="m">4</span>/1/2020<span class="w"> </span><span class="m">8</span>:30<span class="w"> </span><span class="nb">true</span>
+Give<span class="w"> </span>JS<span class="w"> </span>Test<span class="w"> </span><span class="m">4</span>/1/2020<span class="w"> </span><span class="m">10</span>:00<span class="w"> </span><span class="nb">false</span>
+Assess<span class="w"> </span>Test<span class="w"> </span>Result<span class="w"> </span><span class="m">4</span>/1/2020<span class="w"> </span><span class="m">1</span>:00<span class="w"> </span><span class="nb">false</span>
+</code></pre></div>
+<h3 id="spread-or-rest-operator">Spread or Rest Operator</h3>
+<p>When we destructure an array we use the spread operator(...) to get the rest elements as array. In addition to that we use spread operator to spread array elements to another array.</p>
+<h3 id="spread-operator-to-get-the-rest-of-array-elements">Spread operator to get the rest of array elements</h3>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">nums</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="mf">1</span><span class="p">,</span><span class="w"> </span><span class="mf">2</span><span class="p">,</span><span class="w"> </span><span class="mf">3</span><span class="p">,</span><span class="w"> </span><span class="mf">4</span><span class="p">,</span><span class="w"> </span><span class="mf">5</span><span class="p">,</span><span class="w"> </span><span class="mf">6</span><span class="p">,</span><span class="w"> </span><span class="mf">7</span><span class="p">,</span><span class="w"> </span><span class="mf">8</span><span class="p">,</span><span class="w"> </span><span class="mf">9</span><span class="p">,</span><span class="w"> </span><span class="mf">10</span><span class="p">]</span>
+<span class="kd">let</span><span class="w"> </span><span class="p">[</span><span class="nx">num1</span><span class="p">,</span><span class="w"> </span><span class="nx">num2</span><span class="p">,</span><span class="w"> </span><span class="nx">num3</span><span class="p">,</span><span class="w"> </span><span class="p">...</span><span class="nx">rest</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">nums</span>
+<span class="err">​</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">num1</span><span class="p">,</span><span class="w"> </span><span class="nx">num2</span><span class="p">,</span><span class="w"> </span><span class="nx">num3</span><span class="p">)</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">rest</span><span class="p">)</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="m">1</span><span class="w"> </span><span class="m">2</span><span class="w"> </span><span class="m">3</span>
+<span class="o">[</span><span class="m">4</span>,<span class="w"> </span><span class="m">5</span>,<span class="w"> </span><span class="m">6</span>,<span class="w"> </span><span class="m">7</span>,<span class="w"> </span><span class="m">8</span>,<span class="w"> </span><span class="m">9</span>,<span class="w"> </span><span class="m">10</span><span class="o">]</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">countries</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span>
+<span class="w">  </span><span class="s1">&#39;Germany&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;France&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;Belgium&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;Finland&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;Sweden&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;Norway&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;Denmark&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;Iceland&#39;</span>
+<span class="p">]</span>
+
+<span class="kd">let</span><span class="w"> </span><span class="p">[</span><span class="nx">gem</span><span class="p">,</span><span class="w"> </span><span class="nx">fra</span><span class="p">,</span><span class="w"> </span><span class="p">,</span><span class="w"> </span><span class="p">...</span><span class="nx">nordicCountries</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">countries</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">gem</span><span class="p">)</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">fra</span><span class="p">)</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">nordicCountries</span><span class="p">)</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>Germany
+France
+<span class="o">[</span><span class="s2">&quot;Finland&quot;</span>,<span class="w"> </span><span class="s2">&quot;Sweden&quot;</span>,<span class="w"> </span><span class="s2">&quot;Norway&quot;</span>,<span class="w"> </span><span class="s2">&quot;Denmark&quot;</span>,<span class="w"> </span><span class="s2">&quot;Iceland&quot;</span><span class="o">]</span>
+</code></pre></div>
+<h3 id="spread-operator-to-copy-array">Spread operator to copy array</h3>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">evens</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="mf">0</span><span class="p">,</span><span class="w"> </span><span class="mf">2</span><span class="p">,</span><span class="w"> </span><span class="mf">4</span><span class="p">,</span><span class="w"> </span><span class="mf">6</span><span class="p">,</span><span class="w"> </span><span class="mf">8</span><span class="p">,</span><span class="w"> </span><span class="mf">10</span><span class="p">]</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">evenNumbers</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[...</span><span class="nx">evens</span><span class="p">]</span>
+
+<span class="kd">const</span><span class="w"> </span><span class="nx">odds</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="mf">1</span><span class="p">,</span><span class="w"> </span><span class="mf">3</span><span class="p">,</span><span class="w"> </span><span class="mf">5</span><span class="p">,</span><span class="w"> </span><span class="mf">7</span><span class="p">,</span><span class="w"> </span><span class="mf">9</span><span class="p">]</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">oddNumbers</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[...</span><span class="nx">odds</span><span class="p">]</span>
+
+<span class="kd">const</span><span class="w"> </span><span class="nx">wholeNumbers</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[...</span><span class="nx">evens</span><span class="p">,</span><span class="w"> </span><span class="p">...</span><span class="nx">odds</span><span class="p">]</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">evenNumbers</span><span class="p">)</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">oddNumbers</span><span class="p">)</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">wholeNumbers</span><span class="p">)</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="o">[</span><span class="m">0</span>,<span class="w"> </span><span class="m">2</span>,<span class="w"> </span><span class="m">4</span>,<span class="w"> </span><span class="m">6</span>,<span class="w"> </span><span class="m">8</span>,<span class="w"> </span><span class="m">10</span><span class="o">]</span>
+<span class="o">[</span><span class="m">1</span>,<span class="w"> </span><span class="m">3</span>,<span class="w"> </span><span class="m">5</span>,<span class="w"> </span><span class="m">7</span>,<span class="w"> </span><span class="m">9</span><span class="o">]</span>
+<span class="o">[</span><span class="m">0</span>,<span class="w"> </span><span class="m">2</span>,<span class="w"> </span><span class="m">4</span>,<span class="w"> </span><span class="m">6</span>,<span class="w"> </span><span class="m">8</span>,<span class="w"> </span><span class="m">10</span>,<span class="w"> </span><span class="m">1</span>,<span class="w"> </span><span class="m">3</span>,<span class="w"> </span><span class="m">5</span>,<span class="w"> </span><span class="m">7</span>,<span class="w"> </span><span class="m">9</span><span class="o">]</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">frontEnd</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s1">&#39;HTML&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;CSS&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;JS&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;React&#39;</span><span class="p">]</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">backEnd</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s1">&#39;Node&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Express&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;MongoDB&#39;</span><span class="p">]</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">fullStack</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[...</span><span class="nx">frontEnd</span><span class="p">,</span><span class="w"> </span><span class="p">...</span><span class="nx">backEnd</span><span class="p">]</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">fullStack</span><span class="p">)</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="o">[</span><span class="s2">&quot;HTML&quot;</span>,<span class="w"> </span><span class="s2">&quot;CSS&quot;</span>,<span class="w"> </span><span class="s2">&quot;JS&quot;</span>,<span class="w"> </span><span class="s2">&quot;React&quot;</span>,<span class="w"> </span><span class="s2">&quot;Node&quot;</span>,<span class="w"> </span><span class="s2">&quot;Express&quot;</span>,<span class="w"> </span><span class="s2">&quot;MongoDB&quot;</span><span class="o">]</span>
+</code></pre></div>
+<h3 id="spread-operator-to-copy-object">Spread operator to copy object</h3>
+<p>We can copy an object using a spread operator</p>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">user</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="nx">name</span><span class="o">:</span><span class="s1">&#39;Asabeneh&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="nx">title</span><span class="o">:</span><span class="s1">&#39;Programmer&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="nx">country</span><span class="o">:</span><span class="s1">&#39;Finland&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="nx">city</span><span class="o">:</span><span class="s1">&#39;Helsinki&#39;</span>
+<span class="p">}</span>
+
+<span class="kd">const</span><span class="w"> </span><span class="nx">copiedUser</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{...</span><span class="nx">user</span><span class="p">}</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">copiedUser</span><span class="p">)</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="o">{</span>name:<span class="w"> </span><span class="s2">&quot;Asabeneh&quot;</span>,<span class="w"> </span>title:<span class="w"> </span><span class="s2">&quot;Programmer&quot;</span>,<span class="w"> </span>country:<span class="w"> </span><span class="s2">&quot;Finland&quot;</span>,<span class="w"> </span>city:<span class="w"> </span><span class="s2">&quot;Helsinki&quot;</span><span class="o">}</span>
+</code></pre></div>
+<p>Modifying or changing the object while copying</p>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">user</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="nx">name</span><span class="o">:</span><span class="s1">&#39;Asabeneh&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="nx">title</span><span class="o">:</span><span class="s1">&#39;Programmer&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="nx">country</span><span class="o">:</span><span class="s1">&#39;Finland&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="nx">city</span><span class="o">:</span><span class="s1">&#39;Helsinki&#39;</span>
+<span class="p">}</span>
+
+<span class="kd">const</span><span class="w"> </span><span class="nx">copiedUser</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{...</span><span class="nx">user</span><span class="p">,</span><span class="w"> </span><span class="nx">title</span><span class="o">:</span><span class="s1">&#39;instructor&#39;</span><span class="p">}</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">copiedUser</span><span class="p">)</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="o">{</span>name:<span class="w"> </span><span class="s2">&quot;Asabeneh&quot;</span>,<span class="w"> </span>title:<span class="w"> </span><span class="s2">&quot;instructor&quot;</span>,<span class="w"> </span>country:<span class="w"> </span><span class="s2">&quot;Finland&quot;</span>,<span class="w"> </span>city:<span class="w"> </span><span class="s2">&quot;Helsinki&quot;</span><span class="o">}</span>
+</code></pre></div>
+<h4 id="spread-operator-with-arrow-function">Spread operator with arrow function</h4>
+<p>Whenever we like to write an arrow function which takes unlimited number of arguments we use a spread operator. If we use a spread operator as a parameter, the argument passed when we invoke a function will change to an array.</p>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">sumAllNums</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(...</span><span class="nx">args</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">args</span><span class="p">)</span>
+<span class="p">}</span>
+
+<span class="nx">sumAllNums</span><span class="p">(</span><span class="mf">1</span><span class="p">,</span><span class="w"> </span><span class="mf">2</span><span class="p">,</span><span class="w"> </span><span class="mf">3</span><span class="p">,</span><span class="w"> </span><span class="mf">4</span><span class="p">,</span><span class="w"> </span><span class="mf">5</span><span class="p">)</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="o">[</span><span class="m">1</span>,<span class="w"> </span><span class="m">2</span>,<span class="w"> </span><span class="m">3</span>,<span class="w"> </span><span class="m">4</span>,<span class="w"> </span><span class="m">5</span><span class="o">]</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">sumAllNums</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(...</span><span class="nx">args</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="kd">let</span><span class="w"> </span><span class="nx">sum</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0</span>
+<span class="w">  </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kd">const</span><span class="w"> </span><span class="nx">num</span><span class="w"> </span><span class="k">of</span><span class="w"> </span><span class="nx">args</span><span class="p">){</span>
+<span class="w">    </span><span class="nx">sum</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="nx">num</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="nx">sum</span>
+
+<span class="p">}</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">sumAllNums</span><span class="p">(</span><span class="mf">1</span><span class="p">,</span><span class="w"> </span><span class="mf">2</span><span class="p">,</span><span class="w"> </span><span class="mf">3</span><span class="p">,</span><span class="w"> </span><span class="mf">4</span><span class="p">,</span><span class="w"> </span><span class="mf">5</span><span class="p">))</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="m">15</span>
+</code></pre></div>
+<p>🌕 You achieved quite a lot so far. Now, your level of JavaScript is upper intermediate. Keep going! You have just completed day 11 challenges and you are 11 steps a head in to your way to greatness. Now do some exercises for your brain and for your muscle.</p>
+<h2 id="exercises">Exercises</h2>
+<h3 id="exercises-level-1">Exercises: Level 1</h3>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">constants</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="mf">2.72</span><span class="p">,</span><span class="w"> </span><span class="mf">3.14</span><span class="p">,</span><span class="w"> </span><span class="mf">9.81</span><span class="p">,</span><span class="w"> </span><span class="mf">37</span><span class="p">,</span><span class="w"> </span><span class="mf">100</span><span class="p">]</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">countries</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s1">&#39;Finland&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Estonia&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Sweden&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Denmark&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Norway&#39;</span><span class="p">]</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">rectangle</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="nx">width</span><span class="o">:</span><span class="w"> </span><span class="mf">20</span><span class="p">,</span>
+<span class="w">  </span><span class="nx">height</span><span class="o">:</span><span class="w"> </span><span class="mf">10</span><span class="p">,</span>
+<span class="w">  </span><span class="nx">area</span><span class="o">:</span><span class="w"> </span><span class="mf">200</span><span class="p">,</span>
+<span class="w">  </span><span class="nx">perimeter</span><span class="o">:</span><span class="w"> </span><span class="mf">60</span>
+<span class="p">}</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">users</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span>
+<span class="p">{</span>
+<span class="w">  </span><span class="nx">name</span><span class="o">:</span><span class="s1">&#39;Brook&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="nx">scores</span><span class="o">:</span><span class="mf">75</span><span class="p">,</span>
+<span class="w">  </span><span class="nx">skills</span><span class="o">:</span><span class="p">[</span><span class="s1">&#39;HTM&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;CSS&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;JS&#39;</span><span class="p">],</span>
+<span class="w">  </span><span class="nx">age</span><span class="o">:</span><span class="mf">16</span>
+<span class="p">},</span>
+<span class="p">{</span>
+<span class="w">  </span><span class="nx">name</span><span class="o">:</span><span class="s1">&#39;Alex&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="nx">scores</span><span class="o">:</span><span class="mf">80</span><span class="p">,</span>
+<span class="w">  </span><span class="nx">skills</span><span class="o">:</span><span class="p">[</span><span class="s1">&#39;HTM&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;CSS&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;JS&#39;</span><span class="p">],</span>
+<span class="w">  </span><span class="nx">age</span><span class="o">:</span><span class="mf">18</span>
+<span class="p">},</span>
+<span class="p">{</span>
+<span class="w">  </span><span class="nx">name</span><span class="o">:</span><span class="s1">&#39;David&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="nx">scores</span><span class="o">:</span><span class="mf">75</span><span class="p">,</span>
+<span class="w">  </span><span class="nx">skills</span><span class="o">:</span><span class="p">[</span><span class="s1">&#39;HTM&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;CSS&#39;</span><span class="p">],</span>
+<span class="w">  </span><span class="nx">age</span><span class="o">:</span><span class="mf">22</span>
+<span class="p">},</span>
+<span class="p">{</span>
+<span class="w">  </span><span class="nx">name</span><span class="o">:</span><span class="s1">&#39;John&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="nx">scores</span><span class="o">:</span><span class="mf">85</span><span class="p">,</span>
+<span class="w">  </span><span class="nx">skills</span><span class="o">:</span><span class="p">[</span><span class="s1">&#39;HTML&#39;</span><span class="p">],</span>
+<span class="w">  </span><span class="nx">age</span><span class="o">:</span><span class="mf">25</span>
+<span class="p">},</span>
+<span class="p">{</span>
+<span class="w">  </span><span class="nx">name</span><span class="o">:</span><span class="s1">&#39;Sara&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="nx">scores</span><span class="o">:</span><span class="mf">95</span><span class="p">,</span>
+<span class="w">  </span><span class="nx">skills</span><span class="o">:</span><span class="p">[</span><span class="s1">&#39;HTM&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;CSS&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;JS&#39;</span><span class="p">],</span>
+<span class="w">  </span><span class="nx">age</span><span class="o">:</span><span class="w"> </span><span class="mf">26</span>
+<span class="p">},</span>
+<span class="p">{</span>
+<span class="w">  </span><span class="nx">name</span><span class="o">:</span><span class="s1">&#39;Martha&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="nx">scores</span><span class="o">:</span><span class="mf">80</span><span class="p">,</span>
+<span class="w">  </span><span class="nx">skills</span><span class="o">:</span><span class="p">[</span><span class="s1">&#39;HTM&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;CSS&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;JS&#39;</span><span class="p">],</span>
+<span class="w">  </span><span class="nx">age</span><span class="o">:</span><span class="mf">18</span>
+<span class="p">},</span>
+<span class="p">{</span>
+<span class="w">  </span><span class="nx">name</span><span class="o">:</span><span class="s1">&#39;Thomas&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="nx">scores</span><span class="o">:</span><span class="mf">90</span><span class="p">,</span>
+<span class="w">  </span><span class="nx">skills</span><span class="o">:</span><span class="p">[</span><span class="s1">&#39;HTM&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;CSS&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;JS&#39;</span><span class="p">],</span>
+<span class="w">  </span><span class="nx">age</span><span class="o">:</span><span class="mf">20</span>
+<span class="p">}</span>
+<span class="p">]</span>
+</code></pre></div>
+<ol>
+<li>Destructure and assign the elements of constants array to e, pi, gravity, humanBodyTemp, waterBoilingTemp.</li>
+<li>Destructure and assign the elements of countries array to fin, est, sw, den, nor</li>
+<li>Destructure the rectangle object by its properties or keys.</li>
+</ol>
+<h3 id="exercises-level-2">Exercises: Level 2</h3>
+<ol>
+<li>Iterate through the users array and get all the keys of the object using destructuring</li>
+<li>Find the persons who have less than two skills</li>
+</ol>
+<h3 id="exercises-level-3">Exercises: Level 3</h3>
+<ol>
+<li>Destructure the countries object print name, capital, population and languages of all countries</li>
+<li>A junior developer structure student name, skills and score in array of arrays which may not easy to read. Destructure the following array name to name, skills array to skills, scores array to scores, JavaScript score to jsScore and React score to reactScore variable in one line.</li>
+</ol>
+<div class="highlight"><pre><span></span><code><span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">student</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s1">&#39;David&#39;</span><span class="p">,</span><span class="w"> </span><span class="p">[</span><span class="s1">&#39;HTM&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;CSS&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;JS&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;React&#39;</span><span class="p">],</span><span class="w"> </span><span class="p">[</span><span class="mf">98</span><span class="p">,</span><span class="w"> </span><span class="mf">85</span><span class="p">,</span><span class="w"> </span><span class="mf">90</span><span class="p">,</span><span class="w"> </span><span class="mf">95</span><span class="p">]]</span>
+<span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">name</span><span class="p">,</span><span class="w"> </span><span class="nx">skills</span><span class="p">,</span><span class="w"> </span><span class="nx">jsScore</span><span class="p">,</span><span class="w"> </span><span class="nx">reactScore</span><span class="p">)</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>David<span class="w"> </span><span class="o">(</span><span class="m">4</span><span class="o">)</span><span class="w"> </span><span class="o">[</span><span class="s2">&quot;HTM&quot;</span>,<span class="w"> </span><span class="s2">&quot;CSS&quot;</span>,<span class="w"> </span><span class="s2">&quot;JS&quot;</span>,<span class="w"> </span><span class="s2">&quot;React&quot;</span><span class="o">]</span><span class="w"> </span><span class="m">90</span><span class="w"> </span><span class="m">95</span>
+</code></pre></div>
+<ol>
+<li>Write a function called <em>convertArrayToObject</em> which can convert the array to a structure object.</li>
+</ol>
+<div class="highlight"><pre><span></span><code><span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">students</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span>
+<span class="w">        </span><span class="p">[</span><span class="s1">&#39;David&#39;</span><span class="p">,</span><span class="w"> </span><span class="p">[</span><span class="s1">&#39;HTM&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;CSS&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;JS&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;React&#39;</span><span class="p">],</span><span class="w"> </span><span class="p">[</span><span class="mf">98</span><span class="p">,</span><span class="w"> </span><span class="mf">85</span><span class="p">,</span><span class="w"> </span><span class="mf">90</span><span class="p">,</span><span class="w"> </span><span class="mf">95</span><span class="p">]],</span>
+<span class="w">        </span><span class="p">[</span><span class="s1">&#39;John&#39;</span><span class="p">,</span><span class="w"> </span><span class="p">[</span><span class="s1">&#39;HTM&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;CSS&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;JS&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;React&#39;</span><span class="p">],</span><span class="w"> </span><span class="p">[</span><span class="mf">85</span><span class="p">,</span><span class="w"> </span><span class="mf">80</span><span class="p">,</span><span class="w"> </span><span class="mf">85</span><span class="p">,</span><span class="w"> </span><span class="mf">80</span><span class="p">]]</span>
+<span class="w">      </span><span class="p">]</span>
+
+<span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">convertArrayToObject</span><span class="p">(</span><span class="nx">students</span><span class="p">))</span>
+<span class="w">    </span><span class="p">[</span>
+<span class="w">      </span><span class="p">{</span>
+<span class="w">        </span><span class="nx">name</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;David&#39;</span><span class="p">,</span>
+<span class="w">        </span><span class="nx">skills</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="s1">&#39;HTM&#39;</span><span class="p">,</span><span class="s1">&#39;CSS&#39;</span><span class="p">,</span><span class="s1">&#39;JS&#39;</span><span class="p">,</span><span class="s1">&#39;React&#39;</span><span class="p">],</span>
+<span class="w">        </span><span class="nx">scores</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="mf">98</span><span class="p">,</span><span class="mf">85</span><span class="p">,</span><span class="mf">90</span><span class="p">,</span><span class="mf">95</span><span class="p">]</span>
+<span class="w">      </span><span class="p">},</span>
+<span class="w">      </span><span class="p">{</span>
+<span class="w">        </span><span class="nx">name</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;John&#39;</span><span class="p">,</span>
+<span class="w">        </span><span class="nx">skills</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="s1">&#39;HTM&#39;</span><span class="p">,</span><span class="s1">&#39;CSS&#39;</span><span class="p">,</span><span class="s1">&#39;JS&#39;</span><span class="p">,</span><span class="s1">&#39;React&#39;</span><span class="p">],</span>
+<span class="w">        </span><span class="nx">scores</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="mf">85</span><span class="p">,</span><span class="w"> </span><span class="mf">80</span><span class="p">,</span><span class="mf">85</span><span class="p">,</span><span class="mf">80</span><span class="p">]</span>
+<span class="w">      </span><span class="p">}</span>
+<span class="w">    </span><span class="p">]</span>
+</code></pre></div>
+<ol>
+<li>
+<p>Copy the student object to newStudent without mutating the original object. In the new object add the following ?</p>
+</li>
+<li>
+<p>Add Bootstrap with level 8 to the front end skill sets</p>
+</li>
+<li>Add Express with level 9 to the back end skill sets</li>
+<li>Add SQL with level 8 to the data base skill sets</li>
+<li>Add SQL without level to the data science skill sets</li>
+</ol>
+<div class="highlight"><pre><span></span><code><span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">student</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="nx">name</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;David&#39;</span><span class="p">,</span>
+<span class="w">      </span><span class="nx">age</span><span class="o">:</span><span class="w"> </span><span class="mf">25</span><span class="p">,</span>
+<span class="w">      </span><span class="nx">skills</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nx">frontEnd</span><span class="o">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">          </span><span class="p">{</span><span class="w"> </span><span class="nx">skill</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;HTML&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">level</span><span class="o">:</span><span class="w"> </span><span class="mf">10</span><span class="w"> </span><span class="p">},</span>
+<span class="w">          </span><span class="p">{</span><span class="w"> </span><span class="nx">skill</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;CSS&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">level</span><span class="o">:</span><span class="w"> </span><span class="mf">8</span><span class="w"> </span><span class="p">},</span>
+<span class="w">          </span><span class="p">{</span><span class="w"> </span><span class="nx">skill</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;JS&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">level</span><span class="o">:</span><span class="w"> </span><span class="mf">8</span><span class="w"> </span><span class="p">},</span>
+<span class="w">          </span><span class="p">{</span><span class="w"> </span><span class="nx">skill</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;React&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">level</span><span class="o">:</span><span class="w"> </span><span class="mf">9</span><span class="w"> </span><span class="p">}</span>
+<span class="w">        </span><span class="p">],</span>
+<span class="w">        </span><span class="nx">backEnd</span><span class="o">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">          </span><span class="p">{</span><span class="w"> </span><span class="nx">skill</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;Node&#39;</span><span class="p">,</span><span class="nx">level</span><span class="o">:</span><span class="w"> </span><span class="mf">7</span><span class="w"> </span><span class="p">},</span>
+<span class="w">          </span><span class="p">{</span><span class="w"> </span><span class="nx">skill</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;GraphQL&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">level</span><span class="o">:</span><span class="w"> </span><span class="mf">8</span><span class="w"> </span><span class="p">},</span>
+<span class="w">        </span><span class="p">],</span>
+<span class="w">        </span><span class="nx">dataBase</span><span class="o">:</span><span class="p">[</span>
+<span class="w">          </span><span class="p">{</span><span class="w"> </span><span class="nx">skill</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;MongoDB&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">level</span><span class="o">:</span><span class="w"> </span><span class="mf">7.5</span><span class="w"> </span><span class="p">},</span>
+<span class="w">        </span><span class="p">],</span>
+<span class="w">        </span><span class="nx">dataScience</span><span class="o">:</span><span class="p">[</span><span class="s1">&#39;Python&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;R&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;D3.js&#39;</span><span class="p">]</span>
+<span class="w">      </span><span class="p">}</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">  </span><span class="sb">```</span>
+
+<span class="sb"> The copied object output should look like this:</span>
+
+<span class="sb">```</span><span class="nx">js</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">name</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;David&#39;</span><span class="p">,</span>
+<span class="w">    </span><span class="nx">age</span><span class="o">:</span><span class="w"> </span><span class="mf">25</span><span class="p">,</span>
+<span class="w">    </span><span class="nx">skills</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="nx">frontEnd</span><span class="o">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">        </span><span class="p">{</span><span class="nx">skill</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;HTML&#39;</span><span class="p">,</span><span class="nx">level</span><span class="o">:</span><span class="w"> </span><span class="mf">10</span><span class="p">},</span>
+<span class="w">        </span><span class="p">{</span><span class="nx">skill</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;CSS&#39;</span><span class="p">,</span><span class="nx">level</span><span class="o">:</span><span class="w"> </span><span class="mf">8</span><span class="p">},</span>
+<span class="w">        </span><span class="p">{</span><span class="nx">skill</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;JS&#39;</span><span class="p">,</span><span class="nx">level</span><span class="o">:</span><span class="w"> </span><span class="mf">8</span><span class="p">},</span>
+<span class="w">        </span><span class="p">{</span><span class="nx">skill</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;React&#39;</span><span class="p">,</span><span class="nx">level</span><span class="o">:</span><span class="w"> </span><span class="mf">9</span><span class="p">},</span>
+<span class="w">        </span><span class="p">{</span><span class="nx">skill</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;BootStrap&#39;</span><span class="p">,</span><span class="nx">level</span><span class="o">:</span><span class="w"> </span><span class="mf">8</span><span class="p">}</span>
+<span class="w">      </span><span class="p">],</span>
+<span class="w">      </span><span class="nx">backEnd</span><span class="o">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">        </span><span class="p">{</span><span class="nx">skill</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;Node&#39;</span><span class="p">,</span><span class="nx">level</span><span class="o">:</span><span class="w"> </span><span class="mf">7</span><span class="p">},</span>
+<span class="w">        </span><span class="p">{</span><span class="nx">skill</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;GraphQL&#39;</span><span class="p">,</span><span class="nx">level</span><span class="o">:</span><span class="w"> </span><span class="mf">8</span><span class="p">},</span>
+<span class="w">        </span><span class="p">{</span><span class="nx">skill</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;Express&#39;</span><span class="p">,</span><span class="nx">level</span><span class="o">:</span><span class="w"> </span><span class="mf">9</span><span class="p">}</span>
+<span class="w">      </span><span class="p">],</span>
+<span class="w">      </span><span class="nx">dataBase</span><span class="o">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">        </span><span class="p">{</span><span class="w"> </span><span class="nx">skill</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;MongoDB&#39;</span><span class="p">,</span><span class="nx">level</span><span class="o">:</span><span class="w"> </span><span class="mf">7.5</span><span class="p">},</span>
+<span class="w">        </span><span class="p">{</span><span class="w"> </span><span class="nx">skill</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;SQL&#39;</span><span class="p">,</span><span class="nx">level</span><span class="o">:</span><span class="w"> </span><span class="mf">8</span><span class="p">}</span>
+<span class="w">      </span><span class="p">],</span>
+<span class="w">      </span><span class="nx">dataScience</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="s1">&#39;Python&#39;</span><span class="p">,</span><span class="s1">&#39;R&#39;</span><span class="p">,</span><span class="s1">&#39;D3.js&#39;</span><span class="p">,</span><span class="s1">&#39;SQL&#39;</span><span class="p">]</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">  </span><span class="p">}</span>
+</code></pre></div>
+<p>🎉 CONGRATULATIONS ! 🎉</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.d7c377c4.min.js"></script>
+      
+    
+  </body>
+</html>

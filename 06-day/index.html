@@ -1,0 +1,1579 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../05-day/">
+      
+      
+        <link rel="next" href="../07-day/">
+      
+      
+      <link rel="icon" href="../images/javascript.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.2">
+    
+    
+      
+        <title>📔 Day 6 - 30 Days Javascript</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.50c56a3b.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="amber" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#day-6" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="30 Days Javascript" class="md-header__button md-logo" aria-label="30 Days Javascript" data-md-component="logo">
+      
+  <img src="../images/javascript.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            30 Days Javascript
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              📔 Day 6
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/devinesia/30-days-javascript-web" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="30 Days Javascript" class="md-nav__button md-logo" aria-label="30 Days Javascript" data-md-component="logo">
+      
+  <img src="../images/javascript.png" alt="logo">
+
+    </a>
+    30 Days Javascript
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/devinesia/30-days-javascript-web" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Getting started
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01-day/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    📔 Day 1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02-day/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    📔 Day 2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03-day/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    📔 Day 3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04-day/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    📔 Day 4
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../05-day/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    📔 Day 5
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    📔 Day 6
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    📔 Day 6
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#loops" class="md-nav__link">
+    <span class="md-ellipsis">
+      Loops
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Loops">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#for-loop" class="md-nav__link">
+    <span class="md-ellipsis">
+      for Loop
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#while-loop" class="md-nav__link">
+    <span class="md-ellipsis">
+      while loop
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#do-while-loop" class="md-nav__link">
+    <span class="md-ellipsis">
+      do while loop
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#for-of-loop" class="md-nav__link">
+    <span class="md-ellipsis">
+      for of loop
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#break" class="md-nav__link">
+    <span class="md-ellipsis">
+      break
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#continue" class="md-nav__link">
+    <span class="md-ellipsis">
+      continue
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercisesday-6" class="md-nav__link">
+    <span class="md-ellipsis">
+      💻 Exercises:Day 6
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="💻 Exercises:Day 6">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#exercises-level-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exercises: Level 1
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exercises-level-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exercises: Level 2
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exercises-level-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exercises: Level 3
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../07-day/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    📔 Day 7
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../08-day/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    📔 Day 8
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../09-day/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    📔 Day 9
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../10-day/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    📔 Day 10
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../11-day/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    📘 Day 11
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../12-day/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    📘 Day 12
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../13-day/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    📘 Day 13
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../14-day/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    📘 Day 14
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../15-day/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    📘 Day 15
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../16-day/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    📘 Day 16
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../17-day/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    📘 Day 17
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../18-day/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    📘 Day 18
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../19-day/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    📘 Day 19
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20-day/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    📘 Day 20
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../21-day/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    📙 Day 21
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../22-day/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    📙 Day 22
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../23-day/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    📙 Day 23
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../24-day/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    📙 Day 24
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../25-day/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    📙 Day 25
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../26-day/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    📙 Day 26
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../27-day/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    📙 Day 27
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../28-day/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    📙 Day 28
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../29-day/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    📙 Day 29
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../30-day/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    📙 Day 30
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#loops" class="md-nav__link">
+    <span class="md-ellipsis">
+      Loops
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Loops">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#for-loop" class="md-nav__link">
+    <span class="md-ellipsis">
+      for Loop
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#while-loop" class="md-nav__link">
+    <span class="md-ellipsis">
+      while loop
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#do-while-loop" class="md-nav__link">
+    <span class="md-ellipsis">
+      do while loop
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#for-of-loop" class="md-nav__link">
+    <span class="md-ellipsis">
+      for of loop
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#break" class="md-nav__link">
+    <span class="md-ellipsis">
+      break
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#continue" class="md-nav__link">
+    <span class="md-ellipsis">
+      continue
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercisesday-6" class="md-nav__link">
+    <span class="md-ellipsis">
+      💻 Exercises:Day 6
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="💻 Exercises:Day 6">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#exercises-level-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exercises: Level 1
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exercises-level-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exercises: Level 2
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exercises-level-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exercises: Level 3
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<h1 id="day-6">📔 Day 6</h1>
+<h2 id="loops">Loops</h2>
+<p>Most of the activities we do in life are full of repetitions. Imagine if I ask you to print out from 0 to 100 using console.log(). To implement this simple task it may take you 2 to 5 minutes, such kind of tedious and repetitive task can be carried out using loop. If you prefer watching the videos, you can checkout the <a href="https://www.youtube.com/channel/UCM4xOopkYiPwJqyKsSqL9mw">video tutorials</a></p>
+<p>In programming languages to carry out repetitive task we use different kinds of loops. The following examples are the commonly used loops in JavaScript and other programming languages.</p>
+<h3 id="for-loop">for Loop</h3>
+<div class="highlight"><pre><span></span><code><span class="c1">// For loop structure</span>
+<span class="k">for</span><span class="p">(</span><span class="nx">initialization</span><span class="p">,</span><span class="w"> </span><span class="nx">condition</span><span class="p">,</span><span class="w"> </span><span class="nx">increment</span><span class="o">/</span><span class="nx">decrement</span><span class="p">){</span>
+<span class="w">  </span><span class="c1">// code goes here</span>
+<span class="p">}</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="k">for</span><span class="p">(</span><span class="kd">let</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="mf">5</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="o">++</span><span class="p">){</span>
+<span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">i</span><span class="p">)</span>
+<span class="p">}</span>
+
+<span class="c1">// 0 1 2 3 4 5</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="k">for</span><span class="p">(</span><span class="kd">let</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">5</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="mf">0</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="o">--</span><span class="p">){</span>
+<span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">i</span><span class="p">)</span>
+<span class="p">}</span>
+
+<span class="c1">// 5 4 3 2 1 0</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="k">for</span><span class="p">(</span><span class="kd">let</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="mf">5</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="o">++</span><span class="p">){</span>
+<span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="sb">`</span><span class="si">${</span><span class="nx">i</span><span class="si">}</span><span class="sb"> * </span><span class="si">${</span><span class="nx">i</span><span class="si">}</span><span class="sb"> = </span><span class="si">${</span><span class="nx">i</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="nx">i</span><span class="si">}</span><span class="sb">`</span><span class="p">)</span>
+<span class="p">}</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="m">0</span><span class="w"> </span>*<span class="w"> </span><span class="nv">0</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">0</span>
+<span class="m">1</span><span class="w"> </span>*<span class="w"> </span><span class="nv">1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">1</span>
+<span class="m">2</span><span class="w"> </span>*<span class="w"> </span><span class="nv">2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">4</span>
+<span class="m">3</span><span class="w"> </span>*<span class="w"> </span><span class="nv">3</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">9</span>
+<span class="m">4</span><span class="w"> </span>*<span class="w"> </span><span class="nv">4</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">16</span>
+<span class="m">5</span><span class="w"> </span>*<span class="w"> </span><span class="nv">5</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">25</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">countries</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s1">&#39;Finland&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Sweden&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Denmark&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Norway&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Iceland&#39;</span><span class="p">]</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">newArr</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[]</span>
+<span class="k">for</span><span class="p">(</span><span class="kd">let</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="nx">countries</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="o">++</span><span class="p">){</span>
+<span class="w">  </span><span class="nx">newArr</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">countries</span><span class="p">[</span><span class="nx">i</span><span class="p">].</span><span class="nx">toUpperCase</span><span class="p">())</span>
+<span class="p">}</span>
+
+<span class="c1">// [&quot;FINLAND&quot;, &quot;SWEDEN&quot;, &quot;DENMARK&quot;, &quot;NORWAY&quot;, &quot;ICELAND&quot;]</span>
+</code></pre></div>
+<p>Adding all elements in the array</p>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">numbers</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="mf">1</span><span class="p">,</span><span class="w"> </span><span class="mf">2</span><span class="p">,</span><span class="w"> </span><span class="mf">3</span><span class="p">,</span><span class="w"> </span><span class="mf">4</span><span class="p">,</span><span class="w"> </span><span class="mf">5</span><span class="p">]</span>
+<span class="kd">let</span><span class="w"> </span><span class="nx">sum</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0</span>
+<span class="k">for</span><span class="p">(</span><span class="kd">let</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="nx">numbers</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="o">++</span><span class="p">){</span>
+<span class="w">  </span><span class="nx">sum</span><span class="w">  </span><span class="o">=</span><span class="w"> </span><span class="nx">sum</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">numbers</span><span class="p">[</span><span class="nx">i</span><span class="p">]</span><span class="w">  </span><span class="c1">// can be shorten, sum += numbers[i]</span>
+
+<span class="p">}</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">sum</span><span class="p">)</span><span class="w">  </span><span class="c1">// 15</span>
+</code></pre></div>
+<p>Creating a new array based on the existing array</p>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">numbers</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="mf">1</span><span class="p">,</span><span class="w"> </span><span class="mf">2</span><span class="p">,</span><span class="w"> </span><span class="mf">3</span><span class="p">,</span><span class="w"> </span><span class="mf">4</span><span class="p">,</span><span class="w"> </span><span class="mf">5</span><span class="p">]</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">newArr</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[]</span>
+<span class="kd">let</span><span class="w"> </span><span class="nx">sum</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0</span>
+<span class="k">for</span><span class="p">(</span><span class="kd">let</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="nx">numbers</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="o">++</span><span class="p">){</span>
+<span class="w">  </span><span class="nx">newArr</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="w"> </span><span class="nx">numbers</span><span class="p">[</span><span class="nx">i</span><span class="p">]</span><span class="w"> </span><span class="o">**</span><span class="w"> </span><span class="mf">2</span><span class="p">)</span>
+
+<span class="p">}</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">newArr</span><span class="p">)</span><span class="w">  </span><span class="c1">// [1, 4, 9, 16, 25]</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">countries</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s1">&#39;Finland&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Sweden&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Norway&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Denmark&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Iceland&#39;</span><span class="p">]</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">newArr</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[]</span>
+<span class="k">for</span><span class="p">(</span><span class="kd">let</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="nx">countries</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="o">++</span><span class="p">){</span>
+<span class="w">  </span><span class="nx">newArr</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">countries</span><span class="p">[</span><span class="nx">i</span><span class="p">].</span><span class="nx">toUpperCase</span><span class="p">())</span>
+<span class="p">}</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">newArr</span><span class="p">)</span><span class="w">  </span><span class="c1">// [&quot;FINLAND&quot;, &quot;SWEDEN&quot;, &quot;NORWAY&quot;, &quot;DENMARK&quot;, &quot;ICELAND&quot;]</span>
+</code></pre></div>
+<h3 id="while-loop">while loop</h3>
+<div class="highlight"><pre><span></span><code><span class="kd">let</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0</span>
+<span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="nx">i</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="mf">5</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">i</span><span class="p">)</span>
+<span class="w">  </span><span class="nx">i</span><span class="o">++</span>
+<span class="p">}</span>
+
+<span class="c1">// 0 1 2 3 4 5</span>
+</code></pre></div>
+<h3 id="do-while-loop">do while loop</h3>
+<div class="highlight"><pre><span></span><code><span class="kd">let</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0</span>
+<span class="k">do</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">i</span><span class="p">)</span>
+<span class="w">  </span><span class="nx">i</span><span class="o">++</span>
+<span class="p">}</span><span class="w"> </span><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="nx">i</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="mf">5</span><span class="p">)</span>
+
+<span class="c1">// 0 1 2 3 4 5</span>
+</code></pre></div>
+<h3 id="for-of-loop">for of loop</h3>
+<p>We use for of loop for arrays. It is very hand way to iterate through an array if we are not interested in the index of each element in the array.</p>
+<div class="highlight"><pre><span></span><code><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kd">const</span><span class="w"> </span><span class="nx">element</span><span class="w"> </span><span class="k">of</span><span class="w"> </span><span class="nx">arr</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="c1">// code goes here</span>
+<span class="p">}</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">numbers</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="mf">1</span><span class="p">,</span><span class="w"> </span><span class="mf">2</span><span class="p">,</span><span class="w"> </span><span class="mf">3</span><span class="p">,</span><span class="w"> </span><span class="mf">4</span><span class="p">,</span><span class="w"> </span><span class="mf">5</span><span class="p">]</span>
+
+<span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kd">const</span><span class="w"> </span><span class="nx">num</span><span class="w"> </span><span class="k">of</span><span class="w"> </span><span class="nx">numbers</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">num</span><span class="p">)</span>
+<span class="p">}</span>
+
+<span class="c1">// 1 2 3 4 5</span>
+
+<span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kd">const</span><span class="w"> </span><span class="nx">num</span><span class="w"> </span><span class="k">of</span><span class="w"> </span><span class="nx">numbers</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">num</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="nx">num</span><span class="p">)</span>
+<span class="p">}</span>
+
+<span class="c1">// 1 4 9 16 25</span>
+
+<span class="c1">// adding all the numbers in the array</span>
+<span class="kd">let</span><span class="w"> </span><span class="nx">sum</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0</span>
+<span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kd">const</span><span class="w"> </span><span class="nx">num</span><span class="w"> </span><span class="k">of</span><span class="w"> </span><span class="nx">numbers</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="nx">sum</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">sum</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">num</span><span class="w">  </span>
+<span class="w">    </span><span class="c1">// can be also shorten like this, sum += num</span>
+<span class="w">  </span><span class="c1">// after this we will use the shorter synthax(+=, -=, *=, /= etc)</span>
+<span class="p">}</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">sum</span><span class="p">)</span><span class="w"> </span><span class="c1">// 15</span>
+
+<span class="kd">const</span><span class="w"> </span><span class="nx">webTechs</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span>
+<span class="w">  </span><span class="s1">&#39;HTML&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;CSS&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;JavaScript&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;React&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;Redux&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;Node&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;MongoDB&#39;</span>
+<span class="p">]</span>
+
+<span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kd">const</span><span class="w"> </span><span class="nx">tech</span><span class="w"> </span><span class="k">of</span><span class="w"> </span><span class="nx">webTechs</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">tech</span><span class="p">.</span><span class="nx">toUpperCase</span><span class="p">())</span>
+<span class="p">}</span>
+
+<span class="c1">// HTML CSS JAVASCRIPT REACT NODE MONGODB</span>
+
+<span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kd">const</span><span class="w"> </span><span class="nx">tech</span><span class="w"> </span><span class="k">of</span><span class="w"> </span><span class="nx">webTechs</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">tech</span><span class="p">[</span><span class="mf">0</span><span class="p">])</span><span class="w"> </span><span class="c1">// get only the first letter of each element,  H C J R N M</span>
+<span class="p">}</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">countries</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s1">&#39;Finland&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Sweden&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Norway&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Denmark&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Iceland&#39;</span><span class="p">]</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">newArr</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[]</span>
+<span class="k">for</span><span class="p">(</span><span class="kd">const</span><span class="w"> </span><span class="nx">country</span><span class="w"> </span><span class="k">of</span><span class="w"> </span><span class="nx">countries</span><span class="p">){</span>
+<span class="w">  </span><span class="nx">newArr</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">country</span><span class="p">.</span><span class="nx">toUpperCase</span><span class="p">())</span>
+<span class="p">}</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">newArr</span><span class="p">)</span><span class="w">  </span><span class="c1">// [&quot;FINLAND&quot;, &quot;SWEDEN&quot;, &quot;NORWAY&quot;, &quot;DENMARK&quot;, &quot;ICELAND&quot;]</span>
+</code></pre></div>
+<h3 id="break">break</h3>
+<p>Break is used to interrupt a loop.</p>
+<div class="highlight"><pre><span></span><code><span class="k">for</span><span class="p">(</span><span class="kd">let</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="mf">5</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="o">++</span><span class="p">){</span>
+<span class="w">  </span><span class="k">if</span><span class="p">(</span><span class="nx">i</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mf">3</span><span class="p">){</span>
+<span class="w">    </span><span class="k">break</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">i</span><span class="p">)</span>
+<span class="p">}</span>
+
+<span class="c1">// 0 1 2</span>
+</code></pre></div>
+<p>The above code stops if 3 found in the iteration process.</p>
+<h3 id="continue">continue</h3>
+<p>We use the keyword <em>continue</em> to skip a certain iterations. </p>
+<div class="highlight"><pre><span></span><code><span class="k">for</span><span class="p">(</span><span class="kd">let</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="mf">5</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="o">++</span><span class="p">){</span>
+<span class="w">  </span><span class="k">if</span><span class="p">(</span><span class="nx">i</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mf">3</span><span class="p">){</span>
+<span class="w">    </span><span class="k">continue</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">i</span><span class="p">)</span>
+<span class="p">}</span>
+
+<span class="c1">// 0 1 2 4 5</span>
+</code></pre></div>
+<p>🌕 You are so brave, you made it to this far. Now, you have gained the power to automate repetitive and tedious tasks. You have just completed day 6 challenges and you are 6 steps a head in to your way to greatness. Now do some exercises for your brain and for your muscle.</p>
+<h2 id="exercisesday-6">💻 Exercises:Day 6</h2>
+<h3 id="exercises-level-1">Exercises: Level 1</h3>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">countries</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span>
+<span class="w">  </span><span class="s1">&#39;Albania&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;Bolivia&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;Canada&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;Denmark&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;Ethiopia&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;Finland&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;Germany&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;Hungary&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;Ireland&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;Japan&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;Kenya&#39;</span>
+<span class="p">]</span>
+
+<span class="kd">const</span><span class="w"> </span><span class="nx">webTechs</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span>
+<span class="w">  </span><span class="s1">&#39;HTML&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;CSS&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;JavaScript&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;React&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;Redux&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;Node&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;MongoDB&#39;</span>
+<span class="p">]</span>
+
+<span class="kd">const</span><span class="w"> </span><span class="nx">mernStack</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s1">&#39;MongoDB&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Express&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;React&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Node&#39;</span><span class="p">]</span>
+</code></pre></div>
+<ol>
+<li>Iterate 0 to 10 using for loop, do the same using while and do while loop</li>
+<li>Iterate 10 to 0 using for loop, do the same using while and do while loop</li>
+<li>Iterate 0 to n using for loop</li>
+<li>Write a loop that makes the following pattern using console.log():</li>
+</ol>
+<div class="highlight"><pre><span></span><code><span class="w">    </span><span class="err">#</span>
+<span class="w">    </span><span class="err">##</span>
+<span class="w">    </span><span class="err">###</span>
+<span class="w">    </span><span class="err">####</span>
+<span class="w">    </span><span class="err">#####</span>
+<span class="w">    </span><span class="err">######</span>
+<span class="w">    </span><span class="err">#######</span>
+</code></pre></div>
+<ol>
+<li>Use loop to print the following pattern:</li>
+</ol>
+<div class="highlight"><pre><span></span><code><span class="m">0</span><span class="w"> </span>x<span class="w"> </span><span class="nv">0</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">0</span>
+<span class="m">1</span><span class="w"> </span>x<span class="w"> </span><span class="nv">1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">1</span>
+<span class="m">2</span><span class="w"> </span>x<span class="w"> </span><span class="nv">2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">4</span>
+<span class="m">3</span><span class="w"> </span>x<span class="w"> </span><span class="nv">3</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">9</span>
+<span class="m">4</span><span class="w"> </span>x<span class="w"> </span><span class="nv">4</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">16</span>
+<span class="m">5</span><span class="w"> </span>x<span class="w"> </span><span class="nv">5</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">25</span>
+<span class="m">6</span><span class="w"> </span>x<span class="w"> </span><span class="nv">6</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">36</span>
+<span class="m">7</span><span class="w"> </span>x<span class="w"> </span><span class="nv">7</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">49</span>
+<span class="m">8</span><span class="w"> </span>x<span class="w"> </span><span class="nv">8</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">64</span>
+<span class="m">9</span><span class="w"> </span>x<span class="w"> </span><span class="nv">9</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">81</span>
+<span class="m">10</span><span class="w"> </span>x<span class="w"> </span><span class="nv">10</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">100</span>
+</code></pre></div>
+<ol>
+<li>Using loop print the following pattern</li>
+</ol>
+<div class="highlight"><pre><span></span><code><span class="w"> </span>i<span class="w">    </span>i^2<span class="w">   </span>i^3
+<span class="w"> </span><span class="m">0</span><span class="w">    </span><span class="m">0</span><span class="w">     </span><span class="m">0</span>
+<span class="w"> </span><span class="m">1</span><span class="w">    </span><span class="m">1</span><span class="w">     </span><span class="m">1</span>
+<span class="w"> </span><span class="m">2</span><span class="w">    </span><span class="m">4</span><span class="w">     </span><span class="m">8</span>
+<span class="w"> </span><span class="m">3</span><span class="w">    </span><span class="m">9</span><span class="w">     </span><span class="m">27</span>
+<span class="w"> </span><span class="m">4</span><span class="w">    </span><span class="m">16</span><span class="w">    </span><span class="m">64</span>
+<span class="w"> </span><span class="m">5</span><span class="w">    </span><span class="m">25</span><span class="w">    </span><span class="m">125</span>
+<span class="w"> </span><span class="m">6</span><span class="w">    </span><span class="m">36</span><span class="w">    </span><span class="m">216</span>
+<span class="w"> </span><span class="m">7</span><span class="w">    </span><span class="m">49</span><span class="w">    </span><span class="m">343</span>
+<span class="w"> </span><span class="m">8</span><span class="w">    </span><span class="m">64</span><span class="w">    </span><span class="m">512</span>
+<span class="w"> </span><span class="m">9</span><span class="w">    </span><span class="m">81</span><span class="w">    </span><span class="m">729</span>
+<span class="w"> </span><span class="m">10</span><span class="w">   </span><span class="m">100</span><span class="w">   </span><span class="m">1000</span>
+</code></pre></div>
+<ol>
+<li>Use for loop to iterate from 0 to 100 and print only even numbers</li>
+<li>Use for loop to iterate from 0 to 100 and print only odd numbers</li>
+<li>Use for loop to iterate from 0 to 100 and print only prime numbers</li>
+<li>
+<p>Use for loop to iterate from 0 to 100 and print the sum of all numbers.</p>
+<div class="highlight"><pre><span></span><code>The<span class="w"> </span>sum<span class="w"> </span>of<span class="w"> </span>all<span class="w"> </span>numbers<span class="w"> </span>from<span class="w"> </span><span class="m">0</span><span class="w"> </span>to<span class="w"> </span><span class="m">100</span><span class="w"> </span>is<span class="w"> </span><span class="m">5050</span>.
+</code></pre></div>
+</li>
+<li>
+<p>Use for loop to iterate from 0 to 100 and print the sum of all evens and the sum of all odds.</p>
+<div class="highlight"><pre><span></span><code>The<span class="w"> </span>sum<span class="w"> </span>of<span class="w"> </span>all<span class="w"> </span>evens<span class="w"> </span>from<span class="w"> </span><span class="m">0</span><span class="w"> </span>to<span class="w"> </span><span class="m">100</span><span class="w"> </span>is<span class="w"> </span><span class="m">2550</span>.<span class="w"> </span>And<span class="w"> </span>the<span class="w"> </span>sum<span class="w"> </span>of<span class="w"> </span>all<span class="w"> </span>odds<span class="w"> </span>from<span class="w"> </span><span class="m">0</span><span class="w"> </span>to<span class="w"> </span><span class="m">100</span><span class="w"> </span>is<span class="w"> </span><span class="m">2500</span>.
+</code></pre></div>
+</li>
+<li>
+<p>Use for loop to iterate from 0 to 100 and print the sum of all evens and the sum of all odds. Print sum of evens and sum of odds as array</p>
+<div class="highlight"><pre><span></span><code><span class="w">  </span><span class="o">[</span><span class="m">2550</span>,<span class="w"> </span><span class="m">2500</span><span class="o">]</span>
+</code></pre></div>
+</li>
+<li>
+<p>Develop a small script which generate array of 5 random numbers</p>
+</li>
+<li>Develop a small script which generate array of 5 random numbers and the numbers must be unique</li>
+<li>
+<p>Develop a small script which generate a six characters random id:</p>
+<div class="highlight"><pre><span></span><code>5j2khz
+</code></pre></div>
+</li>
+</ol>
+<h3 id="exercises-level-2">Exercises: Level 2</h3>
+<ol>
+<li>
+<p>Develop a small script which generate any number of characters random id:</p>
+<div class="highlight"><pre><span></span><code><span class="w">  </span>fe3jo1gl124g
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="w">  </span>xkqci4utda1lmbelpkm03rba
+</code></pre></div>
+</li>
+<li>
+<p>Write a script which generates a random hexadecimal number.</p>
+<div class="highlight"><pre><span></span><code><span class="s1">&#39;#ee33df&#39;</span>
+</code></pre></div>
+</li>
+<li>
+<p>Write a script which generates a random rgb color number.</p>
+<div class="highlight"><pre><span></span><code>rgb<span class="o">(</span><span class="m">240</span>,180,80<span class="o">)</span>
+</code></pre></div>
+</li>
+<li>
+<p>Using the above countries array, create the following new array.</p>
+<div class="highlight"><pre><span></span><code><span class="o">[</span><span class="s2">&quot;ALBANIA&quot;</span>,<span class="w"> </span><span class="s2">&quot;BOLIVIA&quot;</span>,<span class="w"> </span><span class="s2">&quot;CANADA&quot;</span>,<span class="w"> </span><span class="s2">&quot;DENMARK&quot;</span>,<span class="w"> </span><span class="s2">&quot;ETHIOPIA&quot;</span>,<span class="w"> </span><span class="s2">&quot;FINLAND&quot;</span>,<span class="w"> </span><span class="s2">&quot;GERMANY&quot;</span>,<span class="w"> </span><span class="s2">&quot;HUNGARY&quot;</span>,<span class="w"> </span><span class="s2">&quot;IRELAND&quot;</span>,<span class="w"> </span><span class="s2">&quot;JAPAN&quot;</span>,<span class="w"> </span><span class="s2">&quot;KENYA&quot;</span><span class="o">]</span>
+</code></pre></div>
+</li>
+<li>
+<p>Using the above countries array, create an array for countries length'.</p>
+<div class="highlight"><pre><span></span><code><span class="o">[</span><span class="m">7</span>,<span class="w"> </span><span class="m">7</span>,<span class="w"> </span><span class="m">6</span>,<span class="w"> </span><span class="m">7</span>,<span class="w"> </span><span class="m">8</span>,<span class="w"> </span><span class="m">7</span>,<span class="w"> </span><span class="m">7</span>,<span class="w"> </span><span class="m">7</span>,<span class="w"> </span><span class="m">7</span>,<span class="w"> </span><span class="m">5</span>,<span class="w"> </span><span class="m">5</span><span class="o">]</span>
+</code></pre></div>
+</li>
+<li>
+<p>Use the countries array to create the following array of arrays:</p>
+<div class="highlight"><pre><span></span><code><span class="w">  </span><span class="o">[</span>
+<span class="w">  </span><span class="o">[</span><span class="s1">&#39;Albania&#39;</span>,<span class="w"> </span><span class="s1">&#39;ALB&#39;</span>,<span class="w"> </span><span class="m">7</span><span class="o">]</span>,
+<span class="w">  </span><span class="o">[</span><span class="s1">&#39;Bolivia&#39;</span>,<span class="w"> </span><span class="s1">&#39;BOL&#39;</span>,<span class="w"> </span><span class="m">7</span><span class="o">]</span>,
+<span class="w">  </span><span class="o">[</span><span class="s1">&#39;Canada&#39;</span>,<span class="w"> </span><span class="s1">&#39;CAN&#39;</span>,<span class="w"> </span><span class="m">6</span><span class="o">]</span>,
+<span class="w">  </span><span class="o">[</span><span class="s1">&#39;Denmark&#39;</span>,<span class="w"> </span><span class="s1">&#39;DEN&#39;</span>,<span class="w"> </span><span class="m">7</span><span class="o">]</span>,
+<span class="w">  </span><span class="o">[</span><span class="s1">&#39;Ethiopia&#39;</span>,<span class="w"> </span><span class="s1">&#39;ETH&#39;</span>,<span class="w"> </span><span class="m">8</span><span class="o">]</span>,
+<span class="w">  </span><span class="o">[</span><span class="s1">&#39;Finland&#39;</span>,<span class="w"> </span><span class="s1">&#39;FIN&#39;</span>,<span class="w"> </span><span class="m">7</span><span class="o">]</span>,
+<span class="w">  </span><span class="o">[</span><span class="s1">&#39;Germany&#39;</span>,<span class="w"> </span><span class="s1">&#39;GER&#39;</span>,<span class="w"> </span><span class="m">7</span><span class="o">]</span>,
+<span class="w">  </span><span class="o">[</span><span class="s1">&#39;Hungary&#39;</span>,<span class="w"> </span><span class="s1">&#39;HUN&#39;</span>,<span class="w"> </span><span class="m">7</span><span class="o">]</span>,
+<span class="w">  </span><span class="o">[</span><span class="s1">&#39;Ireland&#39;</span>,<span class="w"> </span><span class="s1">&#39;IRE&#39;</span>,<span class="w"> </span><span class="m">7</span><span class="o">]</span>,
+<span class="w">  </span><span class="o">[</span><span class="s1">&#39;Iceland&#39;</span>,<span class="w"> </span><span class="s1">&#39;ICE&#39;</span>,<span class="w"> </span><span class="m">7</span><span class="o">]</span>,
+<span class="w">  </span><span class="o">[</span><span class="s1">&#39;Japan&#39;</span>,<span class="w"> </span><span class="s1">&#39;JAP&#39;</span>,<span class="w"> </span><span class="m">5</span><span class="o">]</span>,
+<span class="w">  </span><span class="o">[</span><span class="s1">&#39;Kenya&#39;</span>,<span class="w"> </span><span class="s1">&#39;KEN&#39;</span>,<span class="w"> </span><span class="m">5</span><span class="o">]</span>
+<span class="o">]</span>
+</code></pre></div>
+</li>
+<li>
+<p>In above countries array, check if there is a country or countries containing the word 'land'. If there are countries containing 'land', print it as array. If there is no country containing the word 'land', print 'All these countries are without land'.</p>
+<div class="highlight"><pre><span></span><code><span class="o">[</span><span class="s1">&#39;Finland&#39;</span>,<span class="s1">&#39;Ireland&#39;</span>,<span class="w"> </span><span class="s1">&#39;Iceland&#39;</span><span class="o">]</span>
+</code></pre></div>
+</li>
+<li>
+<p>In above countries array, check if there is  a country or countries end with a substring 'ia'. If there are countries end with, print it as array. If there is no country containing the word 'ai', print 'These are countries ends without ia'.</p>
+<div class="highlight"><pre><span></span><code><span class="o">[</span><span class="s1">&#39;Albania&#39;</span>,<span class="w"> </span><span class="s1">&#39;Bolivia&#39;</span>,<span class="s1">&#39;Ethiopia&#39;</span><span class="o">]</span>
+</code></pre></div>
+</li>
+<li>
+<p>Using the above countries array, find the country containing the biggest number of characters.</p>
+<div class="highlight"><pre><span></span><code>Ethiopia
+</code></pre></div>
+</li>
+<li>
+<p>Using the above countries array, find the country containing only 5 characters.</p>
+<div class="highlight"><pre><span></span><code><span class="o">[</span><span class="s1">&#39;Japan&#39;</span>,<span class="w"> </span><span class="s1">&#39;Kenya&#39;</span><span class="o">]</span>
+</code></pre></div>
+</li>
+<li>
+<p>Find the longest word in the webTechs array</p>
+</li>
+<li>
+<p>Use the webTechs array to create the following array of arrays:</p>
+<div class="highlight"><pre><span></span><code><span class="o">[[</span><span class="s2">&quot;HTML&quot;</span>,<span class="w"> </span><span class="m">4</span><span class="o">]</span>,<span class="w"> </span><span class="o">[</span><span class="s2">&quot;CSS&quot;</span>,<span class="w"> </span><span class="m">3</span><span class="o">]</span>,<span class="o">[</span><span class="s2">&quot;JavaScript&quot;</span>,<span class="w"> </span><span class="m">10</span><span class="o">]</span>,<span class="o">[</span><span class="s2">&quot;React&quot;</span>,<span class="w"> </span><span class="m">5</span><span class="o">]</span>,<span class="o">[</span><span class="s2">&quot;Redux&quot;</span>,<span class="w"> </span><span class="m">5</span><span class="o">]</span>,<span class="o">[</span><span class="s2">&quot;Node&quot;</span>,<span class="w"> </span><span class="m">4</span><span class="o">]</span>,<span class="o">[</span><span class="s2">&quot;MongoDB&quot;</span>,<span class="w"> </span><span class="m">7</span><span class="o">]]</span>
+</code></pre></div>
+</li>
+<li>
+<p>An application created using MongoDB, Express, React and Node is called a MERN stack app. Create the acronym MERN by using the array mernStack</p>
+</li>
+<li>Iterate through the array, ["HTML", "CSS", "JS", "React", "Redux", "Node", "Express", "MongoDB"] using a for loop or for of loop and print out the items.</li>
+<li>This is a fruit array , ['banana', 'orange', 'mango', 'lemon'] reverse the order using loop without using a reverse method.</li>
+<li>
+<p>Print all the elements of array as shown below.</p>
+<div class="highlight"><pre><span></span><code><span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">fullStack</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span>
+<span class="w">    </span><span class="p">[</span><span class="s1">&#39;HTML&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;CSS&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;JS&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;React&#39;</span><span class="p">],</span>
+<span class="w">    </span><span class="p">[</span><span class="s1">&#39;Node&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Express&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;MongoDB&#39;</span><span class="p">]</span>
+<span class="w">  </span><span class="p">]</span>
+<span class="sb">````</span>
+
+<span class="sb">```sh</span>
+<span class="sb">  HTML</span>
+<span class="sb">  CSS</span>
+<span class="sb">  JS</span>
+<span class="sb">  REACT</span>
+<span class="sb">  NODE</span>
+<span class="sb">  EXPRESS</span>
+<span class="sb">  MONGODB</span>
+</code></pre></div>
+</li>
+</ol>
+<h3 id="exercises-level-3">Exercises: Level 3</h3>
+<ol>
+<li>Copy countries array(Avoid mutation)</li>
+<li>Arrays are mutable. Create a copy of array which does not modify the original. Sort the copied array and store in a variable sortedCountries</li>
+<li>Sort the webTechs array and mernStack array</li>
+<li>Extract all the countries contain the word 'land' from the <a href="https://github.com/Asabeneh/30DaysOfJavaScript/tree/master/data/countries.js">countries array</a> and print it as array</li>
+<li>Find the country containing the hightest number of characters in the <a href="https://github.com/Asabeneh/30DaysOfJavaScript/tree/master/data/countries.js">countries array</a></li>
+<li>Extract all the countries contain the word 'land' from the <a href="https://github.com/Asabeneh/30DaysOfJavaScript/tree/master/data/countries.js">countries array</a> and print it as array</li>
+<li>Extract all the countries containing only four characters from the <a href="https://github.com/Asabeneh/30DaysOfJavaScript/tree/master/data/countries.js">countries array</a> and print it as array</li>
+<li>Extract all the countries containing two or more words from the <a href="https://github.com/Asabeneh/30DaysOfJavaScript/tree/master/data/countries.js">countries array</a> and print it as array</li>
+<li>Reverse the <a href="https://github.com/Asabeneh/30DaysOfJavaScript/tree/master/data/countries.js">countries array</a> and capitalize each country and stored it as an array</li>
+</ol>
+<p>🎉 CONGRATULATIONS ! 🎉</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.d7c377c4.min.js"></script>
+      
+    
+  </body>
+</html>

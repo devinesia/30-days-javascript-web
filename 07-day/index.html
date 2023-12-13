@@ -1,0 +1,1926 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../06-day/">
+      
+      
+        <link rel="next" href="../08-day/">
+      
+      
+      <link rel="icon" href="../images/javascript.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.2">
+    
+    
+      
+        <title>📔 Day 7 - 30 Days Javascript</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.50c56a3b.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="amber" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#day-7" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="30 Days Javascript" class="md-header__button md-logo" aria-label="30 Days Javascript" data-md-component="logo">
+      
+  <img src="../images/javascript.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            30 Days Javascript
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              📔 Day 7
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/devinesia/30-days-javascript-web" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="30 Days Javascript" class="md-nav__button md-logo" aria-label="30 Days Javascript" data-md-component="logo">
+      
+  <img src="../images/javascript.png" alt="logo">
+
+    </a>
+    30 Days Javascript
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/devinesia/30-days-javascript-web" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Getting started
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01-day/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    📔 Day 1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02-day/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    📔 Day 2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03-day/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    📔 Day 3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04-day/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    📔 Day 4
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../05-day/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    📔 Day 5
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../06-day/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    📔 Day 6
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    📔 Day 7
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    📔 Day 7
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Functions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Functions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#function-declaration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Function Declaration
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#function-without-a-parameter-and-return" class="md-nav__link">
+    <span class="md-ellipsis">
+      Function without a parameter and return
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#function-returning-value" class="md-nav__link">
+    <span class="md-ellipsis">
+      Function returning value
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#function-with-a-parameter" class="md-nav__link">
+    <span class="md-ellipsis">
+      Function with a parameter
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#function-with-two-parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      Function with two parameters
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#function-with-many-parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      Function with many parameters
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#function-with-unlimited-number-of-parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      Function with unlimited number of parameters
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Function with unlimited number of parameters">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#unlimited-number-of-parameters-in-regular-function" class="md-nav__link">
+    <span class="md-ellipsis">
+      Unlimited number of parameters in regular function
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#unlimited-number-of-parameters-in-arrow-function" class="md-nav__link">
+    <span class="md-ellipsis">
+      Unlimited number of parameters in arrow function
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#anonymous-function" class="md-nav__link">
+    <span class="md-ellipsis">
+      Anonymous Function
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#expression-function" class="md-nav__link">
+    <span class="md-ellipsis">
+      Expression Function
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#self-invoking-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Self Invoking Functions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#arrow-function" class="md-nav__link">
+    <span class="md-ellipsis">
+      Arrow Function
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#function-with-default-parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      Function with default parameters
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#function-declaration-versus-arrow-function" class="md-nav__link">
+    <span class="md-ellipsis">
+      Function declaration versus Arrow function
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercises" class="md-nav__link">
+    <span class="md-ellipsis">
+      💻 Exercises
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="💻 Exercises">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#exercises-level-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exercises: Level 1
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exercises-level-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exercises: Level 2
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exercises-level-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exercises: Level 3
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../08-day/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    📔 Day 8
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../09-day/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    📔 Day 9
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../10-day/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    📔 Day 10
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../11-day/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    📘 Day 11
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../12-day/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    📘 Day 12
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../13-day/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    📘 Day 13
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../14-day/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    📘 Day 14
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../15-day/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    📘 Day 15
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../16-day/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    📘 Day 16
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../17-day/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    📘 Day 17
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../18-day/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    📘 Day 18
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../19-day/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    📘 Day 19
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20-day/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    📘 Day 20
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../21-day/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    📙 Day 21
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../22-day/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    📙 Day 22
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../23-day/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    📙 Day 23
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../24-day/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    📙 Day 24
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../25-day/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    📙 Day 25
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../26-day/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    📙 Day 26
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../27-day/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    📙 Day 27
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../28-day/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    📙 Day 28
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../29-day/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    📙 Day 29
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../30-day/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    📙 Day 30
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Functions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Functions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#function-declaration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Function Declaration
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#function-without-a-parameter-and-return" class="md-nav__link">
+    <span class="md-ellipsis">
+      Function without a parameter and return
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#function-returning-value" class="md-nav__link">
+    <span class="md-ellipsis">
+      Function returning value
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#function-with-a-parameter" class="md-nav__link">
+    <span class="md-ellipsis">
+      Function with a parameter
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#function-with-two-parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      Function with two parameters
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#function-with-many-parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      Function with many parameters
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#function-with-unlimited-number-of-parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      Function with unlimited number of parameters
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Function with unlimited number of parameters">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#unlimited-number-of-parameters-in-regular-function" class="md-nav__link">
+    <span class="md-ellipsis">
+      Unlimited number of parameters in regular function
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#unlimited-number-of-parameters-in-arrow-function" class="md-nav__link">
+    <span class="md-ellipsis">
+      Unlimited number of parameters in arrow function
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#anonymous-function" class="md-nav__link">
+    <span class="md-ellipsis">
+      Anonymous Function
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#expression-function" class="md-nav__link">
+    <span class="md-ellipsis">
+      Expression Function
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#self-invoking-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Self Invoking Functions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#arrow-function" class="md-nav__link">
+    <span class="md-ellipsis">
+      Arrow Function
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#function-with-default-parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      Function with default parameters
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#function-declaration-versus-arrow-function" class="md-nav__link">
+    <span class="md-ellipsis">
+      Function declaration versus Arrow function
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercises" class="md-nav__link">
+    <span class="md-ellipsis">
+      💻 Exercises
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="💻 Exercises">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#exercises-level-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exercises: Level 1
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exercises-level-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exercises: Level 2
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exercises-level-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exercises: Level 3
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<h1 id="day-7">📔 Day 7</h1>
+<h2 id="functions">Functions</h2>
+<p>So far we have seen many builtin JavaScript functions. In this section, we will focus on custom functions. What is a function? Before we start making functions, lets understand what function is and why we need function?</p>
+<p>A function is a reusable block of code or programming statements designed to perform a certain task.
+A function is declared by a function key word followed by a name, followed by parentheses (). A parentheses can take a parameter. If a function take a parameter it will be called with argument. A function can also take a default parameter. To store a data to a function, a function has to return certain data types. To get the value we call or invoke a function.
+Function makes code:</p>
+<ul>
+<li>clean and easy to read</li>
+<li>reusable</li>
+<li>easy to test</li>
+</ul>
+<p>A function can be declared or created in couple of ways:</p>
+<ul>
+<li><em>Declaration function</em></li>
+<li><em>Expression function</em></li>
+<li><em>Anonymous function</em></li>
+<li><em>Arrow function</em></li>
+</ul>
+<h3 id="function-declaration">Function Declaration</h3>
+<p>Let us see how to declare a function and how to call a function.</p>
+<div class="highlight"><pre><span></span><code><span class="c1">//declaring a function without a parameter</span>
+<span class="kd">function</span><span class="w"> </span><span class="nx">functionName</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="c1">// code goes here</span>
+<span class="p">}</span>
+<span class="nx">functionName</span><span class="p">()</span><span class="w"> </span><span class="c1">// calling function by its name and with parentheses</span>
+</code></pre></div>
+<h3 id="function-without-a-parameter-and-return">Function without a parameter and return</h3>
+<p>Function can be declared without a parameter.</p>
+<p><strong>Example:</strong></p>
+<div class="highlight"><pre><span></span><code><span class="c1">// function without parameter,  a function which make a number square</span>
+<span class="kd">function</span><span class="w"> </span><span class="nx">square</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="kd">let</span><span class="w"> </span><span class="nx">num</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">2</span>
+<span class="w">  </span><span class="kd">let</span><span class="w"> </span><span class="nx">sq</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">num</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="nx">num</span>
+<span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">sq</span><span class="p">)</span>
+<span class="p">}</span>
+
+<span class="nx">square</span><span class="p">()</span><span class="w"> </span><span class="c1">// 4</span>
+
+<span class="c1">// function without parameter</span>
+<span class="kd">function</span><span class="w"> </span><span class="nx">addTwoNumbers</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="kd">let</span><span class="w"> </span><span class="nx">numOne</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">10</span>
+<span class="w">  </span><span class="kd">let</span><span class="w"> </span><span class="nx">numTwo</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">20</span>
+<span class="w">  </span><span class="kd">let</span><span class="w"> </span><span class="nx">sum</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">numOne</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">numTwo</span>
+
+<span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">sum</span><span class="p">)</span>
+<span class="p">}</span>
+
+<span class="nx">addTwoNumbers</span><span class="p">()</span><span class="w"> </span><span class="c1">// a function has to be called by its name to be executed </span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="w">  </span><span class="kd">function</span><span class="w"> </span><span class="nx">printFullName</span><span class="w"> </span><span class="p">(){</span>
+<span class="w">      </span><span class="kd">let</span><span class="w"> </span><span class="nx">firstName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;Asabeneh&#39;</span>
+<span class="w">      </span><span class="kd">let</span><span class="w"> </span><span class="nx">lastName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;Yetayeh&#39;</span>
+<span class="w">      </span><span class="kd">let</span><span class="w"> </span><span class="nx">space</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39; &#39;</span>
+<span class="w">      </span><span class="kd">let</span><span class="w"> </span><span class="nx">fullName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">firstName</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">space</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">lastName</span>
+<span class="w">      </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">fullName</span><span class="p">)</span>
+<span class="p">}</span>
+
+<span class="nx">printFullName</span><span class="p">()</span><span class="w"> </span><span class="c1">// calling a function</span>
+</code></pre></div>
+<h3 id="function-returning-value">Function returning value</h3>
+<p>Function can also return values, if a function does not return values the value of the function is undefined. Let us write the above functions with return. From now on, we return value to a function instead of printing it.</p>
+<div class="highlight"><pre><span></span><code><span class="kd">function</span><span class="w"> </span><span class="nx">printFullName</span><span class="w"> </span><span class="p">(){</span>
+<span class="w">      </span><span class="kd">let</span><span class="w"> </span><span class="nx">firstName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;Asabeneh&#39;</span>
+<span class="w">      </span><span class="kd">let</span><span class="w"> </span><span class="nx">lastName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;Yetayeh&#39;</span>
+<span class="w">      </span><span class="kd">let</span><span class="w"> </span><span class="nx">space</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39; &#39;</span>
+<span class="w">      </span><span class="kd">let</span><span class="w"> </span><span class="nx">fullName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">firstName</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">space</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">lastName</span>
+<span class="w">      </span><span class="k">return</span><span class="w"> </span><span class="nx">fullName</span>
+<span class="p">}</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">printFullName</span><span class="p">())</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="w">  </span><span class="kd">function</span><span class="w"> </span><span class="nx">addTwoNumbers</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="kd">let</span><span class="w"> </span><span class="nx">numOne</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">2</span>
+<span class="w">      </span><span class="kd">let</span><span class="w"> </span><span class="nx">numTwo</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">3</span>
+<span class="w">      </span><span class="kd">let</span><span class="w"> </span><span class="nx">total</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">numOne</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">numTwo</span>
+<span class="w">      </span><span class="k">return</span><span class="w"> </span><span class="nx">total</span>
+
+<span class="w">  </span><span class="p">}</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">addTwoNumbers</span><span class="p">())</span>
+</code></pre></div>
+<h3 id="function-with-a-parameter">Function with a parameter</h3>
+<p>In a function we can pass different data types(number, string, boolean, object, function) as a parameter.</p>
+<div class="highlight"><pre><span></span><code><span class="c1">// function with one parameter</span>
+<span class="kd">function</span><span class="w"> </span><span class="nx">functionName</span><span class="p">(</span><span class="nx">parm1</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="c1">//code goes her</span>
+<span class="p">}</span>
+<span class="nx">functionName</span><span class="p">(</span><span class="nx">parm1</span><span class="p">)</span><span class="w"> </span><span class="c1">// during calling or invoking one argument needed</span>
+
+<span class="kd">function</span><span class="w"> </span><span class="nx">areaOfCircle</span><span class="p">(</span><span class="nx">r</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="kd">let</span><span class="w"> </span><span class="nx">area</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">Math</span><span class="p">.</span><span class="nx">PI</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="nx">r</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="nx">r</span>
+<span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="nx">area</span>
+<span class="p">}</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">areaOfCircle</span><span class="p">(</span><span class="mf">10</span><span class="p">))</span><span class="w"> </span><span class="c1">// should be called with one argument</span>
+
+<span class="kd">function</span><span class="w"> </span><span class="nx">square</span><span class="p">(</span><span class="nx">number</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="nx">number</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="nx">number</span>
+<span class="p">}</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">square</span><span class="p">(</span><span class="mf">10</span><span class="p">))</span>
+</code></pre></div>
+<h3 id="function-with-two-parameters">Function with two parameters</h3>
+<div class="highlight"><pre><span></span><code><span class="c1">// function with two parameters</span>
+<span class="kd">function</span><span class="w"> </span><span class="nx">functionName</span><span class="p">(</span><span class="nx">parm1</span><span class="p">,</span><span class="w"> </span><span class="nx">parm2</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="c1">//code goes her</span>
+<span class="p">}</span>
+<span class="nx">functionName</span><span class="p">(</span><span class="nx">parm1</span><span class="p">,</span><span class="w"> </span><span class="nx">parm2</span><span class="p">)</span><span class="w"> </span><span class="c1">// during calling or invoking two arguments needed</span>
+<span class="c1">// Function without parameter doesn&#39;t take input, so lets make a function with parameters</span>
+<span class="kd">function</span><span class="w"> </span><span class="nx">sumTwoNumbers</span><span class="p">(</span><span class="nx">numOne</span><span class="p">,</span><span class="w"> </span><span class="nx">numTwo</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="kd">let</span><span class="w"> </span><span class="nx">sum</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">numOne</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">numTwo</span>
+<span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">sum</span><span class="p">)</span>
+<span class="p">}</span>
+<span class="nx">sumTwoNumbers</span><span class="p">(</span><span class="mf">10</span><span class="p">,</span><span class="w"> </span><span class="mf">20</span><span class="p">)</span><span class="w"> </span><span class="c1">// calling functions</span>
+<span class="c1">// If a function doesn&#39;t return it doesn&#39;t store data, so it should return</span>
+
+<span class="kd">function</span><span class="w"> </span><span class="nx">sumTwoNumbers</span><span class="p">(</span><span class="nx">numOne</span><span class="p">,</span><span class="w"> </span><span class="nx">numTwo</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="kd">let</span><span class="w"> </span><span class="nx">sum</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">numOne</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">numTwo</span>
+<span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="nx">sum</span>
+<span class="p">}</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">sumTwoNumbers</span><span class="p">(</span><span class="mf">10</span><span class="p">,</span><span class="w"> </span><span class="mf">20</span><span class="p">))</span>
+<span class="kd">function</span><span class="w"> </span><span class="nx">printFullName</span><span class="p">(</span><span class="nx">firstName</span><span class="p">,</span><span class="w"> </span><span class="nx">lastName</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="sb">`</span><span class="si">${</span><span class="nx">firstName</span><span class="si">}</span><span class="sb"> </span><span class="si">${</span><span class="nx">lastName</span><span class="si">}</span><span class="sb">`</span>
+<span class="p">}</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">printFullName</span><span class="p">(</span><span class="s1">&#39;Asabeneh&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Yetayeh&#39;</span><span class="p">))</span>
+</code></pre></div>
+<h3 id="function-with-many-parameters">Function with many parameters</h3>
+<div class="highlight"><pre><span></span><code><span class="c1">// function with multiple parameters</span>
+<span class="kd">function</span><span class="w"> </span><span class="nx">functionName</span><span class="p">(</span><span class="nx">parm1</span><span class="p">,</span><span class="w"> </span><span class="nx">parm2</span><span class="p">,</span><span class="w"> </span><span class="nx">parm3</span><span class="p">,...){</span>
+<span class="w">  </span><span class="c1">//code goes here</span>
+<span class="p">}</span>
+<span class="nx">functionName</span><span class="p">(</span><span class="nx">parm1</span><span class="p">,</span><span class="nx">parm2</span><span class="p">,</span><span class="nx">parm3</span><span class="p">,...)</span><span class="w"> </span><span class="c1">// during calling or invoking three arguments needed</span>
+
+
+<span class="c1">// this function takes array as a parameter and sum up the numbers in the array</span>
+<span class="kd">function</span><span class="w"> </span><span class="nx">sumArrayValues</span><span class="p">(</span><span class="nx">arr</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="kd">let</span><span class="w"> </span><span class="nx">sum</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0</span><span class="p">;</span>
+<span class="w">  </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kd">let</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="nx">arr</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">sum</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">sum</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">arr</span><span class="p">[</span><span class="nx">i</span><span class="p">];</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="nx">sum</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">numbers</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="mf">1</span><span class="p">,</span><span class="w"> </span><span class="mf">2</span><span class="p">,</span><span class="w"> </span><span class="mf">3</span><span class="p">,</span><span class="w"> </span><span class="mf">4</span><span class="p">,</span><span class="w"> </span><span class="mf">5</span><span class="p">];</span>
+<span class="w">    </span><span class="c1">//calling a function</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">sumArrayValues</span><span class="p">(</span><span class="nx">numbers</span><span class="p">));</span>
+
+
+<span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">areaOfCircle</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="nx">radius</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="kd">let</span><span class="w"> </span><span class="nx">area</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">Math</span><span class="p">.</span><span class="nx">PI</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="nx">radius</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="nx">radius</span><span class="p">;</span>
+<span class="w">      </span><span class="k">return</span><span class="w"> </span><span class="nx">area</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">areaOfCircle</span><span class="p">(</span><span class="mf">10</span><span class="p">))</span>
+</code></pre></div>
+<h3 id="function-with-unlimited-number-of-parameters">Function with unlimited number of parameters</h3>
+<p>Sometimes we do not know how many arguments the user going to pass. Therefore, we should know how to write a function which can take unlimited number of arguments. The way we do it has a significant difference between a function declaration(regular function) and arrow function. Let us see examples both in function declaration and arrow function.</p>
+<h4 id="unlimited-number-of-parameters-in-regular-function">Unlimited number of parameters in regular function</h4>
+<p>A function declaration provides a function scoped arguments array like object. Any thing we passed as argument in the function can be accessed from arguments object inside the functions. Let us see an example</p>
+<div class="highlight"><pre><span></span><code><span class="c1">// Let us access the arguments object</span>
+<span class="err">​</span>
+<span class="kd">function</span><span class="w"> </span><span class="nx">sumAllNums</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">arguments</span><span class="p">)</span>
+<span class="p">}</span>
+
+<span class="nx">sumAllNums</span><span class="p">(</span><span class="mf">1</span><span class="p">,</span><span class="w"> </span><span class="mf">2</span><span class="p">,</span><span class="w"> </span><span class="mf">3</span><span class="p">,</span><span class="w"> </span><span class="mf">4</span><span class="p">)</span>
+<span class="c1">// Arguments(4) [1, 2, 3, 4, callee: ƒ, Symbol(Symbol.iterator): ƒ]</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="c1">// function declaration</span>
+<span class="err">​</span>
+<span class="kd">function</span><span class="w"> </span><span class="nx">sumAllNums</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="kd">let</span><span class="w"> </span><span class="nx">sum</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0</span>
+<span class="w">  </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kd">let</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="nx">arguments</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">sum</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="nx">arguments</span><span class="p">[</span><span class="nx">i</span><span class="p">]</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="nx">sum</span>
+<span class="p">}</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">sumAllNums</span><span class="p">(</span><span class="mf">1</span><span class="p">,</span><span class="w"> </span><span class="mf">2</span><span class="p">,</span><span class="w"> </span><span class="mf">3</span><span class="p">,</span><span class="w"> </span><span class="mf">4</span><span class="p">))</span><span class="w"> </span><span class="c1">// 10</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">sumAllNums</span><span class="p">(</span><span class="mf">10</span><span class="p">,</span><span class="w"> </span><span class="mf">20</span><span class="p">,</span><span class="w"> </span><span class="mf">13</span><span class="p">,</span><span class="w"> </span><span class="mf">40</span><span class="p">,</span><span class="w"> </span><span class="mf">10</span><span class="p">))</span><span class="w">  </span><span class="c1">// 93</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">sumAllNums</span><span class="p">(</span><span class="mf">15</span><span class="p">,</span><span class="w"> </span><span class="mf">20</span><span class="p">,</span><span class="w"> </span><span class="mf">30</span><span class="p">,</span><span class="w"> </span><span class="mf">25</span><span class="p">,</span><span class="w"> </span><span class="mf">10</span><span class="p">,</span><span class="w"> </span><span class="mf">33</span><span class="p">,</span><span class="w"> </span><span class="mf">40</span><span class="p">))</span><span class="w">  </span><span class="c1">// 173</span>
+</code></pre></div>
+<h4 id="unlimited-number-of-parameters-in-arrow-function">Unlimited number of parameters in arrow function</h4>
+<p>Arrow function does not have the function scoped arguments object. To implement a function which takes unlimited number of arguments in an arrow function we use spread operator followed by any parameter name.  Any thing we passed as argument in the function can be accessed as array in the arrow function. Let us see an example</p>
+<div class="highlight"><pre><span></span><code><span class="c1">// Let us access the arguments object</span>
+<span class="err">​</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">sumAllNums</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(...</span><span class="nx">args</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="c1">// console.log(arguments), arguments object not found in arrow function</span>
+<span class="w">  </span><span class="c1">// instead we use a parameter followed by spread operator (...)</span>
+<span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">args</span><span class="p">)</span>
+<span class="p">}</span>
+
+<span class="nx">sumAllNums</span><span class="p">(</span><span class="mf">1</span><span class="p">,</span><span class="w"> </span><span class="mf">2</span><span class="p">,</span><span class="w"> </span><span class="mf">3</span><span class="p">,</span><span class="w"> </span><span class="mf">4</span><span class="p">)</span>
+<span class="c1">// [1, 2, 3, 4]</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="c1">// function declaration</span>
+<span class="err">​</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">sumAllNums</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(...</span><span class="nx">args</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="kd">let</span><span class="w"> </span><span class="nx">sum</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0</span>
+<span class="w">  </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kd">const</span><span class="w"> </span><span class="nx">element</span><span class="w"> </span><span class="k">of</span><span class="w"> </span><span class="nx">args</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">sum</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="nx">element</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="nx">sum</span>
+<span class="p">}</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">sumAllNums</span><span class="p">(</span><span class="mf">1</span><span class="p">,</span><span class="w"> </span><span class="mf">2</span><span class="p">,</span><span class="w"> </span><span class="mf">3</span><span class="p">,</span><span class="w"> </span><span class="mf">4</span><span class="p">))</span><span class="w"> </span><span class="c1">// 10</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">sumAllNums</span><span class="p">(</span><span class="mf">10</span><span class="p">,</span><span class="w"> </span><span class="mf">20</span><span class="p">,</span><span class="w"> </span><span class="mf">13</span><span class="p">,</span><span class="w"> </span><span class="mf">40</span><span class="p">,</span><span class="w"> </span><span class="mf">10</span><span class="p">))</span><span class="w">  </span><span class="c1">// 93</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">sumAllNums</span><span class="p">(</span><span class="mf">15</span><span class="p">,</span><span class="w"> </span><span class="mf">20</span><span class="p">,</span><span class="w"> </span><span class="mf">30</span><span class="p">,</span><span class="w"> </span><span class="mf">25</span><span class="p">,</span><span class="w"> </span><span class="mf">10</span><span class="p">,</span><span class="w"> </span><span class="mf">33</span><span class="p">,</span><span class="w"> </span><span class="mf">40</span><span class="p">))</span><span class="w">  </span><span class="c1">// 173</span>
+</code></pre></div>
+<h3 id="anonymous-function">Anonymous Function</h3>
+<p>Anonymous function or without name</p>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">anonymousFun</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kd">function</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span>
+<span class="w">    </span><span class="s1">&#39;I am an anonymous function and my value is stored in anonymousFun&#39;</span>
+<span class="w">  </span><span class="p">)</span>
+<span class="p">}</span>
+</code></pre></div>
+<h3 id="expression-function">Expression Function</h3>
+<p>Expression functions are anonymous functions. After we create a function without a name and we assign it to a variable. To return a value from the function we should call the variable. Look at the example below.</p>
+<div class="highlight"><pre><span></span><code><span class="c1">// Function expression</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">square</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kd">function</span><span class="p">(</span><span class="nx">n</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="nx">n</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="nx">n</span>
+<span class="p">}</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">square</span><span class="p">(</span><span class="mf">2</span><span class="p">))</span><span class="w"> </span><span class="c1">// -&gt; 4</span>
+</code></pre></div>
+<h3 id="self-invoking-functions">Self Invoking Functions</h3>
+<p>Self invoking functions are anonymous functions which do not need to be called to return a value.</p>
+<div class="highlight"><pre><span></span><code><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">n</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">n</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="nx">n</span><span class="p">)</span>
+<span class="p">})(</span><span class="mf">2</span><span class="p">)</span><span class="w"> </span><span class="c1">// 4, but instead of just printing if we want to return and store the data, we do as shown below</span>
+
+<span class="kd">let</span><span class="w"> </span><span class="nx">squaredNum</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">n</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="nx">n</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="nx">n</span>
+<span class="p">})(</span><span class="mf">10</span><span class="p">)</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">squaredNum</span><span class="p">)</span>
+</code></pre></div>
+<h3 id="arrow-function">Arrow Function</h3>
+<p>Arrow function is an alternative to write a function, however function declaration and arrow function have some minor differences.</p>
+<p>Arrow function uses arrow instead of the keyword <em>function</em> to declare a function. Let us see both function declaration and arrow function.</p>
+<div class="highlight"><pre><span></span><code><span class="c1">// This is how we write normal or declaration function</span>
+<span class="c1">// Let us change this declaration function to an arrow function</span>
+<span class="kd">function</span><span class="w"> </span><span class="nx">square</span><span class="p">(</span><span class="nx">n</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="nx">n</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="nx">n</span>
+<span class="p">}</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">square</span><span class="p">(</span><span class="mf">2</span><span class="p">))</span><span class="w"> </span><span class="c1">// 4</span>
+
+<span class="kd">const</span><span class="w"> </span><span class="nx">square</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">n</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="nx">n</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="nx">n</span>
+<span class="p">}</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">square</span><span class="p">(</span><span class="mf">2</span><span class="p">))</span><span class="w">  </span><span class="c1">// -&gt; 4</span>
+
+<span class="c1">// if we have only one line in the code block, it can be written as follows, explicit return</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">square</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">n</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">n</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="nx">n</span><span class="w">  </span><span class="c1">// -&gt; 4</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">changeToUpperCase</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">arr</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">newArr</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[]</span>
+<span class="w">  </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kd">const</span><span class="w"> </span><span class="nx">element</span><span class="w"> </span><span class="k">of</span><span class="w"> </span><span class="nx">arr</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">newArr</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">element</span><span class="p">.</span><span class="nx">toUpperCase</span><span class="p">())</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="nx">newArr</span>
+<span class="p">}</span>
+
+<span class="kd">const</span><span class="w"> </span><span class="nx">countries</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s1">&#39;Finland&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Sweden&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Norway&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Denmark&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Iceland&#39;</span><span class="p">]</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">changeToUpperCase</span><span class="p">(</span><span class="nx">countries</span><span class="p">))</span>
+
+<span class="c1">// [&quot;FINLAND&quot;, &quot;SWEDEN&quot;, &quot;NORWAY&quot;, &quot;DENMARK&quot;, &quot;ICELAND&quot;]</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">printFullName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="nx">firstName</span><span class="p">,</span><span class="w"> </span><span class="nx">lastName</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="sb">`</span><span class="si">${</span><span class="nx">firstName</span><span class="si">}</span><span class="sb"> </span><span class="si">${</span><span class="nx">lastName</span><span class="si">}</span><span class="sb">`</span>
+<span class="p">}</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">printFullName</span><span class="p">(</span><span class="s1">&#39;Asabeneh&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Yetayeh&#39;</span><span class="p">))</span>
+</code></pre></div>
+<p>The above function has only the return statement, therefore, we can explicitly return it as follows.</p>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">printFullName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="nx">firstName</span><span class="p">,</span><span class="w"> </span><span class="nx">lastName</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="sb">`</span><span class="si">${</span><span class="nx">firstName</span><span class="si">}</span><span class="sb"> </span><span class="si">${</span><span class="nx">lastName</span><span class="si">}</span><span class="sb">`</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">printFullName</span><span class="p">(</span><span class="s1">&#39;Asabeneh&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Yetayeh&#39;</span><span class="p">))</span>
+</code></pre></div>
+<h3 id="function-with-default-parameters">Function with default parameters</h3>
+<p>Sometimes we pass default values to parameters, when we invoke the function if we do not pass an argument the default value will be used. Both function declaration and arrow function can have a default value or values.</p>
+<div class="highlight"><pre><span></span><code><span class="c1">// syntax</span>
+<span class="c1">// Declaring a function</span>
+<span class="kd">function</span><span class="w"> </span><span class="nx">functionName</span><span class="p">(</span><span class="nx">param</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">value</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="c1">//codes</span>
+<span class="p">}</span>
+
+<span class="c1">// Calling function</span>
+<span class="nx">functionName</span><span class="p">()</span>
+<span class="nx">functionName</span><span class="p">(</span><span class="nx">arg</span><span class="p">)</span>
+</code></pre></div>
+<p><strong>Example:</strong></p>
+<div class="highlight"><pre><span></span><code><span class="kd">function</span><span class="w"> </span><span class="nx">greetings</span><span class="p">(</span><span class="nx">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;Peter&#39;</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="kd">let</span><span class="w"> </span><span class="nx">message</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="sb">`</span><span class="si">${</span><span class="nx">name</span><span class="si">}</span><span class="sb">, welcome to 30 Days Of JavaScript!`</span>
+<span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="nx">message</span>
+<span class="p">}</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">greetings</span><span class="p">())</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">greetings</span><span class="p">(</span><span class="s1">&#39;Asabeneh&#39;</span><span class="p">))</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="kd">function</span><span class="w"> </span><span class="nx">generateFullName</span><span class="p">(</span><span class="nx">firstName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;Asabeneh&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">lastName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;Yetayeh&#39;</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="kd">let</span><span class="w"> </span><span class="nx">space</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39; &#39;</span>
+<span class="w">  </span><span class="kd">let</span><span class="w"> </span><span class="nx">fullName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">firstName</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">space</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">lastName</span>
+<span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="nx">fullName</span>
+<span class="p">}</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">generateFullName</span><span class="p">())</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">generateFullName</span><span class="p">(</span><span class="s1">&#39;David&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Smith&#39;</span><span class="p">))</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="kd">function</span><span class="w"> </span><span class="nx">calculateAge</span><span class="p">(</span><span class="nx">birthYear</span><span class="p">,</span><span class="w"> </span><span class="nx">currentYear</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">2019</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="kd">let</span><span class="w"> </span><span class="nx">age</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">currentYear</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="nx">birthYear</span>
+<span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="nx">age</span>
+<span class="p">}</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;Age: &#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">calculateAge</span><span class="p">(</span><span class="mf">1819</span><span class="p">))</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="kd">function</span><span class="w"> </span><span class="nx">weightOfObject</span><span class="p">(</span><span class="nx">mass</span><span class="p">,</span><span class="w"> </span><span class="nx">gravity</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">9.81</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="kd">let</span><span class="w"> </span><span class="nx">weight</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">mass</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="nx">gravity</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s1">&#39; N&#39;</span><span class="w"> </span><span class="c1">// the value has to be changed to string first</span>
+<span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="nx">weight</span>
+<span class="p">}</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;Weight of an object in Newton: &#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">weightOfObject</span><span class="p">(</span><span class="mf">100</span><span class="p">))</span><span class="w"> </span><span class="c1">// 9.81 gravity at the surface of Earth</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;Weight of an object in Newton: &#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">weightOfObject</span><span class="p">(</span><span class="mf">100</span><span class="p">,</span><span class="w"> </span><span class="mf">1.62</span><span class="p">))</span><span class="w"> </span><span class="c1">// gravity at surface of Moon</span>
+</code></pre></div>
+<p>Let us see how we write the above functions with arrow functions</p>
+<div class="highlight"><pre><span></span><code><span class="c1">// syntax</span>
+<span class="c1">// Declaring a function</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">functionName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="nx">param</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">value</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="c1">//codes</span>
+<span class="p">}</span>
+
+<span class="c1">// Calling function</span>
+<span class="nx">functionName</span><span class="p">()</span>
+<span class="nx">functionName</span><span class="p">(</span><span class="nx">arg</span><span class="p">)</span>
+</code></pre></div>
+<p><strong>Example:</strong></p>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">greetings</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="nx">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;Peter&#39;</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="kd">let</span><span class="w"> </span><span class="nx">message</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">name</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s1">&#39;, welcome to 30 Days Of JavaScript!&#39;</span>
+<span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="nx">message</span>
+<span class="p">}</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">greetings</span><span class="p">())</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">greetings</span><span class="p">(</span><span class="s1">&#39;Asabeneh&#39;</span><span class="p">))</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">generateFullName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="nx">firstName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;Asabeneh&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">lastName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;Yetayeh&#39;</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="kd">let</span><span class="w"> </span><span class="nx">space</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39; &#39;</span>
+<span class="w">  </span><span class="kd">let</span><span class="w"> </span><span class="nx">fullName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">firstName</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">space</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">lastName</span>
+<span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="nx">fullName</span>
+<span class="p">}</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">generateFullName</span><span class="p">())</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">generateFullName</span><span class="p">(</span><span class="s1">&#39;David&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Smith&#39;</span><span class="p">))</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">calculateAge</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="nx">birthYear</span><span class="p">,</span><span class="w"> </span><span class="nx">currentYear</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">2019</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">currentYear</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="nx">birthYear</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;Age: &#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">calculateAge</span><span class="p">(</span><span class="mf">1819</span><span class="p">))</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">weightOfObject</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="nx">mass</span><span class="p">,</span><span class="w"> </span><span class="nx">gravity</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">9.81</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">mass</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="nx">gravity</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s1">&#39; N&#39;</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;Weight of an object in Newton: &#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">weightOfObject</span><span class="p">(</span><span class="mf">100</span><span class="p">))</span><span class="w"> </span><span class="c1">// 9.81 gravity at the surface of Earth</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;Weight of an object in Newton: &#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">weightOfObject</span><span class="p">(</span><span class="mf">100</span><span class="p">,</span><span class="w"> </span><span class="mf">1.62</span><span class="p">))</span><span class="w"> </span><span class="c1">// gravity at surface of Moon</span>
+</code></pre></div>
+<h3 id="function-declaration-versus-arrow-function">Function declaration versus Arrow function</h3>
+<p>It Will be covered in other section.</p>
+<p>🌕 You are a rising star, now you knew function . Now, you are super charged with the power of functions. You have just completed day 7 challenges and you are 7 steps a head in to your way to greatness. Now do some exercises for your brain and for your muscle.</p>
+<h2 id="exercises">💻 Exercises</h2>
+<h3 id="exercises-level-1">Exercises: Level 1</h3>
+<ol>
+<li>Declare a function <em>fullName</em> and it print out your full name.</li>
+<li>Declare a function <em>fullName</em> and now it takes firstName, lastName as a parameter and it returns your full - name.</li>
+<li>Declare a function <em>addNumbers</em> and it takes two two parameters and it returns sum.</li>
+<li>An area of a rectangle is calculated as follows: <em>area = length x width</em>. Write a function which calculates <em>areaOfRectangle</em>.</li>
+<li>A perimeter of a rectangle is calculated as follows: <em>perimeter= 2x(length + width)</em>. Write a function which calculates <em>perimeterOfRectangle</em>.</li>
+<li>A volume of a rectangular prism is calculated as follows: <em>volume = length x width x height</em>. Write a function which calculates <em>volumeOfRectPrism</em>.</li>
+<li>Area of a circle is calculated as follows: <em>area = π x r x r</em>. Write a function which calculates <em>areaOfCircle</em></li>
+<li>Circumference of a circle is calculated as follows: <em>circumference = 2πr</em>. Write a function which calculates <em>circumOfCircle</em></li>
+<li>Density of a substance is calculated as follows:<em>density= mass/volume</em>. Write a function which calculates <em>density</em>.</li>
+<li>Speed is calculated by dividing the total distance covered by a moving object divided by the total amount of time taken. Write a function which calculates a speed of a moving object, <em>speed</em>.</li>
+<li>Weight of a substance is calculated as follows: <em>weight = mass x gravity</em>. Write a function which calculates <em>weight</em>.</li>
+<li>Temperature in oC can be converted to oF using this formula: <em>oF = (oC x 9/5) + 32</em>. Write a function which convert oC to oF <em>convertCelsiusToFahrenheit</em>.</li>
+<li>
+<p>Body mass index(BMI) is calculated as follows: <em>bmi = weight in Kg / (height x height) in m2</em>. Write a function which calculates <em>bmi</em>. BMI is used to broadly define different weight groups in adults 20 years old or older.Check if a person is <em>underweight, normal, overweight</em> or <em>obese</em> based the information given below.</p>
+<ul>
+<li>The same groups apply to both men and women.</li>
+<li><em>Underweight</em>: BMI is less than 18.5</li>
+<li><em>Normal weight</em>: BMI is 18.5 to 24.9</li>
+<li><em>Overweight</em>: BMI is 25 to 29.9</li>
+<li><em>Obese</em>: BMI is 30 or more</li>
+</ul>
+</li>
+<li>
+<p>Write a function called <em>checkSeason</em>, it takes a month parameter and returns the season:Autumn, Winter, Spring or Summer.</p>
+</li>
+<li>
+<p>Math.max returns its largest argument. Write a function findMax that takes three arguments and returns their maximum with out using Math.max method.</p>
+<div class="highlight"><pre><span></span><code><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">findMax</span><span class="p">(</span><span class="mf">0</span><span class="p">,</span><span class="w"> </span><span class="mf">10</span><span class="p">,</span><span class="w"> </span><span class="mf">5</span><span class="p">))</span>
+<span class="mf">10</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">findMax</span><span class="p">(</span><span class="mf">0</span><span class="p">,</span><span class="w"> </span><span class="o">-</span><span class="mf">10</span><span class="p">,</span><span class="w"> </span><span class="o">-</span><span class="mf">2</span><span class="p">))</span>
+<span class="mf">0</span>
+</code></pre></div>
+</li>
+</ol>
+<h3 id="exercises-level-2">Exercises: Level 2</h3>
+<ol>
+<li>Linear equation is calculated as follows: <em>ax + by + c = 0</em>. Write a function which calculates value of a linear equation, <em>solveLinEquation</em>.</li>
+<li>
+<p>Quadratic equation is calculated as follows: <em>ax2 + bx + c = 0</em>. Write a function which calculates value or values of a quadratic equation, <em>solveQuadEquation</em>.</p>
+<div class="highlight"><pre><span></span><code><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">solveQuadratic</span><span class="p">())</span><span class="w"> </span><span class="c1">// {0}</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">solveQuadratic</span><span class="p">(</span><span class="mf">1</span><span class="p">,</span><span class="w"> </span><span class="mf">4</span><span class="p">,</span><span class="w"> </span><span class="mf">4</span><span class="p">))</span><span class="w"> </span><span class="c1">// {-2}</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">solveQuadratic</span><span class="p">(</span><span class="mf">1</span><span class="p">,</span><span class="w"> </span><span class="o">-</span><span class="mf">1</span><span class="p">,</span><span class="w"> </span><span class="o">-</span><span class="mf">2</span><span class="p">))</span><span class="w"> </span><span class="c1">// {2, -1}</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">solveQuadratic</span><span class="p">(</span><span class="mf">1</span><span class="p">,</span><span class="w"> </span><span class="mf">7</span><span class="p">,</span><span class="w"> </span><span class="mf">12</span><span class="p">))</span><span class="w"> </span><span class="c1">// {-3, -4}</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">solveQuadratic</span><span class="p">(</span><span class="mf">1</span><span class="p">,</span><span class="w"> </span><span class="mf">0</span><span class="p">,</span><span class="w"> </span><span class="o">-</span><span class="mf">4</span><span class="p">))</span><span class="w"> </span><span class="c1">//{2, -2}</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">solveQuadratic</span><span class="p">(</span><span class="mf">1</span><span class="p">,</span><span class="w"> </span><span class="o">-</span><span class="mf">1</span><span class="p">,</span><span class="w"> </span><span class="mf">0</span><span class="p">))</span><span class="w"> </span><span class="c1">//{1, 0}</span>
+</code></pre></div>
+</li>
+<li>
+<p>Declare a function name <em>printArray</em>. It takes array as a parameter and it prints out each value of the array.</p>
+</li>
+<li>
+<p>Write a function name <em>showDateTime</em> which shows time in this format: 08/01/2020 04:08 using the Date object.</p>
+<div class="highlight"><pre><span></span><code>showDateTime<span class="o">()</span>
+<span class="m">08</span>/01/2020<span class="w"> </span><span class="m">04</span>:08
+</code></pre></div>
+</li>
+<li>
+<p>Declare a function name <em>swapValues</em>. This function swaps value of x to y.</p>
+<div class="highlight"><pre><span></span><code><span class="nx">swapValues</span><span class="p">(</span><span class="mf">3</span><span class="p">,</span><span class="w"> </span><span class="mf">4</span><span class="p">)</span><span class="w"> </span><span class="c1">// x =&gt; 4, y=&gt;3</span>
+<span class="nx">swapValues</span><span class="p">(</span><span class="mf">4</span><span class="p">,</span><span class="w"> </span><span class="mf">5</span><span class="p">)</span><span class="w"> </span><span class="c1">// x = 5, y = 4</span>
+</code></pre></div>
+</li>
+<li>
+<p>Declare a function name <em>reverseArray</em>. It takes array as a parameter and it returns the reverse of the array (don't use method).</p>
+<div class="highlight"><pre><span></span><code><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">reverseArray</span><span class="p">([</span><span class="mf">1</span><span class="p">,</span><span class="w"> </span><span class="mf">2</span><span class="p">,</span><span class="w"> </span><span class="mf">3</span><span class="p">,</span><span class="w"> </span><span class="mf">4</span><span class="p">,</span><span class="w"> </span><span class="mf">5</span><span class="p">]))</span>
+<span class="c1">//[5, 4, 3, 2, 1]</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">reverseArray</span><span class="p">([</span><span class="s1">&#39;A&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;B&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;C&#39;</span><span class="p">]))</span>
+<span class="c1">//[&#39;C&#39;, &#39;B&#39;, &#39;A&#39;]</span>
+</code></pre></div>
+</li>
+<li>
+<p>Declare a function name <em>capitalizeArray</em>. It takes array as a parameter and it returns the - capitalizedarray.</p>
+</li>
+<li>Declare a function name <em>addItem</em>. It takes an item parameter and it returns an array after adding the item</li>
+<li>Declare a function name <em>removeItem</em>. It takes an index parameter and it returns an array after removing an item</li>
+<li>Declare a function name <em>sumOfNumbers</em>. It takes a number parameter and it adds all the numbers in that range.</li>
+<li>Declare a function name <em>sumOfOdds</em>. It takes a number parameter and it adds all the odd numbers in that - range.</li>
+<li>Declare a function name <em>sumOfEven</em>. It takes a number parameter and it adds all the even numbers in that - range.</li>
+<li>
+<p>Declare a function name evensAndOdds . It takes a positive integer as parameter and it counts number of evens and odds in the number.</p>
+<div class="highlight"><pre><span></span><code>evensAndOdds<span class="o">(</span><span class="m">100</span><span class="o">)</span><span class="p">;</span>
+The<span class="w"> </span>number<span class="w"> </span>of<span class="w"> </span>odds<span class="w"> </span>are<span class="w"> </span><span class="m">50</span>.
+The<span class="w"> </span>number<span class="w"> </span>of<span class="w"> </span>evens<span class="w"> </span>are<span class="w"> </span><span class="m">51</span>.
+</code></pre></div>
+</li>
+<li>
+<p>Write a function which takes any number of arguments and return the sum of the arguments</p>
+<div class="highlight"><pre><span></span><code><span class="nx">sum</span><span class="p">(</span><span class="mf">1</span><span class="p">,</span><span class="w"> </span><span class="mf">2</span><span class="p">,</span><span class="w"> </span><span class="mf">3</span><span class="p">)</span><span class="w"> </span><span class="c1">// -&gt; 6</span>
+<span class="nx">sum</span><span class="p">(</span><span class="mf">1</span><span class="p">,</span><span class="w"> </span><span class="mf">2</span><span class="p">,</span><span class="w"> </span><span class="mf">3</span><span class="p">,</span><span class="w"> </span><span class="mf">4</span><span class="p">)</span><span class="w"> </span><span class="c1">// -&gt; 10</span>
+</code></pre></div>
+</li>
+<li>
+<p>Writ a function which generates a <em>randomUserIp</em>.</p>
+</li>
+<li>Write a function which generates a <em>randomMacAddress</em></li>
+<li>
+<p>Declare a function name <em>randomHexaNumberGenerator</em>. When this function is called it generates a random hexadecimal number. The function return the hexadecimal number.</p>
+<div class="highlight"><pre><span></span><code>console.log<span class="o">(</span>randomHexaNumberGenerator<span class="o">())</span><span class="p">;</span>
+<span class="s1">&#39;#ee33df&#39;</span>
+</code></pre></div>
+</li>
+<li>
+<p>Declare a function name <em>userIdGenerator</em>. When this function is called it generates seven character id. The function return the id.</p>
+<div class="highlight"><pre><span></span><code>console.log<span class="o">(</span>userIdGenerator<span class="o">())</span><span class="p">;</span>
+41XTDbE
+</code></pre></div>
+</li>
+</ol>
+<h3 id="exercises-level-3">Exercises: Level 3</h3>
+<ol>
+<li>
+<p>Modify the <em>userIdGenerator</em> function. Declare a function name <em>userIdGeneratedByUser</em>. It doesn’t take any parameter but it takes two inputs using prompt(). One of the input is the number of characters and the second input is the number of ids which are supposed to be generated.</p>
+<div class="highlight"><pre><span></span><code>userIdGeneratedByUser<span class="o">()</span>
+<span class="s1">&#39;kcsy2</span>
+<span class="s1">SMFYb</span>
+<span class="s1">bWmeq</span>
+<span class="s1">ZXOYh</span>
+<span class="s1">2Rgxf</span>
+<span class="s1">&#39;</span>
+userIdGeneratedByUser<span class="o">()</span>
+<span class="s1">&#39;1GCSgPLMaBAVQZ26</span>
+<span class="s1">YD7eFwNQKNs7qXaT</span>
+<span class="s1">ycArC5yrRupyG00S</span>
+<span class="s1">UbGxOFI7UXSWAyKN</span>
+<span class="s1">dIV0SSUTgAdKwStr</span>
+<span class="s1">&#39;</span>
+</code></pre></div>
+</li>
+<li>
+<p>Write a function name <em>rgbColorGenerator</em> and it generates rgb colors.</p>
+<div class="highlight"><pre><span></span><code>rgbColorGenerator<span class="o">()</span>
+rgb<span class="o">(</span><span class="m">125</span>,244,255<span class="o">)</span>
+</code></pre></div>
+</li>
+<li>
+<p>Write a function <strong><em>arrayOfHexaColors</em></strong> which return any number of hexadecimal colors in an array.</p>
+</li>
+<li>Write a function <strong><em>arrayOfRgbColors</em></strong> which return any number of RGB colors in an array.</li>
+<li>Write a function <strong><em>convertHexaToRgb</em></strong> which converts hexa color to rgb and it returns an rgb color.</li>
+<li>Write a function <strong><em>convertRgbToHexa</em></strong> which converts rgb to hexa color and it returns an hexa color.</li>
+<li>
+<p>Write a function <strong><em>generateColors</em></strong> which can generate any number of hexa or rgb colors.</p>
+<div class="highlight"><pre><span></span><code><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">generateColors</span><span class="p">(</span><span class="s1">&#39;hexa&#39;</span><span class="p">,</span><span class="w"> </span><span class="mf">3</span><span class="p">))</span><span class="w"> </span><span class="c1">// [&#39;#a3e12f&#39;, &#39;#03ed55&#39;, &#39;#eb3d2b&#39;]</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">generateColors</span><span class="p">(</span><span class="s1">&#39;hexa&#39;</span><span class="p">,</span><span class="w"> </span><span class="mf">1</span><span class="p">))</span><span class="w"> </span><span class="c1">// &#39;#b334ef&#39;</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">generateColors</span><span class="p">(</span><span class="s1">&#39;rgb&#39;</span><span class="p">,</span><span class="w"> </span><span class="mf">3</span><span class="p">))</span><span class="w"> </span><span class="c1">// [&#39;rgb(5, 55, 175)&#39;, &#39;rgb(50, 105, 100)&#39;, &#39;rgb(15, 26, 80)&#39;]</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">generateColors</span><span class="p">(</span><span class="s1">&#39;rgb&#39;</span><span class="p">,</span><span class="w"> </span><span class="mf">1</span><span class="p">))</span><span class="w"> </span><span class="c1">// &#39;rgb(33,79, 176)&#39;</span>
+</code></pre></div>
+</li>
+<li>
+<p>Call your function <em>shuffleArray</em>, it takes an array as a parameter and it returns a shuffled array</p>
+</li>
+<li>Call your function <em>factorial</em>, it takes a whole number as a parameter and it return a factorial of the number</li>
+<li>Call your function <em>isEmpty</em>, it takes a parameter and it checks if it is empty or not</li>
+<li>Call your function <em>sum</em>, it takes any number of arguments and it returns the sum.</li>
+<li>Write a function called <em>sumOfArrayItems</em>, it takes an array parameter and return the sum of all the items. Check if all the array items are number types. If not give return reasonable feedback.</li>
+<li>Write a function called <em>average</em>, it takes an array parameter and returns the average of the items. Check if all the array items are number types. If not give return reasonable feedback.</li>
+<li>
+<p>Write a function called <em>modifyArray</em> takes array as parameter and modifies the fifth item of the array and return the array. If the array length is less than five it return 'item not found'.</p>
+<div class="highlight"><pre><span></span><code><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">modifyArray</span><span class="p">([</span><span class="s1">&#39;Avocado&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Tomato&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Potato&#39;</span><span class="p">,</span><span class="s1">&#39;Mango&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Lemon&#39;</span><span class="p">,</span><span class="s1">&#39;Carrot&#39;</span><span class="p">]);</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="o">[</span><span class="s1">&#39;Avocado&#39;</span>,<span class="w"> </span><span class="s1">&#39;Tomato&#39;</span>,<span class="w"> </span><span class="s1">&#39;Potato&#39;</span>,<span class="s1">&#39;Mango&#39;</span>,<span class="w"> </span><span class="s1">&#39;LEMON&#39;</span>,<span class="w"> </span><span class="s1">&#39;Carrot&#39;</span><span class="o">]</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">modifyArray</span><span class="p">([</span><span class="s1">&#39;Google&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Facebook&#39;</span><span class="p">,</span><span class="s1">&#39;Apple&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Amazon&#39;</span><span class="p">,</span><span class="s1">&#39;Microsoft&#39;</span><span class="p">,</span><span class="w">  </span><span class="s1">&#39;IBM&#39;</span><span class="p">]);</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="o">[</span><span class="s1">&#39;Google&#39;</span>,<span class="w"> </span><span class="s1">&#39;Facebook&#39;</span>,<span class="s1">&#39;Apple&#39;</span>,<span class="w"> </span><span class="s1">&#39;Amazon&#39;</span>,<span class="s1">&#39;MICROSOFT&#39;</span>,<span class="w">  </span><span class="s1">&#39;IBM&#39;</span><span class="o">]</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">modifyArray</span><span class="p">([</span><span class="s1">&#39;Google&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Facebook&#39;</span><span class="p">,</span><span class="s1">&#39;Apple&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Amazon&#39;</span><span class="p">]);</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="w">  </span><span class="s1">&#39;Not Found&#39;</span>
+</code></pre></div>
+</li>
+<li>
+<p>Write a function called <em>isPrime</em>, which checks if a number is prime number.</p>
+</li>
+<li>Write a functions which checks if all items are unique in the array.</li>
+<li>Write a function which checks if all the items of the array are the same data type.</li>
+<li>JavaScript variable name does not support special characters or symbols except \$ or _. Write a function <strong>isValidVariable</strong> which check if a variable is valid or invalid variable.</li>
+<li>
+<p>Write a function which returns array of seven random numbers in a range of 0-9. All the numbers must be unique.</p>
+<div class="highlight"><pre><span></span><code><span class="nx">sevenRandomNumbers</span><span class="p">()</span>
+<span class="p">[(</span><span class="mf">1</span><span class="p">,</span><span class="w"> </span><span class="mf">4</span><span class="p">,</span><span class="w"> </span><span class="mf">5</span><span class="p">,</span><span class="w"> </span><span class="mf">7</span><span class="p">,</span><span class="w"> </span><span class="mf">9</span><span class="p">,</span><span class="w"> </span><span class="mf">8</span><span class="p">,</span><span class="w"> </span><span class="mf">0</span><span class="p">)]</span>
+</code></pre></div>
+</li>
+<li>
+<p>Write a function called reverseCountries, it takes countries array and first it copy the array and returns the reverse of the original array</p>
+</li>
+</ol>
+<p>🎉 CONGRATULATIONS ! 🎉</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.d7c377c4.min.js"></script>
+      
+    
+  </body>
+</html>

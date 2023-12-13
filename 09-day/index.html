@@ -1,0 +1,1949 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../08-day/">
+      
+      
+        <link rel="next" href="../10-day/">
+      
+      
+      <link rel="icon" href="../images/javascript.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.2">
+    
+    
+      
+        <title>📔 Day 9 - 30 Days Javascript</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.50c56a3b.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="amber" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#day-9" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="30 Days Javascript" class="md-header__button md-logo" aria-label="30 Days Javascript" data-md-component="logo">
+      
+  <img src="../images/javascript.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            30 Days Javascript
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              📔 Day 9
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/devinesia/30-days-javascript-web" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="30 Days Javascript" class="md-nav__button md-logo" aria-label="30 Days Javascript" data-md-component="logo">
+      
+  <img src="../images/javascript.png" alt="logo">
+
+    </a>
+    30 Days Javascript
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/devinesia/30-days-javascript-web" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Getting started
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01-day/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    📔 Day 1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02-day/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    📔 Day 2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03-day/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    📔 Day 3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04-day/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    📔 Day 4
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../05-day/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    📔 Day 5
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../06-day/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    📔 Day 6
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../07-day/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    📔 Day 7
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../08-day/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    📔 Day 8
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    📔 Day 9
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    📔 Day 9
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#higher-order-function" class="md-nav__link">
+    <span class="md-ellipsis">
+      Higher Order Function
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Higher Order Function">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#callback" class="md-nav__link">
+    <span class="md-ellipsis">
+      Callback
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returning-function" class="md-nav__link">
+    <span class="md-ellipsis">
+      Returning function
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setting-time" class="md-nav__link">
+    <span class="md-ellipsis">
+      Setting time
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Setting time">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#setting-interval-using-a-setinterval-function" class="md-nav__link">
+    <span class="md-ellipsis">
+      Setting Interval using a setInterval function
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setting-a-time-using-a-settimeout" class="md-nav__link">
+    <span class="md-ellipsis">
+      Setting a time using a setTimeout
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#functional-programming" class="md-nav__link">
+    <span class="md-ellipsis">
+      Functional Programming
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Functional Programming">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#foreach" class="md-nav__link">
+    <span class="md-ellipsis">
+      forEach
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#map" class="md-nav__link">
+    <span class="md-ellipsis">
+      map
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#filter" class="md-nav__link">
+    <span class="md-ellipsis">
+      filter
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reduce" class="md-nav__link">
+    <span class="md-ellipsis">
+      reduce
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#every" class="md-nav__link">
+    <span class="md-ellipsis">
+      every
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#find" class="md-nav__link">
+    <span class="md-ellipsis">
+      find
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#findindex" class="md-nav__link">
+    <span class="md-ellipsis">
+      findIndex
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#some" class="md-nav__link">
+    <span class="md-ellipsis">
+      some
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sort" class="md-nav__link">
+    <span class="md-ellipsis">
+      sort
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="sort">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sorting-string-values" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sorting string values
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sorting-numeric-values" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sorting Numeric values
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sorting-object-arrays" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sorting Object Arrays
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercises" class="md-nav__link">
+    <span class="md-ellipsis">
+      💻 Exercises
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="💻 Exercises">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#exercises-level-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exercises: Level 1
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exercises-level-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exercises: Level 2
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exercises-level-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exercises: Level 3
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../10-day/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    📔 Day 10
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../11-day/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    📘 Day 11
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../12-day/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    📘 Day 12
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../13-day/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    📘 Day 13
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../14-day/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    📘 Day 14
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../15-day/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    📘 Day 15
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../16-day/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    📘 Day 16
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../17-day/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    📘 Day 17
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../18-day/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    📘 Day 18
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../19-day/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    📘 Day 19
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20-day/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    📘 Day 20
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../21-day/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    📙 Day 21
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../22-day/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    📙 Day 22
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../23-day/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    📙 Day 23
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../24-day/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    📙 Day 24
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../25-day/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    📙 Day 25
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../26-day/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    📙 Day 26
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../27-day/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    📙 Day 27
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../28-day/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    📙 Day 28
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../29-day/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    📙 Day 29
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../30-day/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    📙 Day 30
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#higher-order-function" class="md-nav__link">
+    <span class="md-ellipsis">
+      Higher Order Function
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Higher Order Function">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#callback" class="md-nav__link">
+    <span class="md-ellipsis">
+      Callback
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returning-function" class="md-nav__link">
+    <span class="md-ellipsis">
+      Returning function
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setting-time" class="md-nav__link">
+    <span class="md-ellipsis">
+      Setting time
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Setting time">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#setting-interval-using-a-setinterval-function" class="md-nav__link">
+    <span class="md-ellipsis">
+      Setting Interval using a setInterval function
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setting-a-time-using-a-settimeout" class="md-nav__link">
+    <span class="md-ellipsis">
+      Setting a time using a setTimeout
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#functional-programming" class="md-nav__link">
+    <span class="md-ellipsis">
+      Functional Programming
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Functional Programming">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#foreach" class="md-nav__link">
+    <span class="md-ellipsis">
+      forEach
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#map" class="md-nav__link">
+    <span class="md-ellipsis">
+      map
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#filter" class="md-nav__link">
+    <span class="md-ellipsis">
+      filter
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reduce" class="md-nav__link">
+    <span class="md-ellipsis">
+      reduce
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#every" class="md-nav__link">
+    <span class="md-ellipsis">
+      every
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#find" class="md-nav__link">
+    <span class="md-ellipsis">
+      find
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#findindex" class="md-nav__link">
+    <span class="md-ellipsis">
+      findIndex
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#some" class="md-nav__link">
+    <span class="md-ellipsis">
+      some
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sort" class="md-nav__link">
+    <span class="md-ellipsis">
+      sort
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="sort">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sorting-string-values" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sorting string values
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sorting-numeric-values" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sorting Numeric values
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sorting-object-arrays" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sorting Object Arrays
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercises" class="md-nav__link">
+    <span class="md-ellipsis">
+      💻 Exercises
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="💻 Exercises">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#exercises-level-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exercises: Level 1
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exercises-level-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exercises: Level 2
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exercises-level-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exercises: Level 3
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<h1 id="day-9">📔 Day 9</h1>
+<h2 id="higher-order-function">Higher Order Function</h2>
+<p>Higher order functions are functions which take other function as a parameter or return a function as a value. The function passed as a parameter is called callback.</p>
+<h3 id="callback">Callback</h3>
+<p>A callback is a function which can be passed as parameter to other function. See the example below.</p>
+<div class="highlight"><pre><span></span><code><span class="c1">// a callback function, the name of the function could be any name</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">callback</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="nx">n</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="nx">n</span><span class="w"> </span><span class="o">**</span><span class="w"> </span><span class="mf">2</span>
+<span class="p">}</span>
+<span class="err">​</span>
+<span class="c1">// function that takes other function as a callback</span>
+<span class="kd">function</span><span class="w"> </span><span class="nx">cube</span><span class="p">(</span><span class="nx">callback</span><span class="p">,</span><span class="w"> </span><span class="nx">n</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="nx">callback</span><span class="p">(</span><span class="nx">n</span><span class="p">)</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="nx">n</span>
+<span class="p">}</span>
+<span class="err">​</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">cube</span><span class="p">(</span><span class="nx">callback</span><span class="p">,</span><span class="w"> </span><span class="mf">3</span><span class="p">))</span>
+</code></pre></div>
+<h3 id="returning-function">Returning function</h3>
+<p>Higher order functions return function as a value
+​
+<div class="highlight"><pre><span></span><code><span class="c1">// Higher order function returning an other function</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">higherOrder</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">n</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">doSomething</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">m</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">doWhatEver</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">t</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="k">return</span><span class="w"> </span><span class="mf">2</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="nx">n</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mf">3</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="nx">m</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">t</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="nx">doWhatEver</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="nx">doSomething</span>
+<span class="p">}</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">higherOrder</span><span class="p">(</span><span class="mf">2</span><span class="p">)(</span><span class="mf">3</span><span class="p">)(</span><span class="mf">10</span><span class="p">))</span>
+</code></pre></div></p>
+<p>Let us see were we use call back functions. For instance the <em>forEach</em> method uses call back.</p>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">numbers</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="mf">1</span><span class="p">,</span><span class="w"> </span><span class="mf">2</span><span class="p">,</span><span class="w"> </span><span class="mf">3</span><span class="p">,</span><span class="w"> </span><span class="mf">4</span><span class="p">,</span><span class="w"> </span><span class="mf">5</span><span class="p">]</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">sumArray</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">arr</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="kd">let</span><span class="w"> </span><span class="nx">sum</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0</span>
+<span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">callback</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kd">function</span><span class="p">(</span><span class="nx">element</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">sum</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="nx">element</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="w">  </span><span class="nx">arr</span><span class="p">.</span><span class="nx">forEach</span><span class="p">(</span><span class="nx">callback</span><span class="p">)</span>
+<span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="nx">sum</span>
+
+<span class="p">}</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">sumArray</span><span class="p">(</span><span class="nx">numbers</span><span class="p">))</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="m">15</span>
+</code></pre></div>
+<p>The above example can be simplified as follows:</p>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">numbers</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="mf">1</span><span class="p">,</span><span class="w"> </span><span class="mf">2</span><span class="p">,</span><span class="w"> </span><span class="mf">3</span><span class="p">,</span><span class="w"> </span><span class="mf">4</span><span class="p">]</span>
+<span class="err">​</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">sumArray</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">arr</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="kd">let</span><span class="w"> </span><span class="nx">sum</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0</span>
+<span class="w">  </span><span class="nx">arr</span><span class="p">.</span><span class="nx">forEach</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">element</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">sum</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="nx">element</span>
+<span class="w">  </span><span class="p">})</span>
+<span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="nx">sum</span>
+
+<span class="p">}</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">sumArray</span><span class="p">(</span><span class="nx">numbers</span><span class="p">))</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="m">15</span>
+</code></pre></div>
+<h3 id="setting-time">Setting time</h3>
+<p>In JavaScript we can execute some activities in a certain interval of time or we can schedule(wait) for some time to execute some activities.</p>
+<ul>
+<li>setInterval</li>
+<li>setTimeout</li>
+</ul>
+<h4 id="setting-interval-using-a-setinterval-function">Setting Interval using a setInterval function</h4>
+<p>In JavaScript, we use setInterval higher order function to do some activity continuously with in some interval of time. The setInterval global method take a callback function and a duration as a parameter. The duration is in milliseconds and the callback will be always called in that interval of time.</p>
+<div class="highlight"><pre><span></span><code><span class="c1">// syntax</span>
+<span class="kd">function</span><span class="w"> </span><span class="nx">callback</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="c1">// code goes here</span>
+<span class="p">}</span>
+<span class="nx">setInterval</span><span class="p">(</span><span class="nx">callback</span><span class="p">,</span><span class="w"> </span><span class="nx">duration</span><span class="p">)</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="kd">function</span><span class="w"> </span><span class="nx">sayHello</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;Hello&#39;</span><span class="p">)</span>
+<span class="p">}</span>
+<span class="nx">setInterval</span><span class="p">(</span><span class="nx">sayHello</span><span class="p">,</span><span class="w"> </span><span class="mf">1000</span><span class="p">)</span><span class="w"> </span><span class="c1">// it prints hello in every second, 1000ms is 1s</span>
+</code></pre></div>
+<h4 id="setting-a-time-using-a-settimeout">Setting a time using a setTimeout</h4>
+<p>In JavaScript, we use setTimeout higher order function to execute some action at some time in the future. The setTimeout global method take a callback function and a duration as a parameter. The duration is in milliseconds and the callback wait for that amount of time.</p>
+<div class="highlight"><pre><span></span><code><span class="c1">// syntax</span>
+<span class="kd">function</span><span class="w"> </span><span class="nx">callback</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="c1">// code goes here</span>
+<span class="p">}</span>
+<span class="nx">setTimeout</span><span class="p">(</span><span class="nx">callback</span><span class="p">,</span><span class="w"> </span><span class="nx">duration</span><span class="p">)</span><span class="w"> </span><span class="c1">// duration in milliseconds</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="kd">function</span><span class="w"> </span><span class="nx">sayHello</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;Hello&#39;</span><span class="p">)</span>
+<span class="p">}</span>
+<span class="nx">setTimeout</span><span class="p">(</span><span class="nx">sayHello</span><span class="p">,</span><span class="w"> </span><span class="mf">2000</span><span class="p">)</span><span class="w"> </span><span class="c1">// it prints hello after it waits for 2 seconds.</span>
+</code></pre></div>
+<h2 id="functional-programming">Functional Programming</h2>
+<p>Instead of writing regular loop, latest version of JavaScript introduced lots of built in methods which can help us to solve complicated problems. All builtin methods take callback function. In this section, we will see <em>forEach</em>, <em>map</em>, <em>filter</em>, <em>reduce</em>, <em>find</em>, <em>every</em>, <em>some</em>, and <em>sort</em>.</p>
+<h3 id="foreach">forEach</h3>
+<p><em>forEach</em>: Iterate an array elements. We use <em>forEach</em> only with arrays. It takes a callback function with elements, index parameter and array itself. The index and the array optional.</p>
+<div class="highlight"><pre><span></span><code><span class="nx">arr</span><span class="p">.</span><span class="nx">forEach</span><span class="p">(</span><span class="kd">function</span><span class="w"> </span><span class="p">(</span><span class="nx">element</span><span class="p">,</span><span class="w"> </span><span class="nx">index</span><span class="p">,</span><span class="w"> </span><span class="nx">arr</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">index</span><span class="p">,</span><span class="w"> </span><span class="nx">element</span><span class="p">,</span><span class="w"> </span><span class="nx">arr</span><span class="p">)</span>
+<span class="p">})</span>
+<span class="c1">// The above code can be written using arrow function</span>
+<span class="nx">arr</span><span class="p">.</span><span class="nx">forEach</span><span class="p">((</span><span class="nx">element</span><span class="p">,</span><span class="w"> </span><span class="nx">index</span><span class="p">,</span><span class="w"> </span><span class="nx">arr</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">index</span><span class="p">,</span><span class="w"> </span><span class="nx">element</span><span class="p">,</span><span class="w"> </span><span class="nx">arr</span><span class="p">)</span>
+<span class="p">})</span>
+<span class="c1">// The above code can be written using arrow function and explicit return</span>
+<span class="nx">arr</span><span class="p">.</span><span class="nx">forEach</span><span class="p">((</span><span class="nx">element</span><span class="p">,</span><span class="w"> </span><span class="nx">index</span><span class="p">,</span><span class="w"> </span><span class="nx">arr</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">index</span><span class="p">,</span><span class="w"> </span><span class="nx">element</span><span class="p">,</span><span class="w"> </span><span class="nx">arr</span><span class="p">))</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="kd">let</span><span class="w"> </span><span class="nx">sum</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0</span><span class="p">;</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">numbers</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="mf">1</span><span class="p">,</span><span class="w"> </span><span class="mf">2</span><span class="p">,</span><span class="w"> </span><span class="mf">3</span><span class="p">,</span><span class="w"> </span><span class="mf">4</span><span class="p">,</span><span class="w"> </span><span class="mf">5</span><span class="p">];</span>
+<span class="nx">numbers</span><span class="p">.</span><span class="nx">forEach</span><span class="p">(</span><span class="nx">num</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">num</span><span class="p">))</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">sum</span><span class="p">)</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="m">1</span>
+<span class="m">2</span>
+<span class="m">3</span>
+<span class="m">4</span>
+<span class="m">5</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="kd">let</span><span class="w"> </span><span class="nx">sum</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0</span><span class="p">;</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">numbers</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="mf">1</span><span class="p">,</span><span class="w"> </span><span class="mf">2</span><span class="p">,</span><span class="w"> </span><span class="mf">3</span><span class="p">,</span><span class="w"> </span><span class="mf">4</span><span class="p">,</span><span class="w"> </span><span class="mf">5</span><span class="p">];</span>
+<span class="nx">numbers</span><span class="p">.</span><span class="nx">forEach</span><span class="p">(</span><span class="nx">num</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">sum</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="nx">num</span><span class="p">)</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">sum</span><span class="p">)</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="m">15</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">countries</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s1">&#39;Finland&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Denmark&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Sweden&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Norway&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Iceland&#39;</span><span class="p">]</span>
+<span class="nx">countries</span><span class="p">.</span><span class="nx">forEach</span><span class="p">((</span><span class="nx">element</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">element</span><span class="p">.</span><span class="nx">toUpperCase</span><span class="p">()))</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>FINLAND
+DENMARK
+SWEDEN
+NORWAY
+ICELAND
+</code></pre></div>
+<h3 id="map">map</h3>
+<p><em>map</em>: Iterate an array elements and modify the array elements. It takes a callback function with elements,  index , array parameter and return a new array.</p>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">modifiedArray</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">arr</span><span class="p">.</span><span class="nx">map</span><span class="p">(</span><span class="kd">function</span><span class="w"> </span><span class="p">(</span><span class="nx">element</span><span class="p">,</span><span class="w"> </span><span class="nx">index</span><span class="p">,</span><span class="w"> </span><span class="nx">arr</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="nx">element</span>
+<span class="p">})</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="cm">/*Arrow function and explicit return</span>
+<span class="cm">const modifiedArray = arr.map((element,index) =&gt; element);</span>
+<span class="cm">*/</span>
+<span class="c1">//Example</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">numbers</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="mf">1</span><span class="p">,</span><span class="w"> </span><span class="mf">2</span><span class="p">,</span><span class="w"> </span><span class="mf">3</span><span class="p">,</span><span class="w"> </span><span class="mf">4</span><span class="p">,</span><span class="w"> </span><span class="mf">5</span><span class="p">]</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">numbersSquare</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">numbers</span><span class="p">.</span><span class="nx">map</span><span class="p">((</span><span class="nx">num</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">num</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="nx">num</span><span class="p">)</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">numbersSquare</span><span class="p">)</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="o">[</span><span class="m">1</span>,<span class="w"> </span><span class="m">4</span>,<span class="w"> </span><span class="m">9</span>,<span class="w"> </span><span class="m">16</span>,<span class="w"> </span><span class="m">25</span><span class="o">]</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">names</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s1">&#39;Asabeneh&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Mathias&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Elias&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Brook&#39;</span><span class="p">]</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">namesToUpperCase</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">names</span><span class="p">.</span><span class="nx">map</span><span class="p">((</span><span class="nx">name</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">name</span><span class="p">.</span><span class="nx">toUpperCase</span><span class="p">())</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">namesToUpperCase</span><span class="p">)</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="o">[</span><span class="s1">&#39;ASABENEH&#39;</span>,<span class="w"> </span><span class="s1">&#39;MATHIAS&#39;</span>,<span class="w"> </span><span class="s1">&#39;ELIAS&#39;</span>,<span class="w"> </span><span class="s1">&#39;BROOK&#39;</span><span class="o">]</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">countries</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span>
+<span class="w">  </span><span class="s1">&#39;Albania&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;Bolivia&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;Canada&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;Denmark&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;Ethiopia&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;Finland&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;Germany&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;Hungary&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;Ireland&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;Japan&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;Kenya&#39;</span><span class="p">,</span>
+<span class="p">]</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">countriesToUpperCase</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">countries</span><span class="p">.</span><span class="nx">map</span><span class="p">((</span><span class="nx">country</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">country</span><span class="p">.</span><span class="nx">toUpperCase</span><span class="p">())</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">countriesToUpperCase</span><span class="p">)</span>
+
+<span class="cm">/*</span>
+<span class="cm">// Arrow function</span>
+<span class="cm">const countriesToUpperCase = countries.map((country) =&gt; {</span>
+<span class="cm">  return country.toUpperCase();</span>
+<span class="cm">})</span>
+<span class="cm">//Explicit return arrow function</span>
+<span class="cm">const countriesToUpperCase = countries.map(country =&gt; country.toUpperCase());</span>
+<span class="cm">*/</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="o">[</span><span class="s1">&#39;ALBANIA&#39;</span>,<span class="w"> </span><span class="s1">&#39;BOLIVIA&#39;</span>,<span class="w"> </span><span class="s1">&#39;CANADA&#39;</span>,<span class="w"> </span><span class="s1">&#39;DENMARK&#39;</span>,<span class="w"> </span><span class="s1">&#39;ETHIOPIA&#39;</span>,<span class="w"> </span><span class="s1">&#39;FINLAND&#39;</span>,<span class="w"> </span><span class="s1">&#39;GERMANY&#39;</span>,<span class="w"> </span><span class="s1">&#39;HUNGARY&#39;</span>,<span class="w"> </span><span class="s1">&#39;IRELAND&#39;</span>,<span class="w"> </span><span class="s1">&#39;JAPAN&#39;</span>,<span class="w"> </span><span class="s1">&#39;KENYA&#39;</span><span class="o">]</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">countriesFirstThreeLetters</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">countries</span><span class="p">.</span><span class="nx">map</span><span class="p">((</span><span class="nx">country</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span>
+<span class="w">  </span><span class="nx">country</span><span class="p">.</span><span class="nx">toUpperCase</span><span class="p">().</span><span class="nx">slice</span><span class="p">(</span><span class="mf">0</span><span class="p">,</span><span class="w"> </span><span class="mf">3</span><span class="p">)</span>
+<span class="p">)</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="w"> </span><span class="o">[</span><span class="s2">&quot;ALB&quot;</span>,<span class="w"> </span><span class="s2">&quot;BOL&quot;</span>,<span class="w"> </span><span class="s2">&quot;CAN&quot;</span>,<span class="w"> </span><span class="s2">&quot;DEN&quot;</span>,<span class="w"> </span><span class="s2">&quot;ETH&quot;</span>,<span class="w"> </span><span class="s2">&quot;FIN&quot;</span>,<span class="w"> </span><span class="s2">&quot;GER&quot;</span>,<span class="w"> </span><span class="s2">&quot;HUN&quot;</span>,<span class="w"> </span><span class="s2">&quot;IRE&quot;</span>,<span class="w"> </span><span class="s2">&quot;JAP&quot;</span>,<span class="w"> </span><span class="s2">&quot;KEN&quot;</span><span class="o">]</span>
+</code></pre></div>
+<h3 id="filter">filter</h3>
+<p><em>Filter</em>: Filter out items which full fill filtering conditions and return a new array.</p>
+<div class="highlight"><pre><span></span><code><span class="c1">//Filter countries containing land</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">countriesContainingLand</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">countries</span><span class="p">.</span><span class="nx">filter</span><span class="p">((</span><span class="nx">country</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span>
+<span class="w">  </span><span class="nx">country</span><span class="p">.</span><span class="nx">includes</span><span class="p">(</span><span class="s1">&#39;land&#39;</span><span class="p">)</span>
+<span class="p">)</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">countriesContainingLand</span><span class="p">)</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="o">[</span><span class="s1">&#39;Finland&#39;</span>,<span class="w"> </span><span class="s1">&#39;Ireland&#39;</span><span class="o">]</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">countriesEndsByia</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">countries</span><span class="p">.</span><span class="nx">filter</span><span class="p">((</span><span class="nx">country</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">country</span><span class="p">.</span><span class="nx">endsWith</span><span class="p">(</span><span class="s1">&#39;ia&#39;</span><span class="p">))</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">countriesEndsByia</span><span class="p">)</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="o">[</span><span class="s1">&#39;Albania&#39;</span>,<span class="w"> </span><span class="s1">&#39;Bolivia&#39;</span>,<span class="s1">&#39;Ethiopia&#39;</span><span class="o">]</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">countriesHaveFiveLetters</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">countries</span><span class="p">.</span><span class="nx">filter</span><span class="p">(</span>
+<span class="w">  </span><span class="p">(</span><span class="nx">country</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">country</span><span class="p">.</span><span class="nx">length</span><span class="w"> </span><span class="o">===</span><span class="w"> </span><span class="mf">5</span>
+<span class="p">)</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">countriesHaveFiveLetters</span><span class="p">)</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="o">[</span><span class="s1">&#39;Japan&#39;</span>,<span class="w"> </span><span class="s1">&#39;Kenya&#39;</span><span class="o">]</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">scores</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span>
+<span class="w">  </span><span class="p">{</span><span class="w"> </span><span class="nx">name</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;Asabeneh&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">score</span><span class="o">:</span><span class="w"> </span><span class="mf">95</span><span class="w"> </span><span class="p">},</span>
+<span class="w">   </span><span class="p">{</span><span class="w"> </span><span class="nx">name</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;Lidiya&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">score</span><span class="o">:</span><span class="w"> </span><span class="mf">98</span><span class="w"> </span><span class="p">},</span>
+<span class="w">  </span><span class="p">{</span><span class="w"> </span><span class="nx">name</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;Mathias&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">score</span><span class="o">:</span><span class="w"> </span><span class="mf">80</span><span class="w"> </span><span class="p">},</span>
+<span class="w">  </span><span class="p">{</span><span class="w"> </span><span class="nx">name</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;Elias&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">score</span><span class="o">:</span><span class="w"> </span><span class="mf">50</span><span class="w"> </span><span class="p">},</span>
+<span class="w">  </span><span class="p">{</span><span class="w"> </span><span class="nx">name</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;Martha&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">score</span><span class="o">:</span><span class="w"> </span><span class="mf">85</span><span class="w"> </span><span class="p">},</span>
+<span class="w">  </span><span class="p">{</span><span class="w"> </span><span class="nx">name</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;John&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">score</span><span class="o">:</span><span class="w"> </span><span class="mf">100</span><span class="w"> </span><span class="p">},</span>
+<span class="p">]</span>
+
+<span class="kd">const</span><span class="w"> </span><span class="nx">scoresGreaterEighty</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">scores</span><span class="p">.</span><span class="nx">filter</span><span class="p">((</span><span class="nx">score</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">score</span><span class="p">.</span><span class="nx">score</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mf">80</span><span class="p">)</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">scoresGreaterEighty</span><span class="p">)</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="o">[{</span>name:<span class="w"> </span><span class="s1">&#39;Asabeneh&#39;</span>,<span class="w"> </span>score:<span class="w"> </span><span class="m">95</span><span class="o">}</span>,<span class="w"> </span><span class="o">{</span><span class="w"> </span>name:<span class="w"> </span><span class="s1">&#39;Lidiya&#39;</span>,<span class="w"> </span>score:<span class="w"> </span><span class="m">98</span><span class="w"> </span><span class="o">}</span>,<span class="o">{</span>name:<span class="w"> </span><span class="s1">&#39;Martha&#39;</span>,<span class="w"> </span>score:<span class="w"> </span><span class="m">85</span><span class="o">}</span>,<span class="o">{</span>name:<span class="w"> </span><span class="s1">&#39;John&#39;</span>,<span class="w"> </span>score:<span class="w"> </span><span class="m">100</span><span class="o">}]</span>
+</code></pre></div>
+<h3 id="reduce">reduce</h3>
+<p><em>reduce</em>: Reduce takes a callback function. The call back function takes accumulator,  current, and optional initial value as a parameter and returns a single value. It is a good practice to define an initial value for the accumulator value. If we do not specify this parameter, by default accumulator will get array <code>first value</code>. If our array is an <em>empty array</em>, then <code>Javascript</code> will throw an error.</p>
+<div class="highlight"><pre><span></span><code><span class="nx">arr</span><span class="p">.</span><span class="nx">reduce</span><span class="p">((</span><span class="nx">acc</span><span class="p">,</span><span class="w"> </span><span class="nx">cur</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="c1">// some operations goes here before returning a value</span>
+<span class="w"> </span><span class="k">return</span><span class="w"> </span>
+<span class="p">},</span><span class="w"> </span><span class="nx">initialValue</span><span class="p">)</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">numbers</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="mf">1</span><span class="p">,</span><span class="w"> </span><span class="mf">2</span><span class="p">,</span><span class="w"> </span><span class="mf">3</span><span class="p">,</span><span class="w"> </span><span class="mf">4</span><span class="p">,</span><span class="w"> </span><span class="mf">5</span><span class="p">]</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">sum</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">numbers</span><span class="p">.</span><span class="nx">reduce</span><span class="p">((</span><span class="nx">acc</span><span class="p">,</span><span class="w"> </span><span class="nx">cur</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">acc</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">cur</span><span class="p">,</span><span class="w"> </span><span class="mf">0</span><span class="p">)</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">sum</span><span class="p">)</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="mf">15</span>
+</code></pre></div>
+<h3 id="every">every</h3>
+<p><em>every</em>: Check if all the elements are similar in one aspect. It returns boolean</p>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">names</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s1">&#39;Asabeneh&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Mathias&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Elias&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Brook&#39;</span><span class="p">]</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">areAllStr</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">names</span><span class="p">.</span><span class="nx">every</span><span class="p">((</span><span class="nx">name</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="ow">typeof</span><span class="w"> </span><span class="nx">name</span><span class="w"> </span><span class="o">===</span><span class="w"> </span><span class="s1">&#39;string&#39;</span><span class="p">)</span><span class="w"> </span><span class="c1">// Are all strings?</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">areAllStr</span><span class="p">)</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="nb">true</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">bools</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="kc">true</span><span class="p">,</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w"> </span><span class="kc">true</span><span class="p">]</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">areAllTrue</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">bools</span><span class="p">.</span><span class="nx">every</span><span class="p">((</span><span class="nx">b</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">b</span><span class="w"> </span><span class="o">===</span><span class="w"> </span><span class="kc">true</span><span class="p">)</span><span class="w"> </span><span class="c1">// Are all true? </span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">areAllTrue</span><span class="p">)</span><span class="w"> </span><span class="c1">// true</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="nb">true</span>
+</code></pre></div>
+<h3 id="find">find</h3>
+<p><em>find</em>: Return the first element which satisfies the condition</p>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">ages</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="mf">24</span><span class="p">,</span><span class="w"> </span><span class="mf">22</span><span class="p">,</span><span class="w"> </span><span class="mf">25</span><span class="p">,</span><span class="w"> </span><span class="mf">32</span><span class="p">,</span><span class="w"> </span><span class="mf">35</span><span class="p">,</span><span class="w"> </span><span class="mf">18</span><span class="p">]</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">age</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">ages</span><span class="p">.</span><span class="nx">find</span><span class="p">((</span><span class="nx">age</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">age</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mf">20</span><span class="p">)</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">age</span><span class="p">)</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="mf">18</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">names</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s1">&#39;Asabeneh&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Mathias&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Elias&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Brook&#39;</span><span class="p">]</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">result</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">names</span><span class="p">.</span><span class="nx">find</span><span class="p">((</span><span class="nx">name</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">name</span><span class="p">.</span><span class="nx">length</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mf">7</span><span class="p">)</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">result</span><span class="p">)</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>Asabeneh
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">scores</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span>
+<span class="w">  </span><span class="p">{</span><span class="w"> </span><span class="nx">name</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;Asabeneh&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">score</span><span class="o">:</span><span class="w"> </span><span class="mf">95</span><span class="w"> </span><span class="p">},</span>
+<span class="w">  </span><span class="p">{</span><span class="w"> </span><span class="nx">name</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;Mathias&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">score</span><span class="o">:</span><span class="w"> </span><span class="mf">80</span><span class="w"> </span><span class="p">},</span>
+<span class="w">  </span><span class="p">{</span><span class="w"> </span><span class="nx">name</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;Elias&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">score</span><span class="o">:</span><span class="w"> </span><span class="mf">50</span><span class="w"> </span><span class="p">},</span>
+<span class="w">  </span><span class="p">{</span><span class="w"> </span><span class="nx">name</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;Martha&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">score</span><span class="o">:</span><span class="w"> </span><span class="mf">85</span><span class="w"> </span><span class="p">},</span>
+<span class="w">  </span><span class="p">{</span><span class="w"> </span><span class="nx">name</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;John&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">score</span><span class="o">:</span><span class="w"> </span><span class="mf">100</span><span class="w"> </span><span class="p">},</span>
+<span class="p">]</span>
+
+<span class="kd">const</span><span class="w"> </span><span class="nx">score</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">scores</span><span class="p">.</span><span class="nx">find</span><span class="p">((</span><span class="nx">user</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">user</span><span class="p">.</span><span class="nx">score</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mf">80</span><span class="p">)</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">score</span><span class="p">)</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="o">{</span><span class="w"> </span>name:<span class="w"> </span><span class="s2">&quot;Asabeneh&quot;</span>,<span class="w"> </span>score:<span class="w"> </span><span class="m">95</span><span class="w"> </span><span class="o">}</span>
+</code></pre></div>
+<h3 id="findindex">findIndex</h3>
+<p><em>findIndex</em>: Return the position of the first element which satisfies the condition</p>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">names</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s1">&#39;Asabeneh&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Mathias&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Elias&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Brook&#39;</span><span class="p">]</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">ages</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="mf">24</span><span class="p">,</span><span class="w"> </span><span class="mf">22</span><span class="p">,</span><span class="w"> </span><span class="mf">25</span><span class="p">,</span><span class="w"> </span><span class="mf">32</span><span class="p">,</span><span class="w"> </span><span class="mf">35</span><span class="p">,</span><span class="w"> </span><span class="mf">18</span><span class="p">]</span>
+
+<span class="kd">const</span><span class="w"> </span><span class="nx">result</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">names</span><span class="p">.</span><span class="nx">findIndex</span><span class="p">((</span><span class="nx">name</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">name</span><span class="p">.</span><span class="nx">length</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mf">7</span><span class="p">)</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">result</span><span class="p">)</span><span class="w"> </span><span class="c1">// 0</span>
+
+<span class="kd">const</span><span class="w"> </span><span class="nx">age</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">ages</span><span class="p">.</span><span class="nx">findIndex</span><span class="p">((</span><span class="nx">age</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">age</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mf">20</span><span class="p">)</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">age</span><span class="p">)</span><span class="w"> </span><span class="c1">// 5</span>
+</code></pre></div>
+<h3 id="some">some</h3>
+<p><em>some</em>: Check if some of the elements are similar in one aspect. It returns boolean</p>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">names</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s1">&#39;Asabeneh&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Mathias&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Elias&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Brook&#39;</span><span class="p">]</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">bools</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="kc">true</span><span class="p">,</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w"> </span><span class="kc">true</span><span class="p">]</span>
+
+<span class="kd">const</span><span class="w"> </span><span class="nx">areSomeTrue</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">bools</span><span class="p">.</span><span class="nx">some</span><span class="p">((</span><span class="nx">b</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w">  </span><span class="nx">b</span><span class="w"> </span><span class="o">===</span><span class="w"> </span><span class="kc">true</span><span class="p">)</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">areSomeTrue</span><span class="p">)</span><span class="w"> </span><span class="c1">//true</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">areAllStr</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">names</span><span class="p">.</span><span class="nx">some</span><span class="p">((</span><span class="nx">name</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="ow">typeof</span><span class="w"> </span><span class="nx">name</span><span class="w"> </span><span class="o">===</span><span class="w"> </span><span class="s1">&#39;number&#39;</span><span class="p">)</span><span class="w"> </span><span class="c1">// Are all strings ?</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">areAllStr</span><span class="p">)</span><span class="w"> </span><span class="c1">// false</span>
+</code></pre></div>
+<h3 id="sort">sort</h3>
+<p><em>sort</em>: The sort methods arranges the array elements either ascending or descending order. By default, the <strong><em>sort()</em></strong> method sorts values as strings.This works well for string array items but not for numbers. If number values are sorted as strings and it give us wrong result. Sort method modify the original array. It is recommended to copy the original data before you start using <em>sort</em> method.</p>
+<h4 id="sorting-string-values">Sorting string values</h4>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">products</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s1">&#39;Milk&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Coffee&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Sugar&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Honey&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Apple&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Carrot&#39;</span><span class="p">]</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">products</span><span class="p">.</span><span class="nx">sort</span><span class="p">())</span><span class="w"> </span><span class="c1">// [&#39;Apple&#39;, &#39;Carrot&#39;, &#39;Coffee&#39;, &#39;Honey&#39;, &#39;Milk&#39;, &#39;Sugar&#39;]</span>
+<span class="c1">//Now the original products array  is also sorted</span>
+</code></pre></div>
+<h4 id="sorting-numeric-values">Sorting Numeric values</h4>
+<p>As you can see in the example below, 100 came first after sorted in ascending order. Sort converts items to string , since '100' and other numbers compared, 1 which the beginning of the string '100' became the smallest. To avoid this, we use a compare call back function inside the sort method, which return a negative, zero or positive.</p>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">numbers</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="mf">9.81</span><span class="p">,</span><span class="w"> </span><span class="mf">3.14</span><span class="p">,</span><span class="w"> </span><span class="mf">100</span><span class="p">,</span><span class="w"> </span><span class="mf">37</span><span class="p">]</span>
+<span class="c1">// Using sort method to sort number items provide a wrong result. see below</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">numbers</span><span class="p">.</span><span class="nx">sort</span><span class="p">())</span><span class="w"> </span><span class="c1">//[100, 3.14, 37, 9.81]</span>
+<span class="nx">numbers</span><span class="p">.</span><span class="nx">sort</span><span class="p">(</span><span class="kd">function</span><span class="w"> </span><span class="p">(</span><span class="nx">a</span><span class="p">,</span><span class="w"> </span><span class="nx">b</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="nx">a</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="nx">b</span>
+<span class="p">})</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">numbers</span><span class="p">)</span><span class="w"> </span><span class="c1">// [3.14, 9.81, 37, 100]</span>
+
+<span class="nx">numbers</span><span class="p">.</span><span class="nx">sort</span><span class="p">(</span><span class="kd">function</span><span class="w"> </span><span class="p">(</span><span class="nx">a</span><span class="p">,</span><span class="w"> </span><span class="nx">b</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="nx">b</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="nx">a</span>
+<span class="p">})</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">numbers</span><span class="p">)</span><span class="w"> </span><span class="c1">//[100, 37, 9.81, 3.14]</span>
+</code></pre></div>
+<h4 id="sorting-object-arrays">Sorting Object Arrays</h4>
+<p>Whenever we sort objects in an array, we use the object key to compare. Let us see the example below.</p>
+<div class="highlight"><pre><span></span><code><span class="nx">objArr</span><span class="p">.</span><span class="nx">sort</span><span class="p">(</span><span class="kd">function</span><span class="w"> </span><span class="p">(</span><span class="nx">a</span><span class="p">,</span><span class="w"> </span><span class="nx">b</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">a</span><span class="p">.</span><span class="nx">key</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="nx">b</span><span class="p">.</span><span class="nx">key</span><span class="p">)</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="o">-</span><span class="mf">1</span>
+<span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">a</span><span class="p">.</span><span class="nx">key</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="nx">b</span><span class="p">.</span><span class="nx">key</span><span class="p">)</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="mf">1</span>
+<span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="mf">0</span>
+<span class="p">})</span>
+
+<span class="c1">// or</span>
+
+<span class="nx">objArr</span><span class="p">.</span><span class="nx">sort</span><span class="p">(</span><span class="kd">function</span><span class="w"> </span><span class="p">(</span><span class="nx">a</span><span class="p">,</span><span class="w"> </span><span class="nx">b</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">a</span><span class="p">[</span><span class="s1">&#39;key&#39;</span><span class="p">]</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="nx">b</span><span class="p">[</span><span class="s1">&#39;key&#39;</span><span class="p">])</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="o">-</span><span class="mf">1</span>
+<span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">a</span><span class="p">[</span><span class="s1">&#39;key&#39;</span><span class="p">]</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="nx">b</span><span class="p">[</span><span class="s1">&#39;key&#39;</span><span class="p">])</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="mf">1</span>
+<span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="mf">0</span>
+<span class="p">})</span>
+
+<span class="kd">const</span><span class="w"> </span><span class="nx">users</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span>
+<span class="w">  </span><span class="p">{</span><span class="w"> </span><span class="nx">name</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;Asabeneh&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">age</span><span class="o">:</span><span class="w"> </span><span class="mf">150</span><span class="w"> </span><span class="p">},</span>
+<span class="w">  </span><span class="p">{</span><span class="w"> </span><span class="nx">name</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;Brook&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">age</span><span class="o">:</span><span class="w"> </span><span class="mf">50</span><span class="w"> </span><span class="p">},</span>
+<span class="w">  </span><span class="p">{</span><span class="w"> </span><span class="nx">name</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;Eyob&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">age</span><span class="o">:</span><span class="w"> </span><span class="mf">100</span><span class="w"> </span><span class="p">},</span>
+<span class="w">  </span><span class="p">{</span><span class="w"> </span><span class="nx">name</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;Elias&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">age</span><span class="o">:</span><span class="w"> </span><span class="mf">22</span><span class="w"> </span><span class="p">},</span>
+<span class="p">]</span>
+<span class="nx">users</span><span class="p">.</span><span class="nx">sort</span><span class="p">((</span><span class="nx">a</span><span class="p">,</span><span class="w"> </span><span class="nx">b</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">a</span><span class="p">.</span><span class="nx">age</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="nx">b</span><span class="p">.</span><span class="nx">age</span><span class="p">)</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="o">-</span><span class="mf">1</span>
+<span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">a</span><span class="p">.</span><span class="nx">age</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="nx">b</span><span class="p">.</span><span class="nx">age</span><span class="p">)</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="mf">1</span>
+<span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="mf">0</span>
+<span class="p">})</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">users</span><span class="p">)</span><span class="w"> </span><span class="c1">// sorted ascending</span>
+<span class="c1">// [{…}, {…}, {…}, {…}]</span>
+</code></pre></div>
+<p>🌕 You are doing great.Never give up because great things take time. You have just completed day 9 challenges and you are 9 steps a head in to your way to greatness. Now do some exercises for your brain and for your muscle.</p>
+<h2 id="exercises">💻 Exercises</h2>
+<h3 id="exercises-level-1">Exercises: Level 1</h3>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">countries</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s1">&#39;Finland&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Sweden&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Denmark&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Norway&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;IceLand&#39;</span><span class="p">]</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">names</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s1">&#39;Asabeneh&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Mathias&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Elias&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Brook&#39;</span><span class="p">]</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">numbers</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="mf">1</span><span class="p">,</span><span class="w"> </span><span class="mf">2</span><span class="p">,</span><span class="w"> </span><span class="mf">3</span><span class="p">,</span><span class="w"> </span><span class="mf">4</span><span class="p">,</span><span class="w"> </span><span class="mf">5</span><span class="p">,</span><span class="w"> </span><span class="mf">6</span><span class="p">,</span><span class="w"> </span><span class="mf">7</span><span class="p">,</span><span class="w"> </span><span class="mf">8</span><span class="p">,</span><span class="w"> </span><span class="mf">9</span><span class="p">,</span><span class="w"> </span><span class="mf">10</span><span class="p">]</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">products</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span>
+<span class="w">  </span><span class="p">{</span><span class="w"> </span><span class="nx">product</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;banana&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">price</span><span class="o">:</span><span class="w"> </span><span class="mf">3</span><span class="w"> </span><span class="p">},</span>
+<span class="w">  </span><span class="p">{</span><span class="w"> </span><span class="nx">product</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;mango&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">price</span><span class="o">:</span><span class="w"> </span><span class="mf">6</span><span class="w"> </span><span class="p">},</span>
+<span class="w">  </span><span class="p">{</span><span class="w"> </span><span class="nx">product</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;potato&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">price</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39; &#39;</span><span class="w"> </span><span class="p">},</span>
+<span class="w">  </span><span class="p">{</span><span class="w"> </span><span class="nx">product</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;avocado&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">price</span><span class="o">:</span><span class="w"> </span><span class="mf">8</span><span class="w"> </span><span class="p">},</span>
+<span class="w">  </span><span class="p">{</span><span class="w"> </span><span class="nx">product</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;coffee&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">price</span><span class="o">:</span><span class="w"> </span><span class="mf">10</span><span class="w"> </span><span class="p">},</span>
+<span class="w">  </span><span class="p">{</span><span class="w"> </span><span class="nx">product</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;tea&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">price</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;&#39;</span><span class="w"> </span><span class="p">},</span>
+<span class="p">]</span>
+</code></pre></div>
+<ol>
+<li>Explain the difference between <strong><em>forEach, map, filter, and reduce</em></strong>.</li>
+<li>Define a callback function before you use it in forEach, map, filter or reduce.</li>
+<li>Use <strong><em>forEach</em></strong> to console.log each country in the countries array.</li>
+<li>Use <strong><em>forEach</em></strong> to console.log each name in the names array.</li>
+<li>Use <strong><em>forEach</em></strong> to console.log each number in the numbers array.</li>
+<li>Use <strong><em>map</em></strong> to create a new array by changing each country to uppercase in the countries array.</li>
+<li>Use <strong><em>map</em></strong> to create an array of countries length from countries array.</li>
+<li>Use <strong><em>map</em></strong> to create a new array by changing each number to square in the numbers array</li>
+<li>Use <strong><em>map</em></strong> to change to each name to uppercase in the names array</li>
+<li>Use <strong><em>map</em></strong> to map the products array to its corresponding prices.</li>
+<li>Use <strong><em>filter</em></strong> to filter out countries containing <strong><em>land</em></strong>.</li>
+<li>Use <strong><em>filter</em></strong> to filter out countries having six character.</li>
+<li>Use <strong><em>filter</em></strong> to filter out countries containing six letters and more in the country array.</li>
+<li>Use <strong><em>filter</em></strong> to filter out country start with 'E';</li>
+<li>Use <strong><em>filter</em></strong> to filter out only prices with values.</li>
+<li>Declare a function called getStringLists which takes an array as a parameter and then returns an array only with string items.</li>
+<li>Use <strong><em>reduce</em></strong> to sum all the numbers in the numbers array.</li>
+<li>Use <strong><em>reduce</em></strong> to concatenate all the countries and to produce this sentence: <strong><em>Estonia, Finland, Sweden, Denmark, Norway, and IceLand are north European countries</em></strong></li>
+<li>Explain the difference between <strong><em>some</em></strong> and <strong><em>every</em></strong></li>
+<li>Use <strong><em>some</em></strong> to check if some names' length greater than seven in names array</li>
+<li>Use <strong><em>every</em></strong> to check if all the countries contain the word land</li>
+<li>Explain the difference between <strong><em>find</em></strong> and <strong><em>findIndex</em></strong>.</li>
+<li>Use <strong><em>find</em></strong> to find the first country containing only six letters in the countries array</li>
+<li>Use <strong><em>findIndex</em></strong> to find the position of the first country containing only six letters in the countries array</li>
+<li>Use <strong><em>findIndex</em></strong> to find the position of <strong><em>Norway</em></strong> if it doesn't exist in the array you will get -1.</li>
+<li>Use <strong><em>findIndex</em></strong> to find the position of <strong><em>Russia</em></strong> if it doesn't exist in the array you will get -1.</li>
+</ol>
+<h3 id="exercises-level-2">Exercises: Level 2</h3>
+<ol>
+<li>Find the total price of products by chaining two or more array iterators(eg. arr.map(callback).filter(callback).reduce(callback))</li>
+<li>Find the sum of price of products using only reduce reduce(callback))</li>
+<li>Declare a function called <strong><em>categorizeCountries</em></strong> which returns an array of countries which have some common pattern(you find the countries array in this repository as countries.js(eg 'land', 'ia', 'island','stan')).</li>
+<li>Create a function which return an array of objects, which is the letter and the number of times the letter use to start with a name of a country.</li>
+<li>Declare a <strong><em>getFirstTenCountries</em></strong> function and return an array of ten countries. Use different functional programming to work on the countries.js array</li>
+<li>Declare a <strong><em>getLastTenCountries</em></strong> function which which returns the last ten countries in the countries array.</li>
+<li>Find out which <em>letter</em> is used many <em>times</em> as initial for a country name from the countries array (eg. Finland, Fiji, France etc)</li>
+</ol>
+<h3 id="exercises-level-3">Exercises: Level 3</h3>
+<ol>
+<li>Use the countries information, in the data folder. Sort countries by name, by capital, by population</li>
+<li>*** Find the 10 most spoken languages:</li>
+</ol>
+<div class="highlight"><pre><span></span><code><span class="c1">// Your output should look like this</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">mostSpokenLanguages</span><span class="p">(</span><span class="nx">countries</span><span class="p">,</span><span class="w"> </span><span class="mf">10</span><span class="p">))</span>
+<span class="p">[</span>
+<span class="p">{</span><span class="nx">country</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;English&#39;</span><span class="p">,</span><span class="nx">count</span><span class="o">:</span><span class="mf">91</span><span class="p">},</span>
+<span class="p">{</span><span class="nx">country</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;French&#39;</span><span class="p">,</span><span class="nx">count</span><span class="o">:</span><span class="mf">45</span><span class="p">},</span>
+<span class="p">{</span><span class="nx">country</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;Arabic&#39;</span><span class="p">,</span><span class="nx">count</span><span class="o">:</span><span class="mf">25</span><span class="p">},</span>
+<span class="p">{</span><span class="nx">country</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;Spanish&#39;</span><span class="p">,</span><span class="nx">count</span><span class="o">:</span><span class="mf">24</span><span class="p">},</span>
+<span class="p">{</span><span class="nx">country</span><span class="o">:</span><span class="s1">&#39;Russian&#39;</span><span class="p">,</span><span class="nx">count</span><span class="o">:</span><span class="mf">9</span><span class="p">},</span>
+<span class="p">{</span><span class="nx">country</span><span class="o">:</span><span class="s1">&#39;Portuguese&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">count</span><span class="o">:</span><span class="mf">9</span><span class="p">},</span>
+<span class="p">{</span><span class="nx">country</span><span class="o">:</span><span class="s1">&#39;Dutch&#39;</span><span class="p">,</span><span class="nx">count</span><span class="o">:</span><span class="mf">8</span><span class="p">},</span>
+<span class="p">{</span><span class="nx">country</span><span class="o">:</span><span class="s1">&#39;German&#39;</span><span class="p">,</span><span class="nx">count</span><span class="o">:</span><span class="mf">7</span><span class="p">},</span>
+<span class="p">{</span><span class="nx">country</span><span class="o">:</span><span class="s1">&#39;Chinese&#39;</span><span class="p">,</span><span class="nx">count</span><span class="o">:</span><span class="mf">5</span><span class="p">},</span>
+<span class="p">{</span><span class="nx">country</span><span class="o">:</span><span class="s1">&#39;Swahili&#39;</span><span class="p">,</span><span class="nx">count</span><span class="o">:</span><span class="mf">4</span><span class="p">}</span>
+<span class="p">]</span>
+
+<span class="c1">// Your output should look like this</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">mostSpokenLanguages</span><span class="p">(</span><span class="nx">countries</span><span class="p">,</span><span class="w"> </span><span class="mf">3</span><span class="p">))</span>
+<span class="p">[</span>
+<span class="p">{</span><span class="nx">country</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;English&#39;</span><span class="p">,</span><span class="nx">count</span><span class="o">:</span><span class="w"> </span><span class="mf">91</span><span class="p">},</span>
+<span class="p">{</span><span class="nx">country</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;French&#39;</span><span class="p">,</span><span class="nx">count</span><span class="o">:</span><span class="w"> </span><span class="mf">45</span><span class="p">},</span>
+<span class="p">{</span><span class="nx">country</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;Arabic&#39;</span><span class="p">,</span><span class="nx">count</span><span class="o">:</span><span class="w"> </span><span class="mf">25</span><span class="p">},</span>
+<span class="p">]</span><span class="sb">```</span>
+</code></pre></div>
+<ol>
+<li>*** Use countries_data.js file create a function which create the ten most populated countries</li>
+</ol>
+<div class="highlight"><pre><span></span><code><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">mostPopulatedCountries</span><span class="p">(</span><span class="nx">countries</span><span class="p">,</span><span class="w"> </span><span class="mf">10</span><span class="p">))</span>
+
+<span class="p">[</span>
+<span class="p">{</span><span class="nx">country</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;China&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">population</span><span class="o">:</span><span class="w"> </span><span class="mf">1377422166</span><span class="p">},</span>
+<span class="p">{</span><span class="nx">country</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;India&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">population</span><span class="o">:</span><span class="w"> </span><span class="mf">1295210000</span><span class="p">},</span>
+<span class="p">{</span><span class="nx">country</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;United States of America&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">population</span><span class="o">:</span><span class="w"> </span><span class="mf">323947000</span><span class="p">},</span>
+<span class="p">{</span><span class="nx">country</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;Indonesia&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">population</span><span class="o">:</span><span class="w"> </span><span class="mf">258705000</span><span class="p">},</span>
+<span class="p">{</span><span class="nx">country</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;Brazil&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">population</span><span class="o">:</span><span class="w"> </span><span class="mf">206135893</span><span class="p">},</span>
+<span class="p">{</span><span class="nx">country</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;Pakistan&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">population</span><span class="o">:</span><span class="w"> </span><span class="mf">194125062</span><span class="p">},</span>
+<span class="p">{</span><span class="nx">country</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;Nigeria&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">population</span><span class="o">:</span><span class="w"> </span><span class="mf">186988000</span><span class="p">},</span>
+<span class="p">{</span><span class="nx">country</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;Bangladesh&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">population</span><span class="o">:</span><span class="w"> </span><span class="mf">161006790</span><span class="p">},</span>
+<span class="p">{</span><span class="nx">country</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;Russian Federation&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">population</span><span class="o">:</span><span class="w"> </span><span class="mf">146599183</span><span class="p">},</span>
+<span class="p">{</span><span class="nx">country</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;Japan&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">population</span><span class="o">:</span><span class="w"> </span><span class="mf">126960000</span><span class="p">}</span>
+<span class="p">]</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">mostPopulatedCountries</span><span class="p">(</span><span class="nx">countries</span><span class="p">,</span><span class="w"> </span><span class="mf">3</span><span class="p">))</span>
+<span class="p">[</span>
+<span class="p">{</span><span class="nx">country</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;China&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">population</span><span class="o">:</span><span class="w"> </span><span class="mf">1377422166</span><span class="p">},</span>
+<span class="p">{</span><span class="nx">country</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;India&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">population</span><span class="o">:</span><span class="w"> </span><span class="mf">1295210000</span><span class="p">},</span>
+<span class="p">{</span><span class="nx">country</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;United States of America&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">population</span><span class="o">:</span><span class="w"> </span><span class="mf">323947000</span><span class="p">}</span>
+<span class="p">]</span>
+<span class="sb">```</span>
+</code></pre></div>
+<ol>
+<li>*** Try to develop a program which calculate measure of central tendency of a sample(mean, median, mode) and measure of variability(range, variance, standard deviation). In addition to those measures find the min, max, count, percentile, and frequency distribution of the sample. You can create an object called statistics and create all the functions which do statistical calculations as method for the statistics object. Check the output below.</li>
+</ol>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">ages</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="mf">31</span><span class="p">,</span><span class="w"> </span><span class="mf">26</span><span class="p">,</span><span class="w"> </span><span class="mf">34</span><span class="p">,</span><span class="w"> </span><span class="mf">37</span><span class="p">,</span><span class="w"> </span><span class="mf">27</span><span class="p">,</span><span class="w"> </span><span class="mf">26</span><span class="p">,</span><span class="w"> </span><span class="mf">32</span><span class="p">,</span><span class="w"> </span><span class="mf">32</span><span class="p">,</span><span class="w"> </span><span class="mf">26</span><span class="p">,</span><span class="w"> </span><span class="mf">27</span><span class="p">,</span><span class="w"> </span><span class="mf">27</span><span class="p">,</span><span class="w"> </span><span class="mf">24</span><span class="p">,</span><span class="w"> </span><span class="mf">32</span><span class="p">,</span><span class="w"> </span><span class="mf">33</span><span class="p">,</span><span class="w"> </span><span class="mf">27</span><span class="p">,</span><span class="w"> </span><span class="mf">25</span><span class="p">,</span><span class="w"> </span><span class="mf">26</span><span class="p">,</span><span class="w"> </span><span class="mf">38</span><span class="p">,</span><span class="w"> </span><span class="mf">37</span><span class="p">,</span><span class="w"> </span><span class="mf">31</span><span class="p">,</span><span class="w"> </span><span class="mf">34</span><span class="p">,</span><span class="w"> </span><span class="mf">24</span><span class="p">,</span><span class="w"> </span><span class="mf">33</span><span class="p">,</span><span class="w"> </span><span class="mf">29</span><span class="p">,</span><span class="w"> </span><span class="mf">26</span><span class="p">]</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;Count:&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">statistics</span><span class="p">.</span><span class="nx">count</span><span class="p">())</span><span class="w"> </span><span class="c1">// 25</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;Sum: &#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">statistics</span><span class="p">.</span><span class="nx">sum</span><span class="p">())</span><span class="w"> </span><span class="c1">// 744</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;Min: &#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">statistics</span><span class="p">.</span><span class="nx">min</span><span class="p">())</span><span class="w"> </span><span class="c1">// 24</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;Max: &#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">statistics</span><span class="p">.</span><span class="nx">max</span><span class="p">())</span><span class="w"> </span><span class="c1">// 38</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;Range: &#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">statistics</span><span class="p">.</span><span class="nx">range</span><span class="p">()</span><span class="w"> </span><span class="c1">// 14</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;Mean: &#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">statistics</span><span class="p">.</span><span class="nx">mean</span><span class="p">())</span><span class="w"> </span><span class="c1">// 30</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;Median: &#39;</span><span class="p">,</span><span class="nx">statistics</span><span class="p">.</span><span class="nx">median</span><span class="p">())</span><span class="w"> </span><span class="c1">// 29</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;Mode: &#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">statistics</span><span class="p">.</span><span class="nx">mode</span><span class="p">())</span><span class="w"> </span><span class="c1">// {&#39;mode&#39;: 26, &#39;count&#39;: 5}</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;Variance: &#39;</span><span class="p">,</span><span class="nx">statistics</span><span class="p">.</span><span class="kd">var</span><span class="p">())</span><span class="w"> </span><span class="c1">// 17.5</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;Standard Deviation: &#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">statistics</span><span class="p">.</span><span class="nx">std</span><span class="p">())</span><span class="w"> </span><span class="c1">// 4.2</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;Variance: &#39;</span><span class="p">,</span><span class="nx">statistics</span><span class="p">.</span><span class="kd">var</span><span class="p">())</span><span class="w"> </span><span class="c1">// 17.5</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;Frequency Distribution: &#39;</span><span class="p">,</span><span class="nx">statistics</span><span class="p">.</span><span class="nx">freqDist</span><span class="p">())</span><span class="w"> </span><span class="err">#</span><span class="w"> </span><span class="p">[(</span><span class="mf">20.0</span><span class="p">,</span><span class="w"> </span><span class="mf">26</span><span class="p">),</span><span class="w"> </span><span class="p">(</span><span class="mf">16.0</span><span class="p">,</span><span class="w"> </span><span class="mf">27</span><span class="p">),</span><span class="w"> </span><span class="p">(</span><span class="mf">12.0</span><span class="p">,</span><span class="w"> </span><span class="mf">32</span><span class="p">),</span><span class="w"> </span><span class="p">(</span><span class="mf">8.0</span><span class="p">,</span><span class="w"> </span><span class="mf">37</span><span class="p">),</span><span class="w"> </span><span class="p">(</span><span class="mf">8.0</span><span class="p">,</span><span class="w"> </span><span class="mf">34</span><span class="p">),</span><span class="w"> </span><span class="p">(</span><span class="mf">8.0</span><span class="p">,</span><span class="w"> </span><span class="mf">33</span><span class="p">),</span><span class="w"> </span><span class="p">(</span><span class="mf">8.0</span><span class="p">,</span><span class="w"> </span><span class="mf">31</span><span class="p">),</span><span class="w"> </span><span class="p">(</span><span class="mf">8.0</span><span class="p">,</span><span class="w"> </span><span class="mf">24</span><span class="p">),</span><span class="w"> </span><span class="p">(</span><span class="mf">4.0</span><span class="p">,</span><span class="w"> </span><span class="mf">38</span><span class="p">),</span><span class="w"> </span><span class="p">(</span><span class="mf">4.0</span><span class="p">,</span><span class="w"> </span><span class="mf">29</span><span class="p">),</span><span class="w"> </span><span class="p">(</span><span class="mf">4.0</span><span class="p">,</span><span class="w"> </span><span class="mf">25</span><span class="p">)]</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>console.log<span class="o">(</span>statistics.describe<span class="o">())</span>
+Count:<span class="w"> </span><span class="m">25</span>
+Sum:<span class="w">  </span><span class="m">744</span>
+Min:<span class="w">  </span><span class="m">24</span>
+Max:<span class="w">  </span><span class="m">38</span>
+Range:<span class="w">  </span><span class="m">14</span>
+Mean:<span class="w">  </span><span class="m">30</span>
+Median:<span class="w">  </span><span class="m">29</span>
+Mode:<span class="w">  </span><span class="o">(</span><span class="m">26</span>,<span class="w"> </span><span class="m">5</span><span class="o">)</span>
+Variance:<span class="w">  </span><span class="m">17</span>.5
+Standard<span class="w"> </span>Deviation:<span class="w">  </span><span class="m">4</span>.2
+Frequency<span class="w"> </span>Distribution:<span class="w"> </span><span class="o">[(</span><span class="m">20</span>.0,<span class="w"> </span><span class="m">26</span><span class="o">)</span>,<span class="w"> </span><span class="o">(</span><span class="m">16</span>.0,<span class="w"> </span><span class="m">27</span><span class="o">)</span>,<span class="w"> </span><span class="o">(</span><span class="m">12</span>.0,<span class="w"> </span><span class="m">32</span><span class="o">)</span>,<span class="w"> </span><span class="o">(</span><span class="m">8</span>.0,<span class="w"> </span><span class="m">37</span><span class="o">)</span>,<span class="w"> </span><span class="o">(</span><span class="m">8</span>.0,<span class="w"> </span><span class="m">34</span><span class="o">)</span>,<span class="w"> </span><span class="o">(</span><span class="m">8</span>.0,<span class="w"> </span><span class="m">33</span><span class="o">)</span>,<span class="w"> </span><span class="o">(</span><span class="m">8</span>.0,<span class="w"> </span><span class="m">31</span><span class="o">)</span>,<span class="w"> </span><span class="o">(</span><span class="m">8</span>.0,<span class="w"> </span><span class="m">24</span><span class="o">)</span>,<span class="w"> </span><span class="o">(</span><span class="m">4</span>.0,<span class="w"> </span><span class="m">38</span><span class="o">)</span>,<span class="w"> </span><span class="o">(</span><span class="m">4</span>.0,<span class="w"> </span><span class="m">29</span><span class="o">)</span>,<span class="w"> </span><span class="o">(</span><span class="m">4</span>.0,<span class="w"> </span><span class="m">25</span><span class="o">)]</span>
+</code></pre></div>
+<p>🎉 CONGRATULATIONS ! 🎉</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.d7c377c4.min.js"></script>
+      
+    
+  </body>
+</html>

@@ -1,0 +1,1783 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../11-day/">
+      
+      
+        <link rel="next" href="../13-day/">
+      
+      
+      <link rel="icon" href="../images/javascript.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.2">
+    
+    
+      
+        <title>📘 Day 12 - 30 Days Javascript</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.50c56a3b.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="amber" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#day-12" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="30 Days Javascript" class="md-header__button md-logo" aria-label="30 Days Javascript" data-md-component="logo">
+      
+  <img src="../images/javascript.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            30 Days Javascript
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              📘 Day 12
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/devinesia/30-days-javascript-web" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="30 Days Javascript" class="md-nav__button md-logo" aria-label="30 Days Javascript" data-md-component="logo">
+      
+  <img src="../images/javascript.png" alt="logo">
+
+    </a>
+    30 Days Javascript
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/devinesia/30-days-javascript-web" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Getting started
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01-day/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    📔 Day 1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02-day/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    📔 Day 2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03-day/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    📔 Day 3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04-day/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    📔 Day 4
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../05-day/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    📔 Day 5
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../06-day/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    📔 Day 6
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../07-day/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    📔 Day 7
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../08-day/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    📔 Day 8
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../09-day/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    📔 Day 9
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../10-day/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    📔 Day 10
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../11-day/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    📘 Day 11
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    📘 Day 12
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    📘 Day 12
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#regular-expressions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Regular Expressions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Regular Expressions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#regexp-parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      RegExp parameters
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="RegExp parameters">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pattern" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pattern
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#flags" class="md-nav__link">
+    <span class="md-ellipsis">
+      Flags
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#creating-a-pattern-with-regexp-constructor" class="md-nav__link">
+    <span class="md-ellipsis">
+      Creating a pattern with RegExp Constructor
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#creating-a-pattern-without-regexp-constructor" class="md-nav__link">
+    <span class="md-ellipsis">
+      Creating a pattern without RegExp Constructor
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#regexpp-object-methods" class="md-nav__link">
+    <span class="md-ellipsis">
+      RegExpp Object Methods
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="RegExpp Object Methods">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#testing-for-a-match" class="md-nav__link">
+    <span class="md-ellipsis">
+      Testing for  a match
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#array-containing-all-of-the-match" class="md-nav__link">
+    <span class="md-ellipsis">
+      Array containing all of the match
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#replacing-a-substring" class="md-nav__link">
+    <span class="md-ellipsis">
+      Replacing a substring
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#square-bracket" class="md-nav__link">
+    <span class="md-ellipsis">
+      Square Bracket
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#escape-character-in-regexp" class="md-nav__link">
+    <span class="md-ellipsis">
+      Escape character(\) in RegExp
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#one-or-more-times" class="md-nav__link">
+    <span class="md-ellipsis">
+      One or more times(+)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#period" class="md-nav__link">
+    <span class="md-ellipsis">
+      Period(.)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#zero-or-more-times" class="md-nav__link">
+    <span class="md-ellipsis">
+      Zero or more times
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#zero-or-one-times" class="md-nav__link">
+    <span class="md-ellipsis">
+      Zero or one times(?)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#quantifier-in-regexp" class="md-nav__link">
+    <span class="md-ellipsis">
+      Quantifier in RegExp
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cart" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cart ^
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exact-match" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exact match
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercises" class="md-nav__link">
+    <span class="md-ellipsis">
+      💻 Exercises
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="💻 Exercises">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#exercises-level-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exercises: Level 1
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exercises-level-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exercises: Level 2
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exercises-level-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exercises: Level 3
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../13-day/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    📘 Day 13
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../14-day/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    📘 Day 14
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../15-day/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    📘 Day 15
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../16-day/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    📘 Day 16
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../17-day/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    📘 Day 17
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../18-day/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    📘 Day 18
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../19-day/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    📘 Day 19
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20-day/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    📘 Day 20
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../21-day/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    📙 Day 21
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../22-day/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    📙 Day 22
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../23-day/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    📙 Day 23
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../24-day/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    📙 Day 24
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../25-day/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    📙 Day 25
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../26-day/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    📙 Day 26
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../27-day/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    📙 Day 27
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../28-day/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    📙 Day 28
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../29-day/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    📙 Day 29
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../30-day/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    📙 Day 30
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#regular-expressions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Regular Expressions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Regular Expressions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#regexp-parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      RegExp parameters
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="RegExp parameters">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pattern" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pattern
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#flags" class="md-nav__link">
+    <span class="md-ellipsis">
+      Flags
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#creating-a-pattern-with-regexp-constructor" class="md-nav__link">
+    <span class="md-ellipsis">
+      Creating a pattern with RegExp Constructor
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#creating-a-pattern-without-regexp-constructor" class="md-nav__link">
+    <span class="md-ellipsis">
+      Creating a pattern without RegExp Constructor
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#regexpp-object-methods" class="md-nav__link">
+    <span class="md-ellipsis">
+      RegExpp Object Methods
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="RegExpp Object Methods">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#testing-for-a-match" class="md-nav__link">
+    <span class="md-ellipsis">
+      Testing for  a match
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#array-containing-all-of-the-match" class="md-nav__link">
+    <span class="md-ellipsis">
+      Array containing all of the match
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#replacing-a-substring" class="md-nav__link">
+    <span class="md-ellipsis">
+      Replacing a substring
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#square-bracket" class="md-nav__link">
+    <span class="md-ellipsis">
+      Square Bracket
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#escape-character-in-regexp" class="md-nav__link">
+    <span class="md-ellipsis">
+      Escape character(\) in RegExp
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#one-or-more-times" class="md-nav__link">
+    <span class="md-ellipsis">
+      One or more times(+)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#period" class="md-nav__link">
+    <span class="md-ellipsis">
+      Period(.)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#zero-or-more-times" class="md-nav__link">
+    <span class="md-ellipsis">
+      Zero or more times
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#zero-or-one-times" class="md-nav__link">
+    <span class="md-ellipsis">
+      Zero or one times(?)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#quantifier-in-regexp" class="md-nav__link">
+    <span class="md-ellipsis">
+      Quantifier in RegExp
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cart" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cart ^
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exact-match" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exact match
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercises" class="md-nav__link">
+    <span class="md-ellipsis">
+      💻 Exercises
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="💻 Exercises">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#exercises-level-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exercises: Level 1
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exercises-level-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exercises: Level 2
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exercises-level-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exercises: Level 3
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<h1 id="day-12">📘 Day 12</h1>
+<h2 id="regular-expressions">Regular Expressions</h2>
+<p>A regular expression or RegExp is a small programming language that helps to find pattern in data. A RegExp can be used to check if some pattern exists in a different data types. To use RegExp in JavaScript either we use RegExp constructor or we can declare a RegExp pattern using two forward slashes followed by a flag. We can create a pattern in two ways.</p>
+<p>To declare a string we use a single quote, double quote a backtick to declare a regular expression we use two forward slashes and an optional flag. The flag could be g, i, m, s, u or y.</p>
+<h3 id="regexp-parameters">RegExp parameters</h3>
+<p>A regular expression takes two parameters. One required search pattern and an optional flag.</p>
+<h4 id="pattern">Pattern</h4>
+<p>A pattern could be a text or any form of pattern which some sort of similarity. For instance the word spam in an email could be a pattern we are interested to look for in an email or a phone number format number might be our interest to look for.</p>
+<h4 id="flags">Flags</h4>
+<p>Flags are optional parameters in a regular expression which determine the type of searching. Let us see some of the flags:</p>
+<ul>
+<li>g: a global flag which means looking for a pattern in whole text</li>
+<li>i: case insensitive flag(it searches for both lowercase and uppercase)</li>
+<li>m: multiline</li>
+</ul>
+<h3 id="creating-a-pattern-with-regexp-constructor">Creating a pattern with RegExp Constructor</h3>
+<p>Declaring regular expression without global flag and case insensitive flag.</p>
+<div class="highlight"><pre><span></span><code><span class="c1">// without flag</span>
+<span class="kd">let</span><span class="w"> </span><span class="nx">pattern</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;love&#39;</span>
+<span class="kd">let</span><span class="w"> </span><span class="nx">regEx</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nb">RegExp</span><span class="p">(</span><span class="nx">pattern</span><span class="p">)</span>
+</code></pre></div>
+<p>Declaring regular expression with global flag and case insensitive flag.</p>
+<div class="highlight"><pre><span></span><code><span class="kd">let</span><span class="w"> </span><span class="nx">pattern</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;love&#39;</span>
+<span class="kd">let</span><span class="w"> </span><span class="nx">flag</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;gi&#39;</span>
+<span class="kd">let</span><span class="w"> </span><span class="nx">regEx</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nb">RegExp</span><span class="p">(</span><span class="nx">pattern</span><span class="p">,</span><span class="w"> </span><span class="nx">flag</span><span class="p">)</span>
+</code></pre></div>
+<p>Declaring a regex pattern using RegExp object. Writing the pattern and the flag inside the RegExp constructor</p>
+<div class="highlight"><pre><span></span><code><span class="kd">let</span><span class="w"> </span><span class="nx">regEx</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nb">RegExp</span><span class="p">(</span><span class="s1">&#39;love&#39;</span><span class="p">,</span><span class="s1">&#39;gi&#39;</span><span class="p">)</span>
+</code></pre></div>
+<h3 id="creating-a-pattern-without-regexp-constructor">Creating a pattern without RegExp Constructor</h3>
+<p>Declaring regular expression with global flag and case insensitive flag.</p>
+<div class="highlight"><pre><span></span><code><span class="kd">let</span><span class="w"> </span><span class="nx">regEx</span><span class="o">=</span><span class="w"> </span><span class="sr">/love/gi</span>
+</code></pre></div>
+<p>The above regular expression is the same as the one which we created with RegExp constructor</p>
+<div class="highlight"><pre><span></span><code><span class="kd">let</span><span class="w"> </span><span class="nx">regEx</span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nb">RegExp</span><span class="p">(</span><span class="s1">&#39;love&#39;</span><span class="p">,</span><span class="s1">&#39;gi&#39;</span><span class="p">)</span>
+</code></pre></div>
+<h3 id="regexpp-object-methods">RegExpp Object Methods</h3>
+<p>Let us see some of RegExp methods</p>
+<h4 id="testing-for-a-match">Testing for  a match</h4>
+<p><em>test()</em>:Tests for a match in a string. It returns true or false.</p>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">str</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;I love JavaScript&#39;</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">pattern</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="sr">/love/</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">result</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">pattern</span><span class="p">.</span><span class="nx">test</span><span class="p">(</span><span class="nx">str</span><span class="p">)</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">result</span><span class="p">)</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="nb">true</span>
+</code></pre></div>
+<h4 id="array-containing-all-of-the-match">Array containing all of the match</h4>
+<p><em>match()</em>:Returns an array containing all of the matches, including capturing groups, or null if no match is found.
+If we do not use a global flag, match() returns an array containing the pattern, index, input and group.</p>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">str</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;I love JavaScript&#39;</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">pattern</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="sr">/love/</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">result</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">str</span><span class="p">.</span><span class="nx">match</span><span class="p">(</span><span class="nx">pattern</span><span class="p">)</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">result</span><span class="p">)</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="o">[</span><span class="s2">&quot;love&quot;</span>,<span class="w"> </span>index:<span class="w"> </span><span class="m">2</span>,<span class="w"> </span>input:<span class="w"> </span><span class="s2">&quot;I love JavaScript&quot;</span>,<span class="w"> </span>groups:<span class="w"> </span>undefined<span class="o">]</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">str</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;I love JavaScript&#39;</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">pattern</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="sr">/love/g</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">result</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">str</span><span class="p">.</span><span class="nx">match</span><span class="p">(</span><span class="nx">pattern</span><span class="p">)</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">result</span><span class="p">)</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="o">[</span><span class="s2">&quot;love&quot;</span><span class="o">]</span>
+</code></pre></div>
+<p><em>search()</em>: Tests for a match in a string. It returns the index of the match, or -1 if the search fails.</p>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">str</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;I love JavaScript&#39;</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">pattern</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="sr">/love/g</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">result</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">str</span><span class="p">.</span><span class="nx">search</span><span class="p">(</span><span class="nx">pattern</span><span class="p">)</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">result</span><span class="p">)</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="m">2</span>
+</code></pre></div>
+<h4 id="replacing-a-substring">Replacing a substring</h4>
+<p><em>replace()</em>: Executes a search for a match in a string, and replaces the matched substring with a replacement substring.</p>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">txt</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;Python is the most beautiful language that a human begin has ever created.\</span>
+<span class="s1">I recommend python for a first programming language&#39;</span>
+
+<span class="nx">matchReplaced</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">txt</span><span class="p">.</span><span class="nx">replace</span><span class="p">(</span><span class="sr">/Python|python/</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;JavaScript&#39;</span><span class="p">)</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">matchReplaced</span><span class="p">)</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>JavaScript<span class="w"> </span>is<span class="w"> </span>the<span class="w"> </span>most<span class="w"> </span>beautiful<span class="w"> </span>language<span class="w"> </span>that<span class="w"> </span>a<span class="w"> </span>human<span class="w"> </span>begin<span class="w"> </span>has<span class="w"> </span>ever<span class="w"> </span>created.I<span class="w"> </span>recommend<span class="w"> </span>python<span class="w"> </span><span class="k">for</span><span class="w"> </span>a<span class="w"> </span>first<span class="w"> </span>programming<span class="w"> </span>language
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">txt</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;Python is the most beautiful language that a human begin has ever created.\</span>
+<span class="s1">I recommend python for a first programming language&#39;</span>
+
+<span class="nx">matchReplaced</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">txt</span><span class="p">.</span><span class="nx">replace</span><span class="p">(</span><span class="sr">/Python|python/g</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;JavaScript&#39;</span><span class="p">)</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">matchReplaced</span><span class="p">)</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>JavaScript<span class="w"> </span>is<span class="w"> </span>the<span class="w"> </span>most<span class="w"> </span>beautiful<span class="w"> </span>language<span class="w"> </span>that<span class="w"> </span>a<span class="w"> </span>human<span class="w"> </span>begin<span class="w"> </span>has<span class="w"> </span>ever<span class="w"> </span>created.I<span class="w"> </span>recommend<span class="w"> </span>JavaScript<span class="w"> </span><span class="k">for</span><span class="w"> </span>a<span class="w"> </span>first<span class="w"> </span>programming<span class="w"> </span>language
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">txt</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;Python is the most beautiful language that a human begin has ever created.\</span>
+<span class="s1">I recommend python for a first programming language&#39;</span>
+
+<span class="nx">matchReplaced</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">txt</span><span class="p">.</span><span class="nx">replace</span><span class="p">(</span><span class="sr">/Python/gi</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;JavaScript&#39;</span><span class="p">)</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">matchReplaced</span><span class="p">)</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>JavaScript<span class="w"> </span>is<span class="w"> </span>the<span class="w"> </span>most<span class="w"> </span>beautiful<span class="w"> </span>language<span class="w"> </span>that<span class="w"> </span>a<span class="w"> </span>human<span class="w"> </span>begin<span class="w"> </span>has<span class="w"> </span>ever<span class="w"> </span>created.I<span class="w"> </span>recommend<span class="w"> </span>JavaScript<span class="w"> </span><span class="k">for</span><span class="w"> </span>a<span class="w"> </span>first<span class="w"> </span>programming<span class="w"> </span>language
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">txt</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;%I a%m te%%a%%che%r% a%n%d %% I l%o%ve te%ach%ing.\</span>
+<span class="s1">T%he%re i%s n%o%th%ing as m%ore r%ewarding a%s e%duc%at%i%ng a%n%d e%m%p%ow%er%ing \</span>
+<span class="s1">p%e%o%ple.\</span>
+<span class="s1">I fo%und te%a%ching m%ore i%n%t%er%%es%ting t%h%an any other %jobs.\</span>
+<span class="s1">D%o%es thi%s m%ot%iv%a%te %y%o%u to b%e a t%e%a%cher.&#39;</span>
+
+<span class="nx">matches</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">txt</span><span class="p">.</span><span class="nx">replace</span><span class="p">(</span><span class="sr">/%/g</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;&#39;</span><span class="p">)</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">matches</span><span class="p">)</span><span class="w">  </span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>I<span class="w"> </span>am<span class="w"> </span>teacher<span class="w"> </span>and<span class="w">  </span>I<span class="w"> </span>love<span class="w"> </span>teaching.There<span class="w"> </span>is<span class="w"> </span>nothing<span class="w"> </span>as<span class="w"> </span>more<span class="w"> </span>rewarding<span class="w"> </span>as<span class="w"> </span>educating<span class="w"> </span>and<span class="w"> </span>empowering<span class="w"> </span>people.I<span class="w"> </span>found<span class="w"> </span>teaching<span class="w"> </span>more<span class="w"> </span>interesting<span class="w"> </span>than<span class="w"> </span>any<span class="w"> </span>other<span class="w"> </span>jobs.Does<span class="w"> </span>this<span class="w"> </span>motivate<span class="w"> </span>you<span class="w"> </span>to<span class="w"> </span>be<span class="w"> </span>a<span class="w"> </span>teacher.
+</code></pre></div>
+<ul>
+<li>A set of characters</li>
+<li>[a-c] means, a or b or c</li>
+<li>[a-z] means, any letter a to z</li>
+<li>[A-Z] means, any character A to Z</li>
+<li>[0-3] means, 0 or 1 or 2 or 3</li>
+<li>[0-9] means any number 0 to 9</li>
+<li>[A-Za-z0-9] any character which is a to z, A to Z, 0 to 9</li>
+<li>\:  uses to escape special characters</li>
+<li>\d mean: match where the string contains digits (numbers from 0-9)</li>
+<li>\D mean: match where the string does not contain digits</li>
+<li>. : any character except new line character(\n)</li>
+<li>^: starts with</li>
+<li>r'^substring' eg r'^love', a sentence which starts with a word love</li>
+<li>r'[^abc] mean not a, not b, not c.</li>
+<li>$: ends with</li>
+<li>r'substring$' eg r'love$', sentence ends with a word love</li>
+<li>*: zero or more times</li>
+<li>r'[a]*' means a optional or it can occur many times.</li>
+<li>+: one or more times</li>
+<li>r'[a]+' means at least once or more times</li>
+<li>?: zero or one times</li>
+<li>r'[a]?' means zero times or once</li>
+<li>\b: word bounder, matches with the beginning or ending of a word</li>
+<li>{3}: Exactly 3 characters</li>
+<li>{3,}: At least 3 characters</li>
+<li>{3,8}: 3 to 8 characters</li>
+<li>|: Either or</li>
+<li>r'apple|banana' mean either of an apple or a banana</li>
+<li>(): Capture and group</li>
+</ul>
+<p><img alt="Regular Expression cheat sheet" src="../images/regex.png" /></p>
+<p>Let's use example to clarify the above meta characters</p>
+<h3 id="square-bracket">Square Bracket</h3>
+<p>Let's use square bracket to include lower and upper case</p>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">pattern</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;[Aa]pple&#39;</span><span class="w"> </span><span class="c1">// this square bracket means either A or a</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">txt</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;Apple and banana are fruits. An old cliche says an apple a day keeps the  doctor way has been replaced by a banana a day keeps the doctor far far away. &#39;</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">matches</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">txt</span><span class="p">.</span><span class="nx">match</span><span class="p">(</span><span class="nx">pattern</span><span class="p">)</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">matches</span><span class="p">)</span><span class="w">  </span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="o">[</span><span class="s2">&quot;Apple&quot;</span>,<span class="w"> </span>index:<span class="w"> </span><span class="m">0</span>,<span class="w"> </span>input:<span class="w"> </span><span class="s2">&quot;Apple and banana are fruits. An old cliche says an apple a day keeps the  doctor way has been replaced by a banana a day keeps the doctor far far away.&quot;</span>,<span class="w"> </span>groups:<span class="w"> </span>undefined<span class="o">]</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">pattern</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="sr">/[Aa]pple/g</span><span class="w"> </span><span class="c1">// this square bracket means either A or a</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">txt</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;Apple and banana are fruits. An old cliche says an apple a day a doctor way has been replaced by a banana a day keeps the doctor far far away. &#39;</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">matches</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">txt</span><span class="p">.</span><span class="nx">match</span><span class="p">(</span><span class="nx">pattern</span><span class="p">)</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">matches</span><span class="p">)</span><span class="w">  </span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="o">[</span><span class="s2">&quot;Apple&quot;</span>,<span class="w"> </span><span class="s2">&quot;apple&quot;</span><span class="o">]</span>
+</code></pre></div>
+<p>If we want to look for the banana, we write the pattern as follows:</p>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">pattern</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="sr">/[Aa]pple|[Bb]anana/g</span><span class="w"> </span><span class="c1">// this square bracket mean either A or a</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">txt</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;Apple and banana are fruits. An old cliche says an apple a day a doctor way has been replaced by a banana a day keeps the doctor far far away. Banana is easy to eat too.&#39;</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">matches</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">txt</span><span class="p">.</span><span class="nx">match</span><span class="p">(</span><span class="nx">pattern</span><span class="p">)</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">matches</span><span class="p">)</span><span class="w">  </span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="o">[</span><span class="s2">&quot;Apple&quot;</span>,<span class="w"> </span><span class="s2">&quot;banana&quot;</span>,<span class="w"> </span><span class="s2">&quot;apple&quot;</span>,<span class="w"> </span><span class="s2">&quot;banana&quot;</span>,<span class="w"> </span><span class="s2">&quot;Banana&quot;</span><span class="o">]</span>
+</code></pre></div>
+<p>Using the square bracket and or operator , we manage to extract Apple, apple, Banana and banana.</p>
+<h3 id="escape-character-in-regexp">Escape character(\) in RegExp</h3>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">pattern</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="sr">/\d/g</span><span class="w">  </span><span class="c1">// d is a special character which means digits</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">txt</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;This regular expression example was made in January 12,  2020.&#39;</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">matches</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">txt</span><span class="p">.</span><span class="w"> </span><span class="nx">match</span><span class="p">(</span><span class="nx">pattern</span><span class="p">)</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">matches</span><span class="p">)</span><span class="w">  </span><span class="c1">// [&quot;1&quot;, &quot;2&quot;, &quot;2&quot;, &quot;0&quot;, &quot;2&quot;, &quot;0&quot;], this is not what we want</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">pattern</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="sr">/\d+/g</span><span class="w">  </span><span class="c1">// d is a special character which means digits</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">txt</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;This regular expression example was made in January 12,  2020.&#39;</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">matches</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">txt</span><span class="p">.</span><span class="w"> </span><span class="nx">match</span><span class="p">(</span><span class="nx">pattern</span><span class="p">)</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">matches</span><span class="p">)</span><span class="w">  </span><span class="c1">// [&quot;12&quot;, &quot;2020&quot;], this is not what we want</span>
+</code></pre></div>
+<h3 id="one-or-more-times">One or more times(+)</h3>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">pattern</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="sr">/\d+/g</span><span class="w">  </span><span class="c1">// d is a special character which means digits</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">txt</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;This regular expression example was made in January 12,  2020.&#39;</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">matches</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">txt</span><span class="p">.</span><span class="w"> </span><span class="nx">match</span><span class="p">(</span><span class="nx">pattern</span><span class="p">)</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">matches</span><span class="p">)</span><span class="w">  </span><span class="c1">// [&quot;12&quot;, &quot;2020&quot;], this is not what we want</span>
+</code></pre></div>
+<h3 id="period">Period(.)</h3>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">pattern</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="sr">/[a]./g</span><span class="w">  </span><span class="c1">// this square bracket means a and . means any character except new line</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">txt</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;Apple and banana are fruits&#39;</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">matches</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">txt</span><span class="p">.</span><span class="nx">match</span><span class="p">(</span><span class="nx">pattern</span><span class="p">)</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">matches</span><span class="p">)</span><span class="w">  </span><span class="c1">// [&quot;an&quot;, &quot;an&quot;, &quot;an&quot;, &quot;a &quot;, &quot;ar&quot;]</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">pattern</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="sr">/[a].+/g</span><span class="w">  </span><span class="c1">// . any character, + any character one or more times </span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">txt</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;Apple and banana are fruits&#39;</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">matches</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">txt</span><span class="p">.</span><span class="nx">match</span><span class="p">(</span><span class="nx">pattern</span><span class="p">)</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">matches</span><span class="p">)</span><span class="w">  </span><span class="c1">// [&#39;and banana are fruits&#39;]</span>
+</code></pre></div>
+<h3 id="zero-or-more-times">Zero or more times</h3>
+<p>Zero or many times. The pattern may not occur or it can occur many times.</p>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">pattern</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="sr">/[a].*/g</span><span class="w">  </span><span class="c1">//. any character, + any character one or more times </span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">txt</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;Apple and banana are fruits&#39;</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">matches</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">txt</span><span class="p">.</span><span class="nx">match</span><span class="p">(</span><span class="nx">pattern</span><span class="p">)</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">matches</span><span class="p">)</span><span class="w">  </span><span class="c1">// [&#39;and banana are fruits&#39;]</span>
+</code></pre></div>
+<h3 id="zero-or-one-times">Zero or one times(?)</h3>
+<p>Zero or one times. The pattern may not occur or it may occur once.</p>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">txt</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;I am not sure if there is a convention how to write the word e-mail.\</span>
+<span class="s1">Some people write it email others may write it as Email or E-mail.&#39;</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">pattern</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="sr">/[Ee]-?mail/g</span><span class="w">  </span><span class="c1">// ? means optional</span>
+<span class="nx">matches</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">txt</span><span class="p">.</span><span class="nx">match</span><span class="p">(</span><span class="nx">pattern</span><span class="p">)</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">matches</span><span class="p">)</span><span class="w">  </span><span class="c1">// [&quot;e-mail&quot;, &quot;email&quot;, &quot;Email&quot;, &quot;E-mail&quot;]</span>
+</code></pre></div>
+<h3 id="quantifier-in-regexp">Quantifier in RegExp</h3>
+<p>We can specify the length of the substring we look for in a text, using a curly bracket. Let us see, how ot use RegExp quantifiers. Imagine, we are interested in substring that their length are 4 characters</p>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">txt</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;This regular expression example was made in December 6,  2019.&#39;</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">pattern</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="sr">/\\b\w{4}\b/g</span><span class="w">  </span><span class="c1">//  exactly four character words</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">matches</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">txt</span><span class="p">.</span><span class="nx">match</span><span class="p">(</span><span class="nx">pattern</span><span class="p">)</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">matches</span><span class="p">)</span><span class="w">  </span><span class="c1">//[&#39;This&#39;, &#39;made&#39;, &#39;2019&#39;]</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">txt</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;This regular expression example was made in December 6,  2019.&#39;</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">pattern</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="sr">/\b[a-zA-Z]{4}\b/g</span><span class="w">  </span><span class="c1">//  exactly four character  words without numbers</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">matches</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">txt</span><span class="p">.</span><span class="nx">match</span><span class="p">(</span><span class="nx">pattern</span><span class="p">)</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">matches</span><span class="p">)</span><span class="w">  </span><span class="c1">//[&#39;This&#39;, &#39;made&#39;]</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">txt</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;This regular expression example was made in December 6,  2019.&#39;</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">pattern</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="sr">/\d{4}/g</span><span class="w">  </span><span class="c1">// a number and exactly four digits</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">matches</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">txt</span><span class="p">.</span><span class="nx">match</span><span class="p">(</span><span class="nx">pattern</span><span class="p">)</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">matches</span><span class="p">)</span><span class="w">  </span><span class="c1">// [&#39;2019&#39;]</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">txt</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;This regular expression example was made in December 6,  2019.&#39;</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">pattern</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="sr">/\d{1,4}/g</span><span class="w">   </span><span class="c1">// 1 to 4</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">matches</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">txt</span><span class="p">.</span><span class="nx">match</span><span class="p">(</span><span class="nx">pattern</span><span class="p">)</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">matches</span><span class="p">)</span><span class="w">  </span><span class="c1">// [&#39;6&#39;, &#39;2019&#39;]</span>
+</code></pre></div>
+<h3 id="cart">Cart ^</h3>
+<ul>
+<li>Starts with</li>
+</ul>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">txt</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;This regular expression example was made in December 6,  2019.&#39;</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">pattern</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="sr">/^This/</span><span class="w"> </span><span class="c1">// ^ means starts with</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">matches</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">txt</span><span class="p">.</span><span class="nx">match</span><span class="p">(</span><span class="nx">pattern</span><span class="p">)</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">matches</span><span class="p">)</span><span class="w">  </span><span class="c1">// [&#39;This&#39;]</span>
+</code></pre></div>
+<ul>
+<li>Negation</li>
+</ul>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">txt</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;This regular expression example was made in December 6,  2019.&#39;</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">pattern</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="sr">/[^A-Za-z,. ]+/g</span><span class="w">  </span><span class="c1">// ^ in set character means negation, not A to Z, not a to z, no space, no comma no period</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">matches</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">txt</span><span class="p">.</span><span class="nx">match</span><span class="p">(</span><span class="nx">pattern</span><span class="p">)</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">matches</span><span class="p">)</span><span class="w">  </span><span class="c1">// [&quot;6&quot;, &quot;2019&quot;]</span>
+</code></pre></div>
+<h3 id="exact-match">Exact match</h3>
+<p>It should have ^ starting and $ which is an end.</p>
+<div class="highlight"><pre><span></span><code><span class="kd">let</span><span class="w"> </span><span class="nx">pattern</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="sr">/^[A-Z][a-z]{3,12}$/</span><span class="p">;</span>
+<span class="kd">let</span><span class="w"> </span><span class="nx">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;Asabeneh&#39;</span><span class="p">;</span>
+<span class="kd">let</span><span class="w"> </span><span class="nx">result</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">pattern</span><span class="p">.</span><span class="nx">test</span><span class="p">(</span><span class="nx">name</span><span class="p">)</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">result</span><span class="p">)</span><span class="w"> </span><span class="c1">// true</span>
+</code></pre></div>
+<p>🌕 You are going far. Keep going! Now, you are super charged with the power of regular expression. You have the power to extract and clean any kind of text and you can make meaning out of unstructured data. You have just completed day 12 challenges and you are 12 steps a head in to your way to greatness. Now do some exercises for your brain and for your muscle.</p>
+<h2 id="exercises">💻 Exercises</h2>
+<h3 id="exercises-level-1">Exercises: Level 1</h3>
+<ol>
+<li>Calculate the total annual income of the person from the following text. ‘He earns 4000 euro from salary per month, 10000 euro annual bonus, 5500 euro online courses per month.’</li>
+<li>The position of some particles on the horizontal x-axis -12, -4, -3 and  -1 in the negative direction, 0 at origin, 4 and 8 in the positive direction. Extract these numbers and find the distance between the two furthest particles.</li>
+</ol>
+<div class="highlight"><pre><span></span><code><span class="nx">points</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s1">&#39;-1&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;2&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;-4&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;-3&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;-1&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;0&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;4&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;8&#39;</span><span class="p">]</span>
+<span class="nx">sortedPoints</span><span class="w"> </span><span class="o">=</span><span class="w">  </span><span class="p">[</span><span class="o">-</span><span class="mf">4</span><span class="p">,</span><span class="w"> </span><span class="o">-</span><span class="mf">3</span><span class="p">,</span><span class="w"> </span><span class="o">-</span><span class="mf">1</span><span class="p">,</span><span class="w"> </span><span class="o">-</span><span class="mf">1</span><span class="p">,</span><span class="w"> </span><span class="mf">0</span><span class="p">,</span><span class="w"> </span><span class="mf">2</span><span class="p">,</span><span class="w"> </span><span class="mf">4</span><span class="p">,</span><span class="w"> </span><span class="mf">8</span><span class="p">]</span>
+<span class="nx">distance</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">12</span>
+</code></pre></div>
+<ol>
+<li>
+<p>Write a pattern which identify if a string is a valid JavaScript variable</p>
+<div class="highlight"><pre><span></span><code>is_valid_variable<span class="o">(</span><span class="s1">&#39;first_name&#39;</span><span class="o">)</span><span class="w"> </span><span class="c1"># True</span>
+is_valid_variable<span class="o">(</span><span class="s1">&#39;first-name&#39;</span><span class="o">)</span><span class="w"> </span><span class="c1"># False</span>
+is_valid_variable<span class="o">(</span><span class="s1">&#39;1first_name&#39;</span><span class="o">)</span><span class="w"> </span><span class="c1"># False</span>
+is_valid_variable<span class="o">(</span><span class="s1">&#39;firstname&#39;</span><span class="o">)</span><span class="w"> </span><span class="c1"># True</span>
+</code></pre></div>
+</li>
+</ol>
+<h3 id="exercises-level-2">Exercises: Level 2</h3>
+<ol>
+<li>Write a function called <em>tenMostFrequentWords</em> which get the ten most frequent word from a string?</li>
+</ol>
+<div class="highlight"><pre><span></span><code><span class="nx">paragraph</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="sb">`I love teaching. If you do not love teaching what else can you love. I love Python if you do not love something which can give you all the capabilities to develop an application what else can you love.`</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">tenMostFrequentWords</span><span class="p">(</span><span class="nx">paragraph</span><span class="p">))</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="o">[</span>
+<span class="w">  </span><span class="o">{</span>word:<span class="s1">&#39;love&#39;</span>,<span class="w"> </span>count:6<span class="o">}</span>,
+<span class="w">  </span><span class="o">{</span>word:<span class="s1">&#39;you&#39;</span>,<span class="w"> </span>count:5<span class="o">}</span>,
+<span class="w">  </span><span class="o">{</span>word:<span class="s1">&#39;can&#39;</span>,<span class="w"> </span>count:3<span class="o">}</span>,
+<span class="w">  </span><span class="o">{</span>word:<span class="s1">&#39;what&#39;</span>,<span class="w"> </span>count:2<span class="o">}</span>,
+<span class="w">  </span><span class="o">{</span>word:<span class="s1">&#39;teaching&#39;</span>,<span class="w"> </span>count:2<span class="o">}</span>,
+<span class="w">  </span><span class="o">{</span>word:<span class="s1">&#39;not&#39;</span>,<span class="w"> </span>count:2<span class="o">}</span>,
+<span class="w">  </span><span class="o">{</span>word:<span class="s1">&#39;else&#39;</span>,<span class="w"> </span>count:2<span class="o">}</span>,
+<span class="w">  </span><span class="o">{</span>word:<span class="s1">&#39;do&#39;</span>,<span class="w"> </span>count:2<span class="o">}</span>,
+<span class="w">  </span><span class="o">{</span>word:<span class="s1">&#39;I&#39;</span>,<span class="w"> </span>count:2<span class="o">}</span>,
+<span class="w">  </span><span class="o">{</span>word:<span class="s1">&#39;which&#39;</span>,<span class="w"> </span>count:1<span class="o">}</span>,
+<span class="w">  </span><span class="o">{</span>word:<span class="s1">&#39;to&#39;</span>,<span class="w"> </span>count:1<span class="o">}</span>,
+<span class="w">  </span><span class="o">{</span>word:<span class="s1">&#39;the&#39;</span>,<span class="w"> </span>count:1<span class="o">}</span>,
+<span class="w">  </span><span class="o">{</span>word:<span class="s1">&#39;something&#39;</span>,<span class="w"> </span>count:1<span class="o">}</span>,
+<span class="w">  </span><span class="o">{</span>word:<span class="s1">&#39;if&#39;</span>,<span class="w"> </span>count:1<span class="o">}</span>,
+<span class="w">  </span><span class="o">{</span>word:<span class="s1">&#39;give&#39;</span>,<span class="w"> </span>count:1<span class="o">}</span>,
+<span class="w">  </span><span class="o">{</span>word:<span class="s1">&#39;develop&#39;</span>,count:1<span class="o">}</span>,
+<span class="w">  </span><span class="o">{</span>word:<span class="s1">&#39;capabilities&#39;</span>,count:1<span class="o">}</span>,
+<span class="w">  </span><span class="o">{</span>word:<span class="s1">&#39;application&#39;</span>,<span class="w"> </span>count:1<span class="o">}</span>,
+<span class="w">  </span><span class="o">{</span>word:<span class="s1">&#39;an&#39;</span>,count:1<span class="o">}</span>,
+<span class="w">  </span><span class="o">{</span>word:<span class="s1">&#39;all&#39;</span>,count:1<span class="o">}</span>,
+<span class="w">  </span><span class="o">{</span>word:<span class="s1">&#39;Python&#39;</span>,count:1<span class="o">}</span>,
+<span class="w">  </span><span class="o">{</span>word:<span class="s1">&#39;If&#39;</span>,count:1<span class="o">}</span>
+<span class="o">]</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">tenMostFrequentWords</span><span class="p">(</span><span class="nx">paragraph</span><span class="p">,</span><span class="w"> </span><span class="mf">10</span><span class="p">))</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="o">[{</span>word:<span class="s1">&#39;love&#39;</span>,<span class="w"> </span>count:6<span class="o">}</span>,
+<span class="o">{</span>word:<span class="s1">&#39;you&#39;</span>,<span class="w"> </span>count:5<span class="o">}</span>,
+<span class="o">{</span>word:<span class="s1">&#39;can&#39;</span>,<span class="w"> </span>count:3<span class="o">}</span>,
+<span class="o">{</span>word:<span class="s1">&#39;what&#39;</span>,<span class="w"> </span>count:2<span class="o">}</span>,
+<span class="o">{</span>word:<span class="s1">&#39;teaching&#39;</span>,<span class="w"> </span>count:2<span class="o">}</span>,
+<span class="o">{</span>word:<span class="s1">&#39;not&#39;</span>,<span class="w"> </span>count:2<span class="o">}</span>,
+<span class="o">{</span>word:<span class="s1">&#39;else&#39;</span>,<span class="w"> </span>count:2<span class="o">}</span>,
+<span class="o">{</span>word:<span class="s1">&#39;do&#39;</span>,<span class="w"> </span>count:2<span class="o">}</span>,
+<span class="o">{</span>word:<span class="s1">&#39;I&#39;</span>,<span class="w"> </span>count:2<span class="o">}</span>,
+<span class="o">{</span>word:<span class="s1">&#39;which&#39;</span>,<span class="w"> </span>count:1<span class="o">}</span>
+<span class="o">]</span>
+</code></pre></div>
+<h3 id="exercises-level-3">Exercises: Level 3</h3>
+<ol>
+<li>Writ a function which cleans text. Clean the following text. After cleaning, count three most frequent words in the string.</li>
+</ol>
+<div class="highlight"><pre><span></span><code><span class="nx">sentence</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="sb">`%I $am@% a %tea@cher%, &amp;and&amp; I lo%#ve %tea@ching%;. There $is nothing; &amp;as&amp; mo@re rewarding as educa@ting &amp;and&amp; @emp%o@wering peo@ple. ;I found tea@ching m%o@re interesting tha@n any other %jo@bs. %Do@es thi%s mo@tivate yo@u to be a tea@cher!?`</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">cleanText</span><span class="p">(</span><span class="nx">sentence</span><span class="p">))</span>
+</code></pre></div>
+<p><div class="highlight"><pre><span></span><code>I<span class="w"> </span>am<span class="w"> </span>a<span class="w"> </span>teacher<span class="w"> </span>and<span class="w"> </span>I<span class="w"> </span>love<span class="w"> </span>teaching<span class="w"> </span>There<span class="w"> </span>is<span class="w"> </span>nothing<span class="w"> </span>as<span class="w"> </span>more<span class="w"> </span>rewarding<span class="w"> </span>as<span class="w"> </span>educating<span class="w"> </span>and<span class="w"> </span>empowering<span class="w"> </span>people<span class="w"> </span>I<span class="w"> </span>found<span class="w"> </span>teaching<span class="w"> </span>more<span class="w"> </span>interesting<span class="w"> </span>than<span class="w"> </span>any<span class="w"> </span>other<span class="w"> </span><span class="nb">jobs</span><span class="w"> </span>Does<span class="w"> </span>this<span class="w"> </span>motivate<span class="w"> </span>you<span class="w"> </span>to<span class="w"> </span>be<span class="w"> </span>a<span class="w"> </span>teacher
+</code></pre></div>
+2. Write a function which find the most frequent words. After cleaning, count three most frequent words in the string.</p>
+<div class="highlight"><pre><span></span><code><span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">mostFrequentWords</span><span class="p">(</span><span class="nx">cleanedText</span><span class="p">))</span>
+<span class="w">  </span><span class="p">[{</span><span class="nx">word</span><span class="o">:</span><span class="s1">&#39;I&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">count</span><span class="o">:</span><span class="mf">3</span><span class="p">},</span><span class="w"> </span><span class="p">{</span><span class="nx">word</span><span class="o">:</span><span class="s1">&#39;teaching&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">count</span><span class="o">:</span><span class="mf">2</span><span class="p">},</span><span class="w"> </span><span class="p">{</span><span class="nx">word</span><span class="o">:</span><span class="s1">&#39;teacher&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">count</span><span class="o">:</span><span class="mf">2</span><span class="p">}]</span>
+</code></pre></div>
+<p>🎉 CONGRATULATIONS ! 🎉</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.d7c377c4.min.js"></script>
+      
+    
+  </body>
+</html>

@@ -1,0 +1,2117 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../04-day/">
+      
+      
+        <link rel="next" href="../06-day/">
+      
+      
+      <link rel="icon" href="../images/javascript.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.2">
+    
+    
+      
+        <title>📔 Day 5 - 30 Days Javascript</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.50c56a3b.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="amber" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#day-5" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="30 Days Javascript" class="md-header__button md-logo" aria-label="30 Days Javascript" data-md-component="logo">
+      
+  <img src="../images/javascript.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            30 Days Javascript
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              📔 Day 5
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/devinesia/30-days-javascript-web" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="30 Days Javascript" class="md-nav__button md-logo" aria-label="30 Days Javascript" data-md-component="logo">
+      
+  <img src="../images/javascript.png" alt="logo">
+
+    </a>
+    30 Days Javascript
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/devinesia/30-days-javascript-web" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Getting started
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01-day/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    📔 Day 1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02-day/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    📔 Day 2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03-day/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    📔 Day 3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04-day/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    📔 Day 4
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    📔 Day 5
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    📔 Day 5
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#arrays" class="md-nav__link">
+    <span class="md-ellipsis">
+      Arrays
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Arrays">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#how-to-create-an-empty-array" class="md-nav__link">
+    <span class="md-ellipsis">
+      How to create an empty array
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#how-to-create-an-array-with-values" class="md-nav__link">
+    <span class="md-ellipsis">
+      How to create an array with values
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#creating-an-array-using-split" class="md-nav__link">
+    <span class="md-ellipsis">
+      Creating an array using split
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#accessing-array-items-using-index" class="md-nav__link">
+    <span class="md-ellipsis">
+      Accessing array items using index
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#modifying-array-element" class="md-nav__link">
+    <span class="md-ellipsis">
+      Modifying array element
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#methods-to-manipulate-array" class="md-nav__link">
+    <span class="md-ellipsis">
+      Methods to manipulate array
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Methods to manipulate array">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#array-constructor" class="md-nav__link">
+    <span class="md-ellipsis">
+      Array Constructor
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#creating-static-values-with-fill" class="md-nav__link">
+    <span class="md-ellipsis">
+      Creating static values with fill
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#concatenating-array-using-concat" class="md-nav__link">
+    <span class="md-ellipsis">
+      Concatenating array using concat
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getting-array-length" class="md-nav__link">
+    <span class="md-ellipsis">
+      Getting array length
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getting-index-an-element-in-arr-array" class="md-nav__link">
+    <span class="md-ellipsis">
+      Getting index an element in arr array
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getting-last-index-of-an-element-in-array" class="md-nav__link">
+    <span class="md-ellipsis">
+      Getting last index of an element in array
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#checking-array" class="md-nav__link">
+    <span class="md-ellipsis">
+      Checking array
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#converting-array-to-string" class="md-nav__link">
+    <span class="md-ellipsis">
+      Converting array to string
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#joining-array-elements" class="md-nav__link">
+    <span class="md-ellipsis">
+      Joining array elements
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#slice-array-elements" class="md-nav__link">
+    <span class="md-ellipsis">
+      Slice array elements
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#splice-method-in-array" class="md-nav__link">
+    <span class="md-ellipsis">
+      Splice method in array
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#adding-item-to-an-array-using-push" class="md-nav__link">
+    <span class="md-ellipsis">
+      Adding item to an array using push
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#removing-the-end-element-using-pop" class="md-nav__link">
+    <span class="md-ellipsis">
+      Removing the end element using pop
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#removing-an-element-from-the-beginning" class="md-nav__link">
+    <span class="md-ellipsis">
+      Removing an element from the beginning
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#add-an-element-from-the-beginning" class="md-nav__link">
+    <span class="md-ellipsis">
+      Add an element from the beginning
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reversing-array-order" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reversing array order
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sorting-elements-in-array" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sorting elements in array
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#array-of-arrays" class="md-nav__link">
+    <span class="md-ellipsis">
+      Array of arrays
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercise" class="md-nav__link">
+    <span class="md-ellipsis">
+      💻 Exercise
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="💻 Exercise">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#exercise-level-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exercise: Level 1
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exercise-level-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exercise: Level 2
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exercise-level-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exercise: Level 3
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../06-day/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    📔 Day 6
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../07-day/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    📔 Day 7
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../08-day/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    📔 Day 8
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../09-day/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    📔 Day 9
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../10-day/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    📔 Day 10
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../11-day/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    📘 Day 11
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../12-day/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    📘 Day 12
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../13-day/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    📘 Day 13
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../14-day/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    📘 Day 14
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../15-day/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    📘 Day 15
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../16-day/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    📘 Day 16
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../17-day/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    📘 Day 17
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../18-day/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    📘 Day 18
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../19-day/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    📘 Day 19
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20-day/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    📘 Day 20
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../21-day/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    📙 Day 21
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../22-day/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    📙 Day 22
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../23-day/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    📙 Day 23
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../24-day/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    📙 Day 24
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../25-day/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    📙 Day 25
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../26-day/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    📙 Day 26
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../27-day/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    📙 Day 27
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../28-day/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    📙 Day 28
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../29-day/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    📙 Day 29
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../30-day/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    📙 Day 30
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#arrays" class="md-nav__link">
+    <span class="md-ellipsis">
+      Arrays
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Arrays">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#how-to-create-an-empty-array" class="md-nav__link">
+    <span class="md-ellipsis">
+      How to create an empty array
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#how-to-create-an-array-with-values" class="md-nav__link">
+    <span class="md-ellipsis">
+      How to create an array with values
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#creating-an-array-using-split" class="md-nav__link">
+    <span class="md-ellipsis">
+      Creating an array using split
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#accessing-array-items-using-index" class="md-nav__link">
+    <span class="md-ellipsis">
+      Accessing array items using index
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#modifying-array-element" class="md-nav__link">
+    <span class="md-ellipsis">
+      Modifying array element
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#methods-to-manipulate-array" class="md-nav__link">
+    <span class="md-ellipsis">
+      Methods to manipulate array
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Methods to manipulate array">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#array-constructor" class="md-nav__link">
+    <span class="md-ellipsis">
+      Array Constructor
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#creating-static-values-with-fill" class="md-nav__link">
+    <span class="md-ellipsis">
+      Creating static values with fill
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#concatenating-array-using-concat" class="md-nav__link">
+    <span class="md-ellipsis">
+      Concatenating array using concat
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getting-array-length" class="md-nav__link">
+    <span class="md-ellipsis">
+      Getting array length
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getting-index-an-element-in-arr-array" class="md-nav__link">
+    <span class="md-ellipsis">
+      Getting index an element in arr array
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getting-last-index-of-an-element-in-array" class="md-nav__link">
+    <span class="md-ellipsis">
+      Getting last index of an element in array
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#checking-array" class="md-nav__link">
+    <span class="md-ellipsis">
+      Checking array
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#converting-array-to-string" class="md-nav__link">
+    <span class="md-ellipsis">
+      Converting array to string
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#joining-array-elements" class="md-nav__link">
+    <span class="md-ellipsis">
+      Joining array elements
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#slice-array-elements" class="md-nav__link">
+    <span class="md-ellipsis">
+      Slice array elements
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#splice-method-in-array" class="md-nav__link">
+    <span class="md-ellipsis">
+      Splice method in array
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#adding-item-to-an-array-using-push" class="md-nav__link">
+    <span class="md-ellipsis">
+      Adding item to an array using push
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#removing-the-end-element-using-pop" class="md-nav__link">
+    <span class="md-ellipsis">
+      Removing the end element using pop
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#removing-an-element-from-the-beginning" class="md-nav__link">
+    <span class="md-ellipsis">
+      Removing an element from the beginning
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#add-an-element-from-the-beginning" class="md-nav__link">
+    <span class="md-ellipsis">
+      Add an element from the beginning
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reversing-array-order" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reversing array order
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sorting-elements-in-array" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sorting elements in array
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#array-of-arrays" class="md-nav__link">
+    <span class="md-ellipsis">
+      Array of arrays
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercise" class="md-nav__link">
+    <span class="md-ellipsis">
+      💻 Exercise
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="💻 Exercise">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#exercise-level-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exercise: Level 1
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exercise-level-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exercise: Level 2
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exercise-level-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exercise: Level 3
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<h1 id="day-5">📔 Day 5</h1>
+<h2 id="arrays">Arrays</h2>
+<p>In contrast to variables, an array can store <em>multiple values</em>. Each value in an array has an <em>index</em>, and each index has <em>a reference in a memory address</em>. Each value can be accessed by using their <em>indexes</em>. The index of an array starts from <em>zero</em>, and the  index of the last element is less by one from the length of the array.</p>
+<p>An array is a collection of different data types which are ordered and changeable(modifiable). An array allows storing duplicate elements and different data types. An array can be empty, or it may have different data type values.</p>
+<h3 id="how-to-create-an-empty-array">How to create an empty array</h3>
+<p>In JavaScript, we can create an array in different ways. Let us see different ways to create an array.
+It is very common to use <em>const</em> instead of <em>let</em> to declare an array variable. If you ar using const it means you do not use that variable name again.</p>
+<ul>
+<li>Using Array constructor</li>
+</ul>
+<div class="highlight"><pre><span></span><code><span class="c1">// syntax</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">arr</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">Array</span><span class="p">()</span>
+<span class="c1">// or</span>
+<span class="c1">// let arr = new Array()</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">arr</span><span class="p">)</span><span class="w"> </span><span class="c1">// []</span>
+</code></pre></div>
+<ul>
+<li>Using square brackets([])</li>
+</ul>
+<div class="highlight"><pre><span></span><code><span class="c1">// syntax</span>
+<span class="c1">// This the most recommended way to create an empty list</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">arr</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[]</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">arr</span><span class="p">)</span>
+</code></pre></div>
+<h3 id="how-to-create-an-array-with-values">How to create an array with values</h3>
+<p>Array with initial values. We use <em>length</em> property to find the length of an array.</p>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">numbers</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="mf">0</span><span class="p">,</span><span class="w"> </span><span class="mf">3.14</span><span class="p">,</span><span class="w"> </span><span class="mf">9.81</span><span class="p">,</span><span class="w"> </span><span class="mf">37</span><span class="p">,</span><span class="w"> </span><span class="mf">98.6</span><span class="p">,</span><span class="w"> </span><span class="mf">100</span><span class="p">]</span><span class="w"> </span><span class="c1">// array of numbers</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">fruits</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s1">&#39;banana&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;orange&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;mango&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;lemon&#39;</span><span class="p">]</span><span class="w"> </span><span class="c1">// array of strings, fruits</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">vegetables</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s1">&#39;Tomato&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Potato&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Cabbage&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Onion&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Carrot&#39;</span><span class="p">]</span><span class="w"> </span><span class="c1">// array of strings, vegetables</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">animalProducts</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s1">&#39;milk&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;meat&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;butter&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;yoghurt&#39;</span><span class="p">]</span><span class="w"> </span><span class="c1">// array of strings, products</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">webTechs</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s1">&#39;HTML&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;CSS&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;JS&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;React&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Redux&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Node&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;MongDB&#39;</span><span class="p">]</span><span class="w"> </span><span class="c1">// array of web technologies</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">countries</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s1">&#39;Finland&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Denmark&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Sweden&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Norway&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Iceland&#39;</span><span class="p">]</span><span class="w"> </span><span class="c1">// array of strings, countries</span>
+
+<span class="c1">// Print the array and its length</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;Numbers:&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">numbers</span><span class="p">)</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;Number of numbers:&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">numbers</span><span class="p">.</span><span class="nx">length</span><span class="p">)</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;Fruits:&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">fruits</span><span class="p">)</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;Number of fruits:&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">fruits</span><span class="p">.</span><span class="nx">length</span><span class="p">)</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;Vegetables:&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">vegetables</span><span class="p">)</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;Number of vegetables:&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">vegetables</span><span class="p">.</span><span class="nx">length</span><span class="p">)</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;Animal products:&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">animalProducts</span><span class="p">)</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;Number of animal products:&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">animalProducts</span><span class="p">.</span><span class="nx">length</span><span class="p">)</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;Web technologies:&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">webTechs</span><span class="p">)</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;Number of web technologies:&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">webTechs</span><span class="p">.</span><span class="nx">length</span><span class="p">)</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;Countries:&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">countries</span><span class="p">)</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;Number of countries:&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">countries</span><span class="p">.</span><span class="nx">length</span><span class="p">)</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>Numbers:<span class="w"> </span><span class="o">[</span><span class="m">0</span>,<span class="w"> </span><span class="m">3</span>.14,<span class="w"> </span><span class="m">9</span>.81,<span class="w"> </span><span class="m">37</span>,<span class="w"> </span><span class="m">98</span>.6,<span class="w"> </span><span class="m">100</span><span class="o">]</span>
+Number<span class="w"> </span>of<span class="w"> </span>numbers:<span class="w"> </span><span class="m">6</span>
+Fruits:<span class="w"> </span><span class="o">[</span><span class="s1">&#39;banana&#39;</span>,<span class="w"> </span><span class="s1">&#39;orange&#39;</span>,<span class="w"> </span><span class="s1">&#39;mango&#39;</span>,<span class="w"> </span><span class="s1">&#39;lemon&#39;</span><span class="o">]</span>
+Number<span class="w"> </span>of<span class="w"> </span>fruits:<span class="w"> </span><span class="m">4</span>
+Vegetables:<span class="w"> </span><span class="o">[</span><span class="s1">&#39;Tomato&#39;</span>,<span class="w"> </span><span class="s1">&#39;Potato&#39;</span>,<span class="w"> </span><span class="s1">&#39;Cabbage&#39;</span>,<span class="w"> </span><span class="s1">&#39;Onion&#39;</span>,<span class="w"> </span><span class="s1">&#39;Carrot&#39;</span><span class="o">]</span>
+Number<span class="w"> </span>of<span class="w"> </span>vegetables:<span class="w"> </span><span class="m">5</span>
+Animal<span class="w"> </span>products:<span class="w"> </span><span class="o">[</span><span class="s1">&#39;milk&#39;</span>,<span class="w"> </span><span class="s1">&#39;meat&#39;</span>,<span class="w"> </span><span class="s1">&#39;butter&#39;</span>,<span class="w"> </span><span class="s1">&#39;yoghurt&#39;</span><span class="o">]</span>
+Number<span class="w"> </span>of<span class="w"> </span>animal<span class="w"> </span>products:<span class="w"> </span><span class="m">4</span>
+Web<span class="w"> </span>technologies:<span class="w"> </span><span class="o">[</span><span class="s1">&#39;HTML&#39;</span>,<span class="w"> </span><span class="s1">&#39;CSS&#39;</span>,<span class="w"> </span><span class="s1">&#39;JS&#39;</span>,<span class="w"> </span><span class="s1">&#39;React&#39;</span>,<span class="w"> </span><span class="s1">&#39;Redux&#39;</span>,<span class="w"> </span><span class="s1">&#39;Node&#39;</span>,<span class="w"> </span><span class="s1">&#39;MongDB&#39;</span><span class="o">]</span>
+Number<span class="w"> </span>of<span class="w"> </span>web<span class="w"> </span>technologies:<span class="w"> </span><span class="m">7</span>
+Countries:<span class="w"> </span><span class="o">[</span><span class="s1">&#39;Finland&#39;</span>,<span class="w"> </span><span class="s1">&#39;Estonia&#39;</span>,<span class="w"> </span><span class="s1">&#39;Denmark&#39;</span>,<span class="w"> </span><span class="s1">&#39;Sweden&#39;</span>,<span class="w"> </span><span class="s1">&#39;Norway&#39;</span><span class="o">]</span>
+Number<span class="w"> </span>of<span class="w"> </span>countries:<span class="w"> </span><span class="m">5</span>
+</code></pre></div>
+<ul>
+<li>Array can have items of different data types</li>
+</ul>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">arr</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span>
+<span class="w">    </span><span class="s1">&#39;Asabeneh&#39;</span><span class="p">,</span>
+<span class="w">    </span><span class="mf">250</span><span class="p">,</span>
+<span class="w">    </span><span class="kc">true</span><span class="p">,</span>
+<span class="w">    </span><span class="p">{</span><span class="w"> </span><span class="nx">country</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;Finland&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">city</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;Helsinki&#39;</span><span class="w"> </span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span><span class="w"> </span><span class="nx">skills</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="s1">&#39;HTML&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;CSS&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;JS&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;React&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Python&#39;</span><span class="p">]</span><span class="w"> </span><span class="p">}</span>
+<span class="p">]</span><span class="w"> </span><span class="c1">// arr containing different data types</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">arr</span><span class="p">)</span>
+</code></pre></div>
+<h3 id="creating-an-array-using-split">Creating an array using split</h3>
+<p>As we have seen in the earlier section, we can split a string at different positions, and we can change to an array. Let us see the examples below.</p>
+<div class="highlight"><pre><span></span><code><span class="kd">let</span><span class="w"> </span><span class="nx">js</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;JavaScript&#39;</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">charsInJavaScript</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">js</span><span class="p">.</span><span class="nx">split</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">charsInJavaScript</span><span class="p">)</span><span class="w"> </span><span class="c1">// [&quot;J&quot;, &quot;a&quot;, &quot;v&quot;, &quot;a&quot;, &quot;S&quot;, &quot;c&quot;, &quot;r&quot;, &quot;i&quot;, &quot;p&quot;, &quot;t&quot;]</span>
+
+<span class="kd">let</span><span class="w"> </span><span class="nx">companiesString</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;Facebook, Google, Microsoft, Apple, IBM, Oracle, Amazon&#39;</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">companies</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">companiesString</span><span class="p">.</span><span class="nx">split</span><span class="p">(</span><span class="s1">&#39;,&#39;</span><span class="p">)</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">companies</span><span class="p">)</span><span class="w"> </span><span class="c1">// [&quot;Facebook&quot;, &quot; Google&quot;, &quot; Microsoft&quot;, &quot; Apple&quot;, &quot; IBM&quot;, &quot; Oracle&quot;, &quot; Amazon&quot;]</span>
+<span class="kd">let</span><span class="w"> </span><span class="nx">txt</span><span class="w"> </span><span class="o">=</span>
+<span class="w">  </span><span class="s1">&#39;I love teaching and empowering people. I teach HTML, CSS, JS, React, Python.&#39;</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">words</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">txt</span><span class="p">.</span><span class="nx">split</span><span class="p">(</span><span class="s1">&#39; &#39;</span><span class="p">)</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">words</span><span class="p">)</span>
+<span class="c1">// the text has special characters think how you can just get only the words</span>
+<span class="c1">// [&quot;I&quot;, &quot;love&quot;, &quot;teaching&quot;, &quot;and&quot;, &quot;empowering&quot;, &quot;people.&quot;, &quot;I&quot;, &quot;teach&quot;, &quot;HTML,&quot;, &quot;CSS,&quot;, &quot;JS,&quot;, &quot;React,&quot;, &quot;Python&quot;]</span>
+</code></pre></div>
+<h3 id="accessing-array-items-using-index">Accessing array items using index</h3>
+<p>We access each element in an array using their index. An array index starts from 0. The picture below clearly shows the index of each element in the array.</p>
+<p><img alt="arr index" src="../images/array_index.png" /></p>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">fruits</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s1">&#39;banana&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;orange&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;mango&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;lemon&#39;</span><span class="p">]</span>
+<span class="kd">let</span><span class="w"> </span><span class="nx">firstFruit</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">fruits</span><span class="p">[</span><span class="mf">0</span><span class="p">]</span><span class="w"> </span><span class="c1">// we are accessing the first item using its index</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">firstFruit</span><span class="p">)</span><span class="w"> </span><span class="c1">// banana</span>
+
+<span class="nx">secondFruit</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">fruits</span><span class="p">[</span><span class="mf">1</span><span class="p">]</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">secondFruit</span><span class="p">)</span><span class="w"> </span><span class="c1">// orange</span>
+
+<span class="kd">let</span><span class="w"> </span><span class="nx">lastFruit</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">fruits</span><span class="p">[</span><span class="mf">3</span><span class="p">]</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">lastFruit</span><span class="p">)</span><span class="w"> </span><span class="c1">// lemon</span>
+<span class="c1">// Last index can be calculated as follows</span>
+
+<span class="kd">let</span><span class="w"> </span><span class="nx">lastIndex</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">fruits</span><span class="p">.</span><span class="nx">length</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mf">1</span>
+<span class="nx">lastFruit</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">fruits</span><span class="p">[</span><span class="nx">lastIndex</span><span class="p">]</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">lastFruit</span><span class="p">)</span><span class="w">  </span><span class="c1">// lemon</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">numbers</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="mf">0</span><span class="p">,</span><span class="w"> </span><span class="mf">3.14</span><span class="p">,</span><span class="w"> </span><span class="mf">9.81</span><span class="p">,</span><span class="w"> </span><span class="mf">37</span><span class="p">,</span><span class="w"> </span><span class="mf">98.6</span><span class="p">,</span><span class="w"> </span><span class="mf">100</span><span class="p">]</span><span class="w">  </span><span class="c1">// set of numbers</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">numbers</span><span class="p">.</span><span class="nx">length</span><span class="p">)</span><span class="w">  </span><span class="c1">// =&gt; to know the size of the array, which is 6</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">numbers</span><span class="p">)</span><span class="w">         </span><span class="c1">// -&gt; [0, 3.14, 9.81, 37, 98.6, 100]</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">numbers</span><span class="p">[</span><span class="mf">0</span><span class="p">])</span><span class="w">      </span><span class="c1">//  -&gt; 0</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">numbers</span><span class="p">[</span><span class="mf">5</span><span class="p">])</span><span class="w">      </span><span class="c1">//  -&gt; 100</span>
+
+<span class="kd">let</span><span class="w"> </span><span class="nx">lastIndex</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">numbers</span><span class="p">.</span><span class="nx">length</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mf">1</span><span class="p">;</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">numbers</span><span class="p">[</span><span class="nx">lastIndex</span><span class="p">])</span><span class="w"> </span><span class="c1">// -&gt; 100</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">webTechs</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span>
+<span class="w">  </span><span class="s1">&#39;HTML&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;CSS&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;JavaScript&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;React&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;Redux&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;Node&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;MongoDB&#39;</span>
+<span class="p">]</span><span class="w"> </span><span class="c1">// List of web technologies</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">webTechs</span><span class="p">)</span><span class="w">        </span><span class="c1">// all the array items</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">webTechs</span><span class="p">.</span><span class="nx">length</span><span class="p">)</span><span class="w"> </span><span class="c1">// =&gt; to know the size of the array, which is 7</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">webTechs</span><span class="p">[</span><span class="mf">0</span><span class="p">])</span><span class="w">     </span><span class="c1">//  -&gt; HTML</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">webTechs</span><span class="p">[</span><span class="mf">6</span><span class="p">])</span><span class="w">     </span><span class="c1">//  -&gt; MongoDB</span>
+
+<span class="kd">let</span><span class="w"> </span><span class="nx">lastIndex</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">webTechs</span><span class="p">.</span><span class="nx">length</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mf">1</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">webTechs</span><span class="p">[</span><span class="nx">lastIndex</span><span class="p">])</span><span class="w"> </span><span class="c1">// -&gt; MongoDB</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">countries</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span>
+<span class="w">  </span><span class="s1">&#39;Albania&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;Bolivia&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;Canada&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;Denmark&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;Ethiopia&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;Finland&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;Germany&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;Hungary&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;Ireland&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;Japan&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;Kenya&#39;</span>
+<span class="p">]</span><span class="w"> </span><span class="c1">// List of countries</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">countries</span><span class="p">)</span><span class="w">      </span><span class="c1">// -&gt; all countries in array</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">countries</span><span class="p">[</span><span class="mf">0</span><span class="p">])</span><span class="w">   </span><span class="c1">//  -&gt; Albania</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">countries</span><span class="p">[</span><span class="mf">10</span><span class="p">])</span><span class="w">  </span><span class="c1">//  -&gt; Kenya</span>
+
+<span class="kd">let</span><span class="w"> </span><span class="nx">lastIndex</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">countries</span><span class="p">.</span><span class="nx">length</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mf">1</span><span class="p">;</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">countries</span><span class="p">[</span><span class="nx">lastIndex</span><span class="p">])</span><span class="w"> </span><span class="c1">//  -&gt; Kenya</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">shoppingCart</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span>
+<span class="w">  </span><span class="s1">&#39;Milk&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;Mango&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;Tomato&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;Potato&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;Avocado&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;Meat&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;Eggs&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;Sugar&#39;</span>
+<span class="p">]</span><span class="w"> </span><span class="c1">// List of food products</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">shoppingCart</span><span class="p">)</span><span class="w"> </span><span class="c1">// -&gt; all shoppingCart in array</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">shoppingCart</span><span class="p">[</span><span class="mf">0</span><span class="p">])</span><span class="w"> </span><span class="c1">//  -&gt; Milk</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">shoppingCart</span><span class="p">[</span><span class="mf">7</span><span class="p">])</span><span class="w"> </span><span class="c1">//  -&gt; Sugar</span>
+
+<span class="kd">let</span><span class="w"> </span><span class="nx">lastIndex</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">shoppingCart</span><span class="p">.</span><span class="nx">length</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mf">1</span><span class="p">;</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">shoppingCart</span><span class="p">[</span><span class="nx">lastIndex</span><span class="p">])</span><span class="w"> </span><span class="c1">//  -&gt; Sugar</span>
+</code></pre></div>
+<h3 id="modifying-array-element">Modifying array element</h3>
+<p>An array is mutable(modifiable). Once an array is created, we can modify the contents of the array elements.</p>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">numbers</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="mf">1</span><span class="p">,</span><span class="w"> </span><span class="mf">2</span><span class="p">,</span><span class="w"> </span><span class="mf">3</span><span class="p">,</span><span class="w"> </span><span class="mf">4</span><span class="p">,</span><span class="w"> </span><span class="mf">5</span><span class="p">]</span>
+<span class="nx">numbers</span><span class="p">[</span><span class="mf">0</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">10</span><span class="w">      </span><span class="c1">// changing 1 at index 0 to 10</span>
+<span class="nx">numbers</span><span class="p">[</span><span class="mf">1</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">20</span><span class="w">      </span><span class="c1">// changing  2 at index 1 to 20</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">numbers</span><span class="p">)</span><span class="w"> </span><span class="c1">// [10, 20, 3, 4, 5]</span>
+
+<span class="kd">const</span><span class="w"> </span><span class="nx">countries</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span>
+<span class="w">  </span><span class="s1">&#39;Albania&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;Bolivia&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;Canada&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;Denmark&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;Ethiopia&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;Finland&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;Germany&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;Hungary&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;Ireland&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;Japan&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;Kenya&#39;</span>
+<span class="p">]</span>
+
+<span class="nx">countries</span><span class="p">[</span><span class="mf">0</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;Afghanistan&#39;</span><span class="w">  </span><span class="c1">// Replacing Albania by Afghanistan</span>
+<span class="kd">let</span><span class="w"> </span><span class="nx">lastIndex</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">countries</span><span class="p">.</span><span class="nx">length</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mf">1</span>
+<span class="nx">countries</span><span class="p">[</span><span class="nx">lastIndex</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;Korea&#39;</span><span class="w"> </span><span class="c1">// Replacing Kenya by Korea</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">countries</span><span class="p">)</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="o">[</span><span class="s2">&quot;Afghanistan&quot;</span>,<span class="w"> </span><span class="s2">&quot;Bolivia&quot;</span>,<span class="w"> </span><span class="s2">&quot;Canada&quot;</span>,<span class="w"> </span><span class="s2">&quot;Denmark&quot;</span>,<span class="w"> </span><span class="s2">&quot;Ethiopia&quot;</span>,<span class="w"> </span><span class="s2">&quot;Finland&quot;</span>,<span class="w"> </span><span class="s2">&quot;Germany&quot;</span>,<span class="w"> </span><span class="s2">&quot;Hungary&quot;</span>,<span class="w"> </span><span class="s2">&quot;Ireland&quot;</span>,<span class="w"> </span><span class="s2">&quot;Japan&quot;</span>,<span class="w"> </span><span class="s2">&quot;Korea&quot;</span><span class="o">]</span>
+</code></pre></div>
+<h3 id="methods-to-manipulate-array">Methods to manipulate array</h3>
+<p>There are different methods to manipulate an array. These are some of the available methods to deal with arrays:<em>Array, length, concat, indexOf, slice, splice, join, toString, includes, lastIndexOf, isArray, fill, push, pop, shift, unshift</em></p>
+<h4 id="array-constructor">Array Constructor</h4>
+<p>Array:To create an array.</p>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">arr</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">Array</span><span class="p">()</span><span class="w"> </span><span class="c1">// creates an an empty array</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">arr</span><span class="p">)</span>
+
+<span class="kd">const</span><span class="w"> </span><span class="nx">eightEmptyValues</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">Array</span><span class="p">(</span><span class="mf">8</span><span class="p">)</span><span class="w"> </span><span class="c1">// it creates eight empty values</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">eightEmptyValues</span><span class="p">)</span><span class="w"> </span><span class="c1">// [empty x 8]</span>
+</code></pre></div>
+<h4 id="creating-static-values-with-fill">Creating static values with fill</h4>
+<p>fill: Fill all the array elements with a static value</p>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">arr</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">Array</span><span class="p">()</span><span class="w"> </span><span class="c1">// creates an an empty array</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">arr</span><span class="p">)</span>
+
+<span class="kd">const</span><span class="w"> </span><span class="nx">eightXvalues</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">Array</span><span class="p">(</span><span class="mf">8</span><span class="p">).</span><span class="nx">fill</span><span class="p">(</span><span class="s1">&#39;X&#39;</span><span class="p">)</span><span class="w"> </span><span class="c1">// it creates eight element values filled with &#39;X&#39;</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">eightXvalues</span><span class="p">)</span><span class="w"> </span><span class="c1">// [&#39;X&#39;, &#39;X&#39;,&#39;X&#39;,&#39;X&#39;,&#39;X&#39;,&#39;X&#39;,&#39;X&#39;,&#39;X&#39;]</span>
+
+<span class="kd">const</span><span class="w"> </span><span class="nx">eight0values</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">Array</span><span class="p">(</span><span class="mf">8</span><span class="p">).</span><span class="nx">fill</span><span class="p">(</span><span class="mf">0</span><span class="p">)</span><span class="w"> </span><span class="c1">// it creates eight element values filled with &#39;0&#39;</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">eight0values</span><span class="p">)</span><span class="w"> </span><span class="c1">// [0, 0, 0, 0, 0, 0, 0, 0]</span>
+
+<span class="kd">const</span><span class="w"> </span><span class="nx">four4values</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">Array</span><span class="p">(</span><span class="mf">4</span><span class="p">).</span><span class="nx">fill</span><span class="p">(</span><span class="mf">4</span><span class="p">)</span><span class="w"> </span><span class="c1">// it creates 4 element values filled with &#39;4&#39;</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">four4values</span><span class="p">)</span><span class="w"> </span><span class="c1">// [4, 4, 4, 4]</span>
+</code></pre></div>
+<h4 id="concatenating-array-using-concat">Concatenating array using concat</h4>
+<p>concat:To concatenate two arrays.</p>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">firstList</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="mf">1</span><span class="p">,</span><span class="w"> </span><span class="mf">2</span><span class="p">,</span><span class="w"> </span><span class="mf">3</span><span class="p">]</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">secondList</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="mf">4</span><span class="p">,</span><span class="w"> </span><span class="mf">5</span><span class="p">,</span><span class="w"> </span><span class="mf">6</span><span class="p">]</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">thirdList</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">firstList</span><span class="p">.</span><span class="nx">concat</span><span class="p">(</span><span class="nx">secondList</span><span class="p">)</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">thirdList</span><span class="p">)</span><span class="w"> </span><span class="c1">// [1, 2, 3, 4, 5, 6]</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">fruits</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s1">&#39;banana&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;orange&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;mango&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;lemon&#39;</span><span class="p">]</span><span class="w">                 </span><span class="c1">// array of fruits</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">vegetables</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s1">&#39;Tomato&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Potato&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Cabbage&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Onion&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Carrot&#39;</span><span class="p">]</span><span class="w"> </span><span class="c1">// array of vegetables</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">fruitsAndVegetables</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">fruits</span><span class="p">.</span><span class="nx">concat</span><span class="p">(</span><span class="nx">vegetables</span><span class="p">)</span><span class="w">                 </span><span class="c1">// concatenate the two arrays</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">fruitsAndVegetables</span><span class="p">)</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="o">[</span><span class="s2">&quot;banana&quot;</span>,<span class="w"> </span><span class="s2">&quot;orange&quot;</span>,<span class="w"> </span><span class="s2">&quot;mango&quot;</span>,<span class="w"> </span><span class="s2">&quot;lemon&quot;</span>,<span class="w"> </span><span class="s2">&quot;Tomato&quot;</span>,<span class="w"> </span><span class="s2">&quot;Potato&quot;</span>,<span class="w"> </span><span class="s2">&quot;Cabbage&quot;</span>,<span class="w"> </span><span class="s2">&quot;Onion&quot;</span>,<span class="w"> </span><span class="s2">&quot;Carrot&quot;</span><span class="o">]</span>
+</code></pre></div>
+<h4 id="getting-array-length">Getting array length</h4>
+<p>Length:To know the size of the array</p>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">numbers</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="mf">1</span><span class="p">,</span><span class="w"> </span><span class="mf">2</span><span class="p">,</span><span class="w"> </span><span class="mf">3</span><span class="p">,</span><span class="w"> </span><span class="mf">4</span><span class="p">,</span><span class="w"> </span><span class="mf">5</span><span class="p">]</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">numbers</span><span class="p">.</span><span class="nx">length</span><span class="p">)</span><span class="w"> </span><span class="c1">// -&gt; 5 is the size of the array</span>
+</code></pre></div>
+<h4 id="getting-index-an-element-in-arr-array">Getting index an element in arr array</h4>
+<p>indexOf:To check if an item exist in an array. If it exists it returns the index else it returns -1.</p>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">numbers</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="mf">1</span><span class="p">,</span><span class="w"> </span><span class="mf">2</span><span class="p">,</span><span class="w"> </span><span class="mf">3</span><span class="p">,</span><span class="w"> </span><span class="mf">4</span><span class="p">,</span><span class="w"> </span><span class="mf">5</span><span class="p">]</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">numbers</span><span class="p">.</span><span class="nx">indexOf</span><span class="p">(</span><span class="mf">5</span><span class="p">))</span><span class="w"> </span><span class="c1">// -&gt; 4</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">numbers</span><span class="p">.</span><span class="nx">indexOf</span><span class="p">(</span><span class="mf">0</span><span class="p">))</span><span class="w"> </span><span class="c1">// -&gt; -1</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">numbers</span><span class="p">.</span><span class="nx">indexOf</span><span class="p">(</span><span class="mf">1</span><span class="p">))</span><span class="w"> </span><span class="c1">// -&gt; 0</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">numbers</span><span class="p">.</span><span class="nx">indexOf</span><span class="p">(</span><span class="mf">6</span><span class="p">))</span><span class="w"> </span><span class="c1">// -&gt; -1</span>
+</code></pre></div>
+<p>Check an element if it exist in an array.</p>
+<ul>
+<li>Check items in a list</li>
+</ul>
+<div class="highlight"><pre><span></span><code><span class="c1">// let us check if a banana exist in the array</span>
+
+<span class="kd">const</span><span class="w"> </span><span class="nx">fruits</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s1">&#39;banana&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;orange&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;mango&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;lemon&#39;</span><span class="p">]</span>
+<span class="kd">let</span><span class="w"> </span><span class="nx">index</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">fruits</span><span class="p">.</span><span class="nx">indexOf</span><span class="p">(</span><span class="s1">&#39;banana&#39;</span><span class="p">)</span><span class="w">  </span><span class="c1">// 0</span>
+
+<span class="k">if</span><span class="p">(</span><span class="nx">index</span><span class="w"> </span><span class="o">===</span><span class="w"> </span><span class="o">-</span><span class="mf">1</span><span class="p">){</span>
+<span class="w">   </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;This fruit does not exist in the array&#39;</span><span class="p">)</span><span class="w">  </span>
+<span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;This fruit does exist in the array&#39;</span><span class="p">)</span>
+<span class="p">}</span>
+<span class="c1">// This fruit does exist in the array</span>
+
+<span class="c1">// we can use also ternary here</span>
+<span class="nx">index</span><span class="w"> </span><span class="o">===</span><span class="w"> </span><span class="o">-</span><span class="mf">1</span><span class="w"> </span><span class="o">?</span><span class="w"> </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;This fruit does not exist in the array&#39;</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;This fruit does exist in the array&#39;</span><span class="p">)</span>
+
+<span class="c1">// let us check if an avocado exist in the array</span>
+<span class="kd">let</span><span class="w"> </span><span class="nx">indexOfAvocado</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">fruits</span><span class="p">.</span><span class="nx">indexOf</span><span class="p">(</span><span class="s1">&#39;avocado&#39;</span><span class="p">)</span><span class="w">  </span><span class="c1">// -1, if the element not found index is -1</span>
+<span class="k">if</span><span class="p">(</span><span class="nx">indexOfAvocado</span><span class="w"> </span><span class="o">===</span><span class="w"> </span><span class="o">-</span><span class="mf">1</span><span class="p">){</span>
+<span class="w">   </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;This fruit does not exist in the array&#39;</span><span class="p">)</span><span class="w">  </span>
+<span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;This fruit does exist in the array&#39;</span><span class="p">)</span>
+<span class="p">}</span>
+<span class="c1">// This fruit does not exist in the array</span>
+</code></pre></div>
+<h4 id="getting-last-index-of-an-element-in-array">Getting last index of an element in array</h4>
+<p>lastIndexOf: It gives the position of the last item in the array. If it exist, it returns the index else it returns -1.</p>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">numbers</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="mf">1</span><span class="p">,</span><span class="w"> </span><span class="mf">2</span><span class="p">,</span><span class="w"> </span><span class="mf">3</span><span class="p">,</span><span class="w"> </span><span class="mf">4</span><span class="p">,</span><span class="w"> </span><span class="mf">5</span><span class="p">,</span><span class="w"> </span><span class="mf">3</span><span class="p">,</span><span class="w"> </span><span class="mf">1</span><span class="p">,</span><span class="w"> </span><span class="mf">2</span><span class="p">]</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">numbers</span><span class="p">.</span><span class="nx">lastIndexOf</span><span class="p">(</span><span class="mf">2</span><span class="p">))</span><span class="w"> </span><span class="c1">// 7</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">numbers</span><span class="p">.</span><span class="nx">lastIndexOf</span><span class="p">(</span><span class="mf">0</span><span class="p">))</span><span class="w"> </span><span class="c1">// -1</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">numbers</span><span class="p">.</span><span class="nx">lastIndexOf</span><span class="p">(</span><span class="mf">1</span><span class="p">))</span><span class="w"> </span><span class="c1">//  6</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">numbers</span><span class="p">.</span><span class="nx">lastIndexOf</span><span class="p">(</span><span class="mf">4</span><span class="p">))</span><span class="w"> </span><span class="c1">//  3</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">numbers</span><span class="p">.</span><span class="nx">lastIndexOf</span><span class="p">(</span><span class="mf">6</span><span class="p">))</span><span class="w"> </span><span class="c1">// -1</span>
+</code></pre></div>
+<p>includes:To check if an item exist in an array. If it exist it returns the true else it returns false.</p>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">numbers</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="mf">1</span><span class="p">,</span><span class="w"> </span><span class="mf">2</span><span class="p">,</span><span class="w"> </span><span class="mf">3</span><span class="p">,</span><span class="w"> </span><span class="mf">4</span><span class="p">,</span><span class="w"> </span><span class="mf">5</span><span class="p">]</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">numbers</span><span class="p">.</span><span class="nx">includes</span><span class="p">(</span><span class="mf">5</span><span class="p">))</span><span class="w"> </span><span class="c1">// true</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">numbers</span><span class="p">.</span><span class="nx">includes</span><span class="p">(</span><span class="mf">0</span><span class="p">))</span><span class="w"> </span><span class="c1">// false</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">numbers</span><span class="p">.</span><span class="nx">includes</span><span class="p">(</span><span class="mf">1</span><span class="p">))</span><span class="w"> </span><span class="c1">// true</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">numbers</span><span class="p">.</span><span class="nx">includes</span><span class="p">(</span><span class="mf">6</span><span class="p">))</span><span class="w"> </span><span class="c1">// false</span>
+
+<span class="kd">const</span><span class="w"> </span><span class="nx">webTechs</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span>
+<span class="w">  </span><span class="s1">&#39;HTML&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;CSS&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;JavaScript&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;React&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;Redux&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;Node&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;MongoDB&#39;</span>
+<span class="p">]</span><span class="w"> </span><span class="c1">// List of web technologies</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">webTechs</span><span class="p">.</span><span class="nx">includes</span><span class="p">(</span><span class="s1">&#39;Node&#39;</span><span class="p">))</span><span class="w">  </span><span class="c1">// true</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">webTechs</span><span class="p">.</span><span class="nx">includes</span><span class="p">(</span><span class="s1">&#39;C&#39;</span><span class="p">))</span><span class="w">     </span><span class="c1">// false</span>
+</code></pre></div>
+<h4 id="checking-array">Checking array</h4>
+<p>Array.isArray:To check if the data type is an array</p>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">numbers</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="mf">1</span><span class="p">,</span><span class="w"> </span><span class="mf">2</span><span class="p">,</span><span class="w"> </span><span class="mf">3</span><span class="p">,</span><span class="w"> </span><span class="mf">4</span><span class="p">,</span><span class="w"> </span><span class="mf">5</span><span class="p">]</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nb">Array</span><span class="p">.</span><span class="nx">isArray</span><span class="p">(</span><span class="nx">numbers</span><span class="p">))</span><span class="w"> </span><span class="c1">// true</span>
+
+<span class="kd">const</span><span class="w"> </span><span class="nx">number</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">100</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nb">Array</span><span class="p">.</span><span class="nx">isArray</span><span class="p">(</span><span class="nx">number</span><span class="p">))</span><span class="w"> </span><span class="c1">// false</span>
+</code></pre></div>
+<h4 id="converting-array-to-string">Converting array to string</h4>
+<p>toString:Converts array to string</p>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">numbers</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="mf">1</span><span class="p">,</span><span class="w"> </span><span class="mf">2</span><span class="p">,</span><span class="w"> </span><span class="mf">3</span><span class="p">,</span><span class="w"> </span><span class="mf">4</span><span class="p">,</span><span class="w"> </span><span class="mf">5</span><span class="p">]</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">numbers</span><span class="p">.</span><span class="nx">toString</span><span class="p">())</span><span class="w"> </span><span class="c1">// 1,2,3,4,5</span>
+
+<span class="kd">const</span><span class="w"> </span><span class="nx">names</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s1">&#39;Asabeneh&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Mathias&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Elias&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Brook&#39;</span><span class="p">]</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">names</span><span class="p">.</span><span class="nx">toString</span><span class="p">())</span><span class="w"> </span><span class="c1">// Asabeneh,Mathias,Elias,Brook</span>
+</code></pre></div>
+<h4 id="joining-array-elements">Joining array elements</h4>
+<p>join: It is used to join the elements of the array, the argument we passed in the join method will be joined in the array and return as a string. By default, it joins with a comma, but we can pass different string parameter which can be joined between the items.</p>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">numbers</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="mf">1</span><span class="p">,</span><span class="w"> </span><span class="mf">2</span><span class="p">,</span><span class="w"> </span><span class="mf">3</span><span class="p">,</span><span class="w"> </span><span class="mf">4</span><span class="p">,</span><span class="w"> </span><span class="mf">5</span><span class="p">]</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">numbers</span><span class="p">.</span><span class="nx">join</span><span class="p">())</span><span class="w"> </span><span class="c1">// 1,2,3,4,5</span>
+
+<span class="kd">const</span><span class="w"> </span><span class="nx">names</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s1">&#39;Asabeneh&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Mathias&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Elias&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Brook&#39;</span><span class="p">]</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">names</span><span class="p">.</span><span class="nx">join</span><span class="p">())</span><span class="w"> </span><span class="c1">// Asabeneh,Mathias,Elias,Brook</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">names</span><span class="p">.</span><span class="nx">join</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">))</span><span class="w"> </span><span class="c1">//AsabenehMathiasEliasBrook</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">names</span><span class="p">.</span><span class="nx">join</span><span class="p">(</span><span class="s1">&#39; &#39;</span><span class="p">))</span><span class="w"> </span><span class="c1">//Asabeneh Mathias Elias Brook</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">names</span><span class="p">.</span><span class="nx">join</span><span class="p">(</span><span class="s1">&#39;, &#39;</span><span class="p">))</span><span class="w"> </span><span class="c1">//Asabeneh, Mathias, Elias, Brook</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">names</span><span class="p">.</span><span class="nx">join</span><span class="p">(</span><span class="s1">&#39; # &#39;</span><span class="p">))</span><span class="w"> </span><span class="c1">//Asabeneh # Mathias # Elias # Brook</span>
+
+<span class="kd">const</span><span class="w"> </span><span class="nx">webTechs</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span>
+<span class="w">  </span><span class="s1">&#39;HTML&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;CSS&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;JavaScript&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;React&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;Redux&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;Node&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;MongoDB&#39;</span>
+<span class="p">]</span><span class="w"> </span><span class="c1">// List of web technologies</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">webTechs</span><span class="p">.</span><span class="nx">join</span><span class="p">())</span><span class="w">       </span><span class="c1">// &quot;HTML,CSS,JavaScript,React,Redux,Node,MongoDB&quot;</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">webTechs</span><span class="p">.</span><span class="nx">join</span><span class="p">(</span><span class="s1">&#39; # &#39;</span><span class="p">))</span><span class="w">  </span><span class="c1">// &quot;HTML # CSS # JavaScript # React # Redux # Node # MongoDB&quot;</span>
+</code></pre></div>
+<h4 id="slice-array-elements">Slice array elements</h4>
+<p>Slice: To cut out a multiple items in range. It takes two parameters:starting and ending position. It doesn't include the ending position.</p>
+<div class="highlight"><pre><span></span><code><span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">numbers</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="mf">1</span><span class="p">,</span><span class="mf">2</span><span class="p">,</span><span class="mf">3</span><span class="p">,</span><span class="mf">4</span><span class="p">,</span><span class="mf">5</span><span class="p">]</span>
+
+<span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">numbers</span><span class="p">.</span><span class="nx">slice</span><span class="p">())</span><span class="w"> </span><span class="c1">// -&gt; it copies all  item</span>
+<span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">numbers</span><span class="p">.</span><span class="nx">slice</span><span class="p">(</span><span class="mf">0</span><span class="p">))</span><span class="w"> </span><span class="c1">// -&gt; it copies all  item</span>
+<span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">numbers</span><span class="p">.</span><span class="nx">slice</span><span class="p">(</span><span class="mf">0</span><span class="p">,</span><span class="w"> </span><span class="nx">numbers</span><span class="p">.</span><span class="nx">length</span><span class="p">))</span><span class="w"> </span><span class="c1">// it copies all  item</span>
+<span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">numbers</span><span class="p">.</span><span class="nx">slice</span><span class="p">(</span><span class="mf">1</span><span class="p">,</span><span class="mf">4</span><span class="p">))</span><span class="w"> </span><span class="c1">// -&gt; [2,3,4] // it doesn&#39;t include the ending position</span>
+</code></pre></div>
+<h4 id="splice-method-in-array">Splice method in array</h4>
+<p>Splice: It takes three parameters:Starting position, number of times to be removed and number of items to be added.</p>
+<div class="highlight"><pre><span></span><code><span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">numbers</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="mf">1</span><span class="p">,</span><span class="w"> </span><span class="mf">2</span><span class="p">,</span><span class="w"> </span><span class="mf">3</span><span class="p">,</span><span class="w"> </span><span class="mf">4</span><span class="p">,</span><span class="w"> </span><span class="mf">5</span><span class="p">]</span>
+<span class="w">  </span><span class="nx">numbers</span><span class="p">.</span><span class="nx">splice</span><span class="p">()</span>
+<span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">numbers</span><span class="p">)</span><span class="w">                </span><span class="c1">// -&gt; remove all items</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">numbers</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="mf">1</span><span class="p">,</span><span class="w"> </span><span class="mf">2</span><span class="p">,</span><span class="w"> </span><span class="mf">3</span><span class="p">,</span><span class="w"> </span><span class="mf">4</span><span class="p">,</span><span class="w"> </span><span class="mf">5</span><span class="p">]</span>
+<span class="w">    </span><span class="nx">numbers</span><span class="p">.</span><span class="nx">splice</span><span class="p">(</span><span class="mf">0</span><span class="p">,</span><span class="mf">1</span><span class="p">)</span>
+<span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">numbers</span><span class="p">)</span><span class="w">            </span><span class="c1">// remove the first item</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">numbers</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="mf">1</span><span class="p">,</span><span class="w"> </span><span class="mf">2</span><span class="p">,</span><span class="w"> </span><span class="mf">3</span><span class="p">,</span><span class="w"> </span><span class="mf">4</span><span class="p">,</span><span class="w"> </span><span class="mf">5</span><span class="p">,</span><span class="w"> </span><span class="mf">6</span><span class="p">]</span>
+<span class="w">    </span><span class="nx">numbers</span><span class="p">.</span><span class="nx">splice</span><span class="p">(</span><span class="mf">3</span><span class="p">,</span><span class="w"> </span><span class="mf">3</span><span class="p">,</span><span class="w"> </span><span class="mf">7</span><span class="p">,</span><span class="w"> </span><span class="mf">8</span><span class="p">,</span><span class="w"> </span><span class="mf">9</span><span class="p">)</span>
+<span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">numbers</span><span class="p">.</span><span class="nx">splice</span><span class="p">(</span><span class="mf">3</span><span class="p">,</span><span class="w"> </span><span class="mf">3</span><span class="p">,</span><span class="w"> </span><span class="mf">7</span><span class="p">,</span><span class="w"> </span><span class="mf">8</span><span class="p">,</span><span class="w"> </span><span class="mf">9</span><span class="p">))</span><span class="w">  </span><span class="c1">// -&gt; [1, 2, 3, 7, 8, 9] //it removes three item and replace three items</span>
+</code></pre></div>
+<h4 id="adding-item-to-an-array-using-push">Adding item to an array using push</h4>
+<p>Push: adding item in the end. To add item to the end of an existing array we use the push method.</p>
+<div class="highlight"><pre><span></span><code><span class="c1">// syntax</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">arr</span><span class="w">  </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s1">&#39;item1&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;item2&#39;</span><span class="p">,</span><span class="s1">&#39;item3&#39;</span><span class="p">]</span>
+<span class="nx">arr</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="s1">&#39;new item&#39;</span><span class="p">)</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">arr</span><span class="p">)</span>
+<span class="c1">// [&#39;item1&#39;, &#39;item2&#39;,&#39;item3&#39;,&#39;new item&#39;]</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">numbers</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="mf">1</span><span class="p">,</span><span class="w"> </span><span class="mf">2</span><span class="p">,</span><span class="w"> </span><span class="mf">3</span><span class="p">,</span><span class="w"> </span><span class="mf">4</span><span class="p">,</span><span class="w"> </span><span class="mf">5</span><span class="p">]</span>
+<span class="nx">numbers</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="mf">6</span><span class="p">)</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">numbers</span><span class="p">)</span><span class="w"> </span><span class="c1">// -&gt; [1,2,3,4,5,6]</span>
+
+<span class="nx">numbers</span><span class="p">.</span><span class="nx">pop</span><span class="p">()</span><span class="w"> </span><span class="c1">// -&gt; remove one item from the end</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">numbers</span><span class="p">)</span><span class="w"> </span><span class="c1">// -&gt; [1,2,3,4,5]</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="kd">let</span><span class="w"> </span><span class="nx">fruits</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s1">&#39;banana&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;orange&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;mango&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;lemon&#39;</span><span class="p">]</span>
+<span class="nx">fruits</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="s1">&#39;apple&#39;</span><span class="p">)</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">fruits</span><span class="p">)</span><span class="w">    </span><span class="c1">// [&#39;banana&#39;, &#39;orange&#39;, &#39;mango&#39;, &#39;lemon&#39;, &#39;apple&#39;]</span>
+
+<span class="nx">fruits</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="s1">&#39;lime&#39;</span><span class="p">)</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">fruits</span><span class="p">)</span><span class="w">   </span><span class="c1">// [&#39;banana&#39;, &#39;orange&#39;, &#39;mango&#39;, &#39;lemon&#39;, &#39;apple&#39;, &#39;lime&#39;]</span>
+</code></pre></div>
+<h4 id="removing-the-end-element-using-pop">Removing the end element using pop</h4>
+<p>pop: Removing item in the end.</p>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">numbers</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="mf">1</span><span class="p">,</span><span class="w"> </span><span class="mf">2</span><span class="p">,</span><span class="w"> </span><span class="mf">3</span><span class="p">,</span><span class="w"> </span><span class="mf">4</span><span class="p">,</span><span class="w"> </span><span class="mf">5</span><span class="p">]</span>
+<span class="nx">numbers</span><span class="p">.</span><span class="nx">pop</span><span class="p">()</span><span class="w"> </span><span class="c1">// -&gt; remove one item from the end</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">numbers</span><span class="p">)</span><span class="w"> </span><span class="c1">// -&gt; [1,2,3,4]</span>
+</code></pre></div>
+<h4 id="removing-an-element-from-the-beginning">Removing an element from the beginning</h4>
+<p>shift: Removing one array element in the beginning of the array.</p>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">numbers</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="mf">1</span><span class="p">,</span><span class="w"> </span><span class="mf">2</span><span class="p">,</span><span class="w"> </span><span class="mf">3</span><span class="p">,</span><span class="w"> </span><span class="mf">4</span><span class="p">,</span><span class="w"> </span><span class="mf">5</span><span class="p">]</span>
+<span class="nx">numbers</span><span class="p">.</span><span class="nx">shift</span><span class="p">()</span><span class="w"> </span><span class="c1">// -&gt; remove one item from the beginning</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">numbers</span><span class="p">)</span><span class="w"> </span><span class="c1">// -&gt; [2,3,4,5]</span>
+</code></pre></div>
+<h4 id="add-an-element-from-the-beginning">Add an element from the beginning</h4>
+<p>unshift: Adding array element in the beginning of the array.</p>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">numbers</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="mf">1</span><span class="p">,</span><span class="w"> </span><span class="mf">2</span><span class="p">,</span><span class="w"> </span><span class="mf">3</span><span class="p">,</span><span class="w"> </span><span class="mf">4</span><span class="p">,</span><span class="w"> </span><span class="mf">5</span><span class="p">]</span>
+<span class="nx">numbers</span><span class="p">.</span><span class="nx">unshift</span><span class="p">(</span><span class="mf">0</span><span class="p">)</span><span class="w"> </span><span class="c1">// -&gt; add one item from the beginning</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">numbers</span><span class="p">)</span><span class="w"> </span><span class="c1">// -&gt; [0,1,2,3,4,5]</span>
+</code></pre></div>
+<h4 id="reversing-array-order">Reversing array order</h4>
+<p>reverse: reverse the order of an array.</p>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">numbers</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="mf">1</span><span class="p">,</span><span class="w"> </span><span class="mf">2</span><span class="p">,</span><span class="w"> </span><span class="mf">3</span><span class="p">,</span><span class="w"> </span><span class="mf">4</span><span class="p">,</span><span class="w"> </span><span class="mf">5</span><span class="p">]</span>
+<span class="nx">numbers</span><span class="p">.</span><span class="nx">reverse</span><span class="p">()</span><span class="w"> </span><span class="c1">// -&gt; reverse array order</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">numbers</span><span class="p">)</span><span class="w"> </span><span class="c1">// [5, 4, 3, 2, 1]</span>
+
+<span class="nx">numbers</span><span class="p">.</span><span class="nx">reverse</span><span class="p">()</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">numbers</span><span class="p">)</span><span class="w"> </span><span class="c1">// [1, 2, 3, 4, 5]</span>
+</code></pre></div>
+<h4 id="sorting-elements-in-array">Sorting elements in array</h4>
+<p>sort: arrange array elements in ascending order. Sort takes a call back function, we will see how we use sort with a call back function in the coming sections.</p>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">webTechs</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span>
+<span class="w">  </span><span class="s1">&#39;HTML&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;CSS&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;JavaScript&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;React&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;Redux&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;Node&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;MongoDB&#39;</span>
+<span class="p">]</span>
+
+<span class="nx">webTechs</span><span class="p">.</span><span class="nx">sort</span><span class="p">()</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">webTechs</span><span class="p">)</span><span class="w"> </span><span class="c1">// [&quot;CSS&quot;, &quot;HTML&quot;, &quot;JavaScript&quot;, &quot;MongoDB&quot;, &quot;Node&quot;, &quot;React&quot;, &quot;Redux&quot;]</span>
+
+<span class="nx">webTechs</span><span class="p">.</span><span class="nx">reverse</span><span class="p">()</span><span class="w"> </span><span class="c1">// after sorting we can reverse it</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">webTechs</span><span class="p">)</span><span class="w"> </span><span class="c1">// [&quot;Redux&quot;, &quot;React&quot;, &quot;Node&quot;, &quot;MongoDB&quot;, &quot;JavaScript&quot;, &quot;HTML&quot;, &quot;CSS&quot;]</span>
+</code></pre></div>
+<h3 id="array-of-arrays">Array of arrays</h3>
+<p>Array can store different data types including an array itself. Let us create an array of arrays</p>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">firstNums</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="mf">1</span><span class="p">,</span><span class="w"> </span><span class="mf">2</span><span class="p">,</span><span class="w"> </span><span class="mf">3</span><span class="p">]</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">secondNums</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="mf">1</span><span class="p">,</span><span class="w"> </span><span class="mf">4</span><span class="p">,</span><span class="w"> </span><span class="mf">9</span><span class="p">]</span>
+
+<span class="kd">const</span><span class="w"> </span><span class="nx">arrayOfArray</span><span class="w"> </span><span class="o">=</span><span class="w">  </span><span class="p">[[</span><span class="mf">1</span><span class="p">,</span><span class="w"> </span><span class="mf">2</span><span class="p">,</span><span class="w"> </span><span class="mf">3</span><span class="p">],</span><span class="w"> </span><span class="p">[</span><span class="mf">1</span><span class="p">,</span><span class="w"> </span><span class="mf">2</span><span class="p">,</span><span class="w"> </span><span class="mf">3</span><span class="p">]]</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">arrayOfArray</span><span class="p">[</span><span class="mf">0</span><span class="p">])</span><span class="w"> </span><span class="c1">// [1, 2, 3]</span>
+
+<span class="w"> </span><span class="kd">const</span><span class="w"> </span><span class="nx">frontEnd</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s1">&#39;HTML&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;CSS&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;JS&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;React&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Redux&#39;</span><span class="p">]</span>
+<span class="w"> </span><span class="kd">const</span><span class="w"> </span><span class="nx">backEnd</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s1">&#39;Node&#39;</span><span class="p">,</span><span class="s1">&#39;Express&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;MongoDB&#39;</span><span class="p">]</span>
+<span class="w"> </span><span class="kd">const</span><span class="w"> </span><span class="nx">fullStack</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="nx">frontEnd</span><span class="p">,</span><span class="w"> </span><span class="nx">backEnd</span><span class="p">]</span>
+<span class="w"> </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">fullStack</span><span class="p">)</span><span class="w">   </span><span class="c1">// [[&quot;HTML&quot;, &quot;CSS&quot;, &quot;JS&quot;, &quot;React&quot;, &quot;Redux&quot;], [&quot;Node&quot;, &quot;Express&quot;, &quot;MongoDB&quot;]]</span>
+<span class="w"> </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">fullStack</span><span class="p">.</span><span class="nx">length</span><span class="p">)</span><span class="w">  </span><span class="c1">// 2</span>
+<span class="w"> </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">fullStack</span><span class="p">[</span><span class="mf">0</span><span class="p">])</span><span class="w">  </span><span class="c1">// [&quot;HTML&quot;, &quot;CSS&quot;, &quot;JS&quot;, &quot;React&quot;, &quot;Redux&quot;]</span>
+<span class="w"> </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">fullStack</span><span class="p">[</span><span class="mf">1</span><span class="p">])</span><span class="w"> </span><span class="c1">// [&quot;Node&quot;, &quot;Express&quot;, &quot;MongoDB&quot;]</span>
+</code></pre></div>
+<p>🌕  You are diligent and you have already achieved quite a lot. You have just completed day 5 challenges and you are 5 steps a head in to your way to greatness. Now do some exercises for your brain and for your muscle.</p>
+<h2 id="exercise">💻 Exercise</h2>
+<h3 id="exercise-level-1">Exercise: Level 1</h3>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">countries</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span>
+<span class="w">  </span><span class="s1">&#39;Albania&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;Bolivia&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;Canada&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;Denmark&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;Ethiopia&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;Finland&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;Germany&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;Hungary&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;Ireland&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;Japan&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;Kenya&#39;</span>
+<span class="p">]</span>
+
+<span class="kd">const</span><span class="w"> </span><span class="nx">webTechs</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span>
+<span class="w">  </span><span class="s1">&#39;HTML&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;CSS&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;JavaScript&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;React&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;Redux&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;Node&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;MongoDB&#39;</span>
+<span class="p">]</span>
+</code></pre></div>
+<ol>
+<li>Declare an <em>empty</em> array;</li>
+<li>Declare an array with more than 5 number of elements</li>
+<li>Find the length of your array</li>
+<li>Get the first item, the middle item and the last item of the array</li>
+<li>Declare an array called <em>mixedDataTypes</em>, put different data types in the array and find the length of the array. The array size should  be greater than 5</li>
+<li>Declare an array variable name itCompanies and assign initial values Facebook, Google, Microsoft, Apple, IBM, Oracle and Amazon</li>
+<li>Print the array using <em>console.log()</em></li>
+<li>Print the number of companies in the array</li>
+<li>Print the first company, middle and last company</li>
+<li>Print out each company</li>
+<li>Change each company name  to uppercase one by one and print them out</li>
+<li>Print the array like as a sentence: Facebook, Google, Microsoft, Apple, IBM,Oracle and Amazon are big IT companies.</li>
+<li>Check if a certain company exists in the itCompanies array. If it exist return the company else return a company is <em>not found</em></li>
+<li>Filter out companies which have more than one 'o' without the filter method</li>
+<li>Sort the array using <em>sort()</em> method</li>
+<li>Reverse the array using <em>reverse()</em> method</li>
+<li>Slice out the first 3 companies from the array</li>
+<li>Slice out the last 3 companies from the array</li>
+<li>Slice out the middle IT company or companies from the array</li>
+<li>Remove the first IT company from the array</li>
+<li>Remove the middle IT company or companies from the array</li>
+<li>Remove the last IT company from the array</li>
+<li>Remove all IT companies</li>
+</ol>
+<h3 id="exercise-level-2">Exercise: Level 2</h3>
+<ol>
+<li>Create a separate countries.js file and store the countries array in to this file, create a separate file web_techs.js and store the webTechs array in to this file. Access both file in main.js file</li>
+<li>
+<p>First remove all the punctuations and change the string to array and count the number of words in the array</p>
+<div class="highlight"><pre><span></span><code><span class="kd">let</span><span class="w"> </span><span class="nx">text</span><span class="w"> </span><span class="o">=</span>
+<span class="s1">&#39;I love teaching and empowering people. I teach HTML, CSS, JS, React, Python.&#39;</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">words</span><span class="p">)</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">words</span><span class="p">.</span><span class="nx">length</span><span class="p">)</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="o">[</span><span class="s2">&quot;I&quot;</span>,<span class="w"> </span><span class="s2">&quot;love&quot;</span>,<span class="w"> </span><span class="s2">&quot;teaching&quot;</span>,<span class="w"> </span><span class="s2">&quot;and&quot;</span>,<span class="w"> </span><span class="s2">&quot;empowering&quot;</span>,<span class="w"> </span><span class="s2">&quot;people&quot;</span>,<span class="w"> </span><span class="s2">&quot;I&quot;</span>,<span class="w"> </span><span class="s2">&quot;teach&quot;</span>,<span class="w"> </span><span class="s2">&quot;HTML&quot;</span>,<span class="w"> </span><span class="s2">&quot;CSS&quot;</span>,<span class="w"> </span><span class="s2">&quot;JS&quot;</span>,<span class="w"> </span><span class="s2">&quot;React&quot;</span>,<span class="w"> </span><span class="s2">&quot;Python&quot;</span><span class="o">]</span>
+
+<span class="m">13</span>
+</code></pre></div>
+</li>
+<li>
+<p>In the following shopping cart add, remove, edit items</p>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">shoppingCart</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s1">&#39;Milk&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Coffee&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Tea&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Honey&#39;</span><span class="p">]</span>
+</code></pre></div>
+</li>
+<li>
+<p>add 'Meat' in the beginning of your shopping cart if it has not been already added</p>
+</li>
+<li>add Sugar at the end of you shopping cart if it has not been already added</li>
+<li>remove 'Honey' if you are allergic to honey</li>
+<li>modify Tea to 'Green Tea'</li>
+<li>In countries array check if 'Ethiopia' exists in the array if it exists print 'ETHIOPIA'. If it does not exist add to the countries list.</li>
+<li>In the webTechs array check if Sass exists in the array  and if it exists print 'Sass is a CSS preprocess'. If it does not exist add Sass to the array and print the array.</li>
+<li>
+<p>Concatenate the following two variables and store it in a fullStack variable.</p>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">frontEnd</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s1">&#39;HTML&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;CSS&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;JS&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;React&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Redux&#39;</span><span class="p">]</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">backEnd</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s1">&#39;Node&#39;</span><span class="p">,</span><span class="s1">&#39;Express&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;MongoDB&#39;</span><span class="p">]</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">fullStack</span><span class="p">)</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="o">[</span><span class="s2">&quot;HTML&quot;</span>,<span class="w"> </span><span class="s2">&quot;CSS&quot;</span>,<span class="w"> </span><span class="s2">&quot;JS&quot;</span>,<span class="w"> </span><span class="s2">&quot;React&quot;</span>,<span class="w"> </span><span class="s2">&quot;Redux&quot;</span>,<span class="w"> </span><span class="s2">&quot;Node&quot;</span>,<span class="w"> </span><span class="s2">&quot;Express&quot;</span>,<span class="w"> </span><span class="s2">&quot;MongoDB&quot;</span><span class="o">]</span>
+</code></pre></div>
+</li>
+</ol>
+<h3 id="exercise-level-3">Exercise: Level 3</h3>
+<ol>
+<li>
+<p>The following is an array of 10 students ages:</p>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">ages</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="mf">19</span><span class="p">,</span><span class="w"> </span><span class="mf">22</span><span class="p">,</span><span class="w"> </span><span class="mf">19</span><span class="p">,</span><span class="w"> </span><span class="mf">24</span><span class="p">,</span><span class="w"> </span><span class="mf">20</span><span class="p">,</span><span class="w"> </span><span class="mf">25</span><span class="p">,</span><span class="w"> </span><span class="mf">26</span><span class="p">,</span><span class="w"> </span><span class="mf">24</span><span class="p">,</span><span class="w"> </span><span class="mf">25</span><span class="p">,</span><span class="w"> </span><span class="mf">24</span><span class="p">]</span>
+</code></pre></div>
+<ul>
+<li>Sort the array and find the min and max age</li>
+<li>Find the median age(one middle item or two middle items divided by two)</li>
+<li>Find the average age(all items divided by number of items)</li>
+<li>Find the range of the ages(max minus min)</li>
+<li>Compare the value of (min - average) and (max - average), use <em>abs()</em> method
+1.Slice the first ten countries from the <a href="https://github.com/Asabeneh/30DaysOfJavaScript/tree/master/data/countries.js">countries array</a></li>
+<li>Find the middle country(ies) in the <a href="https://github.com/Asabeneh/30DaysOfJavaScript/tree/master/data/countries.js">countries array</a></li>
+<li>Divide the countries array into two equal arrays if it is even.  If countries array is not even , one more country for the first half.</li>
+</ul>
+</li>
+</ol>
+<p>🎉 CONGRATULATIONS ! 🎉</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.d7c377c4.min.js"></script>
+      
+    
+  </body>
+</html>
