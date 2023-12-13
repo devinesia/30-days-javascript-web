@@ -4,6 +4,7 @@
 - Material source: [30 days of JavaScript](https://github.com/Asabeneh/30-Days-Of-JavaScript)
 - Author: [Asabeneh Yetayeh](https://www.linkedin.com/in/asabeneh/)
 - Site creator: [Devinesia](https://github.com/devinesia)
+- Mas2 gans: [www.masgalih.net](https://www.masgalih.net)
 
 ## Support
 
