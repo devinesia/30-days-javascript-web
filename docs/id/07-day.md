@@ -2,17 +2,17 @@
 
 ## Fungsi (Function)
 
-Sejauh ini kita telah melihat banyak fungsi bawaan JavaScript. Di bagian ini, kita akan fokus pada fungsi kustom. Apa itu fungsi? Sebelum kita mulai membuat fungsi, mari pahami apa itu fungsi dan mengapa kita membutuhkan fungsi?
+Sejauh ini kita udah lihat banyak banget fungsi bawaan JavaScript. Di bagian ini, kita bakal fokus ke fungsi kustom. Terus, apa sih fungsi itu sebenarnya? Yuk sebelum mulai bikin fungsi, kita pahami dulu apa itu fungsi dan kenapa sih kita butuh fungsi?
 
-Fungsi adalah blok kode atau pernyataan pemrograman yang dapat digunakan kembali yang dirancang untuk melakukan tugas tertentu.
-Fungsi dideklarasikan dengan kata kunci function diikuti oleh nama, diikuti oleh tanda kurung (). Tanda kurung dapat menerima parameter. Jika sebuah fungsi menerima parameter, fungsi akan dipanggil dengan argumen. Fungsi juga dapat memiliki parameter default. Untuk menyimpan data ke suatu fungsi, fungsi harus mengembalikan tipe data tertentu. Untuk mendapatkan nilainya kita memanggil atau menjalankan (invoke) fungsi.
-Fungsi membuat kode menjadi:
+Fungsi itu adalah blok kode atau pernyataan pemrograman yang bisa dipakai ulang (reusable), dirancang buat ngerjain tugas tertentu.
+Fungsi dideklarasikan dengan kata kunci function, diikuti namanya, terus tanda kurung (). Tanda kurung bisa menerima parameter. Kalau fungsi nerima parameter, fungsi bakal dipanggil dengan argumen. Fungsi juga bisa punya parameter default. Buat nyimpen data ke fungsi, fungsi harus ngembaliin tipe data tertentu. Nah, buat dapetin nilainya, kita tinggal panggil atau jalanin (invoke) fungsi tersebut.
+Fungsi bikin kode jadi:
 
-- bersih dan mudah dibaca
-- dapat digunakan kembali
-- mudah diuji
+- bersih dan gampang dibaca
+- bisa dipakai ulang (reusable)
+- gampang diuji (testable)
 
-Fungsi dapat dideklarasikan atau dibuat dengan beberapa cara:
+Fungsi bisa dideklarasikan atau dibuat dengan beberapa cara nih:
 
 - _Fungsi Deklarasi (Declaration function)_
 - _Fungsi Ekspresi (Expression function)_
@@ -21,7 +21,7 @@ Fungsi dapat dideklarasikan atau dibuat dengan beberapa cara:
 
 ### Deklarasi Fungsi
 
-Mari kita lihat cara mendeklarasikan fungsi dan cara memanggil fungsi.
+Yuk langsung lihat cara mendeklarasikan fungsi dan cara memanggilnya.
 
 ```js
 // mendeklarasikan fungsi tanpa parameter
@@ -33,7 +33,7 @@ functionName() // memanggil fungsi dengan namanya dan dengan tanda kurung
 
 ### Fungsi tanpa parameter dan return
 
-Fungsi dapat dideklarasikan tanpa parameter.
+Fungsi bisa dideklarasikan tanpa parameter loh.
 
 **Contoh:**
 
@@ -73,7 +73,7 @@ printFullName() // memanggil fungsi
 
 ### Fungsi yang mengembalikan nilai
 
-Fungsi juga dapat mengembalikan nilai, jika sebuah fungsi tidak mengembalikan nilai, nilai fungsi tersebut adalah undefined. Mari kita tulis fungsi-fungsi di atas dengan return. Mulai sekarang, kita mengembalikan nilai ke fungsi alih-alih mencetaknya.
+Fungsi juga bisa ngembaliin nilai, kalau fungsi nggak ngembaliin nilai, nilai fungsi itu undefined. Yuk kita tulis ulang fungsi-fungsi di atas pake return. Mulai sekarang, kita biasain ngembaliin nilai ke fungsi daripada cuma nyetak doang.
 
 ```js
 function printFullName (){
@@ -101,7 +101,7 @@ console.log(addTwoNumbers())
 
 ### Fungsi dengan parameter
 
-Dalam fungsi kita dapat melewatkan berbagai tipe data (number, string, boolean, object, function) sebagai parameter.
+Dalam fungsi, kita bisa melewatkan berbagai tipe data (number, string, boolean, object, function) sebagai parameter. Fleksibel banget kan!
 
 ```js
 // fungsi dengan satu parameter
@@ -185,11 +185,11 @@ console.log(areaOfCircle(10))
 
 ### Fungsi dengan jumlah parameter tak terbatas
 
-Terkadang kita tidak tahu berapa banyak argumen yang akan diberikan pengguna. Oleh karena itu, kita harus tahu cara menulis fungsi yang dapat menerima jumlah argumen tak terbatas. Caranya memiliki perbedaan signifikan antara fungsi deklarasi (fungsi biasa) dan arrow function. Mari kita lihat contoh pada fungsi deklarasi dan arrow function.
+Kadang kita nggak tahu berapa banyak argumen yang bakal dikasih sama user. Makanya, kita wajib tahu cara nulis fungsi yang bisa nerima jumlah argumen tak terbatas. Caranya lumayan beda loh antara fungsi deklarasi (fungsi biasa) dan arrow function. Yuk kita lihat contohnya!
 
 #### Jumlah parameter tak terbatas di fungsi biasa
 
-Fungsi deklarasi menyediakan objek mirip array bernama arguments yang ter-scope ke fungsi. Apa pun yang kita lewatkan sebagai argumen dalam fungsi dapat diakses dari objek arguments di dalam fungsi. Mari kita lihat contohnya
+Fungsi deklarasi nyediain objek mirip array bernama arguments yang ter-scope ke fungsi. Apa pun yang kita lewatkan sebagai argumen di fungsi bisa diakses dari objek arguments di dalam fungsi. Nih contohnya:
 
 ```js
 // Mari kita akses objek arguments
@@ -221,7 +221,7 @@ console.log(sumAllNums(15, 20, 30, 25, 10, 33, 40))  // 173
 
 #### Jumlah parameter tak terbatas di arrow function
 
-Arrow function tidak memiliki objek arguments yang ter-scope ke fungsi. Untuk mengimplementasikan fungsi yang menerima jumlah argumen tak terbatas di arrow function, kita menggunakan spread operator diikuti dengan nama parameter apa pun. Apa pun yang kita lewatkan sebagai argumen dalam fungsi dapat diakses sebagai array di arrow function. Mari kita lihat contohnya
+Nah, arrow function nggak punya objek arguments yang ter-scope ke fungsi. Buat ngimplementasiin fungsi yang nerima jumlah argumen tak terbatas di arrow function, kita pakai spread operator diikuti nama parameter apa pun. Apa pun yang kita lewatkan sebagai argumen bakal bisa diakses sebagai array di arrow function. Cus lihat contohnya!
 
 ```js
 // Mari kita akses objek arguments
@@ -255,7 +255,7 @@ console.log(sumAllNums(15, 20, 30, 25, 10, 33, 40))  // 173
 
 ### Fungsi Anonim (Anonymous Function)
 
-Fungsi anonim atau fungsi tanpa nama
+Fungsi anonim tuh fungsi tanpa nama. Simpel!
 
 ```js
 const anonymousFun = function() {
@@ -267,7 +267,7 @@ const anonymousFun = function() {
 
 ### Fungsi Ekspresi (Expression Function)
 
-Fungsi ekspresi adalah fungsi anonim. Setelah kita membuat fungsi tanpa nama dan menetapkannya ke variabel. Untuk mengembalikan nilai dari fungsi kita harus memanggil variabelnya. Lihat contoh di bawah ini.
+Fungsi ekspresi tuh sebenernya fungsi anonim. Setelah kita bikin fungsi tanpa nama dan naro di variabel, buat ngembaliin nilai dari fungsi tersebut, kita tinggal panggil variabelnya. Lihat contoh di bawah ini deh.
 
 ```js
 
@@ -281,7 +281,7 @@ console.log(square(2)) // -> 4
 
 ### Fungsi yang Memanggil Dirinya Sendiri (Self Invoking Functions)
 
-Self invoking functions adalah fungsi anonim yang tidak perlu dipanggil untuk mengembalikan nilai.
+Self invoking functions itu fungsi anonim yang nggak perlu dipanggil buat ngembaliin nilai. Langsung jalan sendiri gitu!
 
 ```js
 (function(n) {
@@ -297,9 +297,9 @@ console.log(squaredNum)
 
 ### Arrow Function
 
-Arrow function adalah alternatif untuk menulis fungsi, namun fungsi deklarasi dan arrow function memiliki beberapa perbedaan kecil.
+Arrow function itu alternatif keren buat nulis fungsi. Tapi fungsi deklarasi dan arrow function punya beberapa perbedaan kecil sih.
 
-Arrow function menggunakan tanda panah (arrow) alih-alih kata kunci *function* untuk mendeklarasikan fungsi. Mari kita lihat fungsi deklarasi dan arrow function.
+Arrow function pakai tanda panah (arrow) alih-alih kata kunci *function* buat mendeklarasikan fungsi. Yuk kita bandingin fungsi deklarasi dan arrow function.
 
 ```js
 // Ini cara kita menulis fungsi normal atau deklarasi
@@ -343,7 +343,7 @@ const printFullName = (firstName, lastName) => {
 console.log(printFullName('Asabeneh', 'Yetayeh'))
 ```
 
-Fungsi di atas hanya memiliki pernyataan return, oleh karena itu, kita dapat secara eksplisit mengembalikannya sebagai berikut.
+Fungsi di atas cuma punya pernyataan return doang, jadi kita bisa secara eksplisit ngembaliin nilainya kayak gini nih:
 
 ```js
 const printFullName = (firstName, lastName) => `${firstName} ${lastName}`
@@ -353,7 +353,7 @@ console.log(printFullName('Asabeneh', 'Yetayeh'))
 
 ### Fungsi dengan parameter default
 
-Terkadang kita memberikan nilai default ke parameter, ketika kita menjalankan fungsi jika kita tidak melewatkan argumen, nilai default akan digunakan. Baik fungsi deklarasi maupun arrow function dapat memiliki nilai default.
+Kadang kita kasih nilai default ke parameter. Jadi kalau kita jalanin fungsi tapi nggak ngasih argumen, nilai default-nya bakal kepakai. Baik fungsi deklarasi maupun arrow function sama-sama bisa punya nilai default. Oke gas!
 
 ```js
 // sintaks
@@ -409,7 +409,7 @@ console.log('Weight of an object in Newton: ', weightOfObject(100)) // 9.81 grav
 console.log('Weight of an object in Newton: ', weightOfObject(100, 1.62)) // gravitasi di permukaan Bulan
 ```
 
-Mari kita lihat cara menulis fungsi-fungsi di atas dengan arrow function
+Yuk kita lihat cara nulis fungsi-fungsi di atas pake arrow function. Lebih ringkas kan!
 
 ```js
 // sintaks
@@ -463,7 +463,7 @@ console.log('Weight of an object in Newton: ', weightOfObject(100, 1.62)) // gra
 
 Akan dibahas di bagian lain.
 
-🌕 Anda adalah bintang yang sedang naik daun, sekarang Anda sudah mengenal fungsi. Sekarang, Anda sudah terisi penuh dengan kekuatan fungsi. Anda baru saja menyelesaikan tantangan hari ke-7 dan Anda selangkah lebih maju menuju kehebatan. Sekarang lakukan beberapa latihan untuk otak dan otot Anda.
+🌕 Kamu adalah rising star nih, sekarang udah kenal sama fungsi. Udah terisi penuh dengan kekuatan fungsi, mantap! Kamu baru aja nyelesein tantangan hari ke-7 dan selangkah lebih dekat menuju kehebatan. Gaskeun sekarang latihan buat otak dan otot kamu!
 
 
 
@@ -471,8 +471,8 @@ Akan dibahas di bagian lain.
 
 ### Latihan: Level 1
 
-1. Deklarasikan fungsi _fullName_ dan cetak nama lengkap Anda.
-2. Deklarasikan fungsi _fullName_ dan sekarang fungsi tersebut menerima firstName, lastName sebagai parameter dan mengembalikan nama lengkap Anda.
+1. Deklarasikan fungsi _fullName_ dan cetak nama lengkap kamu.
+2. Deklarasikan fungsi _fullName_ dan sekarang fungsi tersebut menerima firstName, lastName sebagai parameter dan mengembalikan nama lengkap kamu.
 3. Deklarasikan fungsi _addNumbers_ yang menerima dua parameter dan mengembalikan jumlahnya.
 4. Luas persegi panjang dihitung sebagai berikut: _area = panjang x lebar_. Tulis fungsi yang menghitung _areaOfRectangle_.
 5. Keliling persegi panjang dihitung sebagai berikut: _perimeter = 2 x (panjang + lebar)_. Tulis fungsi yang menghitung _perimeterOfRectangle_.
@@ -617,10 +617,10 @@ Akan dibahas di bagian lain.
     console.log(generateColors('rgb', 1)) // 'rgb(33,79, 176)'
     ```
 
-1. Panggil fungsi Anda _shuffleArray_, fungsi ini menerima array sebagai parameter dan mengembalikan array yang diacak
-1. Panggil fungsi Anda _factorial_, fungsi ini menerima bilangan bulat sebagai parameter dan mengembalikan faktorial dari bilangan tersebut
-1. Panggil fungsi Anda _isEmpty_, fungsi ini menerima parameter dan memeriksa apakah parameter tersebut kosong atau tidak
-1. Panggil fungsi Anda _sum_, fungsi ini menerima sejumlah argumen dan mengembalikan jumlahnya.
+1. Panggil fungsi kamu _shuffleArray_, fungsi ini menerima array sebagai parameter dan mengembalikan array yang diacak
+1. Panggil fungsi kamu _factorial_, fungsi ini menerima bilangan bulat sebagai parameter dan mengembalikan faktorial dari bilangan tersebut
+1. Panggil fungsi kamu _isEmpty_, fungsi ini menerima parameter dan memeriksa apakah parameter tersebut kosong atau tidak
+1. Panggil fungsi kamu _sum_, fungsi ini menerima sejumlah argumen dan mengembalikan jumlahnya.
 1. Tulis fungsi bernama _sumOfArrayItems_, fungsi ini menerima parameter array dan mengembalikan jumlah semua item. Periksa apakah semua item array bertipe number. Jika tidak, berikan umpan balik yang masuk akal.
 1. Tulis fungsi bernama _average_, fungsi ini menerima parameter array dan mengembalikan rata-rata item. Periksa apakah semua item array bertipe number. Jika tidak, berikan umpan balik yang masuk akal.
 1. Tulis fungsi bernama _modifyArray_ yang menerima array sebagai parameter dan memodifikasi item kelima dari array tersebut dan mengembalikan array. Jika panjang array kurang dari lima, fungsi ini mengembalikan 'item not found'.
