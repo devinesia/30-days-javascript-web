@@ -2,11 +2,13 @@
 
 ## Document Object Model (DOM) - Hari 1
 
-Dokumen HTML terstruktur sebagai Objek JavaScript. Setiap elemen HTML memiliki properti yang berbeda yang dapat membantu untuk memanipulasinya. Dimungkinkan untuk mendapatkan, membuat, menambahkan, atau menghapus elemen HTML menggunakan JavaScript. Lihat contoh di bawah ini. Memilih elemen HTML menggunakan JavaScript mirip dengan memilih menggunakan CSS. Untuk memilih elemen HTML, kita menggunakan nama tag, id, nama kelas, atau atribut lainnya.
+Nah, akhirnya kita nyampe juga di topik paling seru nih — DOM! Jadi gini, dokumen HTML itu sebenernya terstruktur sebagai Objek JavaScript, lho. Setiap elemen HTML punya properti-properti yang bisa kamu utak-atik sesuka hati. Kamu bisa ambil, bikin, nambahin, atau bahkan ngehapus elemen HTML pake JavaScript. Cakep kan?
+
+Cara milih elemen HTML di JavaScript tuh mirip banget kayak kamu milih elemen pake CSS. Tinggal pake nama tag, id, nama kelas, atau atribut lainnya. Gampang, gas!
 
 ### Mendapatkan Elemen (Getting Element)
 
-Kita dapat mengakses elemen yang sudah dibuat menggunakan JavaScript. Untuk mengakses atau mendapatkan elemen kita menggunakan metode yang berbeda. Kode di bawah ini memiliki empat elemen _h1_. Mari kita lihat berbagai metode untuk mengakses elemen _h1_.
+Kamu bisa ngakses elemen yang udah ada di HTML pake JavaScript. Buat ngakses atau ngambil elemen, kita pake berbagai metode yang udah disediain. Di kode bawah ini ada empat elemen _h1_. Yuk kita lihat gimana cara ngaksesnya!
 
 ```html
 <!DOCTYPE html>
@@ -27,7 +29,7 @@ Kita dapat mengakses elemen yang sudah dibuat menggunakan JavaScript. Untuk meng
 
 #### Mendapatkan elemen berdasarkan nama tag
 
-**_getElementsByTagName()_**: menerima nama tag sebagai parameter string dan metode ini mengembalikan objek HTMLCollection. HTMLCollection adalah objek mirip array dari elemen HTML. Properti length menyediakan ukuran koleksi. Setiap kali kita menggunakan metode ini, kita mengakses elemen individual menggunakan indeks atau setelah melakukan loop melalui setiap item individual. HTMLCollection tidak mendukung semua metode array, oleh karena itu kita harus menggunakan for loop biasa alih-alih forEach.
+**_getElementsByTagName()_**: method ini nerima nama tag sebagai parameter string dan ngembaliin objek HTMLCollection. HTMLCollection itu kayak objek mirip array yang isinya elemen HTML. Properti length-nya ngasih tau ukuran koleksinya. Setiap kali kamu pake method ini, kamu bisa ngakses elemen individual pake indeks atau loop satu-satu. Cuma ya, HTMLCollection nggak mendukung semua method array biasa, jadi kamu harus pake for loop biasa ya, bukan forEach.
 
 ```js
 // syntax
@@ -47,7 +49,7 @@ for (let i = 0; i < allTitles.length; i++) {
 
 #### Mendapatkan elemen berdasarkan nama kelas
 
-Metode **_getElementsByClassName()_** mengembalikan objek HTMLCollection. HTMLCollection adalah daftar mirip array dari elemen HTML. Properti length menyediakan ukuran koleksi. Dimungkinkan untuk melakukan loop melalui semua elemen HTMLCollection. Lihat contoh di bawah ini.
+Method **_getElementsByClassName()_** juga ngembaliin objek HTMLCollection kok. HTMLCollection ini daftar mirip array dari elemen HTML. Properti length-nya ngasih tau ukuran koleksi. Kamu bisa loop semua elemennya, gampang banget. Cek contohnya di bawah ya!
 
 ```js
 //syntax
@@ -67,7 +69,7 @@ for (let i = 0; i < allTitles.length; i++) {
 
 #### Mendapatkan elemen berdasarkan id
 
-**_getElementById()_** menargetkan satu elemen HTML. Kita mengirimkan id tanpa # sebagai argumen.
+**_getElementById()_** nah kalo yang ini cuma nargetin satu elemen HTML doang. Kamu tinggal kirim id-nya tanpa tanda # sebagai argumen. Simpel, kan?
 
 ```js
 //syntax
@@ -81,9 +83,9 @@ console.log(firstTitle) // <h1>First Title</h1>
 
 #### Mendapatkan elemen menggunakan metode querySelector
 
-Metode _document.querySelector_ dapat memilih elemen HTML berdasarkan nama tag, id, atau nama kelas.
+Method _document.querySelector_ bisa milih elemen HTML berdasarkan nama tag, id, atau nama kelas. Serba guna nih!
 
-**_querySelector_**: dapat digunakan untuk memilih elemen HTML berdasarkan nama tag, id, atau kelas. Jika nama tag digunakan, ia hanya memilih elemen pertama.
+**_querySelector_**: bisa dipake buat milih elemen HTML berdasarkan nama tag, id, atau kelas. Kalau pake nama tag, dia cuma milih elemen pertama aja ya.
 
 ```js
 let firstTitle = document.querySelector('h1') // select the first available h1 element
@@ -91,7 +93,7 @@ let firstTitle = document.querySelector('#first-title') // select id with first-
 let firstTitle = document.querySelector('.title') // select the first available element with class title
 ```
 
-**_querySelectorAll_**: dapat digunakan untuk memilih elemen html berdasarkan nama tag atau kelas. Ia mengembalikan nodeList yang merupakan objek mirip array yang mendukung metode array. Kita dapat menggunakan **_for loop_** atau **_forEach_** untuk melakukan loop melalui setiap elemen nodeList.
+**_querySelectorAll_**: nah kalo yang ini bisa milih semua elemen html berdasarkan nama tag atau kelas. Dia ngembaliin nodeList — objek mirip array yang mendukung method array, mantap! Kamu bisa pake **_for loop_** atau **_forEach_** buat loop setiap elemennya.
 
 ```js
 const allTitles = document.querySelectorAll('h1') # selects all the available h1 elements in the page
@@ -107,7 +109,7 @@ const allTitles = document.querySelectorAll('.title') // the same goes for selec
 
 ### Menambahkan atribut
 
-Atribut ditambahkan di tag pembuka HTML yang memberikan informasi tambahan tentang elemen. Atribut HTML umum: id, class, src, style, href, disabled, title, alt. Mari kita tambahkan id dan class untuk judul keempat.
+Atribut itu ditambahin di tag pembuka HTML, fungsinya ngasih informasi tambahan tentang elemen. Atribut HTML yang umum tuh kayak: id, class, src, style, href, disabled, title, alt. Yuk kita tambahin id dan class buat judul keempat!
 
 ```js
 const titles = document.querySelectorAll('h1')
@@ -117,8 +119,7 @@ titles[3].id = 'fourth-title'
 
 #### Menambahkan atribut menggunakan setAttribute
 
-Metode **_setAttribute()_** menetapkan atribut html apa pun. Ia menerima dua parameter: tipe atribut dan nama atribut.
-Mari kita tambahkan atribut class dan id untuk judul keempat.
+Method **_setAttribute()_** bisa ngeset atribut html apa aja. Dia nerima dua parameter: tipe atribut dan nama atribut. Gaskeun kita tambahin atribut class dan id buat judul keempat!
 
 ```js
 const titles = document.querySelectorAll('h1')
@@ -128,7 +129,7 @@ titles[3].setAttribute('id', 'fourth-title')
 
 #### Menambahkan atribut tanpa setAttribute
 
-Kita dapat menggunakan metode pengaturan objek biasa untuk menetapkan atribut tetapi ini tidak dapat berfungsi untuk semua elemen. Beberapa atribut adalah properti objek DOM dan dapat ditetapkan secara langsung. Misalnya id dan class.
+Kamu juga bisa pake cara setting objek biasa kok buat ngeset atribut. Tapi inget ya, cara ini nggak berlaku buat semua elemen. Beberapa atribut emang properti objek DOM dan bisa diset langsung, contohnya id dan class.
 
 ```js
 //another way to setting an attribute
@@ -138,7 +139,7 @@ titles[3].id = 'fourth-title'
 
 #### Menambahkan kelas menggunakan classList
 
-Metode classList adalah metode yang baik untuk menambahkan kelas tambahan. Ia tidak menimpa kelas asli jika sebuah kelas sudah ada, melainkan menambahkan kelas tambahan untuk elemen tersebut.
+Method classList tuh cara yang cakep buat nambahin kelas tambahan. Dia nggak bakal nimpa kelas asli kalo kelasnya udah ada, malah dia nambahin aja gitu. Keren, kan?
 
 ```js
 //another way to setting an attribute: append the class, doesn't over ride
@@ -147,7 +148,7 @@ titles[3].classList.add('title', 'header-title')
 
 #### Menghapus kelas menggunakan remove
 
-Mirip dengan menambahkan, kita juga dapat menghapus kelas dari sebuah elemen. Kita dapat menghapus kelas tertentu dari sebuah elemen.
+Sama kayak nambahin, kamu juga bisa hapus kelas dari elemen. Tinggal panggil remove aja buat hapus kelas tertentu.
 
 ```js
 //another way to setting an attribute: append the class, doesn't over ride
@@ -156,11 +157,11 @@ titles[3].classList.remove('title', 'header-title')
 
 ### Menambahkan Teks ke elemen HTML
 
-Sebuah HTML adalah blok bangunan dari tag pembuka, tag penutup, dan konten teks. Kita dapat menambahkan konten teks menggunakan properti _textContent_ atau _innerHTML_.
+Sebuah HTML itu kayak blok bangunan yang terdiri dari tag pembuka, tag penutup, dan konten teks. Kamu bisa nambahin konten teks pake properti _textContent_ atau _innerHTML_. Dua-duanya oke, tinggal pilih sesuai kebutuhan!
 
 #### Menambahkan Konten Teks menggunakan textContent
 
-Properti _textContent_ digunakan untuk menambahkan teks ke elemen HTML.
+Properti _textContent_ ini khusus buat nambahin teks ke elemen HTML. Fungsinya ya spesifik itu aja.
 
 ```js
 const titles = document.querySelectorAll('h1')
@@ -169,11 +170,11 @@ titles[3].textContent = 'Fourth Title'
 
 #### Menambahkan Konten Teks menggunakan innerHTML
 
-Banyak orang bingung antara _textContent_ dan _innerHTML_. _textContent_ dimaksudkan untuk menambahkan teks ke elemen HTML, namun innerHTML dapat menambahkan teks atau elemen HTML sebagai anak (child).
+Banyak yang suka bingung nih bedanya _textContent_ sama _innerHTML_. Gini lho, _textContent_ itu emang khusus buat nambahin teks doang. Nah kalo _innerHTML_ bisa lebih dari itu — dia bisa nambahin teks ATAU elemen HTML sebagai child. Jadi lebih fleksibel!
 
 ##### Konten Teks (Text Content)
 
-Kita menetapkan properti objek HTML *textContent* ke sebuah teks.
+Kita set properti *textContent* dari objek HTML langsung ke teks yang kita mau.
 
 ```js
 const titles = document.querySelectorAll('h1')
@@ -182,8 +183,7 @@ titles[3].textContent = 'Fourth Title'
 
 ##### Inner HTML
 
-Kita menggunakan properti innerHTML ketika kita ingin mengganti atau menambahkan konten anak yang benar-benar baru ke elemen induk.
-Nilai yang kita tetapkan akan berupa string dari elemen HTML.
+Kita pake properti innerHTML kalo mau ngeganti atau nambahin konten child yang baru sama sekali ke elemen induk. Nilai yang kita set bakal berupa string yang isinya elemen HTML.
 
 ```html
 <!DOCTYPE html>
@@ -213,7 +213,7 @@ Nilai yang kita tetapkan akan berupa string dari elemen HTML.
 </html>
 ```
 
-Properti innerHTML juga dapat memungkinkan kita untuk menghapus semua anak dari elemen induk. Alih-alih menggunakan removeChild(), saya merekomendasikan metode berikut.
+Properti innerHTML juga bisa kamu pake buat ngapus semua child dari elemen induk, lho. Daripada repot-repot pake removeChild(), mending pake cara ini aja — lebih praktis!
 
 ```html
 <!DOCTYPE html>
@@ -247,7 +247,7 @@ Properti innerHTML juga dapat memungkinkan kita untuk menghapus semua anak dari 
 
 #### Menambahkan Style Warna
 
-Mari kita tambahkan beberapa style ke judul kita. Jika elemen memiliki indeks genap, kita beri warna hijau, jika tidak merah.
+Yuk kita kasih style ke judul-judul kita! Kalo indeksnya genap kita kasih warna hijau, kalo ganjil merah. Seru, kan?
 
 ```js
 const titles = document.querySelectorAll('h1')
@@ -263,7 +263,7 @@ titles.forEach((title, i) => {
 
 #### Menambahkan Style Warna Latar Belakang
 
-Mari kita tambahkan beberapa style ke judul kita. Jika elemen memiliki indeks genap, kita beri warna hijau, jika tidak merah.
+Sekarang kita utak-atik background-nya. Indeks genap = background hijau, indeks ganjil = background merah. Gampang!
 
 ```js
 const titles = document.querySelectorAll('h1')
@@ -279,7 +279,7 @@ titles.forEach((title, i) => {
 
 #### Menambahkan Style Ukuran Font
 
-Mari kita tambahkan beberapa style ke judul kita. Jika elemen memiliki indeks genap, kita beri 20px, jika tidak 30px.
+Sekarang coba kita mainin ukuran font. Indeks genap ukuran 20px, indeks ganjil 30px. Variatif dikit lah ya biar nggak bosen!
 
 ```js
 const titles = document.querySelectorAll('h1')
@@ -293,40 +293,40 @@ titles.forEach((title, i) => {
 })
 ```
 
-Seperti yang Anda perhatikan, properti CSS ketika kita menggunakannya di JavaScript akan menjadi camelCase. Properti CSS berikut berubah dari background-color menjadi backgroundColor, font-size menjadi fontSize, font-family menjadi fontFamily, margin-bottom menjadi marginBottom.
+Nah, satu hal penting yang harus kamu inget: properti CSS kalo ditulis di JavaScript itu jadi camelCase. Jadi background-color jadi backgroundColor, font-size jadi fontSize, font-family jadi fontFamily, margin-bottom jadi marginBottom. Jangan sampe salah tulis ya!
 
 ---
 
-🌕 Sekarang, Anda terisi penuh dengan kekuatan super, Anda telah menyelesaikan bagian paling penting dan menantang dari tantangan ini dan JavaScript secara umum. Anda telah mempelajari DOM dan sekarang Anda memiliki kemampuan untuk membangun dan mengembangkan aplikasi. Sekarang lakukan beberapa latihan untuk otak dan otot Anda.
+🌕 Gila sih, sekarang kamu udah penuh dengan kekuatan super! Kamu udah ngelewatin bagian paling penting dan menantang dari tantangan ini — dan JavaScript secara umum. Kamu udah belajar DOM dan sekarang kamu punya kemampuan buat bikin dan ngembangin aplikasi. Mantap! Sekarang gaskeun kerjain beberapa latihan buat otak dan tangan kamu!
 
 ## Latihan
 
 ### Latihan: Level 1
 
-1. Buat file index.html dan letakkan empat elemen p seperti di atas: Dapatkan paragraf pertama dengan menggunakan **_document.querySelector(tagname)_** dan nama tag
-2. Dapatkan masing-masing paragraf menggunakan **_document.querySelector('#id')_** dan dengan id mereka
-3. Dapatkan semua p sebagai nodeList menggunakan **_document.querySelectorAll(tagname)_** dan dengan nama tag mereka
-4. Loop melalui nodeList dan dapatkan konten teks dari setiap paragraf
-5. Tetapkan konten teks ke paragraf keempat, **_Fourth Paragraph_**
-6. Tetapkan atribut id dan class untuk semua paragraf menggunakan metode pengaturan atribut yang berbeda
+1. Bikin file index.html dan taruh empat elemen p kayak di atas: Ambil paragraf pertama pake **_document.querySelector(tagname)_** dan nama tag
+2. Ambil masing-masing paragraf pake **_document.querySelector('#id')_** dan id mereka
+3. Ambil semua p sebagai nodeList pake **_document.querySelectorAll(tagname)_** dan nama tag mereka
+4. Loop nodeList-nya dan ambil konten teks dari setiap paragraf
+5. Set konten teks ke paragraf keempat jadi **_Fourth Paragraph_**
+6. Set atribut id dan class buat semua paragraf pake berbagai metode pengaturan atribut
 
 ### Latihan: Level 2
 
-1. Ubah style setiap paragraf menggunakan JavaScript (mis. color, background, border, font-size, font-family)
-1. Pilih semua paragraf dan loop melalui setiap elemen dan beri paragraf pertama dan ketiga warna hijau, dan paragraf kedua dan keempat warna merah
-1. Tetapkan konten teks, id, dan class ke setiap paragraf
+1. Ubah style setiap paragraf pake JavaScript (mis. color, background, border, font-size, font-family)
+1. Pilih semua paragraf, loop setiap elemennya, terus paragraf pertama dan ketiga kasih warna hijau, paragraf kedua dan keempat kasih warna merah
+1. Set konten teks, id, dan class ke setiap paragraf
 
 ### Latihan: Level 3
 
 #### DOM: Mini project 1
 
-1. Kembangkan aplikasi berikut, gunakan elemen HTML berikut untuk memulai. Anda akan mendapatkan kode yang sama di folder starter. Terapkan semua style dan fungsionalitas hanya menggunakan JavaScript.
+1. Kembangin aplikasi berikut nih, pake elemen HTML di bawah buat mulai. Kamu bakal dapet kode yang sama di folder starter. Terapin semua style dan fungsionalitasnya CUMA pake JavaScript aja ya!
 
    - Warna tahun berubah setiap 1 detik
    - Warna latar belakang tanggal dan waktu berubah setiap detik
-   - Tantangan yang selesai memiliki latar belakang hijau
-   - Tantangan yang sedang berjalan memiliki latar belakang kuning
-   - Tantangan yang akan datang memiliki latar belakang merah
+   - Tantangan yang udah completed kasih background hijau
+   - Tantangan yang lagi ongoing kasih background kuning
+   - Tantangan yang coming soon kasih background merah
 
 ```html
 <!-- index.html -->
