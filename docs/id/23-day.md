@@ -4,8 +4,9 @@
 
 ### Event Listener
 
-Event HTML yang umum: onclick, onchange, onmouseover, onmouseout, onkeydown, onkeyup, onload.
-Kita dapat menambahkan metode event listener ke objek DOM apa pun. Kita menggunakan metode **_addEventListener()_** untuk mendengarkan berbagai jenis event pada elemen HTML. Metode _addEventListener()_ menerima dua argumen, sebuah event listener dan sebuah callback function.
+Oke gas, sekarang kita masuk ke event listener! Jadi event HTML yang umum tuh kayak: onclick, onchange, onmouseover, onmouseout, onkeydown, onkeyup, onload.
+
+Kita bisa nambahin method event listener ke objek DOM apa pun. Caranya pake method **_addEventListener()_** buat "mendengarkan" berbagai jenis event pada elemen HTML. Method _addEventListener()_ ini nerima dua argumen: event listener dan callback function. Gampang, kan?
 
 ```js
 selectedElement.addEventListener('eventlistner', function(e) {
@@ -20,9 +21,9 @@ selectedElement.addEventListener('eventlistner', e => {
 
 #### Click
 
-Untuk melampirkan event listener ke elemen, pertama kita pilih elemen tersebut kemudian kita lampirkan metode addEventListener. Event listener menerima jenis event dan callback function sebagai argumen.
+Buat nempelin event listener ke elemen, pertama kita pilih dulu elemennya, terus kita tempelin method addEventListener. Event listener nerima jenis event dan callback function sebagai argumen.
 
-Berikut adalah contoh event jenis click.
+Nih contoh event jenis click.
 
 **Contoh: click**
 
@@ -51,7 +52,7 @@ Berikut adalah contoh event jenis click.
 </html>
 ```
 
-Event juga dapat dilampirkan langsung ke elemen HTML sebagai inline script.
+Event juga bisa langsung ditempel ke elemen HTML sebagai inline script lho!
 
 **Contoh: onclick**
 
@@ -75,9 +76,9 @@ Event juga dapat dilampirkan langsung ke elemen HTML sebagai inline script.
 
 #### Double Click
 
-Untuk melampirkan event listener ke elemen, pertama kita pilih elemen tersebut kemudian kita lampirkan metode addEventListener. Event listener menerima jenis event dan callback function sebagai argumen.
+Buat nempelin event listener ke elemen, pertama kita pilih dulu elemennya, terus tempelin method addEventListener. Event listener nerima jenis event dan callback function sebagai argumen.
 
-Berikut adalah contoh event jenis double click.
+Nih contoh event jenis double click ya.
 **Contoh: dblclick**
 
 ```html
@@ -106,9 +107,9 @@ Berikut adalah contoh event jenis double click.
 
 #### Mouse Enter
 
-Untuk melampirkan event listener ke elemen, pertama kita pilih elemen tersebut kemudian kita lampirkan metode addEventListener. Event listener menerima jenis event dan callback function sebagai argumen.
+Buat nempelin event listener, pilih dulu elemennya terus tempelin method addEventListener. Event listener nerima jenis event dan callback function sebagai argumen.
 
-Berikut adalah contoh event jenis mouse enter.
+Nih contoh event jenis mouse enter.
 
 **Contoh: mouseenter**
 
@@ -136,29 +137,30 @@ Berikut adalah contoh event jenis mouse enter.
 </html>
 ```
 
-Sekarang Anda sudah familiar dengan metode addEventListener dan cara melampirkan event listener. Ada banyak jenis event listener. Tetapi dalam tantangan ini kita akan fokus pada event yang paling umum dan penting.
-Daftar event:
+Nah sekarang kamu udah familiar dong sama method addEventListener dan cara nempelin event listener. Sebenernya ada banyak banget jenis event listener, tapi di tantangan ini kita fokus ke yang paling umum dan penting aja dulu ya.
+
+Daftar event nih biar kamu tau:
 
 - click - saat elemen diklik
 - dblclick - saat elemen diklik dua kali
 - mouseenter - saat pointer mouse masuk ke elemen
-- mouseleave - saat pointer mouse meninggalkan elemen
-- mousemove - saat pointer mouse bergerak di atas elemen
-- mouseover - saat pointer mouse bergerak di atas elemen
+- mouseleave - saat pointer mouse ninggalin elemen
+- mousemove - saat pointer mouse gerak di atas elemen
+- mouseover - saat pointer mouse gerak di atas elemen
 - mouseout - saat pointer mouse keluar dari elemen
-- input - saat nilai dimasukkan ke field input
+- input - saat nilai dimasukin ke field input
 - change - saat nilai berubah pada field input
-- blur - saat elemen tidak fokus
+- blur - saat elemen nggak fokus
 - keydown - saat sebuah tombol ditekan
 - keyup - saat sebuah tombol dilepas
 - keypress - saat kita menekan tombol apa pun
-- onload - saat browser telah selesai memuat halaman
+- onload - saat browser udah selesai loading halaman
 
-Uji jenis event di atas dengan mengganti jenis event pada potongan kode di atas.
+Coba deh tes jenis event di atas dengan ganti-ganti jenis event di potongan kode di atas. Eksperimen aja!
 
 ### Mendapatkan nilai dari elemen input
 
-Kita biasanya mengisi formulir dan formulir menerima data. Field formulir dibuat menggunakan elemen HTML input. Mari kita bangun aplikasi kecil yang memungkinkan kita menghitung indeks massa tubuh seseorang menggunakan dua field input, satu tombol, dan satu tag p.
+Biasanya kita ngisi formulir dan formulir nerima data. Field formulir dibuat pake elemen HTML input. Yuk kita bikin aplikasi kecil yang bisa ngitung indeks massa tubuh (BMI) seseorang pake dua field input, satu tombol, dan satu tag p. Seru nih!
 
 ### input value
 
@@ -194,7 +196,7 @@ Kita biasanya mengisi formulir dan formulir menerima data. Field formulir dibuat
 
 #### event input dan change
 
-Pada contoh di atas, kita berhasil mendapatkan nilai input dari dua field input dengan mengklik tombol. Bagaimana jika kita ingin mendapatkan nilai tanpa mengklik tombol? Kita dapat menggunakan jenis event _change_ atau _input_ untuk mendapatkan data langsung dari field input saat field sedang fokus. Mari kita lihat bagaimana kita akan menanganinya.
+Di contoh di atas, kita berhasil dapetin nilai input dari dua field input dengan mengklik tombol. Tapi gimana kalo kamu pengen dapetin nilainya tanpa ngeklik tombol? Bisa dong! Kamu tinggal pake jenis event _change_ atau _input_ buat dapetin data langsung dari field input saat field lagi fokus. Yuk lihat caranya!
 
 ```html
 <!DOCTYPE html>
@@ -223,7 +225,7 @@ Pada contoh di atas, kita berhasil mendapatkan nilai input dari dua field input 
 
 #### event blur
 
-Berbeda dengan _input_ atau _change_, event _blur_ terjadi saat field input tidak dalam keadaan fokus.
+Nah kalo event _blur_ ini beda dari _input_ atau _change_. Event _blur_ terjadi saat field input lagi nggak dalam keadaan fokus. Jadi pas kamu klik di luar field-nya, baru deh dia jalan.
 
 ```js
 <!DOCTYPE html>
@@ -256,7 +258,7 @@ Berbeda dengan _input_ atau _change_, event _blur_ terjadi saat field input tida
 
 #### keypress, keydown dan keyup
 
-Kita dapat mengakses semua kode tombol keyboard menggunakan berbagai jenis event listener. Mari kita gunakan keypress dan dapatkan keyCode dari setiap tombol keyboard.
+Kamu juga bisa ngakses semua kode tombol keyboard pake berbagai jenis event listener. Keren kan? Yuk kita pake keypress dan dapetin keyCode dari setiap tombol keyboard!
 
 ```html
 <!DOCTYPE html>
@@ -279,17 +281,17 @@ Kita dapat mengakses semua kode tombol keyboard menggunakan berbagai jenis event
 
 ---
 
-🌕 Anda sangat istimewa, Anda terus berkembang setiap hari. Sekarang, Anda tahu cara menangani berbagai jenis event DOM. Tersisa hanya tujuh hari menuju kehebatan. Sekarang lakukan beberapa latihan untuk otak dan otot Anda.
+🌕 Kamu emang spesial, terus berkembang setiap hari! Sekarang kamu udah tau cara nanganin berbagai jenis event DOM. Tinggal tujuh hari lagi menuju level dewa nih! Gaskeun kerjain latihan buat otak dan otot kamu!
 
 ## Latihan
 
 ### Latihan: Level 1
 
-1. Membuat angka dan menandai bilangan genap, ganjil, dan prima dengan tiga warna berbeda. Lihat gambar di bawah.
+1. Bikin angka dan tandain bilangan genap, ganjil, dan prima dengan tiga warna berbeda. Lihat gambar di bawah ya!
 
 ![Number Generator](../images/projects/dom_min_project_number_generator_day_3.1.gif)
 
-1. Membuat kode keyboard menggunakan event listener. Gambar di bawah.
+1. Bikin kode keyboard pake event listener. Cek gambar di bawah!
 
 ![Keyboard key](../images/projects/dom_min_project_keycode_day_3.2.gif)
 
