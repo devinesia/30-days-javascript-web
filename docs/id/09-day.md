@@ -2,11 +2,11 @@
 
 ## Higher Order Function
 
-Higher order function adalah fungsi yang menerima fungsi lain sebagai parameter atau mengembalikan fungsi sebagai nilai. Fungsi yang dilewatkan sebagai parameter disebut callback.
+Higher order function itu fungsi yang menerima fungsi lain sebagai parameter atau ngembaliin fungsi sebagai nilai. Fungsi yang dilewatkan sebagai parameter disebut callback. Keren kan!
 
 ### Callback
 
-Callback adalah fungsi yang dapat dilewatkan sebagai parameter ke fungsi lain. Lihat contoh di bawah ini.
+Callback tuh fungsi yang bisa dilewatkan sebagai parameter ke fungsi lain. Simpel banget, nih lihat contohnya!
 
 ```js
 // fungsi callback, nama fungsinya bisa nama apa saja
@@ -24,7 +24,7 @@ console.log(cube(callback, 3))
 
 ### Fungsi yang Mengembalikan Fungsi
 
-Higher order function mengembalikan fungsi sebagai nilai
+Higher order function ngembaliin fungsi sebagai nilai. Inception banget!
 ​
 ```js
 // Higher order function mengembalikan fungsi lain
@@ -40,7 +40,7 @@ const higherOrder = n => {
 console.log(higherOrder(2)(3)(10))
 ```
 
-Mari kita lihat di mana kita menggunakan fungsi callback. Misalnya metode _forEach_ menggunakan callback.
+Yuk kita lihat di mana kita pakai fungsi callback. Misalnya nih, metode _forEach_ pakai callback.
 
 ```js
 const numbers = [1, 2, 3, 4, 5]
@@ -60,7 +60,7 @@ console.log(sumArray(numbers))
 15
 ```
 
-Contoh di atas dapat disederhanakan sebagai berikut:
+Contoh di atas bisa disederhanain jadi kayak gini nih:
 
 ```js
 const numbers = [1, 2, 3, 4]
@@ -82,14 +82,14 @@ console.log(sumArray(numbers))
 
 ### Mengatur Waktu (Setting time)
 
-Di JavaScript kita dapat mengeksekusi beberapa aktivitas dalam interval waktu tertentu atau kita dapat menjadwalkan (menunggu) selama beberapa waktu untuk mengeksekusi beberapa aktivitas.
+Di JavaScript kita bisa ngeksekusi beberapa aktivitas dalam interval waktu tertentu, atau kita bisa jadwalin (nunggu) dulu selama beberapa waktu buat ngejalanin aktivitas tertentu. Kek punya alarm gitu deh!
 
 - setInterval
 - setTimeout
 
 #### Mengatur Interval menggunakan fungsi setInterval
 
-Di JavaScript, kita menggunakan higher order function setInterval untuk melakukan suatu aktivitas secara terus-menerus dalam interval waktu tertentu. Metode global setInterval menerima fungsi callback dan durasi sebagai parameter. Durasi dalam milidetik dan callback akan selalu dipanggil dalam interval waktu tersebut.
+Di JavaScript, kita pakai higher order function setInterval buat ngelakuin suatu aktivitas terus-menerus dalam interval waktu tertentu. Metode global setInterval nerima fungsi callback dan durasi sebagai parameter. Durasinya dalam milidetik dan callback bakal selalu dipanggil dalam interval waktu tersebut.
 
 ```js
 // sintaks
@@ -108,7 +108,7 @@ setInterval(sayHello, 1000) // mencetak hello setiap detik, 1000ms adalah 1s
 
 #### Mengatur waktu menggunakan setTimeout
 
-Di JavaScript, kita menggunakan higher order function setTimeout untuk mengeksekusi suatu aksi pada suatu waktu di masa depan. Metode global setTimeout menerima fungsi callback dan durasi sebagai parameter. Durasi dalam milidetik dan callback menunggu selama jumlah waktu tersebut.
+Di JavaScript, kita pakai higher order function setTimeout buat ngeksekusi suatu aksi di waktu yang akan datang. Metode global setTimeout nerima fungsi callback dan durasi sebagai parameter. Durasinya dalam milidetik dan callback nunggu selama jumlah waktu yang ditentuin.
 
 ```js
 // sintaks
@@ -127,11 +127,11 @@ setTimeout(sayHello, 2000) // mencetak hello setelah menunggu selama 2 detik.
 
 ## Functional Programming
 
-Alih-alih menulis loop biasa, versi terbaru JavaScript memperkenalkan banyak metode bawaan yang dapat membantu kita menyelesaikan masalah yang rumit. Semua metode bawaan menggunakan fungsi callback. Di bagian ini, kita akan melihat _forEach_, _map_, _filter_, _reduce_, _find_, _every_, _some_, dan _sort_.
+Daripada nulis loop biasa terus-terusan, versi terbaru JavaScript udah nyediain banyak metode bawaan yang bisa bantu kita nyelesein masalah rumit. Semua metode bawaan ini pakai fungsi callback loh. Di bagian ini, kita bakal ngulik _forEach_, _map_, _filter_, _reduce_, _find_, _every_, _some_, dan _sort_. Siap? Gaskeun!
 
 ### forEach
 
-_forEach_: Mengiterasi elemen array. Kita menggunakan _forEach_ hanya dengan array. Metode ini menerima fungsi callback dengan parameter elemen, indeks, dan array itu sendiri. Indeks dan array bersifat opsional.
+_forEach_: Buat ngiterasi elemen array. Kita pakai _forEach_ cuma dengan array. Metode ini nerima fungsi callback dengan parameter elemen, indeks, dan array itu sendiri. Indeks dan array sifatnya opsional, jadi bisa dipakai bisa enggak.
 
 ```js
 arr.forEach(function (element, index, arr) {
@@ -187,7 +187,7 @@ ICELAND
 
 ### map
 
-_map_: Mengiterasi elemen array dan memodifikasi elemen array. Metode ini menerima fungsi callback dengan parameter elemen, indeks, array dan mengembalikan array baru.
+_map_: Buat ngiterasi elemen array dan modifikasi elemen array. Metode ini nerima fungsi callback dengan parameter elemen, indeks, array dan ngembaliin array baru. Mantap!
 
 ```js
 const modifiedArray = arr.map(function (element, index, arr) {
@@ -263,7 +263,7 @@ const countriesFirstThreeLetters = countries.map((country) =>
 
 ### filter
 
-_Filter_: Menyaring item yang memenuhi kondisi penyaringan dan mengembalikan array baru.
+_Filter_: Buat nyaring item yang memenuhi kondisi penyaringan dan ngembaliin array baru. Kayak nyaring kopi, yang lolos cuma yang pas aja!
 
 ```js
 //Filter countries containing land
@@ -317,7 +317,7 @@ console.log(scoresGreaterEighty)
 
 ### reduce
 
-_reduce_: Reduce menerima fungsi callback. Fungsi callback menerima accumulator, current, dan nilai awal opsional sebagai parameter dan mengembalikan satu nilai. Praktik yang baik adalah mendefinisikan nilai awal untuk nilai accumulator. Jika kita tidak menentukan parameter ini, secara default accumulator akan mendapatkan `nilai pertama` array. Jika array kita adalah _array kosong_, maka `Javascript` akan melemparkan error.
+_reduce_: Reduce nerima fungsi callback. Fungsi callback nerima accumulator, current, dan nilai awal opsional sebagai parameter dan ngembaliin satu nilai. Praktik yang baik adalah mendefinisikan nilai awal buat accumulator. Kalau kita nggak tentuin parameter ini, secara default accumulator bakal dapet `nilai pertama` array. Tapi hati-hati, kalau array kita _array kosong_, `Javascript` bakal ngasih error!
 
 ```js
 arr.reduce((acc, cur) => {
@@ -339,7 +339,7 @@ console.log(sum)
 
 ### every
 
-_every_: Memeriksa apakah semua elemen serupa dalam satu aspek. Mengembalikan boolean
+_every_: Ngecek apakah semua elemen serupa dalam satu aspek. Ngembaliin boolean. Kalau semua oke, ya true!
 
 ```js
 const names = ['Asabeneh', 'Mathias', 'Elias', 'Brook']
@@ -366,7 +366,7 @@ true
 
 ### find
 
-_find_: Mengembalikan elemen pertama yang memenuhi kondisi
+_find_: Ngembaliin elemen pertama yang memenuhi kondisi. Jadi langsung dapet yang pertama cocok!
 
 ```js
 const ages = [24, 22, 25, 32, 35, 18]
@@ -408,7 +408,7 @@ console.log(score)
 
 ### findIndex
 
-_findIndex_: Mengembalikan posisi elemen pertama yang memenuhi kondisi
+_findIndex_: Ngembaliin posisi elemen pertama yang memenuhi kondisi. Jadi dapet indexnya, bukan nilainya!
 
 ```js
 const names = ['Asabeneh', 'Mathias', 'Elias', 'Brook']
@@ -423,7 +423,7 @@ console.log(age) // 5
 
 ### some
 
-_some_: Memeriksa apakah beberapa elemen serupa dalam satu aspek. Mengembalikan boolean
+_some_: Ngecek apakah beberapa elemen serupa dalam satu aspek. Ngembaliin boolean. Kalau ada minimal satu yang cocok, ya true!
 
 ```js
 const names = ['Asabeneh', 'Mathias', 'Elias', 'Brook']
@@ -441,7 +441,7 @@ console.log(areAllStr) // false
 
 ### sort
 
-_sort_: Metode sort mengatur elemen array secara ascending atau descending. Secara default, metode **_sort()_** mengurutkan nilai sebagai string. Ini bekerja dengan baik untuk item array string tetapi tidak untuk angka. Jika nilai angka diurutkan sebagai string, ini akan memberikan hasil yang salah. Metode sort memodifikasi array asli. Disarankan untuk menyalin data asli sebelum Anda mulai menggunakan metode _sort_.
+_sort_: Metode sort ngatur elemen array secara ascending atau descending. Secara default, metode **_sort()_** ngurutin nilai sebagai string. Ini works banget buat item array string, tapi nggak cocok buat angka. Kalau nilai angka diurutin sebagai string, hasilnya bakal kacau. Metode sort juga modifikasi array asli loh, jadi disaranin buat nyalin data asli dulu sebelum kamu pakai metode _sort_. Biar aman!
 
 #### Mengurutkan nilai string
 
@@ -453,7 +453,7 @@ console.log(products.sort()) // ['Apple', 'Carrot', 'Coffee', 'Honey', 'Milk', '
 
 #### Mengurutkan nilai numerik
 
-Seperti yang Anda lihat pada contoh di bawah, 100 muncul pertama setelah diurutkan secara ascending. Sort mengonversi item ke string, karena '100' dan angka lainnya dibandingkan, 1 yang merupakan awal dari string '100' menjadi yang terkecil. Untuk menghindari ini, kita menggunakan fungsi callback pembanding di dalam metode sort, yang mengembalikan negatif, nol atau positif.
+Kayak yang kamu lihat di contoh bawah, 100 muncul pertama setelah diurutin ascending. Soalnya sort ngonversi item ke string, jadi karena '100' dan angka lainnya dibandingkan, 1 yang jadi awal dari string '100' dianggap paling kecil. Biar nggak kejadian kayak gini, kita pakai fungsi callback pembanding di dalam metode sort, yang ngembaliin negatif, nol atau positif. Gampang kan!
 
 ```js
 const numbers = [9.81, 3.14, 100, 37]
@@ -473,7 +473,7 @@ console.log(numbers) //[100, 37, 9.81, 3.14]
 
 #### Mengurutkan Array Objek
 
-Setiap kali kita mengurutkan objek dalam array, kita menggunakan kunci objek untuk membandingkan. Mari kita lihat contoh di bawah ini.
+Setiap kali kita ngurutin objek dalam array, kita pakai kunci objek buat ngebandingin. Nih lihat contohnya!
 
 ```js
 objArr.sort(function (a, b) {
@@ -505,7 +505,7 @@ console.log(users) // terurut ascending
 // [{…}, {…}, {…}, {…}]
 ```
 
-🌕 Anda hebat. Jangan pernah menyerah karena hal-hal besar membutuhkan waktu. Anda baru saja menyelesaikan tantangan hari ke-9 dan Anda selangkah lebih maju menuju kehebatan. Sekarang lakukan beberapa latihan untuk otak dan otot Anda.
+🌕 Kamu hebat banget! Jangan pernah nyerah ya, karena hal-hal besar emang butuh waktu. Kamu baru aja nyelesein tantangan hari ke-9 dan selangkah lebih dekat menuju kehebatan. Gaskeun sekarang latihan buat otak dan otot kamu!
 
 ## 💻 Latihan
 
@@ -526,7 +526,7 @@ const products = [
 ```
 
 1. Jelaskan perbedaan antara **_forEach, map, filter, dan reduce_**.
-2. Definisikan fungsi callback sebelum Anda menggunakannya di forEach, map, filter atau reduce.
+2. Definisikan fungsi callback sebelum kamu menggunakannya di forEach, map, filter atau reduce.
 3. Gunakan **_forEach_** untuk console.log setiap negara di array countries.
 4. Gunakan **_forEach_** untuk console.log setiap nama di array names.
 5. Gunakan **_forEach_** untuk console.log setiap angka di array numbers.
@@ -556,7 +556,7 @@ const products = [
 
 1. Temukan total harga produk dengan merantai dua atau lebih array iterator (mis. arr.map(callback).filter(callback).reduce(callback))
 1. Temukan jumlah harga produk hanya menggunakan reduce reduce(callback))
-1. Deklarasikan fungsi bernama **_categorizeCountries_** yang mengembalikan array negara yang memiliki beberapa pola umum (Anda dapat menemukan array countries di repositori ini sebagai countries.js (mis 'land', 'ia', 'island','stan')).
+1. Deklarasikan fungsi bernama **_categorizeCountries_** yang mengembalikan array negara yang memiliki beberapa pola umum (kamu dapat menemukan array countries di repositori ini sebagai countries.js (mis 'land', 'ia', 'island','stan')).
 1. Buat fungsi yang mengembalikan array objek, yang berisi huruf dan jumlah kali huruf tersebut digunakan untuk memulai nama suatu negara.
 1. Deklarasikan fungsi **_getFirstTenCountries_** dan kembalikan array sepuluh negara. Gunakan functional programming yang berbeda untuk bekerja pada array countries.js
 1. Deklarasikan fungsi **_getLastTenCountries_** yang mengembalikan sepuluh negara terakhir di array countries.
@@ -621,7 +621,7 @@ const products = [
 
    ````
 
-3. \*\*\* Cobalah untuk mengembangkan program yang menghitung ukuran tendensi sentral suatu sampel (mean, median, mode) dan ukuran variabilitas (range, variance, standar deviasi). Selain ukuran-ukuran tersebut, temukan min, max, count, percentile, dan distribusi frekuensi dari sampel. Anda dapat membuat objek bernama statistics dan membuat semua fungsi yang melakukan perhitungan statistik sebagai metode untuk objek statistics. Lihat output di bawah ini.
+3. \*\*\* Cobalah untuk mengembangkan program yang menghitung ukuran tendensi sentral suatu sampel (mean, median, mode) dan ukuran variabilitas (range, variance, standar deviasi). Selain ukuran-ukuran tersebut, temukan min, max, count, percentile, dan distribusi frekuensi dari sampel. Kamu dapat membuat objek bernama statistics dan membuat semua fungsi yang melakukan perhitungan statistik sebagai metode untuk objek statistics. Lihat output di bawah ini.
 
    ```js
    const ages = [31, 26, 34, 37, 27, 26, 32, 32, 26, 27, 27, 24, 32, 33, 27, 25, 26, 38, 37, 31, 34, 24, 33, 29, 26]
