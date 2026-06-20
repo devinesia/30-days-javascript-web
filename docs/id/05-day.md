@@ -1,17 +1,17 @@
-# 📔 Hari 5
+# 📔 Hari 5 - Mantap Lanjut!
 
 ## Arrays
 
-Berbeda dengan variabel, sebuah array dapat menyimpan _beberapa nilai_. Setiap nilai dalam array memiliki _indeks_, dan setiap indeks memiliki _referensi di alamat memori_. Setiap nilai dapat diakses menggunakan _indeksnya_. Indeks dari sebuah array dimulai dari _nol_, dan indeks dari elemen terakhir adalah kurang satu dari panjang array.
+Beda sama variabel biasa, sebuah array bisa nyimpen _beberapa nilai_. Setiap nilai dalam array punya _indeks_, dan setiap indeks punya _referensi di alamat memori_. Setiap nilai bisa diakses pake _indeksnya_. Indeks dari array dimulai dari _nol_, dan indeks dari elemen terakhir adalah kurang satu dari panjang array.
 
-Array adalah kumpulan tipe data berbeda yang terurut dan dapat diubah (modifiable). Array memungkinkan penyimpanan elemen duplikat dan tipe data yang berbeda. Array bisa kosong, atau dapat memiliki nilai tipe data yang berbeda.
+Array adalah kumpulan tipe data berbeda yang terurut dan bisa diubah (modifiable). Array memungkinkan penyimpanan elemen duplikat dan tipe data yang beda-beda. Array bisa kosong, atau bisa punya nilai tipe data yang beda-beda. Cakep kan?
 
 ### Cara membuat array kosong
 
-Dalam JavaScript, kita dapat membuat array dengan berbagai cara. Mari kita lihat berbagai cara untuk membuat array.
-Sangat umum menggunakan _const_ daripada _let_ untuk mendeklarasikan variabel array. Jika Anda menggunakan const, artinya Anda tidak menggunakan nama variabel tersebut lagi.
+Di JavaScript, kita bisa bikin array dengan berbagai cara. Yuk kita lihat berbagai cara buat bikin array.
+Umum banget pake _const_ daripada _let_ buat mendeklarasikan variabel array. Kalau kamu pake const, artinya kamu nggak pake nama variabel itu lagi.
 
-- Menggunakan Array constructor
+- Pake Array constructor
 
 ```js
 // sintaks
@@ -21,7 +21,7 @@ const arr = Array()
 console.log(arr) // []
 ```
 
-- Menggunakan tanda kurung siku ([])
+- Pake tanda kurung siku ([])
 
 ```js
 // sintaks
@@ -32,7 +32,7 @@ console.log(arr)
 
 ### Cara membuat array dengan nilai
 
-Array dengan nilai awal. Kita menggunakan properti _length_ untuk menemukan panjang array.
+Array dengan nilai awal. Kita pake properti _length_ buat nemuin panjang array.
 
 ```js
 const numbers = [0, 3.14, 9.81, 37, 98.6, 100] // array of numbers
@@ -78,7 +78,7 @@ Countries: ['Finland', 'Estonia', 'Denmark', 'Sweden', 'Norway']
 Number of countries: 5
 ```
 
-- Array dapat memiliki item dengan tipe data berbeda
+- Array bisa punya item dengan tipe data beda-beda
 
 ```js
 const arr = [
@@ -93,7 +93,7 @@ console.log(arr)
 
 ### Membuat array menggunakan split
 
-Seperti yang telah kita lihat di bagian sebelumnya, kita dapat membagi string pada posisi yang berbeda, dan kita dapat mengubahnya menjadi array. Mari kita lihat contoh di bawah ini.
+Kayak yang udah kita lihat di bagian sebelumnya, kita bisa ngebelah string di posisi yang beda-beda, dan kita bisa ngubahnya jadi array. Yuk lihat contoh di bawah nih.
 
 ```js
 let js = 'JavaScript'
@@ -116,7 +116,7 @@ console.log(words)
 
 ### Mengakses item array menggunakan indeks
 
-Kita mengakses setiap elemen dalam array menggunakan indeksnya. Indeks array dimulai dari 0. Gambar di bawah ini dengan jelas menunjukkan indeks setiap elemen dalam array.
+Kita akses setiap elemen dalam array pake indeksnya. Indeks array dimulai dari 0. Gambar di bawah ini jelas nunjukin indeks setiap elemen dalam array.
 
 ![arr index](../images/array_index.png)
 
@@ -216,7 +216,7 @@ console.log(shoppingCart[lastIndex]) //  -> Sugar
 
 ### Memodifikasi elemen array
 
-Array bersifat mutable (dapat dimodifikasi). Setelah array dibuat, kita dapat memodifikasi isi elemen array.
+Array bersifat mutable (bisa dimodifikasi). Setelah array dibuat, kita bisa modifikasi isi elemen array.
 
 ```js
 const numbers = [1, 2, 3, 4, 5]
@@ -252,11 +252,11 @@ console.log(countries)
 
 ### Metode untuk memanipulasi array
 
-Ada berbagai metode untuk memanipulasi array. Ini adalah beberapa metode yang tersedia untuk menangani array: _Array, length, concat, indexOf, slice, splice, join, toString, includes, lastIndexOf, isArray, fill, push, pop, shift, unshift_
+Ada berbagai metode buat manipulasi array. Nih beberapa metode yang tersedia buat nangani array: _Array, length, concat, indexOf, slice, splice, join, toString, includes, lastIndexOf, isArray, fill, push, pop, shift, unshift_
 
 #### Array Constructor
 
-Array: Untuk membuat array.
+Array: Buat bikin array.
 
 ```js
 const arr = Array() // membuat array kosong
@@ -268,7 +268,7 @@ console.log(eightEmptyValues) // [empty x 8]
 
 #### Membuat nilai statis dengan fill
 
-fill: Mengisi semua elemen array dengan nilai statis
+fill: Ngisi semua elemen array dengan nilai statis
 
 ```js
 const arr = Array() // membuat array kosong
@@ -286,7 +286,7 @@ console.log(four4values) // [4, 4, 4, 4]
 
 #### Menggabungkan array menggunakan concat
 
-concat: Untuk menggabungkan dua array.
+concat: Buat ngegabungin dua array.
 
 ```js
 const firstList = [1, 2, 3]
@@ -310,7 +310,7 @@ console.log(fruitsAndVegetables)
 
 #### Mendapatkan panjang array
 
-Length: Untuk mengetahui ukuran array
+Length: Buat tahu ukuran array
 
 ```js
 const numbers = [1, 2, 3, 4, 5]
@@ -319,7 +319,7 @@ console.log(numbers.length) // -> 5 adalah ukuran array
 
 #### Mendapatkan indeks elemen dalam array
 
-indexOf: Untuk memeriksa apakah suatu item ada dalam array. Jika ada, ia mengembalikan indeksnya, jika tidak mengembalikan -1.
+indexOf: Buat ngecek apakah suatu item ada di array. Kalau ada, dia ngembaliin indeksnya, kalau nggak ngembaliin -1.
 
 ```js
 const numbers = [1, 2, 3, 4, 5]
@@ -330,9 +330,9 @@ console.log(numbers.indexOf(1)) // -> 0
 console.log(numbers.indexOf(6)) // -> -1
 ```
 
-Periksa sebuah elemen apakah ada dalam array.
+Cek sebuah elemen apakah ada di array.
 
-- Periksa item dalam daftar
+- Cek item di daftar
   
 ```js
 // mari kita periksa apakah banana ada dalam array
@@ -362,7 +362,7 @@ if(indexOfAvocado === -1){
 
 #### Mendapatkan indeks terakhir elemen dalam array
 
-lastIndexOf: Memberikan posisi item terakhir dalam array. Jika ada, ia mengembalikan indeksnya, jika tidak mengembalikan -1.
+lastIndexOf: Ngasih posisi item terakhir dalam array. Kalau ada, dia ngembaliin indeksnya, kalau nggak ngembaliin -1.
 
 ```js
 const numbers = [1, 2, 3, 4, 5, 3, 1, 2]
@@ -374,7 +374,7 @@ console.log(numbers.lastIndexOf(4)) //  3
 console.log(numbers.lastIndexOf(6)) // -1
 ```
 
-includes: Untuk memeriksa apakah suatu item ada dalam array. Jika ada, ia mengembalikan true, jika tidak mengembalikan false.
+includes: Buat ngecek apakah suatu item ada di array. Kalau ada, dia ngembaliin true, kalau nggak ngembaliin false.
 
 ```js
 const numbers = [1, 2, 3, 4, 5]
@@ -400,7 +400,7 @@ console.log(webTechs.includes('C'))     // false
 
 #### Memeriksa array
 
-Array.isArray: Untuk memeriksa apakah tipe data adalah array
+Array.isArray: Buat ngecek apakah tipe data adalah array
 
 ```js
 const numbers = [1, 2, 3, 4, 5]
@@ -412,7 +412,7 @@ console.log(Array.isArray(number)) // false
 
 #### Mengonversi array ke string
 
-toString: Mengonversi array ke string
+toString: Ngubah array ke string
 
 ```js
 const numbers = [1, 2, 3, 4, 5]
@@ -424,7 +424,7 @@ console.log(names.toString()) // Asabeneh,Mathias,Elias,Brook
 
 #### Menggabungkan elemen array
 
-join: Digunakan untuk menggabungkan elemen-elemen array, argumen yang kita berikan dalam metode join akan digabungkan dalam array dan dikembalikan sebagai string. Secara default, ia menggabungkan dengan koma, tetapi kita dapat memberikan parameter string berbeda yang dapat digabungkan di antara item-item tersebut.
+join: Dipake buat ngegabungin elemen-elemen array, argumen yang kita kasih di metode join bakal digabungin dalam array dan dikembaliin sebagai string. Secara default, dia ngegabungin dengan koma, tapi kita bisa ngasih parameter string berbeda yang bisa digabungin di antara item-item tersebut.
 
 ```js
 const numbers = [1, 2, 3, 4, 5]
@@ -454,7 +454,7 @@ console.log(webTechs.join(' # '))  // "HTML # CSS # JavaScript # React # Redux #
 
 #### Memotong elemen array
 
-Slice: Untuk memotong beberapa item dalam rentang tertentu. Menerima dua parameter: posisi awal dan posisi akhir. Tidak menyertakan posisi akhir.
+Slice: Buat motong beberapa item dalam rentang tertentu. Nerima dua parameter: posisi awal dan posisi akhir. Nggak nyertakan posisi akhir.
 
 ```js
   const numbers = [1,2,3,4,5]
@@ -467,7 +467,7 @@ Slice: Untuk memotong beberapa item dalam rentang tertentu. Menerima dua paramet
 
 #### Metode splice dalam array
 
-Splice: Menerima tiga parameter: Posisi awal, jumlah yang akan dihapus, dan jumlah item yang akan ditambahkan.
+Splice: Nerima tiga parameter: Posisi awal, jumlah yang bakal dihapus, dan jumlah item yang bakal ditambahin.
 
 ```js
   const numbers = [1, 2, 3, 4, 5]
@@ -490,7 +490,7 @@ Splice: Menerima tiga parameter: Posisi awal, jumlah yang akan dihapus, dan juml
 
 #### Menambahkan item ke array menggunakan push
 
-Push: menambahkan item di akhir. Untuk menambahkan item ke akhir array yang sudah ada, kita menggunakan metode push.
+Push: nambahin item di akhir. Buat nambahin item ke akhir array yang udah ada, kita pake metode push.
 
 ```js
 // sintaks
@@ -520,7 +520,7 @@ console.log(fruits)   // ['banana', 'orange', 'mango', 'lemon', 'apple', 'lime']
 
 #### Menghapus elemen akhir menggunakan pop
 
-pop: Menghapus item di akhir.
+pop: Nghapus item di akhir.
 
 ```js
 const numbers = [1, 2, 3, 4, 5]
@@ -530,7 +530,7 @@ console.log(numbers) // -> [1,2,3,4]
 
 #### Menghapus elemen dari awal
 
-shift: Menghapus satu elemen array di awal array.
+shift: Nghapus satu elemen array di awal array.
 
 ```js
 const numbers = [1, 2, 3, 4, 5]
@@ -540,7 +540,7 @@ console.log(numbers) // -> [2,3,4,5]
 
 #### Menambahkan elemen dari awal
 
-unshift: Menambahkan elemen array di awal array.
+unshift: Nambahin elemen array di awal array.
 
 ```js
 const numbers = [1, 2, 3, 4, 5]
@@ -550,7 +550,7 @@ console.log(numbers) // -> [0,1,2,3,4,5]
 
 #### Membalik urutan array
 
-reverse: membalik urutan array.
+reverse: ngebalik urutan array.
 
 ```js
 const numbers = [1, 2, 3, 4, 5]
@@ -563,7 +563,7 @@ console.log(numbers) // [1, 2, 3, 4, 5]
 
 #### Mengurutkan elemen dalam array
 
-sort: mengatur elemen array dalam urutan menaik. Sort menerima fungsi callback, kita akan melihat bagaimana menggunakan sort dengan fungsi callback di bagian-bagian selanjutnya.
+sort: ngatur elemen array dalam urutan menaik. Sort nerima fungsi callback, kita bakal lihat gimana pake sort dengan fungsi callback di bagian-bagian selanjutnya.
 
 ```js
 const webTechs = [
@@ -585,7 +585,7 @@ console.log(webTechs) // ["Redux", "React", "Node", "MongoDB", "JavaScript", "HT
 
 ### Array dari array
 
-Array dapat menyimpan tipe data yang berbeda termasuk array itu sendiri. Mari kita buat array dari array.
+Array bisa nyimpen tipe data yang beda-beda termasuk array itu sendiri. Yuk kita bikin array dari array.
 
 ```js
 const firstNums = [1, 2, 3]
@@ -603,7 +603,7 @@ console.log(arrayOfArray[0]) // [1, 2, 3]
  console.log(fullStack[1]) // ["Node", "Express", "MongoDB"]
 ```
 
-🌕 Anda rajin dan telah mencapai banyak hal. Anda baru saja menyelesaikan tantangan hari ke-5 dan Anda selangkah lebih maju menuju kehebatan. Sekarang lakukan beberapa latihan untuk otak dan otot Anda.
+🌕 Kamu rajin banget dan udah mencapai banyak hal. Kamu baru aja nyelesein tantangan hari ke-5 dan kamu selangkah lebih maju menuju kehebatan. Gaskeun sekarang lakuin latihan buat otak dan otot kamu.
 
 ## 💻 Latihan
 
@@ -637,20 +637,20 @@ const webTechs = [
 
 1. Deklarasikan array _kosong_;
 2. Deklarasikan array dengan lebih dari 5 jumlah elemen
-3. Temukan panjang array Anda
-4. Dapatkan item pertama, item tengah, dan item terakhir dari array
-5. Deklarasikan array bernama _mixedDataTypes_, masukkan tipe data yang berbeda dalam array dan temukan panjang array. Ukuran array harus lebih dari 5
-6. Deklarasikan variabel array bernama itCompanies dan berikan nilai awal Facebook, Google, Microsoft, Apple, IBM, Oracle dan Amazon
-7. Cetak array menggunakan _console.log()_
+3. Temuin panjang array kamu
+4. Dapetin item pertama, item tengah, dan item terakhir dari array
+5. Deklarasikan array bernama _mixedDataTypes_, masukin tipe data yang beda-beda di array dan temuin panjang array. Ukuran array harus lebih dari 5
+6. Deklarasikan variabel array bernama itCompanies dan kasih nilai awal Facebook, Google, Microsoft, Apple, IBM, Oracle dan Amazon
+7. Cetak array pake _console.log()_
 8. Cetak jumlah perusahaan dalam array
 9. Cetak perusahaan pertama, tengah, dan terakhir
 10. Cetak setiap perusahaan
-11. Ubah setiap nama perusahaan menjadi huruf kapital satu per satu dan cetak
+11. Ubah setiap nama perusahaan jadi huruf kapital satu per satu dan cetak
 12. Cetak array seperti sebuah kalimat: Facebook, Google, Microsoft, Apple, IBM, Oracle dan Amazon adalah perusahaan IT besar.
-13. Periksa apakah perusahaan tertentu ada dalam array itCompanies. Jika ada, kembalikan perusahaan tersebut, jika tidak kembalikan perusahaan _tidak ditemukan_
-14. Saring perusahaan yang memiliki lebih dari satu 'o' tanpa metode filter
-15. Urutkan array menggunakan metode _sort()_
-16. Balik array menggunakan metode _reverse()_
+13. Cek apakah perusahaan tertentu ada di array itCompanies. Kalau ada, kembalikan perusahaan tersebut, kalau nggak kembalikan perusahaan _tidak ditemukan_
+14. Saring perusahaan yang punya lebih dari satu 'o' tanpa metode filter
+15. Urutkan array pake metode _sort()_
+16. Balik array pake metode _reverse()_
 17. Potong 3 perusahaan pertama dari array
 18. Potong 3 perusahaan terakhir dari array
 19. Potong perusahaan IT tengah dari array
@@ -661,8 +661,8 @@ const webTechs = [
 
 ### Latihan: Level 2
 
-1. Buat file countries.js terpisah dan simpan array countries ke dalam file ini, buat file terpisah web_techs.js dan simpan array webTechs ke dalam file ini. Akses kedua file di file main.js
-1. Pertama, hapus semua tanda baca dan ubah string menjadi array, lalu hitung jumlah kata dalam array
+1. Bikin file countries.js terpisah dan simpen array countries ke file ini, bikin file terpisah web_techs.js dan simpen array webTechs ke file ini. Akses kedua file di file main.js
+1. Pertama, hapus semua tanda baca dan ubah string jadi array, terus hitung jumlah kata di array
 
     ```js
     let text =
@@ -677,19 +677,19 @@ const webTechs = [
     13
     ```
 
-1. Dalam keranjang belanja berikut, tambahkan, hapus, edit item
+1. Di keranjang belanja berikut, tambahin, hapus, edit item
 
     ```js
     const shoppingCart = ['Milk', 'Coffee', 'Tea', 'Honey']
     ```
 
-   - tambahkan 'Meat' di awal keranjang belanja Anda jika belum ditambahkan
-   - tambahkan Sugar di akhir keranjang belanja Anda jika belum ditambahkan
-   - hapus 'Honey' jika Anda alergi terhadap madu
-   - ubah Tea menjadi 'Green Tea'
-1. Dalam array countries, periksa apakah 'Ethiopia' ada dalam array. Jika ada, cetak 'ETHIOPIA'. Jika tidak ada, tambahkan ke daftar countries.
-1. Dalam array webTechs, periksa apakah Sass ada dalam array dan jika ada cetak 'Sass is a CSS preprocess'. Jika tidak ada, tambahkan Sass ke array dan cetak arraynya.
-1. Gabungkan dua variabel berikut dan simpan dalam variabel fullStack.
+   - tambahin 'Meat' di awal keranjang belanja kamu kalau belum ditambahin
+   - tambahin Sugar di akhir keranjang belanja kamu kalau belum ditambahin
+   - hapus 'Honey' kalau kamu alergi madu
+   - ubah Tea jadi 'Green Tea'
+1. Di array countries, cek apakah 'Ethiopia' ada di array. Kalau ada, cetak 'ETHIOPIA'. Kalau nggak ada, tambahin ke daftar countries.
+1. Di array webTechs, cek apakah Sass ada di array dan kalau ada cetak 'Sass is a CSS preprocess'. Kalau nggak ada, tambahin Sass ke array dan cetak arraynya.
+1. Gabungin dua variabel berikut dan simpen di variabel fullStack.
 
     ```js
     const frontEnd = ['HTML', 'CSS', 'JS', 'React', 'Redux']
@@ -704,19 +704,19 @@ const webTechs = [
 
 ### Latihan: Level 3
 
-1. Berikut adalah array dari 10 usia siswa:
+1. Nih array dari 10 usia siswa:
 
     ```js
     const ages = [19, 22, 19, 24, 20, 25, 26, 24, 25, 24]
     ```
 
-    - Urutkan array dan temukan usia minimum dan maksimum
-    - Temukan usia median (satu item tengah atau dua item tengah dibagi dua)
-    - Temukan usia rata-rata (semua item dibagi jumlah item)
-    - Temukan rentang usia (maksimum dikurangi minimum)
-    - Bandingkan nilai (min - rata-rata) dan (max - rata-rata), gunakan metode _abs()_
+    - Urutkan array dan temuin usia minimum dan maksimum
+    - Temuin usia median (satu item tengah atau dua item tengah dibagi dua)
+    - Temuin usia rata-rata (semua item dibagi jumlah item)
+    - Temuin rentang usia (maksimum dikurangi minimum)
+    - Bandingin nilai (min - rata-rata) dan (max - rata-rata), pake metode _abs()_
 1. Potong sepuluh negara pertama dari [array countries](https://github.com/Asabeneh/30DaysOfJavaScript/tree/master/data/countries.js)
-1. Temukan negara tengah dalam [array countries](https://github.com/Asabeneh/30DaysOfJavaScript/tree/master/data/countries.js)
-2. Bagi array countries menjadi dua array yang sama jika jumlahnya genap. Jika array countries tidak genap, satu negara lebih banyak untuk setengah pertama.
+1. Temuin negara tengah di [array countries](https://github.com/Asabeneh/30DaysOfJavaScript/tree/master/data/countries.js)
+2. Bagi array countries jadi dua array yang sama kalau jumlahnya genap. Kalau array countries nggak genap, satu negara lebih banyak buat setengah pertama.
   
 🎉 SELAMAT ! 🎉
