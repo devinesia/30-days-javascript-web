@@ -2,9 +2,9 @@
 
 ## Penanganan Error
 
-JavaScript adalah bahasa dengan tipe data yang longgar (loosely-typed). Terkadang Anda akan mendapatkan error runtime saat mencoba mengakses variabel yang tidak terdefinisi atau memanggil fungsi yang tidak terdefinisi, dan sebagainya.
+JavaScript itu bahasa yang tipe datanya loose (ga terlalu ketat). Jadi kadang-kadang kamu bakal dapetin error runtime pas nyoba akses variabel yang belum didefinisiin atau manggil fungsi yang nggak ada. Namanya juga belajar, error itu temen akrab kita!
 
-JavaScript, mirip dengan Python atau Java, menyediakan mekanisme penanganan error untuk menangkap error runtime menggunakan blok try-catch-finally.
+JavaScript, mirip kayak Python atau Java, nyediain mekanisme penanganan error buat nangkep error runtime pake blok try-catch-finally. Jadi kamu nggak perlu panik kalo ada error, tinggal tangkep aja!
 
 ```js
 try {
@@ -16,11 +16,11 @@ try {
 }
 ```
 
-**try**: bungkus kode mencurigakan yang mungkin melempar error di dalam blok try. Pernyataan try memungkinkan kita mendefinisikan blok kode yang akan diuji terhadap error saat dieksekusi.
+**try**: bungkus kode yang "mencurigakan" yang mungkin bakal lempar error di blok try. Di sini kita ngetes kode, apakah error atau nggak pas dieksekusi.
 
-**catch**: tulis kode untuk melakukan sesuatu di blok catch ketika error terjadi. Blok catch dapat memiliki parameter yang akan memberikan informasi error. Blok catch digunakan untuk mencatat error atau menampilkan pesan spesifik kepada pengguna.
+**catch**: tulis kode yang bakal jalan pas error terjadi. Blok catch bisa punya parameter yang ngasih info tentang error-nya. Biasanya dipake buat nge-log error atau nampilin pesan yang ramah ke pengguna.
 
-**finally**: blok finally akan selalu dieksekusi terlepas dari terjadi tidaknya error. Blok finally dapat digunakan untuk menyelesaikan tugas yang tersisa atau mengatur ulang variabel yang mungkin telah berubah sebelum error terjadi di blok try.
+**finally**: blok finally bakal selalu dieksekusi, error atau nggak dia tetep jalan. Cocok buat beres-beres atau reset variabel yang mungkin udah berubah sebelum error di blok try.
 
 **Contoh:**
 
@@ -55,7 +55,7 @@ ReferenceError: fistName is not defined
 In any case it  will be executed
 ```
 
-Blok catch menerima sebuah parameter. Umumnya kita memberikan e, err, atau error sebagai parameter ke blok catch. Parameter ini adalah sebuah objek dan memiliki properti name dan message. Mari kita gunakan name dan message.
+Blok catch nerima satu parameter. Biasanya kita kasih nama e, err, atau error. Parameter ini berupa objek yang punya properti name dan message. Coba kita liat deh.
 
 ```js
 try {
@@ -75,7 +75,7 @@ Error message fistName is not defined
 In any case I will be executed
 ```
 
-throw: pernyataan throw memungkinkan kita membuat error kustom. Kita dapat melempar string, number, boolean, atau objek. Gunakan pernyataan throw untuk melempar exception. Ketika Anda melempar exception, expression menentukan nilai dari exception tersebut. Setiap pernyataan berikut melempar exception:
+throw: pernyataan throw ini keren banget, dia bikin kita bisa bikin error kustom sendiri. Kita bisa lempar string, number, boolean, atau objek. Pake throw buat bikin exception bikinan sendiri. Setiap yang kamu lempar, itu yang jadi nilai exception-nya.
 
 ```js
 throw 'Error2' // generates an exception with a string value
@@ -103,7 +103,7 @@ throwErrorExampleFun()
 
 ### Tipe Error
 
-- ReferenceError: Terjadi referensi yang tidak sah. ReferenceError dilempar jika kita menggunakan variabel yang belum dideklarasikan.
+- ReferenceError: Terjadi referensi yang nggak valid. Dilempar kalau kita pake variabel yang belum dideklarasiin.
 
 ```js
 let firstName = 'Asabeneh'
@@ -117,7 +117,7 @@ Uncaught ReferenceError: lastName is not defined
     at <anonymous>:2:35
 ```
 
-- SyntaxError: Telah terjadi error sintaks
+- SyntaxError: Ada yang salah sama sintaks kodenya.
 
 ```js
 let square = 2 x 2
@@ -130,7 +130,7 @@ console.log('Hello, world')
 Uncaught SyntaxError: Unexpected identifier
 ```
 
-- TypeError: Telah terjadi error tipe
+- TypeError: Kesalahan tipe data nih.
 
 ```js
 let num = 10
@@ -142,9 +142,9 @@ Uncaught TypeError: num.toLowerCase is not a function
     at <anonymous>:2:17
 ```
 
-Ini adalah beberapa error umum yang mungkin Anda hadapi saat menulis kode. Memahami error dapat membantu Anda mengetahui kesalahan apa yang Anda buat dan akan membantu Anda melakukan debug kode dengan cepat.
+Ini beberapa error umum yang mungkin sering kamu temuin pas ngoding. Paham error itu penting banget, karena dari situ kamu bisa tau salahnya di mana dan bisa debug kode dengan lebih cepat. Jangan takut error ya!
 
-🌕 Anda sempurna. Sekarang, Anda tahu cara menangani error dan dapat menulis aplikasi yang tangguh yang menangani input pengguna yang tidak terduga. Anda baru saja menyelesaikan tantangan hari ke-14 dan Anda 14 langkah lebih maju menuju kehebatan. Sekarang lakukan beberapa latihan untuk otak dan otot Anda.
+🌕 Kamu makin jago nih! Sekarang kamu udah ngerti gimana cara nanganin error dan bisa nulis aplikasi yang tangguh yang bisa ngadepin input user yang nggak terduga. Kamu baru aja nuntasin tantangan hari ke-14 dan udah 14 langkah lebih dekat menuju level dewa. Yuk gaskeun latihan!
 
 ## Latihan
 
