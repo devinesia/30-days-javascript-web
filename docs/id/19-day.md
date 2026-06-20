@@ -2,7 +2,7 @@
 
 ## Closure
 
-JavaScript memungkinkan penulisan fungsi di dalam fungsi luar (outer function). Kita dapat menulis sebanyak mungkin fungsi dalam (inner function) yang kita inginkan. Jika fungsi dalam mengakses variabel dari fungsi luar, maka itu disebut closure.
+JavaScript tuh unik banget! Dia ngebolehin kita nulis fungsi di dalem fungsi luar (outer function). Kita bisa nulis fungsi dalem (inner function) sebanyak yang kita mau. Nah, kalau inner function ngakses variabel dari outer function, itu yang dinamakan closure. Simpel kan?
 
 ```js
 function outerFunction() {
@@ -27,7 +27,7 @@ console.log(innerFunc())
 3
 ```
 
-Mari kita lihat lebih banyak contoh fungsi dalam (inner function).
+Mantap kan? Yuk liat lebih banyak contoh inner function nih:
 
 ```js
 function outerFunction() {
@@ -57,7 +57,7 @@ console.log(innerFuncs.minusOne)
 0
 ```
 
-🌕 Anda sedang membuat kemajuan. Pertahankan momentum Anda, teruskan kerja baik. Sekarang lakukan beberapa latihan untuk otak dan otot Anda.
+🌕 Kamu lagi bikin kemajuan yang oke banget nih! Keep the momentum, terusin kerja keren kamu. Sekarang gaskeun latihan buat otak dan otot kamu!
 
 ## Latihan
 
