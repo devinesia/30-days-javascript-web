@@ -2,7 +2,7 @@
 
 ## Destructuring dan Spread
 
-Destructuring adalah cara untuk membongkar array dan objek, lalu menetapkannya ke variabel yang berbeda.
+Destructuring itu cara keren buat "bongkar" array dan objek, lalu langsung masukin nilainya ke variabel-variabel terpisah. Bayangin kayak unboxing barang belanjaan — kamu buka kotaknya, langsung deh isinya keluar rapi ke tempat masing-masing!
 
 ### Destructuring Array
 
@@ -55,7 +55,7 @@ console.log(backEnd)
 ["Node", "Express", "MongoDB"]
 ```
 
-Jika kita ingin melewati salah satu nilai dalam array, kita menggunakan koma tambahan. Koma membantu menghilangkan nilai pada indeks tertentu.
+Nah, kadang kamu cuma butuh sebagian nilainya aja. Kalau mau skip, tinggal kasih koma kosong aja. Gampang kan?
 
 ```js
   const numbers = [1, 2, 3]
@@ -79,7 +79,7 @@ Jika kita ingin melewati salah satu nilai dalam array, kita menggunakan koma tam
 Brook John
 ```
 
-Kita dapat menggunakan nilai default jika nilai array untuk indeks tersebut adalah undefined:
+Kita juga bisa kasih nilai default lho, siapa tau arraynya ada yang undefined:
 
 ```js
 const names = [undefined, 'Brook', 'David']
@@ -97,7 +97,7 @@ console.log(firstPerson, secondPerson, thirdPerson, fourthPerson)
 Asabeneh Brook David John
 ```
 
-Kita tidak harus menetapkan variabel untuk semua elemen dalam array. Kita dapat mendestructure beberapa elemen pertama dan mendapatkan sisanya sebagai array menggunakan spread operator (...).
+Nggak harus semua elemen kamu tampung ke variabel kok. Ambil beberapa elemen pertama aja, sisanya bisa dikumpulin jadi array baru pake spread operator (...).
 
 ```js
 const nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
@@ -146,7 +146,7 @@ Node Express MongoDB
 
 ### Destructuring Objek
 
-Saat kita mendestructure, nama variabel yang kita gunakan harus persis sama dengan kunci atau properti objek. Lihat contoh di bawah.
+Pas destructure objek, aturan mainnya gampang: nama variabel yang kamu bikin harus sama persis sama nama key di objeknya. Cek nih contohnya:
 
 ```js
 const rectangle = {
@@ -165,6 +165,8 @@ console.log(width, height, area, perimeter)
 
 ### Mengganti nama saat destructuring
 
+Mau ganti nama variabelnya? Bisa banget, tinggal pake `:` aja:
+
 ```js
 const rectangle = {
   width: 20,
@@ -180,7 +182,7 @@ console.log(w, h, a, p)
 20 10 200 undefined
 ```
 
-Jika kunci tidak ditemukan dalam objek, variabel akan diberi nilai undefined. Terkadang kunci mungkin tidak ada dalam objek, dalam kasus tersebut kita dapat memberikan nilai default saat deklarasi. Lihat contohnya.
+Kalau key-nya nggak ada di objek, variabelnya bakal jadi undefined. Nah buat jaga-jaga, kamu bisa kasih nilai default pas deklarasi. Kayak gini nih:
 
 ```js
 const rectangle = {
@@ -205,7 +207,7 @@ let { width, height, area, perimeter = 60 } = rectangle
 console.log(width, height, area, perimeter) //30 10 200 80
 ```
 
-Destructuring kunci sebagai parameter fungsi. Mari kita buat fungsi yang menerima objek rectangle dan mengembalikan perimeter rectangle.
+Destructuring key sebagai parameter fungsi? Cakep banget itu! Yuk kita bikin fungsi yang nerima objek rectangle dan ngembaliin kelilingnya.
 
 ### Parameter objek tanpa destructuring
 
@@ -335,7 +337,7 @@ Assess Test Result 4/1/2020 1:00 false
 
 ### Spread atau Rest Operator
 
-Saat kita mendestructure array, kita menggunakan spread operator (...) untuk mendapatkan elemen sisanya sebagai array. Selain itu, kita menggunakan spread operator untuk menyebar elemen array ke array lain.
+Pas destructure array, kita pake spread operator (...) buat nangkep sisa elemen yang belum ditampung. Selain itu, spread operator juga bisa dipake buat "nyebar" elemen array ke array lain. Mantap kan?
 
 ### Spread operator untuk mendapatkan sisa elemen array
 
@@ -415,7 +417,7 @@ console.log(fullStack)
 
 ### Spread operator untuk menyalin objek
 
-Kita dapat menyalin objek menggunakan spread operator.
+Copy objek juga bisa pake spread operator, gampang banget!
 
 ```js
 const user = {
@@ -433,7 +435,7 @@ console.log(copiedUser)
 {name: "Asabeneh", title: "Programmer", country: "Finland", city: "Helsinki"}
 ```
 
-Memodifikasi atau mengubah objek saat menyalin
+Mau modifikasi objek sekalian pas nyalin? Bisa juga!
 
 ```js
 const user = {
@@ -453,7 +455,7 @@ console.log(copiedUser)
 
 #### Spread operator dengan arrow function
 
-Setiap kali kita ingin menulis arrow function yang menerima jumlah argumen tak terbatas, kita menggunakan spread operator. Jika kita menggunakan spread operator sebagai parameter, argumen yang diteruskan saat kita memanggil fungsi akan berubah menjadi array.
+Setiap kali kamu mau bikin arrow function yang bisa nerima jumlah argumen nggak terbatas, pake aja spread operator. Kalau kita pake spread operator sebagai parameter, semua argumen yang dikirim pas manggil fungsi bakal otomatis jadi array.
 
 ```js
 
@@ -489,7 +491,7 @@ console.log(sumAllNums(1, 2, 3, 4, 5))
 
 ```
 
-🌕 Anda telah mencapai banyak hal sejauh ini. Sekarang, level JavaScript Anda adalah menengah atas. Teruslah maju! Anda baru saja menyelesaikan tantangan hari ke-11 dan Anda 11 langkah lebih maju menuju kehebatan. Sekarang lakukan beberapa latihan untuk otak dan otot Anda.
+🌕 Buset, kamu udah sejauh ini! Level JavaScript kamu sekarang udah menengah atas, keren banget! Gaskeun terus, jangan berhenti di sini! Kamu baru aja ngerampungin tantangan hari ke-11 dan sekarang udah 11 langkah lebih dekat menuju level dewa JavaScript. Yuk sekarang latihan biar makin jago!
 
 ## Latihan
 
@@ -562,7 +564,7 @@ const users = [
 ### Latihan: Level 3
 
 1. Destructure objek countries, cetak name, capital, population dan languages semua negara
-2. Seorang junior developer menyusun nama, skill, dan skor siswa dalam array dari array yang mungkin sulit dibaca. Destructure array berikut: nama ke name, array skills ke skills, array scores ke scores, skor JavaScript ke jsScore dan skor React ke reactScore dalam satu baris.
+2. Seorang junior developer nyusun nama, skill, dan skor siswa dalam array of array yang mungkin agak susah dibaca. Yuk destructure array berikut: nama ke name, array skills ke skills, array scores ke scores, skor JavaScript ke jsScore dan skor React ke reactScore dalam satu baris aja!
 
   ```js
     const student = ['David', ['HTM', 'CSS', 'JS', 'React'], [98, 85, 90, 95]]
@@ -573,7 +575,7 @@ const users = [
   David (4) ["HTM", "CSS", "JS", "React"] 90 95
   ```
 
-3. Tulis fungsi bernama *convertArrayToObject* yang dapat mengonversi array menjadi objek terstruktur.
+3. Tulis fungsi bernama *convertArrayToObject* yang bisa ngonversi array jadi objek terstruktur.
 
   ```js
       const students = [
@@ -596,7 +598,7 @@ const users = [
       ]
   ```
 
-4. Salin objek student ke newStudent tanpa mengubah objek asli. Pada objek baru tambahkan yang berikut:
+4. Salin objek student ke newStudent tanpa mengubah objek aslinya. Di objek baru tambahin yang berikut nih:
 
 - Tambahkan Bootstrap dengan level 8 ke set skill front end
 - Tambahkan Express dengan level 9 ke set skill back end
