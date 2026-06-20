@@ -2,7 +2,7 @@
 
 ## JSON
 
-JSON adalah singkatan dari JavaScript Object Notation. Sintaks JSON berasal dari sintaks notasi objek JavaScript, tetapi format JSON hanyalah teks atau string. JSON adalah format data ringan untuk menyimpan dan mentransfer data. JSON banyak digunakan saat data dikirim dari server ke klien. JSON adalah alternatif yang lebih mudah digunakan dibandingkan XML.
+Oke gas, hari ini kita bakal bahas JSON! Jadi JSON tuh singkatan dari JavaScript Object Notation. Sintaks-nya emang mirip banget sama object JavaScript, tapi sebenarnya JSON cuma teks atau string biasa aja. Intinya sih, JSON adalah format data yang ringan buat nyimpen dan mindahin data. JSON banyak banget dipakai pas data dikirim dari server ke client. Dibandingin XML, JSON tuh jauh lebih gampang dipake, beneran deh!
 
 **Contoh:**
 
@@ -31,9 +31,9 @@ JSON adalah singkatan dari JavaScript Object Notation. Sintaks JSON berasal dari
 }
 ```
 
-Contoh JSON di atas tidak jauh berbeda dengan objek biasa. Lalu, apa perbedaannya? Perbedaannya adalah kunci dari objek JSON harus menggunakan tanda kutip ganda atau harus berupa string. Objek JavaScript dan JSON sangat mirip sehingga kita dapat mengubah JSON ke Object dan Object ke JSON.
+Nah liat deh contoh JSON di atas — sekilas mirip banget kan sama object biasa? Terus bedanya apa dong? Bedanya tuh simpel: key di JSON harus pake tanda kutip ganda (double quotes), alias harus berupa string. Tapi tenang aja, karena JavaScript object dan JSON tuh mirip banget, kita bisa gampang bolak-balik konversi JSON ke Object dan sebaliknya.
 
-Mari kita lihat contoh di atas lebih detail, dimulai dengan kurung kurawal. Di dalam kurung kurawal, terdapat kunci "users" yang memiliki nilai array. Di dalam array, kita memiliki objek-objek berbeda dan setiap objek memiliki kunci, setiap kunci harus menggunakan tanda kutip ganda. Misalnya, kita menggunakan "firstNaMe" alih-alih hanya firstName, namun dalam objek kita menggunakan kunci tanpa tanda kutip ganda. Ini adalah perbedaan utama antara objek dan JSON. Mari kita lihat lebih banyak contoh tentang JSON.
+Yuk kita bedah lebih detail contoh di atas. Jadi kita mulai dari kurung kurawal. Di dalemnya ada key "users" yang nilainya array. Di dalem array itu ada beberapa object, dan setiap object punya key masing-masing. Nah setiap key HARUS pake double quotes ya! Misalnya kita pake "firstName" bukan cuma firstName doang — ini nih beda utamanya antara object biasa dan JSON. Oke, sekarang liat contoh JSON yang lebih gede nih:
 
 **Contoh:**
 
@@ -137,7 +137,7 @@ Mari kita lihat contoh di atas lebih detail, dimulai dengan kurung kurawal. Di d
 
 ### Mengonversi JSON ke Objek JavaScript
 
-Sebagian besar kita mengambil data JSON dari respons HTTP atau dari file, tetapi kita dapat menyimpan JSON sebagai string dan mengubahnya ke Object untuk keperluan demonstrasi. Di JavaScript, kata kunci _JSON_ memiliki method _parse()_ dan _stringify()_. Ketika kita ingin mengubah JSON ke objek, kita parsing JSON menggunakan _JSON.parse()_. Ketika kita ingin mengubah objek ke JSON, kita menggunakan _JSON.stringify()_.
+Biasanya sih kita ngambil data JSON dari respons HTTP atau dari file, tapi biar gampang belajar, kita bisa simpen JSON sebagai string dulu terus baru diubah ke Object. Di JavaScript, keyword _JSON_ punya dua method keren: _parse()_ dan _stringify()_. Kalau mau ubah JSON ke object? Tinggal parse pake _JSON.parse()_. Kalau mau ubah object ke JSON? Pake _JSON.stringify()_. Gampang banget kan!
 
 #### JSON.parse()
 
@@ -181,7 +181,7 @@ console.log(usersObj)
 
 ### Menggunakan Fungsi Reviver dengan JSON.parse()
 
-Untuk menggunakan fungsi reviver sebagai formatter, kita meletakkan kunci yang ingin kita format yaitu nilai firstName dan lastName. Katakanlah, kita tertarik untuk memformat firstName dan lastName dari data JSON.
+Nah, buat pake fungsi reviver sebagai formatter, kita tinggal tentuin key mana yang mau kita format — misalnya firstName dan lastName. Katakanlah kita pengen ubah firstName dan lastName jadi huruf kapital semua, gini caranya:
 
 ```js
 const usersText = `{
@@ -215,11 +215,11 @@ const usersObj = JSON.parse(usersText, (key, value) => {
 console.log(usersObj)
 ```
 
-_JSON.parse()_ sangat praktis digunakan. Anda tidak perlu memberikan parameter opsional, Anda cukup menggunakannya dengan parameter wajib dan Anda akan mencapai banyak hal.
+_JSON.parse()_ tuh praktis banget, sumpah! Kamu bahkan gak perlu ngasih parameter opsional, cukup pake parameter wajib aja udah bisa ngelakuin banyak hal.
 
 ### Mengonversi Objek ke JSON
 
-Ketika kita ingin mengubah objek ke JSON, kita menggunakan _JSON.stringify()_. Method stringify memerlukan satu parameter wajib dan dua parameter opsional. Replacer digunakan sebagai filter dan space adalah indentasi. Jika kita tidak ingin memfilter kunci apa pun dari objek, kita cukup memberikan undefined.
+Nah kalo mau ubah object ke JSON, kita pake _JSON.stringify()_. Method stringify ini butuh satu parameter wajib dan dua parameter opsional. Replacer dipake sebagai filter, dan space buat indentasi. Kalau kamu gak mau filter key apapun, tinggal kasih undefined aja, santuy~
 
 ```js
 JSON.stringify(obj, replacer, space)
@@ -227,7 +227,7 @@ JSON.stringify(obj, replacer, space)
 // reviver is an optional callback function
 ```
 
-Mari kita konversi objek berikut menjadi string. Pertama, biarkan semua kunci tetap ada dan juga beri indentasi 4 spasi.
+Yuk kita konversi object berikut jadi string. Pertama-tama, biarin semua key tetep ada dan kasih indentasi 4 spasi biar cakep hasilnya.
 
 ```js
 const users = {
@@ -403,7 +403,7 @@ console.log(txt) // text means JSON- because json is a string form of an object.
 
 ### Menggunakan Array Filter dengan JSON.stringify
 
-Sekarang, mari kita gunakan replacer sebagai filter. Objek user memiliki daftar kunci yang panjang tetapi kita hanya tertarik pada beberapa di antaranya. Kita meletakkan kunci yang ingin kita simpan dalam array seperti yang ditunjukkan pada contoh dan menggunakannya di posisi replacer.
+Sekarang, kita coba pake replacer sebagai filter nih. Object user kan punya banyak key, tapi kita cuma pengen beberapa aja. Gampang! Tinggal masukin key yang mau disimpen ke dalam array, terus pake di posisi replacer. Cekidot:
 
 ```js
 const user = {
@@ -432,7 +432,7 @@ console.log(txt)
 }
 ```
 
-🌕 Anda luar biasa. Sekarang, Anda telah mengenal format data ringan yang dapat Anda gunakan untuk menyimpan data atau mengirimkannya ke server HTTP. Anda 16 langkah lebih maju menuju kehebatan. Sekarang lakukan beberapa latihan untuk otak dan otot Anda.
+🌕 Keren banget, kamu luar biasa! Sekarang kamu udah kenal sama format data ringan yang bisa dipake buat nyimpen data atau ngirimnya ke server HTTP. Kamu udah 16 langkah lebih maju menuju level dewa JavaScript. Sekarang, gaskeun latihan buat otak dan otot kamu!
 
 ## Latihan
 
