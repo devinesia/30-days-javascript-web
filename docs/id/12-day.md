@@ -2,29 +2,29 @@
 
 ## Regular Expressions
 
-Regular expression atau RegExp adalah bahasa pemrograman kecil yang membantu menemukan pola dalam data. RegExp dapat digunakan untuk memeriksa apakah suatu pola ada dalam berbagai tipe data. Untuk menggunakan RegExp di JavaScript, kita bisa menggunakan RegExp constructor atau mendeklarasikan pola RegExp menggunakan dua garis miring diikuti flag. Kita dapat membuat pola dengan dua cara.
+Regular expression alias RegExp itu semacam bahasa mini yang super berguna buat nyari pola dalam data. RegExp bisa dipake buat ngecek apakah suatu pola ada di berbagai tipe data. Di JavaScript, kita bisa bikin RegExp pake RegExp constructor atau langsung deklarasi pola pake dua garis miring plus flag. Jadi ada dua cara nih buat bikin pola.
 
-Untuk mendeklarasikan string kita menggunakan tanda kutip tunggal, ganda, atau backtick. Untuk mendeklarasikan regular expression kita menggunakan dua garis miring dan flag opsional. Flag bisa berupa g, i, m, s, u atau y.
+Buat deklarasi string kita pake tanda kutip tunggal, ganda, atau backtick. Nah, buat regular expression kita pake dua garis miring dan flag opsional. Flag-nya bisa berupa g, i, m, s, u atau y.
 
 ### Parameter RegExp
 
-Regular expression menerima dua parameter. Satu pola pencarian yang wajib dan satu flag opsional.
+Regular expression nerima dua parameter. Satu pola pencarian yang wajib, dan satu flag opsional.
 
 #### Pola
 
-Pola bisa berupa teks atau bentuk pola apa pun yang memiliki kesamaan tertentu. Misalnya kata spam dalam email bisa menjadi pola yang kita minati untuk dicari dalam email, atau format nomor telepon mungkin menjadi minat kita untuk dicari.
+Pola bisa berupa teks biasa atau bentuk pola apa pun yang punya kemiripan tertentu. Misalnya nih, kata "spam" di email bisa jadi pola yang pengen kita cari, atau format nomor telepon yang mau kita deteksi.
 
 #### Flag
 
-Flag adalah parameter opsional dalam regular expression yang menentukan jenis pencarian. Mari kita lihat beberapa flag:
+Flag itu parameter opsional di regular expression yang nentuin jenis pencariannya. Yuk kenalan sama beberapa flag:
 
-- g: flag global yang berarti mencari pola di seluruh teks
-- i: flag case insensitive (mencari baik huruf kecil maupun huruf besar)
+- g: flag global, artinya nyari pola di seluruh teks
+- i: flag case insensitive (nyari huruf kecil maupun huruf besar, santuy aja)
 - m: multiline
 
 ### Membuat pola dengan RegExp Constructor
 
-Mendeklarasikan regular expression tanpa flag global dan flag case insensitive.
+Deklarasi regular expression tanpa flag global dan flag case insensitive.
 
 ```js
 // without flag
@@ -32,7 +32,7 @@ let pattern = 'love'
 let regEx = new RegExp(pattern)
 ```
 
-Mendeklarasikan regular expression dengan flag global dan flag case insensitive.
+Deklarasi regular expression dengan flag global dan flag case insensitive.
 
 ```js
 let pattern = 'love'
@@ -40,7 +40,7 @@ let flag = 'gi'
 let regEx = new RegExp(pattern, flag)
 ```
 
-Mendeklarasikan pola regex menggunakan objek RegExp. Menulis pola dan flag di dalam RegExp constructor
+Deklarasi pola regex pake objek RegExp. Tulis pola dan flag di dalam RegExp constructor.
 
 ```js
 let regEx = new RegExp('love','gi')
@@ -48,13 +48,13 @@ let regEx = new RegExp('love','gi')
 
 ### Membuat pola tanpa RegExp Constructor
 
-Mendeklarasikan regular expression dengan flag global dan flag case insensitive.
+Deklarasi regular expression dengan flag global dan flag case insensitive.
 
 ```js
 let regEx= /love/gi
 ```
 
-Regular expression di atas sama dengan yang kita buat dengan RegExp constructor
+Regular expression di atas sama persis sama yang kita bikin pake RegExp constructor tadi.
 
 ```js
 let regEx= new RegExp('love','gi')
@@ -62,11 +62,11 @@ let regEx= new RegExp('love','gi')
 
 ### Metode Objek RegExp
 
-Mari kita lihat beberapa metode RegExp
+Yuk kita liat beberapa metode RegExp yang sering dipake.
 
 #### Menguji kecocokan
 
-*test()*: Menguji kecocokan dalam string. Mengembalikan true atau false.
+*test()*: Ngetes kecocokan dalam string. Return-nya true atau false.
 
 ```js
 const str = 'I love JavaScript'
@@ -81,8 +81,7 @@ true
 
 #### Array yang berisi semua kecocokan
 
-*match()*: Mengembalikan array yang berisi semua kecocokan, termasuk capturing groups, atau null jika tidak ada kecocokan.
-Jika kita tidak menggunakan flag global, match() mengembalikan array yang berisi pola, indeks, input, dan group.
+*match()*: Ngembaliin array yang berisi semua kecocokan, termasuk capturing groups, atau null kalau nggak ada yang cocok. Kalau nggak pake flag global, match() ngembaliin array berisi pola, indeks, input, dan group.
 
 ```js
 const str = 'I love JavaScript'
@@ -106,7 +105,7 @@ console.log(result)
 ["love"]
 ```
 
-*search()*: Menguji kecocokan dalam string. Mengembalikan indeks kecocokan, atau -1 jika pencarian gagal.
+*search()*: Ngetes kecocokan dalam string. Ngembaliin indeks kecocokan, atau -1 kalau nggak ketemu.
 
 ```js
 const str = 'I love JavaScript'
@@ -121,7 +120,7 @@ console.log(result)
 
 #### Mengganti substring
 
-*replace()*: Melakukan pencarian kecocokan dalam string, dan mengganti substring yang cocok dengan substring pengganti.
+*replace()*: Nyari kecocokan di string dan ganti substring yang cocok dengan substring baru.
 
 ```js
 const txt = 'Python is the most beautiful language that a human begin has ever created.\
@@ -176,42 +175,42 @@ I am teacher and  I love teaching.There is nothing as more rewarding as educatin
 ```
 
 * Kumpulan karakter
-  * [a-c] berarti, a atau b atau c
-  * [a-z] berarti, huruf apa pun dari a sampai z
-  * [A-Z] berarti, karakter apa pun dari A sampai Z
-  * [0-3] berarti, 0 atau 1 atau 2 atau 3
-  * [0-9] berarti angka apa pun dari 0 sampai 9
-  * [A-Za-z0-9] karakter apa pun dari a sampai z, A sampai Z, 0 sampai 9
-* \\:  digunakan untuk escape karakter khusus
-  * \d berarti: cocok jika string mengandung digit (angka dari 0-9)
-  * \D berarti: cocok jika string tidak mengandung digit
-* . : karakter apa pun kecuali karakter baris baru (\n)
+  * [a-c] artinya, a atau b atau c
+  * [a-z] artinya, huruf apa pun dari a sampai z
+  * [A-Z] artinya, karakter apa pun dari A sampai Z
+  * [0-3] artinya, 0 atau 1 atau 2 atau 3
+  * [0-9] artinya angka apa pun dari 0 sampai 9
+  * [A-Za-z0-9] karakter apa pun dari a-z, A-Z, 0-9
+* \\:  dipake buat escape karakter khusus
+  * \d artinya: cocok kalau string mengandung digit (angka 0-9)
+  * \D artinya: cocok kalau string nggak mengandung digit
+* . : karakter apa pun kecuali baris baru (\n)
 * ^: dimulai dengan
   * r'^substring' contoh r'^love', kalimat yang dimulai dengan kata love
-  * r'[^abc] berarti bukan a, bukan b, bukan c.
+  * r'[^abc] artinya bukan a, bukan b, bukan c.
 * $: diakhiri dengan
   * r'substring$' contoh r'love$', kalimat diakhiri dengan kata love
 * *: nol kali atau lebih
-  * r'[a]*' berarti a opsional atau bisa muncul berkali-kali.
+  * r'[a]*' artinya a opsional atau bisa muncul berkali-kali.
 * +: satu kali atau lebih
-  * r'[a]+' berarti setidaknya sekali atau lebih
+  * r'[a]+' artinya setidaknya sekali atau lebih
 * ?: nol atau satu kali
-  *  r'[a]?' berarti nol kali atau sekali
+  *  r'[a]?' artinya nol kali atau sekali
 * \b: word boundary, cocok dengan awal atau akhir kata
 * {3}: Tepat 3 karakter
 * {3,}: Setidaknya 3 karakter
 * {3,8}: 3 sampai 8 karakter
 * |: Salah satu atau
-  * r'apple|banana' berarti salah satu dari apple atau banana
+  * r'apple|banana' artinya salah satu dari apple atau banana
 * (): Capture dan group
 
 ![Regular Expression cheat sheet](../images/regex.png)
 
-Mari kita gunakan contoh untuk memperjelas meta karakter di atas
+Oke, biar makin jelas, yuk kita langsung praktek pake contoh-contoh!
 
 ### Kurung Siku (Square Bracket)
 
-Mari kita gunakan kurung siku untuk menyertakan huruf kecil dan besar
+Kurung siku bisa dipake buat nyari huruf kecil dan besar sekaligus.
 
 ```js
 const pattern = '[Aa]pple' // this square bracket means either A or a
@@ -238,7 +237,7 @@ console.log(matches)
 ["Apple", "apple"]
 ```
 
-Jika kita ingin mencari banana, kita tulis polanya sebagai berikut:
+Kalau kita pengen nyari banana juga, tinggal tulis polanya kayak gini:
 
 ```js
 const pattern = /[Aa]pple|[Bb]anana/g // this square bracket mean either A or a
@@ -252,7 +251,7 @@ console.log(matches)
 ["Apple", "banana", "apple", "banana", "Banana"]
 ```
 
-Menggunakan kurung siku dan operator or, kita berhasil mengekstrak Apple, apple, Banana dan banana.
+Tuh, pake kurung siku dan operator or, kita berhasil dapetin Apple, apple, Banana dan banana. Gampang kan?
 
 ### Karakter Escape (\\) dalam RegExp
 
@@ -301,7 +300,7 @@ console.log(matches)  // ['and banana are fruits']
 
 ### Nol kali atau lebih (*)
 
-Nol kali atau berkali-kali. Pola mungkin tidak muncul atau bisa muncul berkali-kali.
+Nol kali atau berkali-kali. Polanya mungkin nggak muncul, atau bisa muncul berkali-kali.
 
 ```js
 
@@ -315,7 +314,7 @@ console.log(matches)  // ['and banana are fruits']
 
 ### Nol atau satu kali (?)
 
-Nol atau satu kali. Pola mungkin tidak muncul atau bisa muncul sekali.
+Nol atau satu kali. Polanya mungkin nggak muncul, atau muncul sekali doang.
 
 ```js
 const txt = 'I am not sure if there is a convention how to write the word e-mail.\
@@ -329,7 +328,7 @@ console.log(matches)  // ["e-mail", "email", "Email", "E-mail"]
 
 ### Quantifier dalam RegExp
 
-Kita dapat menentukan panjang substring yang kita cari dalam teks menggunakan kurung kurawal. Mari kita lihat cara menggunakan quantifier RegExp. Bayangkan kita tertarik pada substring yang panjangnya 4 karakter.
+Kita bisa nentuin panjang substring yang dicari di teks pake kurung kurawal. Yuk liat cara pake quantifier. Misalnya kita pengen cari substring yang panjangnya tepat 4 karakter nih.
 
 ```js
 const txt = 'This regular expression example was made in December 6,  2019.'
@@ -381,7 +380,7 @@ console.log(matches)  // ["6", "2019"]
 
 ### Pencocokan tepat
 
-Harus memiliki ^ untuk awal dan $ untuk akhir.
+Harus punya ^ di awal dan $ di akhir ya.
 
 ```js
 let pattern = /^[A-Z][a-z]{3,12}$/;
@@ -391,14 +390,14 @@ let result = pattern.test(name)
 console.log(result) // true
 ```
 
-🌕 Anda telah melangkah jauh. Teruslah maju! Sekarang, Anda sangat bertenaga dengan kekuatan regular expression. Anda memiliki kemampuan untuk mengekstrak dan membersihkan segala jenis teks dan Anda dapat membuat makna dari data yang tidak terstruktur. Anda baru saja menyelesaikan tantangan hari ke-12 dan Anda 12 langkah lebih maju menuju kehebatan. Sekarang lakukan beberapa latihan untuk otak dan otot Anda.
+🌕 Kamu udah melangkah jauh, gokil! Sekarang kamu udah bersenjata lengkap dengan kekuatan regular expression. Kamu bisa ngekstrak dan ngebersihin segala jenis teks, bikin data nggak terstruktur jadi bermakna. Keren abis! Kamu baru aja nuntasin tantangan hari ke-12 dan sekarang udah 12 langkah lebih dekat menuju level dewa. Yuk gaskeun latihan buat ngasah otak!
 
 ## 💻 Latihan
 
 ### Latihan: Level 1
 
 1. Hitung total pendapatan tahunan orang tersebut dari teks berikut. 'He earns 4000 euro from salary per month, 10000 euro annual bonus, 5500 euro online courses per month.'
-2. Posisi beberapa partikel pada sumbu-x horizontal -12, -4, -3 dan  -1 di arah negatif, 0 di titik asal, 4 dan 8 di arah positif. Ekstrak angka-angka ini dan temukan jarak antara dua partikel terjauh.
+2. Posisi beberapa partikel pada sumbu-x horizontal: -12, -4, -3 dan -1 di arah negatif, 0 di titik asal, 4 dan 8 di arah positif. Ekstrak angka-angkanya dan cari jarak antara dua partikel terjauh.
 
 ```js
 points = ['-1', '2', '-4', '-3', '-1', '0', '4', '8']
@@ -406,7 +405,7 @@ sortedPoints =  [-4, -3, -1, -1, 0, 2, 4, 8]
 distance = 12
 ```
 
-3. Tulis pola yang mengidentifikasi apakah sebuah string adalah variabel JavaScript yang valid
+3. Tulis pola untuk ngecek apakah sebuah string adalah variabel JavaScript yang valid.
 
     ```sh
     is_valid_variable('first_name') # True
@@ -417,7 +416,7 @@ distance = 12
 
 ### Latihan: Level 2
 
-1. Tulis fungsi bernama *tenMostFrequentWords* yang mendapatkan sepuluh kata paling sering muncul dari sebuah string?
+1. Tulis fungsi bernama *tenMostFrequentWords* yang dapetin sepuluh kata paling sering muncul dari sebuah string.
 
 ```js
 paragraph = `I love teaching. If you do not love teaching what else can you love. I love Python if you do not love something which can give you all the capabilities to develop an application what else can you love.`
@@ -471,7 +470,7 @@ console.log(tenMostFrequentWords(paragraph, 10))
 
 ### Latihan: Level 3
 
-1. Tulis fungsi yang membersihkan teks. Bersihkan teks berikut. Setelah dibersihkan, hitung tiga kata paling sering muncul dalam string.
+1. Tulis fungsi yang bisa ngebersihin teks. Bersihin teks di bawah ini ya. Setelah bersih, hitung tiga kata paling sering muncul di string tersebut.
   
 ```js
 sentence = `%I $am@% a %tea@cher%, &and& I lo%#ve %tea@ching%;. There $is nothing; &as& mo@re rewarding as educa@ting &and& @emp%o@wering peo@ple. ;I found tea@ching m%o@re interesting tha@n any other %jo@bs. %Do@es thi%s mo@tivate yo@u to be a tea@cher!?`
@@ -481,7 +480,7 @@ console.log(cleanText(sentence))
 ```bash
 I am a teacher and I love teaching There is nothing as more rewarding as educating and empowering people I found teaching more interesting than any other jobs Does this motivate you to be a teacher
 ```
-2. Tulis fungsi yang menemukan kata paling sering muncul. Setelah dibersihkan, hitung tiga kata paling sering muncul dalam string.
+2. Tulis fungsi yang nemuin kata paling sering muncul nih. Setelah teksnya bersih, hitung tiga kata paling sering muncul.
 
   ```js
     console.log(mostFrequentWords(cleanedText))
