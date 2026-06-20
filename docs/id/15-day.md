@@ -2,15 +2,15 @@
 
 ## Class
 
-JavaScript adalah bahasa pemrograman berorientasi objek. Segala sesuatu di JavaScript adalah objek, dengan properti dan method-nya masing-masing. Kita membuat class untuk membuat objek. Class itu seperti constructor objek, atau "cetak biru" untuk membuat objek. Kita menginstansiasi class untuk membuat objek. Class mendefinisikan atribut dan perilaku objek, sementara objek, di sisi lain, merepresentasikan class tersebut.
+JavaScript itu bahasa pemrograman berorientasi objek. Semua yang ada di JavaScript adalah objek, lengkap dengan properti dan method-nya masing-masing. Nah, kita bikin class buat ngebuat objek. Class itu kayak blueprint atau "cetak biru" gitu deh buat bikin objek. Kita instansiasi class buat bikin objek. Class nentuin atribut dan perilaku objek, sedangkan objek adalah realisasi dari class tersebut.
 
-Setelah kita membuat class, kita dapat membuat objek darinya kapan pun kita mau. Membuat objek dari class disebut instansiasi class.
+Begitu kita bikin class, kita bisa bikin objek darinya kapan aja sesuka hati. Proses bikin objek dari class ini disebut instansiasi class.
 
-Di bagian objek, kita telah melihat cara membuat object literal. Object literal adalah singleton. Jika kita ingin mendapatkan objek serupa, kita harus menulisnya ulang. Namun, class memungkinkan kita membuat banyak objek. Ini membantu mengurangi jumlah kode dan pengulangan kode.
+Di bagian objek sebelumnya, kita udah liat gimana bikin object literal. Object literal itu singleton, jadi cuma satu. Kalau kita pengen dapetin objek serupa, ya harus nulis ulang. Nah class memungkinkan kita bikin banyak objek tanpa nulis ulang. Ini ngebantu banget ngurangin duplikasi kode. Mantap kan?
 
 ### Mendefinisikan Class
 
-Untuk mendefinisikan class di JavaScript, kita memerlukan kata kunci _class_, nama class dalam **CamelCase**, dan blok kode (dua kurung kurawal). Mari kita buat class bernama Person.
+Buat definisiin class di JavaScript, kita butuh kata kunci _class_, nama class dalam **CamelCase**, dan blok kode (dua kurung kurawal). Yuk kita bikin class bernama Person.
 
 ```sh
 // syntax
@@ -28,13 +28,13 @@ class Person {
 }
 ```
 
-Kita telah membuat class Person tetapi belum ada apa pun di dalamnya.
+Oke, kita udah bikin class Person, tapi masih kosong isinya. Belum ada apa-apa.
 
 ### Instansiasi Class
 
-Instansiasi class berarti membuat objek dari class. Kita memerlukan kata kunci _new_ dan memanggil nama class setelah kata new.
+Instansiasi class artinya bikin objek dari class. Kita butuh kata kunci _new_ dan panggil nama class setelah `new`.
 
-Mari kita buat objek person dari class Person.
+Yuk bikin objek person dari class Person.
 
 ```js
 class Person {
@@ -48,15 +48,15 @@ console.log(person)
 Person {}
 ```
 
-Seperti yang Anda lihat, kita telah membuat objek person. Karena class belum memiliki properti apa pun, objeknya juga masih kosong.
+Tuh, kita udah berhasil bikin objek person. Tapi karena class-nya belum punya properti apa-apa, objeknya juga kosong.
 
-Mari kita gunakan constructor class untuk memberikan properti yang berbeda pada class.
+Sekarang kita pake class constructor buat ngasih properti yang beda-beda ke class.
 
 ### Constructor Class
 
-Constructor adalah fungsi bawaan yang memungkinkan kita membuat cetak biru untuk objek kita. Fungsi constructor dimulai dengan kata kunci constructor diikuti oleh tanda kurung. Di dalam tanda kurung, kita memberikan properti objek sebagai parameter. Kita menggunakan kata kunci _this_ untuk menautkan parameter constructor dengan class.
+Constructor adalah fungsi bawaan yang bikin kita bisa bikin blueprint buat objek. Fungsi constructor dimulai dengan kata kunci `constructor` diikuti tanda kurung. Di dalam tanda kurung, kita masukin properti objek sebagai parameter. Terus kita pake kata kunci _this_ buat ngehubungin parameter constructor dengan class.
 
-Constructor class Person berikut memiliki properti firstName dan lastName. Properti ini ditautkan ke class Person menggunakan kata kunci _this_. _This_ merujuk pada class itu sendiri.
+Constructor class Person di bawah ini punya properti firstName dan lastName. Properti ini dihubungin ke class Person pake kata kunci _this_. _This_ itu merujuk ke class itu sendiri ya.
 
 ```js
 class Person {
@@ -76,7 +76,7 @@ console.log(person)
 Person {firstName: undefined, lastName:undefined}
 ```
 
-Semua kunci objek bernilai undefined. Setiap kali kita melakukan instansiasi, kita harus memberikan nilai propertinya. Mari kita berikan nilai kali ini saat kita menginstansiasi class.
+Semua kunci objek masih undefined nih. Setiap instansiasi, kita harus ngasih nilai propertinya. Yuk sekarang kita kasih nilai pas instansiasi.
 
 ```js
 class Person {
@@ -95,7 +95,7 @@ console.log(person1)
 Person {firstName: "Asabeneh", lastName: "Yetayeh"}
 ```
 
-Seperti yang telah kami nyatakan di awal, setelah kita membuat class, kita dapat membuat banyak objek menggunakan class tersebut. Sekarang, mari kita buat banyak objek person menggunakan class Person.
+Nah kan, udah keisi! Seperti yang udah kita bilang dari awal, begitu class udah jadi, kita bisa bikin banyak objek dari class itu. Gaskeun, bikin banyak objek person pake class Person!
 
 ```js
 class Person {
@@ -121,7 +121,7 @@ Person {firstName: "Lidiya", lastName: "Tekle"}
 Person {firstName: "Abraham", lastName: "Yetayeh"}
 ```
 
-Menggunakan class Person, kita telah membuat tiga objek person. Seperti yang Anda lihat, class kita belum memiliki banyak properti. Mari kita tambahkan lebih banyak properti ke class.
+Pake class Person, kita bisa bikin tiga objek person. Tapi class ini masih sepi properti nih. Yuk tambahin lebih banyak properti!
 
 ```js
 class Person {
@@ -146,7 +146,7 @@ Person {firstName: "Asabeneh", lastName: "Yetayeh", age: 250, country: "Finland"
 
 ### Nilai Default dengan Constructor
 
-Properti fungsi constructor dapat memiliki nilai default seperti fungsi reguler lainnya.
+Properti di fungsi constructor bisa punya nilai default, sama kayak fungsi reguler lainnya. Enak kan?
 
 ```js
 class Person {
@@ -179,7 +179,7 @@ Person {firstName: "Lidiya", lastName: "Tekle", age: 28, country: "Finland", cit
 
 ### Method Class
 
-Constructor di dalam class adalah fungsi bawaan yang memungkinkan kita membuat cetak biru untuk objek. Di dalam class, kita dapat membuat method class. Method adalah fungsi JavaScript di dalam class. Mari kita buat beberapa method class.
+Constructor di dalam class adalah fungsi bawaan yang bikin kita bisa bikin blueprint. Di dalam class, kita juga bisa bikin method class. Method itu ya fungsi JavaScript yang ada di dalam class. Yuk kita bikin beberapa method.
 
 ```js
 class Person {
@@ -210,7 +210,7 @@ test.js:19 Lidiya Tekle
 
 ### Properti dengan Nilai Awal
 
-Ketika kita membuat class, untuk beberapa properti kita mungkin memiliki nilai awal. Misalnya, jika Anda bermain game, skor awal Anda adalah nol. Jadi, kita bisa memiliki skor awal atau skor yang bernilai nol. Dengan cara lain, kita mungkin memiliki skill awal dan akan memperoleh skill setelah beberapa waktu.
+Pas bikin class, kadang ada properti yang pengen kita kasih nilai awal. Misalnya nih, kalo kamu main game, skor awal pasti nol. Jadi kita bisa kasih skor awal nol. Atau skill awal yang nanti bakal bertambah seiring waktu.
 
 ```js
 class Person {
@@ -246,11 +246,11 @@ console.log(person2.skills)
 []
 ```
 
-Sebuah method bisa berupa method reguler atau getter atau setter. Mari kita lihat getter dan setter.
+Sebuah method bisa berupa method reguler, getter, atau setter. Yuk kita liat getter dan setter.
 
 ### getter
 
-Method get memungkinkan kita mengakses nilai dari objek. Kita menulis method get menggunakan kata kunci _get_ diikuti oleh sebuah fungsi. Alih-alih mengakses properti langsung dari objek, kita menggunakan getter untuk mendapatkan nilainya. Lihat contoh di bawah ini.
+Method get bikin kita bisa akses nilai dari objek. Kita nulis method get pake kata kunci _get_ diikuti fungsi. Daripada akses properti langsung dari objek, kita pake getter buat dapetin nilainya. Cek nih.
 
 ```js
 class Person {
@@ -294,7 +294,7 @@ console.log(person2.getSkills)
 
 ### setter
 
-Method setter memungkinkan kita memodifikasi nilai properti tertentu. Kita menulis method setter menggunakan kata kunci _set_ diikuti oleh sebuah fungsi. Lihat contoh di bawah ini.
+Method setter bikin kita bisa modifikasi nilai properti tertentu. Kita nulis method setter pake kata kunci _set_ diikuti fungsi. Liat nih.
 
 ```js
 class Person {
@@ -352,7 +352,7 @@ console.log(person2.skills)
 ["Planning", "Managing", "Organizing"]
 ```
 
-Jangan bingung dengan perbedaan antara method reguler dan getter. Jika Anda tahu cara membuat method reguler, Anda sudah baik. Mari kita tambahkan method reguler bernama getPersonInfo di class Person.
+Jangan bingung ya bedanya method reguler sama getter. Kalau kamu udah bisa bikin method reguler, udah bagus kok. Yuk kita tambahin method reguler bernama getPersonInfo di class Person.
 
 ```js
 class Person {
@@ -433,7 +433,7 @@ John Doe is 50. He lives Mars city, Mars.
 
 ### Static Method
 
-Kata kunci static mendefinisikan static method untuk sebuah class. Static method tidak dipanggil pada instance class. Sebaliknya, mereka dipanggil pada class itu sendiri. Ini sering berupa fungsi utilitas, seperti fungsi untuk membuat atau mengkloning objek. Contoh static method adalah _Date.now()_. Method _now_ dipanggil langsung dari class.
+Kata kunci `static` ngedefinisiin static method untuk sebuah class. Static method nggak dipanggil di instance class, tapi dipanggil langsung di class itu sendiri. Biasanya ini fungsi utilitas, kayak fungsi buat bikin atau ngeklon objek. Contoh static method: _Date.now()_. Method _now_ dipanggil langsung dari class.
 
 ```js
 class Person {
@@ -509,11 +509,11 @@ Node
 15.1.2020 23:56
 ```
 
-Static method adalah method yang dapat digunakan sebagai fungsi utilitas.
+Static method itu method yang bisa dipake sebagai fungsi utilitas.
 
 ## Inheritance (Pewarisan)
 
-Menggunakan inheritance, kita dapat mengakses semua properti dan method dari class induk (parent). Ini mengurangi pengulangan kode. Jika Anda ingat, kita memiliki class induk Person dan kita akan membuat anak (children) darinya. Class anak kita bisa berupa student, teacher, dll.
+Pake inheritance, kita bisa ngakses semua properti dan method dari class induk (parent). Ini ngurangin duplikasi kode banget. Masih inget class induk Person? Sekarang kita bikin anak-anaknya. Class anak bisa berupa Student, Teacher, dsb.
 
 ```js
 // syntax
@@ -522,7 +522,7 @@ class ChildClassName extends {
 }
 ```
 
-Mari kita buat class anak Student dari class induk Person.
+Oke, yuk kita bikin class anak Student dari class induk Person!
 
 ```js
 class Student extends Person {
@@ -548,7 +548,7 @@ Asabeneh Yetayeh is Finland. He lives Helsinki, 250.
 
 ### Overriding Method
 
-Seperti yang Anda lihat, kita berhasil mengakses semua method di Class Person dan menggunakannya di class anak Student. Kita dapat menyesuaikan method induk, kita dapat menambahkan properti tambahan ke class anak. Jika kita ingin menyesuaikan method dan menambahkan properti tambahan, kita perlu menggunakan fungsi constructor di class anak juga. Di dalam fungsi constructor, kita memanggil fungsi super() untuk mengakses semua properti dari class induk. Class Person tidak memiliki gender, tetapi sekarang mari kita berikan properti gender untuk class anak, Student. Jika nama method yang sama digunakan di class anak, method induk akan ditimpa (overridden).
+Nah, kita berhasil ngakses semua method di class Person dan make-nya di class anak Student. Kita bisa ngustomisasi method induk dan nambah properti tambahan ke class anak. Kalau mau ngustomisasi method plus nambah properti, kita perlu pake fungsi constructor di class anak juga. Di dalam constructor, kita panggil fungsi `super()` buat ngakses semua properti dari class induk. Class Person nggak punya gender, jadi sekarang kita kasih properti gender ke class anak Student. Kalau nama method yang sama dipake di class anak, method induk bakal ketimpa (overridden).
 
 ```js
 class Student extends Person {
@@ -618,24 +618,24 @@ Student {firstName: "Lidiya", lastName: "Tekle", age: 28, country: "Finland", ci
 Lidiya Tekle is 28. She lives in Helsinki, Finland. He knows Planning, Managing and Organizing
 ```
 
-Sekarang, method getPersonInfo telah ditimpa (overridden) dan mengidentifikasi apakah orang tersebut laki-laki atau perempuan.
+Nah, sekarang method getPersonInfo udah ditimpa (overridden) dan udah bisa ngenalin apakah orangnya laki-laki atau perempuan. Cakep!
 
-🌕 Anda semakin hebat. Sekarang, Anda sudah mengenal class dan memiliki kekuatan untuk mengubah segalanya menjadi objek. Anda telah mencapai setengah jalan menuju kehebatan. Sekarang lakukan beberapa latihan untuk otak dan otot Anda.
+🌕 Kamu makin gokil! Sekarang kamu udah kenal class dan punya kekuatan buat ngubah segalanya jadi objek. Kamu udah setengah jalan menuju level dewa JavaScript. Mantap! Yuk sekarang latihan biar makin nempel di otak!
 
 ## Latihan
 
 ### Latihan Level 1
 
-1. Buat class Animal. Class tersebut akan memiliki properti name, age, color, legs dan buat berbagai method
+1. Buat class Animal. Class-nya bakal punya properti name, age, color, legs, terus bikin berbagai method ya
 2. Buat class anak Dog dan Cat dari class Animal.
 
 ### Latihan Level 2
 
-1. Override method yang Anda buat di class Animal
+1. Override method yang udah kamu buat di class Animal
 
 ### Latihan Level 3
 
-1. Mari kita coba mengembangkan program yang menghitung ukuran pemusatan data dari suatu sampel (mean, median, mode) dan ukuran penyebaran (range, variance, standar deviasi). Selain itu, cari min, max, count, percentile, dan distribusi frekuensi dari sampel. Anda dapat membuat class bernama Statistics dan membuat semua fungsi yang melakukan perhitungan statistik sebagai method untuk class Statistics. Periksa output di bawah ini.
+1. Yuk kita coba bikin program yang ngitung ukuran pemusatan data dari suatu sampel (mean, median, mode) dan ukuran penyebaran (range, variance, standar deviasi). Plus cari min, max, count, percentile, dan distribusi frekuensi dari sampel. Kamu bisa bikin class bernama Statistics dan bikin semua fungsi yang ngelakuin perhitungan statistik sebagai method di class Statistics. Cek output di bawah ini ya.
 
 ```JS
 ages = [31, 26, 34, 37, 27, 26, 32, 32, 26, 27, 27, 24, 32, 33, 27, 25, 26, 38, 37, 31, 34, 24, 33, 29, 26]
@@ -670,6 +670,6 @@ Standard Deviation:  4.2
 Frequency Distribution: [(20.0, 26), (16.0, 27), (12.0, 32), (8.0, 37), (8.0, 34), (8.0, 33), (8.0, 31), (8.0, 24), (4.0, 38), (4.0, 29), (4.0, 25)]
 ```
 
-1. Buat class bernama PersonAccount. Class ini memiliki properti firstname, lastname, incomes, expenses dan method totalIncome, totalExpense, accountInfo, addIncome, addExpense, dan accountBalance. Incomes adalah sekumpulan pendapatan beserta deskripsinya dan expenses juga merupakan sekumpulan pengeluaran beserta deskripsinya.
+1. Buat class bernama PersonAccount. Class ini punya properti firstname, lastname, incomes, expenses dan method totalIncome, totalExpense, accountInfo, addIncome, addExpense, dan accountBalance. Incomes adalah sekumpulan pendapatan plus deskripsinya, expenses juga sekumpulan pengeluaran plus deskripsinya.
 
 🎉 SELAMAT ! 🎉
