@@ -2,72 +2,72 @@
 
 ## HTML5 Web Storage
 
-Web Storage (sessionStorage dan localStorage) adalah API HTML5 baru yang menawarkan keuntungan penting dibandingkan cookie tradisional. Sebelum HTML5, data aplikasi harus disimpan dalam cookie, disertakan dalam setiap permintaan server. Web storage lebih aman, dan data dalam jumlah besar dapat disimpan secara lokal, tanpa memengaruhi kinerja situs web. Batas penyimpanan data cookie di banyak browser web adalah sekitar 4 KB per cookie. Web Storage dapat menyimpan data yang jauh lebih besar (setidaknya 5MB) dan tidak pernah ditransfer ke server. Semua situs dari origin yang sama dapat menyimpan dan mengakses data yang sama.
+Eh, udah hari ke-17 aja nih! Kali ini kita bakal ngomongin Web Storage. Jadi Web Storage (sessionStorage dan localStorage) tuh API HTML5 baru yang cakep banget dan punya banyak keunggulan dibanding cookie jadul. Sebelum ada HTML5, data aplikasi harus disimpen di cookie dan ikut dikirim di setiap request server — ribet banget kan? Nah, Web storage jauh lebih aman, dan data gede pun bisa disimpen secara lokal tanpa bikin performa website kamu turun. Batas penyimpanan cookie di kebanyakan browser tuh cuma sekitar 4 KB per cookie, sedangkan Web Storage bisa nyimpen data yang jauh lebih gede (minimal 5MB lho!) dan gak pernah ditransfer ke server. Mantap kan? Semua situs dari origin yang sama bisa nyimpen dan ngakses data yang sama.
 
-Data yang disimpan dapat diakses menggunakan JavaScript, yang memberi Anda kemampuan untuk memanfaatkan client-side scripting untuk melakukan banyak hal yang sebelumnya melibatkan server-side programming dan database relasional. Ada dua objek Web Storage:
+Data yang disimpen bisa diakses pake JavaScript, yang artinya kamu bisa manfaatin client-side scripting buat ngelakuin banyak hal yang sebelumnya cuma bisa pake server-side programming dan database relasional. Keren! Ada dua objek Web Storage:
 
 - sessionStorage
 - localStorage
 
-localStorage mirip dengan sessionStorage, kecuali bahwa data yang disimpan di localStorage tidak memiliki waktu kedaluwarsa, sementara data yang disimpan di sessionStorage akan dihapus ketika sesi halaman berakhir — yaitu, ketika halaman ditutup.
+localStorage tuh mirip sama sessionStorage, cuma bedanya data di localStorage gak punya waktu kedaluwarsa. Sedangkan data di sessionStorage bakal ilang begitu sesi halaman berakhir — yaa pas halaman ditutup gitu deh.
 
-Perlu dicatat bahwa data yang disimpan di localStorage atau sessionStorage bersifat spesifik terhadap protokol halaman.
+Oh iya, perlu diinget juga nih: data yang disimpen di localStorage atau sessionStorage itu spesifik buat protokol halamannya.
 
-Kunci dan nilainya selalu berupa string (perhatikan bahwa, seperti objek, kunci integer akan secara otomatis dikonversi menjadi string).
+Kunci dan nilainya selalu berupa string ya (catetan: mirip kayak object, kunci integer bakal otomatis dikonversi jadi string).
 
 ![web_storage](../images/web_storage.png)
 
 ### sessionStorage
 
-sessionStorage hanya tersedia di dalam tab atau jendela browser. Ini dirancang untuk menyimpan data dalam satu sesi halaman web. Artinya, jika jendela ditutup, data sesi akan dihapus. Karena sessionStorage dan localStorage memiliki method yang serupa, kita akan fokus hanya pada localStorage.
+sessionStorage cuma tersedia di dalam tab atau jendela browser aja. Fungsinya buat nyimpen data dalam satu sesi halaman web. Jadi gini, kalau jendela ditutup, data sesinya langsung ilang deh. Karena sessionStorage dan localStorage punya method yang mirip-mirip, kita bakal fokus ke localStorage aja ya.
 
 ### localStorage
 
-localStorage HTML5 adalah bagian dari web storage API yang digunakan untuk menyimpan data di browser tanpa data kedaluwarsa. Data akan tersedia di browser bahkan setelah browser ditutup. localStorage tetap ada bahkan di antara sesi browser. Ini berarti data masih tersedia ketika browser ditutup dan dibuka kembali, dan juga secara instan di antara tab dan jendela.
+localStorage HTML5 adalah bagian dari web storage API yang dipake buat nyimpen data di browser tanpa data kedaluwarsa. Data bakal tetep ada di browser bahkan setelah browser ditutup! localStorage tetep eksis di antara sesi browser. Artinya data masih tersedia pas browser ditutup dan dibuka lagi, dan juga langsung tersedia di antara tab dan jendela. Praktis banget!
 
-Data Web Storage, dalam kedua kasus, tidak tersedia di antara browser yang berbeda. Misalnya, objek penyimpanan yang dibuat di Firefox tidak dapat diakses di Internet Explorer, persis seperti cookie. Ada lima method untuk bekerja dengan local storage:
+Data Web Storage, di kedua kasus, gak tersedia di antara browser yang berbeda lho. Misalnya, object storage yang dibuat di Firefox gak bisa diakses di Internet Explorer — sama kayak cookie. Ada lima method buat ngoprek local storage:
 _setItem(), getItem(), removeItem(), clear(), key()_
 
 ### Kasus Penggunaan Web Storage
 
-Beberapa kasus penggunaan Web Storage adalah:
+Beberapa kasus di mana Web Storage berguna banget:
 
-- menyimpan data sementara
-- menyimpan produk yang dimasukkan pengguna ke keranjang belanjanya
-- data dapat tersedia di antara permintaan halaman, beberapa tab browser, dan juga di antara sesi browser menggunakan localStorage
-- dapat digunakan secara offline sepenuhnya menggunakan localStorage
-- Web Storage dapat menjadi peningkatan performa yang besar ketika beberapa data statis disimpan di klien untuk meminimalkan jumlah permintaan berikutnya. Bahkan gambar dapat disimpan dalam string menggunakan encoding Base64.
-- dapat digunakan untuk metode autentikasi pengguna
+- nyimpen data sementara
+- nyimpen produk yang dimasukin user ke keranjang belanjanya
+- data bisa tersedia di antara request halaman, beberapa tab browser, dan juga di antara sesi browser pake localStorage
+- bisa dipake offline sepenuhnya pake localStorage
+- Web Storage bisa jadi peningkatan performa yang gede banget pas beberapa data statis disimpen di client buat ngurangin jumlah request berikutnya. Bahkan gambar pun bisa disimpen dalam string pake encoding Base64 lho!
+- bisa dipake buat metode autentikasi user
 
-Untuk contoh-contoh yang disebutkan di atas, masuk akal untuk menggunakan localStorage. Anda mungkin bertanya-tanya, lalu, kapan kita harus menggunakan sessionStorage.
+Buat contoh-contoh di atas, udah jelas banget kita pake localStorage. Mungkin kamu bertanya-tanya, lah terus kapan dong kita pake sessionStorage?
 
-Dalam kasus di mana kita ingin menyingkirkan data segera setelah jendela ditutup. Atau, mungkin, jika kita tidak ingin aplikasi saling mengganggu dengan aplikasi yang sama yang terbuka di jendela lain. Skenario ini paling cocok dilayani dengan sessionStorage.
+Nah, sessionStorage cocok banget pas kita mau data langsung ilang begitu jendela ditutup. Atau, misalnya kita gak mau aplikasi saling ganggu dengan aplikasi yang sama yang kebuka di jendela lain. Skenario kayak gini paling pas pake sessionStorage.
 
-Sekarang, mari kita lihat bagaimana menggunakan API Web Storage ini.
+Oke, sekarang yuk kita liat gimana cara pake API Web Storage ini!
 
 ## Objek HTML5 Web Storage
 
-HTML web storage menyediakan dua objek untuk menyimpan data di klien:
+HTML web storage nyediain dua objek buat nyimpen data di client:
 
-- window.localStorage - menyimpan data tanpa tanggal kedaluwarsa
-- window.sessionStorage - menyimpan data untuk satu sesi (data hilang ketika tab browser ditutup). Sebagian besar browser modern mendukung Web Storage, namun ada baiknya untuk memeriksa dukungan browser untuk localStorage dan sessionStorage. Mari kita lihat method yang tersedia untuk objek Web Storage.
+- window.localStorage - nyimpen data tanpa tanggal kedaluwarsa
+- window.sessionStorage - nyimpen data buat satu sesi (data ilang pas tab browser ditutup). Sebagian besar browser modern udah support Web Storage, tapi tetep ada baiknya cek dukungan browser buat localStorage dan sessionStorage. Yuk kita liat method yang tersedia buat objek Web Storage.
 
 Objek Web Storage:
 
-- _localStorage_ - untuk menampilkan objek localStorage
-- _localStorage.clear()_ - untuk menghapus semua yang ada di local storage
-- _localStorage.setItem()_ - untuk menyimpan data di localStorage. Method ini menerima parameter key dan value.
-- _localStorage.getItem()_ - untuk menampilkan data yang disimpan di localStorage. Method ini menerima key sebagai parameter.
-- _localStorage.removeItem()_ - untuk menghapus item yang tersimpan dari localStorage. Method ini menerima key sebagai parameter.
-- _localStorage.key()_ - untuk menampilkan data yang disimpan di localStorage. Method ini menerima index sebagai parameter.
+- _localStorage_ - buat nampilin objek localStorage
+- _localStorage.clear()_ - buat ngehapus semua yang ada di local storage
+- _localStorage.setItem()_ - buat nyimpen data di localStorage. Method ini nerima parameter key dan value.
+- _localStorage.getItem()_ - buat nampilin data yang disimpen di localStorage. Method ini nerima key sebagai parameter.
+- _localStorage.removeItem()_ - buat ngehapus item yang tersimpan dari localStorage. Method ini nerima key sebagai parameter.
+- _localStorage.key()_ - buat nampilin data yang disimpen di localStorage. Method ini nerima index sebagai parameter.
 
 ![local_storage](../images/local_storage.png)
 
 ### Menyimpan Item ke localStorage
 
-Ketika kita menyimpan data di localStorage, data akan disimpan sebagai string. Jika kita menyimpan array atau objek, kita harus melakukan stringify terlebih dahulu untuk mempertahankan formatnya, jika tidak, kita akan kehilangan struktur array atau struktur objek dari data aslinya.
+Pas kita nyimpen data di localStorage, data bakal disimpen sebagai string. Jadi kalo kita nyimpen array atau objek, kita harus stringify dulu biar formatnya tetep kejaga. Kalo enggak, ya struktur array atau objek dari data aslinya bakal ilang.
 
-Kita menyimpan data di localStorage menggunakan method _localStorage.setItem_.
+Kita nyimpen data di localStorage pake method _localStorage.setItem_.
 
 ```js
 //syntax
@@ -96,7 +96,7 @@ console.log(localStorage)
  Storage {age: '200', firstName: 'Asabeneh', length: 2}
 ```
 
-- Menyimpan array di localStorage. Jika kita menyimpan array, objek, atau array objek, kita harus melakukan stringify terlebih dahulu. Lihat contoh di bawah ini.
+- Menyimpan array di localStorage. Kalau kita nyimpen array, objek, atau array objek, harus di-stringify dulu ya. Liat contoh di bawah nih:
 
 ```js
 const skills = ['HTML', 'CSS', 'JS', 'React']
@@ -125,7 +125,7 @@ let skillJSON = JSON.stringify(skills)
 localStorage.setItem('skills', skillJSON)
 ```
 
-- Menyimpan objek di localStorage. Sebelum kita menyimpan objek ke localStorage, objek tersebut harus di-stringify.
+- Menyimpan objek di localStorage. Sebelum nyimpen objek ke localStorage, objeknya harus di-stringify dulu ya!
 
 ```js
 const user = {
@@ -140,7 +140,7 @@ localStorage.setItem('user', userText)
 
 ### Mengambil Item dari localStorage
 
-Kita mengambil data dari local storage menggunakan method _localStorage.getItem()_.
+Kita ngambil data dari local storage pake method _localStorage.getItem()_.
 
 ```js
 //syntax
@@ -158,7 +158,7 @@ console.log(firstName, age, skills)
  'Asabeneh', '200', '['HTML','CSS','JS','React']'
 ```
 
-Seperti yang Anda lihat, skill dalam format string. Mari kita gunakan JSON.parse() untuk menguraikannya menjadi array normal.
+Nah liat deh, skills-nya masih dalam format string. Yuk kita pake JSON.parse() buat nguraiin jadi array normal.
 
 ```js
 let skills = localStorage.getItem('skills')
@@ -172,23 +172,23 @@ console.log(skillsObj)
 
 ### Membersihkan localStorage
 
-Method clear akan membersihkan semua yang tersimpan di local storage.
+Method clear bakal ngebersihin semua yang tersimpan di local storage. Gampang banget!
 
 ```js
 localStorage.clear()
 ```
 
-🌕 Anda bertekad kuat. Sekarang, Anda telah mengenal Web Storage dan tahu cara menyimpan data kecil di browser klien. Anda 17 langkah lebih maju menuju kehebatan. Sekarang lakukan beberapa latihan untuk otak dan otot Anda.
+🌕 Kamu hebat, tekad kamu kuat! Sekarang kamu udah kenal Web Storage dan tau cara nyimpen data kecil di browser client. Kamu udah 17 langkah lebih maju menuju kehebatan. Sekarang gaskeun latihan buat otak dan otot kamu!
 
 ## Latihan
 
 ### Latihan: Level 1
 
-1. Simpan nama depan, nama belakang, umur, negara, kota Anda di localStorage browser Anda.
+1. Simpan nama depan, nama belakang, umur, negara, kota kamu di localStorage browser kamu.
 
 ### Latihan: Level 2
 
-1. Buat objek student. Objek student akan memiliki kunci firstName, lastName, age, skills, country, enrolled, dan nilai untuk kunci-kunci tersebut. Simpan objek student di localStorage browser Anda.
+1. Buat objek student. Objek student akan memiliki kunci firstName, lastName, age, skills, country, enrolled, dan nilai untuk kunci-kunci tersebut. Simpan objek student di localStorage browser kamu.
 
 ### Latihan: Level 3
 
