@@ -4,8 +4,8 @@
 
 ### Latihan: Level 1
 
-1. Visualisasikan array countries seperti berikut
+1. Yuk, visualisasikan array countries kayak gini nih:
 
 ![Motivation](../images/projects/dom_mini_project_countries_day_6.1.gif)
 
-🎉 SELAMAT ! 🎉
+🎉 KEREN BANGET! KAMU MANTAP! 🎉
