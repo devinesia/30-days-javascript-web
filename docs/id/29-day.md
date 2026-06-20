@@ -4,7 +4,7 @@
 
 ### Latihan: Level 1
 
-1. Buatlah animasi berikut menggunakan (HTML, CSS, JS)
+1. Gaskeun bikin animasi keren ini pakai (HTML, CSS, JS): 
 
 ![Slider](../images/projects/dom_min_project_30DaysOfJavaScript_color_changing_day_9.1.gif)
 
@@ -13,4 +13,4 @@
 
 ### Latihan: Level 3
 
-🎉 SELAMAT ! 🎉
+🎉 MANTAP JIWA! KAMU LUAR BIASA! 🎉
