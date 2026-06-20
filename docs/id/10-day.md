@@ -2,7 +2,7 @@
 
 ## Set
 
-Set adalah kumpulan elemen. Set hanya dapat berisi elemen unik. Mari kita lihat cara membuat set di bagian berikut.
+Set itu kumpulan elemen. Set cuma bisa berisi elemen unik ya, nggak boleh ada yang dobel! Yuk kita lihat cara bikin set di bagian berikut.
 
 ### Membuat set kosong
 
@@ -36,7 +36,7 @@ console.log(setOfLanguages)
 Set(4) {"English", "Finnish", "French", "Spanish"}
 ```
 
-Set adalah objek yang dapat diiterasi dan kita dapat mengiterasi setiap elemennya.
+Set adalah objek yang bisa diiterasi dan kita bisa ngiterasi setiap elemennya. Simpel!
 
 ```js
 const languages = [
@@ -82,7 +82,7 @@ console.log(companies)
 Set(5) {"Google", "Facebook", "Amazon", "Oracle", "Microsoft"}
 ```
 
-Kita juga dapat menggunakan perulangan untuk menambahkan elemen ke set.
+Kita juga bisa pakai perulangan buat nambahin elemen ke set. Nih contohnya:
 
 ```js
 const companies = ['Google', 'Facebook', 'Amazon', 'Oracle', 'Microsoft']
@@ -99,7 +99,7 @@ Set(5) {"Google", "Facebook", "Amazon", "Oracle", "Microsoft"}
 
 ### Menghapus elemen dari set
 
-Kita dapat menghapus elemen dari set menggunakan metode delete.
+Kita bisa hapus elemen dari set pake metode delete. Gampang banget!
 
 ```js
 console.log(companies.delete('Google'))
@@ -108,7 +108,7 @@ console.log(companies.size) // 4 elements left in the set
 
 ### Memeriksa elemen dalam set
 
-Metode has dapat membantu mengetahui apakah elemen tertentu ada dalam set.
+Metode has bisa bantu kita ngecek apakah elemen tertentu ada di dalam set.
 
 ```js
 console.log(companies.has('Apple')) // false
@@ -117,7 +117,7 @@ console.log(companies.has('Facebook')) // true
 
 ### Mengosongkan set
 
-Ini menghapus semua elemen dari set.
+Ini bakal hapus semua elemen dari set. Bersih kinclong!
 
 ```js
 companies.clear()
@@ -128,7 +128,7 @@ console.log(companies)
 Set(0) {}
 ```
 
-Lihat contoh di bawah untuk mempelajari cara menggunakan set.
+Lihat contoh di bawah buat lebih paham cara pakai set.
 
 ```js
 const languages = [
@@ -164,7 +164,7 @@ console.log(counts)
 ]
 ```
 
-Kasus penggunaan lain dari set. Misalnya untuk menghitung item unik dalam array.
+Kasus penggunaan lain dari set, misalnya buat ngitung item unik dalam array. Cakep!
 
 ```js
 const numbers = [5, 3, 2, 5, 5, 9, 4, 5]
@@ -179,7 +179,7 @@ Set(5) {5, 3, 2, 9, 4}
 
 ### Gabungan (Union) set
 
-Untuk mencari gabungan dua set dapat dilakukan menggunakan spread operator. Mari kita cari gabungan set A dan set B (A U B)
+Buat nyari gabungan dua set bisa dilakukan pake spread operator. Nih kita cari gabungan set A dan set B (A U B)
 
 ```js
 let a = [1, 2, 3, 4, 5]
@@ -199,7 +199,7 @@ Set(6) {1, 2, 3, 4, 5,6}
 
 ### Irisan (Intersection) set
 
-Untuk mencari irisan dua set dapat dilakukan menggunakan filter. Mari kita cari irisan set A dan set B (A ∩ B)
+Buat nyari irisan dua set bisa dilakukan pake filter. Nih kita cari irisan set A dan set B (A ∩ B)
 
 ```js
 let a = [1, 2, 3, 4, 5]
@@ -220,7 +220,7 @@ Set(3) {3, 4, 5}
 
 ### Selisih (Difference) set
 
-Untuk mencari selisih antara dua set dapat dilakukan menggunakan filter. Mari kita cari selisih set A dan set B (A \ B)
+Buat nyari selisih antara dua set bisa dilakukan pake filter. Nih kita cari selisih set A dan set B (A \ B)
 
 ```js
 let a = [1, 2, 3, 4, 5]
@@ -299,7 +299,7 @@ Helsinki
 
 ### Memeriksa kunci dalam Map
 
-Periksa apakah kunci ada dalam map menggunakan metode _has_. Ini mengembalikan _true_ atau _false_.
+Periksa apakah kunci ada di dalam map pake metode _has_. Ini ngembaliin _true_ atau _false_. Simpel kan!
 
 ```js
 console.log(countriesMap.has('Finland'))
@@ -309,7 +309,7 @@ console.log(countriesMap.has('Finland'))
 true
 ```
 
-Mengambil semua nilai dari map menggunakan perulangan
+Ambil semua nilai dari map pake perulangan:
 
 ```js
 for (const country of countriesMap) {
@@ -335,7 +335,7 @@ Sweden Stockholm
 Norway Oslo
 ```
 
-🌕 Anda telah mencapai tonggak besar, Anda tak terhentikan. Teruslah maju! Anda baru saja menyelesaikan tantangan hari ke-10 dan Anda selangkah lebih maju menuju kehebatan. Sekarang lakukan beberapa latihan untuk otak dan otot Anda.
+🌕 Kamu udah mencapai tonggak besar, gilak! Udah nggak terhentikan lagi nih. Gas terus! Kamu baru aja nyelesein tantangan hari ke-10 dan selangkah lebih dekat menuju kehebatan. Sekarang latihan buat otak dan otot kamu, yuk!
 
 ## Latihan
 
