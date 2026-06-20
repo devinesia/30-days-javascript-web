@@ -2,28 +2,28 @@
 
 ## Promise
 
-Kita sebagai manusia memberi atau menerima janji untuk melakukan suatu aktivitas di suatu waktu. Jika kita menepati janji, kita membuat orang lain senang, tetapi jika kita tidak menepatinya, hal itu dapat menimbulkan kekecewaan. Promise dalam JavaScript memiliki kesamaan dengan contoh di atas.
+Kita sebagai manusia suka banget kasih atau nerima janji buat ngelakuin sesuatu di waktu tertentu kan? Kalau kita nepatin janji, orang lain seneng. Tapi kalau kita ingkarin? Nah, itu bisa bikin kecewa. Promise di JavaScript tuh persis kayak gitu!
 
-Promise adalah cara untuk menangani operasi asinkron di JavaScript. Promise memungkinkan handler dengan nilai sukses atau alasan kegagalan dari suatu aksi asinkron. Ini memungkinkan metode asinkron mengembalikan nilai seperti metode sinkron: alih-alih langsung mengembalikan nilai akhir, metode asinkron mengembalikan sebuah promise untuk menyediakan nilai tersebut di suatu waktu di masa depan.
+Jadi Promise adalah cara keren buat nanganin operasi asinkron di JavaScript. Promise ngebolehin handler dengan nilai sukses atau alasan kegagalan dari suatu aksi asinkron. Ini bikin metode asinkron bisa ngembaliin nilai kayak metode sinkron: alih-alih langsung ngembaliin nilai akhir, metode asinkron ngembaliin sebuah promise buat nyediain nilai itu nanti di masa depan. Paham kan?
 
-Sebuah Promise berada dalam salah satu state berikut:
+Sebuah Promise tuh bisa berada di salah satu state berikut:
 
 - pending: state awal, belum fulfilled maupun rejected.
-- fulfilled: berarti operasi telah selesai dengan sukses.
-- rejected: berarti operasi telah gagal.
+- fulfilled: berarti operasi udah selesai dengan sukses, mantap!
+- rejected: berarti operasi gagal, yaah~
 
-Promise yang pending dapat menjadi fulfilled dengan sebuah nilai, atau rejected dengan sebuah alasan (error). Ketika salah satu dari opsi ini terjadi, handler terkait yang diantrekan oleh metode then dari promise akan dipanggil. (Jika promise sudah fulfilled atau rejected saat handler terkait ditambahkan, handler akan tetap dipanggil, sehingga tidak ada race condition antara penyelesaian operasi asinkron dan penambahan handler-nya.)
+Promise yang pending bisa jadi fulfilled dengan sebuah nilai, atau rejected dengan alasan (error). Pas salah satu dari opsi ini terjadi, handler terkait yang diantrekan pake metode then bakal dipanggil. (FYI: kalau promise udah fulfilled atau rejected pas handler ditambahin, handler tetep bakal dipanggil, jadi gak ada race condition antara penyelesaian operasi asinkron dan penambahan handler-nya.)
 
-Karena metode Promise.prototype.then() dan Promise.prototype.catch() mengembalikan promise, keduanya dapat dirantai (chained).
+Karena metode Promise.prototype.then() dan Promise.prototype.catch() ngembaliin promise, keduanya bisa di-chain (dirantai). Cakep!
 
 ## Callbacks
 
-Untuk memahami promise dengan baik, mari kita pahami callback terlebih dahulu. Mari kita lihat callback berikut. Dari blok kode berikut Anda akan melihat perbedaan antara callback dan promise.
+Biar bener-bener paham promise, yuk kita ngerti callback dulu. Dari kode di bawah kamu bakal liat bedanya callback dan promise.
 
 - call back
-  Mari kita lihat sebuah fungsi callback yang dapat menerima dua parameter. Parameter pertama adalah err dan yang kedua adalah result. Jika parameter err bernilai false, tidak akan ada error, sebaliknya akan mengembalikan error.
+  Nih kita liat fungsi callback yang bisa nerima dua parameter. Parameter pertama err, kedua result. Kalau parameter err false, berarti gak ada error. Sebaliknya, bakal ngembaliin error.
 
-Dalam kasus ini err memiliki nilai dan akan mengembalikan blok err.
+Di kasus ini err punya nilai dan bakal ngembaliin blok err.
 
 ```js
 //Callback
@@ -49,7 +49,7 @@ doSomething(callback)
 It did not go well
 ```
 
-Dalam kasus ini err bernilai false dan akan mengembalikan blok else yaitu result.
+Nah di kasus ini err false dan bakal ngembaliin blok else yaitu result.
 
 ```js
 const doSomething = callback => {
@@ -74,7 +74,7 @@ doSomething((err, result) => {
 
 ### Promise constructor
 
-Kita dapat membuat promise menggunakan Promise constructor. Kita dapat membuat promise baru menggunakan kata kunci `new` diikuti kata `Promise` dan diikuti tanda kurung. Di dalam tanda kurung, ia menerima sebuah fungsi `callback`. Fungsi callback promise memiliki dua parameter yaitu fungsi _`resolve`_ dan _`reject`_.
+Kita bisa bikin promise pake Promise constructor. Caranya gampang: pake keyword `new` diikuti kata `Promise` terus tanda kurung. Di dalem tanda kurung, dia nerima fungsi `callback`. Fungsi callback promise punya dua parameter yaitu fungsi _`resolve`_ dan _`reject`_.
 
 ```js
 // syntax
@@ -108,8 +108,8 @@ doPromise
 ["HTML", "CSS", "JS"]
 ```
 
-Promise di atas telah diselesaikan (settled) dengan resolve.
-Mari kita lihat contoh lain ketika promise diselesaikan dengan reject.
+Promise di atas udah diselesaikan (settled) dengan resolve.
+Yuk kita liat contoh lain pas promise diselesaikan dengan reject.
 
 ```js
 // Promise
@@ -137,7 +137,7 @@ Something wrong has happened
 
 ## Fetch API
 
-Fetch API menyediakan antarmuka untuk mengambil sumber daya (termasuk melalui jaringan). Ini akan terasa familiar bagi siapa pun yang pernah menggunakan XMLHttpRequest, tetapi API baru ini menyediakan fitur yang lebih kuat dan fleksibel. Dalam tantangan ini kita akan menggunakan fetch untuk meminta url dan API. Selain itu mari kita lihat demonstrasi penggunaan promise dalam mengakses sumber daya jaringan menggunakan fetch API.
+Fetch API adalah antarmuka kece buat ngambil sumber daya (termasuk lewat jaringan). Buat yang pernah pake XMLHttpRequest pasti berasa familiar, cuma API baru ini lebih powerful dan fleksibel. Di tantangan ini kita bakal pake fetch buat ngambil url dan API. Selain itu, yuk kita liat demo penggunaan promise buat ngakses sumber daya jaringan pake fetch API.
 
 ```js
 const url = 'https://restcountries.com/v2/all' // countries api
@@ -152,7 +152,7 @@ fetch(url)
 
 ## Async dan Await
 
-Async dan await adalah cara yang elegan untuk menangani promise. Mudah dipahami dan bersih untuk ditulis.
+Async dan await tuh cara yang elegan banget buat nanganin promise. Gampang dipahami dan bersih banget pas ditulis. Recommended parah!
 
 ```js
 const square = async function (n) {
@@ -166,9 +166,7 @@ square(2)
 Promise {<resolved>: 4}
 ```
 
-Kata _async_ di depan sebuah fungsi berarti fungsi tersebut akan mengembalikan sebuah promise. Fungsi square di atas, alih-alih mengembalikan nilai, ia mengembalikan sebuah promise.
-
-Bagaimana cara mengakses nilai dari promise? Untuk mengakses nilai dari promise, kita akan menggunakan kata kunci _await_.
+Kata _async_ di depan sebuah fungsi berarti fungsi itu bakal ngembaliin promise. Fungsi square di atas, alih-alih ngembaliin nilai, dia ngembaliin promise. Nah, gimana cara ngakses nilai dari promise? Gampang! Pake keyword _await_.
 
 ```js
 const square = async function (n) {
@@ -182,9 +180,9 @@ console.log(value)
 4
 ```
 
-Sekarang, seperti yang Anda lihat dari contoh di atas, menulis async di depan sebuah fungsi membuat sebuah promise dan untuk mendapatkan nilai dari promise kita menggunakan await. Async dan await berjalan bersama, satu tidak dapat ada tanpa yang lain.
+Nah sekarang, kayak yang kamu liat dari contoh di atas, nulis async di depan fungsi bikin promise dan buat dapetin nilai dari promise kita pake await. Async dan await tuh soulmate, satu gak bisa ada tanpa yang lain. Mereka berdua jalan bareng terus~
 
-Mari kita ambil data API menggunakan metode promise dan metode async dan await.
+Yuk kita ambil data API pake metode promise dan juga metode async dan await.
 
 - promise
 
@@ -214,7 +212,7 @@ console.log('===== async and await')
 fetchData()
 ```
 
-🌕 Anda nyata dan Anda menepati janji Anda, dan Anda telah mencapai hari ke-18. Tepati janji Anda dan selesaikan tantangan dengan resolve. Anda telah 18 langkah lebih maju menuju kehebatan. Sekarang lakukan beberapa latihan untuk otak dan otot Anda.
+🌕 Kamu keren! Kamu nepatin janji kamu dan udah nyampe hari ke-18. Tepatin terus janji kamu dan selesaikan tantangan dengan resolve. Kamu udah 18 langkah lebih maju menuju kehebatan. Sekarang gaskeun latihan buat otak dan otot kamu!
 
 ## Latihan
 
