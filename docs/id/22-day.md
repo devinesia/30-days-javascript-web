@@ -4,7 +4,7 @@
 
 ### Membuat Elemen
 
-Untuk membuat elemen HTML kita menggunakan nama tag. Membuat elemen HTML menggunakan JavaScript sangat sederhana dan mudah. Kita menggunakan metode _document.createElement()_. Metode ini menerima nama tag elemen HTML sebagai parameter string.
+Buat bikin elemen HTML kita pake nama tag. Serius deh, bikin elemen HTML pake JavaScript tuh gampang banget. Kamu tinggal pake method _document.createElement()_. Method ini nerima nama tag elemen HTML sebagai parameter string. Simpel!
 
 ```js
 // syntax
@@ -36,7 +36,7 @@ document.createElement('tagname')
 
 ### Membuat banyak elemen
 
-Untuk membuat banyak elemen kita harus menggunakan perulangan. Dengan perulangan kita dapat membuat elemen HTML sebanyak yang kita inginkan. Setelah kita membuat elemen, kita dapat menetapkan nilai ke berbagai properti objek HTML.
+Kalo mau bikin banyak elemen, kita harus pake perulangan dong. Dengan loop, kamu bisa bikin elemen HTML sebanyak yang kamu mau. Setelah bikin elemennya, kamu tinggal set deh nilai-nilai ke berbagai properti objek HTML-nya. Gas pol!
 
 ```html
 <!DOCTYPE html>
@@ -65,7 +65,7 @@ Untuk membuat banyak elemen kita harus menggunakan perulangan. Dengan perulangan
 
 ### Menambahkan child ke elemen parent
 
-Untuk melihat elemen yang dibuat pada dokumen HTML, kita harus menambahkannya ke parent sebagai elemen child. Kita dapat mengakses body dokumen HTML menggunakan *document.body*. *document.body* mendukung metode *appendChild()*. Lihat contoh di bawah.
+Nah biar elemen yang kamu bikin keliatan di dokumen HTML, kamu harus nambahin dia ke parent sebagai elemen child. Kamu bisa ngakses body dokumen HTML pake *document.body*. *document.body* mendukung method *appendChild()*. Cek contoh di bawah ya!
 
 ```html
 <!DOCTYPE html>
@@ -94,7 +94,7 @@ Untuk melihat elemen yang dibuat pada dokumen HTML, kita harus menambahkannya ke
 
 ### Menghapus elemen child dari node parent
 
-Setelah membuat HTML, kita mungkin ingin menghapus elemen dan kita dapat menggunakan metode *removeChild()*.
+Setelah bikin HTML, pasti ada kalanya kamu pengen ngehapus elemen juga dong. Nah, kamu bisa pake method *removeChild()* buat itu.
 
 **Contoh:**
 
@@ -132,7 +132,7 @@ Setelah membuat HTML, kita mungkin ingin menghapus elemen dan kita dapat menggun
 </html>
 ```
 
-Seperti yang telah kita lihat di bagian sebelumnya, ada cara yang lebih baik untuk menghilangkan semua elemen HTML inner atau children dari elemen parent menggunakan properti *innerHTML*.
+Tapi kayak yang udah kita lihat di bagian sebelumnya, sebenernya ada cara yang lebih cakep buat ngehapus semua elemen HTML inner atau children dari elemen parent — pake property *innerHTML* aja!
 
 ```html
 <!DOCTYPE html>
@@ -164,32 +164,32 @@ Seperti yang telah kita lihat di bagian sebelumnya, ada cara yang lebih baik unt
 </html>
 ```
 
-Potongan kode di atas menghapus semua elemen child.
+Simpel banget kan? Potongan kode di atas langsung ngehapus semua elemen child dalam satu baris doang!
 
 ---
 
-🌕 Anda sangat istimewa, Anda terus berkembang setiap hari. Sekarang, Anda tahu cara menghancurkan elemen DOM yang dibuat saat diperlukan. Anda telah mempelajari DOM dan sekarang Anda memiliki kemampuan untuk membangun dan mengembangkan aplikasi. Tersisa hanya delapan hari menuju kehebatan. Sekarang lakukan beberapa latihan untuk otak dan otot Anda.
+🌕 Kamu tuh keren banget sih, terus berkembang setiap hari. Sekarang, kamu udah tau cara menghancurkan elemen DOM yang udah dibuat kalo udah nggak diperlukan lagi. Kamu udah paham DOM dan sekarang kamu punya kemampuan buat bikin dan ngembangin aplikasi. Tinggal delapan hari lagi menuju level dewa! Yuk sekarang kerjain latihan buat otak dan otot kamu!
 
 ## Latihan
 
 ### Latihan: Level 1
 
-1. Buat sebuah container div pada dokumen HTML dan buat angka 0 hingga 100 secara dinamis lalu tambahkan ke container div tersebut.
-   - Background angka genap berwarna hijau
-   - Background angka ganjil berwarna kuning
-   - Background angka prima berwarna merah
+1. Bikin sebuah container div pada dokumen HTML dan bikin angka 0 sampai 100 secara dinamis, terus tambahin ke container div tersebut.
+   - Background angka genap warna hijau
+   - Background angka ganjil warna kuning
+   - Background angka prima warna merah
 
 ![Number Generator](../images/projects/dom_min_project_day_number_generators_2.1.png)
 
 ### Latihan: Level 2
 
-1. Gunakan array countries untuk menampilkan semua negara. Lihat desainnya.
+1. Pake array countries buat nampilin semua negara. Cek desainnya nih!
 
 ![World Countries List](../images/projects/dom_min_project_countries_aray_day_2.2.png)
 
 ### Latihan: Level 3
 
-Periksa persyaratan proyek ini dari kedua gambar (jpg dan gif). Semua data dan CSS telah diimplementasikan hanya menggunakan JavaScript. Data dapat ditemukan di folder starter project_3. Tombol dropdown telah dibuat menggunakan elemen HTML [*details*](https://www.w3schools.com/tags/tag_details.asp).
+Cek requirement proyek ini dari kedua gambar (jpg dan gif). Semua data dan CSS udah diimplementasikan cuma pake JavaScript doang lho! Data bisa ditemuin di folder starter project_3. Tombol dropdown-nya dibuat pake elemen HTML [*details*](https://www.w3schools.com/tags/tag_details.asp).
 
 ![Challenge Information](../images/projects/dom_mini_project_challenge_info_day_2.3.gif)
 
