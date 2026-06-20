@@ -4,8 +4,8 @@
 
 ### Latihan: Level 1
 
-1. Buatlah berikut ini menggunakan HTML, CSS, dan JavaScript
+1. Gaskeun! Bikin slider kece berikut pakai HTML, CSS, dan JavaScript dong:
 
 ![Slider](../images/projects/dom_mini_project_slider_day_7.1.gif)
 
-🎉 SELAMAT ! 🎉
+🎉 GOKIL! KAMU EMANG JAGO! 🎉
