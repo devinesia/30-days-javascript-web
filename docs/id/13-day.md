@@ -2,17 +2,17 @@
 
 ## Metode Objek Console
 
-Di bagian ini, kita akan membahas tentang console dan metode objek console. Pemula biasanya tidak tahu mana yang harus digunakan: console.log(), document.write() atau document.getElementById.
+Di sesi kali ini, kita bakal bahas tentang console dan berbagai metode objek console. Pemula biasanya suka bingung: pakenya console.log(), document.write(), atau document.getElementById() ya?
 
-Kita menggunakan metode objek console untuk menampilkan output di konsol browser dan kita menggunakan document.write untuk menampilkan output di dokumen browser (viewport). Kedua metode ini hanya digunakan untuk tujuan pengujian dan debugging. Metode console adalah alat pengujian dan debugging paling populer di browser. Kita menggunakan document.getElementById() saat ingin berinteraksi dengan DOM menggunakan JavaScript. Kita akan membahas DOM di bagian lain.
+Nah gini, kita pake metode objek console buat nampilin output di konsol browser, dan document.write buat nampilin output di dokumen browser (viewport). Dua metode ini sebenernya cuma dipake buat testing dan debugging aja. Console itu alat testing dan debugging paling populer di browser, jadi wajib banget kamu kuasai. Kalau document.getElementById() dipake saat kita mau interaksi sama DOM pake JavaScript. Tenang, kita bakal bahas DOM nanti di sesi terpisah.
 
-Selain metode console.log() yang terkenal, console menyediakan metode-metode lainnya.
+Selain console.log() yang udah terkenal itu, console juga punya banyak metode keren lainnya. Yuk kita eksplor!
 
 ### console.log()
 
-Kita menggunakan console.log() untuk menampilkan output di konsol browser. Kita dapat mensubstitusi nilai dan juga dapat memberi gaya pada output logging menggunakan %c.
+console.log() kita pake buat nampilin output di konsol browser. Kita bisa substitusi nilai dan bahkan ngasih gaya (styling) ke output logging pake %c. Keren kan?
 
-- Menampilkan output di konsol browser
+- Nampilin output di konsol browser
 
 ```js
 console.log('30 Days of JavaScript')
@@ -34,7 +34,7 @@ console.log('%d %s of JavaScript', 30, 'Days')
 
 - CSS
 
-Kita dapat memberi gaya pada pesan logging menggunakan CSS. Salin kode berikut dan tempelkan di konsol browser untuk melihat hasilnya.
+Kita bisa ngasih style ke pesan logging pake CSS. Coba deh salin kode ini dan tempel di konsol browser buat liat hasilnya.
 
 ```js
 console.log('%c30 Days Of JavaScript', 'color:green') // log output is green
@@ -50,7 +50,7 @@ console.log(
 
 ### console.warn()
 
-Kita menggunakan console.warn() untuk memberikan peringatan di browser. Misalnya untuk menginformasikan atau memperingatkan deprecation versi paket atau praktik buruk. Salin kode berikut dan tempelkan di konsol browser untuk melihat pesan peringatan.
+console.warn() dipake buat ngasih peringatan di browser. Misalnya ngasih tau soal deprecation versi paket atau praktik yang kurang baik. Coba salin dan tempel di konsol browser deh, biar liat gimana pesan peringatannya.
 
 ```js
 console.warn('This is a warning')
@@ -62,7 +62,7 @@ console.warn('Warning is different from error')
 
 ### console.error()
 
-Metode console.error() menampilkan pesan error.
+console.error() buat nampilin pesan error.
 
 ```js
 console.error('This is an error message')
@@ -71,16 +71,16 @@ console.error('We all make mistakes')
 
 ### console.table()
 
-Metode console.table() menampilkan data sebagai tabel di konsol. Menampilkan data tabular sebagai tabel. console.table() menerima satu argumen data yang wajib, yang harus berupa array atau objek, dan satu parameter kolom opsional tambahan.
+console.table() nampilin data dalam bentuk tabel di konsol. Berguna banget buat liat data tabular. console.table() nerima satu argumen data wajib, harus array atau objek, plus satu parameter kolom opsional.
 
-Mari kita mulai dengan array sederhana. Kode di bawah menampilkan tabel dengan dua kolom. Kolom indeks untuk menampilkan indeks dan kolom nilai untuk menampilkan nama.
+Yuk kita coba dengan array sederhana. Kode di bawah nampilin tabel dua kolom: kolom indeks dan kolom nilai.
 
 ```js
 const names = ['Asabeneh', 'Brook', 'David', 'John']
 console.table(names)
 ```
 
-Mari kita juga periksa hasil dari objek. Ini membuat tabel dengan dua kolom: kolom indeks yang berisi kunci dan kolom nilai yang berisi nilai objek.
+Kita juga cek hasil dari objek nih. Nanti dia bikin tabel dengan dua kolom: kolom indeks yang isinya kunci dan kolom nilai yang isinya value objek.
 
 ```js
 const user = {
@@ -93,7 +93,7 @@ const user = {
 console.table(user)
 ```
 
-Periksa contoh lainnya dengan menyalin dan menempelkan di konsol browser.
+Coba juga contoh lainnya, salin dan tempel di konsol browser.
 
 ```js
 const countries = [
@@ -140,7 +140,7 @@ console.table(users)
 
 ### console.time()
 
-Memulai timer yang dapat Anda gunakan untuk melacak berapa lama suatu operasi berjalan. Anda memberi setiap timer nama unik, dan dapat memiliki hingga 10.000 timer berjalan pada satu halaman. Saat Anda memanggil console.timeEnd() dengan nama yang sama, browser akan menampilkan waktu, dalam milidetik, yang berlalu sejak timer dimulai.
+Ini buat mulaiin timer yang bisa kamu pake buat ngelacak seberapa lama suatu operasi berjalan. Kamu bisa kasih nama unik buat setiap timer, dan bisa punya sampe 10.000 timer berjalan dalam satu halaman. Pas kamu panggil console.timeEnd() dengan nama yang sama, browser bakal nampilin waktu dalam milidetik yang udah berlalu sejak timer dimulai. Cakep buat ngetes performa!
 
 ```js
 const countries = [
@@ -183,11 +183,11 @@ Norway Oslo
 forEach loop: 0.358154296875ms
 ```
 
-Berdasarkan output di atas, regular for loop lebih lambat daripada for of atau forEach loop.
+Dari output di atas, keliatan kan kalau regular for loop lebih lambat daripada for of atau forEach loop.
 
 ### console.info()
 
-Menampilkan pesan informasi di konsol browser.
+Nampilin pesan informasi di konsol browser.
 
 ```js
 console.info('30 Days Of JavaScript challenge is trending on Github')
@@ -197,7 +197,7 @@ console.info('30 Days Of HTML and CSS challenge might be released')
 
 ### console.assert()
 
-Metode console.assert() menulis pesan error ke konsol jika asersi bernilai false. Jika asersi bernilai true, tidak terjadi apa-apa. Parameter pertama adalah ekspresi asersi. Jika ekspresi ini false, pesan error Assertion failed akan ditampilkan.
+console.assert() nulis pesan error ke konsol kalau asersinya false. Kalau asersinya true, ya udah nggak terjadi apa-apa. Parameter pertama adalah ekspresi asersi. Kalau ekspresinya false, bakal muncul pesan error "Assertion failed".
 
 ```js
 console.assert(4 > 3, '4 is greater than 3') // no result
@@ -212,7 +212,7 @@ for (let i = 0; i <= 10; i += 1) {
 
 ### console.group()
 
-console.group() dapat membantu mengelompokkan berbagai grup log. Salin kode berikut dan tempelkan di konsol browser untuk melihat grupnya.
+console.group() bisa bantu kamu ngelompokkin berbagai grup log. Coba salin dan tempel di konsol browser buat liat grupnya.
 
 ```js
 const names = ['Asabeneh', 'Brook', 'David', 'John']
@@ -275,7 +275,7 @@ console.groupEnd()
 
 ### console.count()
 
-Ini mencetak berapa kali console.count() dipanggil. Menerima parameter label string. Sangat membantu untuk menghitung berapa kali sebuah fungsi dipanggil. Dalam contoh berikut, metode console.count() akan berjalan tiga kali.
+Ini ngitung berapa kali console.count() dipanggil. Nerima parameter label string. Berguna banget buat ngitung berapa kali suatu fungsi dieksekusi. Di contoh ini, console.count() bakal jalan tiga kali.
 
 ```js
 const func = () => {
@@ -294,9 +294,9 @@ Function has been called: 3
 
 ### console.clear()
 
-console.clear() membersihkan konsol browser.
+console.clear() bersihin konsol browser. Simpel banget!
 
-🌕 Pertahankan kerja bagus Anda. Teruslah berusaha, langit adalah batasnya! Anda baru saja menyelesaikan tantangan hari ke-13 dan Anda 13 langkah lebih maju menuju kehebatan. Sekarang lakukan beberapa latihan untuk otak dan otot Anda.
+🌕 Tetep jaga semangatmu! Terus gas, langit itu batasnya! Kamu baru aja nuntasin tantangan hari ke-13 dan sekarang udah 13 langkah lebih dekat menuju level dewa. Yuk sekarang latihan biar skill kamu makin terasah!
 
 ## Latihan
 
