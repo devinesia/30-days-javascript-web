@@ -1,5 +1,5 @@
-# Memulai
-Tantangan pemrograman JavaScript 30 hari adalah panduan langkah demi langkah untuk mempelajari bahasa pemrograman JavaScript dalam 30 hari. Tantangan ini mungkin memerlukan waktu lebih dari 100 hari, silakan ikuti sesuai kecepatan Anda sendiri.
+# Yuk Mulai!
+Hai, bro/sis! Tantangan JavaScript 30 hari ini adalah panduan step-by-step buat kamu yang pengen jago JavaScript dalam 30 hari. Tapi santuy aja ya, nggak harus selesai tepat 30 hari — bisa aja butuh lebih dari 100 hari. Jalanin aja sesuai ritme kamu sendiri, yang penting konsisten!
 
 - Sumber materi: [30 days of JavaScript](https://github.com/Asabeneh/30-Days-Of-JavaScript)
 - Penulis: [Asabeneh Yetayeh](https://www.linkedin.com/in/asabeneh/)
@@ -7,7 +7,7 @@ Tantangan pemrograman JavaScript 30 hari adalah panduan langkah demi langkah unt
 
 ## Dukungan
 
-Anda dapat mendukung penulis untuk menghasilkan lebih banyak materi edukasi
+Kamu bisa dukung penulisnya biar makin semangat bikin konten edukasi keren lainnya. Cus, gaskeun!
 
 [![paypal](../images/paypal_lg.png)](https://www.paypal.me/asabeneh)
 
