@@ -4,15 +4,16 @@
 
 ### Panduan Gaya JavaScript (JavaScript Style Guide)
 
-Panduan gaya JavaScript adalah seperangkat standar yang menjelaskan bagaimana kode JavaScript harus ditulis dan diorganisir. Di bagian ini, kita akan membahas panduan JavaScript dan cara menulis kode yang bersih.
+Panduan gaya JavaScript itu kayak "rule of thumb" — seperangkat standar yang ngejelasin gimana kode JavaScript seharusnya ditulis dan diorganisir. Di bagian ini kita bakal ngobrolin panduan JavaScript dan gimana cara nulis kode yang bersih biar enak dilihat.
 
-JavaScript adalah bahasa pemrograman dan seperti bahasa manusia, ia memiliki sintaksis. Sintaksis JavaScript harus ditulis mengikuti pedoman gaya tertentu demi kenyamanan dan kesederhanaan.
+JavaScript itu bahasa pemrograman, dan kayak bahasa manusia, dia punya sintaks. Sintaks JavaScript harus ditulis ngikutin pedoman gaya tertentu biar nyaman dan simpel.
 
-### Mengapa kita membutuhkan panduan gaya
+### Kenapa sih kita butuh panduan gaya?
 
-Anda telah berkoding sendiri untuk waktu yang lama tetapi sekarang tampaknya harus bekerja dalam tim. Tidak masalah bagaimana pun Anda menulis kode selama kode itu berjalan, namun ketika Anda bekerja dalam tim yang terdiri dari 10 atau 20 atau lebih developer pada satu proyek dan basis kode yang sama, kode akan menjadi berantakan dan sulit dikelola jika tidak ada pedoman yang diikuti.
+Bayangin nih, kamu selama ini ngoding sendirian santuy-santuy aja. Terus tiba-tiba harus kerja bareng tim. Sebenernya gak masalah gimana pun kamu nulis kode selama kodenya jalan. Tapi pas kamu kerja di tim berisi 10 atau 20 atau bahkan lebih developer di satu proyek dan codebase yang sama, kode bakal jadi berantakan dan susah di-maintain kalau gak ada pedoman yang diikutin. Nah lho!
 
-Anda dapat mengembangkan pedoman dan konvensi sendiri atau Anda juga dapat mengadaptasi pedoman yang sudah berkembang baik. Mari kita lihat pedoman yang paling umum dikenal.
+Kamu bisa bikin pedoman dan konvensi sendiri, atau bisa juga adaptasi dari pedoman yang udah established dan terkenal. Yuk kita liat pedoman yang paling umum dikenal.
+
 Panduan Gaya JavaScript yang Paling Umum
 
 - Airbnb JavaScript Style Guide
@@ -21,47 +22,47 @@ Panduan Gaya JavaScript yang Paling Umum
 
 #### Airbnb JavaScript Style Guide
 
-Airbnb memiliki salah satu panduan gaya JavaScript paling populer di internet. Panduan ini mencakup hampir setiap aspek JavaScript dan diadopsi oleh banyak developer dan perusahaan. Anda dapat melihat [panduan gaya Airbnb](https://github.com/airbnb/javascript). Saya juga merekomendasikan untuk mencobanya. Gaya mereka sangat mudah digunakan dan sederhana untuk dipahami.
+Airbnb punya salah satu panduan gaya JavaScript paling populer di internet. Panduan ini udah mencakup hampir semua aspek JavaScript dan diadopsi banyak developer dan perusahaan. Cek aja [panduan gaya Airbnb](https://github.com/airbnb/javascript). Saya juga rekomen banget buat nyobain. Gaya mereka gampang dipake dan simpel dipahami.
 
 #### Standard JavaScript Style Guide
 
-Pedoman ini tidak sepopuler Airbnb tetapi layak untuk dilihat. Mereka menghilangkan titik koma dalam [panduan gaya](https://standardjs.com/) mereka.
+Pedoman ini gak sepopuler Airbnb sih, tapi tetep worth it buat dilirik. Mereka ngehilangin titik koma di [panduan gaya](https://standardjs.com/) mereka. Unik ya!
 
 #### Google JavaScript Style Guide
 
-Saya tidak banyak bicara tentang pedoman Google dan saya belum menggunakannya, tetapi saya sarankan Anda untuk melihatnya dari [tautan](https://google.github.io/styleguide/jsguide.html) ini.
+Jujur nih saya gak banyak ngomong soal pedoman Google dan belum pernah pake, tapi saya saranin kamu liat dari [tautan](https://google.github.io/styleguide/jsguide.html) ini.
 
 ### Konvensi Penulisan JavaScript
 
-Dalam tantangan ini juga kita menggunakan konvensi dan panduan penulisan JavaScript umum. Konvensi penulisan adalah pedoman gaya untuk pemrograman yang dikembangkan oleh individu, tim, atau perusahaan.
+Di tantangan ini kita juga pake konvensi dan panduan penulisan JavaScript umum. Konvensi penulisan itu pedoman gaya buat programming yang dikembangin sama individu, tim, atau perusahaan.
 
-Konvensi penulisan membantu:
+Konvensi penulisan bantu:
 
-- menulis kode yang bersih
-- meningkatkan keterbacaan kode
-- meningkatkan penggunaan kembali (reusability) dan kemudahan pemeliharaan kode (maintainability)
+- nulis kode yang bersih
+- ningkatin keterbacaan kode
+- ningkatin reusability dan maintainability kode
 
-Konvensi penulisan mencakup
+Konvensi penulisan mencakup:
 
-- Aturan penamaan dan deklarasi untuk variabel
-- Aturan penamaan dan deklarasi untuk fungsi
+- Aturan penamaan dan deklarasi buat variabel
+- Aturan penamaan dan deklarasi buat fungsi
 - Aturan penggunaan spasi, indentasi, dan komentar
 - Praktik dan prinsip pemrograman
 
 #### Konvensi yang digunakan di 30DaysOfJavaScript
 
-Dalam tantangan ini kita mengikuti konvensi JavaScript reguler tetapi saya juga menambahkan preferensi penulisan saya.
+Di tantangan ini kita ngikutin konvensi JavaScript reguler, tapi saya juga nambahin preferensi penulisan pribadi nih:
 
-- Kita menggunakan camelCase untuk variabel dan fungsi.
+- Kita pake camelCase buat variabel dan fungsi.
 - Semua nama variabel dimulai dengan huruf.
-- Kita memilih untuk menggunakan *const* untuk konstanta, array, objek, dan fungsi. Alih-alih tanda kutip ganda, kita memilih menggunakan tanda kutip tunggal atau backtick. Tanda kutip tunggal semakin populer.
-- Kita juga menghilangkan titik koma dari kode kita tetapi ini masalah preferensi pribadi.
+- Kita pilih pake *const* buat konstanta, array, objek, dan fungsi. Alih-alih double quotes, kita pilih pake single quotes atau backtick. Single quotes makin populer lho!
+- Kita juga ngilangin titik koma dari kode kita, tapi ini sih masalah selera pribadi aja.
 - Spasi di sekitar operator aritmatika, operator penugasan, dan setelah koma
 - Arrow function alih-alih deklarasi fungsi
-- Explicit return alih-alih implicit return jika fungsinya satu baris
-- Tidak ada koma di akhir nilai terakhir dari sebuah objek
-- Kita lebih memilih +=, -=, *= /=, **= alih-alih versi yang lebih panjang
-- Saat kita menggunakan console.log(), baik untuk mencetak dengan string tag untuk mengidentifikasi dari mana konsol itu berasal
+- Explicit return alih-alih implicit return kalo fungsinya cuma satu baris
+- Gak pake koma di akhir nilai terakhir sebuah objek
+- Kita lebih prefer +=, -=, *= /=, **= alih-alih versi yang lebih panjang
+- Pas kita pake console.log(), selalu pake string tag biar tau dari mana konsol itu berasal
 
 #### Variabel
 
@@ -78,7 +79,7 @@ const gravity = 9.81
 
 #### Array
 
-Kita memilih untuk membuat nama array dalam bentuk jamak (plural)
+Kita prefer bikin nama array dalam bentuk jamak (plural):
 
 - names
 - numbers
@@ -101,7 +102,7 @@ const vegetables = ['Tomato', 'Potato', 'Cabbage', 'Onion', 'Carrot']
 
 #### Fungsi
 
-Sekarang Anda sudah sangat familiar dengan deklarasi fungsi, expression function, arrow function, dan anonymous function. Dalam tantangan ini kita cenderung menggunakan arrow function dibandingkan fungsi lainnya. Arrow function bukanlah pengganti untuk fungsi lainnya. Selain itu, arrow function dan deklarasi fungsi tidak persis sama. Jadi Anda harus tahu kapan menggunakannya dan kapan tidak. Saya akan membahas perbedaannya secara detail di bagian lain. Kita akan menggunakan explicit return alih-alih implicit return jika fungsinya satu baris.
+Sekarang kamu pasti udah jago banget soal deklarasi fungsi, function expression, arrow function, dan anonymous function. Di tantangan ini kita condong pake arrow function dibanding fungsi lainnya. Tapi inget, arrow function bukan pengganti fungsi lain ya! Arrow function dan deklarasi fungsi itu gak sepenuhnya sama. Jadi kamu harus tau kapan pake yang mana. Saya bakal bahas detailnya di bagian lain nanti. Kita bakal pake explicit return alih-alih implicit return kalo fungsinya satu baris.
 
 ```js
 // function which return full name of a person
@@ -144,12 +145,12 @@ const showDateTime = () => {
 }
 ```
 
-`new Date().toLocaleString()` juga dapat digunakan untuk menampilkan tanggal dan waktu saat ini. Metode `toLocaleString()` menerima argumen yang berbeda. Anda dapat mempelajari lebih lanjut tentang tanggal dan waktu dari [tautan](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/toLocaleString) ini.
+`new Date().toLocaleString()` juga bisa dipake buat nampilin tanggal dan waktu saat ini. Metode `toLocaleString()` nerima argumen yang beda-beda. Kamu bisa pelajarin lebih lanjut soal tanggal dan waktu dari [tautan](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/toLocaleString) ini.
 
 #### Perulangan (Loops)
 
-Kita telah membahas banyak jenis perulangan dalam tantangan ini. For loop biasa, while loop, do while loop, for of loop, forEach loop, dan for in loop.
-Mari kita lihat bagaimana kita menggunakannya:
+Kita udah bahas banyak jenis perulangan di tantangan ini. For loop biasa, while loop, do while loop, for of loop, forEach loop, dan for in loop.
+Yuk liat gimana kita makenya:
 
 ```js
 for (let i = 0; i < n; i++){
@@ -192,7 +193,7 @@ for(const key in person) {
 
 #### Objek
 
-Kita mendeklarasikan objek literal dengan *const*.
+Kita deklarasiin objek literal pake *const*.
 
 ```js
 // declaring object literal
@@ -214,7 +215,7 @@ for(const key in person) {
 
 #### Kondisional
 
-Kita telah membahas if, if else, if else if else, switch, dan operator ternary di tantangan-tantangan sebelumnya.
+Kita udah bahas if, if else, if else if else, switch, dan operator ternary di tantangan-tantangan sebelumnya.
 
 ```js
  // syntax
@@ -294,7 +295,7 @@ isRaining
 
 #### Kelas (Classes)
 
-Kita mendeklarasikan kelas dengan CamelCase yang dimulai dengan huruf kapital.
+Kita deklarasiin kelas pake CamelCase yang dimulai dengan huruf kapital.
 
 ```js
 // syntax
@@ -315,8 +316,8 @@ class Person {
 
 ```
 
-Apapun panduan gaya yang Anda ikuti, tetaplah konsisten. Ikuti beberapa paradigma pemrograman dan pola desain. Ingat, jika Anda tidak menulis kode dalam urutan atau cara tertentu, akan sulit untuk membaca kode Anda. Jadi, bantulah diri Anda sendiri atau orang lain yang akan membaca kode Anda dengan menulis kode yang mudah dibaca.
+Apapun panduan gaya yang kamu ikutin, yang penting konsisten ya! Ikutin beberapa paradigma pemrograman dan pola desain. Inget, kalau kamu gak nulis kode dengan urutan atau cara tertentu, kode kamu bakal susah dibaca. Jadi, bantulah diri kamu sendiri atau orang lain yang bakal baca kode kamu dengan nulis kode yang gampang dibaca. Oke gas!
 
-🌕 Anda rapi. Sekarang, Anda tahu cara menulis kode yang bersih, sehingga siapa pun yang mengerti bahasa Inggris dapat memahami kode Anda. Anda selalu maju dan Anda telah 20 langkah lebih maju menuju kehebatan.
+🌕 Kamu udah makin rapi dan pro! Sekarang kamu tau cara nulis kode yang bersih, jadi siapapun yang ngerti JavaScript bakal paham kode kamu. Kamu terus maju dan udah 20 langkah lebih maju menuju kehebatan. Luar biasa!
 
 🎉 SELAMAT ! 🎉
