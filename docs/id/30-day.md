@@ -4,11 +4,11 @@
 
 ### Latihan: Level 1
 
-1. Buatlah animasi berikut menggunakan (HTML, CSS, JS)
+1. Gaskeun bikin animasi keren ini pakai (HTML, CSS, JS): 
 
 ![Countries data](../images/projects/dom_mini_project_countries_object_day_10.1.gif)
 
-2. Validasi form berikut menggunakan regex.
+2. Validasi form berikut pakai regex ya, santuy aja:
 
    ![form validation](../images/projects/dom_mini_project_form_validation_day_10.2.1.png)
 
@@ -18,15 +18,15 @@
 
 ### Latihan: Level 3
 
-🌕 Perjalanan Anda menuju kehebatan telah berhasil diselesaikan. Anda telah mencapai level kehebatan yang tinggi. Sekarang, Anda jauh lebih hebat dari sebelumnya. Saya tahu apa yang diperlukan untuk mencapai level ini dan Anda berhasil sampai di titik ini. Anda adalah pahlawan sejati. Sekarang, saatnya merayakan kesuksesan Anda dengan teman atau keluarga. Saya menantikan untuk melihat Anda di tantangan lainnya.
+🌕 Wih, perjalanan keren kamu udah sampai di garis finish nih! Kamu udah naik level banget dan sekarang skill kamu makin gacor. Serius deh, gue tau perjuangan buat sampai di titik ini nggak gampang, tapi kamu berhasil ngelewatin semuanya. Kamu itu the real MVP! Sekarang waktunya rayain pencapaian gede ini bareng temen atau keluarga. Santuy dulu, kamu pantas kok! Gue tunggu kamu di tantangan seru berikutnya ya!
 
 ## Testimoni
 
-Sekarang saatnya mendukung penulis dan menyampaikan pendapat Anda tentang Penulis dan 30DaysOfJavaScript. Anda dapat meninggalkan testimoni di [link](https://testimonify.herokuapp.com/) ini
+Sekarang saatnya kasih dukungan ke penulis dan ceritain pendapat kamu tentang 30DaysOfJavaScript. Bisa tinggalin testimoni kamu di [link ini](https://testimonify.herokuapp.com/)
 
 ## Dukungan
 
-Anda dapat mendukung penulis untuk menghasilkan lebih banyak materi edukasi
+Kamu bisa support penulis biar makin semangat bikin materi edukasi keren lainnya
 
 [![paypal](../images/paypal_lg.png)](https://www.paypal.me/asabeneh)
 
