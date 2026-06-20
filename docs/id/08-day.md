@@ -2,20 +2,20 @@
 
 ## Scope (Ruang Lingkup)
 
-Variabel adalah bagian fundamental dalam pemrograman. Kita mendeklarasikan variabel untuk menyimpan berbagai tipe data. Untuk mendeklarasikan variabel kita menggunakan kata kunci _var_, _let_ dan _const_. Sebuah variabel dapat dideklarasikan pada scope yang berbeda. Di bagian ini, kita akan melihat scope variabel, scope variabel ketika kita menggunakan var atau let.
-Scope variabel dapat berupa:
+Variabel tuh bagian fundamental banget dalam pemrograman. Kita deklarasiin variabel buat nyimpen berbagai tipe data. Buat deklarasiin variabel, kita pakai kata kunci _var_, _let_ dan _const_. Sebuah variabel bisa dideklarasiin di scope yang beda-beda. Di bagian ini, kita bakal bahas scope variabel, terutama pas kita pakai var atau let.
+Scope variabel bisa berupa:
 
 - Global
 - Local
 
-Variabel dapat dideklarasikan pada scope global atau lokal. Kita akan melihat kedua scope global dan lokal.
-Apa pun yang dideklarasikan tanpa let, var atau const memiliki scope pada level global.
+Variabel bisa dideklarasiin di scope global atau lokal. Yuk kita bahas dua-duanya.
+Apa pun yang dideklarasiin tanpa let, var atau const punya scope di level global.
 
-Mari kita bayangkan kita memiliki file scope.js.
+Bayangin kita punya file scope.js ya.
 
 ### Window Global Object
 
-Tanpa menggunakan `console.log()` buka browser Anda dan periksa, Anda akan melihat nilai a dan b jika Anda menulis a atau b di browser. Itu berarti a dan b sudah tersedia di window.
+Tanpa pake `console.log()` buka browser kamu terus cek deh, nanti kamu bakal lihat nilai a dan b kalau kamu ketik a atau b di browser. Itu artinya a dan b udah tersedia di window, global banget!
 
 ```js
 //scope.js
@@ -32,7 +32,7 @@ console.log(a, b) // dapat diakses
 
 ### Global scope
 
-Variabel yang dideklarasikan secara global dapat diakses di mana saja dalam file yang sama. Tetapi istilah global bersifat relatif. Bisa global terhadap file atau bisa global relatif terhadap beberapa blok kode.
+Variabel yang dideklarasiin secara global bisa diakses di mana aja dalam file yang sama. Tapi istilah global itu relatif ya. Bisa global terhadap file, atau bisa global relatif terhadap beberapa blok kode.
 
 ```js
 //scope.js
@@ -53,7 +53,7 @@ console.log(a, b) // JavaScript 10, dapat diakses
 
 ### Local scope
 
-Variabel yang dideklarasikan sebagai lokal hanya dapat diakses di blok kode tertentu.
+Variabel yang dideklarasiin sebagai lokal cuma bisa diakses di blok kode tertentu doang.
 
 - Block Scope
 - Function Scope
@@ -84,7 +84,7 @@ letsLearnScope()
 console.log(a, b) // JavaScript 10, dapat diakses
 ```
 
-Sekarang, Anda sudah memahami scope. Variabel yang dideklarasikan dengan *var* hanya ter-scope ke fungsi tetapi variabel yang dideklarasikan dengan *let* atau *const* adalah block scope (blok fungsi, blok if, blok loop, dll). Blok di JavaScript adalah kode di antara dua kurung kurawal ({}).
+Oke, sekarang kamu udah paham scope. Variabel yang dideklarasiin pake *var* cuma ter-scope ke fungsi, tapi variabel yang dideklarasiin pake *let* atau *const* adalah block scope (blok fungsi, blok if, blok loop, dll). Blok di JavaScript tuh kode di antara dua kurung kurawal ({}). Simpel kan!
 
 ```js
 //scope.js
@@ -108,12 +108,12 @@ console.log(i) // 3
 
 ```
 
-Di ES6 ke atas sudah ada *let* dan *const*, jadi Anda tidak akan menderita karena sifat licik *var*. Ketika kita menggunakan *let*, variabel kita adalah block scoped dan tidak akan mempengaruhi bagian lain dari kode kita.
+Di ES6 ke atas udah ada *let* dan *const*, jadi kamu nggak bakal pusing-pusing lagi ngadepin sifat liciknya *var*. Kalau kita pakai *let*, variabel kita block scoped dan nggak bakal ganggu bagian lain dari kode. Cakep banget kan!
 
 ```js
 //scope.js
 function letsLearnScope() {
-  // Anda bisa menggunakan let atau const, tetapi gravity adalah konstanta, saya lebih suka menggunakan const
+  // Kamu bisa menggunakan let atau const, tetapi gravity adalah konstanta, saya lebih suka menggunakan const
   const gravity = 9.81
   console.log(gravity)
 
@@ -133,16 +133,16 @@ for(let i = 0; i < 3; i++){
 
 ```
 
-Scope *let* dan *const* adalah sama. Perbedaannya hanya pada reassigning (penetapan ulang). Kita tidak dapat mengubah atau menetapkan ulang nilai variabel `const`. Saya sangat menyarankan Anda untuk menggunakan *let* dan *const*, dengan menggunakan *let* dan *const* Anda akan menulis kode yang bersih dan menghindari kesalahan yang sulit di-debug. Sebagai aturan praktis, Anda dapat menggunakan *let* untuk nilai apa pun yang berubah, *const* untuk nilai konstan apa pun, dan untuk array, objek, arrow function, dan function expression.
+Scope *let* dan *const* itu sama. Bedanya cuma di reassigning (penetapan ulang). Kita nggak bisa ngubah atau netapin ulang nilai variabel `const`. Saran gue sih, pakai *let* dan *const* aja ya. Dengan *let* dan *const*, kamu bakal nulis kode yang bersih dan terhindar dari error yang susah di-debug. Rule of thumb-nya gini: pakai *let* buat nilai yang bisa berubah, *const* buat nilai konstan, dan juga buat array, objek, arrow function, dan function expression.
 
 ## 📔 Objek (Object)
 
-Segala sesuatu bisa menjadi objek dan objek memiliki properti dan properti memiliki nilai, jadi objek adalah pasangan kunci-nilai (key-value pair). Urutan kunci tidak dipertahankan, atau tidak ada urutan.
-Untuk membuat objek literal, kita menggunakan dua kurung kurawal.
+Segala sesuatu bisa jadi objek dan objek punya properti, terus properti punya nilai. Jadi intinya, objek itu pasangan kunci-nilai (key-value pair). Urutan kunci nggak dijaga ya, alias nggak ada urutan tertentu.
+Buat bikin objek literal, kita pakai dua kurung kurawal.
 
 ### Membuat objek kosong
 
-Objek kosong
+Objek kosong, gampang banget!
 
 ```js
 const person = {}
@@ -150,9 +150,9 @@ const person = {}
 
 ### Membuat objek dengan nilai
 
-Sekarang, objek person memiliki properti firstName, lastName, age, location, skills dan isMarried. Nilai dari properti atau kunci bisa berupa string, number, boolean, objek, null, undefined atau fungsi.
+Nah, sekarang objek person punya properti firstName, lastName, age, location, skills dan isMarried. Nilai dari properti atau kunci bisa berupa string, number, boolean, objek, null, undefined atau fungsi. Fleksibel abis!
 
-Mari kita lihat beberapa contoh objek. Setiap kunci memiliki nilai dalam objek.
+Yuk lihat beberapa contoh objek. Setiap kunci punya nilai di dalam objek.
 
 ```js
 const rectangle = {
@@ -184,10 +184,10 @@ console.log(person)
 
 ### Mengambil nilai dari objek
 
-Kita dapat mengakses nilai objek menggunakan dua metode:
+Kita bisa ngakses nilai objek pake dua metode:
 
-- menggunakan . diikuti oleh nama kunci jika nama kunci adalah satu kata
-- menggunakan kurung siku dan tanda kutip
+- pake . diikuti nama kunci (kalau nama kuncinya cuma satu kata)
+- pake kurung siku dan tanda kutip
 
 ```js
 const person = {
@@ -231,7 +231,7 @@ console.log(person['phone number'])
 
 ### Membuat metode objek
 
-Sekarang, objek person memiliki properti getFullName. getFullName adalah fungsi di dalam objek person dan kita menyebutnya metode objek. Kata kunci _this_ merujuk pada objek itu sendiri. Kita dapat menggunakan kata _this_ untuk mengakses nilai dari berbagai properti objek. Kita tidak dapat menggunakan arrow function sebagai metode objek karena kata this merujuk ke window di dalam arrow function, bukan ke objek itu sendiri. Contoh objek:
+Sekarang, objek person punya properti getFullName. getFullName itu fungsi di dalam objek person dan kita nyebutnya metode objek. Kata kunci _this_ nunjuk ke objek itu sendiri. Kita bisa pakai kata _this_ buat ngakses nilai dari berbagai properti objek. Tapi inget ya, kita nggak bisa pakai arrow function sebagai metode objek karena kata this di arrow function nunjuk ke window, bukan ke objek itu sendiri. Contoh objek:
 
 ```js
 const person = {
@@ -261,9 +261,9 @@ console.log(person.getFullName())
 
 ### Menetapkan kunci baru untuk objek
 
-Objek adalah struktur data yang mutable (dapat diubah) dan kita dapat memodifikasi konten objek setelah dibuat.
+Objek itu struktur data yang mutable (bisa diubah) dan kita bisa modifikasi konten objek setelah dibuat. Asik kan!
 
-Menetapkan kunci baru dalam objek
+Nambahin kunci baru di objek:
 
 ```js
 const person = {
@@ -316,9 +316,9 @@ He teaches HTML, CSS, JavaScript, React, Node, MongoDB, Python, D3.js, Meteor, a
 
 ### Metode Objek (Object Methods)
 
-Ada berbagai metode untuk memanipulasi objek. Mari kita lihat beberapa metode yang tersedia.
+Ada berbagai metode buat manipulasi objek nih. Yuk kita lihat beberapa metode yang tersedia!
 
-_Object.assign_: Untuk menyalin objek tanpa memodifikasi objek asli
+_Object.assign_: Buat menyalin objek tanpa modifikasi objek asli
 
 ```js
 const person = {
@@ -347,7 +347,7 @@ console.log(copyPerson)
 
 #### Mendapatkan kunci objek menggunakan Object.keys()
 
-_Object.keys_: Untuk mendapatkan kunci atau properti dari objek sebagai array
+_Object.keys_: Buat dapetin kunci atau properti dari objek sebagai array
 
 ```js
 const keys = Object.keys(copyPerson)
@@ -358,7 +358,7 @@ console.log(address) //['street', 'pobox', 'city']
 
 #### Mendapatkan nilai objek menggunakan Object.values()
 
-_Object.values_: Untuk mendapatkan nilai dari objek sebagai array
+_Object.values_: Buat dapetin nilai dari objek sebagai array
 
 ```js
 const values = Object.values(copyPerson)
@@ -367,7 +367,7 @@ console.log(values)
 
 #### Mendapatkan kunci dan nilai objek menggunakan Object.entries()
 
-_Object.entries_: Untuk mendapatkan kunci dan nilai dalam array
+_Object.entries_: Buat dapetin kunci dan nilai dalam array
 
 ```js
 const entries = Object.entries(copyPerson)
@@ -376,14 +376,14 @@ console.log(entries)
 
 #### Memeriksa properti menggunakan hasOwnProperty()
 
-_hasOwnProperty_: Untuk memeriksa apakah kunci atau properti tertentu ada dalam objek
+_hasOwnProperty_: Buat ngecek apakah kunci atau properti tertentu ada di dalam objek
 
 ```js
 console.log(copyPerson.hasOwnProperty('name'))
 console.log(copyPerson.hasOwnProperty('score'))
 ```
 
-🌕 Anda luar biasa. Sekarang, Anda sudah terisi penuh dengan kekuatan objek. Anda baru saja menyelesaikan tantangan hari ke-8 dan Anda selangkah lebih maju menuju kehebatan. Sekarang lakukan beberapa latihan untuk otak dan otot Anda.
+🌕 Kamu luar biasa, gaes! Sekarang kamu udah terisi penuh dengan kekuatan objek. Kamu baru aja nyelesein tantangan hari ke-8 dan selangkah lebih dekat menuju kehebatan. Gaskeun sekarang latihan buat otak dan otot kamu!
 
 ## 💻 Latihan
 
@@ -455,7 +455,7 @@ console.log(copyPerson.hasOwnProperty('score'))
 ```
 
 1. Temukan orang yang merupakan MERN stack developer dari objek users
-1. Tetapkan nama Anda di objek users tanpa memodifikasi objek users asli
+1. Tetapkan nama kamu di objek users tanpa memodifikasi objek users asli
 1. Dapatkan semua kunci atau properti dari objek users
 1. Dapatkan semua nilai dari objek users
 1. Gunakan objek countries untuk mencetak nama negara, ibu kota, populasi, dan bahasa.
@@ -540,7 +540,7 @@ console.log(copyPerson.hasOwnProperty('score'))
   ]
   ```
 
-  Bayangkan Anda mendapatkan koleksi users di atas dari database MongoDB.
+  Bayangkan kamu mendapatkan koleksi users di atas dari database MongoDB.
     a. Buat fungsi bernama signUp yang memungkinkan pengguna untuk ditambahkan ke koleksi. Jika pengguna sudah ada, beri tahu pengguna bahwa dia sudah memiliki akun.  
     b. Buat fungsi bernama signIn yang memungkinkan pengguna untuk masuk ke aplikasi  
 
