@@ -2,9 +2,9 @@
 
 ## Perulangan (Loop)
 
-Sebagian besar aktivitas yang kita lakukan dalam hidup penuh dengan pengulangan. Bayangkan jika saya meminta Anda mencetak angka dari 0 sampai 100 menggunakan `console.log()`. Untuk mengimplementasikan tugas sederhana ini mungkin memakan waktu 2 sampai 5 menit, tugas yang membosankan dan berulang seperti ini dapat dilakukan menggunakan loop. Jika Anda lebih suka menonton video, Anda bisa melihat [video tutorial](https://www.youtube.com/channel/UCM4xOopkYiPwJqyKsSqL9mw)
+Sebagian besar aktivitas yang kita lakukan sehari-hari tuh penuh sama pengulangan. Coba deh bayangin, kalau disuruh cetak angka dari 0 sampai 100 pake `console.log()`, pasti malesin banget kan? Bisa-bisa 2-5 menit cuma buat nulis kode yang gitu-gitu doang. Nah, tugas-tugas membosankan kayak gini bisa kita otomatisasi pake loop, gampang banget! Kalau kamu lebih suka nonton video, ada [video tutorial](https://www.youtube.com/channel/UCM4xOopkYiPwJqyKsSqL9mw) juga nih.
 
-Dalam bahasa pemrograman, untuk menjalankan tugas berulang kita menggunakan berbagai jenis loop. Contoh berikut adalah loop yang umum digunakan di JavaScript dan bahasa pemrograman lainnya.
+Dalam dunia pemrograman, buat ngerjain tugas berulang kita pakai berbagai jenis loop. Di bawah ini contoh-contoh loop yang paling sering dipakai di JavaScript dan bahasa pemrograman lainnya.
 
 ### for Loop
 
@@ -56,7 +56,7 @@ for(let i = 0; i < countries.length; i++){
 // ["FINLAND", "SWEDEN", "DENMARK", "NORWAY", "ICELAND"]
 ```
 
-Menjumlahkan semua elemen dalam array
+Jumlahin semua elemen di dalam array? Bisa banget!
 
 ```js
 const numbers = [1, 2, 3, 4, 5]
@@ -69,7 +69,7 @@ for(let i = 0; i < numbers.length; i++){
 console.log(sum)  // 15
 ```
 
-Membuat array baru berdasarkan array yang sudah ada
+Bikin array baru berdasarkan array yang udah ada? Gampang!
 
 ```js
 const numbers = [1, 2, 3, 4, 5]
@@ -119,7 +119,7 @@ do {
 
 ### for of loop
 
-Kita menggunakan for of loop untuk array. Ini adalah cara yang sangat praktis untuk mengiterasi array jika kita tidak tertarik pada indeks setiap elemen dalam array.
+Nah, for of loop ini dipakai buat array. Ini tuh cara yang super praktis buat ngiterasi array kalau kamu nggak peduli sama indeks setiap elemen di dalam array.
 
 ```js
 for (const element of arr) {
@@ -143,12 +143,12 @@ for (const num of numbers) {
 
 // 1 4 9 16 25
 
-// menjumlahkan semua angka dalam array
+// jumlahin semua angka dalam array
 let sum = 0
 for (const num of numbers) {
   sum = sum + num  
-	// bisa juga disingkat seperti ini, sum += num
-  // setelah ini kita akan menggunakan sintaks yang lebih singkat (+=, -=, *=, /= dll)
+	// bisa juga disingkat kayak gini, sum += num
+  // nanti kita bakal lebih sering pakai sintaks singkat (+=, -=, *=, /= dll)
 }
 console.log(sum) // 15
 
@@ -169,7 +169,7 @@ for (const tech of webTechs) {
 // HTML CSS JAVASCRIPT REACT NODE MONGODB
 
 for (const tech of webTechs) {
-  console.log(tech[0]) // hanya mengambil huruf pertama setiap elemen,  H C J R N M
+  console.log(tech[0]) // cuma ambil huruf pertama setiap elemen,  H C J R N M
 }
 
 ```
@@ -186,7 +186,7 @@ console.log(newArr)  // ["FINLAND", "SWEDEN", "NORWAY", "DENMARK", "ICELAND"]
 
 ### break
 
-Break digunakan untuk menghentikan suatu loop.
+Break dipakai buat menghentikan loop. Jadi kalau udah ketemu kondisi tertentu, langsung cabut!
 
 ```js
 for(let i = 0; i <= 5; i++){
@@ -199,11 +199,11 @@ for(let i = 0; i <= 5; i++){
 // 0 1 2
 ```
 
-Kode di atas berhenti jika 3 ditemukan dalam proses iterasi.
+Kode di atas berhenti begitu ketemu angka 3 di proses iterasi. Sederhana kan?
 
 ### continue
 
-Kita menggunakan kata kunci *continue* untuk melewati iterasi tertentu.
+Nah kalo *continue*, dia nggak berhentiin loop-nya. Dia cuma skip iterasi yang lagi berjalan aja.
 
 ```js
 for(let i = 0; i <= 5; i++){
@@ -216,7 +216,7 @@ for(let i = 0; i <= 5; i++){
 // 0 1 2 4 5
 ```
 
-🌕 Anda sangat berani, Anda sudah sampai sejauh ini. Sekarang, Anda telah memiliki kekuatan untuk mengotomatisasi tugas-tugas yang berulang dan membosankan. Anda baru saja menyelesaikan tantangan hari ke-6 dan Anda selangkah lebih maju menuju kehebatan. Sekarang lakukan beberapa latihan untuk otak dan otot Anda.
+🌕 Gilak, kamu keren banget! Udah sampai sejauh ini, gokil! Sekarang kamu udah punya kekuatan buat ngotomatisasi tugas-tugas berulang yang membosankan. Kamu baru aja nyelesein tantangan hari ke-6 dan selangkah lebih dekat menuju level dewa JavaScript. Gaskeun sekarang latihan buat otak dan otot kamu!
 
 ## 💻 Latihan: Hari 6
 
