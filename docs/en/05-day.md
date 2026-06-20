@@ -118,7 +118,7 @@ console.log(words)
 
 We access each element in an array using their index. An array index starts from 0. The picture below clearly shows the index of each element in the array.
 
-![arr index](images/array_index.png)
+![arr index](../images/array_index.png)
 
 ```js
 const fruits = ['banana', 'orange', 'mango', 'lemon']

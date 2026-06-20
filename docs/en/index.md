@@ -3,14 +3,13 @@
 
 - Material source: [30 days of JavaScript](https://github.com/Asabeneh/30-Days-Of-JavaScript)
 - Author: [Asabeneh Yetayeh](https://www.linkedin.com/in/asabeneh/)
-- Site creator: [Devinesia](https://github.com/devinesia)
-- Mas2 gans: [www.masgalih.net](https://www.masgalih.net)
+- Site creator: [superxdev](https://github.com/superxdev)
 
 ## Support
 
 You can support the author to produce more educational materials
 
-[![paypal](images/paypal_lg.png)](https://www.paypal.me/asabeneh)
+[![paypal](../images/paypal_lg.png)](https://www.paypal.me/asabeneh)
 
 
 ## About Brave Teknologi

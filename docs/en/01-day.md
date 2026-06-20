@@ -30,11 +30,11 @@ I believe you have the motivation and a strong desire to be a developer, a compu
 
 You may not need Node.js right now but you may need it for later. Install [node.js](https://nodejs.org/en/).
 
-![Node download](images/download_node.png)
+![Node download](../images/download_node.png)
 
 After downloading double click and install
 
-![Install node](images/install_node.png)
+![Install node](../images/install_node.png)
 
 We can check if node is installed on our local machine by opening our device terminal or command prompt.
 
@@ -53,13 +53,13 @@ There are many browsers out there. However, I strongly recommend Google Chrome.
 
 Install [Google Chrome](https://www.google.com/chrome/) if you do not have one yet. We can write small JavaScript code on the browser console, but we do not use the browser console to develop applications.
 
-![Google Chrome](images/google_chrome.png)
+![Google Chrome](../images/google_chrome.png)
 
 #### Opening Google Chrome Console
 
 You can open Google Chrome console either by clicking three dots at the top right corner of the browser, selecting _More tools -> Developer tools_ or using a keyboard shortcut. I prefer using shortcuts.
 
-![Opening chrome](images/opening_developer_tool.png)
+![Opening chrome](../images/opening_developer_tool.png)
 
 To open the Chrome console using a keyboard shortcut.
 
@@ -71,12 +71,12 @@ Windows/Linux:
 Ctl+Shift+J
 ```
 
-![Opening console](images/opening_chrome_console_shortcut.png)
+![Opening console](../images/opening_chrome_console_shortcut.png)
 
 After you open the Google Chrome console, try to explore the marked buttons. We will spend most of the time on the Console. The Console is the place where your JavaScript code goes. The Google Console V8 engine changes your JavaScript code to machine code.
 Let us write a JavaScript code on the Google Chrome console:
 
-![write code on console](./images/js_code_on_chrome_console.png)
+![write code on console](../images/js_code_on_chrome_console.png)
 
 #### Writing Code on Browser Console
 
@@ -102,7 +102,7 @@ console.log('Hello, World!')
 
 The **`console.log()`** function can take multiple parameters separated by commas. The syntax looks like as follows:**`console.log(param1, param2, param3)`**
 
-![console log multiple arguments](./images/console_log_multipl_arguments.png)
+![console log multiple arguments](../images/console_log_multipl_arguments.png)
 
 ```js
 console.log('Hello', 'World', '!')
@@ -140,7 +140,7 @@ This is a multiline comment
 
 Programming languages are similar to human languages. English or many other language uses words, phrases, sentences, compound sentences and other more to convey a meaningful message. The English meaning of syntax is _the arrangement of words and phrases to create well-formed sentences in a language_. The technical definition of syntax is the structure of statements in a computer language. Programming languages have syntax. JavaScript is a programming language and like other programming languages it has its own syntax. If we do not write a syntax that JavaScript understands, it will raise different types of errors. We will explore different kinds of JavaScript errors later. For now, let us see syntax errors.
 
-![Error](images/raising_syntax_error.png)
+![Error](../images/raising_syntax_error.png)
 
 I made a deliberate mistake. As a result, the console raises syntax errors. Actually, the syntax is very informative. It informs what type of mistake was made. By reading the error feedback guideline, we can correct the syntax and fix the problem. The process of identifying and removing errors from a program is called debugging. Let us fix the errors:
 
@@ -164,7 +164,7 @@ Now, let us practice more writing JavaScript codes using _`console.log()`_ on Go
 In addition to the text, we can also do mathematical calculations using JavaScript. Let us do the following simple calculations.
 It is possible to write JavaScript code on Google Chrome console can directly without the **_`console.log()`_** function. However, it is included in this introduction because most of this challenge would be taking place in a text editor where the usage of the function would be mandatory. You can play around directly with instructions on the console.
 
-![Arithmetic](images/arithmetic.png)
+![Arithmetic](../images/arithmetic.png)
 
 ```js
 console.log(2 + 3) // Addition
@@ -183,7 +183,7 @@ We can write our codes on the browser console, but it won't be for bigger projec
 
 Visual Studio Code is a very popular open-source text editor. I would recommend to [download Visual Studio Code](https://code.visualstudio.com/), but if you are in favor of other editors, feel free to follow with what you have.
 
-![Vscode](images/vscode.png)
+![Vscode](../images/vscode.png)
 
 If you installed Visual Studio Code, let us start using it.
 
@@ -191,19 +191,19 @@ If you installed Visual Studio Code, let us start using it.
 
 Open the Visual Studio Code by double-clicking its icon. When you open it, you will get this kind of interface. Try to interact with the labeled icons.
 
-![Vscode ui](./images/vscode_ui.png)
+![Vscode ui](../images/vscode_ui.png)
 
-![Vscode add project](./images/adding_project_to_vscode.png)
+![Vscode add project](../images/adding_project_to_vscode.png)
 
-![Vscode open project](./images/opening_project_on_vscode.png)
+![Vscode open project](../images/opening_project_on_vscode.png)
 
-![script file](images/scripts_on_vscode.png)
+![script file](../images/scripts_on_vscode.png)
 
-![Installing Live Server](images/vsc_live_server.png)
+![Installing Live Server](../images/vsc_live_server.png)
 
-![running script](./images/running_script.png)
+![running script](../images/running_script.png)
 
-![coding running](./images/launched_on_new_tab.png)
+![coding running](../images/launched_on_new_tab.png)
 
 ## Adding JavaScript to a Web Page
 
@@ -271,7 +271,7 @@ This is how we write an internal script most of the time. Writing the JavaScript
 
 Open the browser console to see the output from the `console.log()`.
 
-![js code from vscode](./images/js_code_vscode.png)
+![js code from vscode](../images/js_code_vscode.png)
 
 ### External Script
 
@@ -337,7 +337,7 @@ console.log('Hello, World!')
 
 _Your main.js file should be below all other scripts_. It is very important to remember this.
 
-![Multiple Script](./images/multiple_script.png)
+![Multiple Script](../images/multiple_script.png)
 
 ## Introduction to Data types
 
@@ -537,7 +537,7 @@ Asabeneh teacher Finland
 
 When you run _index.html_ file in the 01-Day folder you should get this:
 
-![Day one](./images/day_1.png)
+![Day one](../images/day_1.png)
 
 🌕 You are amazing! You have just completed day 1 challenge and you are on your way to greatness. Now do some exercises for your brain and muscle.
 

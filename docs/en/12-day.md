@@ -205,7 +205,7 @@ I am teacher and  I love teaching.There is nothing as more rewarding as educatin
   * r'apple|banana' mean either of an apple or a banana
 * (): Capture and group
 
-![Regular Expression cheat sheet](images/regex.png)
+![Regular Expression cheat sheet](../images/regex.png)
 
 Let's use example to clarify the above meta characters
 

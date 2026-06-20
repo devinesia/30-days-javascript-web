@@ -14,3 +14,17 @@ theme:
   name: material
   palette:
     primary: amber
+plugins:
+  - search
+  - i18n:
+      docs_structure: folder
+      reconfigure_material: true
+      reconfigure_search: true
+      languages:
+        - locale: en
+          default: true
+          name: English
+          build: true
+        - locale: id
+          name: Bahasa Indonesia
+          build: true
