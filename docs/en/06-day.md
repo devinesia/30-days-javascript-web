@@ -184,6 +184,66 @@ for(const country of countries){
 console.log(newArr)  // ["FINLAND", "SWEDEN", "NORWAY", "DENMARK", "ICELAND"]
 ```
 
+### for in loop
+
+The `for...in` loop is used to iterate over the enumerable properties of an object. For each distinct property, JavaScript executes the specified statements.
+
+```js
+for (const key in object) {
+  // code goes here
+}
+```
+
+```js
+const person = {
+  firstName: 'Asabeneh',
+  lastName: 'Yetayeh',
+  age: 250,
+  country: 'Finland',
+  city: 'Helsinki'
+}
+
+for (const key in person) {
+  console.log(key)
+}
+
+// firstName
+// lastName
+// age
+// country
+// city
+```
+
+We can also access the values using the key:
+
+```js
+for (const key in person) {
+  console.log(key, person[key])
+}
+
+// firstName Asabeneh
+// lastName Yetayeh
+// age 250
+// country Finland
+// city Helsinki
+```
+
+The `for...in` loop can also be used with arrays, but it gives us the index, not the value:
+
+```js
+const colors = ['red', 'green', 'blue']
+
+for (const index in colors) {
+  console.log(index, colors[index])
+}
+
+// 0 red
+// 1 green
+// 2 blue
+```
+
+> **Note:** It is recommended to use `for...of` for arrays and `for...in` for objects.
+
 ### break
 
 Break is used to interrupt a loop.

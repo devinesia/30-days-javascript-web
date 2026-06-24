@@ -184,6 +184,66 @@ for(const country of countries){
 console.log(newArr)  // ["FINLAND", "SWEDEN", "NORWAY", "DENMARK", "ICELAND"]
 ```
 
+### for in loop
+
+`for...in` loop digunakan untuk mengiterasi properti yang dapat dienumerasi dari sebuah objek. Untuk setiap properti yang berbeda, JavaScript akan menjalankan pernyataan yang ditentukan.
+
+```js
+for (const key in object) {
+  // kode di sini
+}
+```
+
+```js
+const person = {
+  firstName: 'Asabeneh',
+  lastName: 'Yetayeh',
+  age: 250,
+  country: 'Finland',
+  city: 'Helsinki'
+}
+
+for (const key in person) {
+  console.log(key)
+}
+
+// firstName
+// lastName
+// age
+// country
+// city
+```
+
+Kita juga bisa mengakses nilainya menggunakan key:
+
+```js
+for (const key in person) {
+  console.log(key, person[key])
+}
+
+// firstName Asabeneh
+// lastName Yetayeh
+// age 250
+// country Finland
+// city Helsinki
+```
+
+`for...in` loop juga bisa dipakai untuk array, tapi dia ngasih kita indeks, bukan nilainya:
+
+```js
+const colors = ['red', 'green', 'blue']
+
+for (const index in colors) {
+  console.log(index, colors[index])
+}
+
+// 0 red
+// 1 green
+// 2 blue
+```
+
+> **Catatan:** Disarankan pakai `for...of` untuk array dan `for...in` untuk objek.
+
 ### break
 
 Break dipakai buat menghentikan loop. Jadi kalau udah ketemu kondisi tertentu, langsung cabut!
