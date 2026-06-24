@@ -1,0 +1,2185 @@
+
+<!doctype html>
+<html lang="id" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../07-day/">
+      
+      
+        <link rel="next" href="../09-day/">
+      
+      
+        
+          <link rel="alternate" href="../../08-day/" hreflang="en">
+        
+          <link rel="alternate" href="./" hreflang="id">
+        
+      
+      
+      <link rel="icon" href="../../images/javascript.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>📔 Hari 8 - 30 Days Javascript</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="amber" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#hari-8" class="md-skip">
+          Lewati ke isi
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../" title="30 Days Javascript" class="md-header__button md-logo" aria-label="30 Days Javascript" data-md-component="logo">
+      
+  <img src="../../images/javascript.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            30 Days Javascript
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              📔 Hari 8
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+      <div class="md-header__option">
+  <div class="md-select">
+    
+    <button class="md-header__button md-icon" aria-label="Pilih bahasa">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.5 17.5 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2zm-2.62 7 1.62-4.33L19.12 17z"/></svg>
+    </button>
+    <div class="md-select__inner">
+      <ul class="md-select__list">
+        
+          <li class="md-select__item">
+            <a href="../../08-day/" hreflang="en" class="md-select__link">
+              English
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="./" hreflang="id" class="md-select__link">
+              Bahasa Indonesia
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Cari" placeholder="Cari" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Cari">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Kosongkan" aria-label="Kosongkan" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Mempersiapkan pencarian
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/devinesia/30-days-javascript-web" title="Ke repositori" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigasi" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../" title="30 Days Javascript" class="md-nav__button md-logo" aria-label="30 Days Javascript" data-md-component="logo">
+      
+  <img src="../../images/javascript.png" alt="logo">
+
+    </a>
+    30 Days Javascript
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/devinesia/30-days-javascript-web" title="Ke repositori" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Yuk Mulai!
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📔 Hari 1 - Yuk Mulai!
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📔 Hari 2 - Gaskeun Lanjut!
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📔 Hari 3 - Oke Gas!
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📔 Hari 4 - Yuk Ngoding!
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../05-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📔 Hari 5 - Mantap Lanjut!
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../06-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📔 Hari 6
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../07-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📔 Hari 7
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📔 Hari 8
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📔 Hari 8
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Daftar isi">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Daftar isi
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#scope-ruang-lingkup" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Scope (Ruang Lingkup)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Scope (Ruang Lingkup)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#window-global-object" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Window Global Object
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#global-scope" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Global scope
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#local-scope" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Local scope
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#objek-object" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📔 Objek (Object)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📔 Objek (Object)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#membuat-objek-kosong" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Membuat objek kosong
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#membuat-objek-dengan-nilai" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Membuat objek dengan nilai
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mengambil-nilai-dari-objek" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mengambil nilai dari objek
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#membuat-metode-objek" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Membuat metode objek
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#menetapkan-kunci-baru-untuk-objek" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Menetapkan kunci baru untuk objek
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#metode-objek-object-methods" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Metode Objek (Object Methods)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Metode Objek (Object Methods)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#mendapatkan-kunci-objek-menggunakan-objectkeys" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mendapatkan kunci objek menggunakan Object.keys()
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mendapatkan-nilai-objek-menggunakan-objectvalues" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mendapatkan nilai objek menggunakan Object.values()
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mendapatkan-kunci-dan-nilai-objek-menggunakan-objectentries" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mendapatkan kunci dan nilai objek menggunakan Object.entries()
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#memeriksa-properti-menggunakan-hasownproperty" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Memeriksa properti menggunakan hasOwnProperty()
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#latihan" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        💻 Latihan
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="💻 Latihan">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#latihan-level-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Latihan: Level 1
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#latihan-level-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Latihan: Level 2
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#latihan-level-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Latihan: Level 3
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../09-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📔 Hari 9
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../10-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📔 Hari 10
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../11-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📘 Hari 11
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../12-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📘 Hari 12
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../13-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📘 Hari 13
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../14-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📘 Hari 14
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../15-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📘 Hari 15
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../16-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📘 Hari 16
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../17-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📘 Hari 17
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../18-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📘 Hari 18
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../19-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📘 Hari 19
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📘 Hari 20
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../21-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📙 Hari 21
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../22-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📙 Hari 22
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../23-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📙 Hari 23
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../24-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📙 Hari 24
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../25-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📙 Hari 25
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../26-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📔 Hari 26
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../27-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📔 Hari 27
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../28-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📔 Hari 28
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../29-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📔 Hari 29
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../30-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📔 Hari 30
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Daftar isi">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Daftar isi
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#scope-ruang-lingkup" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Scope (Ruang Lingkup)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Scope (Ruang Lingkup)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#window-global-object" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Window Global Object
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#global-scope" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Global scope
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#local-scope" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Local scope
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#objek-object" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📔 Objek (Object)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📔 Objek (Object)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#membuat-objek-kosong" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Membuat objek kosong
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#membuat-objek-dengan-nilai" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Membuat objek dengan nilai
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mengambil-nilai-dari-objek" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mengambil nilai dari objek
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#membuat-metode-objek" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Membuat metode objek
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#menetapkan-kunci-baru-untuk-objek" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Menetapkan kunci baru untuk objek
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#metode-objek-object-methods" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Metode Objek (Object Methods)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Metode Objek (Object Methods)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#mendapatkan-kunci-objek-menggunakan-objectkeys" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mendapatkan kunci objek menggunakan Object.keys()
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mendapatkan-nilai-objek-menggunakan-objectvalues" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mendapatkan nilai objek menggunakan Object.values()
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mendapatkan-kunci-dan-nilai-objek-menggunakan-objectentries" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mendapatkan kunci dan nilai objek menggunakan Object.entries()
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#memeriksa-properti-menggunakan-hasownproperty" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Memeriksa properti menggunakan hasOwnProperty()
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#latihan" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        💻 Latihan
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="💻 Latihan">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#latihan-level-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Latihan: Level 1
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#latihan-level-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Latihan: Level 2
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#latihan-level-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Latihan: Level 3
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="hari-8">📔 Hari 8</h1>
+<h2 id="scope-ruang-lingkup">Scope (Ruang Lingkup)</h2>
+<p>Variabel tuh bagian fundamental banget dalam pemrograman. Kita deklarasiin variabel buat nyimpen berbagai tipe data. Buat deklarasiin variabel, kita pakai kata kunci <em>var</em>, <em>let</em> dan <em>const</em>. Sebuah variabel bisa dideklarasiin di scope yang beda-beda. Di bagian ini, kita bakal bahas scope variabel, terutama pas kita pakai var atau let.
+Scope variabel bisa berupa:</p>
+<ul>
+<li>Global</li>
+<li>Local</li>
+</ul>
+<p>Variabel bisa dideklarasiin di scope global atau lokal. Yuk kita bahas dua-duanya.
+Apa pun yang dideklarasiin tanpa let, var atau const punya scope di level global.</p>
+<p>Bayangin kita punya file scope.js ya.</p>
+<h3 id="window-global-object">Window Global Object</h3>
+<p>Tanpa pake <code>console.log()</code> buka browser kamu terus cek deh, nanti kamu bakal lihat nilai a dan b kalau kamu ketik a atau b di browser. Itu artinya a dan b udah tersedia di window, global banget!</p>
+<div class="highlight"><pre><span></span><code><span class="c1">//scope.js</span>
+<span class="nx">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;JavaScript&#39;</span><span class="w"> </span><span class="c1">// mendeklarasikan variabel tanpa let atau const membuatnya tersedia di objek window dan ini ditemukan di mana saja</span>
+<span class="nx">b</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">10</span><span class="w"> </span><span class="c1">// ini adalah variabel scope global dan ditemukan di objek window</span>
+<span class="kd">function</span><span class="w"> </span><span class="nx">letsLearnScope</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">a</span><span class="p">,</span><span class="w"> </span><span class="nx">b</span><span class="p">)</span>
+<span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="kc">true</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">a</span><span class="p">,</span><span class="w"> </span><span class="nx">b</span><span class="p">)</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="p">}</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">a</span><span class="p">,</span><span class="w"> </span><span class="nx">b</span><span class="p">)</span><span class="w"> </span><span class="c1">// dapat diakses</span>
+</code></pre></div>
+<h3 id="global-scope">Global scope</h3>
+<p>Variabel yang dideklarasiin secara global bisa diakses di mana aja dalam file yang sama. Tapi istilah global itu relatif ya. Bisa global terhadap file, atau bisa global relatif terhadap beberapa blok kode.</p>
+<div class="highlight"><pre><span></span><code><span class="c1">//scope.js</span>
+<span class="kd">let</span><span class="w"> </span><span class="nx">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;JavaScript&#39;</span><span class="w"> </span><span class="c1">// adalah global scope, akan ditemukan di mana saja dalam file ini</span>
+<span class="kd">let</span><span class="w"> </span><span class="nx">b</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">10</span><span class="w"> </span><span class="c1">// adalah global scope, akan ditemukan di mana saja dalam file ini</span>
+<span class="kd">function</span><span class="w"> </span><span class="nx">letsLearnScope</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">a</span><span class="p">,</span><span class="w"> </span><span class="nx">b</span><span class="p">)</span><span class="w"> </span><span class="c1">// JavaScript 10, dapat diakses</span>
+<span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="kc">true</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="kd">let</span><span class="w"> </span><span class="nx">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;Python&#39;</span>
+<span class="w">    </span><span class="kd">let</span><span class="w"> </span><span class="nx">b</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">100</span>
+<span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">a</span><span class="p">,</span><span class="w"> </span><span class="nx">b</span><span class="p">)</span><span class="w"> </span><span class="c1">// Python 100</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">a</span><span class="p">,</span><span class="w"> </span><span class="nx">b</span><span class="p">)</span>
+<span class="p">}</span>
+<span class="nx">letsLearnScope</span><span class="p">()</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">a</span><span class="p">,</span><span class="w"> </span><span class="nx">b</span><span class="p">)</span><span class="w"> </span><span class="c1">// JavaScript 10, dapat diakses</span>
+</code></pre></div>
+<h3 id="local-scope">Local scope</h3>
+<p>Variabel yang dideklarasiin sebagai lokal cuma bisa diakses di blok kode tertentu doang.</p>
+<ul>
+<li>Block Scope</li>
+<li>Function Scope</li>
+</ul>
+<div class="highlight"><pre><span></span><code><span class="c1">//scope.js</span>
+<span class="kd">let</span><span class="w"> </span><span class="nx">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;JavaScript&#39;</span><span class="w"> </span><span class="c1">// adalah global scope, akan ditemukan di mana saja dalam file ini</span>
+<span class="kd">let</span><span class="w"> </span><span class="nx">b</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">10</span><span class="w"> </span><span class="c1">// adalah global scope, akan ditemukan di mana saja dalam file ini</span>
+<span class="c1">// Function scope</span>
+<span class="kd">function</span><span class="w"> </span><span class="nx">letsLearnScope</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">a</span><span class="p">,</span><span class="w"> </span><span class="nx">b</span><span class="p">)</span><span class="w"> </span><span class="c1">// JavaScript 10, dapat diakses</span>
+<span class="w">  </span><span class="kd">let</span><span class="w"> </span><span class="nx">value</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">false</span>
+<span class="c1">// block scope</span>
+<span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="kc">true</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="c1">// kita dapat mengakses dari dalam fungsi dan di luar fungsi tetapi </span>
+<span class="w">    </span><span class="c1">// variabel yang dideklarasikan di dalam if tidak akan dapat diakses di luar blok if</span>
+<span class="w">    </span><span class="kd">let</span><span class="w"> </span><span class="nx">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;Python&#39;</span>
+<span class="w">    </span><span class="kd">let</span><span class="w"> </span><span class="nx">b</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">20</span>
+<span class="w">    </span><span class="kd">let</span><span class="w"> </span><span class="nx">c</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">30</span>
+<span class="w">    </span><span class="kd">let</span><span class="w"> </span><span class="nx">d</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">40</span>
+<span class="w">    </span><span class="nx">value</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">!</span><span class="nx">value</span>
+<span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">a</span><span class="p">,</span><span class="w"> </span><span class="nx">b</span><span class="p">,</span><span class="w"> </span><span class="nx">c</span><span class="p">,</span><span class="w"> </span><span class="nx">value</span><span class="p">)</span><span class="w"> </span><span class="c1">// Python 20 30 true</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="w">  </span><span class="c1">// kita tidak dapat mengakses c karena scope c hanya di dalam blok if</span>
+<span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">a</span><span class="p">,</span><span class="w"> </span><span class="nx">b</span><span class="p">,</span><span class="w"> </span><span class="nx">value</span><span class="p">)</span><span class="w"> </span><span class="c1">// JavaScript 10 true</span>
+<span class="p">}</span>
+<span class="nx">letsLearnScope</span><span class="p">()</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">a</span><span class="p">,</span><span class="w"> </span><span class="nx">b</span><span class="p">)</span><span class="w"> </span><span class="c1">// JavaScript 10, dapat diakses</span>
+</code></pre></div>
+<p>Oke, sekarang kamu udah paham scope. Variabel yang dideklarasiin pake <em>var</em> cuma ter-scope ke fungsi, tapi variabel yang dideklarasiin pake <em>let</em> atau <em>const</em> adalah block scope (blok fungsi, blok if, blok loop, dll). Blok di JavaScript tuh kode di antara dua kurung kurawal ({}). Simpel kan!</p>
+<div class="highlight"><pre><span></span><code><span class="c1">//scope.js</span>
+<span class="kd">function</span><span class="w"> </span><span class="nx">letsLearnScope</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="kd">var</span><span class="w"> </span><span class="nx">gravity</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">9.81</span>
+<span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">gravity</span><span class="p">)</span>
+
+<span class="p">}</span>
+<span class="c1">// console.log(gravity), Uncaught ReferenceError: gravity is not defined</span>
+
+<span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="kc">true</span><span class="p">){</span>
+<span class="w">  </span><span class="kd">var</span><span class="w"> </span><span class="nx">gravity</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">9.81</span>
+<span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">gravity</span><span class="p">)</span><span class="w"> </span><span class="c1">// 9.81</span>
+<span class="p">}</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">gravity</span><span class="p">)</span><span class="w">  </span><span class="c1">// 9.81</span>
+
+<span class="k">for</span><span class="p">(</span><span class="kd">var</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mf">3</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="o">++</span><span class="p">){</span>
+<span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">i</span><span class="p">)</span><span class="w"> </span><span class="c1">// 0, 1, 2</span>
+<span class="p">}</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">i</span><span class="p">)</span><span class="w"> </span><span class="c1">// 3</span>
+</code></pre></div>
+<p>Di ES6 ke atas udah ada <em>let</em> dan <em>const</em>, jadi kamu nggak bakal pusing-pusing lagi ngadepin sifat liciknya <em>var</em>. Kalau kita pakai <em>let</em>, variabel kita block scoped dan nggak bakal ganggu bagian lain dari kode. Cakep banget kan!</p>
+<div class="highlight"><pre><span></span><code><span class="c1">//scope.js</span>
+<span class="kd">function</span><span class="w"> </span><span class="nx">letsLearnScope</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="c1">// Kamu bisa menggunakan let atau const, tetapi gravity adalah konstanta, saya lebih suka menggunakan const</span>
+<span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">gravity</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">9.81</span>
+<span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">gravity</span><span class="p">)</span>
+
+<span class="p">}</span>
+<span class="c1">// console.log(gravity), Uncaught ReferenceError: gravity is not defined</span>
+
+<span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="kc">true</span><span class="p">){</span>
+<span class="w">  </span><span class="kd">const</span><span class="w">  </span><span class="nx">gravity</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">9.81</span>
+<span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">gravity</span><span class="p">)</span><span class="w"> </span><span class="c1">// 9.81</span>
+<span class="p">}</span>
+<span class="c1">// console.log(gravity), Uncaught ReferenceError: gravity is not defined</span>
+
+<span class="k">for</span><span class="p">(</span><span class="kd">let</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mf">3</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="o">++</span><span class="p">){</span>
+<span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">i</span><span class="p">)</span><span class="w"> </span><span class="c1">// 0, 1, 2</span>
+<span class="p">}</span>
+<span class="c1">// console.log(i), Uncaught ReferenceError: i is not defined</span>
+</code></pre></div>
+<p>Scope <em>let</em> dan <em>const</em> itu sama. Bedanya cuma di reassigning (penetapan ulang). Kita nggak bisa ngubah atau netapin ulang nilai variabel <code>const</code>. Saran gue sih, pakai <em>let</em> dan <em>const</em> aja ya. Dengan <em>let</em> dan <em>const</em>, kamu bakal nulis kode yang bersih dan terhindar dari error yang susah di-debug. Rule of thumb-nya gini: pakai <em>let</em> buat nilai yang bisa berubah, <em>const</em> buat nilai konstan, dan juga buat array, objek, arrow function, dan function expression.</p>
+<h2 id="objek-object">📔 Objek (Object)</h2>
+<p>Segala sesuatu bisa jadi objek dan objek punya properti, terus properti punya nilai. Jadi intinya, objek itu pasangan kunci-nilai (key-value pair). Urutan kunci nggak dijaga ya, alias nggak ada urutan tertentu.
+Buat bikin objek literal, kita pakai dua kurung kurawal.</p>
+<h3 id="membuat-objek-kosong">Membuat objek kosong</h3>
+<p>Objek kosong, gampang banget!</p>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">person</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{}</span>
+</code></pre></div>
+<h3 id="membuat-objek-dengan-nilai">Membuat objek dengan nilai</h3>
+<p>Nah, sekarang objek person punya properti firstName, lastName, age, location, skills dan isMarried. Nilai dari properti atau kunci bisa berupa string, number, boolean, objek, null, undefined atau fungsi. Fleksibel abis!</p>
+<p>Yuk lihat beberapa contoh objek. Setiap kunci punya nilai di dalam objek.</p>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">rectangle</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="nx">length</span><span class="o">:</span><span class="w"> </span><span class="mf">20</span><span class="p">,</span>
+<span class="w">  </span><span class="nx">width</span><span class="o">:</span><span class="w"> </span><span class="mf">20</span>
+<span class="p">}</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">rectangle</span><span class="p">)</span><span class="w"> </span><span class="c1">// {length: 20, width: 20}</span>
+
+<span class="kd">const</span><span class="w"> </span><span class="nx">person</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="nx">firstName</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;Asabeneh&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="nx">lastName</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;Yetayeh&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="nx">age</span><span class="o">:</span><span class="w"> </span><span class="mf">250</span><span class="p">,</span>
+<span class="w">  </span><span class="nx">country</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;Finland&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="nx">city</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;Helsinki&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="nx">skills</span><span class="o">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">    </span><span class="s1">&#39;HTML&#39;</span><span class="p">,</span>
+<span class="w">    </span><span class="s1">&#39;CSS&#39;</span><span class="p">,</span>
+<span class="w">    </span><span class="s1">&#39;JavaScript&#39;</span><span class="p">,</span>
+<span class="w">    </span><span class="s1">&#39;React&#39;</span><span class="p">,</span>
+<span class="w">    </span><span class="s1">&#39;Node&#39;</span><span class="p">,</span>
+<span class="w">    </span><span class="s1">&#39;MongoDB&#39;</span><span class="p">,</span>
+<span class="w">    </span><span class="s1">&#39;Python&#39;</span><span class="p">,</span>
+<span class="w">    </span><span class="s1">&#39;D3.js&#39;</span>
+<span class="w">  </span><span class="p">],</span>
+<span class="w">  </span><span class="nx">isMarried</span><span class="o">:</span><span class="w"> </span><span class="kc">true</span>
+<span class="p">}</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">person</span><span class="p">)</span>
+</code></pre></div>
+<h3 id="mengambil-nilai-dari-objek">Mengambil nilai dari objek</h3>
+<p>Kita bisa ngakses nilai objek pake dua metode:</p>
+<ul>
+<li>pake . diikuti nama kunci (kalau nama kuncinya cuma satu kata)</li>
+<li>pake kurung siku dan tanda kutip</li>
+</ul>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">person</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="nx">firstName</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;Asabeneh&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="nx">lastName</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;Yetayeh&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="nx">age</span><span class="o">:</span><span class="w"> </span><span class="mf">250</span><span class="p">,</span>
+<span class="w">  </span><span class="nx">country</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;Finland&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="nx">city</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;Helsinki&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="nx">skills</span><span class="o">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">    </span><span class="s1">&#39;HTML&#39;</span><span class="p">,</span>
+<span class="w">    </span><span class="s1">&#39;CSS&#39;</span><span class="p">,</span>
+<span class="w">    </span><span class="s1">&#39;JavaScript&#39;</span><span class="p">,</span>
+<span class="w">    </span><span class="s1">&#39;React&#39;</span><span class="p">,</span>
+<span class="w">    </span><span class="s1">&#39;Node&#39;</span><span class="p">,</span>
+<span class="w">    </span><span class="s1">&#39;MongoDB&#39;</span><span class="p">,</span>
+<span class="w">    </span><span class="s1">&#39;Python&#39;</span><span class="p">,</span>
+<span class="w">    </span><span class="s1">&#39;D3.js&#39;</span>
+<span class="w">  </span><span class="p">],</span>
+<span class="w">  </span><span class="nx">getFullName</span><span class="o">:</span><span class="w"> </span><span class="kd">function</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="sb">`</span><span class="si">${</span><span class="k">this</span><span class="p">.</span><span class="nx">firstName</span><span class="si">}${</span><span class="k">this</span><span class="p">.</span><span class="nx">lastName</span><span class="si">}</span><span class="sb">`</span>
+<span class="w">  </span><span class="p">},</span>
+<span class="w">  </span><span class="s1">&#39;phone number&#39;</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;+3584545454545&#39;</span>
+<span class="p">}</span>
+
+<span class="c1">// mengakses nilai menggunakan .</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">person</span><span class="p">.</span><span class="nx">firstName</span><span class="p">)</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">person</span><span class="p">.</span><span class="nx">lastName</span><span class="p">)</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">person</span><span class="p">.</span><span class="nx">age</span><span class="p">)</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">person</span><span class="p">.</span><span class="nx">location</span><span class="p">)</span><span class="w"> </span><span class="c1">// undefined</span>
+
+<span class="c1">// nilai dapat diakses menggunakan kurung siku dan nama kunci</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">person</span><span class="p">[</span><span class="s1">&#39;firstName&#39;</span><span class="p">])</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">person</span><span class="p">[</span><span class="s1">&#39;lastName&#39;</span><span class="p">])</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">person</span><span class="p">[</span><span class="s1">&#39;age&#39;</span><span class="p">])</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">person</span><span class="p">[</span><span class="s1">&#39;age&#39;</span><span class="p">])</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">person</span><span class="p">[</span><span class="s1">&#39;location&#39;</span><span class="p">])</span><span class="w"> </span><span class="c1">// undefined</span>
+
+<span class="c1">// misalnya untuk mengakses nomor telepon kita hanya menggunakan metode kurung siku</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">person</span><span class="p">[</span><span class="s1">&#39;phone number&#39;</span><span class="p">])</span>
+</code></pre></div>
+<h3 id="membuat-metode-objek">Membuat metode objek</h3>
+<p>Sekarang, objek person punya properti getFullName. getFullName itu fungsi di dalam objek person dan kita nyebutnya metode objek. Kata kunci <em>this</em> nunjuk ke objek itu sendiri. Kita bisa pakai kata <em>this</em> buat ngakses nilai dari berbagai properti objek. Tapi inget ya, kita nggak bisa pakai arrow function sebagai metode objek karena kata this di arrow function nunjuk ke window, bukan ke objek itu sendiri. Contoh objek:</p>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">person</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="nx">firstName</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;Asabeneh&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="nx">lastName</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;Yetayeh&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="nx">age</span><span class="o">:</span><span class="w"> </span><span class="mf">250</span><span class="p">,</span>
+<span class="w">  </span><span class="nx">country</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;Finland&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="nx">city</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;Helsinki&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="nx">skills</span><span class="o">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">    </span><span class="s1">&#39;HTML&#39;</span><span class="p">,</span>
+<span class="w">    </span><span class="s1">&#39;CSS&#39;</span><span class="p">,</span>
+<span class="w">    </span><span class="s1">&#39;JavaScript&#39;</span><span class="p">,</span>
+<span class="w">    </span><span class="s1">&#39;React&#39;</span><span class="p">,</span>
+<span class="w">    </span><span class="s1">&#39;Node&#39;</span><span class="p">,</span>
+<span class="w">    </span><span class="s1">&#39;MongoDB&#39;</span><span class="p">,</span>
+<span class="w">    </span><span class="s1">&#39;Python&#39;</span><span class="p">,</span>
+<span class="w">    </span><span class="s1">&#39;D3.js&#39;</span>
+<span class="w">  </span><span class="p">],</span>
+<span class="w">  </span><span class="nx">getFullName</span><span class="o">:</span><span class="w"> </span><span class="kd">function</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="sb">`</span><span class="si">${</span><span class="k">this</span><span class="p">.</span><span class="nx">firstName</span><span class="si">}</span><span class="sb"> </span><span class="si">${</span><span class="k">this</span><span class="p">.</span><span class="nx">lastName</span><span class="si">}</span><span class="sb">`</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="p">}</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">person</span><span class="p">.</span><span class="nx">getFullName</span><span class="p">())</span>
+<span class="c1">// Asabeneh Yetayeh</span>
+</code></pre></div>
+<h3 id="menetapkan-kunci-baru-untuk-objek">Menetapkan kunci baru untuk objek</h3>
+<p>Objek itu struktur data yang mutable (bisa diubah) dan kita bisa modifikasi konten objek setelah dibuat. Asik kan!</p>
+<p>Nambahin kunci baru di objek:</p>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">person</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="nx">firstName</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;Asabeneh&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="nx">lastName</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;Yetayeh&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="nx">age</span><span class="o">:</span><span class="w"> </span><span class="mf">250</span><span class="p">,</span>
+<span class="w">  </span><span class="nx">country</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;Finland&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="nx">city</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;Helsinki&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="nx">skills</span><span class="o">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">    </span><span class="s1">&#39;HTML&#39;</span><span class="p">,</span>
+<span class="w">    </span><span class="s1">&#39;CSS&#39;</span><span class="p">,</span>
+<span class="w">    </span><span class="s1">&#39;JavaScript&#39;</span><span class="p">,</span>
+<span class="w">    </span><span class="s1">&#39;React&#39;</span><span class="p">,</span>
+<span class="w">    </span><span class="s1">&#39;Node&#39;</span><span class="p">,</span>
+<span class="w">    </span><span class="s1">&#39;MongoDB&#39;</span><span class="p">,</span>
+<span class="w">    </span><span class="s1">&#39;Python&#39;</span><span class="p">,</span>
+<span class="w">    </span><span class="s1">&#39;D3.js&#39;</span>
+<span class="w">  </span><span class="p">],</span>
+<span class="w">  </span><span class="nx">getFullName</span><span class="o">:</span><span class="w"> </span><span class="kd">function</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="sb">`</span><span class="si">${</span><span class="k">this</span><span class="p">.</span><span class="nx">firstName</span><span class="si">}</span><span class="sb"> </span><span class="si">${</span><span class="k">this</span><span class="p">.</span><span class="nx">lastName</span><span class="si">}</span><span class="sb">`</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="p">}</span>
+<span class="nx">person</span><span class="p">.</span><span class="nx">nationality</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;Ethiopian&#39;</span>
+<span class="nx">person</span><span class="p">.</span><span class="nx">country</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;Finland&#39;</span>
+<span class="nx">person</span><span class="p">.</span><span class="nx">title</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;teacher&#39;</span>
+<span class="nx">person</span><span class="p">.</span><span class="nx">skills</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="s1">&#39;Meteor&#39;</span><span class="p">)</span>
+<span class="nx">person</span><span class="p">.</span><span class="nx">skills</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="s1">&#39;SasS&#39;</span><span class="p">)</span>
+<span class="nx">person</span><span class="p">.</span><span class="nx">isMarried</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">true</span>
+
+<span class="nx">person</span><span class="p">.</span><span class="nx">getPersonInfo</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kd">function</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="kd">let</span><span class="w"> </span><span class="nx">skillsWithoutLastSkill</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">this</span><span class="p">.</span><span class="nx">skills</span>
+<span class="w">    </span><span class="p">.</span><span class="nx">splice</span><span class="p">(</span><span class="mf">0</span><span class="p">,</span><span class="w"> </span><span class="k">this</span><span class="p">.</span><span class="nx">skills</span><span class="p">.</span><span class="nx">length</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mf">1</span><span class="p">)</span>
+<span class="w">    </span><span class="p">.</span><span class="nx">join</span><span class="p">(</span><span class="s1">&#39;, &#39;</span><span class="p">)</span>
+<span class="w">  </span><span class="kd">let</span><span class="w"> </span><span class="nx">lastSkill</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">this</span><span class="p">.</span><span class="nx">skills</span><span class="p">.</span><span class="nx">splice</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">skills</span><span class="p">.</span><span class="nx">length</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mf">1</span><span class="p">)[</span><span class="mf">0</span><span class="p">]</span>
+
+<span class="w">  </span><span class="kd">let</span><span class="w"> </span><span class="nx">skills</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="sb">`</span><span class="si">${</span><span class="nx">skillsWithoutLastSkill</span><span class="si">}</span><span class="sb">, and </span><span class="si">${</span><span class="nx">lastSkill</span><span class="si">}</span><span class="sb">`</span>
+<span class="w">  </span><span class="kd">let</span><span class="w"> </span><span class="nx">fullName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">this</span><span class="p">.</span><span class="nx">getFullName</span><span class="p">()</span>
+<span class="w">  </span><span class="kd">let</span><span class="w"> </span><span class="nx">statement</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="sb">`</span><span class="si">${</span><span class="nx">fullName</span><span class="si">}</span><span class="sb"> is a </span><span class="si">${</span><span class="k">this</span><span class="p">.</span><span class="nx">title</span><span class="si">}</span><span class="sb">.\nHe lives in </span><span class="si">${</span><span class="k">this</span><span class="p">.</span><span class="nx">country</span><span class="si">}</span><span class="sb">.\nHe teaches </span><span class="si">${</span><span class="nx">skills</span><span class="si">}</span><span class="sb">.`</span>
+<span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="nx">statement</span>
+<span class="p">}</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">person</span><span class="p">)</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">person</span><span class="p">.</span><span class="nx">getPersonInfo</span><span class="p">())</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>Asabeneh<span class="w"> </span>Yetayeh<span class="w"> </span>is<span class="w"> </span>a<span class="w"> </span>teacher.
+He<span class="w"> </span>lives<span class="w"> </span><span class="k">in</span><span class="w"> </span>Finland.
+He<span class="w"> </span>teaches<span class="w"> </span>HTML,<span class="w"> </span>CSS,<span class="w"> </span>JavaScript,<span class="w"> </span>React,<span class="w"> </span>Node,<span class="w"> </span>MongoDB,<span class="w"> </span>Python,<span class="w"> </span>D3.js,<span class="w"> </span>Meteor,<span class="w"> </span>and<span class="w"> </span>SasS.
+</code></pre></div>
+<h3 id="metode-objek-object-methods">Metode Objek (Object Methods)</h3>
+<p>Ada berbagai metode buat manipulasi objek nih. Yuk kita lihat beberapa metode yang tersedia!</p>
+<p><em>Object.assign</em>: Buat menyalin objek tanpa modifikasi objek asli</p>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">person</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="nx">firstName</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;Asabeneh&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="nx">age</span><span class="o">:</span><span class="w"> </span><span class="mf">250</span><span class="p">,</span>
+<span class="w">  </span><span class="nx">country</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;Finland&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="nx">city</span><span class="o">:</span><span class="s1">&#39;Helsinki&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="nx">skills</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="s1">&#39;HTML&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;CSS&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;JS&#39;</span><span class="p">],</span>
+<span class="w">  </span><span class="nx">title</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;teacher&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="nx">address</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">street</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;Heitamienkatu 16&#39;</span><span class="p">,</span>
+<span class="w">    </span><span class="nx">pobox</span><span class="o">:</span><span class="w"> </span><span class="mf">2002</span><span class="p">,</span>
+<span class="w">    </span><span class="nx">city</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;Helsinki&#39;</span>
+<span class="w">  </span><span class="p">},</span>
+<span class="w">  </span><span class="nx">getPersonInfo</span><span class="o">:</span><span class="w"> </span><span class="kd">function</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="sb">`I am </span><span class="si">${</span><span class="k">this</span><span class="p">.</span><span class="nx">firstName</span><span class="si">}</span><span class="sb"> and I live in </span><span class="si">${</span><span class="k">this</span><span class="p">.</span><span class="nx">city</span><span class="si">}</span><span class="sb">, </span><span class="si">${</span><span class="k">this</span><span class="p">.</span><span class="nx">country</span><span class="si">}</span><span class="sb">. I am </span><span class="si">${</span><span class="k">this</span><span class="p">.</span><span class="nx">age</span><span class="si">}</span><span class="sb">.`</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="p">}</span>
+
+<span class="c1">//Object methods: Object.assign, Object.keys, Object.values, Object.entries</span>
+<span class="c1">//hasOwnProperty</span>
+
+<span class="kd">const</span><span class="w"> </span><span class="nx">copyPerson</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">Object</span><span class="p">.</span><span class="nx">assign</span><span class="p">({},</span><span class="w"> </span><span class="nx">person</span><span class="p">)</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">copyPerson</span><span class="p">)</span>
+</code></pre></div>
+<h4 id="mendapatkan-kunci-objek-menggunakan-objectkeys">Mendapatkan kunci objek menggunakan Object.keys()</h4>
+<p><em>Object.keys</em>: Buat dapetin kunci atau properti dari objek sebagai array</p>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">keys</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">Object</span><span class="p">.</span><span class="nx">keys</span><span class="p">(</span><span class="nx">copyPerson</span><span class="p">)</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">keys</span><span class="p">)</span><span class="w"> </span><span class="c1">//[&#39;firstName&#39;, &#39;age&#39;, &#39;country&#39;,&#39;city&#39;, &#39;skills&#39;,&#39;title&#39;, &#39;address&#39;, &#39;getPersonInfo&#39;]</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">address</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">Object</span><span class="p">.</span><span class="nx">keys</span><span class="p">(</span><span class="nx">copyPerson</span><span class="p">.</span><span class="nx">address</span><span class="p">)</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">address</span><span class="p">)</span><span class="w"> </span><span class="c1">//[&#39;street&#39;, &#39;pobox&#39;, &#39;city&#39;]</span>
+</code></pre></div>
+<h4 id="mendapatkan-nilai-objek-menggunakan-objectvalues">Mendapatkan nilai objek menggunakan Object.values()</h4>
+<p><em>Object.values</em>: Buat dapetin nilai dari objek sebagai array</p>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">values</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">Object</span><span class="p">.</span><span class="nx">values</span><span class="p">(</span><span class="nx">copyPerson</span><span class="p">)</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">values</span><span class="p">)</span>
+</code></pre></div>
+<h4 id="mendapatkan-kunci-dan-nilai-objek-menggunakan-objectentries">Mendapatkan kunci dan nilai objek menggunakan Object.entries()</h4>
+<p><em>Object.entries</em>: Buat dapetin kunci dan nilai dalam array</p>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">entries</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">Object</span><span class="p">.</span><span class="nx">entries</span><span class="p">(</span><span class="nx">copyPerson</span><span class="p">)</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">entries</span><span class="p">)</span>
+</code></pre></div>
+<h4 id="memeriksa-properti-menggunakan-hasownproperty">Memeriksa properti menggunakan hasOwnProperty()</h4>
+<p><em>hasOwnProperty</em>: Buat ngecek apakah kunci atau properti tertentu ada di dalam objek</p>
+<div class="highlight"><pre><span></span><code><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">copyPerson</span><span class="p">.</span><span class="nx">hasOwnProperty</span><span class="p">(</span><span class="s1">&#39;name&#39;</span><span class="p">))</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">copyPerson</span><span class="p">.</span><span class="nx">hasOwnProperty</span><span class="p">(</span><span class="s1">&#39;score&#39;</span><span class="p">))</span>
+</code></pre></div>
+<p>🌕 Kamu luar biasa, gaes! Sekarang kamu udah terisi penuh dengan kekuatan objek. Kamu baru aja nyelesein tantangan hari ke-8 dan selangkah lebih dekat menuju kehebatan. Gaskeun sekarang latihan buat otak dan otot kamu!</p>
+<h2 id="latihan">💻 Latihan</h2>
+<h3 id="latihan-level-1">Latihan: Level 1</h3>
+<ol>
+<li>Buat objek kosong bernama dog</li>
+<li>Cetak objek dog di konsol</li>
+<li>Tambahkan properti name, legs, color, age dan bark untuk objek dog. Properti bark adalah metode yang mengembalikan <em>woof woof</em></li>
+<li>Dapatkan nilai name, legs, color, age dan bark dari objek dog</li>
+<li>Tetapkan properti baru pada objek dog: breed, getDogInfo</li>
+</ol>
+<h3 id="latihan-level-2">Latihan: Level 2</h3>
+<ol>
+<li>Temukan orang yang memiliki banyak skill di objek users.</li>
+<li>Hitung pengguna yang logged in, hitung pengguna yang memiliki poin lebih besar atau sama dengan 50 dari objek berikut.</li>
+</ol>
+<div class="highlight"><pre><span></span><code><span class="w"> </span><span class="kd">const</span><span class="w"> </span><span class="nx">users</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+<span class="w">   </span><span class="nx">Alex</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">     </span><span class="nx">email</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;alex@alex.com&quot;</span><span class="p">,</span>
+<span class="w">     </span><span class="nx">skills</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;HTML&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;CSS&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;JavaScript&quot;</span><span class="p">],</span>
+<span class="w">     </span><span class="nx">age</span><span class="o">:</span><span class="w"> </span><span class="mf">20</span><span class="p">,</span>
+<span class="w">     </span><span class="nx">isLoggedIn</span><span class="o">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">     </span><span class="nx">points</span><span class="o">:</span><span class="w"> </span><span class="mf">30</span>
+<span class="w">   </span><span class="p">},</span>
+<span class="w">   </span><span class="nx">Asab</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">     </span><span class="nx">email</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;asab@asab.com&quot;</span><span class="p">,</span>
+<span class="w">     </span><span class="nx">skills</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;HTML&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;CSS&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;JavaScript&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;Redux&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;MongoDB&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;Express&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;React&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;Node&quot;</span><span class="p">],</span>
+<span class="w">     </span><span class="nx">age</span><span class="o">:</span><span class="w"> </span><span class="mf">25</span><span class="p">,</span>
+<span class="w">     </span><span class="nx">isLoggedIn</span><span class="o">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">     </span><span class="nx">points</span><span class="o">:</span><span class="w"> </span><span class="mf">50</span>
+<span class="w">   </span><span class="p">},</span>
+<span class="w">   </span><span class="nx">Brook</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">     </span><span class="nx">email</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;daniel@daniel.com&quot;</span><span class="p">,</span>
+<span class="w">     </span><span class="nx">skills</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;HTML&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;CSS&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;JavaScript&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;React&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;Redux&quot;</span><span class="p">],</span>
+<span class="w">     </span><span class="nx">age</span><span class="o">:</span><span class="w"> </span><span class="mf">30</span><span class="p">,</span>
+<span class="w">     </span><span class="nx">isLoggedIn</span><span class="o">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<span class="w">     </span><span class="nx">points</span><span class="o">:</span><span class="w"> </span><span class="mf">50</span>
+<span class="w">   </span><span class="p">},</span>
+<span class="w">   </span><span class="nx">Daniel</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">     </span><span class="nx">email</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;daniel@alex.com&quot;</span><span class="p">,</span>
+<span class="w">     </span><span class="nx">skills</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;HTML&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;CSS&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;JavaScript&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;Python&quot;</span><span class="p">],</span>
+<span class="w">     </span><span class="nx">age</span><span class="o">:</span><span class="w"> </span><span class="mf">20</span><span class="p">,</span>
+<span class="w">     </span><span class="nx">isLoggedIn</span><span class="o">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">     </span><span class="nx">points</span><span class="o">:</span><span class="w"> </span><span class="mf">40</span>
+<span class="w">   </span><span class="p">},</span>
+<span class="w">   </span><span class="nx">John</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">     </span><span class="nx">email</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;john@john.com&quot;</span><span class="p">,</span>
+<span class="w">     </span><span class="nx">skills</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;HTML&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;CSS&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;JavaScript&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;React&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;Redux&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;Node.js&quot;</span><span class="p">],</span>
+<span class="w">     </span><span class="nx">age</span><span class="o">:</span><span class="w"> </span><span class="mf">20</span><span class="p">,</span>
+<span class="w">     </span><span class="nx">isLoggedIn</span><span class="o">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<span class="w">     </span><span class="nx">points</span><span class="o">:</span><span class="w"> </span><span class="mf">50</span>
+<span class="w">   </span><span class="p">},</span>
+<span class="w">   </span><span class="nx">Thomas</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">     </span><span class="nx">email</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;thomas@thomas.com&quot;</span><span class="p">,</span>
+<span class="w">     </span><span class="nx">skills</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;HTML&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;CSS&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;JavaScript&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;React&quot;</span><span class="p">],</span>
+<span class="w">     </span><span class="nx">age</span><span class="o">:</span><span class="w"> </span><span class="mf">20</span><span class="p">,</span>
+<span class="w">     </span><span class="nx">isLoggedIn</span><span class="o">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">     </span><span class="nx">points</span><span class="o">:</span><span class="w"> </span><span class="mf">40</span>
+<span class="w">   </span><span class="p">},</span>
+<span class="w">   </span><span class="nx">Paul</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">     </span><span class="nx">email</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;paul@paul.com&quot;</span><span class="p">,</span>
+<span class="w">     </span><span class="nx">skills</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;HTML&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;CSS&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;JavaScript&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;MongoDB&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;Express&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;React&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;Node&quot;</span><span class="p">],</span>
+<span class="w">     </span><span class="nx">age</span><span class="o">:</span><span class="w"> </span><span class="mf">20</span><span class="p">,</span>
+<span class="w">     </span><span class="nx">isLoggedIn</span><span class="o">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">     </span><span class="nx">points</span><span class="o">:</span><span class="w"> </span><span class="mf">40</span>
+<span class="w">   </span><span class="p">}</span>
+<span class="w"> </span><span class="p">}</span>
+</code></pre></div>
+<ol>
+<li>Temukan orang yang merupakan MERN stack developer dari objek users</li>
+<li>Tetapkan nama kamu di objek users tanpa memodifikasi objek users asli</li>
+<li>Dapatkan semua kunci atau properti dari objek users</li>
+<li>Dapatkan semua nilai dari objek users</li>
+<li>Gunakan objek countries untuk mencetak nama negara, ibu kota, populasi, dan bahasa.</li>
+</ol>
+<h3 id="latihan-level-3">Latihan: Level 3</h3>
+<ol>
+<li>Buat objek literal bernama <em>personAccount</em>. Objek ini memiliki properti <em>firstName, lastName, incomes, expenses</em> dan memiliki metode <em>totalIncome, totalExpense, accountInfo, addIncome, addExpense</em> dan <em>accountBalance</em>. Incomes adalah kumpulan pendapatan dan deskripsinya dan expenses adalah kumpulan pengeluaran dan deskripsinya.</li>
+<li>**** Pertanyaan: 2, 3 dan 4 didasarkan pada dua array berikut: users dan products ()</li>
+</ol>
+<div class="highlight"><pre><span></span><code><span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">users</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="nx">_id</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;ab12ex&#39;</span><span class="p">,</span>
+<span class="w">        </span><span class="nx">username</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;Alex&#39;</span><span class="p">,</span>
+<span class="w">        </span><span class="nx">email</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;alex@alex.com&#39;</span><span class="p">,</span>
+<span class="w">        </span><span class="nx">password</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;123123&#39;</span><span class="p">,</span>
+<span class="w">        </span><span class="nx">createdAt</span><span class="o">:</span><span class="s1">&#39;08/01/2020 9:00 AM&#39;</span><span class="p">,</span>
+<span class="w">        </span><span class="nx">isLoggedIn</span><span class="o">:</span><span class="w"> </span><span class="kc">false</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="nx">_id</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;fg12cy&#39;</span><span class="p">,</span>
+<span class="w">        </span><span class="nx">username</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;Asab&#39;</span><span class="p">,</span>
+<span class="w">        </span><span class="nx">email</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;asab@asab.com&#39;</span><span class="p">,</span>
+<span class="w">        </span><span class="nx">password</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;123456&#39;</span><span class="p">,</span>
+<span class="w">        </span><span class="nx">createdAt</span><span class="o">:</span><span class="s1">&#39;08/01/2020 9:30 AM&#39;</span><span class="p">,</span>
+<span class="w">        </span><span class="nx">isLoggedIn</span><span class="o">:</span><span class="w"> </span><span class="kc">true</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="nx">_id</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;zwf8md&#39;</span><span class="p">,</span>
+<span class="w">        </span><span class="nx">username</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;Brook&#39;</span><span class="p">,</span>
+<span class="w">        </span><span class="nx">email</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;brook@brook.com&#39;</span><span class="p">,</span>
+<span class="w">        </span><span class="nx">password</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;123111&#39;</span><span class="p">,</span>
+<span class="w">        </span><span class="nx">createdAt</span><span class="o">:</span><span class="s1">&#39;08/01/2020 9:45 AM&#39;</span><span class="p">,</span>
+<span class="w">        </span><span class="nx">isLoggedIn</span><span class="o">:</span><span class="w"> </span><span class="kc">true</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="nx">_id</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;eefamr&#39;</span><span class="p">,</span>
+<span class="w">        </span><span class="nx">username</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;Martha&#39;</span><span class="p">,</span>
+<span class="w">        </span><span class="nx">email</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;martha@martha.com&#39;</span><span class="p">,</span>
+<span class="w">        </span><span class="nx">password</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;123222&#39;</span><span class="p">,</span>
+<span class="w">        </span><span class="nx">createdAt</span><span class="o">:</span><span class="s1">&#39;08/01/2020 9:50 AM&#39;</span><span class="p">,</span>
+<span class="w">        </span><span class="nx">isLoggedIn</span><span class="o">:</span><span class="w"> </span><span class="kc">false</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="nx">_id</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;ghderc&#39;</span><span class="p">,</span>
+<span class="w">        </span><span class="nx">username</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;Thomas&#39;</span><span class="p">,</span>
+<span class="w">        </span><span class="nx">email</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;thomas@thomas.com&#39;</span><span class="p">,</span>
+<span class="w">        </span><span class="nx">password</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;123333&#39;</span><span class="p">,</span>
+<span class="w">        </span><span class="nx">createdAt</span><span class="o">:</span><span class="s1">&#39;08/01/2020 10:00 AM&#39;</span><span class="p">,</span>
+<span class="w">        </span><span class="nx">isLoggedIn</span><span class="o">:</span><span class="w"> </span><span class="kc">false</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">    </span><span class="p">];</span>
+
+<span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">products</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span>
+<span class="w">  </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">_id</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;eedfcf&#39;</span><span class="p">,</span>
+<span class="w">    </span><span class="nx">name</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;mobile phone&#39;</span><span class="p">,</span>
+<span class="w">    </span><span class="nx">description</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;Huawei Honor&#39;</span><span class="p">,</span>
+<span class="w">    </span><span class="nx">price</span><span class="o">:</span><span class="w"> </span><span class="mf">200</span><span class="p">,</span>
+<span class="w">    </span><span class="nx">ratings</span><span class="o">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">      </span><span class="p">{</span><span class="w"> </span><span class="nx">userId</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;fg12cy&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">rate</span><span class="o">:</span><span class="w"> </span><span class="mf">5</span><span class="w"> </span><span class="p">},</span>
+<span class="w">      </span><span class="p">{</span><span class="w"> </span><span class="nx">userId</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;zwf8md&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">rate</span><span class="o">:</span><span class="w"> </span><span class="mf">4.5</span><span class="w"> </span><span class="p">}</span>
+<span class="w">    </span><span class="p">],</span>
+<span class="w">    </span><span class="nx">likes</span><span class="o">:</span><span class="w"> </span><span class="p">[]</span>
+<span class="w">  </span><span class="p">},</span>
+<span class="w">  </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">_id</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;aegfal&#39;</span><span class="p">,</span>
+<span class="w">    </span><span class="nx">name</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;Laptop&#39;</span><span class="p">,</span>
+<span class="w">    </span><span class="nx">description</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;MacPro: System Darwin&#39;</span><span class="p">,</span>
+<span class="w">    </span><span class="nx">price</span><span class="o">:</span><span class="w"> </span><span class="mf">2500</span><span class="p">,</span>
+<span class="w">    </span><span class="nx">ratings</span><span class="o">:</span><span class="w"> </span><span class="p">[],</span>
+<span class="w">    </span><span class="nx">likes</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="s1">&#39;fg12cy&#39;</span><span class="p">]</span>
+<span class="w">  </span><span class="p">},</span>
+<span class="w">  </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">_id</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;hedfcg&#39;</span><span class="p">,</span>
+<span class="w">    </span><span class="nx">name</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;TV&#39;</span><span class="p">,</span>
+<span class="w">    </span><span class="nx">description</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;Smart TV:Procaster&#39;</span><span class="p">,</span>
+<span class="w">    </span><span class="nx">price</span><span class="o">:</span><span class="w"> </span><span class="mf">400</span><span class="p">,</span>
+<span class="w">    </span><span class="nx">ratings</span><span class="o">:</span><span class="w"> </span><span class="p">[{</span><span class="w"> </span><span class="nx">userId</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;fg12cy&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">rate</span><span class="o">:</span><span class="w"> </span><span class="mf">5</span><span class="w"> </span><span class="p">}],</span>
+<span class="w">    </span><span class="nx">likes</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="s1">&#39;fg12cy&#39;</span><span class="p">]</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="p">]</span>
+</code></pre></div>
+<p>Bayangkan kamu mendapatkan koleksi users di atas dari database MongoDB.
+    a. Buat fungsi bernama signUp yang memungkinkan pengguna untuk ditambahkan ke koleksi. Jika pengguna sudah ada, beri tahu pengguna bahwa dia sudah memiliki akun.<br />
+    b. Buat fungsi bernama signIn yang memungkinkan pengguna untuk masuk ke aplikasi  </p>
+<ol>
+<li>
+<p>Array products memiliki tiga elemen dan masing-masing memiliki enam properti.
+    a. Buat fungsi bernama rateProduct yang menilai produk
+    b. Buat fungsi bernama averageRating yang menghitung rata-rata penilaian suatu produk  </p>
+</li>
+<li>
+<p>Buat fungsi bernama likeProduct. Fungsi ini akan membantu untuk menyukai produk jika belum disukai dan menghapus like jika sudah disukai.</p>
+</li>
+</ol>
+<p>🎉 SELAMAT ! 🎉</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Tersalin ke clipboard", "clipboard.copy": "Salin ke clipboard", "search.result.more.one": "1 lagi di halaman ini", "search.result.more.other": "# lagi di halaman ini", "search.result.none": "Tidak ada dokumen yang sesuai", "search.result.one": "1 dokumen ditemukan", "search.result.other": "# dokumen ditemukan", "search.result.placeholder": "Ketik untuk mulai pencarian", "search.result.term.missing": "Tidak ada", "select.version": "Pilih versi"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>

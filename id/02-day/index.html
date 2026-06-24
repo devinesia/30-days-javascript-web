@@ -1,0 +1,2626 @@
+
+<!doctype html>
+<html lang="id" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../01-day/">
+      
+      
+        <link rel="next" href="../03-day/">
+      
+      
+        
+          <link rel="alternate" href="../../02-day/" hreflang="en">
+        
+          <link rel="alternate" href="./" hreflang="id">
+        
+      
+      
+      <link rel="icon" href="../../images/javascript.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>📔 Hari 2 - Gaskeun Lanjut! - 30 Days Javascript</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="amber" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#hari-2-gaskeun-lanjut" class="md-skip">
+          Lewati ke isi
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../" title="30 Days Javascript" class="md-header__button md-logo" aria-label="30 Days Javascript" data-md-component="logo">
+      
+  <img src="../../images/javascript.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            30 Days Javascript
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              📔 Hari 2 - Gaskeun Lanjut!
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+      <div class="md-header__option">
+  <div class="md-select">
+    
+    <button class="md-header__button md-icon" aria-label="Pilih bahasa">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.5 17.5 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2zm-2.62 7 1.62-4.33L19.12 17z"/></svg>
+    </button>
+    <div class="md-select__inner">
+      <ul class="md-select__list">
+        
+          <li class="md-select__item">
+            <a href="../../02-day/" hreflang="en" class="md-select__link">
+              English
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="./" hreflang="id" class="md-select__link">
+              Bahasa Indonesia
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Cari" placeholder="Cari" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Cari">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Kosongkan" aria-label="Kosongkan" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Mempersiapkan pencarian
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/devinesia/30-days-javascript-web" title="Ke repositori" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigasi" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../" title="30 Days Javascript" class="md-nav__button md-logo" aria-label="30 Days Javascript" data-md-component="logo">
+      
+  <img src="../../images/javascript.png" alt="logo">
+
+    </a>
+    30 Days Javascript
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/devinesia/30-days-javascript-web" title="Ke repositori" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Yuk Mulai!
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📔 Hari 1 - Yuk Mulai!
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📔 Hari 2 - Gaskeun Lanjut!
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📔 Hari 2 - Gaskeun Lanjut!
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Daftar isi">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Daftar isi
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#tipe-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tipe Data
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Tipe Data">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tipe-data-primitif" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tipe Data Primitif
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tipe-data-non-primitif" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tipe Data Non-Primitif
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#numbers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Numbers
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Numbers">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#mendeklarasikan-tipe-data-number" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mendeklarasikan Tipe Data Number
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#math-object" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Math Object
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Math Object">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#generator-angka-acak" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Generator Angka Acak
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#strings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Strings
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Strings">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#penggabungan-string-string-concatenation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Penggabungan String (String Concatenation)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Penggabungan String (String Concatenation)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#menggabungkan-menggunakan-operator-penjumlahan" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Menggabungkan Menggunakan Operator Penjumlahan
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#string-literal-panjang" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        String Literal Panjang
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#escape-sequences-dalam-string" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Escape Sequences dalam String
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#template-literals-template-strings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Template Literals (Template Strings)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#metode-string" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Metode String
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#memeriksa-tipe-data-dan-casting" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Memeriksa Tipe Data dan Casting
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Memeriksa Tipe Data dan Casting">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#memeriksa-tipe-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Memeriksa Tipe Data
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mengubah-tipe-data-casting" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mengubah Tipe Data (Casting)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Mengubah Tipe Data (Casting)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#string-ke-int" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        String ke Int
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#string-ke-float" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        String ke Float
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#float-ke-int" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Float ke Int
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hari-2-latihan" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        💻 Hari 2: Latihan
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="💻 Hari 2: Latihan">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#latihan-level-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Latihan: Level 1
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#latihan-level-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Latihan: Level 2
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#latihan-level-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Latihan: Level 3
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📔 Hari 3 - Oke Gas!
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📔 Hari 4 - Yuk Ngoding!
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../05-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📔 Hari 5 - Mantap Lanjut!
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../06-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📔 Hari 6
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../07-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📔 Hari 7
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../08-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📔 Hari 8
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../09-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📔 Hari 9
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../10-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📔 Hari 10
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../11-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📘 Hari 11
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../12-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📘 Hari 12
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../13-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📘 Hari 13
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../14-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📘 Hari 14
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../15-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📘 Hari 15
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../16-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📘 Hari 16
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../17-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📘 Hari 17
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../18-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📘 Hari 18
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../19-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📘 Hari 19
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📘 Hari 20
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../21-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📙 Hari 21
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../22-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📙 Hari 22
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../23-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📙 Hari 23
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../24-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📙 Hari 24
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../25-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📙 Hari 25
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../26-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📔 Hari 26
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../27-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📔 Hari 27
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../28-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📔 Hari 28
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../29-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📔 Hari 29
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../30-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📔 Hari 30
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Daftar isi">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Daftar isi
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#tipe-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tipe Data
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Tipe Data">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tipe-data-primitif" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tipe Data Primitif
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tipe-data-non-primitif" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tipe Data Non-Primitif
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#numbers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Numbers
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Numbers">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#mendeklarasikan-tipe-data-number" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mendeklarasikan Tipe Data Number
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#math-object" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Math Object
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Math Object">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#generator-angka-acak" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Generator Angka Acak
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#strings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Strings
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Strings">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#penggabungan-string-string-concatenation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Penggabungan String (String Concatenation)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Penggabungan String (String Concatenation)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#menggabungkan-menggunakan-operator-penjumlahan" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Menggabungkan Menggunakan Operator Penjumlahan
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#string-literal-panjang" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        String Literal Panjang
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#escape-sequences-dalam-string" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Escape Sequences dalam String
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#template-literals-template-strings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Template Literals (Template Strings)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#metode-string" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Metode String
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#memeriksa-tipe-data-dan-casting" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Memeriksa Tipe Data dan Casting
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Memeriksa Tipe Data dan Casting">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#memeriksa-tipe-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Memeriksa Tipe Data
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mengubah-tipe-data-casting" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mengubah Tipe Data (Casting)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Mengubah Tipe Data (Casting)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#string-ke-int" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        String ke Int
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#string-ke-float" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        String ke Float
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#float-ke-int" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Float ke Int
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hari-2-latihan" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        💻 Hari 2: Latihan
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="💻 Hari 2: Latihan">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#latihan-level-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Latihan: Level 1
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#latihan-level-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Latihan: Level 2
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#latihan-level-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Latihan: Level 3
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="hari-2-gaskeun-lanjut">📔 Hari 2 - Gaskeun Lanjut!</h1>
+<h2 id="tipe-data">Tipe Data</h2>
+<p>Di bagian sebelumnya, kita udah dikit nyinggung soal tipe data. Data atau nilai itu punya tipe data. Tipe data ngejelasin karakteristik dari data. Tipe data bisa dibagi jadi dua nih:</p>
+<ol>
+<li>Tipe data primitif</li>
+<li>Tipe data non-primitif (Referensi Objek)</li>
+</ol>
+<h3 id="tipe-data-primitif">Tipe Data Primitif</h3>
+<p>Tipe data primitif dalam JavaScript meliputi:</p>
+<ol>
+<li>Numbers - Bilangan bulat, desimal</li>
+<li>Strings - Data apa pun dalam tanda kutip tunggal, ganda, atau backtick</li>
+<li>Booleans - nilai true atau false</li>
+<li>Null - nilai kosong atau tidak ada nilai</li>
+<li>Undefined - variabel yang dideklarasikan tanpa nilai</li>
+<li>Symbol - Nilai unik yang dapat dibuat oleh konstruktor Symbol</li>
+</ol>
+<p>Tipe data non-primitif dalam JavaScript meliputi:</p>
+<ol>
+<li>Objects</li>
+<li>Arrays</li>
+</ol>
+<p>Sekarang, yuk kita lihat apa sih sebenernya arti tipe data primitif dan non-primitif.
+Tipe data <em>Primitif</em> adalah tipe data yang immutable (nggak bisa dimodifikasi). Begitu tipe data primitif dibuat, kita nggak bisa modifikasi lagi.</p>
+<p><strong>Contoh:</strong></p>
+<div class="highlight"><pre><span></span><code><span class="kd">let</span><span class="w"> </span><span class="nx">word</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;JavaScript&#39;</span>
+</code></pre></div>
+<p>Kalau kita nyoba modifikasi string yang tersimpan di variabel <em>word</em>, JavaScript seharusnya nampilin error. Setiap data di dalam tanda kutip tunggal, ganda, atau backtick adalah tipe data string.</p>
+<div class="highlight"><pre><span></span><code><span class="nx">word</span><span class="p">[</span><span class="mf">0</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;Y&#39;</span>
+</code></pre></div>
+<p>Ekspresi ini nggak ngubah string yang tersimpan di variabel <em>word</em>. Jadi, bisa dibilang string itu nggak bisa dimodifikasi alias immutable.
+Tipe data primitif dibandingin berdasarkan nilainya. Yuk kita bandingin nilai data yang beda-beda. Lihat contoh di bawah nih:</p>
+<div class="highlight"><pre><span></span><code><span class="kd">let</span><span class="w"> </span><span class="nx">numOne</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">3</span>
+<span class="kd">let</span><span class="w"> </span><span class="nx">numTwo</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">3</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">numOne</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="nx">numTwo</span><span class="p">)</span><span class="w">      </span><span class="c1">// true</span>
+
+<span class="kd">let</span><span class="w"> </span><span class="nx">js</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;JavaScript&#39;</span>
+<span class="kd">let</span><span class="w"> </span><span class="nx">py</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;Python&#39;</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">js</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="nx">py</span><span class="p">)</span><span class="w">             </span><span class="c1">//false </span>
+
+<span class="kd">let</span><span class="w"> </span><span class="nx">lightOn</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">true</span>
+<span class="kd">let</span><span class="w"> </span><span class="nx">lightOff</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">false</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">lightOn</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="nx">lightOff</span><span class="p">)</span><span class="w"> </span><span class="c1">// false</span>
+</code></pre></div>
+<h3 id="tipe-data-non-primitif">Tipe Data Non-Primitif</h3>
+<p>Tipe data <em>Non-primitif</em> bisa dimodifikasi alias mutable. Kita bisa modifikasi nilai tipe data non-primitif setelah dibuat.
+Yuk kita lihat dengan bikin sebuah array. Array itu daftar nilai data dalam tanda kurung siku. Array bisa berisi tipe data yang sama atau beda-beda. Nilai array diakses berdasarkan indeksnya. Di JavaScript, indeks array dimulai dari nol. Artinya, elemen pertama array ada di indeks nol, elemen kedua di indeks satu, elemen ketiga di indeks dua, dan seterusnya.</p>
+<div class="highlight"><pre><span></span><code><span class="kd">let</span><span class="w"> </span><span class="nx">nums</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="mf">1</span><span class="p">,</span><span class="w"> </span><span class="mf">2</span><span class="p">,</span><span class="w"> </span><span class="mf">3</span><span class="p">]</span>
+<span class="nx">nums</span><span class="p">[</span><span class="mf">0</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">10</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">nums</span><span class="p">)</span><span class="w">  </span><span class="c1">// [10, 2, 3]</span>
+</code></pre></div>
+<p>Nah, kayak yang kamu lihat, array yang merupakan tipe data non-primitif bersifat mutable. Tipe data non-primitif nggak bisa dibandingin berdasarkan nilai. Meskipun dua tipe data non-primitif punya properti dan nilai yang sama, mereka nggak strictly equal.</p>
+<div class="highlight"><pre><span></span><code><span class="kd">let</span><span class="w"> </span><span class="nx">nums</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="mf">1</span><span class="p">,</span><span class="w"> </span><span class="mf">2</span><span class="p">,</span><span class="w"> </span><span class="mf">3</span><span class="p">]</span>
+<span class="kd">let</span><span class="w"> </span><span class="nx">numbers</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="mf">1</span><span class="p">,</span><span class="w"> </span><span class="mf">2</span><span class="p">,</span><span class="w"> </span><span class="mf">3</span><span class="p">]</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">nums</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="nx">numbers</span><span class="p">)</span><span class="w">  </span><span class="c1">// false</span>
+
+<span class="kd">let</span><span class="w"> </span><span class="nx">userOne</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+<span class="nx">name</span><span class="o">:</span><span class="s1">&#39;Asabeneh&#39;</span><span class="p">,</span>
+<span class="nx">role</span><span class="o">:</span><span class="s1">&#39;teaching&#39;</span><span class="p">,</span>
+<span class="nx">country</span><span class="o">:</span><span class="s1">&#39;Finland&#39;</span>
+<span class="p">}</span>
+
+<span class="kd">let</span><span class="w"> </span><span class="nx">userTwo</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+<span class="nx">name</span><span class="o">:</span><span class="s1">&#39;Asabeneh&#39;</span><span class="p">,</span>
+<span class="nx">role</span><span class="o">:</span><span class="s1">&#39;teaching&#39;</span><span class="p">,</span>
+<span class="nx">country</span><span class="o">:</span><span class="s1">&#39;Finland&#39;</span>
+<span class="p">}</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">userOne</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="nx">userTwo</span><span class="p">)</span><span class="w"> </span><span class="c1">// false</span>
+</code></pre></div>
+<p>Aturan praktisnya, kita nggak membandingin tipe data non-primitif. Jangan bandingin array, fungsi, atau objek ya!
+Nilai non-primitif disebut tipe referensi, karena mereka dibandingin berdasarkan referensi, bukan nilai. Dua objek cuma strictly equal kalau mereka merujuk ke objek dasar yang sama.</p>
+<div class="highlight"><pre><span></span><code><span class="kd">let</span><span class="w"> </span><span class="nx">nums</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="mf">1</span><span class="p">,</span><span class="w"> </span><span class="mf">2</span><span class="p">,</span><span class="w"> </span><span class="mf">3</span><span class="p">]</span>
+<span class="kd">let</span><span class="w"> </span><span class="nx">numbers</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">nums</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">nums</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="nx">numbers</span><span class="p">)</span><span class="w">  </span><span class="c1">// true</span>
+
+<span class="kd">let</span><span class="w"> </span><span class="nx">userOne</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+<span class="nx">name</span><span class="o">:</span><span class="s1">&#39;Asabeneh&#39;</span><span class="p">,</span>
+<span class="nx">role</span><span class="o">:</span><span class="s1">&#39;teaching&#39;</span><span class="p">,</span>
+<span class="nx">country</span><span class="o">:</span><span class="s1">&#39;Finland&#39;</span>
+<span class="p">}</span>
+
+<span class="kd">let</span><span class="w"> </span><span class="nx">userTwo</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">userOne</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">userOne</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="nx">userTwo</span><span class="p">)</span><span class="w">  </span><span class="c1">// true</span>
+</code></pre></div>
+<p>Kalau kamu masih agak bingung bedain tipe data primitif dan non-primitif, santuy aja, kamu nggak sendirian kok. Tenang dan lanjut aja ke bagian berikutnya, nanti coba lagi setelah beberapa waktu. Sekarang yuk kita mulai tipe data dengan tipe number!</p>
+<h2 id="numbers">Numbers</h2>
+<p>Numbers adalah bilangan bulat dan nilai desimal yang bisa ngelakuin semua operasi aritmatika.
+Yuk lihat beberapa contoh Numbers.</p>
+<h3 id="mendeklarasikan-tipe-data-number">Mendeklarasikan Tipe Data Number</h3>
+<div class="highlight"><pre><span></span><code><span class="kd">let</span><span class="w"> </span><span class="nx">age</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">35</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">gravity</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">9.81</span><span class="w">  </span><span class="c1">// kita gunakan const untuk nilai yang tidak berubah, konstanta gravitasi dalam m/s2</span>
+<span class="kd">let</span><span class="w"> </span><span class="nx">mass</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">72</span><span class="w">         </span><span class="c1">// massa dalam Kilogram</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">PI</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">3.14</span><span class="w">       </span><span class="c1">// pi, konstanta geometris</span>
+
+<span class="c1">// Contoh Lainnya</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">boilingPoint</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">100</span><span class="w"> </span><span class="c1">// suhu dalam oC, titik didih air yang merupakan konstanta</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">bodyTemp</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">37</span><span class="w">      </span><span class="c1">// oC suhu rata-rata tubuh manusia, yang merupakan konstanta</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">age</span><span class="p">,</span><span class="w"> </span><span class="nx">gravity</span><span class="p">,</span><span class="w"> </span><span class="nx">mass</span><span class="p">,</span><span class="w"> </span><span class="nx">PI</span><span class="p">,</span><span class="w"> </span><span class="nx">boilingPoint</span><span class="p">,</span><span class="w"> </span><span class="nx">bodyTemp</span><span class="p">)</span>
+</code></pre></div>
+<h3 id="math-object">Math Object</h3>
+<p>Di JavaScript, Math Object nyediain banyak metode buat bekerja dengan angka. Mantap kan?</p>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">PI</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">Math</span><span class="p">.</span><span class="nx">PI</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">PI</span><span class="p">)</span><span class="w">                            </span><span class="c1">// 3.141592653589793</span>
+
+<span class="c1">// Pembulatan ke angka terdekat</span>
+<span class="c1">// jika di atas .5 naik, jika kurang dari 0.5 turun</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nb">Math</span><span class="p">.</span><span class="nx">round</span><span class="p">(</span><span class="nx">PI</span><span class="p">))</span><span class="w">                </span><span class="c1">// 3 untuk membulatkan nilai ke angka terdekat</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nb">Math</span><span class="p">.</span><span class="nx">round</span><span class="p">(</span><span class="mf">9.81</span><span class="p">))</span><span class="w">              </span><span class="c1">// 10</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nb">Math</span><span class="p">.</span><span class="nx">floor</span><span class="p">(</span><span class="nx">PI</span><span class="p">))</span><span class="w">                </span><span class="c1">// 3 pembulatan ke bawah</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nb">Math</span><span class="p">.</span><span class="nx">ceil</span><span class="p">(</span><span class="nx">PI</span><span class="p">))</span><span class="w">                 </span><span class="c1">// 4 pembulatan ke atas</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nb">Math</span><span class="p">.</span><span class="nx">min</span><span class="p">(</span><span class="o">-</span><span class="mf">5</span><span class="p">,</span><span class="w"> </span><span class="mf">3</span><span class="p">,</span><span class="w"> </span><span class="mf">20</span><span class="p">,</span><span class="w"> </span><span class="mf">4</span><span class="p">,</span><span class="w"> </span><span class="mf">5</span><span class="p">,</span><span class="w"> </span><span class="mf">10</span><span class="p">))</span><span class="w"> </span><span class="c1">// -5, mengembalikan nilai minimum</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nb">Math</span><span class="p">.</span><span class="nx">max</span><span class="p">(</span><span class="o">-</span><span class="mf">5</span><span class="p">,</span><span class="w"> </span><span class="mf">3</span><span class="p">,</span><span class="w"> </span><span class="mf">20</span><span class="p">,</span><span class="w"> </span><span class="mf">4</span><span class="p">,</span><span class="w"> </span><span class="mf">5</span><span class="p">,</span><span class="w"> </span><span class="mf">10</span><span class="p">))</span><span class="w"> </span><span class="c1">// 20, mengembalikan nilai maksimum</span>
+
+<span class="kd">const</span><span class="w"> </span><span class="nx">randNum</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">Math</span><span class="p">.</span><span class="nx">random</span><span class="p">()</span><span class="w"> </span><span class="c1">// membuat angka acak antara 0 hingga 0.999999</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">randNum</span><span class="p">)</span>
+
+<span class="c1">// Mari kita buat angka acak antara 0 hingga 10</span>
+
+<span class="kd">const</span><span class="w"> </span><span class="nx">num</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">Math</span><span class="p">.</span><span class="nx">floor</span><span class="p">(</span><span class="nb">Math</span><span class="p">.</span><span class="nx">random</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mf">11</span><span class="p">)</span><span class="w"> </span><span class="c1">// membuat angka acak antara 0 dan 10</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">num</span><span class="p">)</span>
+
+<span class="c1">//Nilai absolut</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nb">Math</span><span class="p">.</span><span class="nx">abs</span><span class="p">(</span><span class="o">-</span><span class="mf">10</span><span class="p">))</span><span class="w">      </span><span class="c1">// 10</span>
+
+<span class="c1">//Akar kuadrat</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nb">Math</span><span class="p">.</span><span class="nx">sqrt</span><span class="p">(</span><span class="mf">100</span><span class="p">))</span><span class="w">     </span><span class="c1">// 10</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nb">Math</span><span class="p">.</span><span class="nx">sqrt</span><span class="p">(</span><span class="mf">2</span><span class="p">))</span><span class="w">       </span><span class="c1">// 1.4142135623730951</span>
+
+<span class="c1">// Pangkat</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nb">Math</span><span class="p">.</span><span class="nx">pow</span><span class="p">(</span><span class="mf">3</span><span class="p">,</span><span class="w"> </span><span class="mf">2</span><span class="p">))</span><span class="w">     </span><span class="c1">// 9</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nb">Math</span><span class="p">.</span><span class="nx">E</span><span class="p">)</span><span class="w">             </span><span class="c1">// 2.718</span>
+
+<span class="c1">// Logaritma</span>
+<span class="c1">// Mengembalikan logaritma natural dengan basis E dari x, Math.log(x)</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nb">Math</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="mf">2</span><span class="p">))</span><span class="w">        </span><span class="c1">// 0.6931471805599453</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nb">Math</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="mf">10</span><span class="p">))</span><span class="w">       </span><span class="c1">// 2.302585092994046</span>
+
+<span class="c1">// Mengembalikan logaritma natural dari 2 dan 10 secara berturut-turut</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nb">Math</span><span class="p">.</span><span class="nx">LN2</span><span class="p">)</span><span class="w">           </span><span class="c1">// 0.6931471805599453</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nb">Math</span><span class="p">.</span><span class="nx">LN10</span><span class="p">)</span><span class="w">          </span><span class="c1">// 2.302585092994046</span>
+
+<span class="c1">// Trigonometri</span>
+<span class="nb">Math</span><span class="p">.</span><span class="nx">sin</span><span class="p">(</span><span class="mf">0</span><span class="p">)</span>
+<span class="nb">Math</span><span class="p">.</span><span class="nx">sin</span><span class="p">(</span><span class="mf">60</span><span class="p">)</span>
+
+<span class="nb">Math</span><span class="p">.</span><span class="nx">cos</span><span class="p">(</span><span class="mf">0</span><span class="p">)</span>
+<span class="nb">Math</span><span class="p">.</span><span class="nx">cos</span><span class="p">(</span><span class="mf">60</span><span class="p">)</span>
+</code></pre></div>
+<h4 id="generator-angka-acak">Generator Angka Acak</h4>
+<p>JavaScript Math Object punya metode random() buat ngehasilin angka acak dari 0 sampai 0.999999999... Seru kan?</p>
+<div class="highlight"><pre><span></span><code><span class="kd">let</span><span class="w"> </span><span class="nx">randomNum</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">Math</span><span class="p">.</span><span class="nx">random</span><span class="p">()</span><span class="w"> </span><span class="c1">// menghasilkan 0 hingga 0.999...</span>
+</code></pre></div>
+<p>Sekarang, yuk kita lihat gimana kita bisa pake metode random() buat ngehasilin angka acak antara 0 dan 10:</p>
+<div class="highlight"><pre><span></span><code><span class="kd">let</span><span class="w"> </span><span class="nx">randomNum</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">Math</span><span class="p">.</span><span class="nx">random</span><span class="p">()</span><span class="w">         </span><span class="c1">// menghasilkan 0 hingga 0.999</span>
+<span class="kd">let</span><span class="w"> </span><span class="nx">numBtnZeroAndTen</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">randomNum</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mf">11</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">numBtnZeroAndTen</span><span class="p">)</span><span class="w">         </span><span class="c1">// ini menghasilkan: min 0 dan max 10.99</span>
+
+<span class="kd">let</span><span class="w"> </span><span class="nx">randomNumRoundToFloor</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">Math</span><span class="p">.</span><span class="nx">floor</span><span class="p">(</span><span class="nx">numBtnZeroAndTen</span><span class="p">)</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">randomNumRoundToFloor</span><span class="p">)</span><span class="w">    </span><span class="c1">// ini menghasilkan antara 0 dan 10</span>
+</code></pre></div>
+<h2 id="strings">Strings</h2>
+<p>Strings itu teks, yang ada di bawah tanda kutip <strong><em>tunggal</em></strong> , <strong><em>ganda</em></strong>, <strong><em>back-tick</em></strong>. Buat mendeklarasikan string, kita perlu nama variabel, operator assignment, dan nilai dalam tanda kutip tunggal, ganda, atau backtick.
+Yuk lihat beberapa contoh string:</p>
+<div class="highlight"><pre><span></span><code><span class="kd">let</span><span class="w"> </span><span class="nx">space</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39; &#39;</span><span class="w">           </span><span class="c1">// string spasi kosong</span>
+<span class="kd">let</span><span class="w"> </span><span class="nx">firstName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;Asabeneh&#39;</span>
+<span class="kd">let</span><span class="w"> </span><span class="nx">lastName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;Yetayeh&#39;</span>
+<span class="kd">let</span><span class="w"> </span><span class="nx">country</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;Finland&#39;</span>
+<span class="kd">let</span><span class="w"> </span><span class="nx">city</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;Helsinki&#39;</span>
+<span class="kd">let</span><span class="w"> </span><span class="nx">language</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;JavaScript&#39;</span>
+<span class="kd">let</span><span class="w"> </span><span class="nx">job</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;teacher&#39;</span>
+<span class="kd">let</span><span class="w"> </span><span class="nx">quote</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;The saying,&#39;Seeing is Believing&#39; is not correct in 2020.&quot;</span>
+<span class="kd">let</span><span class="w"> </span><span class="nx">quotWithBackTick</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="sb">`The saying,&#39;Seeing is Believing&#39; is not correct in 2020.`</span>
+</code></pre></div>
+<h3 id="penggabungan-string-string-concatenation">Penggabungan String (String Concatenation)</h3>
+<p>Ngehubungin dua atau lebih string bareng-bareng disebut concatenation.
+Pake string yang udah dideklarasikan di bagian String sebelumnya:</p>
+<div class="highlight"><pre><span></span><code><span class="kd">let</span><span class="w"> </span><span class="nx">fullName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">firstName</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">space</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">lastName</span><span class="p">;</span><span class="w"> </span><span class="c1">// concatenation, menggabungkan dua string.</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">fullName</span><span class="p">);</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>Asabeneh<span class="w"> </span>Yetayeh
+</code></pre></div>
+<p>Kita bisa gabungin string dengan berbagai cara.</p>
+<h4 id="menggabungkan-menggunakan-operator-penjumlahan">Menggabungkan Menggunakan Operator Penjumlahan</h4>
+<p>Gabungin pake operator penjumlahan itu cara lama. Cara ini cukup melelahkan dan gampang error. Penting sih buat tahu cara ini, tapi gue saranin banget pake template string ES6 (nanti dijelasin ya).</p>
+<div class="highlight"><pre><span></span><code><span class="c1">// Mendeklarasikan variabel berbeda dengan tipe data berbeda</span>
+<span class="kd">let</span><span class="w"> </span><span class="nx">space</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39; &#39;</span>
+<span class="kd">let</span><span class="w"> </span><span class="nx">firstName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;Asabeneh&#39;</span>
+<span class="kd">let</span><span class="w"> </span><span class="nx">lastName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;Yetayeh&#39;</span>
+<span class="kd">let</span><span class="w"> </span><span class="nx">country</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;Finland&#39;</span>
+<span class="kd">let</span><span class="w"> </span><span class="nx">city</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;Helsinki&#39;</span>
+<span class="kd">let</span><span class="w"> </span><span class="nx">language</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;JavaScript&#39;</span>
+<span class="kd">let</span><span class="w"> </span><span class="nx">job</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;teacher&#39;</span>
+<span class="kd">let</span><span class="w"> </span><span class="nx">age</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">250</span>
+
+
+<span class="kd">let</span><span class="w"> </span><span class="nx">fullName</span><span class="w"> </span><span class="o">=</span><span class="nx">firstName</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">space</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">lastName</span>
+<span class="kd">let</span><span class="w"> </span><span class="nx">personInfoOne</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">fullName</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s1">&#39;. I am &#39;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">age</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s1">&#39;. I live in &#39;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">country</span><span class="p">;</span><span class="w"> </span><span class="c1">// penambahan string ES5</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">personInfoOne</span><span class="p">)</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>Asabeneh<span class="w"> </span>Yetayeh.<span class="w"> </span>I<span class="w"> </span>am<span class="w"> </span><span class="m">250</span>.<span class="w"> </span>I<span class="w"> </span>live<span class="w"> </span><span class="k">in</span><span class="w"> </span>Finland
+</code></pre></div>
+<h4 id="string-literal-panjang">String Literal Panjang</h4>
+<p>Sebuah string bisa berupa satu karakter, paragraf, atau satu halaman penuh. Kalau panjang string terlalu gede, dia nggak muat dalam satu baris. Kita bisa pake karakter backslash (\) di akhir setiap baris buat nunjukin kalau stringnya bakal lanjut di baris berikutnya.
+<strong>Contoh:</strong></p>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">paragraph</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;My name is Asabeneh Yetayeh. I live in Finland, Helsinki.\</span>
+<span class="s2">I am a teacher and I love teaching. I teach HTML, CSS, JavaScript, React, Redux, \</span>
+<span class="s2">Node.js, Python, Data Analysis and D3.js for anyone who is interested to learn. \</span>
+<span class="s2">In the end of 2019, I was thinking to expand my teaching and to reach \</span>
+<span class="s2">to global audience and I started a Python challenge from November 20 - December 19.\</span>
+<span class="s2">It was one of the most rewarding and inspiring experience.\</span>
+<span class="s2">Now, we are in 2020. I am enjoying preparing the 30DaysOfJavaScript challenge and \</span>
+<span class="s2">I hope you are enjoying too.&quot;</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">paragraph</span><span class="p">)</span>
+</code></pre></div>
+<h4 id="escape-sequences-dalam-string">Escape Sequences dalam String</h4>
+<p>Di JavaScript dan bahasa pemrograman lainnya, \ diikuti oleh beberapa karakter adalah escape sequence. Yuk kita lihat karakter escape yang paling umum:</p>
+<ul>
+<li>\n: baris baru</li>
+<li>\t: Tab, berarti 8 spasi</li>
+<li>\\: Back slash</li>
+<li>\': Kutip tunggal (')</li>
+<li>\": Kutip ganda (")</li>
+</ul>
+<div class="highlight"><pre><span></span><code><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;I hope everyone is enjoying the 30 Days Of JavaScript challenge.\nDo you ?&#39;</span><span class="p">)</span><span class="w"> </span><span class="c1">// line break</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;Days\tTopics\tExercises&#39;</span><span class="p">)</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;Day 1\t3\t5&#39;</span><span class="p">)</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;Day 2\t3\t5&#39;</span><span class="p">)</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;Day 3\t3\t5&#39;</span><span class="p">)</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;Day 4\t3\t5&#39;</span><span class="p">)</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;This is a backslash  symbol (\\)&#39;</span><span class="p">)</span><span class="w"> </span><span class="c1">// Untuk menulis backslash</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;In every programming language it starts with \&quot;Hello, World!\&quot;&#39;</span><span class="p">)</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;In every programming language it starts with \&#39;Hello, World!\&#39;&quot;</span><span class="p">)</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;The saying \&#39;Seeing is Believing\&#39; isn\&#39;t correct in 2020&#39;</span><span class="p">)</span>
+</code></pre></div>
+<p>Output di konsol:</p>
+<div class="highlight"><pre><span></span><code>I<span class="w"> </span>hope<span class="w"> </span>everyone<span class="w"> </span>is<span class="w"> </span>enjoying<span class="w"> </span>the<span class="w"> </span><span class="m">30</span><span class="w"> </span>Days<span class="w"> </span>Of<span class="w"> </span>JavaScript<span class="w"> </span>challenge.
+Do<span class="w"> </span>you<span class="w"> </span>?
+Days<span class="w">  </span>Topics<span class="w">  </span>Exercises
+Day<span class="w"> </span><span class="m">1</span><span class="w"> </span><span class="m">3</span><span class="w"> </span><span class="m">5</span>
+Day<span class="w"> </span><span class="m">2</span><span class="w"> </span><span class="m">3</span><span class="w"> </span><span class="m">5</span>
+Day<span class="w"> </span><span class="m">3</span><span class="w"> </span><span class="m">3</span><span class="w"> </span><span class="m">5</span>
+Day<span class="w"> </span><span class="m">4</span><span class="w"> </span><span class="m">3</span><span class="w"> </span><span class="m">5</span>
+This<span class="w"> </span>is<span class="w"> </span>a<span class="w"> </span>backslash<span class="w">  </span>symbol<span class="w"> </span><span class="o">(</span><span class="se">\)</span>
+In<span class="w"> </span>every<span class="w"> </span>programming<span class="w"> </span>language<span class="w"> </span>it<span class="w"> </span>starts<span class="w"> </span>with<span class="w"> </span><span class="s2">&quot;Hello, World!&quot;</span>
+In<span class="w"> </span>every<span class="w"> </span>programming<span class="w"> </span>language<span class="w"> </span>it<span class="w"> </span>starts<span class="w"> </span>with<span class="w"> </span><span class="s1">&#39;Hello, World!&#39;</span>
+The<span class="w"> </span>saying<span class="w"> </span><span class="s1">&#39;Seeing is Believing&#39;</span><span class="w"> </span>isn<span class="err">&#39;</span>t<span class="w"> </span>correct<span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="m">2020</span>
+</code></pre></div>
+<h4 id="template-literals-template-strings">Template Literals (Template Strings)</h4>
+<p>Buat bikin template string, kita pake dua back-tick. Kita bisa nyuntikin data sebagai ekspresi di dalam template string. Buat nyuntikin data, kita bungkus ekspresi dengan kurung kurawal ({}) yang didahului tanda $. Lihat sintaks di bawah nih:</p>
+<div class="highlight"><pre><span></span><code><span class="c1">//Sintaks</span>
+<span class="sb">`String literal text`</span>
+<span class="sb">`String literal text </span><span class="si">${</span><span class="nx">expression</span><span class="si">}</span><span class="sb">`</span>
+</code></pre></div>
+<p><strong>Contoh: 1</strong></p>
+<div class="highlight"><pre><span></span><code><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="sb">`The sum of 2 and 3 is 5`</span><span class="p">)</span><span class="w">              </span><span class="c1">// menulis data secara statis</span>
+<span class="kd">let</span><span class="w"> </span><span class="nx">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">2</span>
+<span class="kd">let</span><span class="w"> </span><span class="nx">b</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">3</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="sb">`The sum of </span><span class="si">${</span><span class="nx">a</span><span class="si">}</span><span class="sb"> and </span><span class="si">${</span><span class="nx">b</span><span class="si">}</span><span class="sb"> is </span><span class="si">${</span><span class="nx">a</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">b</span><span class="si">}</span><span class="sb">`</span><span class="p">)</span><span class="w"> </span><span class="c1">// menyuntikkan data secara dinamis</span>
+</code></pre></div>
+<p><strong>Contoh:2</strong></p>
+<div class="highlight"><pre><span></span><code><span class="kd">let</span><span class="w"> </span><span class="nx">firstName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;Asabeneh&#39;</span>
+<span class="kd">let</span><span class="w"> </span><span class="nx">lastName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;Yetayeh&#39;</span>
+<span class="kd">let</span><span class="w"> </span><span class="nx">country</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;Finland&#39;</span>
+<span class="kd">let</span><span class="w"> </span><span class="nx">city</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;Helsinki&#39;</span>
+<span class="kd">let</span><span class="w"> </span><span class="nx">language</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;JavaScript&#39;</span>
+<span class="kd">let</span><span class="w"> </span><span class="nx">job</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;teacher&#39;</span>
+<span class="kd">let</span><span class="w"> </span><span class="nx">age</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">250</span>
+<span class="kd">let</span><span class="w"> </span><span class="nx">fullName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">firstName</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s1">&#39; &#39;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">lastName</span>
+
+<span class="kd">let</span><span class="w"> </span><span class="nx">personInfoTwo</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="sb">`I am </span><span class="si">${</span><span class="nx">fullName</span><span class="si">}</span><span class="sb">. I am </span><span class="si">${</span><span class="nx">age</span><span class="si">}</span><span class="sb">. I live in </span><span class="si">${</span><span class="nx">country</span><span class="si">}</span><span class="sb">.`</span><span class="w"> </span><span class="c1">//ES6 - Metode interpolasi string</span>
+<span class="kd">let</span><span class="w"> </span><span class="nx">personInfoThree</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="sb">`I am </span><span class="si">${</span><span class="nx">fullName</span><span class="si">}</span><span class="sb">. I live in </span><span class="si">${</span><span class="nx">city</span><span class="si">}</span><span class="sb">, </span><span class="si">${</span><span class="nx">country</span><span class="si">}</span><span class="sb">. I am a </span><span class="si">${</span><span class="nx">job</span><span class="si">}</span><span class="sb">. I teach </span><span class="si">${</span><span class="nx">language</span><span class="si">}</span><span class="sb">.`</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">personInfoTwo</span><span class="p">)</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">personInfoThree</span><span class="p">)</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>I<span class="w"> </span>am<span class="w"> </span>Asabeneh<span class="w"> </span>Yetayeh.<span class="w"> </span>I<span class="w"> </span>am<span class="w"> </span><span class="m">250</span>.<span class="w"> </span>I<span class="w"> </span>live<span class="w"> </span><span class="k">in</span><span class="w"> </span>Finland.
+I<span class="w"> </span>am<span class="w"> </span>Asabeneh<span class="w"> </span>Yetayeh.<span class="w"> </span>I<span class="w"> </span>live<span class="w"> </span><span class="k">in</span><span class="w"> </span>Helsinki,<span class="w"> </span>Finland.<span class="w"> </span>I<span class="w"> </span>am<span class="w"> </span>a<span class="w"> </span>teacher.<span class="w"> </span>I<span class="w"> </span>teach<span class="w"> </span>JavaScript.
+</code></pre></div>
+<p>Dengan pake template string atau metode interpolasi string, kita bisa nambahin ekspresi, yang bisa berupa nilai, atau beberapa operasi (perbandingan, operasi aritmatika, operasi ternary). Cakep kan?</p>
+<div class="highlight"><pre><span></span><code><span class="kd">let</span><span class="w"> </span><span class="nx">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">2</span>
+<span class="kd">let</span><span class="w"> </span><span class="nx">b</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">3</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="sb">`</span><span class="si">${</span><span class="nx">a</span><span class="si">}</span><span class="sb"> is greater than </span><span class="si">${</span><span class="nx">b</span><span class="si">}</span><span class="sb">: </span><span class="si">${</span><span class="nx">a</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="nx">b</span><span class="si">}</span><span class="sb">`</span><span class="p">)</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="m">2</span><span class="w"> </span>is<span class="w"> </span>greater<span class="w"> </span>than<span class="w"> </span><span class="m">3</span>:<span class="w"> </span><span class="nb">false</span>
+</code></pre></div>
+<h3 id="metode-string">Metode String</h3>
+<p>Segala sesuatu di JavaScript itu objek. String adalah tipe data primitif yang artinya kita nggak bisa modifikasi setelah dibuat. Objek string punya banyak metode string. Ada berbagai metode string yang bisa bantu kita bekerja dengan string.</p>
+<ol>
+<li><em>length</em>: Metode string <em>length</em> ngembaliin jumlah karakter dalam sebuah string termasuk spasi kosong.</li>
+</ol>
+<p><strong>Contoh:</strong></p>
+<div class="highlight"><pre><span></span><code><span class="kd">let</span><span class="w"> </span><span class="nx">js</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;JavaScript&#39;</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">js</span><span class="p">.</span><span class="nx">length</span><span class="p">)</span><span class="w">         </span><span class="c1">// 10</span>
+<span class="kd">let</span><span class="w"> </span><span class="nx">firstName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;Asabeneh&#39;</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">firstName</span><span class="p">.</span><span class="nx">length</span><span class="p">)</span><span class="w">  </span><span class="c1">// 8</span>
+</code></pre></div>
+<ol>
+<li><em>Mengakses karakter dalam string</em>: Kita bisa akses setiap karakter dalam string pake indeksnya. Di pemrograman, penghitungan dimulai dari 0. Indeks pertama string adalah nol, dan indeks terakhir adalah panjang string dikurangi satu.</li>
+</ol>
+<p><img alt="Mengakses string berdasarkan indeks" src="../../images/string_indexes.png" /></p>
+<p>Yuk kita akses karakter yang beda-beda dalam string 'JavaScript'.</p>
+<div class="highlight"><pre><span></span><code><span class="kd">let</span><span class="w"> </span><span class="nx">string</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;JavaScript&#39;</span>
+<span class="kd">let</span><span class="w"> </span><span class="nx">firstLetter</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">string</span><span class="p">[</span><span class="mf">0</span><span class="p">]</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">firstLetter</span><span class="p">)</span><span class="w">           </span><span class="c1">// J</span>
+
+<span class="kd">let</span><span class="w"> </span><span class="nx">secondLetter</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">string</span><span class="p">[</span><span class="mf">1</span><span class="p">]</span><span class="w">       </span><span class="c1">// a</span>
+<span class="kd">let</span><span class="w"> </span><span class="nx">thirdLetter</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">string</span><span class="p">[</span><span class="mf">2</span><span class="p">]</span>
+<span class="kd">let</span><span class="w"> </span><span class="nx">lastLetter</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">string</span><span class="p">[</span><span class="mf">9</span><span class="p">]</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">lastLetter</span><span class="p">)</span><span class="w">            </span><span class="c1">// t</span>
+
+<span class="kd">let</span><span class="w"> </span><span class="nx">lastIndex</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">string</span><span class="p">.</span><span class="nx">length</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mf">1</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">lastIndex</span><span class="p">)</span><span class="w">  </span><span class="c1">// 9</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">string</span><span class="p">[</span><span class="nx">lastIndex</span><span class="p">])</span><span class="w">    </span><span class="c1">// t</span>
+</code></pre></div>
+<ol>
+<li><em>toUpperCase()</em>: metode ini ngubah string jadi huruf besar semua.</li>
+</ol>
+<div class="highlight"><pre><span></span><code><span class="kd">let</span><span class="w"> </span><span class="nx">string</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;JavaScript&#39;</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">string</span><span class="p">.</span><span class="nx">toUpperCase</span><span class="p">())</span><span class="w">     </span><span class="c1">// JAVASCRIPT</span>
+
+<span class="kd">let</span><span class="w"> </span><span class="nx">firstName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;Asabeneh&#39;</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">firstName</span><span class="p">.</span><span class="nx">toUpperCase</span><span class="p">())</span><span class="w">  </span><span class="c1">// ASABENEH</span>
+
+<span class="kd">let</span><span class="w"> </span><span class="nx">country</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;Finland&#39;</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">country</span><span class="p">.</span><span class="nx">toUpperCase</span><span class="p">())</span><span class="w">    </span><span class="c1">// FINLAND</span>
+</code></pre></div>
+<ol>
+<li><em>toLowerCase()</em>: metode ini ngubah string jadi huruf kecil semua.</li>
+</ol>
+<div class="highlight"><pre><span></span><code><span class="kd">let</span><span class="w"> </span><span class="nx">string</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;JavasCript&#39;</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">string</span><span class="p">.</span><span class="nx">toLowerCase</span><span class="p">())</span><span class="w">     </span><span class="c1">// javascript</span>
+
+<span class="kd">let</span><span class="w"> </span><span class="nx">firstName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;Asabeneh&#39;</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">firstName</span><span class="p">.</span><span class="nx">toLowerCase</span><span class="p">())</span><span class="w">  </span><span class="c1">// asabeneh</span>
+
+<span class="kd">let</span><span class="w"> </span><span class="nx">country</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;Finland&#39;</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">country</span><span class="p">.</span><span class="nx">toLowerCase</span><span class="p">())</span><span class="w">   </span><span class="c1">// finland</span>
+</code></pre></div>
+<ol>
+<li><em>substr()</em>: Nerima dua argumen, indeks awal dan jumlah karakter yang mau dipotong.</li>
+</ol>
+<div class="highlight"><pre><span></span><code><span class="kd">let</span><span class="w"> </span><span class="nx">string</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;JavaScript&#39;</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">string</span><span class="p">.</span><span class="nx">substr</span><span class="p">(</span><span class="mf">4</span><span class="p">,</span><span class="mf">6</span><span class="p">))</span><span class="w">    </span><span class="c1">// Script</span>
+
+<span class="kd">let</span><span class="w"> </span><span class="nx">country</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;Finland&#39;</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">country</span><span class="p">.</span><span class="nx">substr</span><span class="p">(</span><span class="mf">3</span><span class="p">,</span><span class="w"> </span><span class="mf">4</span><span class="p">))</span><span class="w">   </span><span class="c1">// land</span>
+</code></pre></div>
+<ol>
+<li><em>substring()</em>: Nerima dua argumen, indeks awal dan indeks akhir tapi nggak nyertakan karakter di indeks akhir.</li>
+</ol>
+<div class="highlight"><pre><span></span><code><span class="kd">let</span><span class="w"> </span><span class="nx">string</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;JavaScript&#39;</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">string</span><span class="p">.</span><span class="nx">substring</span><span class="p">(</span><span class="mf">0</span><span class="p">,</span><span class="mf">4</span><span class="p">))</span><span class="w">     </span><span class="c1">// Java</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">string</span><span class="p">.</span><span class="nx">substring</span><span class="p">(</span><span class="mf">4</span><span class="p">,</span><span class="mf">10</span><span class="p">))</span><span class="w">    </span><span class="c1">// Script</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">string</span><span class="p">.</span><span class="nx">substring</span><span class="p">(</span><span class="mf">4</span><span class="p">))</span><span class="w">       </span><span class="c1">// Script</span>
+
+<span class="kd">let</span><span class="w"> </span><span class="nx">country</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;Finland&#39;</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">country</span><span class="p">.</span><span class="nx">substring</span><span class="p">(</span><span class="mf">0</span><span class="p">,</span><span class="w"> </span><span class="mf">3</span><span class="p">))</span><span class="w">   </span><span class="c1">// Fin</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">country</span><span class="p">.</span><span class="nx">substring</span><span class="p">(</span><span class="mf">3</span><span class="p">,</span><span class="w"> </span><span class="mf">7</span><span class="p">))</span><span class="w">   </span><span class="c1">// land</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">country</span><span class="p">.</span><span class="nx">substring</span><span class="p">(</span><span class="mf">3</span><span class="p">))</span><span class="w">      </span><span class="c1">// land</span>
+</code></pre></div>
+<ol>
+<li><em>split()</em>: Metode split ngebelah string di tempat yang ditentuin.</li>
+</ol>
+<div class="highlight"><pre><span></span><code><span class="kd">let</span><span class="w"> </span><span class="nx">string</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;30 Days Of JavaScript&#39;</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">string</span><span class="p">.</span><span class="nx">split</span><span class="p">())</span><span class="w">     </span><span class="c1">// Berubah menjadi array -&gt; [&quot;30 Days Of JavaScript&quot;]</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">string</span><span class="p">.</span><span class="nx">split</span><span class="p">(</span><span class="s1">&#39; &#39;</span><span class="p">))</span><span class="w">  </span><span class="c1">// Dipecah menjadi array pada spasi -&gt; [&quot;30&quot;, &quot;Days&quot;, &quot;Of&quot;, &quot;JavaScript&quot;]</span>
+
+<span class="kd">let</span><span class="w"> </span><span class="nx">firstName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;Asabeneh&#39;</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">firstName</span><span class="p">.</span><span class="nx">split</span><span class="p">())</span><span class="w">    </span><span class="c1">// Berubah menjadi array - &gt; [&quot;Asabeneh&quot;]</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">firstName</span><span class="p">.</span><span class="nx">split</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">))</span><span class="w">  </span><span class="c1">// Dipecah menjadi array pada setiap huruf -&gt;  [&quot;A&quot;, &quot;s&quot;, &quot;a&quot;, &quot;b&quot;, &quot;e&quot;, &quot;n&quot;, &quot;e&quot;, &quot;h&quot;]</span>
+
+<span class="kd">let</span><span class="w"> </span><span class="nx">countries</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;Finland, Sweden, Norway, Denmark, and Iceland&#39;</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">countries</span><span class="p">.</span><span class="nx">split</span><span class="p">(</span><span class="s1">&#39;,&#39;</span><span class="p">))</span><span class="w">  </span><span class="c1">// dipecah menjadi array pada koma -&gt; [&quot;Finland&quot;, &quot; Sweden&quot;, &quot; Norway&quot;, &quot; Denmark&quot;, &quot; and Iceland&quot;]</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">countries</span><span class="p">.</span><span class="nx">split</span><span class="p">(</span><span class="s1">&#39;, &#39;</span><span class="p">))</span><span class="w"> </span><span class="c1">//  [&quot;Finland&quot;, &quot;Sweden&quot;, &quot;Norway&quot;, &quot;Denmark&quot;, &quot;and Iceland&quot;]</span>
+</code></pre></div>
+<ol>
+<li><em>trim()</em>: Nghapus spasi di awal atau akhir string.</li>
+</ol>
+<div class="highlight"><pre><span></span><code><span class="kd">let</span><span class="w"> </span><span class="nx">string</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;   30 Days Of JavaScript   &#39;</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">string</span><span class="p">)</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">string</span><span class="p">.</span><span class="nx">trim</span><span class="p">(</span><span class="s1">&#39; &#39;</span><span class="p">))</span>
+
+<span class="kd">let</span><span class="w"> </span><span class="nx">firstName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39; Asabeneh &#39;</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">firstName</span><span class="p">)</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">firstName</span><span class="p">.</span><span class="nx">trim</span><span class="p">())</span><span class="w">  </span><span class="c1">// tetap menghapus spasi di awal dan akhir string</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="w">   </span><span class="m">30</span><span class="w"> </span>Days<span class="w"> </span>Of<span class="w"> </span>JavasCript<span class="w">   </span>
+<span class="m">30</span><span class="w"> </span>Days<span class="w"> </span>Of<span class="w"> </span>JavasCript
+<span class="w">  </span>Asabeneh<span class="w"> </span>
+Asabeneh
+</code></pre></div>
+<ol>
+<li><em>includes()</em>: Nerima argumen substring dan ngecek apakah argumen substring ada di dalam string. <em>includes()</em> ngembaliin boolean. Kalau substring ada di string, dia ngembaliin true, kalau nggak ada ngembaliin false.</li>
+</ol>
+<div class="highlight"><pre><span></span><code><span class="kd">let</span><span class="w"> </span><span class="nx">string</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;30 Days Of JavaScript&#39;</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">string</span><span class="p">.</span><span class="nx">includes</span><span class="p">(</span><span class="s1">&#39;Days&#39;</span><span class="p">))</span><span class="w">     </span><span class="c1">// true</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">string</span><span class="p">.</span><span class="nx">includes</span><span class="p">(</span><span class="s1">&#39;days&#39;</span><span class="p">))</span><span class="w">     </span><span class="c1">// false - ini case sensitive!</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">string</span><span class="p">.</span><span class="nx">includes</span><span class="p">(</span><span class="s1">&#39;Script&#39;</span><span class="p">))</span><span class="w">   </span><span class="c1">// true</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">string</span><span class="p">.</span><span class="nx">includes</span><span class="p">(</span><span class="s1">&#39;script&#39;</span><span class="p">))</span><span class="w">   </span><span class="c1">// false</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">string</span><span class="p">.</span><span class="nx">includes</span><span class="p">(</span><span class="s1">&#39;java&#39;</span><span class="p">))</span><span class="w">     </span><span class="c1">// false</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">string</span><span class="p">.</span><span class="nx">includes</span><span class="p">(</span><span class="s1">&#39;Java&#39;</span><span class="p">))</span><span class="w">     </span><span class="c1">// true</span>
+
+<span class="kd">let</span><span class="w"> </span><span class="nx">country</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;Finland&#39;</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">country</span><span class="p">.</span><span class="nx">includes</span><span class="p">(</span><span class="s1">&#39;fin&#39;</span><span class="p">))</span><span class="w">     </span><span class="c1">// false</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">country</span><span class="p">.</span><span class="nx">includes</span><span class="p">(</span><span class="s1">&#39;Fin&#39;</span><span class="p">))</span><span class="w">     </span><span class="c1">// true</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">country</span><span class="p">.</span><span class="nx">includes</span><span class="p">(</span><span class="s1">&#39;land&#39;</span><span class="p">))</span><span class="w">    </span><span class="c1">// true</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">country</span><span class="p">.</span><span class="nx">includes</span><span class="p">(</span><span class="s1">&#39;Land&#39;</span><span class="p">))</span><span class="w">    </span><span class="c1">// false</span>
+</code></pre></div>
+<ol>
+<li><em>replace()</em>: nerima sebagai parameter substring lama dan substring baru.</li>
+</ol>
+<div class="highlight"><pre><span></span><code><span class="nx">string</span><span class="p">.</span><span class="nx">replace</span><span class="p">(</span><span class="nx">oldsubstring</span><span class="p">,</span><span class="w"> </span><span class="nx">newsubstring</span><span class="p">)</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="kd">let</span><span class="w"> </span><span class="nx">string</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;30 Days Of JavaScript&#39;</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">string</span><span class="p">.</span><span class="nx">replace</span><span class="p">(</span><span class="s1">&#39;JavaScript&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Python&#39;</span><span class="p">))</span><span class="w"> </span><span class="c1">// 30 Days Of Python</span>
+
+<span class="kd">let</span><span class="w"> </span><span class="nx">country</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;Finland&#39;</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">country</span><span class="p">.</span><span class="nx">replace</span><span class="p">(</span><span class="s1">&#39;Fin&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Noman&#39;</span><span class="p">))</span><span class="w">       </span><span class="c1">// Nomanland</span>
+</code></pre></div>
+<ol>
+<li><em>charAt()</em>: Nerima indeks dan ngembaliin nilai di indeks tersebut.</li>
+</ol>
+<div class="highlight"><pre><span></span><code><span class="nx">string</span><span class="p">.</span><span class="nx">charAt</span><span class="p">(</span><span class="nx">index</span><span class="p">)</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="kd">let</span><span class="w"> </span><span class="nx">string</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;30 Days Of JavaScript&#39;</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">string</span><span class="p">.</span><span class="nx">charAt</span><span class="p">(</span><span class="mf">0</span><span class="p">))</span><span class="w">        </span><span class="c1">// 3</span>
+
+<span class="kd">let</span><span class="w"> </span><span class="nx">lastIndex</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">string</span><span class="p">.</span><span class="nx">length</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mf">1</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">string</span><span class="p">.</span><span class="nx">charAt</span><span class="p">(</span><span class="nx">lastIndex</span><span class="p">))</span><span class="w"> </span><span class="c1">// t</span>
+</code></pre></div>
+<ol>
+<li><em>charCodeAt()</em>: Nerima indeks dan ngembaliin kode char (nomor ASCII) dari nilai di indeks tersebut.</li>
+</ol>
+<div class="highlight"><pre><span></span><code><span class="nx">string</span><span class="p">.</span><span class="nx">charCodeAt</span><span class="p">(</span><span class="nx">index</span><span class="p">)</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="kd">let</span><span class="w"> </span><span class="nx">string</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;30 Days Of JavaScript&#39;</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">string</span><span class="p">.</span><span class="nx">charCodeAt</span><span class="p">(</span><span class="mf">3</span><span class="p">))</span><span class="w">        </span><span class="c1">// Nomor ASCII D adalah 68</span>
+
+<span class="kd">let</span><span class="w"> </span><span class="nx">lastIndex</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">string</span><span class="p">.</span><span class="nx">length</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mf">1</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">string</span><span class="p">.</span><span class="nx">charCodeAt</span><span class="p">(</span><span class="nx">lastIndex</span><span class="p">))</span><span class="w"> </span><span class="c1">// ASCII t adalah 116</span>
+</code></pre></div>
+<ol>
+<li><em>indexOf()</em>: Nerima substring dan kalau substring ada di string, dia ngembaliin posisi pertama substring, kalau nggak ada ngembaliin -1.</li>
+</ol>
+<div class="highlight"><pre><span></span><code><span class="nx">string</span><span class="p">.</span><span class="nx">indexOf</span><span class="p">(</span><span class="nx">substring</span><span class="p">)</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="kd">let</span><span class="w"> </span><span class="nx">string</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;30 Days Of JavaScript&#39;</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">string</span><span class="p">.</span><span class="nx">indexOf</span><span class="p">(</span><span class="s1">&#39;D&#39;</span><span class="p">))</span><span class="w">          </span><span class="c1">// 3</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">string</span><span class="p">.</span><span class="nx">indexOf</span><span class="p">(</span><span class="s1">&#39;Days&#39;</span><span class="p">))</span><span class="w">       </span><span class="c1">// 3</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">string</span><span class="p">.</span><span class="nx">indexOf</span><span class="p">(</span><span class="s1">&#39;days&#39;</span><span class="p">))</span><span class="w">       </span><span class="c1">// -1</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">string</span><span class="p">.</span><span class="nx">indexOf</span><span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">))</span><span class="w">          </span><span class="c1">// 4</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">string</span><span class="p">.</span><span class="nx">indexOf</span><span class="p">(</span><span class="s1">&#39;JavaScript&#39;</span><span class="p">))</span><span class="w"> </span><span class="c1">// 11</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">string</span><span class="p">.</span><span class="nx">indexOf</span><span class="p">(</span><span class="s1">&#39;Script&#39;</span><span class="p">))</span><span class="w">     </span><span class="c1">//15</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">string</span><span class="p">.</span><span class="nx">indexOf</span><span class="p">(</span><span class="s1">&#39;script&#39;</span><span class="p">))</span><span class="w">     </span><span class="c1">// -1</span>
+</code></pre></div>
+<ol>
+<li><em>lastIndexOf()</em>: Nerima substring dan kalau substring ada di string, dia ngembaliin posisi terakhir substring, kalau nggak ada ngembaliin -1.</li>
+</ol>
+<div class="highlight"><pre><span></span><code><span class="c1">//sintaks</span>
+<span class="nx">string</span><span class="p">.</span><span class="nx">lastIndexOf</span><span class="p">(</span><span class="nx">substring</span><span class="p">)</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="kd">let</span><span class="w"> </span><span class="nx">string</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;I love JavaScript. If you do not love JavaScript what else can you love.&#39;</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">string</span><span class="p">.</span><span class="nx">lastIndexOf</span><span class="p">(</span><span class="s1">&#39;love&#39;</span><span class="p">))</span><span class="w">       </span><span class="c1">// 67</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">string</span><span class="p">.</span><span class="nx">lastIndexOf</span><span class="p">(</span><span class="s1">&#39;you&#39;</span><span class="p">))</span><span class="w">        </span><span class="c1">// 63</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">string</span><span class="p">.</span><span class="nx">lastIndexOf</span><span class="p">(</span><span class="s1">&#39;JavaScript&#39;</span><span class="p">))</span><span class="w"> </span><span class="c1">// 38</span>
+</code></pre></div>
+<ol>
+<li><em>concat()</em>: nerima banyak substring dan ngegabungin mereka.</li>
+</ol>
+<div class="highlight"><pre><span></span><code><span class="nx">string</span><span class="p">.</span><span class="nx">concat</span><span class="p">(</span><span class="nx">substring</span><span class="p">,</span><span class="w"> </span><span class="nx">substring</span><span class="p">,</span><span class="w"> </span><span class="nx">substring</span><span class="p">)</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="kd">let</span><span class="w"> </span><span class="nx">string</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;30&#39;</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">string</span><span class="p">.</span><span class="nx">concat</span><span class="p">(</span><span class="s2">&quot;Days&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;Of&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;JavaScript&quot;</span><span class="p">))</span><span class="w"> </span><span class="c1">// 30DaysOfJavaScript</span>
+
+<span class="kd">let</span><span class="w"> </span><span class="nx">country</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;Fin&#39;</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">country</span><span class="p">.</span><span class="nx">concat</span><span class="p">(</span><span class="s2">&quot;land&quot;</span><span class="p">))</span><span class="w"> </span><span class="c1">// Finland</span>
+</code></pre></div>
+<ol>
+<li><em>startsWith</em>: nerima substring sebagai argumen dan ngecek apakah string dimulai dengan substring yang ditentuin. Ngembaliin boolean (true atau false).</li>
+</ol>
+<div class="highlight"><pre><span></span><code><span class="c1">//sintaks</span>
+<span class="nx">string</span><span class="p">.</span><span class="nx">startsWith</span><span class="p">(</span><span class="nx">substring</span><span class="p">)</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="kd">let</span><span class="w"> </span><span class="nx">string</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;Love is the best to in this world&#39;</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">string</span><span class="p">.</span><span class="nx">startsWith</span><span class="p">(</span><span class="s1">&#39;Love&#39;</span><span class="p">))</span><span class="w">   </span><span class="c1">// true</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">string</span><span class="p">.</span><span class="nx">startsWith</span><span class="p">(</span><span class="s1">&#39;love&#39;</span><span class="p">))</span><span class="w">   </span><span class="c1">// false</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">string</span><span class="p">.</span><span class="nx">startsWith</span><span class="p">(</span><span class="s1">&#39;world&#39;</span><span class="p">))</span><span class="w">  </span><span class="c1">// false</span>
+
+<span class="kd">let</span><span class="w"> </span><span class="nx">country</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;Finland&#39;</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">country</span><span class="p">.</span><span class="nx">startsWith</span><span class="p">(</span><span class="s1">&#39;Fin&#39;</span><span class="p">))</span><span class="w">   </span><span class="c1">// true</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">country</span><span class="p">.</span><span class="nx">startsWith</span><span class="p">(</span><span class="s1">&#39;fin&#39;</span><span class="p">))</span><span class="w">   </span><span class="c1">// false</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">country</span><span class="p">.</span><span class="nx">startsWith</span><span class="p">(</span><span class="s1">&#39;land&#39;</span><span class="p">))</span><span class="w">  </span><span class="c1">//  false</span>
+</code></pre></div>
+<ol>
+<li><em>endsWith</em>: nerima substring sebagai argumen dan ngecek apakah string diakhiri dengan substring yang ditentuin. Ngembaliin boolean (true atau false).</li>
+</ol>
+<div class="highlight"><pre><span></span><code><span class="nx">string</span><span class="p">.</span><span class="nx">endsWith</span><span class="p">(</span><span class="nx">substring</span><span class="p">)</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="kd">let</span><span class="w"> </span><span class="nx">string</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;Love is the most powerful feeling in the world&#39;</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">string</span><span class="p">.</span><span class="nx">endsWith</span><span class="p">(</span><span class="s1">&#39;world&#39;</span><span class="p">))</span><span class="w">         </span><span class="c1">// true</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">string</span><span class="p">.</span><span class="nx">endsWith</span><span class="p">(</span><span class="s1">&#39;love&#39;</span><span class="p">))</span><span class="w">          </span><span class="c1">// false</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">string</span><span class="p">.</span><span class="nx">endsWith</span><span class="p">(</span><span class="s1">&#39;in the world&#39;</span><span class="p">))</span><span class="w"> </span><span class="c1">// true</span>
+
+<span class="kd">let</span><span class="w"> </span><span class="nx">country</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;Finland&#39;</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">country</span><span class="p">.</span><span class="nx">endsWith</span><span class="p">(</span><span class="s1">&#39;land&#39;</span><span class="p">))</span><span class="w">         </span><span class="c1">// true</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">country</span><span class="p">.</span><span class="nx">endsWith</span><span class="p">(</span><span class="s1">&#39;fin&#39;</span><span class="p">))</span><span class="w">          </span><span class="c1">// false</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">country</span><span class="p">.</span><span class="nx">endsWith</span><span class="p">(</span><span class="s1">&#39;Fin&#39;</span><span class="p">))</span><span class="w">          </span><span class="c1">//  false</span>
+</code></pre></div>
+<ol>
+<li><em>search</em>: nerima substring sebagai argumen dan ngembaliin indeks dari kecocokan pertama. Nilai pencarian bisa berupa string atau pola regular expression.</li>
+</ol>
+<div class="highlight"><pre><span></span><code><span class="nx">string</span><span class="p">.</span><span class="nx">search</span><span class="p">(</span><span class="nx">substring</span><span class="p">)</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="kd">let</span><span class="w"> </span><span class="nx">string</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;I love JavaScript. If you do not love JavaScript what else can you love.&#39;</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">string</span><span class="p">.</span><span class="nx">search</span><span class="p">(</span><span class="s1">&#39;love&#39;</span><span class="p">))</span><span class="w">          </span><span class="c1">// 2</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">string</span><span class="p">.</span><span class="nx">search</span><span class="p">(</span><span class="sr">/javascript/gi</span><span class="p">))</span><span class="w">  </span><span class="c1">// 7</span>
+</code></pre></div>
+<ol>
+<li><em>match</em>: nerima substring atau pola regular expression sebagai argumen dan ngembaliin array kalau ada kecocokan, kalau nggak ada ngembaliin null. Yuk kita lihat gimana pola regular expression keliatannya. Dimulai dengan tanda / dan diakhiri dengan tanda /.</li>
+</ol>
+<div class="highlight"><pre><span></span><code><span class="kd">let</span><span class="w"> </span><span class="nx">string</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;love&#39;</span>
+<span class="kd">let</span><span class="w"> </span><span class="nx">patternOne</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="sr">/love/</span><span class="w">     </span><span class="c1">// tanpa flag</span>
+<span class="kd">let</span><span class="w"> </span><span class="nx">patternTwo</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="sr">/love/gi</span><span class="w">   </span><span class="c1">// g-berarti mencari di seluruh teks, i - case insensitive</span>
+</code></pre></div>
+<p>Sintaks Match</p>
+<div class="highlight"><pre><span></span><code><span class="c1">// sintaks</span>
+<span class="nx">string</span><span class="p">.</span><span class="nx">match</span><span class="p">(</span><span class="nx">substring</span><span class="p">)</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="kd">let</span><span class="w"> </span><span class="nx">string</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;I love JavaScript. If you do not love JavaScript what else can you love.&#39;</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">string</span><span class="p">.</span><span class="nx">match</span><span class="p">(</span><span class="s1">&#39;love&#39;</span><span class="p">))</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="o">[</span><span class="s2">&quot;love&quot;</span>,<span class="w"> </span>index:<span class="w"> </span><span class="m">2</span>,<span class="w"> </span>input:<span class="w"> </span><span class="s2">&quot;I love JavaScript. If you do not love JavaScript what else can you love.&quot;</span>,<span class="w"> </span>groups:<span class="w"> </span>undefined<span class="o">]</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="kd">let</span><span class="w"> </span><span class="nx">pattern</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="sr">/love/gi</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">string</span><span class="p">.</span><span class="nx">match</span><span class="p">(</span><span class="nx">pattern</span><span class="p">))</span><span class="w">   </span><span class="c1">// [&quot;love&quot;, &quot;love&quot;, &quot;love&quot;]</span>
+</code></pre></div>
+<p>Yuk kita ekstrak angka dari teks pake regular expression. Ini bukan bagian regular expression, jangan panik dulu! Kita bakal bahas regular expression nanti.</p>
+<div class="highlight"><pre><span></span><code><span class="kd">let</span><span class="w"> </span><span class="nx">txt</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;In 2019, I ran 30 Days of Python. Now, in 2020 I am super exited to start this challenge&#39;</span>
+<span class="kd">let</span><span class="w"> </span><span class="nx">regEx</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="sr">/\d+/</span>
+
+<span class="c1">// d dengan karakter escape berarti d bukan d biasa melainkan bertindak sebagai digit</span>
+<span class="c1">// + berarti satu atau lebih digit angka,</span>
+<span class="c1">// jika ada g setelahnya berarti global, cari di mana-mana.</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">txt</span><span class="p">.</span><span class="nx">match</span><span class="p">(</span><span class="nx">regEx</span><span class="p">))</span><span class="w">  </span><span class="c1">// [&quot;2&quot;, &quot;0&quot;, &quot;1&quot;, &quot;9&quot;, &quot;3&quot;, &quot;0&quot;, &quot;2&quot;, &quot;0&quot;, &quot;2&quot;, &quot;0&quot;]</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">txt</span><span class="p">.</span><span class="nx">match</span><span class="p">(</span><span class="sr">/\d+/g</span><span class="p">))</span><span class="w"> </span><span class="c1">// [&quot;2019&quot;, &quot;30&quot;, &quot;2020&quot;]</span>
+</code></pre></div>
+<ol>
+<li><em>repeat()</em>: nerima angka sebagai argumen dan ngembaliin versi string yang diulang.</li>
+</ol>
+<div class="highlight"><pre><span></span><code><span class="nx">string</span><span class="p">.</span><span class="nx">repeat</span><span class="p">(</span><span class="nx">n</span><span class="p">)</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="kd">let</span><span class="w"> </span><span class="nx">string</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;love&#39;</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">string</span><span class="p">.</span><span class="nx">repeat</span><span class="p">(</span><span class="mf">10</span><span class="p">))</span><span class="w"> </span><span class="c1">// lovelovelovelovelovelovelovelovelovelove</span>
+</code></pre></div>
+<h2 id="memeriksa-tipe-data-dan-casting">Memeriksa Tipe Data dan Casting</h2>
+<h3 id="memeriksa-tipe-data">Memeriksa Tipe Data</h3>
+<p>Buat ngecek tipe data dari suatu variabel, kita pake metode <em>typeof</em>.</p>
+<p><strong>Contoh:</strong></p>
+<div class="highlight"><pre><span></span><code><span class="c1">// Berbagai tipe data javascript</span>
+<span class="c1">// Mari deklarasikan berbagai tipe data</span>
+
+<span class="kd">let</span><span class="w"> </span><span class="nx">firstName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;Asabeneh&#39;</span><span class="w">      </span><span class="c1">// string</span>
+<span class="kd">let</span><span class="w"> </span><span class="nx">lastName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;Yetayeh&#39;</span><span class="w">        </span><span class="c1">// string</span>
+<span class="kd">let</span><span class="w"> </span><span class="nx">country</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;Finland&#39;</span><span class="w">         </span><span class="c1">// string</span>
+<span class="kd">let</span><span class="w"> </span><span class="nx">city</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;Helsinki&#39;</span><span class="w">           </span><span class="c1">// string</span>
+<span class="kd">let</span><span class="w"> </span><span class="nx">age</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">250</span><span class="w">                   </span><span class="c1">// number, ini bukan usia saya yang sebenarnya, jangan khawatir</span>
+<span class="kd">let</span><span class="w"> </span><span class="nx">job</span><span class="w">                         </span><span class="c1">// undefined, karena nilai belum ditetapkan</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="ow">typeof</span><span class="w"> </span><span class="s1">&#39;Asabeneh&#39;</span><span class="p">)</span><span class="w">  </span><span class="c1">// string</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="ow">typeof</span><span class="w"> </span><span class="nx">firstName</span><span class="p">)</span><span class="w">   </span><span class="c1">// string</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="ow">typeof</span><span class="w"> </span><span class="mf">10</span><span class="p">)</span><span class="w">          </span><span class="c1">// number</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="ow">typeof</span><span class="w"> </span><span class="mf">3.14</span><span class="p">)</span><span class="w">        </span><span class="c1">// number</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="ow">typeof</span><span class="w"> </span><span class="kc">true</span><span class="p">)</span><span class="w">        </span><span class="c1">// boolean</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="ow">typeof</span><span class="w"> </span><span class="kc">false</span><span class="p">)</span><span class="w">       </span><span class="c1">// boolean</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="ow">typeof</span><span class="w"> </span><span class="kc">NaN</span><span class="p">)</span><span class="w">         </span><span class="c1">// number</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="ow">typeof</span><span class="w"> </span><span class="nx">job</span><span class="p">)</span><span class="w">         </span><span class="c1">// undefined</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="ow">typeof</span><span class="w"> </span><span class="kc">undefined</span><span class="p">)</span><span class="w">   </span><span class="c1">// undefined</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="ow">typeof</span><span class="w"> </span><span class="kc">null</span><span class="p">)</span><span class="w">        </span><span class="c1">// object</span>
+</code></pre></div>
+<h3 id="mengubah-tipe-data-casting">Mengubah Tipe Data (Casting)</h3>
+<ul>
+<li>Casting: Ngubah satu tipe data ke tipe data lainnya. Kita pake <em>parseInt()</em>, <em>parseFloat()</em>, <em>Number()</em>, <em>tanda +</em>, <em>str()</em>
+  Ketika kita ngelakuin operasi aritmatika, string angka harus dikonversi dulu ke integer atau float, kalau nggak nanti error.</li>
+</ul>
+<h4 id="string-ke-int">String ke Int</h4>
+<p>Kita bisa ngubah string angka jadi angka. Angka apa pun di dalam tanda kutip adalah string angka. Contoh string angka: '10', '5', dll.
+Kita bisa ngubah string ke angka pake metode berikut:</p>
+<ul>
+<li>parseInt()</li>
+<li>Number()</li>
+<li>Tanda plus(+)</li>
+</ul>
+<div class="highlight"><pre><span></span><code><span class="kd">let</span><span class="w"> </span><span class="nx">num</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;10&#39;</span>
+<span class="kd">let</span><span class="w"> </span><span class="nx">numInt</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">parseInt</span><span class="p">(</span><span class="nx">num</span><span class="p">)</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">numInt</span><span class="p">)</span><span class="w"> </span><span class="c1">// 10</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="kd">let</span><span class="w"> </span><span class="nx">num</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;10&#39;</span>
+<span class="kd">let</span><span class="w"> </span><span class="nx">numInt</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">Number</span><span class="p">(</span><span class="nx">num</span><span class="p">)</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">numInt</span><span class="p">)</span><span class="w"> </span><span class="c1">// 10</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="kd">let</span><span class="w"> </span><span class="nx">num</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;10&#39;</span>
+<span class="kd">let</span><span class="w"> </span><span class="nx">numInt</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">+</span><span class="nx">num</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">numInt</span><span class="p">)</span><span class="w"> </span><span class="c1">// 10</span>
+</code></pre></div>
+<h4 id="string-ke-float">String ke Float</h4>
+<p>Kita bisa ngubah string float jadi float. Angka float apa pun di dalam tanda kutip adalah string float. Contoh string float: '9.81', '3.14', '1.44', dll.
+Kita bisa ngubah string float ke angka pake metode berikut:</p>
+<ul>
+<li>parseFloat()</li>
+<li>Number()</li>
+<li>Tanda plus(+)</li>
+</ul>
+<div class="highlight"><pre><span></span><code><span class="kd">let</span><span class="w"> </span><span class="nx">num</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;9.81&#39;</span>
+<span class="kd">let</span><span class="w"> </span><span class="nx">numFloat</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">parseFloat</span><span class="p">(</span><span class="nx">num</span><span class="p">)</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">numFloat</span><span class="p">)</span><span class="w"> </span><span class="c1">// 9.81</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="kd">let</span><span class="w"> </span><span class="nx">num</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;9.81&#39;</span>
+<span class="kd">let</span><span class="w"> </span><span class="nx">numFloat</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">Number</span><span class="p">(</span><span class="nx">num</span><span class="p">)</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">numFloat</span><span class="p">)</span><span class="w"> </span><span class="c1">// 9.81</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="kd">let</span><span class="w"> </span><span class="nx">num</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;9.81&#39;</span>
+<span class="kd">let</span><span class="w"> </span><span class="nx">numFloat</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">+</span><span class="nx">num</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">numFloat</span><span class="p">)</span><span class="w"> </span><span class="c1">// 9.81</span>
+</code></pre></div>
+<h4 id="float-ke-int">Float ke Int</h4>
+<p>Kita bisa ngubah float jadi integer.
+Kita pake metode berikut buat ngubah float ke int:</p>
+<ul>
+<li>parseInt()</li>
+</ul>
+<div class="highlight"><pre><span></span><code><span class="kd">let</span><span class="w"> </span><span class="nx">num</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">9.81</span>
+<span class="kd">let</span><span class="w"> </span><span class="nx">numInt</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">parseInt</span><span class="p">(</span><span class="nx">num</span><span class="p">)</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">numInt</span><span class="p">)</span><span class="w"> </span><span class="c1">// 9</span>
+</code></pre></div>
+<p>🌕 Kamu luar biasa! Kamu baru aja nyelesein tantangan hari ke-2 dan kamu udah selangkah lebih maju menuju kehebatan. Gaskeun sekarang lakuin latihan buat otak dan otot kamu!  </p>
+<h2 id="hari-2-latihan">💻 Hari 2: Latihan</h2>
+<h3 id="latihan-level-1">Latihan: Level 1</h3>
+<ol>
+<li>Deklarasikan variabel bernama challenge dan kasih nilai awal <strong>'30 Days Of JavaScript'</strong>.</li>
+<li>Cetak string tersebut di konsol browser pake <strong>console.log()</strong></li>
+<li>Cetak <strong>length</strong> dari string tersebut di konsol browser pake <em>console.log()</em></li>
+<li>Ubah semua karakter string jadi huruf kapital pake metode <strong>toUpperCase()</strong></li>
+<li>Ubah semua karakter string jadi huruf kecil pake metode __toLowerCase()___</li>
+<li>Potong (slice) kata pertama dari string pake metode <strong>substr()</strong> atau <strong>substring()</strong></li>
+<li>Potong frasa <em>Days Of JavaScript</em> dari <em>30 Days Of JavaScript</em>.</li>
+<li>Cek apakah string mengandung kata <strong>Script</strong> pake metode <strong>includes()</strong></li>
+<li>Pisahin <strong>string</strong> jadi <strong>array</strong> pake metode <strong>split()</strong></li>
+<li>Pisahin string 30 Days Of JavaScript pada spasi pake metode <strong>split()</strong></li>
+<li>'Facebook, Google, Microsoft, Apple, IBM, Oracle, Amazon' <strong>split</strong> string tersebut pada koma dan ubah jadi array.</li>
+<li>Ubah 30 Days Of JavaScript jadi 30 Days Of Python pake metode <strong>replace()</strong>.</li>
+<li>Karakter apa di indeks 15 dalam string '30 Days Of JavaScript'? Pake metode <strong>charAt()</strong>.</li>
+<li>Berapa kode karakter dari J dalam string '30 Days Of JavaScript' pake <strong>charCodeAt()</strong></li>
+<li>Pake <strong>indexOf</strong> buat nentuin posisi kemunculan pertama <strong>a</strong> dalam 30 Days Of JavaScript</li>
+<li>Pake <strong>lastIndexOf</strong> buat nentuin posisi kemunculan terakhir <strong>a</strong> dalam 30 Days Of JavaScript.</li>
+<li>Pake <strong>indexOf</strong> buat nemuin posisi kemunculan pertama kata <strong>because</strong> dalam kalimat berikut:<strong>'You cannot end a sentence with because because because is a conjunction'</strong></li>
+<li>Pake <strong>lastIndexOf</strong> buat nemuin posisi kemunculan terakhir kata <strong>because</strong> dalam kalimat berikut:<strong>'You cannot end a sentence with because because because is a conjunction'</strong></li>
+<li>Pake <strong>search</strong> buat nemuin posisi kemunculan pertama kata <strong>because</strong> dalam kalimat berikut:<strong>'You cannot end a sentence with because because because is a conjunction'</strong></li>
+<li>Pake <strong>trim()</strong> buat ngapus spasi di awal dan akhir string. Contoh ' 30 Days Of JavaScript '.</li>
+<li>Pake metode <strong>startsWith()</strong> dengan string <em>30 Days Of JavaScript</em> dan bikin hasilnya true</li>
+<li>Pake metode <strong>endsWith()</strong> dengan string <em>30 Days Of JavaScript</em> dan bikin hasilnya true</li>
+<li>Pake metode <strong>match()</strong> buat nemuin semua <strong>a</strong> dalam 30 Days Of JavaScript</li>
+<li>Pake <strong>concat()</strong> dan gabungin '30 Days of' dan 'JavaScript' jadi satu string, '30 Days Of JavaScript'</li>
+<li>Pake metode <strong>repeat()</strong> buat nyetak 30 Days Of JavaScript sebanyak 2 kali</li>
+</ol>
+<h3 id="latihan-level-2">Latihan: Level 2</h3>
+<ol>
+<li>
+<p>Pake console.log() cetak pernyataan berikut:</p>
+<div class="highlight"><pre><span></span><code>The<span class="w"> </span>quote<span class="w"> </span><span class="s1">&#39;There is no exercise better for the heart than reaching down and lifting people up.&#39;</span><span class="w"> </span>by<span class="w"> </span>John<span class="w"> </span>Holmes<span class="w"> </span>teaches<span class="w"> </span>us<span class="w"> </span>to<span class="w"> </span><span class="nb">help</span><span class="w"> </span>one<span class="w"> </span>another.
+</code></pre></div>
+</li>
+<li>
+<p>Pake console.log() cetak kutipan berikut oleh Mother Teresa:</p>
+<div class="highlight"><pre><span></span><code><span class="s2">&quot;Love is not patronizing and charity isn&#39;t about pity, it is about love. Charity and love are the same -- with charity you give love, so don&#39;t just give money but reach out your hand instead.&quot;</span>
+</code></pre></div>
+</li>
+<li>
+<p>Cek apakah typeof '10' persis sama dengan 10. Kalau nggak, bikin jadi persis sama.</p>
+</li>
+<li>Cek apakah parseFloat('9.8') sama dengan 10, kalau nggak bikin jadi persis sama dengan 10.</li>
+<li>Cek apakah 'on' ditemuin di kedua kata python dan jargon</li>
+<li><em>I hope this course is not full of jargon</em>. Cek apakah <em>jargon</em> ada di kalimat tersebut.</li>
+<li>Hasilin angka acak antara 0 dan 100 secara inklusif.</li>
+<li>Hasilin angka acak antara 50 dan 100 secara inklusif.</li>
+<li>Hasilin angka acak antara 0 dan 255 secara inklusif.</li>
+<li>Akses karakter string 'JavaScript' pake angka acak.</li>
+<li>
+<p>Pake console.log() dan escape characters buat nyetak pola berikut.</p>
+<div class="highlight"><pre><span></span><code><span class="mf">1</span><span class="w"> </span><span class="mf">1</span><span class="w"> </span><span class="mf">1</span><span class="w"> </span><span class="mf">1</span><span class="w"> </span><span class="mf">1</span>
+<span class="mf">2</span><span class="w"> </span><span class="mf">1</span><span class="w"> </span><span class="mf">2</span><span class="w"> </span><span class="mf">4</span><span class="w"> </span><span class="mf">8</span>
+<span class="mf">3</span><span class="w"> </span><span class="mf">1</span><span class="w"> </span><span class="mf">3</span><span class="w"> </span><span class="mf">9</span><span class="w"> </span><span class="mf">27</span>
+<span class="mf">4</span><span class="w"> </span><span class="mf">1</span><span class="w"> </span><span class="mf">4</span><span class="w"> </span><span class="mf">16</span><span class="w"> </span><span class="mf">64</span>
+<span class="mf">5</span><span class="w"> </span><span class="mf">1</span><span class="w"> </span><span class="mf">5</span><span class="w"> </span><span class="mf">25</span><span class="w"> </span><span class="mf">125</span>
+</code></pre></div>
+</li>
+<li>
+<p>Pake <strong>substr</strong> buat motong frasa <strong>because because because</strong> dari kalimat berikut:<strong>'You cannot end a sentence with because because because is a conjunction'</strong></p>
+</li>
+</ol>
+<h3 id="latihan-level-3">Latihan: Level 3</h3>
+<ol>
+<li>'Love is the best thing in this world. Some found their love and some are still looking for their love.' Hitung jumlah kata <strong>love</strong> di kalimat ini.</li>
+<li>Pake <strong>match()</strong> buat ngitung jumlah semua <strong>because</strong> di kalimat berikut:<strong>'You cannot end a sentence with because because because is a conjunction'</strong></li>
+<li>
+<p>Bersihin teks berikut dan temuin kata yang paling sering muncul (petunjuk, pake replace dan regular expressions).</p>
+<div class="highlight"><pre><span></span><code><span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">sentence</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;%I $am@% a %tea@cher%, &amp;and&amp; I lo%#ve %te@a@ching%;. The@re $is no@th@ing; &amp;as&amp; mo@re rewarding as educa@ting &amp;and&amp; @emp%o@weri@ng peo@ple. ;I found tea@ching m%o@re interesting tha@n any ot#her %jo@bs. %Do@es thi%s mo@tiv#ate yo@u to be a tea@cher!? %Th#is 30#Days&amp;OfJavaScript &amp;is al@so $the $resu@lt of &amp;love&amp; of tea&amp;ching&#39;</span>
+</code></pre></div>
+</li>
+<li>
+<p>Hitung total pendapatan tahunan orang tersebut dengan ngekstrak angka dari teks berikut. 'He earns 5000 euro from salary per month, 10000 euro annual bonus, 15000 euro online courses per month.'</p>
+</li>
+</ol>
+<p>🎉 SELAMAT ! 🎉</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Tersalin ke clipboard", "clipboard.copy": "Salin ke clipboard", "search.result.more.one": "1 lagi di halaman ini", "search.result.more.other": "# lagi di halaman ini", "search.result.none": "Tidak ada dokumen yang sesuai", "search.result.one": "1 dokumen ditemukan", "search.result.other": "# dokumen ditemukan", "search.result.placeholder": "Ketik untuk mulai pencarian", "search.result.term.missing": "Tidak ada", "select.version": "Pilih versi"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>

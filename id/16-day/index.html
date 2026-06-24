@@ -1,0 +1,2016 @@
+
+<!doctype html>
+<html lang="id" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../15-day/">
+      
+      
+        <link rel="next" href="../17-day/">
+      
+      
+        
+          <link rel="alternate" href="../../16-day/" hreflang="en">
+        
+          <link rel="alternate" href="./" hreflang="id">
+        
+      
+      
+      <link rel="icon" href="../../images/javascript.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>📘 Hari 16 - 30 Days Javascript</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="amber" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#hari-16" class="md-skip">
+          Lewati ke isi
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../" title="30 Days Javascript" class="md-header__button md-logo" aria-label="30 Days Javascript" data-md-component="logo">
+      
+  <img src="../../images/javascript.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            30 Days Javascript
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              📘 Hari 16
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+      <div class="md-header__option">
+  <div class="md-select">
+    
+    <button class="md-header__button md-icon" aria-label="Pilih bahasa">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.5 17.5 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2zm-2.62 7 1.62-4.33L19.12 17z"/></svg>
+    </button>
+    <div class="md-select__inner">
+      <ul class="md-select__list">
+        
+          <li class="md-select__item">
+            <a href="../../16-day/" hreflang="en" class="md-select__link">
+              English
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="./" hreflang="id" class="md-select__link">
+              Bahasa Indonesia
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Cari" placeholder="Cari" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Cari">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Kosongkan" aria-label="Kosongkan" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Mempersiapkan pencarian
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/devinesia/30-days-javascript-web" title="Ke repositori" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigasi" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../" title="30 Days Javascript" class="md-nav__button md-logo" aria-label="30 Days Javascript" data-md-component="logo">
+      
+  <img src="../../images/javascript.png" alt="logo">
+
+    </a>
+    30 Days Javascript
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/devinesia/30-days-javascript-web" title="Ke repositori" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Yuk Mulai!
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📔 Hari 1 - Yuk Mulai!
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📔 Hari 2 - Gaskeun Lanjut!
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📔 Hari 3 - Oke Gas!
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📔 Hari 4 - Yuk Ngoding!
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../05-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📔 Hari 5 - Mantap Lanjut!
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../06-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📔 Hari 6
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../07-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📔 Hari 7
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../08-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📔 Hari 8
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../09-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📔 Hari 9
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../10-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📔 Hari 10
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../11-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📘 Hari 11
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../12-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📘 Hari 12
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../13-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📘 Hari 13
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../14-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📘 Hari 14
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../15-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📘 Hari 15
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📘 Hari 16
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📘 Hari 16
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Daftar isi">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Daftar isi
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#json" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        JSON
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="JSON">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#mengonversi-json-ke-objek-javascript" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mengonversi JSON ke Objek JavaScript
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Mengonversi JSON ke Objek JavaScript">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#jsonparse" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        JSON.parse()
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#menggunakan-fungsi-reviver-dengan-jsonparse" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Menggunakan Fungsi Reviver dengan JSON.parse()
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mengonversi-objek-ke-json" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mengonversi Objek ke JSON
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#menggunakan-array-filter-dengan-jsonstringify" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Menggunakan Array Filter dengan JSON.stringify
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#latihan" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Latihan
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Latihan">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#latihan-level-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Latihan Level 1
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#latihan-level-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Latihan Level 2
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#latihan-level-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Latihan Level 3
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../17-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📘 Hari 17
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../18-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📘 Hari 18
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../19-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📘 Hari 19
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📘 Hari 20
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../21-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📙 Hari 21
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../22-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📙 Hari 22
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../23-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📙 Hari 23
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../24-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📙 Hari 24
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../25-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📙 Hari 25
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../26-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📔 Hari 26
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../27-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📔 Hari 27
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../28-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📔 Hari 28
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../29-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📔 Hari 29
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../30-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📔 Hari 30
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Daftar isi">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Daftar isi
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#json" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        JSON
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="JSON">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#mengonversi-json-ke-objek-javascript" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mengonversi JSON ke Objek JavaScript
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Mengonversi JSON ke Objek JavaScript">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#jsonparse" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        JSON.parse()
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#menggunakan-fungsi-reviver-dengan-jsonparse" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Menggunakan Fungsi Reviver dengan JSON.parse()
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mengonversi-objek-ke-json" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mengonversi Objek ke JSON
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#menggunakan-array-filter-dengan-jsonstringify" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Menggunakan Array Filter dengan JSON.stringify
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#latihan" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Latihan
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Latihan">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#latihan-level-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Latihan Level 1
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#latihan-level-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Latihan Level 2
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#latihan-level-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Latihan Level 3
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="hari-16">📘 Hari 16</h1>
+<h2 id="json">JSON</h2>
+<p>Oke gas, hari ini kita bakal bahas JSON! Jadi JSON tuh singkatan dari JavaScript Object Notation. Sintaks-nya emang mirip banget sama object JavaScript, tapi sebenarnya JSON cuma teks atau string biasa aja. Intinya sih, JSON adalah format data yang ringan buat nyimpen dan mindahin data. JSON banyak banget dipakai pas data dikirim dari server ke client. Dibandingin XML, JSON tuh jauh lebih gampang dipake, beneran deh!</p>
+<p><strong>Contoh:</strong></p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="s2">&quot;users&quot;</span><span class="o">:</span><span class="p">[</span>
+<span class="w">  </span><span class="p">{</span>
+<span class="w">    </span><span class="s2">&quot;firstName&quot;</span><span class="o">:</span><span class="s2">&quot;Asabeneh&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;lastName&quot;</span><span class="o">:</span><span class="s2">&quot;Yetayeh&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;age&quot;</span><span class="o">:</span><span class="mf">250</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;email&quot;</span><span class="o">:</span><span class="s2">&quot;asab@asb.com&quot;</span>
+<span class="w">  </span><span class="p">},</span>
+<span class="w">  </span><span class="p">{</span>
+<span class="w">    </span><span class="s2">&quot;firstName&quot;</span><span class="o">:</span><span class="s2">&quot;Alex&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;lastName&quot;</span><span class="o">:</span><span class="s2">&quot;James&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;age&quot;</span><span class="o">:</span><span class="mf">25</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;email&quot;</span><span class="o">:</span><span class="s2">&quot;alex@alex.com&quot;</span>
+<span class="w">  </span><span class="p">},</span>
+<span class="w">  </span><span class="p">{</span>
+<span class="w">  </span><span class="s2">&quot;firstName&quot;</span><span class="o">:</span><span class="s2">&quot;Lidiya&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="s2">&quot;lastName&quot;</span><span class="o">:</span><span class="s2">&quot;Tekle&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="s2">&quot;age&quot;</span><span class="o">:</span><span class="mf">28</span><span class="p">,</span>
+<span class="w">  </span><span class="s2">&quot;email&quot;</span><span class="o">:</span><span class="s2">&quot;lidiya@lidiya.com&quot;</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="p">]</span>
+<span class="p">}</span>
+</code></pre></div>
+<p>Nah liat deh contoh JSON di atas — sekilas mirip banget kan sama object biasa? Terus bedanya apa dong? Bedanya tuh simpel: key di JSON harus pake tanda kutip ganda (double quotes), alias harus berupa string. Tapi tenang aja, karena JavaScript object dan JSON tuh mirip banget, kita bisa gampang bolak-balik konversi JSON ke Object dan sebaliknya.</p>
+<p>Yuk kita bedah lebih detail contoh di atas. Jadi kita mulai dari kurung kurawal. Di dalemnya ada key "users" yang nilainya array. Di dalem array itu ada beberapa object, dan setiap object punya key masing-masing. Nah setiap key HARUS pake double quotes ya! Misalnya kita pake "firstName" bukan cuma firstName doang — ini nih beda utamanya antara object biasa dan JSON. Oke, sekarang liat contoh JSON yang lebih gede nih:</p>
+<p><strong>Contoh:</strong></p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">    </span><span class="s2">&quot;Alex&quot;</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="s2">&quot;email&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;alex@alex.com&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="s2">&quot;skills&quot;</span><span class="o">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">            </span><span class="s2">&quot;HTML&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="s2">&quot;CSS&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="s2">&quot;JavaScript&quot;</span>
+<span class="w">        </span><span class="p">],</span>
+<span class="w">        </span><span class="s2">&quot;age&quot;</span><span class="o">:</span><span class="w"> </span><span class="mf">20</span><span class="p">,</span>
+<span class="w">        </span><span class="s2">&quot;isLoggedIn&quot;</span><span class="o">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">        </span><span class="s2">&quot;points&quot;</span><span class="o">:</span><span class="w"> </span><span class="mf">30</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="s2">&quot;Asab&quot;</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="s2">&quot;email&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;asab@asab.com&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="s2">&quot;skills&quot;</span><span class="o">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">            </span><span class="s2">&quot;HTML&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="s2">&quot;CSS&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="s2">&quot;JavaScript&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="s2">&quot;Redux&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="s2">&quot;MongoDB&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="s2">&quot;Express&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="s2">&quot;React&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="s2">&quot;Node&quot;</span>
+<span class="w">        </span><span class="p">],</span>
+<span class="w">        </span><span class="s2">&quot;age&quot;</span><span class="o">:</span><span class="w"> </span><span class="mf">25</span><span class="p">,</span>
+<span class="w">        </span><span class="s2">&quot;isLoggedIn&quot;</span><span class="o">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">        </span><span class="s2">&quot;points&quot;</span><span class="o">:</span><span class="w"> </span><span class="mf">50</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="s2">&quot;Brook&quot;</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="s2">&quot;email&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;daniel@daniel.com&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="s2">&quot;skills&quot;</span><span class="o">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">            </span><span class="s2">&quot;HTML&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="s2">&quot;CSS&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="s2">&quot;JavaScript&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="s2">&quot;React&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="s2">&quot;Redux&quot;</span>
+<span class="w">        </span><span class="p">],</span>
+<span class="w">        </span><span class="s2">&quot;age&quot;</span><span class="o">:</span><span class="w"> </span><span class="mf">30</span><span class="p">,</span>
+<span class="w">        </span><span class="s2">&quot;isLoggedIn&quot;</span><span class="o">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<span class="w">        </span><span class="s2">&quot;points&quot;</span><span class="o">:</span><span class="w"> </span><span class="mf">50</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="s2">&quot;Daniel&quot;</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="s2">&quot;email&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;daniel@alex.com&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="s2">&quot;skills&quot;</span><span class="o">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">            </span><span class="s2">&quot;HTML&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="s2">&quot;CSS&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="s2">&quot;JavaScript&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="s2">&quot;Python&quot;</span>
+<span class="w">        </span><span class="p">],</span>
+<span class="w">        </span><span class="s2">&quot;age&quot;</span><span class="o">:</span><span class="w"> </span><span class="mf">20</span><span class="p">,</span>
+<span class="w">        </span><span class="s2">&quot;isLoggedIn&quot;</span><span class="o">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">        </span><span class="s2">&quot;points&quot;</span><span class="o">:</span><span class="w"> </span><span class="mf">40</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="s2">&quot;John&quot;</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="s2">&quot;email&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;john@john.com&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="s2">&quot;skills&quot;</span><span class="o">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">            </span><span class="s2">&quot;HTML&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="s2">&quot;CSS&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="s2">&quot;JavaScript&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="s2">&quot;React&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="s2">&quot;Redux&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="s2">&quot;Node.js&quot;</span>
+<span class="w">        </span><span class="p">],</span>
+<span class="w">        </span><span class="s2">&quot;age&quot;</span><span class="o">:</span><span class="w"> </span><span class="mf">20</span><span class="p">,</span>
+<span class="w">        </span><span class="s2">&quot;isLoggedIn&quot;</span><span class="o">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<span class="w">        </span><span class="s2">&quot;points&quot;</span><span class="o">:</span><span class="w"> </span><span class="mf">50</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="s2">&quot;Thomas&quot;</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="s2">&quot;email&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;thomas@thomas.com&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="s2">&quot;skills&quot;</span><span class="o">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">            </span><span class="s2">&quot;HTML&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="s2">&quot;CSS&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="s2">&quot;JavaScript&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="s2">&quot;React&quot;</span>
+<span class="w">        </span><span class="p">],</span>
+<span class="w">        </span><span class="s2">&quot;age&quot;</span><span class="o">:</span><span class="w"> </span><span class="mf">20</span><span class="p">,</span>
+<span class="w">        </span><span class="s2">&quot;isLoggedIn&quot;</span><span class="o">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">        </span><span class="s2">&quot;points&quot;</span><span class="o">:</span><span class="w"> </span><span class="mf">40</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="s2">&quot;Paul&quot;</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="s2">&quot;email&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;paul@paul.com&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="s2">&quot;skills&quot;</span><span class="o">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">            </span><span class="s2">&quot;HTML&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="s2">&quot;CSS&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="s2">&quot;JavaScript&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="s2">&quot;MongoDB&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="s2">&quot;Express&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="s2">&quot;React&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="s2">&quot;Node&quot;</span>
+<span class="w">        </span><span class="p">],</span>
+<span class="w">        </span><span class="s2">&quot;age&quot;</span><span class="o">:</span><span class="w"> </span><span class="mf">20</span><span class="p">,</span>
+<span class="w">        </span><span class="s2">&quot;isLoggedIn&quot;</span><span class="o">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">        </span><span class="s2">&quot;points&quot;</span><span class="o">:</span><span class="w"> </span><span class="mf">40</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+<h3 id="mengonversi-json-ke-objek-javascript">Mengonversi JSON ke Objek JavaScript</h3>
+<p>Biasanya sih kita ngambil data JSON dari respons HTTP atau dari file, tapi biar gampang belajar, kita bisa simpen JSON sebagai string dulu terus baru diubah ke Object. Di JavaScript, keyword <em>JSON</em> punya dua method keren: <em>parse()</em> dan <em>stringify()</em>. Kalau mau ubah JSON ke object? Tinggal parse pake <em>JSON.parse()</em>. Kalau mau ubah object ke JSON? Pake <em>JSON.stringify()</em>. Gampang banget kan!</p>
+<h4 id="jsonparse">JSON.parse()</h4>
+<div class="highlight"><pre><span></span><code><span class="nb">JSON</span><span class="p">.</span><span class="nx">parse</span><span class="p">(</span><span class="nx">json</span><span class="p">[,</span><span class="w"> </span><span class="nx">reviver</span><span class="p">])</span>
+<span class="c1">// json or text , the data</span>
+<span class="c1">// reviver is an optional callback function</span>
+<span class="cm">/* JSON.parse(json, (key, value) =&gt; {</span>
+
+<span class="cm">})</span>
+<span class="cm">*/</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">usersText</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="sb">`{</span>
+<span class="sb">&quot;users&quot;:[</span>
+<span class="sb">  {</span>
+<span class="sb">    &quot;firstName&quot;:&quot;Asabeneh&quot;,</span>
+<span class="sb">    &quot;lastName&quot;:&quot;Yetayeh&quot;,</span>
+<span class="sb">    &quot;age&quot;:250,</span>
+<span class="sb">    &quot;email&quot;:&quot;asab@asb.com&quot;</span>
+<span class="sb">  },</span>
+<span class="sb">  {</span>
+<span class="sb">    &quot;firstName&quot;:&quot;Alex&quot;,</span>
+<span class="sb">    &quot;lastName&quot;:&quot;James&quot;,</span>
+<span class="sb">    &quot;age&quot;:25,</span>
+<span class="sb">    &quot;email&quot;:&quot;alex@alex.com&quot;</span>
+<span class="sb">  },</span>
+<span class="sb">  {</span>
+<span class="sb">  &quot;firstName&quot;:&quot;Lidiya&quot;,</span>
+<span class="sb">  &quot;lastName&quot;:&quot;Tekle&quot;,</span>
+<span class="sb">  &quot;age&quot;:28,</span>
+<span class="sb">  &quot;email&quot;:&quot;lidiya@lidiya.com&quot;</span>
+<span class="sb">  }</span>
+<span class="sb">]</span>
+<span class="sb">}`</span>
+
+<span class="kd">const</span><span class="w"> </span><span class="nx">usersObj</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">JSON</span><span class="p">.</span><span class="nx">parse</span><span class="p">(</span><span class="nx">usersText</span><span class="p">,</span><span class="w"> </span><span class="kc">undefined</span><span class="p">,</span><span class="w"> </span><span class="mf">4</span><span class="p">)</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">usersObj</span><span class="p">)</span>
+</code></pre></div>
+<h3 id="menggunakan-fungsi-reviver-dengan-jsonparse">Menggunakan Fungsi Reviver dengan JSON.parse()</h3>
+<p>Nah, buat pake fungsi reviver sebagai formatter, kita tinggal tentuin key mana yang mau kita format — misalnya firstName dan lastName. Katakanlah kita pengen ubah firstName dan lastName jadi huruf kapital semua, gini caranya:</p>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">usersText</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="sb">`{</span>
+<span class="sb">&quot;users&quot;:[</span>
+<span class="sb">  {</span>
+<span class="sb">    &quot;firstName&quot;:&quot;Asabeneh&quot;,</span>
+<span class="sb">    &quot;lastName&quot;:&quot;Yetayeh&quot;,</span>
+<span class="sb">    &quot;age&quot;:250,</span>
+<span class="sb">    &quot;email&quot;:&quot;asab@asb.com&quot;</span>
+<span class="sb">  },</span>
+<span class="sb">  {</span>
+<span class="sb">    &quot;firstName&quot;:&quot;Alex&quot;,</span>
+<span class="sb">    &quot;lastName&quot;:&quot;James&quot;,</span>
+<span class="sb">    &quot;age&quot;:25,</span>
+<span class="sb">    &quot;email&quot;:&quot;alex@alex.com&quot;</span>
+<span class="sb">  },</span>
+<span class="sb">  {</span>
+<span class="sb">  &quot;firstName&quot;:&quot;Lidiya&quot;,</span>
+<span class="sb">  &quot;lastName&quot;:&quot;Tekle&quot;,</span>
+<span class="sb">  &quot;age&quot;:28,</span>
+<span class="sb">  &quot;email&quot;:&quot;lidiya@lidiya.com&quot;</span>
+<span class="sb">  }</span>
+<span class="sb">]</span>
+<span class="sb">}`</span>
+
+<span class="kd">const</span><span class="w"> </span><span class="nx">usersObj</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">JSON</span><span class="p">.</span><span class="nx">parse</span><span class="p">(</span><span class="nx">usersText</span><span class="p">,</span><span class="w"> </span><span class="p">(</span><span class="nx">key</span><span class="p">,</span><span class="w"> </span><span class="nx">value</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="kd">let</span><span class="w"> </span><span class="nx">newValue</span><span class="w"> </span><span class="o">=</span>
+<span class="w">    </span><span class="ow">typeof</span><span class="w"> </span><span class="nx">value</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s1">&#39;string&#39;</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="nx">key</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="s1">&#39;email&#39;</span><span class="w"> </span><span class="o">?</span><span class="w"> </span><span class="nx">value</span><span class="p">.</span><span class="nx">toUpperCase</span><span class="p">()</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="nx">value</span>
+<span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="nx">newValue</span>
+<span class="p">})</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">usersObj</span><span class="p">)</span>
+</code></pre></div>
+<p><em>JSON.parse()</em> tuh praktis banget, sumpah! Kamu bahkan gak perlu ngasih parameter opsional, cukup pake parameter wajib aja udah bisa ngelakuin banyak hal.</p>
+<h3 id="mengonversi-objek-ke-json">Mengonversi Objek ke JSON</h3>
+<p>Nah kalo mau ubah object ke JSON, kita pake <em>JSON.stringify()</em>. Method stringify ini butuh satu parameter wajib dan dua parameter opsional. Replacer dipake sebagai filter, dan space buat indentasi. Kalau kamu gak mau filter key apapun, tinggal kasih undefined aja, santuy~</p>
+<div class="highlight"><pre><span></span><code><span class="nb">JSON</span><span class="p">.</span><span class="nx">stringify</span><span class="p">(</span><span class="nx">obj</span><span class="p">,</span><span class="w"> </span><span class="nx">replacer</span><span class="p">,</span><span class="w"> </span><span class="nx">space</span><span class="p">)</span>
+<span class="c1">// json or text , the data</span>
+<span class="c1">// reviver is an optional callback function</span>
+</code></pre></div>
+<p>Yuk kita konversi object berikut jadi string. Pertama-tama, biarin semua key tetep ada dan kasih indentasi 4 spasi biar cakep hasilnya.</p>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">users</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="nx">Alex</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">email</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;alex@alex.com&#39;</span><span class="p">,</span>
+<span class="w">    </span><span class="nx">skills</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="s1">&#39;HTML&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;CSS&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;JavaScript&#39;</span><span class="p">],</span>
+<span class="w">    </span><span class="nx">age</span><span class="o">:</span><span class="w"> </span><span class="mf">20</span><span class="p">,</span>
+<span class="w">    </span><span class="nx">isLoggedIn</span><span class="o">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">    </span><span class="nx">points</span><span class="o">:</span><span class="w"> </span><span class="mf">30</span>
+<span class="w">  </span><span class="p">},</span>
+<span class="w">  </span><span class="nx">Asab</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">email</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;asab@asab.com&#39;</span><span class="p">,</span>
+<span class="w">    </span><span class="nx">skills</span><span class="o">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">      </span><span class="s1">&#39;HTML&#39;</span><span class="p">,</span>
+<span class="w">      </span><span class="s1">&#39;CSS&#39;</span><span class="p">,</span>
+<span class="w">      </span><span class="s1">&#39;JavaScript&#39;</span><span class="p">,</span>
+<span class="w">      </span><span class="s1">&#39;Redux&#39;</span><span class="p">,</span>
+<span class="w">      </span><span class="s1">&#39;MongoDB&#39;</span><span class="p">,</span>
+<span class="w">      </span><span class="s1">&#39;Express&#39;</span><span class="p">,</span>
+<span class="w">      </span><span class="s1">&#39;React&#39;</span><span class="p">,</span>
+<span class="w">      </span><span class="s1">&#39;Node&#39;</span>
+<span class="w">    </span><span class="p">],</span>
+<span class="w">    </span><span class="nx">age</span><span class="o">:</span><span class="w"> </span><span class="mf">25</span><span class="p">,</span>
+<span class="w">    </span><span class="nx">isLoggedIn</span><span class="o">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">    </span><span class="nx">points</span><span class="o">:</span><span class="w"> </span><span class="mf">50</span>
+<span class="w">  </span><span class="p">},</span>
+<span class="w">  </span><span class="nx">Brook</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">email</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;daniel@daniel.com&#39;</span><span class="p">,</span>
+<span class="w">    </span><span class="nx">skills</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="s1">&#39;HTML&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;CSS&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;JavaScript&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;React&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Redux&#39;</span><span class="p">],</span>
+<span class="w">    </span><span class="nx">age</span><span class="o">:</span><span class="w"> </span><span class="mf">30</span><span class="p">,</span>
+<span class="w">    </span><span class="nx">isLoggedIn</span><span class="o">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<span class="w">    </span><span class="nx">points</span><span class="o">:</span><span class="w"> </span><span class="mf">50</span>
+<span class="w">  </span><span class="p">},</span>
+<span class="w">  </span><span class="nx">Daniel</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">email</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;daniel@alex.com&#39;</span><span class="p">,</span>
+<span class="w">    </span><span class="nx">skills</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="s1">&#39;HTML&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;CSS&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;JavaScript&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Python&#39;</span><span class="p">],</span>
+<span class="w">    </span><span class="nx">age</span><span class="o">:</span><span class="w"> </span><span class="mf">20</span><span class="p">,</span>
+<span class="w">    </span><span class="nx">isLoggedIn</span><span class="o">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">    </span><span class="nx">points</span><span class="o">:</span><span class="w"> </span><span class="mf">40</span>
+<span class="w">  </span><span class="p">},</span>
+<span class="w">  </span><span class="nx">John</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">email</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;john@john.com&#39;</span><span class="p">,</span>
+<span class="w">    </span><span class="nx">skills</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="s1">&#39;HTML&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;CSS&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;JavaScript&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;React&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Redux&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Node.js&#39;</span><span class="p">],</span>
+<span class="w">    </span><span class="nx">age</span><span class="o">:</span><span class="w"> </span><span class="mf">20</span><span class="p">,</span>
+<span class="w">    </span><span class="nx">isLoggedIn</span><span class="o">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<span class="w">    </span><span class="nx">points</span><span class="o">:</span><span class="w"> </span><span class="mf">50</span>
+<span class="w">  </span><span class="p">},</span>
+<span class="w">  </span><span class="nx">Thomas</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">email</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;thomas@thomas.com&#39;</span><span class="p">,</span>
+<span class="w">    </span><span class="nx">skills</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="s1">&#39;HTML&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;CSS&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;JavaScript&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;React&#39;</span><span class="p">],</span>
+<span class="w">    </span><span class="nx">age</span><span class="o">:</span><span class="w"> </span><span class="mf">20</span><span class="p">,</span>
+<span class="w">    </span><span class="nx">isLoggedIn</span><span class="o">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">    </span><span class="nx">points</span><span class="o">:</span><span class="w"> </span><span class="mf">40</span>
+<span class="w">  </span><span class="p">},</span>
+<span class="w">  </span><span class="nx">Paul</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">email</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;paul@paul.com&#39;</span><span class="p">,</span>
+<span class="w">    </span><span class="nx">skills</span><span class="o">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">      </span><span class="s1">&#39;HTML&#39;</span><span class="p">,</span>
+<span class="w">      </span><span class="s1">&#39;CSS&#39;</span><span class="p">,</span>
+<span class="w">      </span><span class="s1">&#39;JavaScript&#39;</span><span class="p">,</span>
+<span class="w">      </span><span class="s1">&#39;MongoDB&#39;</span><span class="p">,</span>
+<span class="w">      </span><span class="s1">&#39;Express&#39;</span><span class="p">,</span>
+<span class="w">      </span><span class="s1">&#39;React&#39;</span><span class="p">,</span>
+<span class="w">      </span><span class="s1">&#39;Node&#39;</span>
+<span class="w">    </span><span class="p">],</span>
+<span class="w">    </span><span class="nx">age</span><span class="o">:</span><span class="w"> </span><span class="mf">20</span><span class="p">,</span>
+<span class="w">    </span><span class="nx">isLoggedIn</span><span class="o">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">    </span><span class="nx">points</span><span class="o">:</span><span class="w"> </span><span class="mf">40</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="p">}</span>
+
+<span class="kd">const</span><span class="w"> </span><span class="nx">txt</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">JSON</span><span class="p">.</span><span class="nx">stringify</span><span class="p">(</span><span class="nx">users</span><span class="p">,</span><span class="w"> </span><span class="kc">undefined</span><span class="p">,</span><span class="w"> </span><span class="mf">4</span><span class="p">)</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">txt</span><span class="p">)</span><span class="w"> </span><span class="c1">// text means JSON- because json is a string form of an object.</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="o">{</span>
+<span class="w">    </span><span class="s2">&quot;Alex&quot;</span>:<span class="w"> </span><span class="o">{</span>
+<span class="w">        </span><span class="s2">&quot;email&quot;</span>:<span class="w"> </span><span class="s2">&quot;alex@alex.com&quot;</span>,
+<span class="w">        </span><span class="s2">&quot;skills&quot;</span>:<span class="w"> </span><span class="o">[</span>
+<span class="w">            </span><span class="s2">&quot;HTML&quot;</span>,
+<span class="w">            </span><span class="s2">&quot;CSS&quot;</span>,
+<span class="w">            </span><span class="s2">&quot;JavaScript&quot;</span>
+<span class="w">        </span><span class="o">]</span>,
+<span class="w">        </span><span class="s2">&quot;age&quot;</span>:<span class="w"> </span><span class="m">20</span>,
+<span class="w">        </span><span class="s2">&quot;isLoggedIn&quot;</span>:<span class="w"> </span>false,
+<span class="w">        </span><span class="s2">&quot;points&quot;</span>:<span class="w"> </span><span class="m">30</span>
+<span class="w">    </span><span class="o">}</span>,
+<span class="w">    </span><span class="s2">&quot;Asab&quot;</span>:<span class="w"> </span><span class="o">{</span>
+<span class="w">        </span><span class="s2">&quot;email&quot;</span>:<span class="w"> </span><span class="s2">&quot;asab@asab.com&quot;</span>,
+<span class="w">        </span><span class="s2">&quot;skills&quot;</span>:<span class="w"> </span><span class="o">[</span>
+<span class="w">            </span><span class="s2">&quot;HTML&quot;</span>,
+<span class="w">            </span><span class="s2">&quot;CSS&quot;</span>,
+<span class="w">            </span><span class="s2">&quot;JavaScript&quot;</span>,
+<span class="w">            </span><span class="s2">&quot;Redux&quot;</span>,
+<span class="w">            </span><span class="s2">&quot;MongoDB&quot;</span>,
+<span class="w">            </span><span class="s2">&quot;Express&quot;</span>,
+<span class="w">            </span><span class="s2">&quot;React&quot;</span>,
+<span class="w">            </span><span class="s2">&quot;Node&quot;</span>
+<span class="w">        </span><span class="o">]</span>,
+<span class="w">        </span><span class="s2">&quot;age&quot;</span>:<span class="w"> </span><span class="m">25</span>,
+<span class="w">        </span><span class="s2">&quot;isLoggedIn&quot;</span>:<span class="w"> </span>false,
+<span class="w">        </span><span class="s2">&quot;points&quot;</span>:<span class="w"> </span><span class="m">50</span>
+<span class="w">    </span><span class="o">}</span>,
+<span class="w">    </span><span class="s2">&quot;Brook&quot;</span>:<span class="w"> </span><span class="o">{</span>
+<span class="w">        </span><span class="s2">&quot;email&quot;</span>:<span class="w"> </span><span class="s2">&quot;daniel@daniel.com&quot;</span>,
+<span class="w">        </span><span class="s2">&quot;skills&quot;</span>:<span class="w"> </span><span class="o">[</span>
+<span class="w">            </span><span class="s2">&quot;HTML&quot;</span>,
+<span class="w">            </span><span class="s2">&quot;CSS&quot;</span>,
+<span class="w">            </span><span class="s2">&quot;JavaScript&quot;</span>,
+<span class="w">            </span><span class="s2">&quot;React&quot;</span>,
+<span class="w">            </span><span class="s2">&quot;Redux&quot;</span>
+<span class="w">        </span><span class="o">]</span>,
+<span class="w">        </span><span class="s2">&quot;age&quot;</span>:<span class="w"> </span><span class="m">30</span>,
+<span class="w">        </span><span class="s2">&quot;isLoggedIn&quot;</span>:<span class="w"> </span>true,
+<span class="w">        </span><span class="s2">&quot;points&quot;</span>:<span class="w"> </span><span class="m">50</span>
+<span class="w">    </span><span class="o">}</span>,
+<span class="w">    </span><span class="s2">&quot;Daniel&quot;</span>:<span class="w"> </span><span class="o">{</span>
+<span class="w">        </span><span class="s2">&quot;email&quot;</span>:<span class="w"> </span><span class="s2">&quot;daniel@alex.com&quot;</span>,
+<span class="w">        </span><span class="s2">&quot;skills&quot;</span>:<span class="w"> </span><span class="o">[</span>
+<span class="w">            </span><span class="s2">&quot;HTML&quot;</span>,
+<span class="w">            </span><span class="s2">&quot;CSS&quot;</span>,
+<span class="w">            </span><span class="s2">&quot;JavaScript&quot;</span>,
+<span class="w">            </span><span class="s2">&quot;Python&quot;</span>
+<span class="w">        </span><span class="o">]</span>,
+<span class="w">        </span><span class="s2">&quot;age&quot;</span>:<span class="w"> </span><span class="m">20</span>,
+<span class="w">        </span><span class="s2">&quot;isLoggedIn&quot;</span>:<span class="w"> </span>false,
+<span class="w">        </span><span class="s2">&quot;points&quot;</span>:<span class="w"> </span><span class="m">40</span>
+<span class="w">    </span><span class="o">}</span>,
+<span class="w">    </span><span class="s2">&quot;John&quot;</span>:<span class="w"> </span><span class="o">{</span>
+<span class="w">        </span><span class="s2">&quot;email&quot;</span>:<span class="w"> </span><span class="s2">&quot;john@john.com&quot;</span>,
+<span class="w">        </span><span class="s2">&quot;skills&quot;</span>:<span class="w"> </span><span class="o">[</span>
+<span class="w">            </span><span class="s2">&quot;HTML&quot;</span>,
+<span class="w">            </span><span class="s2">&quot;CSS&quot;</span>,
+<span class="w">            </span><span class="s2">&quot;JavaScript&quot;</span>,
+<span class="w">            </span><span class="s2">&quot;React&quot;</span>,
+<span class="w">            </span><span class="s2">&quot;Redux&quot;</span>,
+<span class="w">            </span><span class="s2">&quot;Node.js&quot;</span>
+<span class="w">        </span><span class="o">]</span>,
+<span class="w">        </span><span class="s2">&quot;age&quot;</span>:<span class="w"> </span><span class="m">20</span>,
+<span class="w">        </span><span class="s2">&quot;isLoggedIn&quot;</span>:<span class="w"> </span>true,
+<span class="w">        </span><span class="s2">&quot;points&quot;</span>:<span class="w"> </span><span class="m">50</span>
+<span class="w">    </span><span class="o">}</span>,
+<span class="w">    </span><span class="s2">&quot;Thomas&quot;</span>:<span class="w"> </span><span class="o">{</span>
+<span class="w">        </span><span class="s2">&quot;email&quot;</span>:<span class="w"> </span><span class="s2">&quot;thomas@thomas.com&quot;</span>,
+<span class="w">        </span><span class="s2">&quot;skills&quot;</span>:<span class="w"> </span><span class="o">[</span>
+<span class="w">            </span><span class="s2">&quot;HTML&quot;</span>,
+<span class="w">            </span><span class="s2">&quot;CSS&quot;</span>,
+<span class="w">            </span><span class="s2">&quot;JavaScript&quot;</span>,
+<span class="w">            </span><span class="s2">&quot;React&quot;</span>
+<span class="w">        </span><span class="o">]</span>,
+<span class="w">        </span><span class="s2">&quot;age&quot;</span>:<span class="w"> </span><span class="m">20</span>,
+<span class="w">        </span><span class="s2">&quot;isLoggedIn&quot;</span>:<span class="w"> </span>false,
+<span class="w">        </span><span class="s2">&quot;points&quot;</span>:<span class="w"> </span><span class="m">40</span>
+<span class="w">    </span><span class="o">}</span>,
+<span class="w">    </span><span class="s2">&quot;Paul&quot;</span>:<span class="w"> </span><span class="o">{</span>
+<span class="w">        </span><span class="s2">&quot;email&quot;</span>:<span class="w"> </span><span class="s2">&quot;paul@paul.com&quot;</span>,
+<span class="w">        </span><span class="s2">&quot;skills&quot;</span>:<span class="w"> </span><span class="o">[</span>
+<span class="w">            </span><span class="s2">&quot;HTML&quot;</span>,
+<span class="w">            </span><span class="s2">&quot;CSS&quot;</span>,
+<span class="w">            </span><span class="s2">&quot;JavaScript&quot;</span>,
+<span class="w">            </span><span class="s2">&quot;MongoDB&quot;</span>,
+<span class="w">            </span><span class="s2">&quot;Express&quot;</span>,
+<span class="w">            </span><span class="s2">&quot;React&quot;</span>,
+<span class="w">            </span><span class="s2">&quot;Node&quot;</span>
+<span class="w">        </span><span class="o">]</span>,
+<span class="w">        </span><span class="s2">&quot;age&quot;</span>:<span class="w"> </span><span class="m">20</span>,
+<span class="w">        </span><span class="s2">&quot;isLoggedIn&quot;</span>:<span class="w"> </span>false,
+<span class="w">        </span><span class="s2">&quot;points&quot;</span>:<span class="w"> </span><span class="m">40</span>
+<span class="w">    </span><span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div>
+<h3 id="menggunakan-array-filter-dengan-jsonstringify">Menggunakan Array Filter dengan JSON.stringify</h3>
+<p>Sekarang, kita coba pake replacer sebagai filter nih. Object user kan punya banyak key, tapi kita cuma pengen beberapa aja. Gampang! Tinggal masukin key yang mau disimpen ke dalam array, terus pake di posisi replacer. Cekidot:</p>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">user</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="nx">firstName</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;Asabeneh&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="nx">lastName</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;Yetayeh&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="nx">country</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;Finland&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="nx">city</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;Helsinki&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="nx">email</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;alex@alex.com&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="nx">skills</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="s1">&#39;HTML&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;CSS&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;JavaScript&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;React&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Python&#39;</span><span class="p">],</span>
+<span class="w">  </span><span class="nx">age</span><span class="o">:</span><span class="w"> </span><span class="mf">250</span><span class="p">,</span>
+<span class="w">  </span><span class="nx">isLoggedIn</span><span class="o">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">  </span><span class="nx">points</span><span class="o">:</span><span class="w"> </span><span class="mf">30</span>
+<span class="p">}</span>
+
+<span class="kd">const</span><span class="w"> </span><span class="nx">txt</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">JSON</span><span class="p">.</span><span class="nx">stringify</span><span class="p">(</span><span class="nx">user</span><span class="p">,[</span><span class="s1">&#39;firstName&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;lastName&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;country&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;city&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;age&#39;</span><span class="p">],</span><span class="mf">4</span><span class="p">)</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">txt</span><span class="p">)</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="o">{</span>
+<span class="w">    </span><span class="s2">&quot;firstName&quot;</span>:<span class="w"> </span><span class="s2">&quot;Asabeneh&quot;</span>,
+<span class="w">    </span><span class="s2">&quot;lastName&quot;</span>:<span class="w"> </span><span class="s2">&quot;Yetayeh&quot;</span>,
+<span class="w">    </span><span class="s2">&quot;country&quot;</span>:<span class="w"> </span><span class="s2">&quot;Finland&quot;</span>,
+<span class="w">    </span><span class="s2">&quot;city&quot;</span>:<span class="w"> </span><span class="s2">&quot;Helsinki&quot;</span>,
+<span class="w">    </span><span class="s2">&quot;age&quot;</span>:<span class="w"> </span><span class="m">250</span>
+<span class="o">}</span>
+</code></pre></div>
+<p>🌕 Keren banget, kamu luar biasa! Sekarang kamu udah kenal sama format data ringan yang bisa dipake buat nyimpen data atau ngirimnya ke server HTTP. Kamu udah 16 langkah lebih maju menuju level dewa JavaScript. Sekarang, gaskeun latihan buat otak dan otot kamu!</p>
+<h2 id="latihan">Latihan</h2>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">skills</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s1">&#39;HTML&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;CSS&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;JS&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;React&#39;</span><span class="p">,</span><span class="s1">&#39;Node&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Python&#39;</span><span class="p">]</span>
+<span class="kd">let</span><span class="w"> </span><span class="nx">age</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">250</span><span class="p">;</span>
+<span class="kd">let</span><span class="w"> </span><span class="nx">isMarried</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">true</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">student</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="nx">firstName</span><span class="o">:</span><span class="s1">&#39;Asabeneh&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="nx">lastName</span><span class="o">:</span><span class="s1">&#39;Yetayehe&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="nx">age</span><span class="o">:</span><span class="mf">250</span><span class="p">,</span>
+<span class="w">  </span><span class="nx">isMarried</span><span class="o">:</span><span class="kc">true</span><span class="p">,</span>
+<span class="w">  </span><span class="nx">skills</span><span class="o">:</span><span class="p">[</span><span class="s1">&#39;HTML&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;CSS&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;JS&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;React&#39;</span><span class="p">,</span><span class="s1">&#39;Node&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Python&#39;</span><span class="p">,</span><span class="w"> </span><span class="p">]</span>
+<span class="p">}</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">txt</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="sb">`{</span>
+<span class="sb">    &quot;Alex&quot;: {</span>
+<span class="sb">        &quot;email&quot;: &quot;alex@alex.com&quot;,</span>
+<span class="sb">        &quot;skills&quot;: [</span>
+<span class="sb">            &quot;HTML&quot;,</span>
+<span class="sb">            &quot;CSS&quot;,</span>
+<span class="sb">            &quot;JavaScript&quot;</span>
+<span class="sb">        ],</span>
+<span class="sb">        &quot;age&quot;: 20,</span>
+<span class="sb">        &quot;isLoggedIn&quot;: false,</span>
+<span class="sb">        &quot;points&quot;: 30</span>
+<span class="sb">    },</span>
+<span class="sb">    &quot;Asab&quot;: {</span>
+<span class="sb">        &quot;email&quot;: &quot;asab@asab.com&quot;,</span>
+<span class="sb">        &quot;skills&quot;: [</span>
+<span class="sb">            &quot;HTML&quot;,</span>
+<span class="sb">            &quot;CSS&quot;,</span>
+<span class="sb">            &quot;JavaScript&quot;,</span>
+<span class="sb">            &quot;Redux&quot;,</span>
+<span class="sb">            &quot;MongoDB&quot;,</span>
+<span class="sb">            &quot;Express&quot;,</span>
+<span class="sb">            &quot;React&quot;,</span>
+<span class="sb">            &quot;Node&quot;</span>
+<span class="sb">        ],</span>
+<span class="sb">        &quot;age&quot;: 25,</span>
+<span class="sb">        &quot;isLoggedIn&quot;: false,</span>
+<span class="sb">        &quot;points&quot;: 50</span>
+<span class="sb">    },</span>
+<span class="sb">    &quot;Brook&quot;: {</span>
+<span class="sb">        &quot;email&quot;: &quot;daniel@daniel.com&quot;,</span>
+<span class="sb">        &quot;skills&quot;: [</span>
+<span class="sb">            &quot;HTML&quot;,</span>
+<span class="sb">            &quot;CSS&quot;,</span>
+<span class="sb">            &quot;JavaScript&quot;,</span>
+<span class="sb">            &quot;React&quot;,</span>
+<span class="sb">            &quot;Redux&quot;</span>
+<span class="sb">        ],</span>
+<span class="sb">        &quot;age&quot;: 30,</span>
+<span class="sb">        &quot;isLoggedIn&quot;: true,</span>
+<span class="sb">        &quot;points&quot;: 50</span>
+<span class="sb">    },</span>
+<span class="sb">    &quot;Daniel&quot;: {</span>
+<span class="sb">        &quot;email&quot;: &quot;daniel@alex.com&quot;,</span>
+<span class="sb">        &quot;skills&quot;: [</span>
+<span class="sb">            &quot;HTML&quot;,</span>
+<span class="sb">            &quot;CSS&quot;,</span>
+<span class="sb">            &quot;JavaScript&quot;,</span>
+<span class="sb">            &quot;Python&quot;</span>
+<span class="sb">        ],</span>
+<span class="sb">        &quot;age&quot;: 20,</span>
+<span class="sb">        &quot;isLoggedIn&quot;: false,</span>
+<span class="sb">        &quot;points&quot;: 40</span>
+<span class="sb">    },</span>
+<span class="sb">    &quot;John&quot;: {</span>
+<span class="sb">        &quot;email&quot;: &quot;john@john.com&quot;,</span>
+<span class="sb">        &quot;skills&quot;: [</span>
+<span class="sb">            &quot;HTML&quot;,</span>
+<span class="sb">            &quot;CSS&quot;,</span>
+<span class="sb">            &quot;JavaScript&quot;,</span>
+<span class="sb">            &quot;React&quot;,</span>
+<span class="sb">            &quot;Redux&quot;,</span>
+<span class="sb">            &quot;Node.js&quot;</span>
+<span class="sb">        ],</span>
+<span class="sb">        &quot;age&quot;: 20,</span>
+<span class="sb">        &quot;isLoggedIn&quot;: true,</span>
+<span class="sb">        &quot;points&quot;: 50</span>
+<span class="sb">    },</span>
+<span class="sb">    &quot;Thomas&quot;: {</span>
+<span class="sb">        &quot;email&quot;: &quot;thomas@thomas.com&quot;,</span>
+<span class="sb">        &quot;skills&quot;: [</span>
+<span class="sb">            &quot;HTML&quot;,</span>
+<span class="sb">            &quot;CSS&quot;,</span>
+<span class="sb">            &quot;JavaScript&quot;,</span>
+<span class="sb">            &quot;React&quot;</span>
+<span class="sb">        ],</span>
+<span class="sb">        &quot;age&quot;: 20,</span>
+<span class="sb">        &quot;isLoggedIn&quot;: false,</span>
+<span class="sb">        &quot;points&quot;: 40</span>
+<span class="sb">    },</span>
+<span class="sb">    &quot;Paul&quot;: {</span>
+<span class="sb">        &quot;email&quot;: &quot;paul@paul.com&quot;,</span>
+<span class="sb">        &quot;skills&quot;: [</span>
+<span class="sb">            &quot;HTML&quot;,</span>
+<span class="sb">            &quot;CSS&quot;,</span>
+<span class="sb">            &quot;JavaScript&quot;,</span>
+<span class="sb">            &quot;MongoDB&quot;,</span>
+<span class="sb">            &quot;Express&quot;,</span>
+<span class="sb">            &quot;React&quot;,</span>
+<span class="sb">            &quot;Node&quot;</span>
+<span class="sb">        ],</span>
+<span class="sb">        &quot;age&quot;: 20,</span>
+<span class="sb">        &quot;isLoggedIn&quot;: false,</span>
+<span class="sb">        &quot;points&quot;: 40</span>
+<span class="sb">    }</span>
+<span class="sb">}</span>
+<span class="sb">`</span>
+</code></pre></div>
+<h3 id="latihan-level-1">Latihan Level 1</h3>
+<ol>
+<li>Ubah array skills menjadi JSON menggunakan JSON.stringify()</li>
+<li>Stringify variabel age</li>
+<li>Stringify variabel isMarried</li>
+<li>Stringify objek student</li>
+</ol>
+<h3 id="latihan-level-2">Latihan Level 2</h3>
+<ol>
+<li>Stringify objek students hanya dengan properti firstName, lastName, dan skills</li>
+</ol>
+<h3 id="latihan-level-3">Latihan Level 3</h3>
+<ol>
+<li>Parse JSON <em>txt</em> menjadi objek.</li>
+<li>Temukan pengguna yang memiliki skills terbanyak dari variabel yang disimpan di <em>txt</em>.</li>
+</ol>
+<p>🎉 SELAMAT ! 🎉</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Tersalin ke clipboard", "clipboard.copy": "Salin ke clipboard", "search.result.more.one": "1 lagi di halaman ini", "search.result.more.other": "# lagi di halaman ini", "search.result.none": "Tidak ada dokumen yang sesuai", "search.result.one": "1 dokumen ditemukan", "search.result.other": "# dokumen ditemukan", "search.result.placeholder": "Ketik untuk mulai pencarian", "search.result.term.missing": "Tidak ada", "select.version": "Pilih versi"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>

@@ -1,0 +1,2460 @@
+
+<!doctype html>
+<html lang="id" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../02-day/">
+      
+      
+        <link rel="next" href="../04-day/">
+      
+      
+        
+          <link rel="alternate" href="../../03-day/" hreflang="en">
+        
+          <link rel="alternate" href="./" hreflang="id">
+        
+      
+      
+      <link rel="icon" href="../../images/javascript.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>📔 Hari 3 - Oke Gas! - 30 Days Javascript</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="amber" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#hari-3-oke-gas" class="md-skip">
+          Lewati ke isi
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../" title="30 Days Javascript" class="md-header__button md-logo" aria-label="30 Days Javascript" data-md-component="logo">
+      
+  <img src="../../images/javascript.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            30 Days Javascript
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              📔 Hari 3 - Oke Gas!
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+      <div class="md-header__option">
+  <div class="md-select">
+    
+    <button class="md-header__button md-icon" aria-label="Pilih bahasa">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.5 17.5 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2zm-2.62 7 1.62-4.33L19.12 17z"/></svg>
+    </button>
+    <div class="md-select__inner">
+      <ul class="md-select__list">
+        
+          <li class="md-select__item">
+            <a href="../../03-day/" hreflang="en" class="md-select__link">
+              English
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="./" hreflang="id" class="md-select__link">
+              Bahasa Indonesia
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Cari" placeholder="Cari" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Cari">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Kosongkan" aria-label="Kosongkan" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Mempersiapkan pencarian
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/devinesia/30-days-javascript-web" title="Ke repositori" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigasi" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../" title="30 Days Javascript" class="md-nav__button md-logo" aria-label="30 Days Javascript" data-md-component="logo">
+      
+  <img src="../../images/javascript.png" alt="logo">
+
+    </a>
+    30 Days Javascript
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/devinesia/30-days-javascript-web" title="Ke repositori" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Yuk Mulai!
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📔 Hari 1 - Yuk Mulai!
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📔 Hari 2 - Gaskeun Lanjut!
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📔 Hari 3 - Oke Gas!
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📔 Hari 3 - Oke Gas!
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Daftar isi">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Daftar isi
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#booleans" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Booleans
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Booleans">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#nilai-truthy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Nilai Truthy
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nilai-falsy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Nilai Falsy
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#undefined" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Undefined
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#null" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Null
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#operator" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Operator
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Operator">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#operator-assignment" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Operator Assignment
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#operator-aritmatika" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Operator Aritmatika
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#operator-perbandingan" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Operator Perbandingan
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#operator-logika" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Operator Logika
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#operator-increment" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Operator Increment
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#operator-decrement" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Operator Decrement
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#operator-ternary" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Operator Ternary
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#prioritas-operator" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Prioritas Operator
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#metode-window" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Metode Window
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Metode Window">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#metode-window-alert" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Metode Window alert()
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#metode-window-prompt" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Metode Window prompt()
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#metode-window-confirm" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Metode Window confirm()
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#date-object" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Date Object
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Date Object">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#membuat-objek-waktu" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Membuat objek waktu
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mendapatkan-tahun-penuh" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mendapatkan tahun penuh
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mendapatkan-bulan" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mendapatkan bulan
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mendapatkan-tanggal" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mendapatkan tanggal
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mendapatkan-hari" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mendapatkan hari
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mendapatkan-jam" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mendapatkan jam
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mendapatkan-menit" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mendapatkan menit
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mendapatkan-detik" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mendapatkan detik
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mendapatkan-waktu" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mendapatkan waktu
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hari-3-latihan" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        💻 Hari 3: Latihan
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="💻 Hari 3: Latihan">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#latihan-level-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Latihan: Level 1
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#latihan-level-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Latihan: Level 2
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#latihan-level-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Latihan: Level 3
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📔 Hari 4 - Yuk Ngoding!
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../05-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📔 Hari 5 - Mantap Lanjut!
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../06-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📔 Hari 6
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../07-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📔 Hari 7
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../08-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📔 Hari 8
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../09-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📔 Hari 9
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../10-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📔 Hari 10
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../11-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📘 Hari 11
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../12-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📘 Hari 12
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../13-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📘 Hari 13
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../14-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📘 Hari 14
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../15-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📘 Hari 15
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../16-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📘 Hari 16
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../17-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📘 Hari 17
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../18-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📘 Hari 18
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../19-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📘 Hari 19
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📘 Hari 20
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../21-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📙 Hari 21
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../22-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📙 Hari 22
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../23-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📙 Hari 23
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../24-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📙 Hari 24
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../25-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📙 Hari 25
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../26-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📔 Hari 26
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../27-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📔 Hari 27
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../28-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📔 Hari 28
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../29-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📔 Hari 29
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../30-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📔 Hari 30
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Daftar isi">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Daftar isi
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#booleans" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Booleans
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Booleans">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#nilai-truthy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Nilai Truthy
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nilai-falsy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Nilai Falsy
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#undefined" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Undefined
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#null" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Null
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#operator" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Operator
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Operator">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#operator-assignment" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Operator Assignment
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#operator-aritmatika" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Operator Aritmatika
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#operator-perbandingan" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Operator Perbandingan
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#operator-logika" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Operator Logika
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#operator-increment" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Operator Increment
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#operator-decrement" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Operator Decrement
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#operator-ternary" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Operator Ternary
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#prioritas-operator" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Prioritas Operator
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#metode-window" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Metode Window
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Metode Window">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#metode-window-alert" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Metode Window alert()
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#metode-window-prompt" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Metode Window prompt()
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#metode-window-confirm" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Metode Window confirm()
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#date-object" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Date Object
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Date Object">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#membuat-objek-waktu" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Membuat objek waktu
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mendapatkan-tahun-penuh" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mendapatkan tahun penuh
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mendapatkan-bulan" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mendapatkan bulan
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mendapatkan-tanggal" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mendapatkan tanggal
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mendapatkan-hari" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mendapatkan hari
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mendapatkan-jam" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mendapatkan jam
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mendapatkan-menit" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mendapatkan menit
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mendapatkan-detik" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mendapatkan detik
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mendapatkan-waktu" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mendapatkan waktu
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hari-3-latihan" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        💻 Hari 3: Latihan
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="💻 Hari 3: Latihan">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#latihan-level-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Latihan: Level 1
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#latihan-level-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Latihan: Level 2
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#latihan-level-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Latihan: Level 3
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="hari-3-oke-gas">📔 Hari 3 - Oke Gas!</h1>
+<h2 id="booleans">Booleans</h2>
+<p>Tipe data boolean merepresentasikan salah satu dari dua nilai: <em>true</em> atau <em>false</em>. Nilai boolean itu true atau false. Nanti bakal makin jelas pas kamu mulai pake operator perbandingan. Setiap perbandingan ngembaliin nilai boolean yaitu true atau false.</p>
+<p><strong>Contoh: Nilai Boolean</strong></p>
+<div class="highlight"><pre><span></span><code><span class="kd">let</span><span class="w"> </span><span class="nx">isLightOn</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">true</span>
+<span class="kd">let</span><span class="w"> </span><span class="nx">isRaining</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">false</span>
+<span class="kd">let</span><span class="w"> </span><span class="nx">isHungry</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">false</span>
+<span class="kd">let</span><span class="w"> </span><span class="nx">isMarried</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">true</span>
+<span class="kd">let</span><span class="w"> </span><span class="nx">truValue</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">4</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mf">3</span><span class="w">    </span><span class="c1">// true</span>
+<span class="kd">let</span><span class="w"> </span><span class="nx">falseValue</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">4</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mf">3</span><span class="w">  </span><span class="c1">// false</span>
+</code></pre></div>
+<p>Kita sepakat ya bahwa nilai boolean itu true atau false.</p>
+<h3 id="nilai-truthy">Nilai Truthy</h3>
+<ul>
+<li>Semua angka (positif dan negatif) adalah truthy kecuali nol</li>
+<li>Semua string adalah truthy kecuali string kosong ('')</li>
+<li>Boolean true</li>
+</ul>
+<h3 id="nilai-falsy">Nilai Falsy</h3>
+<ul>
+<li>0</li>
+<li>0n</li>
+<li>null</li>
+<li>undefined</li>
+<li>NaN</li>
+<li>boolean false</li>
+<li>'', "", ``, string kosong</li>
+</ul>
+<p>Penting nih buat ngapalin nilai truthy dan falsy tersebut. Di bagian selanjutnya, kita bakal pake mereka dengan kondisi buat ngambil keputusan.</p>
+<h2 id="undefined">Undefined</h2>
+<p>Kalau kita deklarasikan variabel dan nggak ngasih nilai, nilainya bakal undefined. Selain itu, kalau sebuah fungsi nggak ngembaliin nilai, hasilnya bakal undefined.</p>
+<div class="highlight"><pre><span></span><code><span class="kd">let</span><span class="w"> </span><span class="nx">firstName</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">firstName</span><span class="p">)</span><span class="w"> </span><span class="c1">//tidak terdefinisi, karena belum diberi nilai</span>
+</code></pre></div>
+<h2 id="null">Null</h2>
+<div class="highlight"><pre><span></span><code><span class="kd">let</span><span class="w"> </span><span class="nx">empty</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">null</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">empty</span><span class="p">)</span><span class="w"> </span><span class="c1">// -&gt; null , berarti tidak ada nilai</span>
+</code></pre></div>
+<h2 id="operator">Operator</h2>
+<h3 id="operator-assignment">Operator Assignment</h3>
+<p>Tanda sama dengan dalam JavaScript adalah operator assignment. Dipake buat ngeset nilai ke variabel.</p>
+<div class="highlight"><pre><span></span><code><span class="kd">let</span><span class="w"> </span><span class="nx">firstName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;Asabeneh&#39;</span>
+<span class="kd">let</span><span class="w"> </span><span class="nx">country</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;Finland&#39;</span>
+</code></pre></div>
+<p>Operator Assignment</p>
+<p><img alt="Operator Assignment" src="../../images/assignment_operators.png" /></p>
+<h3 id="operator-aritmatika">Operator Aritmatika</h3>
+<p>Operator aritmatika adalah operator matematika.</p>
+<ul>
+<li>Penjumlahan(+): a + b</li>
+<li>Pengurangan(-): a - b</li>
+<li>Perkalian(*): a * b</li>
+<li>Pembagian(/): a / b</li>
+<li>Modulus(%): a % b</li>
+<li>Eksponensial(**): a ** b</li>
+</ul>
+<div class="highlight"><pre><span></span><code><span class="kd">let</span><span class="w"> </span><span class="nx">numOne</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">4</span>
+<span class="kd">let</span><span class="w"> </span><span class="nx">numTwo</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">3</span>
+<span class="kd">let</span><span class="w"> </span><span class="nx">sum</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">numOne</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">numTwo</span>
+<span class="kd">let</span><span class="w"> </span><span class="nx">diff</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">numOne</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="nx">numTwo</span>
+<span class="kd">let</span><span class="w"> </span><span class="nx">mult</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">numOne</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="nx">numTwo</span>
+<span class="kd">let</span><span class="w"> </span><span class="nx">div</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">numOne</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="nx">numTwo</span>
+<span class="kd">let</span><span class="w"> </span><span class="nx">remainder</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">numOne</span><span class="w"> </span><span class="o">%</span><span class="w"> </span><span class="nx">numTwo</span>
+<span class="kd">let</span><span class="w"> </span><span class="nx">powerOf</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">numOne</span><span class="w"> </span><span class="o">**</span><span class="w"> </span><span class="nx">numTwo</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">sum</span><span class="p">,</span><span class="w"> </span><span class="nx">diff</span><span class="p">,</span><span class="w"> </span><span class="nx">mult</span><span class="p">,</span><span class="w"> </span><span class="nx">div</span><span class="p">,</span><span class="w"> </span><span class="nx">remainder</span><span class="p">,</span><span class="w"> </span><span class="nx">powerOf</span><span class="p">)</span><span class="w"> </span><span class="c1">// 7,1,12,1.33,1, 64</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">PI</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">3.14</span>
+<span class="kd">let</span><span class="w"> </span><span class="nx">radius</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">100</span><span class="w">          </span><span class="c1">// panjang dalam meter</span>
+
+<span class="c1">//Mari kita hitung luas lingkaran</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">areaOfCircle</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">PI</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="nx">radius</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="nx">radius</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">areaOfCircle</span><span class="p">)</span><span class="w">  </span><span class="c1">//  314 m</span>
+
+
+<span class="kd">const</span><span class="w"> </span><span class="nx">gravity</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">9.81</span><span class="w">      </span><span class="c1">// dalam m/s2</span>
+<span class="kd">let</span><span class="w"> </span><span class="nx">mass</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">72</span><span class="w">             </span><span class="c1">// dalam Kilogram</span>
+
+<span class="c1">// Mari kita hitung berat suatu objek</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">weight</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">mass</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="nx">gravity</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">weight</span><span class="p">)</span><span class="w">        </span><span class="c1">// 706.32 N(Newton)</span>
+
+<span class="kd">const</span><span class="w"> </span><span class="nx">boilingPoint</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">100</span><span class="w">  </span><span class="c1">// suhu dalam oC, titik didih air</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">bodyTemp</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">37</span><span class="w">       </span><span class="c1">// suhu tubuh dalam oC</span>
+
+
+<span class="c1">// Menggabungkan string dengan angka menggunakan interpolasi string</span>
+<span class="cm">/*</span>
+<span class="cm"> Titik didih air adalah 100 oC.</span>
+<span class="cm"> Suhu tubuh manusia adalah 37 oC.</span>
+<span class="cm"> Gravitasi bumi adalah 9.81 m/s2.</span>
+<span class="cm"> */</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span>
+<span class="w">  </span><span class="sb">`The boiling point of water is </span><span class="si">${</span><span class="nx">boilingPoint</span><span class="si">}</span><span class="sb"> oC.\nHuman body temperature is </span><span class="si">${</span><span class="nx">bodyTemp</span><span class="si">}</span><span class="sb"> oC.\nThe gravity of earth is </span><span class="si">${</span><span class="nx">gravity</span><span class="si">}</span><span class="sb"> m / s2.`</span>
+<span class="p">)</span>
+</code></pre></div>
+<h3 id="operator-perbandingan">Operator Perbandingan</h3>
+<p>Dalam pemrograman kita bandingin nilai, kita pake operator perbandingan buat ngebandingin dua nilai. Kita ngecek apakah suatu nilai lebih gede, lebih kecil, atau sama dengan nilai lainnya.</p>
+<p><img alt="Operator Perbandingan" src="../../images/comparison_operators.png" />
+<strong>Contoh: Operator Perbandingan</strong></p>
+<div class="highlight"><pre><span></span><code><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="mf">3</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mf">2</span><span class="p">)</span><span class="w">              </span><span class="c1">// true, karena 3 lebih besar dari 2</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="mf">3</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="mf">2</span><span class="p">)</span><span class="w">             </span><span class="c1">// true, karena 3 lebih besar dari 2</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="mf">3</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mf">2</span><span class="p">)</span><span class="w">              </span><span class="c1">// false, karena 3 lebih besar dari 2</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="mf">2</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mf">3</span><span class="p">)</span><span class="w">              </span><span class="c1">// true, karena 2 lebih kecil dari 3</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="mf">2</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="mf">3</span><span class="p">)</span><span class="w">             </span><span class="c1">// true, karena 2 lebih kecil dari 3</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="mf">3</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mf">2</span><span class="p">)</span><span class="w">             </span><span class="c1">// false, karena 3 tidak sama dengan 2</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="mf">3</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="mf">2</span><span class="p">)</span><span class="w">             </span><span class="c1">// true, karena 3 tidak sama dengan 2</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="mf">3</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s1">&#39;3&#39;</span><span class="p">)</span><span class="w">           </span><span class="c1">// true, hanya membandingkan nilai</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="mf">3</span><span class="w"> </span><span class="o">===</span><span class="w"> </span><span class="s1">&#39;3&#39;</span><span class="p">)</span><span class="w">          </span><span class="c1">// false, membandingkan nilai dan tipe data</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="mf">3</span><span class="w"> </span><span class="o">!==</span><span class="w"> </span><span class="s1">&#39;3&#39;</span><span class="p">)</span><span class="w">          </span><span class="c1">// true, membandingkan nilai dan tipe data</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="mf">3</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="mf">3</span><span class="p">)</span><span class="w">             </span><span class="c1">// false, hanya membandingkan nilai</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="mf">3</span><span class="w"> </span><span class="o">!==</span><span class="w"> </span><span class="mf">3</span><span class="p">)</span><span class="w">            </span><span class="c1">// false, membandingkan nilai dan tipe data</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="mf">0</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="kc">false</span><span class="p">)</span><span class="w">         </span><span class="c1">// true, ekuivalen</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="mf">0</span><span class="w"> </span><span class="o">===</span><span class="w"> </span><span class="kc">false</span><span class="p">)</span><span class="w">        </span><span class="c1">// false, tidak persis sama</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="mf">0</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s1">&#39;&#39;</span><span class="p">)</span><span class="w">            </span><span class="c1">// true, ekuivalen</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="mf">0</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s1">&#39; &#39;</span><span class="p">)</span><span class="w">           </span><span class="c1">// true, ekuivalen</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="mf">0</span><span class="w"> </span><span class="o">===</span><span class="w"> </span><span class="s1">&#39;&#39;</span><span class="p">)</span><span class="w">           </span><span class="c1">// false, tidak persis sama</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="mf">1</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="kc">true</span><span class="p">)</span><span class="w">          </span><span class="c1">// true, ekuivalen</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="mf">1</span><span class="w"> </span><span class="o">===</span><span class="w"> </span><span class="kc">true</span><span class="p">)</span><span class="w">         </span><span class="c1">// false, tidak persis sama</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="kc">undefined</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="kc">null</span><span class="p">)</span><span class="w">  </span><span class="c1">// true</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="kc">undefined</span><span class="w"> </span><span class="o">===</span><span class="w"> </span><span class="kc">null</span><span class="p">)</span><span class="w"> </span><span class="c1">// false</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="kc">NaN</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="kc">NaN</span><span class="p">)</span><span class="w">         </span><span class="c1">// false, tidak sama</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="kc">NaN</span><span class="w"> </span><span class="o">===</span><span class="w"> </span><span class="kc">NaN</span><span class="p">)</span><span class="w">        </span><span class="c1">// false</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="ow">typeof</span><span class="w"> </span><span class="kc">NaN</span><span class="p">)</span><span class="w">         </span><span class="c1">// number</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;mango&#39;</span><span class="p">.</span><span class="nx">length</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s1">&#39;avocado&#39;</span><span class="p">.</span><span class="nx">length</span><span class="p">)</span><span class="w">  </span><span class="c1">// false</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;mango&#39;</span><span class="p">.</span><span class="nx">length</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="s1">&#39;avocado&#39;</span><span class="p">.</span><span class="nx">length</span><span class="p">)</span><span class="w">  </span><span class="c1">// true</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;mango&#39;</span><span class="p">.</span><span class="nx">length</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="s1">&#39;avocado&#39;</span><span class="p">.</span><span class="nx">length</span><span class="p">)</span><span class="w">   </span><span class="c1">// true</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;milk&#39;</span><span class="p">.</span><span class="nx">length</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s1">&#39;meat&#39;</span><span class="p">.</span><span class="nx">length</span><span class="p">)</span><span class="w">      </span><span class="c1">// true</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;milk&#39;</span><span class="p">.</span><span class="nx">length</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="s1">&#39;meat&#39;</span><span class="p">.</span><span class="nx">length</span><span class="p">)</span><span class="w">      </span><span class="c1">// false</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;tomato&#39;</span><span class="p">.</span><span class="nx">length</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s1">&#39;potato&#39;</span><span class="p">.</span><span class="nx">length</span><span class="p">)</span><span class="w">  </span><span class="c1">// true</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;python&#39;</span><span class="p">.</span><span class="nx">length</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="s1">&#39;dragon&#39;</span><span class="p">.</span><span class="nx">length</span><span class="p">)</span><span class="w">   </span><span class="c1">// false</span>
+</code></pre></div>
+<p>Coba deh pahami perbandingan di atas dengan sedikit logika. Ngapalin doang tanpa logika mungkin susah.
+JavaScript bisa dibilang bahasa pemrograman yang agak aneh sih. Kode JavaScript jalan dan ngasih kamu hasil, tapi kecuali kamu udah mahir, hasilnya mungkin nggak sesuai harapan.</p>
+<p>Sebagai aturan praktis, kalau suatu nilai nggak true dengan == maka nggak bakal sama dengan ===. Pake === lebih aman daripada pake ==. <a href="https://dorey.github.io/JavaScript-Equality-Table/">Tautan</a> berikut punya daftar lengkap perbandingan tipe data.</p>
+<h3 id="operator-logika">Operator Logika</h3>
+<p>Simbol berikut adalah operator logika yang umum:
+&amp;&amp; (ampersand), || (pipe) dan ! (negasi).
+Operator &amp;&amp; ngasilin true cuma kalau kedua operand bernilai true.
+Operator || ngasilin true kalau salah satu operand bernilai true.
+Operator ! meniadakan true jadi false dan false jadi true.</p>
+<div class="highlight"><pre><span></span><code><span class="c1">// &amp;&amp; contoh operator ampersand</span>
+
+<span class="kd">const</span><span class="w"> </span><span class="nx">check</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">4</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mf">3</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="mf">10</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mf">5</span><span class="w">         </span><span class="c1">// true &amp;&amp; true -&gt; true</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">check</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">4</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mf">3</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="mf">10</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mf">5</span><span class="w">         </span><span class="c1">// true &amp;&amp; false -&gt; false</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">check</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">4</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mf">3</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="mf">10</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mf">5</span><span class="w">         </span><span class="c1">// false &amp;&amp; false -&gt; false</span>
+
+<span class="c1">// || pipe atau operator, contoh</span>
+
+<span class="kd">const</span><span class="w"> </span><span class="nx">check</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">4</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mf">3</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="mf">10</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mf">5</span><span class="w">         </span><span class="c1">// true  || true -&gt; true</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">check</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">4</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mf">3</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="mf">10</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mf">5</span><span class="w">         </span><span class="c1">// true  || false -&gt; true</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">check</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">4</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mf">3</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="mf">10</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mf">5</span><span class="w">         </span><span class="c1">// false || false -&gt; false</span>
+
+<span class="c1">//! Contoh negasi</span>
+
+<span class="kd">let</span><span class="w"> </span><span class="nx">check</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">4</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mf">3</span><span class="w">                     </span><span class="c1">// true</span>
+<span class="kd">let</span><span class="w"> </span><span class="nx">check</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">!</span><span class="p">(</span><span class="mf">4</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mf">3</span><span class="p">)</span><span class="w">                  </span><span class="c1">//  false</span>
+<span class="kd">let</span><span class="w"> </span><span class="nx">isLightOn</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">true</span>
+<span class="kd">let</span><span class="w"> </span><span class="nx">isLightOff</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">!</span><span class="nx">isLightOn</span><span class="w">           </span><span class="c1">// false</span>
+<span class="kd">let</span><span class="w"> </span><span class="nx">isMarried</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">!</span><span class="kc">false</span><span class="w">                </span><span class="c1">// true</span>
+</code></pre></div>
+<h3 id="operator-increment">Operator Increment</h3>
+<p>Di JavaScript kita pake operator increment buat nambahin nilai yang tersimpan di variabel. Increment bisa berupa pre atau post increment. Yuk kita lihat masing-masing:</p>
+<ol>
+<li>Pre-increment</li>
+</ol>
+<div class="highlight"><pre><span></span><code><span class="kd">let</span><span class="w"> </span><span class="nx">count</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="o">++</span><span class="nx">count</span><span class="p">)</span><span class="w">        </span><span class="c1">// 1</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">count</span><span class="p">)</span><span class="w">          </span><span class="c1">// 1</span>
+</code></pre></div>
+<ol>
+<li>Post-increment</li>
+</ol>
+<div class="highlight"><pre><span></span><code><span class="kd">let</span><span class="w"> </span><span class="nx">count</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">count</span><span class="o">++</span><span class="p">)</span><span class="w">        </span><span class="c1">// 0</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">count</span><span class="p">)</span><span class="w">          </span><span class="c1">// 1</span>
+</code></pre></div>
+<p>Kita lebih sering pake post-increment sih. Setidaknya kamu harus inget cara pake operator post-increment ya.</p>
+<h3 id="operator-decrement">Operator Decrement</h3>
+<p>Di JavaScript kita pake operator decrement buat ngurangin nilai yang tersimpan di variabel. Decrement bisa berupa pre atau post decrement. Yuk kita lihat masing-masing:</p>
+<ol>
+<li>Pre-decrement</li>
+</ol>
+<div class="highlight"><pre><span></span><code><span class="kd">let</span><span class="w"> </span><span class="nx">count</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="o">--</span><span class="nx">count</span><span class="p">)</span><span class="w"> </span><span class="c1">// -1</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">count</span><span class="p">)</span><span class="w">  </span><span class="c1">// -1</span>
+</code></pre></div>
+<ol>
+<li>Post-decrement</li>
+</ol>
+<div class="highlight"><pre><span></span><code><span class="kd">let</span><span class="w"> </span><span class="nx">count</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">count</span><span class="o">--</span><span class="p">)</span><span class="w"> </span><span class="c1">// 0</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">count</span><span class="p">)</span><span class="w">   </span><span class="c1">// -1</span>
+</code></pre></div>
+<h3 id="operator-ternary">Operator Ternary</h3>
+<p>Operator ternary memungkinkan kita buat nulis kondisi.
+Cara lain buat nulis kondisional adalah pake operator ternary. Lihat contoh berikut nih:</p>
+<div class="highlight"><pre><span></span><code><span class="kd">let</span><span class="w"> </span><span class="nx">isRaining</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">true</span>
+<span class="nx">isRaining</span>
+<span class="w">  </span><span class="o">?</span><span class="w"> </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;You need a rain coat.&#39;</span><span class="p">)</span>
+<span class="w">  </span><span class="o">:</span><span class="w"> </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;No need for a rain coat.&#39;</span><span class="p">)</span>
+<span class="nx">isRaining</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">false</span>
+
+<span class="nx">isRaining</span>
+<span class="w">  </span><span class="o">?</span><span class="w"> </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;You need a rain coat.&#39;</span><span class="p">)</span>
+<span class="w">  </span><span class="o">:</span><span class="w"> </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;No need for a rain coat.&#39;</span><span class="p">)</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>You<span class="w"> </span>need<span class="w"> </span>a<span class="w"> </span>rain<span class="w"> </span>coat.
+No<span class="w"> </span>need<span class="w"> </span><span class="k">for</span><span class="w"> </span>a<span class="w"> </span>rain<span class="w"> </span>coat.
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="kd">let</span><span class="w"> </span><span class="nx">number</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">5</span>
+<span class="nx">number</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mf">0</span>
+<span class="w">  </span><span class="o">?</span><span class="w"> </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="sb">`</span><span class="si">${</span><span class="nx">number</span><span class="si">}</span><span class="sb"> is a positive number`</span><span class="p">)</span>
+<span class="w">  </span><span class="o">:</span><span class="w"> </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="sb">`</span><span class="si">${</span><span class="nx">number</span><span class="si">}</span><span class="sb"> is a negative number`</span><span class="p">)</span>
+<span class="nx">number</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">-</span><span class="mf">5</span>
+
+<span class="nx">number</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mf">0</span>
+<span class="w">  </span><span class="o">?</span><span class="w"> </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="sb">`</span><span class="si">${</span><span class="nx">number</span><span class="si">}</span><span class="sb"> is a positive number`</span><span class="p">)</span>
+<span class="w">  </span><span class="o">:</span><span class="w"> </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="sb">`</span><span class="si">${</span><span class="nx">number</span><span class="si">}</span><span class="sb"> is a negative number`</span><span class="p">)</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="m">5</span><span class="w"> </span>is<span class="w"> </span>a<span class="w"> </span>positive<span class="w"> </span>number
+-5<span class="w"> </span>is<span class="w"> </span>a<span class="w"> </span>negative<span class="w"> </span>number
+</code></pre></div>
+<h3 id="prioritas-operator">Prioritas Operator</h3>
+<p>Gue saranin kamu buat baca tentang prioritas operator dari <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence">tautan</a> ini.</p>
+<h2 id="metode-window">Metode Window</h2>
+<h3 id="metode-window-alert">Metode Window alert()</h3>
+<p>Kayak yang udah kamu lihat di awal, metode alert() nampilin kotak peringatan dengan pesan tertentu dan tombol OK. Ini metode bawaan dan nerima satu argumen.</p>
+<div class="highlight"><pre><span></span><code><span class="nx">alert</span><span class="p">(</span><span class="nx">message</span><span class="p">)</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="nx">alert</span><span class="p">(</span><span class="s1">&#39;Welcome to 30DaysOfJavaScript&#39;</span><span class="p">)</span>
+</code></pre></div>
+<p>Jangan terlalu sering pake alert ya karena mengganggu dan bikin bete, pake aja buat ngetes doang.</p>
+<h3 id="metode-window-prompt">Metode Window prompt()</h3>
+<p>Metode window prompt nampilin kotak prompt dengan input di browser kamu buat ngambil nilai input dan data input bisa disimpen di variabel. Metode prompt() nerima dua argumen. Argumen kedua itu opsional.</p>
+<div class="highlight"><pre><span></span><code><span class="nx">prompt</span><span class="p">(</span><span class="s1">&#39;required text&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;optional text&#39;</span><span class="p">)</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="kd">let</span><span class="w"> </span><span class="nx">number</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">prompt</span><span class="p">(</span><span class="s1">&#39;Enter number&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;number goes here&#39;</span><span class="p">)</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">number</span><span class="p">)</span>
+</code></pre></div>
+<h3 id="metode-window-confirm">Metode Window confirm()</h3>
+<p>Metode confirm() nampilin kotak dialog dengan pesan tertentu, barengan sama tombol OK dan Cancel.
+Kotak konfirmasi sering dipake buat minta izin dari pengguna buat ngejalanin sesuatu. Window confirm() nerima string sebagai argumen.
+Klik OK ngasilin nilai true, sedangkan klik tombol Cancel ngasilin nilai false.</p>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">agree</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">confirm</span><span class="p">(</span><span class="s1">&#39;Are you sure you like to delete? &#39;</span><span class="p">)</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">agree</span><span class="p">)</span><span class="w"> </span><span class="c1">// hasilnya akan true atau false berdasarkan apa yang kamu klik pada kotak dialog</span>
+</code></pre></div>
+<p>Ini bukan semua metode window ya, nanti kita bakal punya bagian terpisah buat mendalami metode window.</p>
+<h2 id="date-object">Date Object</h2>
+<p>Waktu itu hal yang penting. Kita pengen tahu waktu suatu aktivitas atau peristiwa tertentu. Di JavaScript, waktu dan tanggal saat ini dibuat pake JavaScript Date Object. Objek yang kita buat pake Date object nyediain banyak metode buat bekerja dengan tanggal dan waktu. Metode yang kita pake buat dapetin informasi tanggal dan waktu dari nilai date object dimulai dengan kata <em>get</em> karena ngasih informasi.
+<em>getFullYear(), getMonth(), getDate(), getDay(), getHours(), getMinutes, getSeconds(), getMilliseconds(), getTime(), getDay()</em></p>
+<p><img alt="Date time Object" src="../../images/date_time_object.png" /></p>
+<h3 id="membuat-objek-waktu">Membuat objek waktu</h3>
+<p>Begitu kita bikin objek waktu, objek waktu bakal ngasih informasi tentang waktu. Yuk kita bikin objek waktu.</p>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">now</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nb">Date</span><span class="p">()</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">now</span><span class="p">)</span><span class="w"> </span><span class="c1">// Sat Jan 04 2020 00:56:41 GMT+0200 (Eastern European Standard Time)</span>
+</code></pre></div>
+<p>Kita udah bikin objek waktu dan kita bisa akses informasi tanggal waktu apa pun dari objek pake metode get yang udah kita sebutin di tabel.</p>
+<h3 id="mendapatkan-tahun-penuh">Mendapatkan tahun penuh</h3>
+<p>Yuk kita ekstrak atau dapetin tahun penuh dari objek waktu.</p>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">now</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nb">Date</span><span class="p">()</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">now</span><span class="p">.</span><span class="nx">getFullYear</span><span class="p">())</span><span class="w"> </span><span class="c1">// 2020</span>
+</code></pre></div>
+<h3 id="mendapatkan-bulan">Mendapatkan bulan</h3>
+<p>Yuk kita ekstrak atau dapetin bulan dari objek waktu.</p>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">now</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nb">Date</span><span class="p">()</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">now</span><span class="p">.</span><span class="nx">getMonth</span><span class="p">())</span><span class="w"> </span><span class="c1">// 0, karena bulannya adalah Januari, bulan(0-11)</span>
+</code></pre></div>
+<h3 id="mendapatkan-tanggal">Mendapatkan tanggal</h3>
+<p>Yuk kita ekstrak atau dapetin tanggal dari objek waktu.</p>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">now</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nb">Date</span><span class="p">()</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">now</span><span class="p">.</span><span class="nx">getDate</span><span class="p">())</span><span class="w"> </span><span class="c1">// 4, karena tanggalnya adalah 4, tanggal(1-31)</span>
+</code></pre></div>
+<h3 id="mendapatkan-hari">Mendapatkan hari</h3>
+<p>Yuk kita ekstrak atau dapetin hari dalam seminggu dari objek waktu.</p>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">now</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nb">Date</span><span class="p">()</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">now</span><span class="p">.</span><span class="nx">getDay</span><span class="p">())</span><span class="w"> </span><span class="c1">// 6, karena harinya adalah Sabtu yang merupakan hari ke-7</span>
+<span class="c1">//  Minggu adalah 0, Senin adalah 1 dan Sabtu adalah 6</span>
+<span class="c1">// Mendapatkan hari dalam seminggu sebagai angka (0-6)</span>
+</code></pre></div>
+<h3 id="mendapatkan-jam">Mendapatkan jam</h3>
+<p>Yuk kita ekstrak atau dapetin jam dari objek waktu.</p>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">now</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nb">Date</span><span class="p">()</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">now</span><span class="p">.</span><span class="nx">getHours</span><span class="p">())</span><span class="w"> </span><span class="c1">// 0, karena waktunya adalah 00:56:41</span>
+</code></pre></div>
+<h3 id="mendapatkan-menit">Mendapatkan menit</h3>
+<p>Yuk kita ekstrak atau dapetin menit dari objek waktu.</p>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">now</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nb">Date</span><span class="p">()</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">now</span><span class="p">.</span><span class="nx">getMinutes</span><span class="p">())</span><span class="w"> </span><span class="c1">// 56, karena waktunya adalah 00:56:41</span>
+</code></pre></div>
+<h3 id="mendapatkan-detik">Mendapatkan detik</h3>
+<p>Yuk kita ekstrak atau dapetin detik dari objek waktu.</p>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">now</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nb">Date</span><span class="p">()</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">now</span><span class="p">.</span><span class="nx">getSeconds</span><span class="p">())</span><span class="w"> </span><span class="c1">// 41, karena waktunya adalah 00:56:41</span>
+</code></pre></div>
+<h3 id="mendapatkan-waktu">Mendapatkan waktu</h3>
+<p>Metode ini ngasih waktu dalam milidetik mulai dari 1 Januari 1970. Ini juga dikenal sebagai waktu Unix. Kita bisa dapetin unix time dengan dua cara:</p>
+<ol>
+<li>Menggunakan <em>getTime()</em></li>
+</ol>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">now</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nb">Date</span><span class="p">()</span><span class="w"> </span><span class="c1">//</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">now</span><span class="p">.</span><span class="nx">getTime</span><span class="p">())</span><span class="w"> </span><span class="c1">// 1578092201341, ini adalah jumlah detik yang berlalu dari 1 Januari 1970 hingga 4 Januari 2020 00:56:41</span>
+</code></pre></div>
+<ol>
+<li>Menggunakan <em>Date.now()</em></li>
+</ol>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">allSeconds</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">Date</span><span class="p">.</span><span class="nx">now</span><span class="p">()</span><span class="w"> </span><span class="c1">//</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">allSeconds</span><span class="p">)</span><span class="w"> </span><span class="c1">// 1578092201341, ini adalah jumlah detik yang berlalu dari 1 Januari 1970 hingga 4 Januari 2020 00:56:41</span>
+
+<span class="kd">const</span><span class="w"> </span><span class="nx">timeInSeconds</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nb">Date</span><span class="p">().</span><span class="nx">getTime</span><span class="p">()</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">allSeconds</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="nx">timeInSeconds</span><span class="p">)</span><span class="w"> </span><span class="c1">// true</span>
+</code></pre></div>
+<p>Yuk kita format nilai-nilai ini ke format waktu yang bisa dibaca manusia.
+<strong>Contoh:</strong></p>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">now</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nb">Date</span><span class="p">()</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">year</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">now</span><span class="p">.</span><span class="nx">getFullYear</span><span class="p">()</span><span class="w"> </span><span class="c1">// mengembalikan tahun</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">month</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">now</span><span class="p">.</span><span class="nx">getMonth</span><span class="p">()</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mf">1</span><span class="w"> </span><span class="c1">// mengembalikan bulan(0 - 11)</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">date</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">now</span><span class="p">.</span><span class="nx">getDate</span><span class="p">()</span><span class="w"> </span><span class="c1">// mengembalikan tanggal (1 - 31)</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">hours</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">now</span><span class="p">.</span><span class="nx">getHours</span><span class="p">()</span><span class="w"> </span><span class="c1">// mengembalikan angka (0 - 23)</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">minutes</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">now</span><span class="p">.</span><span class="nx">getMinutes</span><span class="p">()</span><span class="w"> </span><span class="c1">// mengembalikan angka (0 -59)</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="sb">`</span><span class="si">${</span><span class="nx">date</span><span class="si">}</span><span class="sb">/</span><span class="si">${</span><span class="nx">month</span><span class="si">}</span><span class="sb">/</span><span class="si">${</span><span class="nx">year</span><span class="si">}</span><span class="sb"> </span><span class="si">${</span><span class="nx">hours</span><span class="si">}</span><span class="sb">:</span><span class="si">${</span><span class="nx">minutes</span><span class="si">}</span><span class="sb">`</span><span class="p">)</span><span class="w"> </span><span class="c1">// 4/1/2020 0:56</span>
+</code></pre></div>
+<p>🌕 Kamu punya energi tanpa batas! Kamu baru aja nyelesein tantangan hari ke-3 dan kamu selangkah lebih maju menuju kehebatan. Gaskeun sekarang lakuin latihan buat otak dan otot kamu.</p>
+<h2 id="hari-3-latihan">💻 Hari 3: Latihan</h2>
+<h3 id="latihan-level-1">Latihan: Level 1</h3>
+<ol>
+<li>Deklarasikan variabel firstName, lastName, country, city, age, isMarried, year dan kasih nilai padanya, terus pake operator typeof buat ngecek tipe data yang beda-beda.</li>
+<li>Cek apakah tipe dari '10' sama dengan 10</li>
+<li>Cek apakah parseInt('9.8') sama dengan 10</li>
+<li>Nilai boolean adalah true atau false.</li>
+<li>Tulis tiga pernyataan JavaScript yang ngasilin nilai truthy.</li>
+<li>
+<p>Tulis tiga pernyataan JavaScript yang ngasilin nilai falsy.</p>
+</li>
+<li>
+<p>Cari tahu hasil dari ekspresi perbandingan berikut duluan tanpa pake console.log(). Setelah kamu mutusin hasilnya, konfirmasiin pake console.log()</p>
+</li>
+<li>4 &gt; 3</li>
+<li>4 &gt;= 3</li>
+<li>4 &lt; 3</li>
+<li>4 &lt;= 3</li>
+<li>4 == 4</li>
+<li>4 === 4</li>
+<li>4 != 4</li>
+<li>4 !== 4</li>
+<li>4 != '4'</li>
+<li>4 == '4'</li>
+<li>4 === '4'</li>
+<li>
+<p>Temukan panjang python dan jargon dan bikin pernyataan perbandingan falsy.</p>
+</li>
+<li>
+<p>Cari tahu hasil dari ekspresi berikut duluan tanpa pake console.log(). Setelah kamu mutusin hasilnya, konfirmasiin pake console.log()</p>
+</li>
+<li>4 &gt; 3 &amp;&amp; 10 &lt; 12</li>
+<li>4 &gt; 3 &amp;&amp; 10 &gt; 12</li>
+<li>4 &gt; 3 || 10 &lt; 12</li>
+<li>4 &gt; 3 || 10 &gt; 12</li>
+<li>!(4 &gt; 3)</li>
+<li>!(4 &lt; 3)</li>
+<li>!(false)</li>
+<li>!(4 &gt; 3 &amp;&amp; 10 &lt; 12)</li>
+<li>!(4 &gt; 3 &amp;&amp; 10 &gt; 12)</li>
+<li>!(4 === '4')</li>
+<li>
+<p>Tidak ada 'on' di kedua kata dragon dan python</p>
+</li>
+<li>
+<p>Pake Date object buat ngelakuin aktivitas berikut</p>
+</li>
+<li>Berapa tahun hari ini?</li>
+<li>Berapa bulan hari ini sebagai angka?</li>
+<li>Berapa tanggal hari ini?</li>
+<li>Berapa hari hari ini sebagai angka?</li>
+<li>Berapa jam sekarang?</li>
+<li>Berapa menit sekarang?</li>
+<li>Temuin jumlah detik yang udah berlalu dari 1 Januari 1970 hingga sekarang.</li>
+</ol>
+<h3 id="latihan-level-2">Latihan: Level 2</h3>
+<ol>
+<li>Tulis script yang minta pengguna masukin alas dan tinggi segitiga dan ngitung luas segitiga (luas = 0.5 x a x t).</li>
+</ol>
+<div class="highlight"><pre><span></span><code>Masukkan<span class="w"> </span>alas:<span class="w"> </span><span class="m">20</span>
+Masukkan<span class="w"> </span>tinggi:<span class="w"> </span><span class="m">10</span>
+Luas<span class="w"> </span>segitiga<span class="w"> </span>adalah<span class="w"> </span><span class="m">100</span>
+</code></pre></div>
+<ol>
+<li>Tulis script yang minta pengguna masukin sisi a, sisi b, dan sisi c segitiga dan ngitung keliling segitiga (keliling = a + b + c)</li>
+</ol>
+<div class="highlight"><pre><span></span><code>Masukkan<span class="w"> </span>sisi<span class="w"> </span>a:<span class="w"> </span><span class="m">5</span>
+Masukkan<span class="w"> </span>sisi<span class="w"> </span>b:<span class="w"> </span><span class="m">4</span>
+Masukkan<span class="w"> </span>sisi<span class="w"> </span>c:<span class="w"> </span><span class="m">3</span>
+Keliling<span class="w"> </span>segitiga<span class="w"> </span>adalah<span class="w"> </span><span class="m">12</span>
+</code></pre></div>
+<ol>
+<li>Dapetin panjang dan lebar pake prompt dan hitung luas persegi panjang (luas = panjang x lebar) dan keliling persegi panjang (keliling = 2 x (panjang + lebar))</li>
+<li>Dapetin jari-jari pake prompt dan hitung luas lingkaran (luas = pi x r x r) dan keliling lingkaran (k = 2 x pi x r) di mana pi = 3.14.</li>
+<li>Hitung kemiringan (slope), perpotongan sumbu x (x-intercept) dan perpotongan sumbu y (y-intercept) dari y = 2x -2</li>
+<li>Kemiringan adalah m = (y<sub>2</sub>-y<sub>1</sub>)/(x<sub>2</sub>-x<sub>1</sub>). Temuin kemiringan antara titik (2, 2) dan titik (6,10)</li>
+<li>Bandingin kemiringan dari dua pertanyaan di atas.</li>
+<li>Hitung nilai y (y = x<sup>2</sup> + 6x + 9). Coba pake nilai x yang beda-beda dan cari tahu di nilai x berapa y adalah 0.</li>
+<li>
+<p>Tulis script yang minta pengguna masukin jam dan tarif per jam. Hitung gaji orang tersebut?</p>
+<div class="highlight"><pre><span></span><code>Masukkan<span class="w"> </span>jam:<span class="w"> </span><span class="m">40</span>
+Masukkan<span class="w"> </span>tarif<span class="w"> </span>per<span class="w"> </span>jam:<span class="w"> </span><span class="m">28</span>
+Penghasilan<span class="w"> </span>mingguan<span class="w"> </span>Anda<span class="w"> </span>adalah<span class="w"> </span><span class="m">1120</span>
+</code></pre></div>
+</li>
+<li>
+<p>Kalau panjang nama kamu lebih dari 7, bilang nama kamu panjang, kalau nggak bilang nama kamu pendek.</p>
+</li>
+<li>
+<p>Bandingin panjang nama depan dan nama keluarga kamu, dan kamu harus dapetin output ini.</p>
+<div class="highlight"><pre><span></span><code><span class="kd">let</span><span class="w"> </span><span class="nx">firstName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;Asabeneh&#39;</span>
+<span class="kd">let</span><span class="w"> </span><span class="nx">lastName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;Yetayeh&#39;</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>Nama<span class="w"> </span>depan<span class="w"> </span>Anda,<span class="w"> </span>Asabeneh<span class="w"> </span>lebih<span class="w"> </span>panjang<span class="w"> </span>dari<span class="w"> </span>nama<span class="w"> </span>keluarga<span class="w"> </span>Anda,<span class="w"> </span>Yetayeh
+</code></pre></div>
+</li>
+<li>
+<p>Deklarasikan dua variabel <em>myAge</em> dan <em>yourAge</em> dan kasih nilai awal myAge dan yourAge.</p>
+</li>
+</ol>
+<div class="highlight"><pre><span></span><code><span class="kd">let</span><span class="w"> </span><span class="nx">myAge</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">250</span>
+<span class="kd">let</span><span class="w"> </span><span class="nx">yourAge</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">25</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>Saya<span class="w"> </span><span class="m">225</span><span class="w"> </span>tahun<span class="w"> </span>lebih<span class="w"> </span>tua<span class="w"> </span>dari<span class="w"> </span>Anda.
+</code></pre></div>
+<ol>
+<li>
+<p>Pake prompt dapetin tahun lahir pengguna dan kalau pengguna berusia 18 tahun ke atas, izinin pengguna buat nyetir, kalau nggak kasih tahu pengguna buat nunggu sejumlah tahun tertentu.</p>
+<div class="highlight"><pre><span></span><code>Masukkan<span class="w"> </span>tahun<span class="w"> </span>lahir:<span class="w"> </span><span class="m">1995</span>
+Anda<span class="w"> </span>berusia<span class="w"> </span><span class="m">25</span>.<span class="w"> </span>Anda<span class="w"> </span>cukup<span class="w"> </span>umur<span class="w"> </span>untuk<span class="w"> </span>mengemudi
+
+Masukkan<span class="w"> </span>tahun<span class="w"> </span>lahir:<span class="w"> </span><span class="m">2005</span>
+Anda<span class="w"> </span>berusia<span class="w"> </span><span class="m">15</span>.<span class="w"> </span>Anda<span class="w"> </span>akan<span class="w"> </span>diizinkan<span class="w"> </span>mengemudi<span class="w"> </span>setelah<span class="w"> </span><span class="m">3</span><span class="w"> </span>tahun.
+</code></pre></div>
+</li>
+<li>
+<p>Tulis script yang minta pengguna masukin jumlah tahun. Hitung jumlah detik yang bisa dijalani seseorang. Asumsikan seseorang hidup cuma seratus tahun.</p>
+</li>
+</ol>
+<div class="highlight"><pre><span></span><code>Masukkan<span class="w"> </span>jumlah<span class="w"> </span>tahun<span class="w"> </span>Anda<span class="w"> </span>hidup:<span class="w"> </span><span class="m">100</span>
+Anda<span class="w"> </span>hidup<span class="w"> </span><span class="m">3153600000</span><span class="w"> </span>detik.
+</code></pre></div>
+<ol>
+<li>Bikin format waktu yang bisa dibaca manusia pake Date time object</li>
+<li>YYYY-MM-DD HH:mm</li>
+<li>DD-MM-YYYY HH:mm</li>
+<li>DD/MM/YYYY HH:mm</li>
+</ol>
+<h3 id="latihan-level-3">Latihan: Level 3</h3>
+<ol>
+<li>Bikin format waktu yang bisa dibaca manusia pake Date time object. Jam dan menit harus selalu dua digit (7 jam harus 07 dan 5 menit harus 05)</li>
+<li>YYY-MM-DD HH:mm contoh. 20120-01-02 07:05</li>
+</ol>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Tersalin ke clipboard", "clipboard.copy": "Salin ke clipboard", "search.result.more.one": "1 lagi di halaman ini", "search.result.more.other": "# lagi di halaman ini", "search.result.none": "Tidak ada dokumen yang sesuai", "search.result.one": "1 dokumen ditemukan", "search.result.other": "# dokumen ditemukan", "search.result.placeholder": "Ketik untuk mulai pencarian", "search.result.term.missing": "Tidak ada", "select.version": "Pilih versi"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>

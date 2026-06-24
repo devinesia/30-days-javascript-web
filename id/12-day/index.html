@@ -1,0 +1,2138 @@
+
+<!doctype html>
+<html lang="id" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../11-day/">
+      
+      
+        <link rel="next" href="../13-day/">
+      
+      
+        
+          <link rel="alternate" href="../../12-day/" hreflang="en">
+        
+          <link rel="alternate" href="./" hreflang="id">
+        
+      
+      
+      <link rel="icon" href="../../images/javascript.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>📘 Hari 12 - 30 Days Javascript</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="amber" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#hari-12" class="md-skip">
+          Lewati ke isi
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../" title="30 Days Javascript" class="md-header__button md-logo" aria-label="30 Days Javascript" data-md-component="logo">
+      
+  <img src="../../images/javascript.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            30 Days Javascript
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              📘 Hari 12
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+      <div class="md-header__option">
+  <div class="md-select">
+    
+    <button class="md-header__button md-icon" aria-label="Pilih bahasa">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.5 17.5 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2zm-2.62 7 1.62-4.33L19.12 17z"/></svg>
+    </button>
+    <div class="md-select__inner">
+      <ul class="md-select__list">
+        
+          <li class="md-select__item">
+            <a href="../../12-day/" hreflang="en" class="md-select__link">
+              English
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="./" hreflang="id" class="md-select__link">
+              Bahasa Indonesia
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Cari" placeholder="Cari" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Cari">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Kosongkan" aria-label="Kosongkan" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Mempersiapkan pencarian
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/devinesia/30-days-javascript-web" title="Ke repositori" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigasi" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../" title="30 Days Javascript" class="md-nav__button md-logo" aria-label="30 Days Javascript" data-md-component="logo">
+      
+  <img src="../../images/javascript.png" alt="logo">
+
+    </a>
+    30 Days Javascript
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/devinesia/30-days-javascript-web" title="Ke repositori" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Yuk Mulai!
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📔 Hari 1 - Yuk Mulai!
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📔 Hari 2 - Gaskeun Lanjut!
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📔 Hari 3 - Oke Gas!
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📔 Hari 4 - Yuk Ngoding!
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../05-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📔 Hari 5 - Mantap Lanjut!
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../06-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📔 Hari 6
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../07-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📔 Hari 7
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../08-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📔 Hari 8
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../09-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📔 Hari 9
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../10-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📔 Hari 10
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../11-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📘 Hari 11
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📘 Hari 12
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📘 Hari 12
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Daftar isi">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Daftar isi
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#regular-expressions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Regular Expressions
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Regular Expressions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameter-regexp" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Parameter RegExp
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Parameter RegExp">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pola" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pola
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#flag" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Flag
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#membuat-pola-dengan-regexp-constructor" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Membuat pola dengan RegExp Constructor
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#membuat-pola-tanpa-regexp-constructor" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Membuat pola tanpa RegExp Constructor
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#metode-objek-regexp" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Metode Objek RegExp
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Metode Objek RegExp">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#menguji-kecocokan" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Menguji kecocokan
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#array-yang-berisi-semua-kecocokan" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Array yang berisi semua kecocokan
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mengganti-substring" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mengganti substring
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#kurung-siku-square-bracket" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Kurung Siku (Square Bracket)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#karakter-escape-dalam-regexp" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Karakter Escape (\) dalam RegExp
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#satu-kali-atau-lebih" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Satu kali atau lebih (+)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#titik" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Titik (.)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nol-kali-atau-lebih" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Nol kali atau lebih (*)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nol-atau-satu-kali" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Nol atau satu kali (?)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#quantifier-dalam-regexp" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Quantifier dalam RegExp
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tanda" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tanda ^
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pencocokan-tepat" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pencocokan tepat
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#latihan" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        💻 Latihan
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="💻 Latihan">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#latihan-level-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Latihan: Level 1
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#latihan-level-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Latihan: Level 2
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#latihan-level-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Latihan: Level 3
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../13-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📘 Hari 13
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../14-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📘 Hari 14
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../15-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📘 Hari 15
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../16-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📘 Hari 16
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../17-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📘 Hari 17
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../18-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📘 Hari 18
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../19-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📘 Hari 19
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📘 Hari 20
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../21-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📙 Hari 21
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../22-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📙 Hari 22
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../23-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📙 Hari 23
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../24-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📙 Hari 24
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../25-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📙 Hari 25
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../26-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📔 Hari 26
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../27-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📔 Hari 27
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../28-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📔 Hari 28
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../29-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📔 Hari 29
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../30-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📔 Hari 30
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Daftar isi">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Daftar isi
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#regular-expressions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Regular Expressions
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Regular Expressions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameter-regexp" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Parameter RegExp
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Parameter RegExp">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pola" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pola
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#flag" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Flag
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#membuat-pola-dengan-regexp-constructor" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Membuat pola dengan RegExp Constructor
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#membuat-pola-tanpa-regexp-constructor" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Membuat pola tanpa RegExp Constructor
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#metode-objek-regexp" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Metode Objek RegExp
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Metode Objek RegExp">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#menguji-kecocokan" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Menguji kecocokan
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#array-yang-berisi-semua-kecocokan" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Array yang berisi semua kecocokan
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mengganti-substring" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mengganti substring
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#kurung-siku-square-bracket" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Kurung Siku (Square Bracket)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#karakter-escape-dalam-regexp" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Karakter Escape (\) dalam RegExp
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#satu-kali-atau-lebih" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Satu kali atau lebih (+)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#titik" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Titik (.)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nol-kali-atau-lebih" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Nol kali atau lebih (*)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nol-atau-satu-kali" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Nol atau satu kali (?)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#quantifier-dalam-regexp" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Quantifier dalam RegExp
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tanda" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tanda ^
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pencocokan-tepat" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pencocokan tepat
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#latihan" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        💻 Latihan
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="💻 Latihan">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#latihan-level-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Latihan: Level 1
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#latihan-level-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Latihan: Level 2
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#latihan-level-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Latihan: Level 3
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="hari-12">📘 Hari 12</h1>
+<h2 id="regular-expressions">Regular Expressions</h2>
+<p>Regular expression alias RegExp itu semacam bahasa mini yang super berguna buat nyari pola dalam data. RegExp bisa dipake buat ngecek apakah suatu pola ada di berbagai tipe data. Di JavaScript, kita bisa bikin RegExp pake RegExp constructor atau langsung deklarasi pola pake dua garis miring plus flag. Jadi ada dua cara nih buat bikin pola.</p>
+<p>Buat deklarasi string kita pake tanda kutip tunggal, ganda, atau backtick. Nah, buat regular expression kita pake dua garis miring dan flag opsional. Flag-nya bisa berupa g, i, m, s, u atau y.</p>
+<h3 id="parameter-regexp">Parameter RegExp</h3>
+<p>Regular expression nerima dua parameter. Satu pola pencarian yang wajib, dan satu flag opsional.</p>
+<h4 id="pola">Pola</h4>
+<p>Pola bisa berupa teks biasa atau bentuk pola apa pun yang punya kemiripan tertentu. Misalnya nih, kata "spam" di email bisa jadi pola yang pengen kita cari, atau format nomor telepon yang mau kita deteksi.</p>
+<h4 id="flag">Flag</h4>
+<p>Flag itu parameter opsional di regular expression yang nentuin jenis pencariannya. Yuk kenalan sama beberapa flag:</p>
+<ul>
+<li>g: flag global, artinya nyari pola di seluruh teks</li>
+<li>i: flag case insensitive (nyari huruf kecil maupun huruf besar, santuy aja)</li>
+<li>m: multiline</li>
+</ul>
+<h3 id="membuat-pola-dengan-regexp-constructor">Membuat pola dengan RegExp Constructor</h3>
+<p>Deklarasi regular expression tanpa flag global dan flag case insensitive.</p>
+<div class="highlight"><pre><span></span><code><span class="c1">// without flag</span>
+<span class="kd">let</span><span class="w"> </span><span class="nx">pattern</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;love&#39;</span>
+<span class="kd">let</span><span class="w"> </span><span class="nx">regEx</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nb">RegExp</span><span class="p">(</span><span class="nx">pattern</span><span class="p">)</span>
+</code></pre></div>
+<p>Deklarasi regular expression dengan flag global dan flag case insensitive.</p>
+<div class="highlight"><pre><span></span><code><span class="kd">let</span><span class="w"> </span><span class="nx">pattern</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;love&#39;</span>
+<span class="kd">let</span><span class="w"> </span><span class="nx">flag</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;gi&#39;</span>
+<span class="kd">let</span><span class="w"> </span><span class="nx">regEx</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nb">RegExp</span><span class="p">(</span><span class="nx">pattern</span><span class="p">,</span><span class="w"> </span><span class="nx">flag</span><span class="p">)</span>
+</code></pre></div>
+<p>Deklarasi pola regex pake objek RegExp. Tulis pola dan flag di dalam RegExp constructor.</p>
+<div class="highlight"><pre><span></span><code><span class="kd">let</span><span class="w"> </span><span class="nx">regEx</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nb">RegExp</span><span class="p">(</span><span class="s1">&#39;love&#39;</span><span class="p">,</span><span class="s1">&#39;gi&#39;</span><span class="p">)</span>
+</code></pre></div>
+<h3 id="membuat-pola-tanpa-regexp-constructor">Membuat pola tanpa RegExp Constructor</h3>
+<p>Deklarasi regular expression dengan flag global dan flag case insensitive.</p>
+<div class="highlight"><pre><span></span><code><span class="kd">let</span><span class="w"> </span><span class="nx">regEx</span><span class="o">=</span><span class="w"> </span><span class="sr">/love/gi</span>
+</code></pre></div>
+<p>Regular expression di atas sama persis sama yang kita bikin pake RegExp constructor tadi.</p>
+<div class="highlight"><pre><span></span><code><span class="kd">let</span><span class="w"> </span><span class="nx">regEx</span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nb">RegExp</span><span class="p">(</span><span class="s1">&#39;love&#39;</span><span class="p">,</span><span class="s1">&#39;gi&#39;</span><span class="p">)</span>
+</code></pre></div>
+<h3 id="metode-objek-regexp">Metode Objek RegExp</h3>
+<p>Yuk kita liat beberapa metode RegExp yang sering dipake.</p>
+<h4 id="menguji-kecocokan">Menguji kecocokan</h4>
+<p><em>test()</em>: Ngetes kecocokan dalam string. Return-nya true atau false.</p>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">str</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;I love JavaScript&#39;</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">pattern</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="sr">/love/</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">result</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">pattern</span><span class="p">.</span><span class="nx">test</span><span class="p">(</span><span class="nx">str</span><span class="p">)</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">result</span><span class="p">)</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="nb">true</span>
+</code></pre></div>
+<h4 id="array-yang-berisi-semua-kecocokan">Array yang berisi semua kecocokan</h4>
+<p><em>match()</em>: Ngembaliin array yang berisi semua kecocokan, termasuk capturing groups, atau null kalau nggak ada yang cocok. Kalau nggak pake flag global, match() ngembaliin array berisi pola, indeks, input, dan group.</p>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">str</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;I love JavaScript&#39;</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">pattern</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="sr">/love/</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">result</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">str</span><span class="p">.</span><span class="nx">match</span><span class="p">(</span><span class="nx">pattern</span><span class="p">)</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">result</span><span class="p">)</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="o">[</span><span class="s2">&quot;love&quot;</span>,<span class="w"> </span>index:<span class="w"> </span><span class="m">2</span>,<span class="w"> </span>input:<span class="w"> </span><span class="s2">&quot;I love JavaScript&quot;</span>,<span class="w"> </span>groups:<span class="w"> </span>undefined<span class="o">]</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">str</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;I love JavaScript&#39;</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">pattern</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="sr">/love/g</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">result</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">str</span><span class="p">.</span><span class="nx">match</span><span class="p">(</span><span class="nx">pattern</span><span class="p">)</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">result</span><span class="p">)</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="o">[</span><span class="s2">&quot;love&quot;</span><span class="o">]</span>
+</code></pre></div>
+<p><em>search()</em>: Ngetes kecocokan dalam string. Ngembaliin indeks kecocokan, atau -1 kalau nggak ketemu.</p>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">str</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;I love JavaScript&#39;</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">pattern</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="sr">/love/g</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">result</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">str</span><span class="p">.</span><span class="nx">search</span><span class="p">(</span><span class="nx">pattern</span><span class="p">)</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">result</span><span class="p">)</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="m">2</span>
+</code></pre></div>
+<h4 id="mengganti-substring">Mengganti substring</h4>
+<p><em>replace()</em>: Nyari kecocokan di string dan ganti substring yang cocok dengan substring baru.</p>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">txt</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;Python is the most beautiful language that a human begin has ever created.\</span>
+<span class="s1">I recommend python for a first programming language&#39;</span>
+
+<span class="nx">matchReplaced</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">txt</span><span class="p">.</span><span class="nx">replace</span><span class="p">(</span><span class="sr">/Python|python/</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;JavaScript&#39;</span><span class="p">)</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">matchReplaced</span><span class="p">)</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>JavaScript<span class="w"> </span>is<span class="w"> </span>the<span class="w"> </span>most<span class="w"> </span>beautiful<span class="w"> </span>language<span class="w"> </span>that<span class="w"> </span>a<span class="w"> </span>human<span class="w"> </span>begin<span class="w"> </span>has<span class="w"> </span>ever<span class="w"> </span>created.I<span class="w"> </span>recommend<span class="w"> </span>python<span class="w"> </span><span class="k">for</span><span class="w"> </span>a<span class="w"> </span>first<span class="w"> </span>programming<span class="w"> </span>language
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">txt</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;Python is the most beautiful language that a human begin has ever created.\</span>
+<span class="s1">I recommend python for a first programming language&#39;</span>
+
+<span class="nx">matchReplaced</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">txt</span><span class="p">.</span><span class="nx">replace</span><span class="p">(</span><span class="sr">/Python|python/g</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;JavaScript&#39;</span><span class="p">)</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">matchReplaced</span><span class="p">)</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>JavaScript<span class="w"> </span>is<span class="w"> </span>the<span class="w"> </span>most<span class="w"> </span>beautiful<span class="w"> </span>language<span class="w"> </span>that<span class="w"> </span>a<span class="w"> </span>human<span class="w"> </span>begin<span class="w"> </span>has<span class="w"> </span>ever<span class="w"> </span>created.I<span class="w"> </span>recommend<span class="w"> </span>JavaScript<span class="w"> </span><span class="k">for</span><span class="w"> </span>a<span class="w"> </span>first<span class="w"> </span>programming<span class="w"> </span>language
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">txt</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;Python is the most beautiful language that a human begin has ever created.\</span>
+<span class="s1">I recommend python for a first programming language&#39;</span>
+
+<span class="nx">matchReplaced</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">txt</span><span class="p">.</span><span class="nx">replace</span><span class="p">(</span><span class="sr">/Python/gi</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;JavaScript&#39;</span><span class="p">)</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">matchReplaced</span><span class="p">)</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>JavaScript<span class="w"> </span>is<span class="w"> </span>the<span class="w"> </span>most<span class="w"> </span>beautiful<span class="w"> </span>language<span class="w"> </span>that<span class="w"> </span>a<span class="w"> </span>human<span class="w"> </span>begin<span class="w"> </span>has<span class="w"> </span>ever<span class="w"> </span>created.I<span class="w"> </span>recommend<span class="w"> </span>JavaScript<span class="w"> </span><span class="k">for</span><span class="w"> </span>a<span class="w"> </span>first<span class="w"> </span>programming<span class="w"> </span>language
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">txt</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;%I a%m te%%a%%che%r% a%n%d %% I l%o%ve te%ach%ing.\</span>
+<span class="s1">T%he%re i%s n%o%th%ing as m%ore r%ewarding a%s e%duc%at%i%ng a%n%d e%m%p%ow%er%ing \</span>
+<span class="s1">p%e%o%ple.\</span>
+<span class="s1">I fo%und te%a%ching m%ore i%n%t%er%%es%ting t%h%an any other %jobs.\</span>
+<span class="s1">D%o%es thi%s m%ot%iv%a%te %y%o%u to b%e a t%e%a%cher.&#39;</span>
+
+<span class="nx">matches</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">txt</span><span class="p">.</span><span class="nx">replace</span><span class="p">(</span><span class="sr">/%/g</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;&#39;</span><span class="p">)</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">matches</span><span class="p">)</span><span class="w">  </span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>I<span class="w"> </span>am<span class="w"> </span>teacher<span class="w"> </span>and<span class="w">  </span>I<span class="w"> </span>love<span class="w"> </span>teaching.There<span class="w"> </span>is<span class="w"> </span>nothing<span class="w"> </span>as<span class="w"> </span>more<span class="w"> </span>rewarding<span class="w"> </span>as<span class="w"> </span>educating<span class="w"> </span>and<span class="w"> </span>empowering<span class="w"> </span>people.I<span class="w"> </span>found<span class="w"> </span>teaching<span class="w"> </span>more<span class="w"> </span>interesting<span class="w"> </span>than<span class="w"> </span>any<span class="w"> </span>other<span class="w"> </span>jobs.Does<span class="w"> </span>this<span class="w"> </span>motivate<span class="w"> </span>you<span class="w"> </span>to<span class="w"> </span>be<span class="w"> </span>a<span class="w"> </span>teacher.
+</code></pre></div>
+<ul>
+<li>Kumpulan karakter</li>
+<li>[a-c] artinya, a atau b atau c</li>
+<li>[a-z] artinya, huruf apa pun dari a sampai z</li>
+<li>[A-Z] artinya, karakter apa pun dari A sampai Z</li>
+<li>[0-3] artinya, 0 atau 1 atau 2 atau 3</li>
+<li>[0-9] artinya angka apa pun dari 0 sampai 9</li>
+<li>[A-Za-z0-9] karakter apa pun dari a-z, A-Z, 0-9</li>
+<li>\:  dipake buat escape karakter khusus</li>
+<li>\d artinya: cocok kalau string mengandung digit (angka 0-9)</li>
+<li>\D artinya: cocok kalau string nggak mengandung digit</li>
+<li>. : karakter apa pun kecuali baris baru (\n)</li>
+<li>^: dimulai dengan</li>
+<li>r'^substring' contoh r'^love', kalimat yang dimulai dengan kata love</li>
+<li>r'[^abc] artinya bukan a, bukan b, bukan c.</li>
+<li>$: diakhiri dengan</li>
+<li>r'substring$' contoh r'love$', kalimat diakhiri dengan kata love</li>
+<li>*: nol kali atau lebih</li>
+<li>r'[a]*' artinya a opsional atau bisa muncul berkali-kali.</li>
+<li>+: satu kali atau lebih</li>
+<li>r'[a]+' artinya setidaknya sekali atau lebih</li>
+<li>?: nol atau satu kali</li>
+<li>r'[a]?' artinya nol kali atau sekali</li>
+<li>\b: word boundary, cocok dengan awal atau akhir kata</li>
+<li>{3}: Tepat 3 karakter</li>
+<li>{3,}: Setidaknya 3 karakter</li>
+<li>{3,8}: 3 sampai 8 karakter</li>
+<li>|: Salah satu atau</li>
+<li>r'apple|banana' artinya salah satu dari apple atau banana</li>
+<li>(): Capture dan group</li>
+</ul>
+<p><img alt="Regular Expression cheat sheet" src="../../images/regex.png" /></p>
+<p>Oke, biar makin jelas, yuk kita langsung praktek pake contoh-contoh!</p>
+<h3 id="kurung-siku-square-bracket">Kurung Siku (Square Bracket)</h3>
+<p>Kurung siku bisa dipake buat nyari huruf kecil dan besar sekaligus.</p>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">pattern</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;[Aa]pple&#39;</span><span class="w"> </span><span class="c1">// this square bracket means either A or a</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">txt</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;Apple and banana are fruits. An old cliche says an apple a day keeps the  doctor way has been replaced by a banana a day keeps the doctor far far away. &#39;</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">matches</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">txt</span><span class="p">.</span><span class="nx">match</span><span class="p">(</span><span class="nx">pattern</span><span class="p">)</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">matches</span><span class="p">)</span><span class="w">  </span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="o">[</span><span class="s2">&quot;Apple&quot;</span>,<span class="w"> </span>index:<span class="w"> </span><span class="m">0</span>,<span class="w"> </span>input:<span class="w"> </span><span class="s2">&quot;Apple and banana are fruits. An old cliche says an apple a day keeps the  doctor way has been replaced by a banana a day keeps the doctor far far away.&quot;</span>,<span class="w"> </span>groups:<span class="w"> </span>undefined<span class="o">]</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">pattern</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="sr">/[Aa]pple/g</span><span class="w"> </span><span class="c1">// this square bracket means either A or a</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">txt</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;Apple and banana are fruits. An old cliche says an apple a day a doctor way has been replaced by a banana a day keeps the doctor far far away. &#39;</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">matches</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">txt</span><span class="p">.</span><span class="nx">match</span><span class="p">(</span><span class="nx">pattern</span><span class="p">)</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">matches</span><span class="p">)</span><span class="w">  </span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="o">[</span><span class="s2">&quot;Apple&quot;</span>,<span class="w"> </span><span class="s2">&quot;apple&quot;</span><span class="o">]</span>
+</code></pre></div>
+<p>Kalau kita pengen nyari banana juga, tinggal tulis polanya kayak gini:</p>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">pattern</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="sr">/[Aa]pple|[Bb]anana/g</span><span class="w"> </span><span class="c1">// this square bracket mean either A or a</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">txt</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;Apple and banana are fruits. An old cliche says an apple a day a doctor way has been replaced by a banana a day keeps the doctor far far away. Banana is easy to eat too.&#39;</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">matches</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">txt</span><span class="p">.</span><span class="nx">match</span><span class="p">(</span><span class="nx">pattern</span><span class="p">)</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">matches</span><span class="p">)</span><span class="w">  </span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="o">[</span><span class="s2">&quot;Apple&quot;</span>,<span class="w"> </span><span class="s2">&quot;banana&quot;</span>,<span class="w"> </span><span class="s2">&quot;apple&quot;</span>,<span class="w"> </span><span class="s2">&quot;banana&quot;</span>,<span class="w"> </span><span class="s2">&quot;Banana&quot;</span><span class="o">]</span>
+</code></pre></div>
+<p>Tuh, pake kurung siku dan operator or, kita berhasil dapetin Apple, apple, Banana dan banana. Gampang kan?</p>
+<h3 id="karakter-escape-dalam-regexp">Karakter Escape (\) dalam RegExp</h3>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">pattern</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="sr">/\d/g</span><span class="w">  </span><span class="c1">// d is a special character which means digits</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">txt</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;This regular expression example was made in January 12,  2020.&#39;</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">matches</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">txt</span><span class="p">.</span><span class="w"> </span><span class="nx">match</span><span class="p">(</span><span class="nx">pattern</span><span class="p">)</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">matches</span><span class="p">)</span><span class="w">  </span><span class="c1">// [&quot;1&quot;, &quot;2&quot;, &quot;2&quot;, &quot;0&quot;, &quot;2&quot;, &quot;0&quot;], this is not what we want</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">pattern</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="sr">/\d+/g</span><span class="w">  </span><span class="c1">// d is a special character which means digits</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">txt</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;This regular expression example was made in January 12,  2020.&#39;</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">matches</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">txt</span><span class="p">.</span><span class="w"> </span><span class="nx">match</span><span class="p">(</span><span class="nx">pattern</span><span class="p">)</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">matches</span><span class="p">)</span><span class="w">  </span><span class="c1">// [&quot;12&quot;, &quot;2020&quot;], this is not what we want</span>
+</code></pre></div>
+<h3 id="satu-kali-atau-lebih">Satu kali atau lebih (+)</h3>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">pattern</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="sr">/\d+/g</span><span class="w">  </span><span class="c1">// d is a special character which means digits</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">txt</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;This regular expression example was made in January 12,  2020.&#39;</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">matches</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">txt</span><span class="p">.</span><span class="w"> </span><span class="nx">match</span><span class="p">(</span><span class="nx">pattern</span><span class="p">)</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">matches</span><span class="p">)</span><span class="w">  </span><span class="c1">// [&quot;12&quot;, &quot;2020&quot;], this is not what we want</span>
+</code></pre></div>
+<h3 id="titik">Titik (.)</h3>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">pattern</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="sr">/[a]./g</span><span class="w">  </span><span class="c1">// this square bracket means a and . means any character except new line</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">txt</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;Apple and banana are fruits&#39;</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">matches</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">txt</span><span class="p">.</span><span class="nx">match</span><span class="p">(</span><span class="nx">pattern</span><span class="p">)</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">matches</span><span class="p">)</span><span class="w">  </span><span class="c1">// [&quot;an&quot;, &quot;an&quot;, &quot;an&quot;, &quot;a &quot;, &quot;ar&quot;]</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">pattern</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="sr">/[a].+/g</span><span class="w">  </span><span class="c1">// . any character, + any character one or more times </span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">txt</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;Apple and banana are fruits&#39;</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">matches</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">txt</span><span class="p">.</span><span class="nx">match</span><span class="p">(</span><span class="nx">pattern</span><span class="p">)</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">matches</span><span class="p">)</span><span class="w">  </span><span class="c1">// [&#39;and banana are fruits&#39;]</span>
+</code></pre></div>
+<h3 id="nol-kali-atau-lebih">Nol kali atau lebih (*)</h3>
+<p>Nol kali atau berkali-kali. Polanya mungkin nggak muncul, atau bisa muncul berkali-kali.</p>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">pattern</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="sr">/[a].*/g</span><span class="w">  </span><span class="c1">//. any character, + any character one or more times </span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">txt</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;Apple and banana are fruits&#39;</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">matches</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">txt</span><span class="p">.</span><span class="nx">match</span><span class="p">(</span><span class="nx">pattern</span><span class="p">)</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">matches</span><span class="p">)</span><span class="w">  </span><span class="c1">// [&#39;and banana are fruits&#39;]</span>
+</code></pre></div>
+<h3 id="nol-atau-satu-kali">Nol atau satu kali (?)</h3>
+<p>Nol atau satu kali. Polanya mungkin nggak muncul, atau muncul sekali doang.</p>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">txt</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;I am not sure if there is a convention how to write the word e-mail.\</span>
+<span class="s1">Some people write it email others may write it as Email or E-mail.&#39;</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">pattern</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="sr">/[Ee]-?mail/g</span><span class="w">  </span><span class="c1">// ? means optional</span>
+<span class="nx">matches</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">txt</span><span class="p">.</span><span class="nx">match</span><span class="p">(</span><span class="nx">pattern</span><span class="p">)</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">matches</span><span class="p">)</span><span class="w">  </span><span class="c1">// [&quot;e-mail&quot;, &quot;email&quot;, &quot;Email&quot;, &quot;E-mail&quot;]</span>
+</code></pre></div>
+<h3 id="quantifier-dalam-regexp">Quantifier dalam RegExp</h3>
+<p>Kita bisa nentuin panjang substring yang dicari di teks pake kurung kurawal. Yuk liat cara pake quantifier. Misalnya kita pengen cari substring yang panjangnya tepat 4 karakter nih.</p>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">txt</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;This regular expression example was made in December 6,  2019.&#39;</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">pattern</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="sr">/\b\w{4}\b/g</span><span class="w">  </span><span class="c1">//  exactly four character words</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">matches</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">txt</span><span class="p">.</span><span class="nx">match</span><span class="p">(</span><span class="nx">pattern</span><span class="p">)</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">matches</span><span class="p">)</span><span class="w">  </span><span class="c1">//[&#39;This&#39;, &#39;made&#39;, &#39;2019&#39;]</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">txt</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;This regular expression example was made in December 6,  2019.&#39;</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">pattern</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="sr">/\b[a-zA-Z]{4}\b/g</span><span class="w">  </span><span class="c1">//  exactly four character  words without numbers</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">matches</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">txt</span><span class="p">.</span><span class="nx">match</span><span class="p">(</span><span class="nx">pattern</span><span class="p">)</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">matches</span><span class="p">)</span><span class="w">  </span><span class="c1">//[&#39;This&#39;, &#39;made&#39;]</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">txt</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;This regular expression example was made in December 6,  2019.&#39;</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">pattern</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="sr">/\d{4}/g</span><span class="w">  </span><span class="c1">// a number and exactly four digits</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">matches</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">txt</span><span class="p">.</span><span class="nx">match</span><span class="p">(</span><span class="nx">pattern</span><span class="p">)</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">matches</span><span class="p">)</span><span class="w">  </span><span class="c1">// [&#39;2019&#39;]</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">txt</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;This regular expression example was made in December 6,  2019.&#39;</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">pattern</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="sr">/\d{1,4}/g</span><span class="w">   </span><span class="c1">// 1 to 4</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">matches</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">txt</span><span class="p">.</span><span class="nx">match</span><span class="p">(</span><span class="nx">pattern</span><span class="p">)</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">matches</span><span class="p">)</span><span class="w">  </span><span class="c1">// [&#39;6&#39;, &#39;2019&#39;]</span>
+</code></pre></div>
+<h3 id="tanda">Tanda ^</h3>
+<ul>
+<li>Dimulai dengan</li>
+</ul>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">txt</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;This regular expression example was made in December 6,  2019.&#39;</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">pattern</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="sr">/^This/</span><span class="w"> </span><span class="c1">// ^ means starts with</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">matches</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">txt</span><span class="p">.</span><span class="nx">match</span><span class="p">(</span><span class="nx">pattern</span><span class="p">)</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">matches</span><span class="p">)</span><span class="w">  </span><span class="c1">// [&#39;This&#39;]</span>
+</code></pre></div>
+<ul>
+<li>Negasi</li>
+</ul>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">txt</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;This regular expression example was made in December 6,  2019.&#39;</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">pattern</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="sr">/[^A-Za-z,. ]+/g</span><span class="w">  </span><span class="c1">// ^ in set character means negation, not A to Z, not a to z, no space, no comma no period</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">matches</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">txt</span><span class="p">.</span><span class="nx">match</span><span class="p">(</span><span class="nx">pattern</span><span class="p">)</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">matches</span><span class="p">)</span><span class="w">  </span><span class="c1">// [&quot;6&quot;, &quot;2019&quot;]</span>
+</code></pre></div>
+<h3 id="pencocokan-tepat">Pencocokan tepat</h3>
+<p>Harus punya ^ di awal dan $ di akhir ya.</p>
+<div class="highlight"><pre><span></span><code><span class="kd">let</span><span class="w"> </span><span class="nx">pattern</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="sr">/^[A-Z][a-z]{3,12}$/</span><span class="p">;</span>
+<span class="kd">let</span><span class="w"> </span><span class="nx">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;Asabeneh&#39;</span><span class="p">;</span>
+<span class="kd">let</span><span class="w"> </span><span class="nx">result</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">pattern</span><span class="p">.</span><span class="nx">test</span><span class="p">(</span><span class="nx">name</span><span class="p">)</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">result</span><span class="p">)</span><span class="w"> </span><span class="c1">// true</span>
+</code></pre></div>
+<p>🌕 Kamu udah melangkah jauh, gokil! Sekarang kamu udah bersenjata lengkap dengan kekuatan regular expression. Kamu bisa ngekstrak dan ngebersihin segala jenis teks, bikin data nggak terstruktur jadi bermakna. Keren abis! Kamu baru aja nuntasin tantangan hari ke-12 dan sekarang udah 12 langkah lebih dekat menuju level dewa. Yuk gaskeun latihan buat ngasah otak!</p>
+<h2 id="latihan">💻 Latihan</h2>
+<h3 id="latihan-level-1">Latihan: Level 1</h3>
+<ol>
+<li>Hitung total pendapatan tahunan orang tersebut dari teks berikut. 'He earns 4000 euro from salary per month, 10000 euro annual bonus, 5500 euro online courses per month.'</li>
+<li>Posisi beberapa partikel pada sumbu-x horizontal: -12, -4, -3 dan -1 di arah negatif, 0 di titik asal, 4 dan 8 di arah positif. Ekstrak angka-angkanya dan cari jarak antara dua partikel terjauh.</li>
+</ol>
+<div class="highlight"><pre><span></span><code><span class="nx">points</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s1">&#39;-1&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;2&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;-4&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;-3&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;-1&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;0&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;4&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;8&#39;</span><span class="p">]</span>
+<span class="nx">sortedPoints</span><span class="w"> </span><span class="o">=</span><span class="w">  </span><span class="p">[</span><span class="o">-</span><span class="mf">4</span><span class="p">,</span><span class="w"> </span><span class="o">-</span><span class="mf">3</span><span class="p">,</span><span class="w"> </span><span class="o">-</span><span class="mf">1</span><span class="p">,</span><span class="w"> </span><span class="o">-</span><span class="mf">1</span><span class="p">,</span><span class="w"> </span><span class="mf">0</span><span class="p">,</span><span class="w"> </span><span class="mf">2</span><span class="p">,</span><span class="w"> </span><span class="mf">4</span><span class="p">,</span><span class="w"> </span><span class="mf">8</span><span class="p">]</span>
+<span class="nx">distance</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">12</span>
+</code></pre></div>
+<ol>
+<li>
+<p>Tulis pola untuk ngecek apakah sebuah string adalah variabel JavaScript yang valid.</p>
+<div class="highlight"><pre><span></span><code>is_valid_variable<span class="o">(</span><span class="s1">&#39;first_name&#39;</span><span class="o">)</span><span class="w"> </span><span class="c1"># True</span>
+is_valid_variable<span class="o">(</span><span class="s1">&#39;first-name&#39;</span><span class="o">)</span><span class="w"> </span><span class="c1"># False</span>
+is_valid_variable<span class="o">(</span><span class="s1">&#39;1first_name&#39;</span><span class="o">)</span><span class="w"> </span><span class="c1"># False</span>
+is_valid_variable<span class="o">(</span><span class="s1">&#39;firstname&#39;</span><span class="o">)</span><span class="w"> </span><span class="c1"># True</span>
+</code></pre></div>
+</li>
+</ol>
+<h3 id="latihan-level-2">Latihan: Level 2</h3>
+<ol>
+<li>Tulis fungsi bernama <em>tenMostFrequentWords</em> yang dapetin sepuluh kata paling sering muncul dari sebuah string.</li>
+</ol>
+<div class="highlight"><pre><span></span><code><span class="nx">paragraph</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="sb">`I love teaching. If you do not love teaching what else can you love. I love Python if you do not love something which can give you all the capabilities to develop an application what else can you love.`</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">tenMostFrequentWords</span><span class="p">(</span><span class="nx">paragraph</span><span class="p">))</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="o">[</span>
+<span class="w">  </span><span class="o">{</span>word:<span class="s1">&#39;love&#39;</span>,<span class="w"> </span>count:6<span class="o">}</span>,
+<span class="w">  </span><span class="o">{</span>word:<span class="s1">&#39;you&#39;</span>,<span class="w"> </span>count:5<span class="o">}</span>,
+<span class="w">  </span><span class="o">{</span>word:<span class="s1">&#39;can&#39;</span>,<span class="w"> </span>count:3<span class="o">}</span>,
+<span class="w">  </span><span class="o">{</span>word:<span class="s1">&#39;what&#39;</span>,<span class="w"> </span>count:2<span class="o">}</span>,
+<span class="w">  </span><span class="o">{</span>word:<span class="s1">&#39;teaching&#39;</span>,<span class="w"> </span>count:2<span class="o">}</span>,
+<span class="w">  </span><span class="o">{</span>word:<span class="s1">&#39;not&#39;</span>,<span class="w"> </span>count:2<span class="o">}</span>,
+<span class="w">  </span><span class="o">{</span>word:<span class="s1">&#39;else&#39;</span>,<span class="w"> </span>count:2<span class="o">}</span>,
+<span class="w">  </span><span class="o">{</span>word:<span class="s1">&#39;do&#39;</span>,<span class="w"> </span>count:2<span class="o">}</span>,
+<span class="w">  </span><span class="o">{</span>word:<span class="s1">&#39;I&#39;</span>,<span class="w"> </span>count:2<span class="o">}</span>,
+<span class="w">  </span><span class="o">{</span>word:<span class="s1">&#39;which&#39;</span>,<span class="w"> </span>count:1<span class="o">}</span>,
+<span class="w">  </span><span class="o">{</span>word:<span class="s1">&#39;to&#39;</span>,<span class="w"> </span>count:1<span class="o">}</span>,
+<span class="w">  </span><span class="o">{</span>word:<span class="s1">&#39;the&#39;</span>,<span class="w"> </span>count:1<span class="o">}</span>,
+<span class="w">  </span><span class="o">{</span>word:<span class="s1">&#39;something&#39;</span>,<span class="w"> </span>count:1<span class="o">}</span>,
+<span class="w">  </span><span class="o">{</span>word:<span class="s1">&#39;if&#39;</span>,<span class="w"> </span>count:1<span class="o">}</span>,
+<span class="w">  </span><span class="o">{</span>word:<span class="s1">&#39;give&#39;</span>,<span class="w"> </span>count:1<span class="o">}</span>,
+<span class="w">  </span><span class="o">{</span>word:<span class="s1">&#39;develop&#39;</span>,count:1<span class="o">}</span>,
+<span class="w">  </span><span class="o">{</span>word:<span class="s1">&#39;capabilities&#39;</span>,count:1<span class="o">}</span>,
+<span class="w">  </span><span class="o">{</span>word:<span class="s1">&#39;application&#39;</span>,<span class="w"> </span>count:1<span class="o">}</span>,
+<span class="w">  </span><span class="o">{</span>word:<span class="s1">&#39;an&#39;</span>,count:1<span class="o">}</span>,
+<span class="w">  </span><span class="o">{</span>word:<span class="s1">&#39;all&#39;</span>,count:1<span class="o">}</span>,
+<span class="w">  </span><span class="o">{</span>word:<span class="s1">&#39;Python&#39;</span>,count:1<span class="o">}</span>,
+<span class="w">  </span><span class="o">{</span>word:<span class="s1">&#39;If&#39;</span>,count:1<span class="o">}</span>
+<span class="o">]</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">tenMostFrequentWords</span><span class="p">(</span><span class="nx">paragraph</span><span class="p">,</span><span class="w"> </span><span class="mf">10</span><span class="p">))</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="o">[{</span>word:<span class="s1">&#39;love&#39;</span>,<span class="w"> </span>count:6<span class="o">}</span>,
+<span class="o">{</span>word:<span class="s1">&#39;you&#39;</span>,<span class="w"> </span>count:5<span class="o">}</span>,
+<span class="o">{</span>word:<span class="s1">&#39;can&#39;</span>,<span class="w"> </span>count:3<span class="o">}</span>,
+<span class="o">{</span>word:<span class="s1">&#39;what&#39;</span>,<span class="w"> </span>count:2<span class="o">}</span>,
+<span class="o">{</span>word:<span class="s1">&#39;teaching&#39;</span>,<span class="w"> </span>count:2<span class="o">}</span>,
+<span class="o">{</span>word:<span class="s1">&#39;not&#39;</span>,<span class="w"> </span>count:2<span class="o">}</span>,
+<span class="o">{</span>word:<span class="s1">&#39;else&#39;</span>,<span class="w"> </span>count:2<span class="o">}</span>,
+<span class="o">{</span>word:<span class="s1">&#39;do&#39;</span>,<span class="w"> </span>count:2<span class="o">}</span>,
+<span class="o">{</span>word:<span class="s1">&#39;I&#39;</span>,<span class="w"> </span>count:2<span class="o">}</span>,
+<span class="o">{</span>word:<span class="s1">&#39;which&#39;</span>,<span class="w"> </span>count:1<span class="o">}</span>
+<span class="o">]</span>
+</code></pre></div>
+<h3 id="latihan-level-3">Latihan: Level 3</h3>
+<ol>
+<li>Tulis fungsi yang bisa ngebersihin teks. Bersihin teks di bawah ini ya. Setelah bersih, hitung tiga kata paling sering muncul di string tersebut.</li>
+</ol>
+<div class="highlight"><pre><span></span><code><span class="nx">sentence</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="sb">`%I $am@% a %tea@cher%, &amp;and&amp; I lo%#ve %tea@ching%;. There $is nothing; &amp;as&amp; mo@re rewarding as educa@ting &amp;and&amp; @emp%o@wering peo@ple. ;I found tea@ching m%o@re interesting tha@n any other %jo@bs. %Do@es thi%s mo@tivate yo@u to be a tea@cher!?`</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">cleanText</span><span class="p">(</span><span class="nx">sentence</span><span class="p">))</span>
+</code></pre></div>
+<p><div class="highlight"><pre><span></span><code>I<span class="w"> </span>am<span class="w"> </span>a<span class="w"> </span>teacher<span class="w"> </span>and<span class="w"> </span>I<span class="w"> </span>love<span class="w"> </span>teaching<span class="w"> </span>There<span class="w"> </span>is<span class="w"> </span>nothing<span class="w"> </span>as<span class="w"> </span>more<span class="w"> </span>rewarding<span class="w"> </span>as<span class="w"> </span>educating<span class="w"> </span>and<span class="w"> </span>empowering<span class="w"> </span>people<span class="w"> </span>I<span class="w"> </span>found<span class="w"> </span>teaching<span class="w"> </span>more<span class="w"> </span>interesting<span class="w"> </span>than<span class="w"> </span>any<span class="w"> </span>other<span class="w"> </span><span class="nb">jobs</span><span class="w"> </span>Does<span class="w"> </span>this<span class="w"> </span>motivate<span class="w"> </span>you<span class="w"> </span>to<span class="w"> </span>be<span class="w"> </span>a<span class="w"> </span>teacher
+</code></pre></div>
+2. Tulis fungsi yang nemuin kata paling sering muncul nih. Setelah teksnya bersih, hitung tiga kata paling sering muncul.</p>
+<div class="highlight"><pre><span></span><code><span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">mostFrequentWords</span><span class="p">(</span><span class="nx">cleanedText</span><span class="p">))</span>
+<span class="w">  </span><span class="p">[{</span><span class="nx">word</span><span class="o">:</span><span class="s1">&#39;I&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">count</span><span class="o">:</span><span class="mf">3</span><span class="p">},</span><span class="w"> </span><span class="p">{</span><span class="nx">word</span><span class="o">:</span><span class="s1">&#39;teaching&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">count</span><span class="o">:</span><span class="mf">2</span><span class="p">},</span><span class="w"> </span><span class="p">{</span><span class="nx">word</span><span class="o">:</span><span class="s1">&#39;teacher&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">count</span><span class="o">:</span><span class="mf">2</span><span class="p">}]</span>
+</code></pre></div>
+<p>🎉 SELAMAT! 🎉</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Tersalin ke clipboard", "clipboard.copy": "Salin ke clipboard", "search.result.more.one": "1 lagi di halaman ini", "search.result.more.other": "# lagi di halaman ini", "search.result.none": "Tidak ada dokumen yang sesuai", "search.result.one": "1 dokumen ditemukan", "search.result.other": "# dokumen ditemukan", "search.result.placeholder": "Ketik untuk mulai pencarian", "search.result.term.missing": "Tidak ada", "select.version": "Pilih versi"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>

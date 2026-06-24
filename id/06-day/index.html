@@ -1,0 +1,1958 @@
+
+<!doctype html>
+<html lang="id" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../05-day/">
+      
+      
+        <link rel="next" href="../07-day/">
+      
+      
+        
+          <link rel="alternate" href="../../06-day/" hreflang="en">
+        
+          <link rel="alternate" href="./" hreflang="id">
+        
+      
+      
+      <link rel="icon" href="../../images/javascript.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>📔 Hari 6 - 30 Days Javascript</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="amber" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#hari-6" class="md-skip">
+          Lewati ke isi
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../" title="30 Days Javascript" class="md-header__button md-logo" aria-label="30 Days Javascript" data-md-component="logo">
+      
+  <img src="../../images/javascript.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            30 Days Javascript
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              📔 Hari 6
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+      <div class="md-header__option">
+  <div class="md-select">
+    
+    <button class="md-header__button md-icon" aria-label="Pilih bahasa">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.5 17.5 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2zm-2.62 7 1.62-4.33L19.12 17z"/></svg>
+    </button>
+    <div class="md-select__inner">
+      <ul class="md-select__list">
+        
+          <li class="md-select__item">
+            <a href="../../06-day/" hreflang="en" class="md-select__link">
+              English
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="./" hreflang="id" class="md-select__link">
+              Bahasa Indonesia
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Cari" placeholder="Cari" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Cari">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Kosongkan" aria-label="Kosongkan" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Mempersiapkan pencarian
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/devinesia/30-days-javascript-web" title="Ke repositori" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigasi" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../" title="30 Days Javascript" class="md-nav__button md-logo" aria-label="30 Days Javascript" data-md-component="logo">
+      
+  <img src="../../images/javascript.png" alt="logo">
+
+    </a>
+    30 Days Javascript
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/devinesia/30-days-javascript-web" title="Ke repositori" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Yuk Mulai!
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📔 Hari 1 - Yuk Mulai!
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📔 Hari 2 - Gaskeun Lanjut!
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📔 Hari 3 - Oke Gas!
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📔 Hari 4 - Yuk Ngoding!
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../05-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📔 Hari 5 - Mantap Lanjut!
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📔 Hari 6
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📔 Hari 6
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Daftar isi">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Daftar isi
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#perulangan-loop" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Perulangan (Loop)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Perulangan (Loop)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#for-loop" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        for Loop
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#while-loop" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        while loop
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#do-while-loop" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        do while loop
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#for-of-loop" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        for of loop
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#for-in-loop" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        for in loop
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#break" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        break
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#continue" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        continue
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#latihan-hari-6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        💻 Latihan: Hari 6
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="💻 Latihan: Hari 6">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#latihan-level-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Latihan: Level 1
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#latihan-level-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Latihan: Level 2
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#latihan-level-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Latihan: Level 3
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../07-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📔 Hari 7
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../08-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📔 Hari 8
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../09-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📔 Hari 9
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../10-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📔 Hari 10
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../11-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📘 Hari 11
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../12-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📘 Hari 12
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../13-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📘 Hari 13
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../14-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📘 Hari 14
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../15-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📘 Hari 15
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../16-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📘 Hari 16
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../17-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📘 Hari 17
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../18-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📘 Hari 18
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../19-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📘 Hari 19
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📘 Hari 20
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../21-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📙 Hari 21
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../22-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📙 Hari 22
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../23-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📙 Hari 23
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../24-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📙 Hari 24
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../25-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📙 Hari 25
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../26-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📔 Hari 26
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../27-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📔 Hari 27
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../28-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📔 Hari 28
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../29-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📔 Hari 29
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../30-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📔 Hari 30
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Daftar isi">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Daftar isi
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#perulangan-loop" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Perulangan (Loop)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Perulangan (Loop)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#for-loop" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        for Loop
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#while-loop" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        while loop
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#do-while-loop" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        do while loop
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#for-of-loop" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        for of loop
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#for-in-loop" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        for in loop
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#break" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        break
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#continue" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        continue
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#latihan-hari-6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        💻 Latihan: Hari 6
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="💻 Latihan: Hari 6">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#latihan-level-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Latihan: Level 1
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#latihan-level-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Latihan: Level 2
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#latihan-level-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Latihan: Level 3
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="hari-6">📔 Hari 6</h1>
+<h2 id="perulangan-loop">Perulangan (Loop)</h2>
+<p>Sebagian besar aktivitas yang kita lakukan sehari-hari tuh penuh sama pengulangan. Coba deh bayangin, kalau disuruh cetak angka dari 0 sampai 100 pake <code>console.log()</code>, pasti malesin banget kan? Bisa-bisa 2-5 menit cuma buat nulis kode yang gitu-gitu doang. Nah, tugas-tugas membosankan kayak gini bisa kita otomatisasi pake loop, gampang banget! Kalau kamu lebih suka nonton video, ada <a href="https://www.youtube.com/channel/UCM4xOopkYiPwJqyKsSqL9mw">video tutorial</a> juga nih.</p>
+<p>Dalam dunia pemrograman, buat ngerjain tugas berulang kita pakai berbagai jenis loop. Di bawah ini contoh-contoh loop yang paling sering dipakai di JavaScript dan bahasa pemrograman lainnya.</p>
+<h3 id="for-loop">for Loop</h3>
+<div class="highlight"><pre><span></span><code><span class="c1">// Struktur for loop</span>
+<span class="k">for</span><span class="p">(</span><span class="nx">initialization</span><span class="p">,</span><span class="w"> </span><span class="nx">condition</span><span class="p">,</span><span class="w"> </span><span class="nx">increment</span><span class="o">/</span><span class="nx">decrement</span><span class="p">){</span>
+<span class="w">  </span><span class="c1">// kode di sini</span>
+<span class="p">}</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="k">for</span><span class="p">(</span><span class="kd">let</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="mf">5</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="o">++</span><span class="p">){</span>
+<span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">i</span><span class="p">)</span>
+<span class="p">}</span>
+
+<span class="c1">// 0 1 2 3 4 5</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="k">for</span><span class="p">(</span><span class="kd">let</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">5</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="mf">0</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="o">--</span><span class="p">){</span>
+<span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">i</span><span class="p">)</span>
+<span class="p">}</span>
+
+<span class="c1">// 5 4 3 2 1 0</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="k">for</span><span class="p">(</span><span class="kd">let</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="mf">5</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="o">++</span><span class="p">){</span>
+<span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="sb">`</span><span class="si">${</span><span class="nx">i</span><span class="si">}</span><span class="sb"> * </span><span class="si">${</span><span class="nx">i</span><span class="si">}</span><span class="sb"> = </span><span class="si">${</span><span class="nx">i</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="nx">i</span><span class="si">}</span><span class="sb">`</span><span class="p">)</span>
+<span class="p">}</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="m">0</span><span class="w"> </span>*<span class="w"> </span><span class="nv">0</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">0</span>
+<span class="m">1</span><span class="w"> </span>*<span class="w"> </span><span class="nv">1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">1</span>
+<span class="m">2</span><span class="w"> </span>*<span class="w"> </span><span class="nv">2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">4</span>
+<span class="m">3</span><span class="w"> </span>*<span class="w"> </span><span class="nv">3</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">9</span>
+<span class="m">4</span><span class="w"> </span>*<span class="w"> </span><span class="nv">4</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">16</span>
+<span class="m">5</span><span class="w"> </span>*<span class="w"> </span><span class="nv">5</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">25</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">countries</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s1">&#39;Finland&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Sweden&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Denmark&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Norway&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Iceland&#39;</span><span class="p">]</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">newArr</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[]</span>
+<span class="k">for</span><span class="p">(</span><span class="kd">let</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="nx">countries</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="o">++</span><span class="p">){</span>
+<span class="w">  </span><span class="nx">newArr</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">countries</span><span class="p">[</span><span class="nx">i</span><span class="p">].</span><span class="nx">toUpperCase</span><span class="p">())</span>
+<span class="p">}</span>
+
+<span class="c1">// [&quot;FINLAND&quot;, &quot;SWEDEN&quot;, &quot;DENMARK&quot;, &quot;NORWAY&quot;, &quot;ICELAND&quot;]</span>
+</code></pre></div>
+<p>Jumlahin semua elemen di dalam array? Bisa banget!</p>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">numbers</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="mf">1</span><span class="p">,</span><span class="w"> </span><span class="mf">2</span><span class="p">,</span><span class="w"> </span><span class="mf">3</span><span class="p">,</span><span class="w"> </span><span class="mf">4</span><span class="p">,</span><span class="w"> </span><span class="mf">5</span><span class="p">]</span>
+<span class="kd">let</span><span class="w"> </span><span class="nx">sum</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0</span>
+<span class="k">for</span><span class="p">(</span><span class="kd">let</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="nx">numbers</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="o">++</span><span class="p">){</span>
+<span class="w">  </span><span class="nx">sum</span><span class="w">  </span><span class="o">=</span><span class="w"> </span><span class="nx">sum</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">numbers</span><span class="p">[</span><span class="nx">i</span><span class="p">]</span><span class="w">  </span><span class="c1">// bisa disingkat, sum += numbers[i]</span>
+
+<span class="p">}</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">sum</span><span class="p">)</span><span class="w">  </span><span class="c1">// 15</span>
+</code></pre></div>
+<p>Bikin array baru berdasarkan array yang udah ada? Gampang!</p>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">numbers</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="mf">1</span><span class="p">,</span><span class="w"> </span><span class="mf">2</span><span class="p">,</span><span class="w"> </span><span class="mf">3</span><span class="p">,</span><span class="w"> </span><span class="mf">4</span><span class="p">,</span><span class="w"> </span><span class="mf">5</span><span class="p">]</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">newArr</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[]</span>
+<span class="kd">let</span><span class="w"> </span><span class="nx">sum</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0</span>
+<span class="k">for</span><span class="p">(</span><span class="kd">let</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="nx">numbers</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="o">++</span><span class="p">){</span>
+<span class="w">  </span><span class="nx">newArr</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="w"> </span><span class="nx">numbers</span><span class="p">[</span><span class="nx">i</span><span class="p">]</span><span class="w"> </span><span class="o">**</span><span class="w"> </span><span class="mf">2</span><span class="p">)</span>
+
+<span class="p">}</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">newArr</span><span class="p">)</span><span class="w">  </span><span class="c1">// [1, 4, 9, 16, 25]</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">countries</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s1">&#39;Finland&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Sweden&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Norway&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Denmark&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Iceland&#39;</span><span class="p">]</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">newArr</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[]</span>
+<span class="k">for</span><span class="p">(</span><span class="kd">let</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="nx">countries</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="o">++</span><span class="p">){</span>
+<span class="w">  </span><span class="nx">newArr</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">countries</span><span class="p">[</span><span class="nx">i</span><span class="p">].</span><span class="nx">toUpperCase</span><span class="p">())</span>
+<span class="p">}</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">newArr</span><span class="p">)</span><span class="w">  </span><span class="c1">// [&quot;FINLAND&quot;, &quot;SWEDEN&quot;, &quot;NORWAY&quot;, &quot;DENMARK&quot;, &quot;ICELAND&quot;]</span>
+</code></pre></div>
+<h3 id="while-loop">while loop</h3>
+<div class="highlight"><pre><span></span><code><span class="kd">let</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0</span>
+<span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="nx">i</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="mf">5</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">i</span><span class="p">)</span>
+<span class="w">  </span><span class="nx">i</span><span class="o">++</span>
+<span class="p">}</span>
+
+<span class="c1">// 0 1 2 3 4 5</span>
+</code></pre></div>
+<h3 id="do-while-loop">do while loop</h3>
+<div class="highlight"><pre><span></span><code><span class="kd">let</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0</span>
+<span class="k">do</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">i</span><span class="p">)</span>
+<span class="w">  </span><span class="nx">i</span><span class="o">++</span>
+<span class="p">}</span><span class="w"> </span><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="nx">i</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="mf">5</span><span class="p">)</span>
+
+<span class="c1">// 0 1 2 3 4 5</span>
+</code></pre></div>
+<h3 id="for-of-loop">for of loop</h3>
+<p>Nah, for of loop ini dipakai buat array. Ini tuh cara yang super praktis buat ngiterasi array kalau kamu nggak peduli sama indeks setiap elemen di dalam array.</p>
+<div class="highlight"><pre><span></span><code><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kd">const</span><span class="w"> </span><span class="nx">element</span><span class="w"> </span><span class="k">of</span><span class="w"> </span><span class="nx">arr</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="c1">// kode di sini</span>
+<span class="p">}</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">numbers</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="mf">1</span><span class="p">,</span><span class="w"> </span><span class="mf">2</span><span class="p">,</span><span class="w"> </span><span class="mf">3</span><span class="p">,</span><span class="w"> </span><span class="mf">4</span><span class="p">,</span><span class="w"> </span><span class="mf">5</span><span class="p">]</span>
+
+<span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kd">const</span><span class="w"> </span><span class="nx">num</span><span class="w"> </span><span class="k">of</span><span class="w"> </span><span class="nx">numbers</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">num</span><span class="p">)</span>
+<span class="p">}</span>
+
+<span class="c1">// 1 2 3 4 5</span>
+
+<span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kd">const</span><span class="w"> </span><span class="nx">num</span><span class="w"> </span><span class="k">of</span><span class="w"> </span><span class="nx">numbers</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">num</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="nx">num</span><span class="p">)</span>
+<span class="p">}</span>
+
+<span class="c1">// 1 4 9 16 25</span>
+
+<span class="c1">// jumlahin semua angka dalam array</span>
+<span class="kd">let</span><span class="w"> </span><span class="nx">sum</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0</span>
+<span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kd">const</span><span class="w"> </span><span class="nx">num</span><span class="w"> </span><span class="k">of</span><span class="w"> </span><span class="nx">numbers</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="nx">sum</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">sum</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">num</span><span class="w">  </span>
+<span class="w">    </span><span class="c1">// bisa juga disingkat kayak gini, sum += num</span>
+<span class="w">  </span><span class="c1">// nanti kita bakal lebih sering pakai sintaks singkat (+=, -=, *=, /= dll)</span>
+<span class="p">}</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">sum</span><span class="p">)</span><span class="w"> </span><span class="c1">// 15</span>
+
+<span class="kd">const</span><span class="w"> </span><span class="nx">webTechs</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span>
+<span class="w">  </span><span class="s1">&#39;HTML&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;CSS&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;JavaScript&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;React&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;Redux&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;Node&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;MongoDB&#39;</span>
+<span class="p">]</span>
+
+<span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kd">const</span><span class="w"> </span><span class="nx">tech</span><span class="w"> </span><span class="k">of</span><span class="w"> </span><span class="nx">webTechs</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">tech</span><span class="p">.</span><span class="nx">toUpperCase</span><span class="p">())</span>
+<span class="p">}</span>
+
+<span class="c1">// HTML CSS JAVASCRIPT REACT NODE MONGODB</span>
+
+<span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kd">const</span><span class="w"> </span><span class="nx">tech</span><span class="w"> </span><span class="k">of</span><span class="w"> </span><span class="nx">webTechs</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">tech</span><span class="p">[</span><span class="mf">0</span><span class="p">])</span><span class="w"> </span><span class="c1">// cuma ambil huruf pertama setiap elemen,  H C J R N M</span>
+<span class="p">}</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">countries</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s1">&#39;Finland&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Sweden&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Norway&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Denmark&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Iceland&#39;</span><span class="p">]</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">newArr</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[]</span>
+<span class="k">for</span><span class="p">(</span><span class="kd">const</span><span class="w"> </span><span class="nx">country</span><span class="w"> </span><span class="k">of</span><span class="w"> </span><span class="nx">countries</span><span class="p">){</span>
+<span class="w">  </span><span class="nx">newArr</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">country</span><span class="p">.</span><span class="nx">toUpperCase</span><span class="p">())</span>
+<span class="p">}</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">newArr</span><span class="p">)</span><span class="w">  </span><span class="c1">// [&quot;FINLAND&quot;, &quot;SWEDEN&quot;, &quot;NORWAY&quot;, &quot;DENMARK&quot;, &quot;ICELAND&quot;]</span>
+</code></pre></div>
+<h3 id="for-in-loop">for in loop</h3>
+<p><code>for...in</code> loop digunakan untuk mengiterasi properti yang dapat dienumerasi dari sebuah objek. Untuk setiap properti yang berbeda, JavaScript akan menjalankan pernyataan yang ditentukan.</p>
+<div class="highlight"><pre><span></span><code><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kd">const</span><span class="w"> </span><span class="nx">key</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="nx">object</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="c1">// kode di sini</span>
+<span class="p">}</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">person</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="nx">firstName</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;Asabeneh&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="nx">lastName</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;Yetayeh&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="nx">age</span><span class="o">:</span><span class="w"> </span><span class="mf">250</span><span class="p">,</span>
+<span class="w">  </span><span class="nx">country</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;Finland&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="nx">city</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;Helsinki&#39;</span>
+<span class="p">}</span>
+
+<span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kd">const</span><span class="w"> </span><span class="nx">key</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="nx">person</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">key</span><span class="p">)</span>
+<span class="p">}</span>
+
+<span class="c1">// firstName</span>
+<span class="c1">// lastName</span>
+<span class="c1">// age</span>
+<span class="c1">// country</span>
+<span class="c1">// city</span>
+</code></pre></div>
+<p>Kita juga bisa mengakses nilainya menggunakan key:</p>
+<div class="highlight"><pre><span></span><code><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kd">const</span><span class="w"> </span><span class="nx">key</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="nx">person</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">key</span><span class="p">,</span><span class="w"> </span><span class="nx">person</span><span class="p">[</span><span class="nx">key</span><span class="p">])</span>
+<span class="p">}</span>
+
+<span class="c1">// firstName Asabeneh</span>
+<span class="c1">// lastName Yetayeh</span>
+<span class="c1">// age 250</span>
+<span class="c1">// country Finland</span>
+<span class="c1">// city Helsinki</span>
+</code></pre></div>
+<p><code>for...in</code> loop juga bisa dipakai untuk array, tapi dia ngasih kita indeks, bukan nilainya:</p>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">colors</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s1">&#39;red&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;green&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;blue&#39;</span><span class="p">]</span>
+
+<span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kd">const</span><span class="w"> </span><span class="nx">index</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="nx">colors</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">index</span><span class="p">,</span><span class="w"> </span><span class="nx">colors</span><span class="p">[</span><span class="nx">index</span><span class="p">])</span>
+<span class="p">}</span>
+
+<span class="c1">// 0 red</span>
+<span class="c1">// 1 green</span>
+<span class="c1">// 2 blue</span>
+</code></pre></div>
+<blockquote>
+<p><strong>Catatan:</strong> Disarankan pakai <code>for...of</code> untuk array dan <code>for...in</code> untuk objek.</p>
+</blockquote>
+<h3 id="break">break</h3>
+<p>Break dipakai buat menghentikan loop. Jadi kalau udah ketemu kondisi tertentu, langsung cabut!</p>
+<div class="highlight"><pre><span></span><code><span class="k">for</span><span class="p">(</span><span class="kd">let</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="mf">5</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="o">++</span><span class="p">){</span>
+<span class="w">  </span><span class="k">if</span><span class="p">(</span><span class="nx">i</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mf">3</span><span class="p">){</span>
+<span class="w">    </span><span class="k">break</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">i</span><span class="p">)</span>
+<span class="p">}</span>
+
+<span class="c1">// 0 1 2</span>
+</code></pre></div>
+<p>Kode di atas berhenti begitu ketemu angka 3 di proses iterasi. Sederhana kan?</p>
+<h3 id="continue">continue</h3>
+<p>Nah kalo <em>continue</em>, dia nggak berhentiin loop-nya. Dia cuma skip iterasi yang lagi berjalan aja.</p>
+<div class="highlight"><pre><span></span><code><span class="k">for</span><span class="p">(</span><span class="kd">let</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="mf">5</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="o">++</span><span class="p">){</span>
+<span class="w">  </span><span class="k">if</span><span class="p">(</span><span class="nx">i</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mf">3</span><span class="p">){</span>
+<span class="w">    </span><span class="k">continue</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">i</span><span class="p">)</span>
+<span class="p">}</span>
+
+<span class="c1">// 0 1 2 4 5</span>
+</code></pre></div>
+<p>🌕 Gilak, kamu keren banget! Udah sampai sejauh ini, gokil! Sekarang kamu udah punya kekuatan buat ngotomatisasi tugas-tugas berulang yang membosankan. Kamu baru aja nyelesein tantangan hari ke-6 dan selangkah lebih dekat menuju level dewa JavaScript. Gaskeun sekarang latihan buat otak dan otot kamu!</p>
+<h2 id="latihan-hari-6">💻 Latihan: Hari 6</h2>
+<h3 id="latihan-level-1">Latihan: Level 1</h3>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">countries</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span>
+<span class="w">  </span><span class="s1">&#39;Albania&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;Bolivia&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;Canada&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;Denmark&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;Ethiopia&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;Finland&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;Germany&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;Hungary&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;Ireland&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;Japan&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;Kenya&#39;</span>
+<span class="p">]</span>
+
+<span class="kd">const</span><span class="w"> </span><span class="nx">webTechs</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span>
+<span class="w">  </span><span class="s1">&#39;HTML&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;CSS&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;JavaScript&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;React&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;Redux&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;Node&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;MongoDB&#39;</span>
+<span class="p">]</span>
+
+<span class="kd">const</span><span class="w"> </span><span class="nx">mernStack</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s1">&#39;MongoDB&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Express&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;React&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Node&#39;</span><span class="p">]</span>
+</code></pre></div>
+<ol>
+<li>Iterasi 0 sampai 10 menggunakan for loop, lakukan hal yang sama menggunakan while dan do while loop</li>
+<li>Iterasi 10 sampai 0 menggunakan for loop, lakukan hal yang sama menggunakan while dan do while loop</li>
+<li>Iterasi 0 sampai n menggunakan for loop</li>
+<li>Tulis loop yang membuat pola berikut menggunakan <code>console.log()</code>:</li>
+</ol>
+<div class="highlight"><pre><span></span><code><span class="w">    </span><span class="err">#</span>
+<span class="w">    </span><span class="err">##</span>
+<span class="w">    </span><span class="err">###</span>
+<span class="w">    </span><span class="err">####</span>
+<span class="w">    </span><span class="err">#####</span>
+<span class="w">    </span><span class="err">######</span>
+<span class="w">    </span><span class="err">#######</span>
+</code></pre></div>
+<ol>
+<li>Gunakan loop untuk mencetak pola berikut:</li>
+</ol>
+<div class="highlight"><pre><span></span><code><span class="m">0</span><span class="w"> </span>x<span class="w"> </span><span class="nv">0</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">0</span>
+<span class="m">1</span><span class="w"> </span>x<span class="w"> </span><span class="nv">1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">1</span>
+<span class="m">2</span><span class="w"> </span>x<span class="w"> </span><span class="nv">2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">4</span>
+<span class="m">3</span><span class="w"> </span>x<span class="w"> </span><span class="nv">3</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">9</span>
+<span class="m">4</span><span class="w"> </span>x<span class="w"> </span><span class="nv">4</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">16</span>
+<span class="m">5</span><span class="w"> </span>x<span class="w"> </span><span class="nv">5</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">25</span>
+<span class="m">6</span><span class="w"> </span>x<span class="w"> </span><span class="nv">6</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">36</span>
+<span class="m">7</span><span class="w"> </span>x<span class="w"> </span><span class="nv">7</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">49</span>
+<span class="m">8</span><span class="w"> </span>x<span class="w"> </span><span class="nv">8</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">64</span>
+<span class="m">9</span><span class="w"> </span>x<span class="w"> </span><span class="nv">9</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">81</span>
+<span class="m">10</span><span class="w"> </span>x<span class="w"> </span><span class="nv">10</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">100</span>
+</code></pre></div>
+<ol>
+<li>Gunakan loop untuk mencetak pola berikut</li>
+</ol>
+<div class="highlight"><pre><span></span><code><span class="w"> </span>i<span class="w">    </span>i^2<span class="w">   </span>i^3
+<span class="w"> </span><span class="m">0</span><span class="w">    </span><span class="m">0</span><span class="w">     </span><span class="m">0</span>
+<span class="w"> </span><span class="m">1</span><span class="w">    </span><span class="m">1</span><span class="w">     </span><span class="m">1</span>
+<span class="w"> </span><span class="m">2</span><span class="w">    </span><span class="m">4</span><span class="w">     </span><span class="m">8</span>
+<span class="w"> </span><span class="m">3</span><span class="w">    </span><span class="m">9</span><span class="w">     </span><span class="m">27</span>
+<span class="w"> </span><span class="m">4</span><span class="w">    </span><span class="m">16</span><span class="w">    </span><span class="m">64</span>
+<span class="w"> </span><span class="m">5</span><span class="w">    </span><span class="m">25</span><span class="w">    </span><span class="m">125</span>
+<span class="w"> </span><span class="m">6</span><span class="w">    </span><span class="m">36</span><span class="w">    </span><span class="m">216</span>
+<span class="w"> </span><span class="m">7</span><span class="w">    </span><span class="m">49</span><span class="w">    </span><span class="m">343</span>
+<span class="w"> </span><span class="m">8</span><span class="w">    </span><span class="m">64</span><span class="w">    </span><span class="m">512</span>
+<span class="w"> </span><span class="m">9</span><span class="w">    </span><span class="m">81</span><span class="w">    </span><span class="m">729</span>
+<span class="w"> </span><span class="m">10</span><span class="w">   </span><span class="m">100</span><span class="w">   </span><span class="m">1000</span>
+</code></pre></div>
+<ol>
+<li>Gunakan for loop untuk iterasi dari 0 sampai 100 dan cetak hanya bilangan genap</li>
+<li>Gunakan for loop untuk iterasi dari 0 sampai 100 dan cetak hanya bilangan ganjil</li>
+<li>Gunakan for loop untuk iterasi dari 0 sampai 100 dan cetak hanya bilangan prima</li>
+<li>
+<p>Gunakan for loop untuk iterasi dari 0 sampai 100 dan cetak jumlah semua bilangan.</p>
+<div class="highlight"><pre><span></span><code>The<span class="w"> </span>sum<span class="w"> </span>of<span class="w"> </span>all<span class="w"> </span>numbers<span class="w"> </span>from<span class="w"> </span><span class="m">0</span><span class="w"> </span>to<span class="w"> </span><span class="m">100</span><span class="w"> </span>is<span class="w"> </span><span class="m">5050</span>.
+</code></pre></div>
+</li>
+<li>
+<p>Gunakan for loop untuk iterasi dari 0 sampai 100 dan cetak jumlah semua bilangan genap dan jumlah semua bilangan ganjil.</p>
+<div class="highlight"><pre><span></span><code>The<span class="w"> </span>sum<span class="w"> </span>of<span class="w"> </span>all<span class="w"> </span>evens<span class="w"> </span>from<span class="w"> </span><span class="m">0</span><span class="w"> </span>to<span class="w"> </span><span class="m">100</span><span class="w"> </span>is<span class="w"> </span><span class="m">2550</span>.<span class="w"> </span>And<span class="w"> </span>the<span class="w"> </span>sum<span class="w"> </span>of<span class="w"> </span>all<span class="w"> </span>odds<span class="w"> </span>from<span class="w"> </span><span class="m">0</span><span class="w"> </span>to<span class="w"> </span><span class="m">100</span><span class="w"> </span>is<span class="w"> </span><span class="m">2500</span>.
+</code></pre></div>
+</li>
+<li>
+<p>Gunakan for loop untuk iterasi dari 0 sampai 100 dan cetak jumlah semua bilangan genap dan jumlah semua bilangan ganjil. Cetak jumlah bilangan genap dan jumlah bilangan ganjil sebagai array</p>
+<div class="highlight"><pre><span></span><code><span class="w">  </span><span class="o">[</span><span class="m">2550</span>,<span class="w"> </span><span class="m">2500</span><span class="o">]</span>
+</code></pre></div>
+</li>
+<li>
+<p>Buat script kecil yang menghasilkan array berisi 5 angka acak</p>
+</li>
+<li>Buat script kecil yang menghasilkan array berisi 5 angka acak dan angka-angkanya harus unik</li>
+<li>
+<p>Buat script kecil yang menghasilkan id acak enam karakter:</p>
+<div class="highlight"><pre><span></span><code>5j2khz
+</code></pre></div>
+</li>
+</ol>
+<h3 id="latihan-level-2">Latihan: Level 2</h3>
+<ol>
+<li>
+<p>Buat script kecil yang menghasilkan id acak dengan jumlah karakter berapa pun:</p>
+<div class="highlight"><pre><span></span><code><span class="w">  </span>fe3jo1gl124g
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="w">  </span>xkqci4utda1lmbelpkm03rba
+</code></pre></div>
+</li>
+<li>
+<p>Tulis script yang menghasilkan bilangan heksadesimal acak.</p>
+<div class="highlight"><pre><span></span><code><span class="s1">&#39;#ee33df&#39;</span>
+</code></pre></div>
+</li>
+<li>
+<p>Tulis script yang menghasilkan warna rgb acak.</p>
+<div class="highlight"><pre><span></span><code>rgb<span class="o">(</span><span class="m">240</span>,180,80<span class="o">)</span>
+</code></pre></div>
+</li>
+<li>
+<p>Menggunakan array countries di atas, buat array baru berikut.</p>
+<div class="highlight"><pre><span></span><code><span class="o">[</span><span class="s2">&quot;ALBANIA&quot;</span>,<span class="w"> </span><span class="s2">&quot;BOLIVIA&quot;</span>,<span class="w"> </span><span class="s2">&quot;CANADA&quot;</span>,<span class="w"> </span><span class="s2">&quot;DENMARK&quot;</span>,<span class="w"> </span><span class="s2">&quot;ETHIOPIA&quot;</span>,<span class="w"> </span><span class="s2">&quot;FINLAND&quot;</span>,<span class="w"> </span><span class="s2">&quot;GERMANY&quot;</span>,<span class="w"> </span><span class="s2">&quot;HUNGARY&quot;</span>,<span class="w"> </span><span class="s2">&quot;IRELAND&quot;</span>,<span class="w"> </span><span class="s2">&quot;JAPAN&quot;</span>,<span class="w"> </span><span class="s2">&quot;KENYA&quot;</span><span class="o">]</span>
+</code></pre></div>
+</li>
+<li>
+<p>Menggunakan array countries di atas, buat array untuk panjang setiap negara.</p>
+<div class="highlight"><pre><span></span><code><span class="o">[</span><span class="m">7</span>,<span class="w"> </span><span class="m">7</span>,<span class="w"> </span><span class="m">6</span>,<span class="w"> </span><span class="m">7</span>,<span class="w"> </span><span class="m">8</span>,<span class="w"> </span><span class="m">7</span>,<span class="w"> </span><span class="m">7</span>,<span class="w"> </span><span class="m">7</span>,<span class="w"> </span><span class="m">7</span>,<span class="w"> </span><span class="m">5</span>,<span class="w"> </span><span class="m">5</span><span class="o">]</span>
+</code></pre></div>
+</li>
+<li>
+<p>Gunakan array countries untuk membuat array dari array berikut:</p>
+<div class="highlight"><pre><span></span><code><span class="w">  </span><span class="o">[</span>
+<span class="w">  </span><span class="o">[</span><span class="s1">&#39;Albania&#39;</span>,<span class="w"> </span><span class="s1">&#39;ALB&#39;</span>,<span class="w"> </span><span class="m">7</span><span class="o">]</span>,
+<span class="w">  </span><span class="o">[</span><span class="s1">&#39;Bolivia&#39;</span>,<span class="w"> </span><span class="s1">&#39;BOL&#39;</span>,<span class="w"> </span><span class="m">7</span><span class="o">]</span>,
+<span class="w">  </span><span class="o">[</span><span class="s1">&#39;Canada&#39;</span>,<span class="w"> </span><span class="s1">&#39;CAN&#39;</span>,<span class="w"> </span><span class="m">6</span><span class="o">]</span>,
+<span class="w">  </span><span class="o">[</span><span class="s1">&#39;Denmark&#39;</span>,<span class="w"> </span><span class="s1">&#39;DEN&#39;</span>,<span class="w"> </span><span class="m">7</span><span class="o">]</span>,
+<span class="w">  </span><span class="o">[</span><span class="s1">&#39;Ethiopia&#39;</span>,<span class="w"> </span><span class="s1">&#39;ETH&#39;</span>,<span class="w"> </span><span class="m">8</span><span class="o">]</span>,
+<span class="w">  </span><span class="o">[</span><span class="s1">&#39;Finland&#39;</span>,<span class="w"> </span><span class="s1">&#39;FIN&#39;</span>,<span class="w"> </span><span class="m">7</span><span class="o">]</span>,
+<span class="w">  </span><span class="o">[</span><span class="s1">&#39;Germany&#39;</span>,<span class="w"> </span><span class="s1">&#39;GER&#39;</span>,<span class="w"> </span><span class="m">7</span><span class="o">]</span>,
+<span class="w">  </span><span class="o">[</span><span class="s1">&#39;Hungary&#39;</span>,<span class="w"> </span><span class="s1">&#39;HUN&#39;</span>,<span class="w"> </span><span class="m">7</span><span class="o">]</span>,
+<span class="w">  </span><span class="o">[</span><span class="s1">&#39;Ireland&#39;</span>,<span class="w"> </span><span class="s1">&#39;IRE&#39;</span>,<span class="w"> </span><span class="m">7</span><span class="o">]</span>,
+<span class="w">  </span><span class="o">[</span><span class="s1">&#39;Iceland&#39;</span>,<span class="w"> </span><span class="s1">&#39;ICE&#39;</span>,<span class="w"> </span><span class="m">7</span><span class="o">]</span>,
+<span class="w">  </span><span class="o">[</span><span class="s1">&#39;Japan&#39;</span>,<span class="w"> </span><span class="s1">&#39;JAP&#39;</span>,<span class="w"> </span><span class="m">5</span><span class="o">]</span>,
+<span class="w">  </span><span class="o">[</span><span class="s1">&#39;Kenya&#39;</span>,<span class="w"> </span><span class="s1">&#39;KEN&#39;</span>,<span class="w"> </span><span class="m">5</span><span class="o">]</span>
+<span class="o">]</span>
+</code></pre></div>
+</li>
+<li>
+<p>Di array countries di atas, periksa apakah ada negara yang mengandung kata 'land'. Jika ada negara yang mengandung 'land', cetak sebagai array. Jika tidak ada negara yang mengandung kata 'land', cetak 'All these countries are without land'.</p>
+<div class="highlight"><pre><span></span><code><span class="o">[</span><span class="s1">&#39;Finland&#39;</span>,<span class="s1">&#39;Ireland&#39;</span>,<span class="w"> </span><span class="s1">&#39;Iceland&#39;</span><span class="o">]</span>
+</code></pre></div>
+</li>
+<li>
+<p>Di array countries di atas, periksa apakah ada negara yang berakhiran substring 'ia'. Jika ada negara yang berakhiran dengan itu, cetak sebagai array. Jika tidak ada negara yang mengandung kata 'ai', cetak 'These are countries ends without ia'.</p>
+<div class="highlight"><pre><span></span><code><span class="o">[</span><span class="s1">&#39;Albania&#39;</span>,<span class="w"> </span><span class="s1">&#39;Bolivia&#39;</span>,<span class="s1">&#39;Ethiopia&#39;</span><span class="o">]</span>
+</code></pre></div>
+</li>
+<li>
+<p>Menggunakan array countries di atas, temukan negara dengan jumlah karakter terbanyak.</p>
+<div class="highlight"><pre><span></span><code>Ethiopia
+</code></pre></div>
+</li>
+<li>
+<p>Menggunakan array countries di atas, temukan negara yang hanya memiliki 5 karakter.</p>
+<div class="highlight"><pre><span></span><code><span class="o">[</span><span class="s1">&#39;Japan&#39;</span>,<span class="w"> </span><span class="s1">&#39;Kenya&#39;</span><span class="o">]</span>
+</code></pre></div>
+</li>
+<li>
+<p>Temukan kata terpanjang di array webTechs</p>
+</li>
+<li>
+<p>Gunakan array webTechs untuk membuat array dari array berikut:</p>
+<div class="highlight"><pre><span></span><code><span class="o">[[</span><span class="s2">&quot;HTML&quot;</span>,<span class="w"> </span><span class="m">4</span><span class="o">]</span>,<span class="w"> </span><span class="o">[</span><span class="s2">&quot;CSS&quot;</span>,<span class="w"> </span><span class="m">3</span><span class="o">]</span>,<span class="o">[</span><span class="s2">&quot;JavaScript&quot;</span>,<span class="w"> </span><span class="m">10</span><span class="o">]</span>,<span class="o">[</span><span class="s2">&quot;React&quot;</span>,<span class="w"> </span><span class="m">5</span><span class="o">]</span>,<span class="o">[</span><span class="s2">&quot;Redux&quot;</span>,<span class="w"> </span><span class="m">5</span><span class="o">]</span>,<span class="o">[</span><span class="s2">&quot;Node&quot;</span>,<span class="w"> </span><span class="m">4</span><span class="o">]</span>,<span class="o">[</span><span class="s2">&quot;MongoDB&quot;</span>,<span class="w"> </span><span class="m">7</span><span class="o">]]</span>
+</code></pre></div>
+</li>
+<li>
+<p>Aplikasi yang dibuat menggunakan MongoDB, Express, React, dan Node disebut aplikasi MERN stack. Buat akronim MERN menggunakan array mernStack</p>
+</li>
+<li>Iterasi array, ["HTML", "CSS", "JS", "React", "Redux", "Node", "Express", "MongoDB"] menggunakan for loop atau for of loop dan cetak setiap item.</li>
+<li>Ini adalah array buah, ['banana', 'orange', 'mango', 'lemon'] balik urutannya menggunakan loop tanpa menggunakan metode reverse.</li>
+<li>
+<p>Cetak semua elemen array seperti yang ditunjukkan di bawah ini.</p>
+<div class="highlight"><pre><span></span><code><span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">fullStack</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span>
+<span class="w">    </span><span class="p">[</span><span class="s1">&#39;HTML&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;CSS&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;JS&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;React&#39;</span><span class="p">],</span>
+<span class="w">    </span><span class="p">[</span><span class="s1">&#39;Node&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Express&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;MongoDB&#39;</span><span class="p">]</span>
+<span class="w">  </span><span class="p">]</span>
+<span class="sb">````</span>
+
+<span class="sb">```sh</span>
+<span class="sb">  HTML</span>
+<span class="sb">  CSS</span>
+<span class="sb">  JS</span>
+<span class="sb">  REACT</span>
+<span class="sb">  NODE</span>
+<span class="sb">  EXPRESS</span>
+<span class="sb">  MONGODB</span>
+</code></pre></div>
+</li>
+</ol>
+<h3 id="latihan-level-3">Latihan: Level 3</h3>
+<ol>
+<li>Salin array countries (Hindari mutasi)</li>
+<li>Array bersifat mutable. Buat salinan array yang tidak mengubah array asli. Urutkan array yang disalin dan simpan dalam variabel sortedCountries</li>
+<li>Urutkan array webTechs dan array mernStack</li>
+<li>Ekstrak semua negara yang mengandung kata 'land' dari <a href="https://github.com/Asabeneh/30DaysOfJavaScript/tree/master/data/countries.js">array countries</a> dan cetak sebagai array</li>
+<li>Temukan negara dengan jumlah karakter terbanyak di <a href="https://github.com/Asabeneh/30DaysOfJavaScript/tree/master/data/countries.js">array countries</a></li>
+<li>Ekstrak semua negara yang mengandung kata 'land' dari <a href="https://github.com/Asabeneh/30DaysOfJavaScript/tree/master/data/countries.js">array countries</a> dan cetak sebagai array</li>
+<li>Ekstrak semua negara yang hanya memiliki empat karakter dari <a href="https://github.com/Asabeneh/30DaysOfJavaScript/tree/master/data/countries.js">array countries</a> dan cetak sebagai array</li>
+<li>Ekstrak semua negara yang mengandung dua kata atau lebih dari <a href="https://github.com/Asabeneh/30DaysOfJavaScript/tree/master/data/countries.js">array countries</a> dan cetak sebagai array</li>
+<li>Balik <a href="https://github.com/Asabeneh/30DaysOfJavaScript/tree/master/data/countries.js">array countries</a> dan kapitalisasi setiap negara lalu simpan sebagai array</li>
+</ol>
+<p>🎉 SELAMAT ! 🎉</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Tersalin ke clipboard", "clipboard.copy": "Salin ke clipboard", "search.result.more.one": "1 lagi di halaman ini", "search.result.more.other": "# lagi di halaman ini", "search.result.none": "Tidak ada dokumen yang sesuai", "search.result.one": "1 dokumen ditemukan", "search.result.other": "# dokumen ditemukan", "search.result.placeholder": "Ketik untuk mulai pencarian", "search.result.term.missing": "Tidak ada", "select.version": "Pilih versi"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>

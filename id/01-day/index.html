@@ -1,0 +1,2354 @@
+
+<!doctype html>
+<html lang="id" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../">
+      
+      
+        <link rel="next" href="../02-day/">
+      
+      
+        
+          <link rel="alternate" href="../../01-day/" hreflang="en">
+        
+          <link rel="alternate" href="./" hreflang="id">
+        
+      
+      
+      <link rel="icon" href="../../images/javascript.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>📔 Hari 1 - Yuk Mulai! - 30 Days Javascript</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="amber" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#hari-1-yuk-mulai" class="md-skip">
+          Lewati ke isi
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../" title="30 Days Javascript" class="md-header__button md-logo" aria-label="30 Days Javascript" data-md-component="logo">
+      
+  <img src="../../images/javascript.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            30 Days Javascript
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              📔 Hari 1 - Yuk Mulai!
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+      <div class="md-header__option">
+  <div class="md-select">
+    
+    <button class="md-header__button md-icon" aria-label="Pilih bahasa">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.5 17.5 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2zm-2.62 7 1.62-4.33L19.12 17z"/></svg>
+    </button>
+    <div class="md-select__inner">
+      <ul class="md-select__list">
+        
+          <li class="md-select__item">
+            <a href="../../01-day/" hreflang="en" class="md-select__link">
+              English
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="./" hreflang="id" class="md-select__link">
+              Bahasa Indonesia
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Cari" placeholder="Cari" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Cari">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Kosongkan" aria-label="Kosongkan" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Mempersiapkan pencarian
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/devinesia/30-days-javascript-web" title="Ke repositori" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigasi" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../" title="30 Days Javascript" class="md-nav__button md-logo" aria-label="30 Days Javascript" data-md-component="logo">
+      
+  <img src="../../images/javascript.png" alt="logo">
+
+    </a>
+    30 Days Javascript
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/devinesia/30-days-javascript-web" title="Ke repositori" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Yuk Mulai!
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📔 Hari 1 - Yuk Mulai!
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📔 Hari 1 - Yuk Mulai!
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Daftar isi">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Daftar isi
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#pendahuluan" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pendahuluan
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#persyaratan" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Persyaratan
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#persiapan" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Persiapan
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Persiapan">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#instal-nodejs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Instal Node.js
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#browser" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Browser
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Browser">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#menginstal-google-chrome" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Menginstal Google Chrome
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#membuka-konsol-google-chrome" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Membuka Konsol Google Chrome
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#menulis-kode-di-konsol-browser" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Menulis Kode di Konsol Browser
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Menulis Kode di Konsol Browser">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#consolelog" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Console.log
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#consolelog-dengan-beberapa-argumen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Console.log dengan Beberapa Argumen
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#komentar" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Komentar
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sintaks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sintaks
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aritmatika" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Aritmatika
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#editor-kode" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Editor Kode
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Editor Kode">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#menginstal-visual-studio-code" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Menginstal Visual Studio Code
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cara-menggunakan-visual-studio-code" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cara Menggunakan Visual Studio Code
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#menambahkan-javascript-ke-halaman-web" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Menambahkan JavaScript ke Halaman Web
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Menambahkan JavaScript ke Halaman Web">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inline-script" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Inline Script
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#internal-script" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Internal Script
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#external-script" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        External Script
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#multiple-external-scripts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Multiple External Scripts
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pengenalan-tipe-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pengenalan Tipe Data
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Pengenalan Tipe Data">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#numbers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Numbers
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#strings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Strings
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#booleans" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Booleans
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#undefined" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Undefined
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#null" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Null
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#memeriksa-tipe-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Memeriksa Tipe Data
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#komentar-lagi" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Komentar Lagi
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#variabel" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Variabel
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📔 Hari 2 - Gaskeun Lanjut!
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📔 Hari 3 - Oke Gas!
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📔 Hari 4 - Yuk Ngoding!
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../05-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📔 Hari 5 - Mantap Lanjut!
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../06-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📔 Hari 6
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../07-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📔 Hari 7
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../08-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📔 Hari 8
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../09-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📔 Hari 9
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../10-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📔 Hari 10
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../11-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📘 Hari 11
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../12-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📘 Hari 12
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../13-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📘 Hari 13
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../14-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📘 Hari 14
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../15-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📘 Hari 15
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../16-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📘 Hari 16
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../17-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📘 Hari 17
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../18-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📘 Hari 18
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../19-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📘 Hari 19
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📘 Hari 20
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../21-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📙 Hari 21
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../22-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📙 Hari 22
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../23-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📙 Hari 23
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../24-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📙 Hari 24
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../25-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📙 Hari 25
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../26-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📔 Hari 26
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../27-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📔 Hari 27
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../28-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📔 Hari 28
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../29-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📔 Hari 29
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../30-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📔 Hari 30
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Daftar isi">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Daftar isi
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#pendahuluan" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pendahuluan
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#persyaratan" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Persyaratan
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#persiapan" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Persiapan
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Persiapan">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#instal-nodejs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Instal Node.js
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#browser" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Browser
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Browser">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#menginstal-google-chrome" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Menginstal Google Chrome
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#membuka-konsol-google-chrome" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Membuka Konsol Google Chrome
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#menulis-kode-di-konsol-browser" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Menulis Kode di Konsol Browser
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Menulis Kode di Konsol Browser">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#consolelog" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Console.log
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#consolelog-dengan-beberapa-argumen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Console.log dengan Beberapa Argumen
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#komentar" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Komentar
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sintaks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sintaks
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aritmatika" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Aritmatika
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#editor-kode" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Editor Kode
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Editor Kode">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#menginstal-visual-studio-code" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Menginstal Visual Studio Code
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cara-menggunakan-visual-studio-code" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cara Menggunakan Visual Studio Code
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#menambahkan-javascript-ke-halaman-web" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Menambahkan JavaScript ke Halaman Web
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Menambahkan JavaScript ke Halaman Web">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inline-script" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Inline Script
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#internal-script" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Internal Script
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#external-script" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        External Script
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#multiple-external-scripts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Multiple External Scripts
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pengenalan-tipe-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pengenalan Tipe Data
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Pengenalan Tipe Data">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#numbers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Numbers
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#strings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Strings
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#booleans" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Booleans
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#undefined" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Undefined
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#null" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Null
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#memeriksa-tipe-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Memeriksa Tipe Data
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#komentar-lagi" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Komentar Lagi
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#variabel" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Variabel
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="hari-1-yuk-mulai">📔 Hari 1 - Yuk Mulai!</h1>
+<h2 id="pendahuluan">Pendahuluan</h2>
+<p><strong>Selamat ya!</strong> Keren banget kamu udah mutusin buat ikutan tantangan 30 hari JavaScript ini. Di tantangan ini kamu bakal belajar semua yang kamu butuhin buat jadi programmer JavaScript yang cakep, dan secara umum, semua konsep pemrograman deh. Di akhir tantangan, kamu bakal dapet sertifikat penyelesaian 30DaysOfJavaScript lho! Kalau butuh bantuan atau pengen bantu temen-temen lain, yuk gabung aja di <a href="https://t.me/ThirtyDaysOfJavaScript">grup telegram</a>.</p>
+<p><strong>Tantangan 30DaysOfJavaScript</strong> ini panduan buat kalian yang baru mulai maupun yang udah jago di JavaScript. Selamat datang di JavaScript! JavaScript itu bahasa web. Gue enjoy banget pake dan ngajarin JavaScript, dan gue harap kamu juga bakal enjoy ya!</p>
+<p>Di tantangan JavaScript step-by-step ini, kamu bakal belajar JavaScript — bahasa pemrograman paling populer sepanjang sejarah umat manusia, mantap kan?
+JavaScript tuh dipake <strong><em>buat nambahin interaktivitas ke website, ngembangin aplikasi mobile, aplikasi desktop, game</em></strong>, dan sekarang JavaScript juga udah bisa dipake buat <strong><em>machine learning</em></strong> dan <strong><em>AI</em></strong> lho!
+<strong><em>JavaScript (JS)</em></strong> popularitasnya makin gila-gilaan dalam beberapa tahun terakhir dan udah jadi bahasa pemrograman nomor satu selama enam tahun berturut-turut, plus bahasa yang paling banyak dipake di Github.</p>
+<h2 id="persyaratan">Persyaratan</h2>
+<p>Nggak perlu pengalaman ngoding sebelumnya kok buat ikutan tantangan ini. Kamu cuma perlu:</p>
+<ol>
+<li>Motivasi</li>
+<li>Komputer</li>
+<li>Internet</li>
+<li>Browser</li>
+<li>Editor kode</li>
+</ol>
+<h2 id="persiapan">Persiapan</h2>
+<p>Gue yakin kamu punya motivasi dan keinginan kuat buat jadi developer, plus komputer dan Internet. Nah, kalau itu semua udah ada, artinya kamu udah siap gas! </p>
+<h3 id="instal-nodejs">Instal Node.js</h3>
+<p>Kamu mungkin belum butuh Node.js sekarang sih, tapi nanti bakal kepake. Yuk instal <a href="https://nodejs.org/en/">node.js</a> dulu.</p>
+<p><img alt="Unduh Node" src="../../images/download_node.png" /></p>
+<p>Setelah diunduh, tinggal klik dua kali dan instal deh.</p>
+<p><img alt="Instal node" src="../../images/install_node.png" /></p>
+<p>Kita bisa cek apakah Node udah keinstal di mesin lokal kita dengan buka terminal atau command prompt.</p>
+<div class="highlight"><pre><span></span><code>asabeneh<span class="w"> </span>$<span class="w"> </span>node<span class="w"> </span>-v
+v12.14.0
+</code></pre></div>
+<p>Waktu bikin tutorial ini gue pake Node versi 12.14.0, tapi sekarang versi Node.js yang direkomendasiin buat diunduh adalah v14.17.6. Pas kamu baca materi ini mungkin versi Node.js kamu udah lebih tinggi lagi.</p>
+<h3 id="browser">Browser</h3>
+<p>Ada banyak browser di luar sana sih. Tapi gue rekomen banget pake Google Chrome.</p>
+<h4 id="menginstal-google-chrome">Menginstal Google Chrome</h4>
+<p>Instal <a href="https://www.google.com/chrome/">Google Chrome</a> dulu ya kalau belum punya. Kita bisa nulis kode JavaScript kecil-kecilan di konsol browser, tapi jangan pake konsol browser buat ngembangin aplikasi ya.</p>
+<p><img alt="Google Chrome" src="../../images/google_chrome.png" /></p>
+<h4 id="membuka-konsol-google-chrome">Membuka Konsol Google Chrome</h4>
+<p>Kamu bisa buka konsol Google Chrome dengan klik tiga titik di pojok kanan atas browser, pilih <em>Alat lainnya -&gt; Alat pengembang</em> atau pake shortcut keyboard. Gue lebih suka pake shortcut sih.</p>
+<p><img alt="Membuka chrome" src="../../images/opening_developer_tool.png" /></p>
+<p>Nih shortcut buat buka konsol Chrome:</p>
+<div class="highlight"><pre><span></span><code>Mac
+Command+Option+J
+
+Windows/Linux:
+Ctl+Shift+J
+</code></pre></div>
+<p><img alt="Membuka konsol" src="../../images/opening_chrome_console_shortcut.png" /></p>
+<p>Setelah kamu buka konsol Google Chrome, coba jelajahin tombol-tombol yang udah ditandai ya. Nanti kita bakal banyak ngabisin waktu di Konsol. Konsol ini tempat kode JavaScript kamu jalan. Mesin Google Console V8 bakal ngubah kode JavaScript kamu jadi kode mesin.
+Yuk kita tulis kode JavaScript pertama di konsol Google Chrome:</p>
+<p><img alt="tulis kode di konsol" src="../../images/js_code_on_chrome_console.png" /></p>
+<h4 id="menulis-kode-di-konsol-browser">Menulis Kode di Konsol Browser</h4>
+<p>Kita bisa nulis kode JavaScript apa pun di konsol Google atau konsol browser apa pun. Tapi buat tantangan ini, kita fokus ke konsol Google Chrome aja ya. Buka konsol pake:</p>
+<div class="highlight"><pre><span></span><code>Mac
+Command+Option+I
+
+Windows:
+Ctl+Shift+I
+</code></pre></div>
+<h5 id="consolelog">Console.log</h5>
+<p>Buat nulis kode JavaScript pertama kita, kita pake fungsi bawaan <strong>console.log()</strong>. Kita kasih argumen sebagai data masukan, dan fungsi itu bakal nampilin keluarannya. Nih kita kasih <code>'Hello, World'</code> sebagai data masukan atau argumen di fungsi console.log().</p>
+<div class="highlight"><pre><span></span><code><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;Hello, World!&#39;</span><span class="p">)</span>
+</code></pre></div>
+<h5 id="consolelog-dengan-beberapa-argumen">Console.log dengan Beberapa Argumen</h5>
+<p>Fungsi <strong><code>console.log()</code></strong> bisa nerima banyak parameter yang dipisahin pake koma. Sintaksnya gini nih: <strong><code>console.log(param1, param2, param3)</code></strong></p>
+<p><img alt="console log multiple arguments" src="../../images/console_log_multipl_arguments.png" /></p>
+<div class="highlight"><pre><span></span><code><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;Hello&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;World&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;!&#39;</span><span class="p">)</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;HAPPY&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;NEW&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;YEAR&#39;</span><span class="p">,</span><span class="w"> </span><span class="mf">2020</span><span class="p">)</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;Welcome&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;to&#39;</span><span class="p">,</span><span class="w"> </span><span class="mf">30</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Days&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Of&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;JavaScript&#39;</span><span class="p">)</span>
+</code></pre></div>
+<p>Nah, seperti yang kamu lihat dari kode di atas, <em><code>console.log()</code></em> bisa nerima banyak argumen.</p>
+<p>Selamat! Kamu udah nulis kode JavaScript pertama kamu pake <em><code>console.log()</code></em>. Keren!</p>
+<h5 id="komentar">Komentar</h5>
+<p>Kita bisa nambahin komentar ke kode kita. Komentar itu penting banget buat bikin kode lebih gampang dibaca dan buat ninggalin catatan di kode kita. JavaScript nggak ngeksekusi bagian komentar dari kode kita kok. Di JavaScript, setiap baris teks yang dimulai dengan // adalah komentar, dan apa pun yang diapit kayak gini <code>/* */</code> juga merupakan komentar.</p>
+<p><strong>Contoh: Komentar Satu Baris</strong></p>
+<div class="highlight"><pre><span></span><code><span class="c1">// Ini adalah komentar pertama  </span>
+<span class="c1">// Ini adalah komentar kedua  </span>
+<span class="c1">// Saya adalah komentar satu baris</span>
+</code></pre></div>
+<p><strong>Contoh: Komentar Banyak Baris</strong></p>
+<div class="highlight"><pre><span></span><code><span class="cm">/*</span>
+<span class="cm">Ini adalah komentar banyak baris  </span>
+<span class="cm"> Komentar banyak baris dapat mengambil beberapa baris  </span>
+<span class="cm"> JavaScript adalah bahasa web  </span>
+<span class="cm"> */</span>
+</code></pre></div>
+<h5 id="sintaks">Sintaks</h5>
+<p>Bahasa pemrograman tuh mirip bahasa manusia. Bahasa Inggris atau bahasa lain pake kata, frasa, kalimat, kalimat majemuk dan lainnya buat nyampein pesan. Arti sintaks dalam bahasa Inggris adalah <em>susunan kata dan frasa buat bikin kalimat yang terbentuk dengan baik dalam suatu bahasa</em>. Definisi teknis sintaks adalah struktur pernyataan dalam bahasa komputer. Setiap bahasa pemrograman punya sintaksnya masing-masing. JavaScript juga punya sintaksnya sendiri. Kalau kita nggak nulis sintaks yang dipahami JavaScript, nanti muncul berbagai jenis error. Kita bakal ngeksplor berbagai jenis error JavaScript nanti. Untuk sekarang, yuk kita lihat error sintaks dulu.</p>
+<p><img alt="Error" src="../../images/raising_syntax_error.png" /></p>
+<p>Gue sengaja bikin error nih. Akibatnya, konsol nampilin error sintaks. Sebenernya, pesan errornya informatif banget lho. Dia kasih tahu jenis error apa yang dibuat. Dengan baca panduan umpan balik error, kita bisa perbaiki sintaks dan betulin masalahnya. Proses mengidentifikasi dan menghapus error dari program disebut debugging. Yuk kita betulin errornya:</p>
+<div class="highlight"><pre><span></span><code><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;Hello, World!&#39;</span><span class="p">)</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;Hello, World!&#39;</span><span class="p">)</span>
+</code></pre></div>
+<p>Sejauh ini, kita udah lihat cara nampilin teks pake <em><code>console.log()</code></em>. Kalau kita nyetak teks atau string pake <em><code>console.log()</code></em>, teksnya harus ada di dalam tanda kutip tunggal, tanda kutip ganda, atau backtick.
+<strong>Contoh:</strong></p>
+<div class="highlight"><pre><span></span><code><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;Hello, World!&#39;</span><span class="p">)</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;Hello, World!&quot;</span><span class="p">)</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="sb">`Hello, World!`</span><span class="p">)</span>
+</code></pre></div>
+<h4 id="aritmatika">Aritmatika</h4>
+<p>Sekarang, yuk kita latihan lebih banyak nulis kode JavaScript pake <em><code>console.log()</code></em> di konsol Google Chrome buat tipe data angka.
+Selain teks, kita juga bisa ngelakuin perhitungan matematika pake JavaScript. Yuk kita lakuin perhitungan sederhana berikut.
+Kita bisa nulis kode JavaScript di konsol Google Chrome langsung tanpa fungsi <strong><em><code>console.log()</code></em></strong>. Tapi ini dimasukin di pendahuluan karena sebagian besar tantangan ini bakal berlangsung di editor teks di mana fungsi ini wajib dipake. Kamu bisa main-main langsung dengan instruksi di konsol ya.</p>
+<p><img alt="Arithmetic" src="../../images/arithmetic.png" /></p>
+<div class="highlight"><pre><span></span><code><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="mf">2</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mf">3</span><span class="p">)</span><span class="w"> </span><span class="c1">// Penjumlahan</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="mf">3</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mf">2</span><span class="p">)</span><span class="w"> </span><span class="c1">// Pengurangan</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="mf">2</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mf">3</span><span class="p">)</span><span class="w"> </span><span class="c1">// Perkalian</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="mf">3</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mf">2</span><span class="p">)</span><span class="w"> </span><span class="c1">// Pembagian</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="mf">3</span><span class="w"> </span><span class="o">%</span><span class="w"> </span><span class="mf">2</span><span class="p">)</span><span class="w"> </span><span class="c1">// Modulus - mencari sisa</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="mf">3</span><span class="w"> </span><span class="o">**</span><span class="w"> </span><span class="mf">2</span><span class="p">)</span><span class="w"> </span><span class="c1">// Eksponensiasi 3 ** 2 == 3 * 3</span>
+</code></pre></div>
+<h3 id="editor-kode">Editor Kode</h3>
+<p>Kita bisa nulis kode di konsol browser sih, tapi nggak cocok buat proyek yang lebih gede. Di lingkungan kerja nyata, developer pake berbagai editor kode buat nulis kode mereka. Dalam tantangan JavaScript 30 hari ini, kita bakal pake Visual Studio Code.</p>
+<h4 id="menginstal-visual-studio-code">Menginstal Visual Studio Code</h4>
+<p>Visual Studio Code itu editor teks open-source yang populer banget. Gue rekomen banget buat <a href="https://code.visualstudio.com/">ngunduh Visual Studio Code</a>, tapi kalau kamu lebih suka editor lain, santuy aja pake yang kamu punya.</p>
+<p><img alt="Vscode" src="../../images/vscode.png" /></p>
+<p>Kalau udah keinstal Visual Studio Code, gaskeun mulai pake.</p>
+<h4 id="cara-menggunakan-visual-studio-code">Cara Menggunakan Visual Studio Code</h4>
+<p>Buka Visual Studio Code dengan klik dua kali ikonnya. Begitu dibuka, kamu bakal dapet antarmuka kayak gini nih. Coba eksplor ikon-ikon yang udah dikasih label ya.</p>
+<p><img alt="Vscode ui" src="../../images/vscode_ui.png" /></p>
+<p><img alt="Vscode add project" src="../../images/adding_project_to_vscode.png" /></p>
+<p><img alt="Vscode open project" src="../../images/opening_project_on_vscode.png" /></p>
+<p><img alt="script file" src="../../images/scripts_on_vscode.png" /></p>
+<p><img alt="Installing Live Server" src="../../images/vsc_live_server.png" /></p>
+<p><img alt="running script" src="../../images/running_script.png" /></p>
+<p><img alt="coding running" src="../../images/launched_on_new_tab.png" /></p>
+<h2 id="menambahkan-javascript-ke-halaman-web">Menambahkan JavaScript ke Halaman Web</h2>
+<p>JavaScript bisa ditambahin ke halaman web dengan tiga cara berbeda nih:</p>
+<ul>
+<li><strong><em>Inline script</em></strong></li>
+<li><strong><em>Internal script</em></strong></li>
+<li><strong><em>External script</em></strong></li>
+<li><strong><em>Multiple External scripts</em></strong></li>
+</ul>
+<p>Bagian berikut nunjukin berbagai cara nambahin kode JavaScript ke halaman web kamu.</p>
+<h3 id="inline-script">Inline Script</h3>
+<p>Bikin folder proyek di desktop kamu atau di lokasi mana pun, kasih nama 30DaysOfJS dan bikin file <strong><em><code>index.html</code></em></strong> di folder proyek itu. Terus tempelin kode berikut dan buka di browser, misalnya <a href="https://www.google.com/chrome/">Chrome</a>.</p>
+<div class="highlight"><pre><span></span><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">&quot;en&quot;</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>30DaysOfScript:Inline Script<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">button</span> <span class="na">onclick</span><span class="o">=</span><span class="s">&quot;alert(&#39;Welcome to 30DaysOfJavaScript!&#39;)&quot;</span><span class="p">&gt;</span>Click Me<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</code></pre></div>
+<p>Nah, kamu baru aja nulis inline script pertama kamu. Kita bisa bikin pesan peringatan pop up pake fungsi bawaan <em><code>alert()</code></em>.</p>
+<h3 id="internal-script">Internal Script</h3>
+<p>Internal script bisa ditulis di <em><code>head</code></em> atau <em><code>body</code></em>, tapi lebih disaranin di body dokumen HTML.
+Yuk kita tulis di bagian head halaman dulu.</p>
+<div class="highlight"><pre><span></span><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">&quot;en&quot;</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>30DaysOfScript:Internal Script<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
+<span class="w">      </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;Welcome to 30DaysOfJavaScript&#39;</span><span class="p">)</span>
+<span class="w">    </span><span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</code></pre></div>
+<p>Ini cara kita nulis internal script biasanya. Nulis kode JavaScript di bagian body tuh opsi yang paling direkomendasiin. Buka konsol browser buat lihat hasil dari <code>console.log()</code>.</p>
+<div class="highlight"><pre><span></span><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">&quot;en&quot;</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>30DaysOfScript:Internal Script<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">button</span> <span class="na">onclick</span><span class="o">=</span><span class="s">&quot;alert(&#39;Welcome to 30DaysOfJavaScript!&#39;);&quot;</span><span class="p">&gt;</span>Click Me<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
+<span class="w">      </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;Welcome to 30DaysOfJavaScript&#39;</span><span class="p">)</span>
+<span class="w">    </span><span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</code></pre></div>
+<p>Buka konsol browser buat lihat hasil dari <code>console.log()</code>.</p>
+<p><img alt="js code from vscode" src="../../images/js_code_vscode.png" /></p>
+<h3 id="external-script">External Script</h3>
+<p>Mirip kayak internal script, tautan external script bisa di header atau body, tapi lebih disaranin di body.
+Pertama, kita harus bikin file JavaScript eksternal dengan ekstensi .js. Semua file yang berakhiran .js adalah file JavaScript. Bikin file bernama introduction.js di dalam direktori proyek kamu dan tulis kode berikut, terus tautkan file .js ini di bagian bawah body.</p>
+<div class="highlight"><pre><span></span><code><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;Welcome to 30DaysOfJavaScript&#39;</span><span class="p">)</span>
+</code></pre></div>
+<p>External scripts di <em>head</em>:</p>
+<div class="highlight"><pre><span></span><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">&quot;en&quot;</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>30DaysOfJavaScript:External script<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;introduction.js&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</code></pre></div>
+<p>External scripts di <em>body</em>:</p>
+<div class="highlight"><pre><span></span><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">&quot;en&quot;</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>30DaysOfJavaScript:External script<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+    <span class="cm">&lt;!-- Tautan eksternal JavaScript bisa di header atau di body --&gt;</span> 
+    <span class="cm">&lt;!-- Sebelum tag penutup body adalah tempat yang direkomendasikan untuk meletakkan script JavaScript eksternal --&gt;</span>
+    <span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;introduction.js&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</code></pre></div>
+<p>Buka konsol browser buat lihat hasil dari <code>console.log()</code>.</p>
+<h3 id="multiple-external-scripts">Multiple External Scripts</h3>
+<p>Kita juga bisa nautkan beberapa file JavaScript eksternal ke halaman web lho.
+Bikin file <code>helloworld.js</code> di dalam folder 30DaysOfJS dan tulis kode berikut.</p>
+<div class="highlight"><pre><span></span><code><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;Hello, World!&#39;</span><span class="p">)</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">&quot;en&quot;</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Multiple External Scripts<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;./helloworld.js&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;./introduction.js&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</code></pre></div>
+<p><em>File main.js kamu harus ada di bawah semua script lainnya</em>. Ini penting banget buat diinget!</p>
+<p><img alt="Multiple Script" src="../../images/multiple_script.png" /></p>
+<h2 id="pengenalan-tipe-data">Pengenalan Tipe Data</h2>
+<p>Di JavaScript dan juga bahasa pemrograman lainnya, ada berbagai jenis tipe data. Nih tipe data primitif JavaScript: <em>String, Number, Boolean, undefined, Null</em>, dan <em>Symbol</em>.</p>
+<h3 id="numbers">Numbers</h3>
+<ul>
+<li>Integers: Bilangan bulat (negatif, nol, dan positif)
+  Contoh:
+  ... -3, -2, -1, 0, 1, 2, 3 ...</li>
+<li>Float-point numbers: Bilangan desimal
+  Contoh
+  ... -3.5, -2.25, -1.0, 0.0, 1.1, 2.2, 3.5 ...</li>
+</ul>
+<h3 id="strings">Strings</h3>
+<p>Kumpulan satu atau lebih karakter di antara dua tanda kutip tunggal, tanda kutip ganda, atau backtick.</p>
+<p><strong>Contoh:</strong></p>
+<div class="highlight"><pre><span></span><code><span class="s1">&#39;a&#39;</span>
+<span class="s1">&#39;Asabeneh&#39;</span>
+<span class="s2">&quot;Asabeneh&quot;</span>
+<span class="s1">&#39;Finland&#39;</span>
+<span class="s1">&#39;JavaScript is a beautiful programming language&#39;</span>
+<span class="s1">&#39;I love teaching&#39;</span>
+<span class="s1">&#39;I hope you are enjoying the first day&#39;</span>
+<span class="sb">`We can also create a string using a backtick`</span>
+<span class="s1">&#39;A string could be just as small as one character or as big as many pages&#39;</span>
+<span class="s1">&#39;Any data type under a single quote, double quote or backtick is a string&#39;</span>
+</code></pre></div>
+<h3 id="booleans">Booleans</h3>
+<p>Nilai boolean itu True atau False. Setiap perbandingan ngembaliin nilai boolean, yang bisa true atau false.</p>
+<p>Tipe data boolean adalah nilai true atau false.</p>
+<p><strong>Contoh:</strong></p>
+<div class="highlight"><pre><span></span><code><span class="kc">true</span><span class="w"> </span><span class="c1">// jika lampu menyala, nilainya true</span>
+<span class="kc">false</span><span class="w"> </span><span class="c1">// jika lampu mati, nilainya false</span>
+</code></pre></div>
+<h3 id="undefined">Undefined</h3>
+<p>Di JavaScript, kalau kita nggak ngasih nilai ke variabel, nilainya undefined. Selain itu, kalau sebuah fungsi nggak ngembaliin apa pun, dia ngembaliin undefined.</p>
+<div class="highlight"><pre><span></span><code><span class="kd">let</span><span class="w"> </span><span class="nx">firstName</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">firstName</span><span class="p">)</span><span class="w"> </span><span class="c1">// undefined, karena belum diberikan nilai</span>
+</code></pre></div>
+<h3 id="null">Null</h3>
+<p>Null di JavaScript artinya nilai kosong.</p>
+<div class="highlight"><pre><span></span><code><span class="kd">let</span><span class="w"> </span><span class="nx">emptyValue</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">null</span>
+</code></pre></div>
+<h2 id="memeriksa-tipe-data">Memeriksa Tipe Data</h2>
+<p>Buat ngecek tipe data dari suatu variabel, kita pake operator <strong>typeof</strong>. Nih lihat contohnya:</p>
+<div class="highlight"><pre><span></span><code><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="ow">typeof</span><span class="w"> </span><span class="s1">&#39;Asabeneh&#39;</span><span class="p">)</span><span class="w"> </span><span class="c1">// string</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="ow">typeof</span><span class="w"> </span><span class="mf">5</span><span class="p">)</span><span class="w"> </span><span class="c1">// number</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="ow">typeof</span><span class="w"> </span><span class="kc">true</span><span class="p">)</span><span class="w"> </span><span class="c1">// boolean</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="ow">typeof</span><span class="w"> </span><span class="kc">null</span><span class="p">)</span><span class="w"> </span><span class="c1">// object type</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="ow">typeof</span><span class="w"> </span><span class="kc">undefined</span><span class="p">)</span><span class="w"> </span><span class="c1">// undefined</span>
+</code></pre></div>
+<h2 id="komentar-lagi">Komentar Lagi</h2>
+<p>Inget ya, ngomentarin di JavaScript mirip kayak bahasa pemrograman lainnya. Komentar penting buat bikin kode kamu lebih gampang dibaca.
+Ada dua cara ngomentarin:</p>
+<ul>
+<li><em>Komentar satu baris</em></li>
+<li><em>Komentar banyak baris</em></li>
+</ul>
+<div class="highlight"><pre><span></span><code><span class="c1">// mengomentari kode itu sendiri dengan komentar tunggal</span>
+<span class="c1">// let firstName = &#39;Asabeneh&#39;; komentar satu baris</span>
+<span class="c1">// let lastName = &#39;Yetayeh&#39;; komentar satu baris</span>
+</code></pre></div>
+<p>Komentar banyak baris:</p>
+<div class="highlight"><pre><span></span><code><span class="cm">/*</span>
+<span class="cm">  let location = &#39;Helsinki&#39;;</span>
+<span class="cm">  let age = 100;</span>
+<span class="cm">  let isMarried = true;</span>
+<span class="cm">  Ini adalah komentar banyak baris</span>
+<span class="cm">*/</span>
+</code></pre></div>
+<h2 id="variabel">Variabel</h2>
+<p>Variabel itu ibarat <em>wadah</em> buat data. Variabel dipake buat <em>nyimpan</em> data di lokasi memori. Ketika variabel dideklarasikan, lokasi memori dicadangkan. Ketika variabel dikasih nilai (data), ruang memorinya bakal diisi sama data itu. Buat mendeklarasikan variabel, kita pake kata kunci <em>var</em>, <em>let</em>, atau <em>const</em>.</p>
+<p>Buat variabel yang nilainya berubah-ubah, kita pake <em>let</em>. Kalau datanya nggak berubah sama sekali, kita pake <em>const</em>. Misalnya nih, PI, nama negara, gravitasi nggak berubah, kita bisa pake <em>const</em>. Kita nggak bakal pake var di tantangan ini dan gue nggak rekomen kamu pake itu. Itu cara deklarasi variabel yang rawan error dan banyak leak. Nanti kita bakal bahas lebih detail tentang var, let, dan const di bagian lain (scope). Untuk sekarang, penjelasan di atas udah cukup ya.</p>
+<p>Nama variabel JavaScript yang valid harus ngikutin aturan berikut:</p>
+<ul>
+<li>Nama variabel JavaScript nggak boleh dimulai dengan angka.</li>
+<li>Nama variabel JavaScript nggak ngizinin karakter khusus kecuali tanda dolar dan garis bawah.</li>
+<li>Nama variabel JavaScript ngikutin konvensi camelCase.</li>
+<li>Nama variabel JavaScript nggak boleh punya spasi di antara kata.</li>
+</ul>
+<p>Nih contoh variabel JavaScript yang valid:</p>
+<div class="highlight"><pre><span></span><code><span class="nx">firstName</span>
+<span class="nx">lastName</span>
+<span class="nx">country</span>
+<span class="nx">city</span>
+<span class="nx">capitalCity</span>
+<span class="nx">age</span>
+<span class="nx">isMarried</span>
+
+<span class="nx">first_name</span>
+<span class="nx">last_name</span>
+<span class="nx">is_married</span>
+<span class="nx">capital_city</span>
+
+<span class="nx">num1</span>
+<span class="nx">num_1</span>
+<span class="nx">_num_1</span>
+<span class="nx">$num1</span>
+<span class="nx">year2020</span>
+<span class="nx">year_2020</span>
+</code></pre></div>
+<p>Variabel pertama dan kedua di list ngikutin konvensi camelCase. Di materi ini kita bakal pake camelCase (camelWithOneHump). Kita pake CamelCase (CamelWithTwoHump) buat deklarasi kelas, nanti kita bahas tentang kelas dan objek di bagian lain.</p>
+<p>Contoh variabel yang nggak valid:</p>
+<div class="highlight"><pre><span></span><code><span class="w">  </span><span class="nx">first</span><span class="o">-</span><span class="nx">name</span>
+<span class="w">  </span><span class="mf">1</span><span class="nx">_num</span>
+<span class="w">  </span><span class="nx">num_</span><span class="n">#_1</span>
+</code></pre></div>
+<p>Yuk kita deklarasikan variabel dengan tipe data yang beda-beda. Buat mendeklarasikan variabel, kita perlu pake kata kunci <em>let</em> atau <em>const</em> sebelum nama variabel. Setelah nama variabel, kita tulis tanda sama dengan (operator assignment), terus nilainya (data yang ditugaskan).</p>
+<div class="highlight"><pre><span></span><code><span class="c1">// Sintaks</span>
+<span class="kd">let</span><span class="w"> </span><span class="nx">nameOfVariable</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">value</span>
+</code></pre></div>
+<p>Nama nameOfVariable itu nama yang nyimpan data nilai yang beda-beda. Lihat di bawah buat contoh detailnya.</p>
+<p><strong>Contoh variabel yang dideklarasikan</strong></p>
+<div class="highlight"><pre><span></span><code><span class="c1">// Mendeklarasikan variabel berbeda dari tipe data yang berbeda</span>
+<span class="kd">let</span><span class="w"> </span><span class="nx">firstName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;Asabeneh&#39;</span><span class="w"> </span><span class="c1">// nama depan seseorang</span>
+<span class="kd">let</span><span class="w"> </span><span class="nx">lastName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;Yetayeh&#39;</span><span class="w"> </span><span class="c1">// nama belakang seseorang</span>
+<span class="kd">let</span><span class="w"> </span><span class="nx">country</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;Finland&#39;</span><span class="w"> </span><span class="c1">// negara</span>
+<span class="kd">let</span><span class="w"> </span><span class="nx">city</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;Helsinki&#39;</span><span class="w"> </span><span class="c1">// ibu kota</span>
+<span class="kd">let</span><span class="w"> </span><span class="nx">age</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">100</span><span class="w"> </span><span class="c1">// usia dalam tahun</span>
+<span class="kd">let</span><span class="w"> </span><span class="nx">isMarried</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">true</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">firstName</span><span class="p">,</span><span class="w"> </span><span class="nx">lastName</span><span class="p">,</span><span class="w"> </span><span class="nx">country</span><span class="p">,</span><span class="w"> </span><span class="nx">city</span><span class="p">,</span><span class="w"> </span><span class="nx">age</span><span class="p">,</span><span class="w"> </span><span class="nx">isMarried</span><span class="p">)</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>Asabeneh<span class="w"> </span>Yetayeh<span class="w"> </span>Finland<span class="w"> </span>Helsinki<span class="w"> </span><span class="m">100</span><span class="w"> </span><span class="nb">true</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="c1">// Mendeklarasikan variabel dengan nilai angka</span>
+<span class="kd">let</span><span class="w"> </span><span class="nx">age</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">100</span><span class="w"> </span><span class="c1">// usia dalam tahun</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">gravity</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">9.81</span><span class="w"> </span><span class="c1">// gravitasi bumi dalam m/s2</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">boilingPoint</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">100</span><span class="w"> </span><span class="c1">// titik didih air, suhu dalam °C</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">PI</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">3.14</span><span class="w"> </span><span class="c1">// konstanta geometris</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">gravity</span><span class="p">,</span><span class="w"> </span><span class="nx">boilingPoint</span><span class="p">,</span><span class="w"> </span><span class="nx">PI</span><span class="p">)</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="m">9</span>.81<span class="w"> </span><span class="m">100</span><span class="w"> </span><span class="m">3</span>.14
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="c1">// Variabel juga dapat dideklarasikan dalam satu baris yang dipisahkan oleh koma, namun saya merekomendasikan untuk menggunakan baris terpisah agar kode lebih mudah dibaca</span>
+<span class="kd">let</span><span class="w"> </span><span class="nx">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;Asabeneh&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">job</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;teacher&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">live</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;Finland&#39;</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">name</span><span class="p">,</span><span class="w"> </span><span class="nx">job</span><span class="p">,</span><span class="w"> </span><span class="nx">live</span><span class="p">)</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>Asabeneh<span class="w"> </span>teacher<span class="w"> </span>Finland
+</code></pre></div>
+<p>Ketika kamu jalanin file <em>index.html</em> di folder 01-Day, kamu harusnya dapet ini:</p>
+<p><img alt="Day one" src="../../images/day_1.png" /></p>
+<p>🌕 Kamu luar biasa! Kamu baru aja nyelesein tantangan hari 1 dan kamu udah di jalur menuju kehebatan. Gaskeun sekarang lakuin latihan buat otak dan otot kamu!</p>
+<h1 id="hari-1-latihan">💻 Hari 1: Latihan</h1>
+<ol>
+<li>Tulis komentar satu baris yang isinya, <em>komentar dapat membuat kode mudah dibaca</em></li>
+<li>Tulis komentar satu baris lainnya yang isinya, <em>Welcome to 30DaysOfJavaScript</em></li>
+<li>
+<p>Tulis komentar banyak baris yang isinya, <em>komentar dapat membuat kode mudah dibaca, mudah digunakan kembali</em>
+   <em>dan informatif</em></p>
+</li>
+<li>
+<p>Bikin file variable.js dan deklarasikan variabel serta kasih tipe data string, boolean, undefined, dan null</p>
+</li>
+<li>Bikin file datatypes.js dan pake operator <strong><em>typeof</em></strong> JavaScript buat ngecek tipe data yang beda-beda. Cek tipe data dari setiap variabel</li>
+<li>Deklarasikan empat variabel tanpa ngasih nilai</li>
+<li>Deklarasikan empat variabel dengan nilai yang dikasih</li>
+<li>Deklarasikan variabel buat nyimpen nama depan, nama belakang, status pernikahan, negara, dan usia kamu dalam beberapa baris</li>
+<li>Deklarasikan variabel buat nyimpen nama depan, nama belakang, status pernikahan, negara, dan usia kamu dalam satu baris</li>
+<li>Deklarasikan dua variabel <em>myAge</em> dan <em>yourAge</em> dan kasih nilai awal, terus tampilin ke konsol browser.</li>
+</ol>
+<div class="highlight"><pre><span></span><code>I<span class="w"> </span>am<span class="w"> </span><span class="m">25</span><span class="w"> </span>years<span class="w"> </span>old.
+You<span class="w"> </span>are<span class="w"> </span><span class="m">30</span><span class="w"> </span>years<span class="w"> </span>old.
+</code></pre></div>
+<p>🎉 SELAMAT ! 🎉</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Tersalin ke clipboard", "clipboard.copy": "Salin ke clipboard", "search.result.more.one": "1 lagi di halaman ini", "search.result.more.other": "# lagi di halaman ini", "search.result.none": "Tidak ada dokumen yang sesuai", "search.result.one": "1 dokumen ditemukan", "search.result.other": "# dokumen ditemukan", "search.result.placeholder": "Ketik untuk mulai pencarian", "search.result.term.missing": "Tidak ada", "select.version": "Pilih versi"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>

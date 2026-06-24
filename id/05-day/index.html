@@ -1,0 +1,2497 @@
+
+<!doctype html>
+<html lang="id" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../04-day/">
+      
+      
+        <link rel="next" href="../06-day/">
+      
+      
+        
+          <link rel="alternate" href="../../05-day/" hreflang="en">
+        
+          <link rel="alternate" href="./" hreflang="id">
+        
+      
+      
+      <link rel="icon" href="../../images/javascript.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>📔 Hari 5 - Mantap Lanjut! - 30 Days Javascript</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="amber" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#hari-5-mantap-lanjut" class="md-skip">
+          Lewati ke isi
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../" title="30 Days Javascript" class="md-header__button md-logo" aria-label="30 Days Javascript" data-md-component="logo">
+      
+  <img src="../../images/javascript.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            30 Days Javascript
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              📔 Hari 5 - Mantap Lanjut!
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+      <div class="md-header__option">
+  <div class="md-select">
+    
+    <button class="md-header__button md-icon" aria-label="Pilih bahasa">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.5 17.5 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2zm-2.62 7 1.62-4.33L19.12 17z"/></svg>
+    </button>
+    <div class="md-select__inner">
+      <ul class="md-select__list">
+        
+          <li class="md-select__item">
+            <a href="../../05-day/" hreflang="en" class="md-select__link">
+              English
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="./" hreflang="id" class="md-select__link">
+              Bahasa Indonesia
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Cari" placeholder="Cari" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Cari">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Kosongkan" aria-label="Kosongkan" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Mempersiapkan pencarian
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/devinesia/30-days-javascript-web" title="Ke repositori" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigasi" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../" title="30 Days Javascript" class="md-nav__button md-logo" aria-label="30 Days Javascript" data-md-component="logo">
+      
+  <img src="../../images/javascript.png" alt="logo">
+
+    </a>
+    30 Days Javascript
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/devinesia/30-days-javascript-web" title="Ke repositori" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Yuk Mulai!
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📔 Hari 1 - Yuk Mulai!
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📔 Hari 2 - Gaskeun Lanjut!
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📔 Hari 3 - Oke Gas!
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📔 Hari 4 - Yuk Ngoding!
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📔 Hari 5 - Mantap Lanjut!
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📔 Hari 5 - Mantap Lanjut!
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Daftar isi">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Daftar isi
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#arrays" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Arrays
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Arrays">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cara-membuat-array-kosong" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cara membuat array kosong
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cara-membuat-array-dengan-nilai" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cara membuat array dengan nilai
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#membuat-array-menggunakan-split" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Membuat array menggunakan split
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mengakses-item-array-menggunakan-indeks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mengakses item array menggunakan indeks
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#memodifikasi-elemen-array" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Memodifikasi elemen array
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#metode-untuk-memanipulasi-array" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Metode untuk memanipulasi array
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Metode untuk memanipulasi array">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#array-constructor" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Array Constructor
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#membuat-nilai-statis-dengan-fill" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Membuat nilai statis dengan fill
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#menggabungkan-array-menggunakan-concat" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Menggabungkan array menggunakan concat
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mendapatkan-panjang-array" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mendapatkan panjang array
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mendapatkan-indeks-elemen-dalam-array" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mendapatkan indeks elemen dalam array
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mendapatkan-indeks-terakhir-elemen-dalam-array" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mendapatkan indeks terakhir elemen dalam array
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#memeriksa-array" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Memeriksa array
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mengonversi-array-ke-string" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mengonversi array ke string
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#menggabungkan-elemen-array" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Menggabungkan elemen array
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#memotong-elemen-array" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Memotong elemen array
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#metode-splice-dalam-array" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Metode splice dalam array
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#menambahkan-item-ke-array-menggunakan-push" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Menambahkan item ke array menggunakan push
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#menghapus-elemen-akhir-menggunakan-pop" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Menghapus elemen akhir menggunakan pop
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#menghapus-elemen-dari-awal" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Menghapus elemen dari awal
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#menambahkan-elemen-dari-awal" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Menambahkan elemen dari awal
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#membalik-urutan-array" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Membalik urutan array
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mengurutkan-elemen-dalam-array" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mengurutkan elemen dalam array
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#array-dari-array" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Array dari array
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#latihan" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        💻 Latihan
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="💻 Latihan">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#latihan-level-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Latihan: Level 1
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#latihan-level-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Latihan: Level 2
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#latihan-level-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Latihan: Level 3
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../06-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📔 Hari 6
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../07-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📔 Hari 7
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../08-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📔 Hari 8
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../09-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📔 Hari 9
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../10-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📔 Hari 10
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../11-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📘 Hari 11
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../12-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📘 Hari 12
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../13-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📘 Hari 13
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../14-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📘 Hari 14
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../15-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📘 Hari 15
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../16-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📘 Hari 16
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../17-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📘 Hari 17
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../18-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📘 Hari 18
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../19-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📘 Hari 19
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📘 Hari 20
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../21-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📙 Hari 21
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../22-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📙 Hari 22
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../23-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📙 Hari 23
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../24-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📙 Hari 24
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../25-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📙 Hari 25
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../26-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📔 Hari 26
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../27-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📔 Hari 27
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../28-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📔 Hari 28
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../29-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📔 Hari 29
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../30-day/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📔 Hari 30
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Daftar isi">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Daftar isi
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#arrays" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Arrays
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Arrays">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cara-membuat-array-kosong" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cara membuat array kosong
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cara-membuat-array-dengan-nilai" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cara membuat array dengan nilai
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#membuat-array-menggunakan-split" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Membuat array menggunakan split
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mengakses-item-array-menggunakan-indeks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mengakses item array menggunakan indeks
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#memodifikasi-elemen-array" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Memodifikasi elemen array
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#metode-untuk-memanipulasi-array" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Metode untuk memanipulasi array
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Metode untuk memanipulasi array">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#array-constructor" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Array Constructor
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#membuat-nilai-statis-dengan-fill" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Membuat nilai statis dengan fill
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#menggabungkan-array-menggunakan-concat" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Menggabungkan array menggunakan concat
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mendapatkan-panjang-array" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mendapatkan panjang array
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mendapatkan-indeks-elemen-dalam-array" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mendapatkan indeks elemen dalam array
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mendapatkan-indeks-terakhir-elemen-dalam-array" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mendapatkan indeks terakhir elemen dalam array
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#memeriksa-array" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Memeriksa array
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mengonversi-array-ke-string" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mengonversi array ke string
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#menggabungkan-elemen-array" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Menggabungkan elemen array
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#memotong-elemen-array" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Memotong elemen array
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#metode-splice-dalam-array" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Metode splice dalam array
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#menambahkan-item-ke-array-menggunakan-push" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Menambahkan item ke array menggunakan push
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#menghapus-elemen-akhir-menggunakan-pop" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Menghapus elemen akhir menggunakan pop
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#menghapus-elemen-dari-awal" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Menghapus elemen dari awal
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#menambahkan-elemen-dari-awal" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Menambahkan elemen dari awal
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#membalik-urutan-array" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Membalik urutan array
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mengurutkan-elemen-dalam-array" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mengurutkan elemen dalam array
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#array-dari-array" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Array dari array
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#latihan" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        💻 Latihan
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="💻 Latihan">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#latihan-level-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Latihan: Level 1
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#latihan-level-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Latihan: Level 2
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#latihan-level-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Latihan: Level 3
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="hari-5-mantap-lanjut">📔 Hari 5 - Mantap Lanjut!</h1>
+<h2 id="arrays">Arrays</h2>
+<p>Beda sama variabel biasa, sebuah array bisa nyimpen <em>beberapa nilai</em>. Setiap nilai dalam array punya <em>indeks</em>, dan setiap indeks punya <em>referensi di alamat memori</em>. Setiap nilai bisa diakses pake <em>indeksnya</em>. Indeks dari array dimulai dari <em>nol</em>, dan indeks dari elemen terakhir adalah kurang satu dari panjang array.</p>
+<p>Array adalah kumpulan tipe data berbeda yang terurut dan bisa diubah (modifiable). Array memungkinkan penyimpanan elemen duplikat dan tipe data yang beda-beda. Array bisa kosong, atau bisa punya nilai tipe data yang beda-beda. Cakep kan?</p>
+<h3 id="cara-membuat-array-kosong">Cara membuat array kosong</h3>
+<p>Di JavaScript, kita bisa bikin array dengan berbagai cara. Yuk kita lihat berbagai cara buat bikin array.
+Umum banget pake <em>const</em> daripada <em>let</em> buat mendeklarasikan variabel array. Kalau kamu pake const, artinya kamu nggak pake nama variabel itu lagi.</p>
+<ul>
+<li>Pake Array constructor</li>
+</ul>
+<div class="highlight"><pre><span></span><code><span class="c1">// sintaks</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">arr</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">Array</span><span class="p">()</span>
+<span class="c1">// atau</span>
+<span class="c1">// let arr = new Array()</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">arr</span><span class="p">)</span><span class="w"> </span><span class="c1">// []</span>
+</code></pre></div>
+<ul>
+<li>Pake tanda kurung siku ([])</li>
+</ul>
+<div class="highlight"><pre><span></span><code><span class="c1">// sintaks</span>
+<span class="c1">// Ini adalah cara yang paling direkomendasikan untuk membuat daftar kosong</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">arr</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[]</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">arr</span><span class="p">)</span>
+</code></pre></div>
+<h3 id="cara-membuat-array-dengan-nilai">Cara membuat array dengan nilai</h3>
+<p>Array dengan nilai awal. Kita pake properti <em>length</em> buat nemuin panjang array.</p>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">numbers</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="mf">0</span><span class="p">,</span><span class="w"> </span><span class="mf">3.14</span><span class="p">,</span><span class="w"> </span><span class="mf">9.81</span><span class="p">,</span><span class="w"> </span><span class="mf">37</span><span class="p">,</span><span class="w"> </span><span class="mf">98.6</span><span class="p">,</span><span class="w"> </span><span class="mf">100</span><span class="p">]</span><span class="w"> </span><span class="c1">// array of numbers</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">fruits</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s1">&#39;banana&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;orange&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;mango&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;lemon&#39;</span><span class="p">]</span><span class="w"> </span><span class="c1">// array of strings, fruits</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">vegetables</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s1">&#39;Tomato&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Potato&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Cabbage&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Onion&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Carrot&#39;</span><span class="p">]</span><span class="w"> </span><span class="c1">// array of strings, vegetables</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">animalProducts</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s1">&#39;milk&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;meat&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;butter&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;yoghurt&#39;</span><span class="p">]</span><span class="w"> </span><span class="c1">// array of strings, products</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">webTechs</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s1">&#39;HTML&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;CSS&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;JS&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;React&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Redux&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Node&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;MongDB&#39;</span><span class="p">]</span><span class="w"> </span><span class="c1">// array of web technologies</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">countries</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s1">&#39;Finland&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Denmark&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Sweden&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Norway&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Iceland&#39;</span><span class="p">]</span><span class="w"> </span><span class="c1">// array of strings, countries</span>
+
+<span class="c1">// Cetak array dan panjangnya</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;Numbers:&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">numbers</span><span class="p">)</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;Number of numbers:&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">numbers</span><span class="p">.</span><span class="nx">length</span><span class="p">)</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;Fruits:&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">fruits</span><span class="p">)</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;Number of fruits:&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">fruits</span><span class="p">.</span><span class="nx">length</span><span class="p">)</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;Vegetables:&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">vegetables</span><span class="p">)</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;Number of vegetables:&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">vegetables</span><span class="p">.</span><span class="nx">length</span><span class="p">)</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;Animal products:&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">animalProducts</span><span class="p">)</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;Number of animal products:&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">animalProducts</span><span class="p">.</span><span class="nx">length</span><span class="p">)</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;Web technologies:&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">webTechs</span><span class="p">)</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;Number of web technologies:&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">webTechs</span><span class="p">.</span><span class="nx">length</span><span class="p">)</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;Countries:&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">countries</span><span class="p">)</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;Number of countries:&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">countries</span><span class="p">.</span><span class="nx">length</span><span class="p">)</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>Numbers:<span class="w"> </span><span class="o">[</span><span class="m">0</span>,<span class="w"> </span><span class="m">3</span>.14,<span class="w"> </span><span class="m">9</span>.81,<span class="w"> </span><span class="m">37</span>,<span class="w"> </span><span class="m">98</span>.6,<span class="w"> </span><span class="m">100</span><span class="o">]</span>
+Number<span class="w"> </span>of<span class="w"> </span>numbers:<span class="w"> </span><span class="m">6</span>
+Fruits:<span class="w"> </span><span class="o">[</span><span class="s1">&#39;banana&#39;</span>,<span class="w"> </span><span class="s1">&#39;orange&#39;</span>,<span class="w"> </span><span class="s1">&#39;mango&#39;</span>,<span class="w"> </span><span class="s1">&#39;lemon&#39;</span><span class="o">]</span>
+Number<span class="w"> </span>of<span class="w"> </span>fruits:<span class="w"> </span><span class="m">4</span>
+Vegetables:<span class="w"> </span><span class="o">[</span><span class="s1">&#39;Tomato&#39;</span>,<span class="w"> </span><span class="s1">&#39;Potato&#39;</span>,<span class="w"> </span><span class="s1">&#39;Cabbage&#39;</span>,<span class="w"> </span><span class="s1">&#39;Onion&#39;</span>,<span class="w"> </span><span class="s1">&#39;Carrot&#39;</span><span class="o">]</span>
+Number<span class="w"> </span>of<span class="w"> </span>vegetables:<span class="w"> </span><span class="m">5</span>
+Animal<span class="w"> </span>products:<span class="w"> </span><span class="o">[</span><span class="s1">&#39;milk&#39;</span>,<span class="w"> </span><span class="s1">&#39;meat&#39;</span>,<span class="w"> </span><span class="s1">&#39;butter&#39;</span>,<span class="w"> </span><span class="s1">&#39;yoghurt&#39;</span><span class="o">]</span>
+Number<span class="w"> </span>of<span class="w"> </span>animal<span class="w"> </span>products:<span class="w"> </span><span class="m">4</span>
+Web<span class="w"> </span>technologies:<span class="w"> </span><span class="o">[</span><span class="s1">&#39;HTML&#39;</span>,<span class="w"> </span><span class="s1">&#39;CSS&#39;</span>,<span class="w"> </span><span class="s1">&#39;JS&#39;</span>,<span class="w"> </span><span class="s1">&#39;React&#39;</span>,<span class="w"> </span><span class="s1">&#39;Redux&#39;</span>,<span class="w"> </span><span class="s1">&#39;Node&#39;</span>,<span class="w"> </span><span class="s1">&#39;MongDB&#39;</span><span class="o">]</span>
+Number<span class="w"> </span>of<span class="w"> </span>web<span class="w"> </span>technologies:<span class="w"> </span><span class="m">7</span>
+Countries:<span class="w"> </span><span class="o">[</span><span class="s1">&#39;Finland&#39;</span>,<span class="w"> </span><span class="s1">&#39;Estonia&#39;</span>,<span class="w"> </span><span class="s1">&#39;Denmark&#39;</span>,<span class="w"> </span><span class="s1">&#39;Sweden&#39;</span>,<span class="w"> </span><span class="s1">&#39;Norway&#39;</span><span class="o">]</span>
+Number<span class="w"> </span>of<span class="w"> </span>countries:<span class="w"> </span><span class="m">5</span>
+</code></pre></div>
+<ul>
+<li>Array bisa punya item dengan tipe data beda-beda</li>
+</ul>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">arr</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span>
+<span class="w">    </span><span class="s1">&#39;Asabeneh&#39;</span><span class="p">,</span>
+<span class="w">    </span><span class="mf">250</span><span class="p">,</span>
+<span class="w">    </span><span class="kc">true</span><span class="p">,</span>
+<span class="w">    </span><span class="p">{</span><span class="w"> </span><span class="nx">country</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;Finland&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">city</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;Helsinki&#39;</span><span class="w"> </span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span><span class="w"> </span><span class="nx">skills</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="s1">&#39;HTML&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;CSS&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;JS&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;React&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Python&#39;</span><span class="p">]</span><span class="w"> </span><span class="p">}</span>
+<span class="p">]</span><span class="w"> </span><span class="c1">// arr berisi tipe data yang berbeda</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">arr</span><span class="p">)</span>
+</code></pre></div>
+<h3 id="membuat-array-menggunakan-split">Membuat array menggunakan split</h3>
+<p>Kayak yang udah kita lihat di bagian sebelumnya, kita bisa ngebelah string di posisi yang beda-beda, dan kita bisa ngubahnya jadi array. Yuk lihat contoh di bawah nih.</p>
+<div class="highlight"><pre><span></span><code><span class="kd">let</span><span class="w"> </span><span class="nx">js</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;JavaScript&#39;</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">charsInJavaScript</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">js</span><span class="p">.</span><span class="nx">split</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">charsInJavaScript</span><span class="p">)</span><span class="w"> </span><span class="c1">// [&quot;J&quot;, &quot;a&quot;, &quot;v&quot;, &quot;a&quot;, &quot;S&quot;, &quot;c&quot;, &quot;r&quot;, &quot;i&quot;, &quot;p&quot;, &quot;t&quot;]</span>
+
+<span class="kd">let</span><span class="w"> </span><span class="nx">companiesString</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;Facebook, Google, Microsoft, Apple, IBM, Oracle, Amazon&#39;</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">companies</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">companiesString</span><span class="p">.</span><span class="nx">split</span><span class="p">(</span><span class="s1">&#39;,&#39;</span><span class="p">)</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">companies</span><span class="p">)</span><span class="w"> </span><span class="c1">// [&quot;Facebook&quot;, &quot; Google&quot;, &quot; Microsoft&quot;, &quot; Apple&quot;, &quot; IBM&quot;, &quot; Oracle&quot;, &quot; Amazon&quot;]</span>
+<span class="kd">let</span><span class="w"> </span><span class="nx">txt</span><span class="w"> </span><span class="o">=</span>
+<span class="w">  </span><span class="s1">&#39;I love teaching and empowering people. I teach HTML, CSS, JS, React, Python.&#39;</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">words</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">txt</span><span class="p">.</span><span class="nx">split</span><span class="p">(</span><span class="s1">&#39; &#39;</span><span class="p">)</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">words</span><span class="p">)</span>
+<span class="c1">// teks tersebut memiliki karakter khusus, pikirkan bagaimana Anda bisa hanya mendapatkan kata-katanya saja</span>
+<span class="c1">// [&quot;I&quot;, &quot;love&quot;, &quot;teaching&quot;, &quot;and&quot;, &quot;empowering&quot;, &quot;people.&quot;, &quot;I&quot;, &quot;teach&quot;, &quot;HTML,&quot;, &quot;CSS,&quot;, &quot;JS,&quot;, &quot;React,&quot;, &quot;Python&quot;]</span>
+</code></pre></div>
+<h3 id="mengakses-item-array-menggunakan-indeks">Mengakses item array menggunakan indeks</h3>
+<p>Kita akses setiap elemen dalam array pake indeksnya. Indeks array dimulai dari 0. Gambar di bawah ini jelas nunjukin indeks setiap elemen dalam array.</p>
+<p><img alt="arr index" src="../../images/array_index.png" /></p>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">fruits</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s1">&#39;banana&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;orange&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;mango&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;lemon&#39;</span><span class="p">]</span>
+<span class="kd">let</span><span class="w"> </span><span class="nx">firstFruit</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">fruits</span><span class="p">[</span><span class="mf">0</span><span class="p">]</span><span class="w"> </span><span class="c1">// kita mengakses item pertama menggunakan indeksnya</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">firstFruit</span><span class="p">)</span><span class="w"> </span><span class="c1">// banana</span>
+
+<span class="nx">secondFruit</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">fruits</span><span class="p">[</span><span class="mf">1</span><span class="p">]</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">secondFruit</span><span class="p">)</span><span class="w"> </span><span class="c1">// orange</span>
+
+<span class="kd">let</span><span class="w"> </span><span class="nx">lastFruit</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">fruits</span><span class="p">[</span><span class="mf">3</span><span class="p">]</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">lastFruit</span><span class="p">)</span><span class="w"> </span><span class="c1">// lemon</span>
+<span class="c1">// Indeks terakhir dapat dihitung sebagai berikut</span>
+
+<span class="kd">let</span><span class="w"> </span><span class="nx">lastIndex</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">fruits</span><span class="p">.</span><span class="nx">length</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mf">1</span>
+<span class="nx">lastFruit</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">fruits</span><span class="p">[</span><span class="nx">lastIndex</span><span class="p">]</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">lastFruit</span><span class="p">)</span><span class="w">  </span><span class="c1">// lemon</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">numbers</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="mf">0</span><span class="p">,</span><span class="w"> </span><span class="mf">3.14</span><span class="p">,</span><span class="w"> </span><span class="mf">9.81</span><span class="p">,</span><span class="w"> </span><span class="mf">37</span><span class="p">,</span><span class="w"> </span><span class="mf">98.6</span><span class="p">,</span><span class="w"> </span><span class="mf">100</span><span class="p">]</span><span class="w">  </span><span class="c1">// kumpulan angka</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">numbers</span><span class="p">.</span><span class="nx">length</span><span class="p">)</span><span class="w">  </span><span class="c1">// =&gt; untuk mengetahui ukuran array, yaitu 6</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">numbers</span><span class="p">)</span><span class="w">         </span><span class="c1">// -&gt; [0, 3.14, 9.81, 37, 98.6, 100]</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">numbers</span><span class="p">[</span><span class="mf">0</span><span class="p">])</span><span class="w">      </span><span class="c1">//  -&gt; 0</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">numbers</span><span class="p">[</span><span class="mf">5</span><span class="p">])</span><span class="w">      </span><span class="c1">//  -&gt; 100</span>
+
+<span class="kd">let</span><span class="w"> </span><span class="nx">lastIndex</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">numbers</span><span class="p">.</span><span class="nx">length</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mf">1</span><span class="p">;</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">numbers</span><span class="p">[</span><span class="nx">lastIndex</span><span class="p">])</span><span class="w"> </span><span class="c1">// -&gt; 100</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">webTechs</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span>
+<span class="w">  </span><span class="s1">&#39;HTML&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;CSS&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;JavaScript&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;React&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;Redux&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;Node&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;MongoDB&#39;</span>
+<span class="p">]</span><span class="w"> </span><span class="c1">// Daftar teknologi web</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">webTechs</span><span class="p">)</span><span class="w">        </span><span class="c1">// semua item array</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">webTechs</span><span class="p">.</span><span class="nx">length</span><span class="p">)</span><span class="w"> </span><span class="c1">// =&gt; untuk mengetahui ukuran array, yaitu 7</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">webTechs</span><span class="p">[</span><span class="mf">0</span><span class="p">])</span><span class="w">     </span><span class="c1">//  -&gt; HTML</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">webTechs</span><span class="p">[</span><span class="mf">6</span><span class="p">])</span><span class="w">     </span><span class="c1">//  -&gt; MongoDB</span>
+
+<span class="kd">let</span><span class="w"> </span><span class="nx">lastIndex</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">webTechs</span><span class="p">.</span><span class="nx">length</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mf">1</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">webTechs</span><span class="p">[</span><span class="nx">lastIndex</span><span class="p">])</span><span class="w"> </span><span class="c1">// -&gt; MongoDB</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">countries</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span>
+<span class="w">  </span><span class="s1">&#39;Albania&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;Bolivia&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;Canada&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;Denmark&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;Ethiopia&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;Finland&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;Germany&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;Hungary&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;Ireland&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;Japan&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;Kenya&#39;</span>
+<span class="p">]</span><span class="w"> </span><span class="c1">// Daftar negara</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">countries</span><span class="p">)</span><span class="w">      </span><span class="c1">// -&gt; semua negara dalam array</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">countries</span><span class="p">[</span><span class="mf">0</span><span class="p">])</span><span class="w">   </span><span class="c1">//  -&gt; Albania</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">countries</span><span class="p">[</span><span class="mf">10</span><span class="p">])</span><span class="w">  </span><span class="c1">//  -&gt; Kenya</span>
+
+<span class="kd">let</span><span class="w"> </span><span class="nx">lastIndex</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">countries</span><span class="p">.</span><span class="nx">length</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mf">1</span><span class="p">;</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">countries</span><span class="p">[</span><span class="nx">lastIndex</span><span class="p">])</span><span class="w"> </span><span class="c1">//  -&gt; Kenya</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">shoppingCart</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span>
+<span class="w">  </span><span class="s1">&#39;Milk&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;Mango&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;Tomato&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;Potato&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;Avocado&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;Meat&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;Eggs&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;Sugar&#39;</span>
+<span class="p">]</span><span class="w"> </span><span class="c1">// Daftar produk makanan</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">shoppingCart</span><span class="p">)</span><span class="w"> </span><span class="c1">// -&gt; semua shoppingCart dalam array</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">shoppingCart</span><span class="p">[</span><span class="mf">0</span><span class="p">])</span><span class="w"> </span><span class="c1">//  -&gt; Milk</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">shoppingCart</span><span class="p">[</span><span class="mf">7</span><span class="p">])</span><span class="w"> </span><span class="c1">//  -&gt; Sugar</span>
+
+<span class="kd">let</span><span class="w"> </span><span class="nx">lastIndex</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">shoppingCart</span><span class="p">.</span><span class="nx">length</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mf">1</span><span class="p">;</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">shoppingCart</span><span class="p">[</span><span class="nx">lastIndex</span><span class="p">])</span><span class="w"> </span><span class="c1">//  -&gt; Sugar</span>
+</code></pre></div>
+<h3 id="memodifikasi-elemen-array">Memodifikasi elemen array</h3>
+<p>Array bersifat mutable (bisa dimodifikasi). Setelah array dibuat, kita bisa modifikasi isi elemen array.</p>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">numbers</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="mf">1</span><span class="p">,</span><span class="w"> </span><span class="mf">2</span><span class="p">,</span><span class="w"> </span><span class="mf">3</span><span class="p">,</span><span class="w"> </span><span class="mf">4</span><span class="p">,</span><span class="w"> </span><span class="mf">5</span><span class="p">]</span>
+<span class="nx">numbers</span><span class="p">[</span><span class="mf">0</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">10</span><span class="w">      </span><span class="c1">// mengubah 1 pada indeks 0 menjadi 10</span>
+<span class="nx">numbers</span><span class="p">[</span><span class="mf">1</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">20</span><span class="w">      </span><span class="c1">// mengubah 2 pada indeks 1 menjadi 20</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">numbers</span><span class="p">)</span><span class="w"> </span><span class="c1">// [10, 20, 3, 4, 5]</span>
+
+<span class="kd">const</span><span class="w"> </span><span class="nx">countries</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span>
+<span class="w">  </span><span class="s1">&#39;Albania&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;Bolivia&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;Canada&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;Denmark&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;Ethiopia&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;Finland&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;Germany&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;Hungary&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;Ireland&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;Japan&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;Kenya&#39;</span>
+<span class="p">]</span>
+
+<span class="nx">countries</span><span class="p">[</span><span class="mf">0</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;Afghanistan&#39;</span><span class="w">  </span><span class="c1">// Mengganti Albania dengan Afghanistan</span>
+<span class="kd">let</span><span class="w"> </span><span class="nx">lastIndex</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">countries</span><span class="p">.</span><span class="nx">length</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mf">1</span>
+<span class="nx">countries</span><span class="p">[</span><span class="nx">lastIndex</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;Korea&#39;</span><span class="w"> </span><span class="c1">// Mengganti Kenya dengan Korea</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">countries</span><span class="p">)</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="o">[</span><span class="s2">&quot;Afghanistan&quot;</span>,<span class="w"> </span><span class="s2">&quot;Bolivia&quot;</span>,<span class="w"> </span><span class="s2">&quot;Canada&quot;</span>,<span class="w"> </span><span class="s2">&quot;Denmark&quot;</span>,<span class="w"> </span><span class="s2">&quot;Ethiopia&quot;</span>,<span class="w"> </span><span class="s2">&quot;Finland&quot;</span>,<span class="w"> </span><span class="s2">&quot;Germany&quot;</span>,<span class="w"> </span><span class="s2">&quot;Hungary&quot;</span>,<span class="w"> </span><span class="s2">&quot;Ireland&quot;</span>,<span class="w"> </span><span class="s2">&quot;Japan&quot;</span>,<span class="w"> </span><span class="s2">&quot;Korea&quot;</span><span class="o">]</span>
+</code></pre></div>
+<h3 id="metode-untuk-memanipulasi-array">Metode untuk memanipulasi array</h3>
+<p>Ada berbagai metode buat manipulasi array. Nih beberapa metode yang tersedia buat nangani array: <em>Array, length, concat, indexOf, slice, splice, join, toString, includes, lastIndexOf, isArray, fill, push, pop, shift, unshift</em></p>
+<h4 id="array-constructor">Array Constructor</h4>
+<p>Array: Buat bikin array.</p>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">arr</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">Array</span><span class="p">()</span><span class="w"> </span><span class="c1">// membuat array kosong</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">arr</span><span class="p">)</span>
+
+<span class="kd">const</span><span class="w"> </span><span class="nx">eightEmptyValues</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">Array</span><span class="p">(</span><span class="mf">8</span><span class="p">)</span><span class="w"> </span><span class="c1">// membuat delapan nilai kosong</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">eightEmptyValues</span><span class="p">)</span><span class="w"> </span><span class="c1">// [empty x 8]</span>
+</code></pre></div>
+<h4 id="membuat-nilai-statis-dengan-fill">Membuat nilai statis dengan fill</h4>
+<p>fill: Ngisi semua elemen array dengan nilai statis</p>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">arr</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">Array</span><span class="p">()</span><span class="w"> </span><span class="c1">// membuat array kosong</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">arr</span><span class="p">)</span>
+
+<span class="kd">const</span><span class="w"> </span><span class="nx">eightXvalues</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">Array</span><span class="p">(</span><span class="mf">8</span><span class="p">).</span><span class="nx">fill</span><span class="p">(</span><span class="s1">&#39;X&#39;</span><span class="p">)</span><span class="w"> </span><span class="c1">// membuat delapan elemen diisi dengan &#39;X&#39;</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">eightXvalues</span><span class="p">)</span><span class="w"> </span><span class="c1">// [&#39;X&#39;, &#39;X&#39;,&#39;X&#39;,&#39;X&#39;,&#39;X&#39;,&#39;X&#39;,&#39;X&#39;,&#39;X&#39;]</span>
+
+<span class="kd">const</span><span class="w"> </span><span class="nx">eight0values</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">Array</span><span class="p">(</span><span class="mf">8</span><span class="p">).</span><span class="nx">fill</span><span class="p">(</span><span class="mf">0</span><span class="p">)</span><span class="w"> </span><span class="c1">// membuat delapan elemen diisi dengan &#39;0&#39;</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">eight0values</span><span class="p">)</span><span class="w"> </span><span class="c1">// [0, 0, 0, 0, 0, 0, 0, 0]</span>
+
+<span class="kd">const</span><span class="w"> </span><span class="nx">four4values</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">Array</span><span class="p">(</span><span class="mf">4</span><span class="p">).</span><span class="nx">fill</span><span class="p">(</span><span class="mf">4</span><span class="p">)</span><span class="w"> </span><span class="c1">// membuat 4 elemen diisi dengan &#39;4&#39;</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">four4values</span><span class="p">)</span><span class="w"> </span><span class="c1">// [4, 4, 4, 4]</span>
+</code></pre></div>
+<h4 id="menggabungkan-array-menggunakan-concat">Menggabungkan array menggunakan concat</h4>
+<p>concat: Buat ngegabungin dua array.</p>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">firstList</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="mf">1</span><span class="p">,</span><span class="w"> </span><span class="mf">2</span><span class="p">,</span><span class="w"> </span><span class="mf">3</span><span class="p">]</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">secondList</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="mf">4</span><span class="p">,</span><span class="w"> </span><span class="mf">5</span><span class="p">,</span><span class="w"> </span><span class="mf">6</span><span class="p">]</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">thirdList</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">firstList</span><span class="p">.</span><span class="nx">concat</span><span class="p">(</span><span class="nx">secondList</span><span class="p">)</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">thirdList</span><span class="p">)</span><span class="w"> </span><span class="c1">// [1, 2, 3, 4, 5, 6]</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">fruits</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s1">&#39;banana&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;orange&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;mango&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;lemon&#39;</span><span class="p">]</span><span class="w">                 </span><span class="c1">// array buah-buahan</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">vegetables</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s1">&#39;Tomato&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Potato&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Cabbage&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Onion&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Carrot&#39;</span><span class="p">]</span><span class="w"> </span><span class="c1">// array sayuran</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">fruitsAndVegetables</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">fruits</span><span class="p">.</span><span class="nx">concat</span><span class="p">(</span><span class="nx">vegetables</span><span class="p">)</span><span class="w">                 </span><span class="c1">// menggabungkan dua array</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">fruitsAndVegetables</span><span class="p">)</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="o">[</span><span class="s2">&quot;banana&quot;</span>,<span class="w"> </span><span class="s2">&quot;orange&quot;</span>,<span class="w"> </span><span class="s2">&quot;mango&quot;</span>,<span class="w"> </span><span class="s2">&quot;lemon&quot;</span>,<span class="w"> </span><span class="s2">&quot;Tomato&quot;</span>,<span class="w"> </span><span class="s2">&quot;Potato&quot;</span>,<span class="w"> </span><span class="s2">&quot;Cabbage&quot;</span>,<span class="w"> </span><span class="s2">&quot;Onion&quot;</span>,<span class="w"> </span><span class="s2">&quot;Carrot&quot;</span><span class="o">]</span>
+</code></pre></div>
+<h4 id="mendapatkan-panjang-array">Mendapatkan panjang array</h4>
+<p>Length: Buat tahu ukuran array</p>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">numbers</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="mf">1</span><span class="p">,</span><span class="w"> </span><span class="mf">2</span><span class="p">,</span><span class="w"> </span><span class="mf">3</span><span class="p">,</span><span class="w"> </span><span class="mf">4</span><span class="p">,</span><span class="w"> </span><span class="mf">5</span><span class="p">]</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">numbers</span><span class="p">.</span><span class="nx">length</span><span class="p">)</span><span class="w"> </span><span class="c1">// -&gt; 5 adalah ukuran array</span>
+</code></pre></div>
+<h4 id="mendapatkan-indeks-elemen-dalam-array">Mendapatkan indeks elemen dalam array</h4>
+<p>indexOf: Buat ngecek apakah suatu item ada di array. Kalau ada, dia ngembaliin indeksnya, kalau nggak ngembaliin -1.</p>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">numbers</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="mf">1</span><span class="p">,</span><span class="w"> </span><span class="mf">2</span><span class="p">,</span><span class="w"> </span><span class="mf">3</span><span class="p">,</span><span class="w"> </span><span class="mf">4</span><span class="p">,</span><span class="w"> </span><span class="mf">5</span><span class="p">]</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">numbers</span><span class="p">.</span><span class="nx">indexOf</span><span class="p">(</span><span class="mf">5</span><span class="p">))</span><span class="w"> </span><span class="c1">// -&gt; 4</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">numbers</span><span class="p">.</span><span class="nx">indexOf</span><span class="p">(</span><span class="mf">0</span><span class="p">))</span><span class="w"> </span><span class="c1">// -&gt; -1</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">numbers</span><span class="p">.</span><span class="nx">indexOf</span><span class="p">(</span><span class="mf">1</span><span class="p">))</span><span class="w"> </span><span class="c1">// -&gt; 0</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">numbers</span><span class="p">.</span><span class="nx">indexOf</span><span class="p">(</span><span class="mf">6</span><span class="p">))</span><span class="w"> </span><span class="c1">// -&gt; -1</span>
+</code></pre></div>
+<p>Cek sebuah elemen apakah ada di array.</p>
+<ul>
+<li>Cek item di daftar</li>
+</ul>
+<div class="highlight"><pre><span></span><code><span class="c1">// mari kita periksa apakah banana ada dalam array</span>
+
+<span class="kd">const</span><span class="w"> </span><span class="nx">fruits</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s1">&#39;banana&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;orange&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;mango&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;lemon&#39;</span><span class="p">]</span>
+<span class="kd">let</span><span class="w"> </span><span class="nx">index</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">fruits</span><span class="p">.</span><span class="nx">indexOf</span><span class="p">(</span><span class="s1">&#39;banana&#39;</span><span class="p">)</span><span class="w">  </span><span class="c1">// 0</span>
+
+<span class="k">if</span><span class="p">(</span><span class="nx">index</span><span class="w"> </span><span class="o">===</span><span class="w"> </span><span class="o">-</span><span class="mf">1</span><span class="p">){</span>
+<span class="w">   </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;This fruit does not exist in the array&#39;</span><span class="p">)</span><span class="w">  </span>
+<span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;This fruit does exist in the array&#39;</span><span class="p">)</span>
+<span class="p">}</span>
+<span class="c1">// This fruit does exist in the array</span>
+
+<span class="c1">// kita juga bisa menggunakan ternary di sini</span>
+<span class="nx">index</span><span class="w"> </span><span class="o">===</span><span class="w"> </span><span class="o">-</span><span class="mf">1</span><span class="w"> </span><span class="o">?</span><span class="w"> </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;This fruit does not exist in the array&#39;</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;This fruit does exist in the array&#39;</span><span class="p">)</span>
+
+<span class="c1">// mari kita periksa apakah avocado ada dalam array</span>
+<span class="kd">let</span><span class="w"> </span><span class="nx">indexOfAvocado</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">fruits</span><span class="p">.</span><span class="nx">indexOf</span><span class="p">(</span><span class="s1">&#39;avocado&#39;</span><span class="p">)</span><span class="w">  </span><span class="c1">// -1, jika elemen tidak ditemukan, indeksnya -1</span>
+<span class="k">if</span><span class="p">(</span><span class="nx">indexOfAvocado</span><span class="w"> </span><span class="o">===</span><span class="w"> </span><span class="o">-</span><span class="mf">1</span><span class="p">){</span>
+<span class="w">   </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;This fruit does not exist in the array&#39;</span><span class="p">)</span><span class="w">  </span>
+<span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;This fruit does exist in the array&#39;</span><span class="p">)</span>
+<span class="p">}</span>
+<span class="c1">// This fruit does not exist in the array</span>
+</code></pre></div>
+<h4 id="mendapatkan-indeks-terakhir-elemen-dalam-array">Mendapatkan indeks terakhir elemen dalam array</h4>
+<p>lastIndexOf: Ngasih posisi item terakhir dalam array. Kalau ada, dia ngembaliin indeksnya, kalau nggak ngembaliin -1.</p>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">numbers</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="mf">1</span><span class="p">,</span><span class="w"> </span><span class="mf">2</span><span class="p">,</span><span class="w"> </span><span class="mf">3</span><span class="p">,</span><span class="w"> </span><span class="mf">4</span><span class="p">,</span><span class="w"> </span><span class="mf">5</span><span class="p">,</span><span class="w"> </span><span class="mf">3</span><span class="p">,</span><span class="w"> </span><span class="mf">1</span><span class="p">,</span><span class="w"> </span><span class="mf">2</span><span class="p">]</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">numbers</span><span class="p">.</span><span class="nx">lastIndexOf</span><span class="p">(</span><span class="mf">2</span><span class="p">))</span><span class="w"> </span><span class="c1">// 7</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">numbers</span><span class="p">.</span><span class="nx">lastIndexOf</span><span class="p">(</span><span class="mf">0</span><span class="p">))</span><span class="w"> </span><span class="c1">// -1</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">numbers</span><span class="p">.</span><span class="nx">lastIndexOf</span><span class="p">(</span><span class="mf">1</span><span class="p">))</span><span class="w"> </span><span class="c1">//  6</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">numbers</span><span class="p">.</span><span class="nx">lastIndexOf</span><span class="p">(</span><span class="mf">4</span><span class="p">))</span><span class="w"> </span><span class="c1">//  3</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">numbers</span><span class="p">.</span><span class="nx">lastIndexOf</span><span class="p">(</span><span class="mf">6</span><span class="p">))</span><span class="w"> </span><span class="c1">// -1</span>
+</code></pre></div>
+<p>includes: Buat ngecek apakah suatu item ada di array. Kalau ada, dia ngembaliin true, kalau nggak ngembaliin false.</p>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">numbers</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="mf">1</span><span class="p">,</span><span class="w"> </span><span class="mf">2</span><span class="p">,</span><span class="w"> </span><span class="mf">3</span><span class="p">,</span><span class="w"> </span><span class="mf">4</span><span class="p">,</span><span class="w"> </span><span class="mf">5</span><span class="p">]</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">numbers</span><span class="p">.</span><span class="nx">includes</span><span class="p">(</span><span class="mf">5</span><span class="p">))</span><span class="w"> </span><span class="c1">// true</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">numbers</span><span class="p">.</span><span class="nx">includes</span><span class="p">(</span><span class="mf">0</span><span class="p">))</span><span class="w"> </span><span class="c1">// false</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">numbers</span><span class="p">.</span><span class="nx">includes</span><span class="p">(</span><span class="mf">1</span><span class="p">))</span><span class="w"> </span><span class="c1">// true</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">numbers</span><span class="p">.</span><span class="nx">includes</span><span class="p">(</span><span class="mf">6</span><span class="p">))</span><span class="w"> </span><span class="c1">// false</span>
+
+<span class="kd">const</span><span class="w"> </span><span class="nx">webTechs</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span>
+<span class="w">  </span><span class="s1">&#39;HTML&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;CSS&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;JavaScript&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;React&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;Redux&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;Node&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;MongoDB&#39;</span>
+<span class="p">]</span><span class="w"> </span><span class="c1">// Daftar teknologi web</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">webTechs</span><span class="p">.</span><span class="nx">includes</span><span class="p">(</span><span class="s1">&#39;Node&#39;</span><span class="p">))</span><span class="w">  </span><span class="c1">// true</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">webTechs</span><span class="p">.</span><span class="nx">includes</span><span class="p">(</span><span class="s1">&#39;C&#39;</span><span class="p">))</span><span class="w">     </span><span class="c1">// false</span>
+</code></pre></div>
+<h4 id="memeriksa-array">Memeriksa array</h4>
+<p>Array.isArray: Buat ngecek apakah tipe data adalah array</p>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">numbers</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="mf">1</span><span class="p">,</span><span class="w"> </span><span class="mf">2</span><span class="p">,</span><span class="w"> </span><span class="mf">3</span><span class="p">,</span><span class="w"> </span><span class="mf">4</span><span class="p">,</span><span class="w"> </span><span class="mf">5</span><span class="p">]</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nb">Array</span><span class="p">.</span><span class="nx">isArray</span><span class="p">(</span><span class="nx">numbers</span><span class="p">))</span><span class="w"> </span><span class="c1">// true</span>
+
+<span class="kd">const</span><span class="w"> </span><span class="nx">number</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">100</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nb">Array</span><span class="p">.</span><span class="nx">isArray</span><span class="p">(</span><span class="nx">number</span><span class="p">))</span><span class="w"> </span><span class="c1">// false</span>
+</code></pre></div>
+<h4 id="mengonversi-array-ke-string">Mengonversi array ke string</h4>
+<p>toString: Ngubah array ke string</p>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">numbers</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="mf">1</span><span class="p">,</span><span class="w"> </span><span class="mf">2</span><span class="p">,</span><span class="w"> </span><span class="mf">3</span><span class="p">,</span><span class="w"> </span><span class="mf">4</span><span class="p">,</span><span class="w"> </span><span class="mf">5</span><span class="p">]</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">numbers</span><span class="p">.</span><span class="nx">toString</span><span class="p">())</span><span class="w"> </span><span class="c1">// 1,2,3,4,5</span>
+
+<span class="kd">const</span><span class="w"> </span><span class="nx">names</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s1">&#39;Asabeneh&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Mathias&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Elias&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Brook&#39;</span><span class="p">]</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">names</span><span class="p">.</span><span class="nx">toString</span><span class="p">())</span><span class="w"> </span><span class="c1">// Asabeneh,Mathias,Elias,Brook</span>
+</code></pre></div>
+<h4 id="menggabungkan-elemen-array">Menggabungkan elemen array</h4>
+<p>join: Dipake buat ngegabungin elemen-elemen array, argumen yang kita kasih di metode join bakal digabungin dalam array dan dikembaliin sebagai string. Secara default, dia ngegabungin dengan koma, tapi kita bisa ngasih parameter string berbeda yang bisa digabungin di antara item-item tersebut.</p>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">numbers</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="mf">1</span><span class="p">,</span><span class="w"> </span><span class="mf">2</span><span class="p">,</span><span class="w"> </span><span class="mf">3</span><span class="p">,</span><span class="w"> </span><span class="mf">4</span><span class="p">,</span><span class="w"> </span><span class="mf">5</span><span class="p">]</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">numbers</span><span class="p">.</span><span class="nx">join</span><span class="p">())</span><span class="w"> </span><span class="c1">// 1,2,3,4,5</span>
+
+<span class="kd">const</span><span class="w"> </span><span class="nx">names</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s1">&#39;Asabeneh&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Mathias&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Elias&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Brook&#39;</span><span class="p">]</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">names</span><span class="p">.</span><span class="nx">join</span><span class="p">())</span><span class="w"> </span><span class="c1">// Asabeneh,Mathias,Elias,Brook</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">names</span><span class="p">.</span><span class="nx">join</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">))</span><span class="w"> </span><span class="c1">//AsabenehMathiasEliasBrook</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">names</span><span class="p">.</span><span class="nx">join</span><span class="p">(</span><span class="s1">&#39; &#39;</span><span class="p">))</span><span class="w"> </span><span class="c1">//Asabeneh Mathias Elias Brook</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">names</span><span class="p">.</span><span class="nx">join</span><span class="p">(</span><span class="s1">&#39;, &#39;</span><span class="p">))</span><span class="w"> </span><span class="c1">//Asabeneh, Mathias, Elias, Brook</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">names</span><span class="p">.</span><span class="nx">join</span><span class="p">(</span><span class="s1">&#39; # &#39;</span><span class="p">))</span><span class="w"> </span><span class="c1">//Asabeneh # Mathias # Elias # Brook</span>
+
+<span class="kd">const</span><span class="w"> </span><span class="nx">webTechs</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span>
+<span class="w">  </span><span class="s1">&#39;HTML&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;CSS&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;JavaScript&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;React&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;Redux&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;Node&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;MongoDB&#39;</span>
+<span class="p">]</span><span class="w"> </span><span class="c1">// Daftar teknologi web</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">webTechs</span><span class="p">.</span><span class="nx">join</span><span class="p">())</span><span class="w">       </span><span class="c1">// &quot;HTML,CSS,JavaScript,React,Redux,Node,MongoDB&quot;</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">webTechs</span><span class="p">.</span><span class="nx">join</span><span class="p">(</span><span class="s1">&#39; # &#39;</span><span class="p">))</span><span class="w">  </span><span class="c1">// &quot;HTML # CSS # JavaScript # React # Redux # Node # MongoDB&quot;</span>
+</code></pre></div>
+<h4 id="memotong-elemen-array">Memotong elemen array</h4>
+<p>Slice: Buat motong beberapa item dalam rentang tertentu. Nerima dua parameter: posisi awal dan posisi akhir. Nggak nyertakan posisi akhir.</p>
+<div class="highlight"><pre><span></span><code><span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">numbers</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="mf">1</span><span class="p">,</span><span class="mf">2</span><span class="p">,</span><span class="mf">3</span><span class="p">,</span><span class="mf">4</span><span class="p">,</span><span class="mf">5</span><span class="p">]</span>
+
+<span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">numbers</span><span class="p">.</span><span class="nx">slice</span><span class="p">())</span><span class="w"> </span><span class="c1">// -&gt; menyalin semua item</span>
+<span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">numbers</span><span class="p">.</span><span class="nx">slice</span><span class="p">(</span><span class="mf">0</span><span class="p">))</span><span class="w"> </span><span class="c1">// -&gt; menyalin semua item</span>
+<span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">numbers</span><span class="p">.</span><span class="nx">slice</span><span class="p">(</span><span class="mf">0</span><span class="p">,</span><span class="w"> </span><span class="nx">numbers</span><span class="p">.</span><span class="nx">length</span><span class="p">))</span><span class="w"> </span><span class="c1">// menyalin semua item</span>
+<span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">numbers</span><span class="p">.</span><span class="nx">slice</span><span class="p">(</span><span class="mf">1</span><span class="p">,</span><span class="mf">4</span><span class="p">))</span><span class="w"> </span><span class="c1">// -&gt; [2,3,4] // tidak menyertakan posisi akhir</span>
+</code></pre></div>
+<h4 id="metode-splice-dalam-array">Metode splice dalam array</h4>
+<p>Splice: Nerima tiga parameter: Posisi awal, jumlah yang bakal dihapus, dan jumlah item yang bakal ditambahin.</p>
+<div class="highlight"><pre><span></span><code><span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">numbers</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="mf">1</span><span class="p">,</span><span class="w"> </span><span class="mf">2</span><span class="p">,</span><span class="w"> </span><span class="mf">3</span><span class="p">,</span><span class="w"> </span><span class="mf">4</span><span class="p">,</span><span class="w"> </span><span class="mf">5</span><span class="p">]</span>
+<span class="w">  </span><span class="nx">numbers</span><span class="p">.</span><span class="nx">splice</span><span class="p">()</span>
+<span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">numbers</span><span class="p">)</span><span class="w">                </span><span class="c1">// -&gt; menghapus semua item</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">numbers</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="mf">1</span><span class="p">,</span><span class="w"> </span><span class="mf">2</span><span class="p">,</span><span class="w"> </span><span class="mf">3</span><span class="p">,</span><span class="w"> </span><span class="mf">4</span><span class="p">,</span><span class="w"> </span><span class="mf">5</span><span class="p">]</span>
+<span class="w">    </span><span class="nx">numbers</span><span class="p">.</span><span class="nx">splice</span><span class="p">(</span><span class="mf">0</span><span class="p">,</span><span class="mf">1</span><span class="p">)</span>
+<span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">numbers</span><span class="p">)</span><span class="w">            </span><span class="c1">// menghapus item pertama</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">numbers</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="mf">1</span><span class="p">,</span><span class="w"> </span><span class="mf">2</span><span class="p">,</span><span class="w"> </span><span class="mf">3</span><span class="p">,</span><span class="w"> </span><span class="mf">4</span><span class="p">,</span><span class="w"> </span><span class="mf">5</span><span class="p">,</span><span class="w"> </span><span class="mf">6</span><span class="p">]</span>
+<span class="w">    </span><span class="nx">numbers</span><span class="p">.</span><span class="nx">splice</span><span class="p">(</span><span class="mf">3</span><span class="p">,</span><span class="w"> </span><span class="mf">3</span><span class="p">,</span><span class="w"> </span><span class="mf">7</span><span class="p">,</span><span class="w"> </span><span class="mf">8</span><span class="p">,</span><span class="w"> </span><span class="mf">9</span><span class="p">)</span>
+<span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">numbers</span><span class="p">.</span><span class="nx">splice</span><span class="p">(</span><span class="mf">3</span><span class="p">,</span><span class="w"> </span><span class="mf">3</span><span class="p">,</span><span class="w"> </span><span class="mf">7</span><span class="p">,</span><span class="w"> </span><span class="mf">8</span><span class="p">,</span><span class="w"> </span><span class="mf">9</span><span class="p">))</span><span class="w">  </span><span class="c1">// -&gt; [1, 2, 3, 7, 8, 9] //menghapus tiga item dan mengganti tiga item</span>
+</code></pre></div>
+<h4 id="menambahkan-item-ke-array-menggunakan-push">Menambahkan item ke array menggunakan push</h4>
+<p>Push: nambahin item di akhir. Buat nambahin item ke akhir array yang udah ada, kita pake metode push.</p>
+<div class="highlight"><pre><span></span><code><span class="c1">// sintaks</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">arr</span><span class="w">  </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s1">&#39;item1&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;item2&#39;</span><span class="p">,</span><span class="s1">&#39;item3&#39;</span><span class="p">]</span>
+<span class="nx">arr</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="s1">&#39;new item&#39;</span><span class="p">)</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">arr</span><span class="p">)</span>
+<span class="c1">// [&#39;item1&#39;, &#39;item2&#39;,&#39;item3&#39;,&#39;new item&#39;]</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">numbers</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="mf">1</span><span class="p">,</span><span class="w"> </span><span class="mf">2</span><span class="p">,</span><span class="w"> </span><span class="mf">3</span><span class="p">,</span><span class="w"> </span><span class="mf">4</span><span class="p">,</span><span class="w"> </span><span class="mf">5</span><span class="p">]</span>
+<span class="nx">numbers</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="mf">6</span><span class="p">)</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">numbers</span><span class="p">)</span><span class="w"> </span><span class="c1">// -&gt; [1,2,3,4,5,6]</span>
+
+<span class="nx">numbers</span><span class="p">.</span><span class="nx">pop</span><span class="p">()</span><span class="w"> </span><span class="c1">// -&gt; menghapus satu item dari akhir</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">numbers</span><span class="p">)</span><span class="w"> </span><span class="c1">// -&gt; [1,2,3,4,5]</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="kd">let</span><span class="w"> </span><span class="nx">fruits</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s1">&#39;banana&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;orange&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;mango&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;lemon&#39;</span><span class="p">]</span>
+<span class="nx">fruits</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="s1">&#39;apple&#39;</span><span class="p">)</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">fruits</span><span class="p">)</span><span class="w">    </span><span class="c1">// [&#39;banana&#39;, &#39;orange&#39;, &#39;mango&#39;, &#39;lemon&#39;, &#39;apple&#39;]</span>
+
+<span class="nx">fruits</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="s1">&#39;lime&#39;</span><span class="p">)</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">fruits</span><span class="p">)</span><span class="w">   </span><span class="c1">// [&#39;banana&#39;, &#39;orange&#39;, &#39;mango&#39;, &#39;lemon&#39;, &#39;apple&#39;, &#39;lime&#39;]</span>
+</code></pre></div>
+<h4 id="menghapus-elemen-akhir-menggunakan-pop">Menghapus elemen akhir menggunakan pop</h4>
+<p>pop: Nghapus item di akhir.</p>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">numbers</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="mf">1</span><span class="p">,</span><span class="w"> </span><span class="mf">2</span><span class="p">,</span><span class="w"> </span><span class="mf">3</span><span class="p">,</span><span class="w"> </span><span class="mf">4</span><span class="p">,</span><span class="w"> </span><span class="mf">5</span><span class="p">]</span>
+<span class="nx">numbers</span><span class="p">.</span><span class="nx">pop</span><span class="p">()</span><span class="w"> </span><span class="c1">// -&gt; menghapus satu item dari akhir</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">numbers</span><span class="p">)</span><span class="w"> </span><span class="c1">// -&gt; [1,2,3,4]</span>
+</code></pre></div>
+<h4 id="menghapus-elemen-dari-awal">Menghapus elemen dari awal</h4>
+<p>shift: Nghapus satu elemen array di awal array.</p>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">numbers</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="mf">1</span><span class="p">,</span><span class="w"> </span><span class="mf">2</span><span class="p">,</span><span class="w"> </span><span class="mf">3</span><span class="p">,</span><span class="w"> </span><span class="mf">4</span><span class="p">,</span><span class="w"> </span><span class="mf">5</span><span class="p">]</span>
+<span class="nx">numbers</span><span class="p">.</span><span class="nx">shift</span><span class="p">()</span><span class="w"> </span><span class="c1">// -&gt; menghapus satu item dari awal</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">numbers</span><span class="p">)</span><span class="w"> </span><span class="c1">// -&gt; [2,3,4,5]</span>
+</code></pre></div>
+<h4 id="menambahkan-elemen-dari-awal">Menambahkan elemen dari awal</h4>
+<p>unshift: Nambahin elemen array di awal array.</p>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">numbers</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="mf">1</span><span class="p">,</span><span class="w"> </span><span class="mf">2</span><span class="p">,</span><span class="w"> </span><span class="mf">3</span><span class="p">,</span><span class="w"> </span><span class="mf">4</span><span class="p">,</span><span class="w"> </span><span class="mf">5</span><span class="p">]</span>
+<span class="nx">numbers</span><span class="p">.</span><span class="nx">unshift</span><span class="p">(</span><span class="mf">0</span><span class="p">)</span><span class="w"> </span><span class="c1">// -&gt; menambahkan satu item dari awal</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">numbers</span><span class="p">)</span><span class="w"> </span><span class="c1">// -&gt; [0,1,2,3,4,5]</span>
+</code></pre></div>
+<h4 id="membalik-urutan-array">Membalik urutan array</h4>
+<p>reverse: ngebalik urutan array.</p>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">numbers</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="mf">1</span><span class="p">,</span><span class="w"> </span><span class="mf">2</span><span class="p">,</span><span class="w"> </span><span class="mf">3</span><span class="p">,</span><span class="w"> </span><span class="mf">4</span><span class="p">,</span><span class="w"> </span><span class="mf">5</span><span class="p">]</span>
+<span class="nx">numbers</span><span class="p">.</span><span class="nx">reverse</span><span class="p">()</span><span class="w"> </span><span class="c1">// -&gt; membalik urutan array</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">numbers</span><span class="p">)</span><span class="w"> </span><span class="c1">// [5, 4, 3, 2, 1]</span>
+
+<span class="nx">numbers</span><span class="p">.</span><span class="nx">reverse</span><span class="p">()</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">numbers</span><span class="p">)</span><span class="w"> </span><span class="c1">// [1, 2, 3, 4, 5]</span>
+</code></pre></div>
+<h4 id="mengurutkan-elemen-dalam-array">Mengurutkan elemen dalam array</h4>
+<p>sort: ngatur elemen array dalam urutan menaik. Sort nerima fungsi callback, kita bakal lihat gimana pake sort dengan fungsi callback di bagian-bagian selanjutnya.</p>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">webTechs</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span>
+<span class="w">  </span><span class="s1">&#39;HTML&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;CSS&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;JavaScript&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;React&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;Redux&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;Node&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;MongoDB&#39;</span>
+<span class="p">]</span>
+
+<span class="nx">webTechs</span><span class="p">.</span><span class="nx">sort</span><span class="p">()</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">webTechs</span><span class="p">)</span><span class="w"> </span><span class="c1">// [&quot;CSS&quot;, &quot;HTML&quot;, &quot;JavaScript&quot;, &quot;MongoDB&quot;, &quot;Node&quot;, &quot;React&quot;, &quot;Redux&quot;]</span>
+
+<span class="nx">webTechs</span><span class="p">.</span><span class="nx">reverse</span><span class="p">()</span><span class="w"> </span><span class="c1">// setelah mengurutkan kita bisa membaliknya</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">webTechs</span><span class="p">)</span><span class="w"> </span><span class="c1">// [&quot;Redux&quot;, &quot;React&quot;, &quot;Node&quot;, &quot;MongoDB&quot;, &quot;JavaScript&quot;, &quot;HTML&quot;, &quot;CSS&quot;]</span>
+</code></pre></div>
+<h3 id="array-dari-array">Array dari array</h3>
+<p>Array bisa nyimpen tipe data yang beda-beda termasuk array itu sendiri. Yuk kita bikin array dari array.</p>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">firstNums</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="mf">1</span><span class="p">,</span><span class="w"> </span><span class="mf">2</span><span class="p">,</span><span class="w"> </span><span class="mf">3</span><span class="p">]</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">secondNums</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="mf">1</span><span class="p">,</span><span class="w"> </span><span class="mf">4</span><span class="p">,</span><span class="w"> </span><span class="mf">9</span><span class="p">]</span>
+
+<span class="kd">const</span><span class="w"> </span><span class="nx">arrayOfArray</span><span class="w"> </span><span class="o">=</span><span class="w">  </span><span class="p">[[</span><span class="mf">1</span><span class="p">,</span><span class="w"> </span><span class="mf">2</span><span class="p">,</span><span class="w"> </span><span class="mf">3</span><span class="p">],</span><span class="w"> </span><span class="p">[</span><span class="mf">1</span><span class="p">,</span><span class="w"> </span><span class="mf">2</span><span class="p">,</span><span class="w"> </span><span class="mf">3</span><span class="p">]]</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">arrayOfArray</span><span class="p">[</span><span class="mf">0</span><span class="p">])</span><span class="w"> </span><span class="c1">// [1, 2, 3]</span>
+
+<span class="w"> </span><span class="kd">const</span><span class="w"> </span><span class="nx">frontEnd</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s1">&#39;HTML&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;CSS&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;JS&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;React&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Redux&#39;</span><span class="p">]</span>
+<span class="w"> </span><span class="kd">const</span><span class="w"> </span><span class="nx">backEnd</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s1">&#39;Node&#39;</span><span class="p">,</span><span class="s1">&#39;Express&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;MongoDB&#39;</span><span class="p">]</span>
+<span class="w"> </span><span class="kd">const</span><span class="w"> </span><span class="nx">fullStack</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="nx">frontEnd</span><span class="p">,</span><span class="w"> </span><span class="nx">backEnd</span><span class="p">]</span>
+<span class="w"> </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">fullStack</span><span class="p">)</span><span class="w">   </span><span class="c1">// [[&quot;HTML&quot;, &quot;CSS&quot;, &quot;JS&quot;, &quot;React&quot;, &quot;Redux&quot;], [&quot;Node&quot;, &quot;Express&quot;, &quot;MongoDB&quot;]]</span>
+<span class="w"> </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">fullStack</span><span class="p">.</span><span class="nx">length</span><span class="p">)</span><span class="w">  </span><span class="c1">// 2</span>
+<span class="w"> </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">fullStack</span><span class="p">[</span><span class="mf">0</span><span class="p">])</span><span class="w">  </span><span class="c1">// [&quot;HTML&quot;, &quot;CSS&quot;, &quot;JS&quot;, &quot;React&quot;, &quot;Redux&quot;]</span>
+<span class="w"> </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">fullStack</span><span class="p">[</span><span class="mf">1</span><span class="p">])</span><span class="w"> </span><span class="c1">// [&quot;Node&quot;, &quot;Express&quot;, &quot;MongoDB&quot;]</span>
+</code></pre></div>
+<p>🌕 Kamu rajin banget dan udah mencapai banyak hal. Kamu baru aja nyelesein tantangan hari ke-5 dan kamu selangkah lebih maju menuju kehebatan. Gaskeun sekarang lakuin latihan buat otak dan otot kamu.</p>
+<h2 id="latihan">💻 Latihan</h2>
+<h3 id="latihan-level-1">Latihan: Level 1</h3>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">countries</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span>
+<span class="w">  </span><span class="s1">&#39;Albania&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;Bolivia&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;Canada&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;Denmark&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;Ethiopia&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;Finland&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;Germany&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;Hungary&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;Ireland&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;Japan&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;Kenya&#39;</span>
+<span class="p">]</span>
+
+<span class="kd">const</span><span class="w"> </span><span class="nx">webTechs</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span>
+<span class="w">  </span><span class="s1">&#39;HTML&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;CSS&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;JavaScript&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;React&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;Redux&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;Node&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;MongoDB&#39;</span>
+<span class="p">]</span>
+</code></pre></div>
+<ol>
+<li>Deklarasikan array <em>kosong</em>;</li>
+<li>Deklarasikan array dengan lebih dari 5 jumlah elemen</li>
+<li>Temuin panjang array kamu</li>
+<li>Dapetin item pertama, item tengah, dan item terakhir dari array</li>
+<li>Deklarasikan array bernama <em>mixedDataTypes</em>, masukin tipe data yang beda-beda di array dan temuin panjang array. Ukuran array harus lebih dari 5</li>
+<li>Deklarasikan variabel array bernama itCompanies dan kasih nilai awal Facebook, Google, Microsoft, Apple, IBM, Oracle dan Amazon</li>
+<li>Cetak array pake <em>console.log()</em></li>
+<li>Cetak jumlah perusahaan dalam array</li>
+<li>Cetak perusahaan pertama, tengah, dan terakhir</li>
+<li>Cetak setiap perusahaan</li>
+<li>Ubah setiap nama perusahaan jadi huruf kapital satu per satu dan cetak</li>
+<li>Cetak array seperti sebuah kalimat: Facebook, Google, Microsoft, Apple, IBM, Oracle dan Amazon adalah perusahaan IT besar.</li>
+<li>Cek apakah perusahaan tertentu ada di array itCompanies. Kalau ada, kembalikan perusahaan tersebut, kalau nggak kembalikan perusahaan <em>tidak ditemukan</em></li>
+<li>Saring perusahaan yang punya lebih dari satu 'o' tanpa metode filter</li>
+<li>Urutkan array pake metode <em>sort()</em></li>
+<li>Balik array pake metode <em>reverse()</em></li>
+<li>Potong 3 perusahaan pertama dari array</li>
+<li>Potong 3 perusahaan terakhir dari array</li>
+<li>Potong perusahaan IT tengah dari array</li>
+<li>Hapus perusahaan IT pertama dari array</li>
+<li>Hapus perusahaan IT tengah dari array</li>
+<li>Hapus perusahaan IT terakhir dari array</li>
+<li>Hapus semua perusahaan IT</li>
+</ol>
+<h3 id="latihan-level-2">Latihan: Level 2</h3>
+<ol>
+<li>Bikin file countries.js terpisah dan simpen array countries ke file ini, bikin file terpisah web_techs.js dan simpen array webTechs ke file ini. Akses kedua file di file main.js</li>
+<li>
+<p>Pertama, hapus semua tanda baca dan ubah string jadi array, terus hitung jumlah kata di array</p>
+<div class="highlight"><pre><span></span><code><span class="kd">let</span><span class="w"> </span><span class="nx">text</span><span class="w"> </span><span class="o">=</span>
+<span class="s1">&#39;I love teaching and empowering people. I teach HTML, CSS, JS, React, Python.&#39;</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">words</span><span class="p">)</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">words</span><span class="p">.</span><span class="nx">length</span><span class="p">)</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="o">[</span><span class="s2">&quot;I&quot;</span>,<span class="w"> </span><span class="s2">&quot;love&quot;</span>,<span class="w"> </span><span class="s2">&quot;teaching&quot;</span>,<span class="w"> </span><span class="s2">&quot;and&quot;</span>,<span class="w"> </span><span class="s2">&quot;empowering&quot;</span>,<span class="w"> </span><span class="s2">&quot;people&quot;</span>,<span class="w"> </span><span class="s2">&quot;I&quot;</span>,<span class="w"> </span><span class="s2">&quot;teach&quot;</span>,<span class="w"> </span><span class="s2">&quot;HTML&quot;</span>,<span class="w"> </span><span class="s2">&quot;CSS&quot;</span>,<span class="w"> </span><span class="s2">&quot;JS&quot;</span>,<span class="w"> </span><span class="s2">&quot;React&quot;</span>,<span class="w"> </span><span class="s2">&quot;Python&quot;</span><span class="o">]</span>
+
+<span class="m">13</span>
+</code></pre></div>
+</li>
+<li>
+<p>Di keranjang belanja berikut, tambahin, hapus, edit item</p>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">shoppingCart</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s1">&#39;Milk&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Coffee&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Tea&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Honey&#39;</span><span class="p">]</span>
+</code></pre></div>
+</li>
+<li>
+<p>tambahin 'Meat' di awal keranjang belanja kamu kalau belum ditambahin</p>
+</li>
+<li>tambahin Sugar di akhir keranjang belanja kamu kalau belum ditambahin</li>
+<li>hapus 'Honey' kalau kamu alergi madu</li>
+<li>ubah Tea jadi 'Green Tea'</li>
+<li>Di array countries, cek apakah 'Ethiopia' ada di array. Kalau ada, cetak 'ETHIOPIA'. Kalau nggak ada, tambahin ke daftar countries.</li>
+<li>Di array webTechs, cek apakah Sass ada di array dan kalau ada cetak 'Sass is a CSS preprocess'. Kalau nggak ada, tambahin Sass ke array dan cetak arraynya.</li>
+<li>
+<p>Gabungin dua variabel berikut dan simpen di variabel fullStack.</p>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">frontEnd</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s1">&#39;HTML&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;CSS&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;JS&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;React&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Redux&#39;</span><span class="p">]</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">backEnd</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s1">&#39;Node&#39;</span><span class="p">,</span><span class="s1">&#39;Express&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;MongoDB&#39;</span><span class="p">]</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">fullStack</span><span class="p">)</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="o">[</span><span class="s2">&quot;HTML&quot;</span>,<span class="w"> </span><span class="s2">&quot;CSS&quot;</span>,<span class="w"> </span><span class="s2">&quot;JS&quot;</span>,<span class="w"> </span><span class="s2">&quot;React&quot;</span>,<span class="w"> </span><span class="s2">&quot;Redux&quot;</span>,<span class="w"> </span><span class="s2">&quot;Node&quot;</span>,<span class="w"> </span><span class="s2">&quot;Express&quot;</span>,<span class="w"> </span><span class="s2">&quot;MongoDB&quot;</span><span class="o">]</span>
+</code></pre></div>
+</li>
+</ol>
+<h3 id="latihan-level-3">Latihan: Level 3</h3>
+<ol>
+<li>
+<p>Nih array dari 10 usia siswa:</p>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">ages</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="mf">19</span><span class="p">,</span><span class="w"> </span><span class="mf">22</span><span class="p">,</span><span class="w"> </span><span class="mf">19</span><span class="p">,</span><span class="w"> </span><span class="mf">24</span><span class="p">,</span><span class="w"> </span><span class="mf">20</span><span class="p">,</span><span class="w"> </span><span class="mf">25</span><span class="p">,</span><span class="w"> </span><span class="mf">26</span><span class="p">,</span><span class="w"> </span><span class="mf">24</span><span class="p">,</span><span class="w"> </span><span class="mf">25</span><span class="p">,</span><span class="w"> </span><span class="mf">24</span><span class="p">]</span>
+</code></pre></div>
+<ul>
+<li>Urutkan array dan temuin usia minimum dan maksimum</li>
+<li>Temuin usia median (satu item tengah atau dua item tengah dibagi dua)</li>
+<li>Temuin usia rata-rata (semua item dibagi jumlah item)</li>
+<li>Temuin rentang usia (maksimum dikurangi minimum)</li>
+<li>Bandingin nilai (min - rata-rata) dan (max - rata-rata), pake metode <em>abs()</em></li>
+<li>Potong sepuluh negara pertama dari <a href="https://github.com/Asabeneh/30DaysOfJavaScript/tree/master/data/countries.js">array countries</a></li>
+<li>Temuin negara tengah di <a href="https://github.com/Asabeneh/30DaysOfJavaScript/tree/master/data/countries.js">array countries</a></li>
+<li>Bagi array countries jadi dua array yang sama kalau jumlahnya genap. Kalau array countries nggak genap, satu negara lebih banyak buat setengah pertama.</li>
+</ul>
+</li>
+</ol>
+<p>🎉 SELAMAT ! 🎉</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Tersalin ke clipboard", "clipboard.copy": "Salin ke clipboard", "search.result.more.one": "1 lagi di halaman ini", "search.result.more.other": "# lagi di halaman ini", "search.result.none": "Tidak ada dokumen yang sesuai", "search.result.one": "1 dokumen ditemukan", "search.result.other": "# dokumen ditemukan", "search.result.placeholder": "Ketik untuk mulai pencarian", "search.result.term.missing": "Tidak ada", "select.version": "Pilih versi"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>
